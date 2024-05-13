@@ -549,3 +549,94 @@
 [INFO ] 2024-05-10 15:14:18.357 [main] Members - >> User got the invitation mail successfully >>
 [INFO ] 2024-05-10 15:14:18.435 [main] Testhooks - Passed scenario screenshot captured: Invite the member with valid inputs
 [INFO ] 2024-05-10 15:14:18.506 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-13 15:57:43.279 [main] Testhooks - Execution Started
+[INFO ] 2024-05-13 15:57:43.366 [main] Testhooks - Execution Started
+[INFO ] 2024-05-13 15:57:43.386 [main] Testhooks - Execution Started
+[INFO ] 2024-05-13 15:57:43.409 [main] Testhooks - Execution Started
+[INFO ] 2024-05-13 15:57:43.427 [main] Testhooks - Execution Started
+[INFO ] 2024-05-13 15:57:43.445 [main] Testhooks - Execution Started
+[INFO ] 2024-05-13 15:57:43.463 [main] Testhooks - Execution Started
+[INFO ] 2024-05-13 15:57:43.481 [main] Testhooks - Execution Started
+[INFO ] 2024-05-13 15:59:04.743 [main] Testhooks - Execution Started
+[INFO ] 2024-05-13 15:59:05.660 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-13 15:59:09.723 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-13 15:59:09.887 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-13 15:59:11.013 [main] Signinpage - >> User enters valid email address
+[INFO ] 2024-05-13 15:59:11.226 [main] Testhooks - Passed scenario screenshot captured: Login with valid credentials
+[INFO ] 2024-05-13 15:59:11.308 [main] Signinpage - >> User enters valid password
+[INFO ] 2024-05-13 15:59:11.489 [main] Testhooks - Passed scenario screenshot captured: Login with valid credentials
+[INFO ] 2024-05-13 15:59:11.730 [main] Testhooks - Passed scenario screenshot captured: Login with valid credentials
+[INFO ] 2024-05-13 15:59:11.785 [main] Signinpage - >> User clicks on signin button
+[INFO ] 2024-05-13 15:59:11.961 [main] Testhooks - Passed scenario screenshot captured: Login with valid credentials
+[INFO ] 2024-05-13 15:59:14.163 [main] Signinpage - >> Al-Arabia user got signed in successfully
+[INFO ] 2024-05-13 15:59:14.363 [main] Testhooks - Passed scenario screenshot captured: Login with valid credentials
+[INFO ] 2024-05-13 15:59:14.481 [main] Signinpage - >> Al-Arabia user got signed in successfully
+[INFO ] 2024-05-13 15:59:14.618 [main] Testhooks - Passed scenario screenshot captured: Login with valid credentials
+[INFO ] 2024-05-13 15:59:14.694 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-13 15:59:14.708 [main] Testhooks - Execution Started
+[INFO ] 2024-05-13 15:59:15.316 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-13 15:59:20.104 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-13 15:59:20.109 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-13 15:59:21.398 [main] Testhooks - Passed scenario screenshot captured: Login with invalid credentials
+[INFO ] 2024-05-13 15:59:21.664 [main] Testhooks - Passed scenario screenshot captured: Login with invalid credentials
+[INFO ] 2024-05-13 15:59:21.881 [main] Testhooks - Passed scenario screenshot captured: Login with invalid credentials
+[INFO ] 2024-05-13 15:59:22.084 [main] Testhooks - Passed scenario screenshot captured: Login with invalid credentials
+[INFO ] 2024-05-13 15:59:22.154 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-13 15:59:22.163 [main] Testhooks - Execution Started
+[INFO ] 2024-05-13 15:59:22.773 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-13 15:59:28.541 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-13 15:59:28.546 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-13 15:59:29.666 [main] Signinpage - >> User enters valid email address
+[INFO ] 2024-05-13 15:59:29.868 [main] Testhooks - Passed scenario screenshot captured: Login with valid email address and invalid password
+[INFO ] 2024-05-13 15:59:30.142 [main] Testhooks - Passed scenario screenshot captured: Login with valid email address and invalid password
+[INFO ] 2024-05-13 15:59:30.370 [main] Testhooks - Passed scenario screenshot captured: Login with valid email address and invalid password
+[INFO ] 2024-05-13 15:59:30.585 [main] Testhooks - Passed scenario screenshot captured: Login with valid email address and invalid password
+[INFO ] 2024-05-13 15:59:30.655 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-13 15:59:30.666 [main] Testhooks - Execution Started
+[INFO ] 2024-05-13 15:59:31.315 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-13 15:59:35.337 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-13 15:59:35.341 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-13 15:59:36.592 [main] Testhooks - Passed scenario screenshot captured: Login with invalid email address and valid password
+[INFO ] 2024-05-13 15:59:36.671 [main] Signinpage - >> User enters valid password
+[INFO ] 2024-05-13 15:59:36.774 [main] Testhooks - Passed scenario screenshot captured: Login with invalid email address and valid password
+[INFO ] 2024-05-13 15:59:37.010 [main] Testhooks - Passed scenario screenshot captured: Login with invalid email address and valid password
+[INFO ] 2024-05-13 15:59:37.183 [main] Testhooks - Passed scenario screenshot captured: Login with invalid email address and valid password
+[INFO ] 2024-05-13 15:59:37.254 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-13 15:59:37.263 [main] Testhooks - Execution Started
+[INFO ] 2024-05-13 15:59:37.843 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-13 15:59:42.159 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-13 15:59:42.165 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-13 15:59:43.272 [main] Signinpage - >> User enters valid email address
+[INFO ] 2024-05-13 15:59:43.449 [main] Testhooks - Passed scenario screenshot captured: Login with valid email address and invalid password without special character
+[INFO ] 2024-05-13 15:59:43.689 [main] Testhooks - Passed scenario screenshot captured: Login with valid email address and invalid password without special character
+[INFO ] 2024-05-13 15:59:43.910 [main] Testhooks - Passed scenario screenshot captured: Login with valid email address and invalid password without special character
+[INFO ] 2024-05-13 15:59:44.109 [main] Testhooks - Passed scenario screenshot captured: Login with valid email address and invalid password without special character
+[INFO ] 2024-05-13 15:59:44.179 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-13 15:59:44.189 [main] Testhooks - Execution Started
+[INFO ] 2024-05-13 15:59:44.760 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-13 15:59:49.281 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-13 15:59:49.285 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-13 15:59:50.393 [main] Signinpage - >> User enters valid email address
+[INFO ] 2024-05-13 15:59:50.567 [main] Testhooks - Passed scenario screenshot captured: Login with valid email address and invalid password without special character
+[INFO ] 2024-05-13 15:59:50.829 [main] Testhooks - Passed scenario screenshot captured: Login with valid email address and invalid password without special character
+[INFO ] 2024-05-13 15:59:51.056 [main] Testhooks - Passed scenario screenshot captured: Login with valid email address and invalid password without special character
+[INFO ] 2024-05-13 15:59:51.258 [main] Testhooks - Passed scenario screenshot captured: Login with valid email address and invalid password without special character
+[INFO ] 2024-05-13 15:59:51.328 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-13 15:59:51.334 [main] Testhooks - Execution Started
+[INFO ] 2024-05-13 15:59:51.921 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-13 15:59:56.362 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-13 15:59:56.366 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-13 15:59:57.478 [main] Signinpage - >> User enters valid email address
+[INFO ] 2024-05-13 15:59:57.650 [main] Testhooks - Passed scenario screenshot captured: Login with valid email address and invalid password with short character
+[INFO ] 2024-05-13 15:59:57.857 [main] Testhooks - Passed scenario screenshot captured: Login with valid email address and invalid password with short character
+[INFO ] 2024-05-13 15:59:58.069 [main] Testhooks - Passed scenario screenshot captured: Login with valid email address and invalid password with short character
+[INFO ] 2024-05-13 15:59:58.263 [main] Testhooks - Passed scenario screenshot captured: Login with valid email address and invalid password with short character
+[INFO ] 2024-05-13 15:59:58.334 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-13 15:59:58.341 [main] Testhooks - Execution Started
+[INFO ] 2024-05-13 15:59:58.940 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-13 16:00:03.407 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-13 16:00:03.412 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-13 16:00:04.675 [main] Testhooks - Passed scenario screenshot captured: Login without email address and password
+[INFO ] 2024-05-13 16:00:04.872 [main] Testhooks - Passed scenario screenshot captured: Login without email address and password
+[INFO ] 2024-05-13 16:00:05.081 [main] Testhooks - Passed scenario screenshot captured: Login without email address and password
+[INFO ] 2024-05-13 16:00:05.150 [main] Testhooks - Browser got closed

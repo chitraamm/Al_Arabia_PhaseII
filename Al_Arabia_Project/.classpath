@@ -33,15 +33,9 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
-	<classpathentry kind="lib" path="/home/chitra/Downloads/cucumber-core-7.17.0.jar"/>
-	<classpathentry kind="lib" path="/home/chitra/Downloads/cucumber-gherkin-7.17.0.jar"/>
-	<classpathentry kind="lib" path="/home/chitra/Downloads/cucumber-junit-7.17.0.jar"/>
-	<classpathentry kind="lib" path="/home/chitra/Downloads/cucumber-testng-7.17.0.jar"/>
-	<classpathentry kind="lib" path="/home/chitra/Downloads/extent-pdf-report-2.12.0.jar"/>
-	<classpathentry kind="lib" path="/home/chitra/Downloads/extent-pdf-report-2.12.0 (1).jar"/>
-	<classpathentry kind="lib" path="/home/chitra/Downloads/extentreports-2.41.2.jar"/>
-	<classpathentry kind="lib" path="/home/chitra/Downloads/extentreports-5.1.1.jar"/>
-	<classpathentry kind="lib" path="/home/chitra/Downloads/freemarker-2.3.32.jar"/>
-	<classpathentry kind="lib" path="/home/chitra/Downloads/guava-33.2.0-jre.jar"/>
+	<classpathentry kind="lib" path="/home/coducer/Downloads/cucumber-core-7.17.0.jar"/>
+	<classpathentry kind="lib" path="/home/coducer/Downloads/cucumber-gherkin-7.17.0.jar"/>
+	<classpathentry kind="lib" path="/home/coducer/Downloads/cucumber-junit-7.17.0.jar"/>
+	<classpathentry kind="lib" path="/home/coducer/Downloads/cucumber-testng-7.17.0.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

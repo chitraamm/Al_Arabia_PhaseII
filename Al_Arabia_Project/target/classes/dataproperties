@@ -1,0 +1,26 @@
+<---- Launch Browser ---->
+browser = chrome
+
+<---- Web App URL ---->
+Al_Arabia_URL = http://20.74.152.254/
+
+<---- Admin Login Valid Credentials ---->
+Admin_email_address = help@coducer.com
+Admin_password = Password@123
+
+<---- Login Invalid Credentials ---->
+INV_email_address = help@coducer
+INV_password = password@123
+INV_withoutNO_password = Passworddd@
+INVpassword_withoutspl_character = Password123
+INVpassword_withoutupper_character = password@123
+INVpassword_short_character = Pass
+
+<---- Forgot password Credentials ---->
+Forgot_email_address = panneerselvam@coducer.com
+
+
+<---- Invite member random email ---->
+Invite_email = panneerselvam1@coducer.com
+Role_manager = Manager
+Dept_electrical = Electrical

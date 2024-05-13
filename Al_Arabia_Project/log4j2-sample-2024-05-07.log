@@ -1,0 +1,176 @@
+[INFO ] 2024-05-07 14:31:43.625 [main] Testhooks - Execution Started
+[INFO ] 2024-05-07 14:31:44.527 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-07 14:31:45.651 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-07 14:31:45.787 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-07 14:31:46.971 [main] Signuppage - >> User got navigated to signup page
+[INFO ] 2024-05-07 14:31:46.972 [main] Signup - >> User got navigated to signup page >>
+[INFO ] 2024-05-07 14:31:47.153 [main] Testhooks - Passed scenario screenshot captured: Register with mandatory fields
+[INFO ] 2024-05-07 14:31:47.579 [main] Testhooks - Passed scenario screenshot captured: Register with mandatory fields
+[INFO ] 2024-05-07 14:31:47.760 [main] Testhooks - Passed scenario screenshot captured: Register with mandatory fields
+[INFO ] 2024-05-07 14:31:47.940 [main] Testhooks - Passed scenario screenshot captured: Register with mandatory fields
+[INFO ] 2024-05-07 14:32:03.665 [main] Testhooks - Failed scenario screenshot got capturedRegister with mandatory fields
+[INFO ] 2024-05-07 14:32:03.745 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-07 14:32:03.765 [main] Testhooks - Execution Started
+[INFO ] 2024-05-07 14:32:04.366 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-07 14:32:05.529 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-07 14:32:05.535 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-07 14:32:06.709 [main] Signuppage - >> User got navigated to signup page
+[INFO ] 2024-05-07 14:32:06.709 [main] Signup - >> User got navigated to signup page >>
+[INFO ] 2024-05-07 14:32:06.919 [main] Testhooks - Passed scenario screenshot captured: Register with invalid email address
+[INFO ] 2024-05-07 14:32:59.505 [main] Testhooks - Execution Started
+[INFO ] 2024-05-07 14:33:00.457 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-07 14:33:01.454 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-07 14:33:01.592 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-07 14:33:02.784 [main] Signuppage - >> User got navigated to signup page
+[INFO ] 2024-05-07 14:33:02.784 [main] Signup - >> User got navigated to signup page >>
+[INFO ] 2024-05-07 14:33:02.982 [main] Testhooks - Passed scenario screenshot captured: Register with mandatory fields
+[INFO ] 2024-05-07 14:33:03.409 [main] Testhooks - Passed scenario screenshot captured: Register with mandatory fields
+[INFO ] 2024-05-07 14:33:03.590 [main] Testhooks - Passed scenario screenshot captured: Register with mandatory fields
+[INFO ] 2024-05-07 14:33:03.738 [main] Testhooks - Passed scenario screenshot captured: Register with mandatory fields
+[INFO ] 2024-05-07 14:33:04.140 [main] Testhooks - Passed scenario screenshot captured: Register with mandatory fields
+[INFO ] 2024-05-07 14:33:04.216 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-07 14:33:04.228 [main] Testhooks - Execution Started
+[INFO ] 2024-05-07 14:33:04.813 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-07 14:33:05.228 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-07 14:33:05.234 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-07 14:33:06.388 [main] Signuppage - >> User got navigated to signup page
+[INFO ] 2024-05-07 14:33:06.388 [main] Signup - >> User got navigated to signup page >>
+[INFO ] 2024-05-07 14:33:06.528 [main] Testhooks - Passed scenario screenshot captured: Register with invalid email address
+[INFO ] 2024-05-07 14:33:06.969 [main] Testhooks - Passed scenario screenshot captured: Register with invalid email address
+[INFO ] 2024-05-07 14:33:07.155 [main] Testhooks - Passed scenario screenshot captured: Register with invalid email address
+[INFO ] 2024-05-07 14:33:07.314 [main] Testhooks - Passed scenario screenshot captured: Register with invalid email address
+[INFO ] 2024-05-07 14:33:07.447 [main] Testhooks - Passed scenario screenshot captured: Register with invalid email address
+[INFO ] 2024-05-07 14:33:07.519 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-07 14:33:07.527 [main] Testhooks - Execution Started
+[INFO ] 2024-05-07 14:33:08.116 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-07 14:33:08.854 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-07 14:33:08.858 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-07 14:33:10.016 [main] Signuppage - >> User got navigated to signup page
+[INFO ] 2024-05-07 14:33:10.016 [main] Signup - >> User got navigated to signup page >>
+[INFO ] 2024-05-07 14:33:10.207 [main] Testhooks - Passed scenario screenshot captured: Register with invalid password
+[INFO ] 2024-05-07 14:33:10.602 [main] Testhooks - Passed scenario screenshot captured: Register with invalid password
+[INFO ] 2024-05-07 14:33:10.787 [main] Testhooks - Passed scenario screenshot captured: Register with invalid password
+[INFO ] 2024-05-07 14:33:10.951 [main] Testhooks - Passed scenario screenshot captured: Register with invalid password
+[INFO ] 2024-05-07 14:33:11.079 [main] Testhooks - Passed scenario screenshot captured: Register with invalid password
+[INFO ] 2024-05-07 14:33:11.148 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-07 14:33:11.157 [main] Testhooks - Execution Started
+[INFO ] 2024-05-07 14:33:11.774 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-07 14:33:12.395 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-07 14:33:12.399 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-07 14:33:13.555 [main] Signuppage - >> User got navigated to signup page
+[INFO ] 2024-05-07 14:33:13.555 [main] Signup - >> User got navigated to signup page >>
+[INFO ] 2024-05-07 14:33:13.748 [main] Testhooks - Passed scenario screenshot captured: Register without clicking terms and condition checkbox
+[INFO ] 2024-05-07 14:33:14.128 [main] Testhooks - Passed scenario screenshot captured: Register without clicking terms and condition checkbox
+[INFO ] 2024-05-07 14:33:14.255 [main] Testhooks - Passed scenario screenshot captured: Register without clicking terms and condition checkbox
+[INFO ] 2024-05-07 14:33:14.437 [main] Testhooks - Passed scenario screenshot captured: Register without clicking terms and condition checkbox
+[INFO ] 2024-05-07 14:33:14.594 [main] Testhooks - Passed scenario screenshot captured: Register without clicking terms and condition checkbox
+[INFO ] 2024-05-07 14:33:14.664 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-07 14:33:14.669 [main] Testhooks - Execution Started
+[INFO ] 2024-05-07 14:33:15.270 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-07 14:33:15.886 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-07 14:33:15.890 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-07 14:33:17.066 [main] Signuppage - >> User got navigated to signup page
+[INFO ] 2024-05-07 14:33:17.066 [main] Signup - >> User got navigated to signup page >>
+[INFO ] 2024-05-07 14:33:17.225 [main] Testhooks - Passed scenario screenshot captured: Register with duplicate email address
+[INFO ] 2024-05-07 14:33:17.638 [main] Testhooks - Passed scenario screenshot captured: Register with duplicate email address
+[INFO ] 2024-05-07 14:33:17.817 [main] Testhooks - Passed scenario screenshot captured: Register with duplicate email address
+[INFO ] 2024-05-07 14:33:17.977 [main] Testhooks - Passed scenario screenshot captured: Register with duplicate email address
+[INFO ] 2024-05-07 14:33:18.176 [main] Testhooks - Passed scenario screenshot captured: Register with duplicate email address
+[INFO ] 2024-05-07 14:33:18.248 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-07 14:33:18.259 [main] Testhooks - Execution Started
+[INFO ] 2024-05-07 14:33:18.863 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-07 14:33:19.504 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-07 14:33:19.508 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-07 14:33:20.699 [main] Signuppage - >> User got navigated to signup page
+[INFO ] 2024-05-07 14:33:20.699 [main] Signup - >> User got navigated to signup page >>
+[INFO ] 2024-05-07 14:33:20.894 [main] Testhooks - Passed scenario screenshot captured: Register without providing any inputs
+[INFO ] 2024-05-07 14:33:20.998 [main] Testhooks - Passed scenario screenshot captured: Register without providing any inputs
+[INFO ] 2024-05-07 14:33:21.164 [main] Testhooks - Passed scenario screenshot captured: Register without providing any inputs
+[INFO ] 2024-05-07 14:33:21.293 [main] Testhooks - Passed scenario screenshot captured: Register without providing any inputs
+[INFO ] 2024-05-07 14:33:21.362 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-07 14:33:21.377 [main] Testhooks - Execution Started
+[INFO ] 2024-05-07 14:33:21.975 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-07 14:33:22.588 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-07 14:33:22.591 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-07 14:33:23.697 [main] Signinpage - >> User enters valid email address
+[INFO ] 2024-05-07 14:33:23.805 [main] Testhooks - Passed scenario screenshot captured: Login with valid credentials
+[INFO ] 2024-05-07 14:33:23.871 [main] Signinpage - >> User enters valid password
+[INFO ] 2024-05-07 14:33:23.959 [main] Testhooks - Passed scenario screenshot captured: Login with valid credentials
+[INFO ] 2024-05-07 14:33:24.013 [main] Signinpage - >> User clicks on signin button
+[INFO ] 2024-05-07 14:33:24.137 [main] Testhooks - Passed scenario screenshot captured: Login with valid credentials
+[INFO ] 2024-05-07 14:33:26.945 [main] Signinpage - >> User got signed in successfully
+[INFO ] 2024-05-07 14:33:27.057 [main] Testhooks - Passed scenario screenshot captured: Login with valid credentials
+[INFO ] 2024-05-07 14:33:27.094 [main] Signinpage - >> User got signed in successfully
+[INFO ] 2024-05-07 14:33:27.204 [main] Testhooks - Passed scenario screenshot captured: Login with valid credentials
+[INFO ] 2024-05-07 14:33:27.276 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-07 14:33:27.282 [main] Testhooks - Execution Started
+[INFO ] 2024-05-07 14:33:27.895 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-07 14:33:28.586 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-07 14:33:28.590 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-07 14:33:29.867 [main] Testhooks - Passed scenario screenshot captured: Login with invalid credentials
+[INFO ] 2024-05-07 14:33:30.059 [main] Testhooks - Passed scenario screenshot captured: Login with invalid credentials
+[INFO ] 2024-05-07 14:33:30.113 [main] Signinpage - >> User clicks on signin button
+[INFO ] 2024-05-07 14:33:30.222 [main] Testhooks - Passed scenario screenshot captured: Login with invalid credentials
+[INFO ] 2024-05-07 14:33:30.486 [main] Testhooks - Passed scenario screenshot captured: Login with invalid credentials
+[INFO ] 2024-05-07 14:33:30.557 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-07 14:33:30.563 [main] Testhooks - Execution Started
+[INFO ] 2024-05-07 14:33:31.158 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-07 14:33:31.772 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-07 14:33:31.777 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-07 14:33:32.888 [main] Signinpage - >> User enters valid email address
+[INFO ] 2024-05-07 14:33:32.998 [main] Testhooks - Passed scenario screenshot captured: Login with valid email address and invalid password
+[INFO ] 2024-05-07 14:33:33.183 [main] Testhooks - Passed scenario screenshot captured: Login with valid email address and invalid password
+[INFO ] 2024-05-07 14:33:33.237 [main] Signinpage - >> User clicks on signin button
+[INFO ] 2024-05-07 14:33:33.354 [main] Testhooks - Passed scenario screenshot captured: Login with valid email address and invalid password
+[INFO ] 2024-05-07 14:33:33.540 [main] Testhooks - Passed scenario screenshot captured: Login with valid email address and invalid password
+[INFO ] 2024-05-07 14:33:33.612 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-07 14:33:33.618 [main] Testhooks - Execution Started
+[INFO ] 2024-05-07 14:33:34.205 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-07 14:33:34.844 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-07 14:33:34.849 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-07 14:33:36.069 [main] Testhooks - Passed scenario screenshot captured: Login with invalid email address and valid password
+[INFO ] 2024-05-07 14:33:36.140 [main] Signinpage - >> User enters valid password
+[INFO ] 2024-05-07 14:33:36.242 [main] Testhooks - Passed scenario screenshot captured: Login with invalid email address and valid password
+[INFO ] 2024-05-07 14:33:36.301 [main] Signinpage - >> User clicks on signin button
+[INFO ] 2024-05-07 14:33:36.398 [main] Testhooks - Passed scenario screenshot captured: Login with invalid email address and valid password
+[INFO ] 2024-05-07 14:33:36.638 [main] Testhooks - Passed scenario screenshot captured: Login with invalid email address and valid password
+[INFO ] 2024-05-07 14:33:36.707 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-07 14:33:36.712 [main] Testhooks - Execution Started
+[INFO ] 2024-05-07 14:33:37.294 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-07 14:33:38.115 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-07 14:33:38.120 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-07 14:33:39.233 [main] Testhooks - Passed scenario screenshot captured: Login without providing any credentials
+[INFO ] 2024-05-07 14:33:39.293 [main] Signinpage - >> User clicks on signin button
+[INFO ] 2024-05-07 14:33:39.429 [main] Testhooks - Passed scenario screenshot captured: Login without providing any credentials
+[INFO ] 2024-05-07 14:33:39.584 [main] Testhooks - Passed scenario screenshot captured: Login without providing any credentials
+[INFO ] 2024-05-07 14:33:39.654 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-07 14:33:39.661 [main] Testhooks - Execution Started
+[INFO ] 2024-05-07 14:33:40.236 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-07 14:33:40.887 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-07 14:33:40.894 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-07 14:33:41.980 [main] Forgotpasswordpage - >> User clicks on forgot password link
+[INFO ] 2024-05-07 14:33:42.105 [main] Testhooks - Passed scenario screenshot captured: Reset password on forgetting it
+[INFO ] 2024-05-07 14:33:42.322 [main] Testhooks - Passed scenario screenshot captured: Reset password on forgetting it
+[INFO ] 2024-05-07 14:33:42.500 [main] Testhooks - Passed scenario screenshot captured: Reset password on forgetting it
+[INFO ] 2024-05-07 14:33:42.601 [main] Testhooks - Passed scenario screenshot captured: Reset password on forgetting it
+[INFO ] 2024-05-07 14:33:42.672 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-07 14:33:42.677 [main] Testhooks - Execution Started
+[INFO ] 2024-05-07 14:33:43.275 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-07 14:33:43.950 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-07 14:33:43.955 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-07 14:33:45.033 [main] Forgotpasswordpage - >> User clicks on forgot password link
+[INFO ] 2024-05-07 14:33:45.155 [main] Testhooks - Passed scenario screenshot captured: Forgot password with invalid email address
+[INFO ] 2024-05-07 14:33:45.392 [main] Testhooks - Passed scenario screenshot captured: Forgot password with invalid email address
+[INFO ] 2024-05-07 14:33:45.550 [main] Testhooks - Passed scenario screenshot captured: Forgot password with invalid email address
+[INFO ] 2024-05-07 14:33:45.696 [main] Testhooks - Passed scenario screenshot captured: Forgot password with invalid email address
+[INFO ] 2024-05-07 14:33:45.765 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-07 14:33:45.771 [main] Testhooks - Execution Started
+[INFO ] 2024-05-07 14:33:46.335 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-07 14:33:47.010 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-07 14:33:47.016 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-07 14:33:48.101 [main] Forgotpasswordpage - >> User clicks on forgot password link
+[INFO ] 2024-05-07 14:33:48.228 [main] Testhooks - Passed scenario screenshot captured: Forgot password without providing any credentials
+[INFO ] 2024-05-07 14:33:48.331 [main] Testhooks - Passed scenario screenshot captured: Forgot password without providing any credentials
+[INFO ] 2024-05-07 14:33:48.489 [main] Testhooks - Passed scenario screenshot captured: Forgot password without providing any credentials
+[INFO ] 2024-05-07 14:33:48.630 [main] Testhooks - Passed scenario screenshot captured: Forgot password without providing any credentials
+[INFO ] 2024-05-07 14:33:48.701 [main] Testhooks - Browser got closed

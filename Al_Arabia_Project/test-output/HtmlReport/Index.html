@@ -49,7 +49,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>May 13, 2024 03:59:03 pm</span>
+			<span class='label blue darken-3 suite-start-time'>May 15, 2024 03:32:37 pm</span>
 			</a>
 		</ul>
 	</div>
@@ -76,23 +76,11 @@
 				<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@all</a></li>
-					<li><a href='#'>@signin</a></li>
-					<li><a href='#'>@sanity</a></li>
-					<li><a href='#'>@invalidemailandpassword</a></li>
-					<li><a href='#'>@signin07</a></li>
-					<li><a href='#'>@validcredentials</a></li>
-					<li><a href='#'>@signin06</a></li>
-					<li><a href='#'>@signin08</a></li>
-					<li><a href='#'>@signin04</a></li>
+					<li><a href='#'>@members</a></li>
 					<li><a href='#'>@smoke</a></li>
-					<li><a href='#'>@invalidemail</a></li>
-					<li><a href='#'>@invalidpassword</a></li>
-					<li><a href='#'>@signin03</a></li>
-					<li><a href='#'>@signin02</a></li>
+					<li><a href='#'>@all</a></li>
 					<li><a href='#'>@regression</a></li>
-					<li><a href='#'>@signin01</a></li>
-					<li><a href='#'>@signin05</a></li>
+					<li><a href='#'>@members03</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -131,8 +119,8 @@
 			<ul id='test-collection' class='test-collection'>
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>User Login</span>
-						<span class='test-time'>May 13, 2024 03:59:04 pm</span>
+						<span class='test-name'>Members</span>
+						<span class='test-time'>May 15, 2024 03:32:38 pm</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -142,28 +130,27 @@
 	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
 	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
 </div>
-	<div class='test-desc'>Registered user should be able to login to access the al-arabia features</div>
+	<div class='test-desc'>User should be able to access the members feature</div>
 
 <div class='scenario node' test-id='2' status='pass'>
 
-	<span class='duration right label'>00 00 10.250</span>
+	<span class='duration right label'>00 00 11.491</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Login with valid credentials</div>
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Members feature search</div>
 	</div>
 	
 	
 		<div class='category-list'>
 				<span class='category label'>@all</span>
-				<span class='category label'>@validcredentials</span>
+				<span class='category label'>@smoke</span>
 				<span class='category label'>@regression</span>
-				<span class='category label'>@signin</span>
-				<span class='category label'>@signin01</span>
-				<span class='category label'>@sanity</span>
+				<span class='category label'>@members03</span>
+				<span class='category label'>@members</span>
 		</div>
 	
 	<ul class='steps'>
-		<li test-id='4' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(Stepdefinitions.Signin.user_enters_valid_email_address())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User enters valid email address</div>
+		<li test-id='4' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(Stepdefinitions.Members.Admin_logged_in_with_valid_credentials())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Admin logged in with valid credentials</div>
 
 
 		</li>
@@ -171,13 +158,13 @@
 			<div class="step-name" title="(AFTER_STEP)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Hooks.Testhooks.addScreenshot(io.cucumber.java.Scenario)</div>
 
 
-					<div class="node-step">Passed scenario: Login with valid credentials</div>
+					<div class="node-step">Passed scenario: Members feature search</div>
 					<div class='screenshots'>
 						<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../embedded1.png' src='../embedded1.png'>
 					</div>
 		</li>
-		<li test-id='6' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(Stepdefinitions.Signin.enter_valid_password())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Enter valid password</div>
+		<li test-id='6' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(Stepdefinitions.Members.Al_Arabia_overall_dashboard_should_display())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Al-Arabia overall dashboard should display</div>
 
 
 		</li>
@@ -185,13 +172,13 @@
 			<div class="step-name" title="(AFTER_STEP)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Hooks.Testhooks.addScreenshot(io.cucumber.java.Scenario)</div>
 
 
-					<div class="node-step">Passed scenario: Login with valid credentials</div>
+					<div class="node-step">Passed scenario: Members feature search</div>
 					<div class='screenshots'>
 						<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../embedded2.png' src='../embedded2.png'>
 					</div>
 		</li>
 		<li test-id='8' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(Stepdefinitions.Signin.Click_password_field_eye_icon())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Click password field eye icon</div>
+			<div class="step-name" title="(Stepdefinitions.Members.User_clicks_the_members_module())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User clicks the members module</div>
 
 
 		</li>
@@ -199,13 +186,13 @@
 			<div class="step-name" title="(AFTER_STEP)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Hooks.Testhooks.addScreenshot(io.cucumber.java.Scenario)</div>
 
 
-					<div class="node-step">Passed scenario: Login with valid credentials</div>
+					<div class="node-step">Passed scenario: Members feature search</div>
 					<div class='screenshots'>
 						<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../embedded3.png' src='../embedded3.png'>
 					</div>
 		</li>
 		<li test-id='10' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(Stepdefinitions.Signin.clicks_on_sign_in_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Clicks on Sign in button</div>
+			<div class="step-name" title="(Stepdefinitions.Members.User_search_the_members())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User search the members</div>
 
 
 		</li>
@@ -213,13 +200,13 @@
 			<div class="step-name" title="(AFTER_STEP)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Hooks.Testhooks.addScreenshot(io.cucumber.java.Scenario)</div>
 
 
-					<div class="node-step">Passed scenario: Login with valid credentials</div>
+					<div class="node-step">Passed scenario: Members feature search</div>
 					<div class='screenshots'>
 						<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../embedded4.png' src='../embedded4.png'>
 					</div>
 		</li>
 		<li test-id='12' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(Stepdefinitions.Signin.user_should_login_successfully())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User should login successfully</div>
+			<div class="step-name" title="(Stepdefinitions.Members.Searched_member_details_get_displayed_successfully())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Searched member details get displayed successfully</div>
 
 
 		</li>
@@ -227,541 +214,9 @@
 			<div class="step-name" title="(AFTER_STEP)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Hooks.Testhooks.addScreenshot(io.cucumber.java.Scenario)</div>
 
 
-					<div class="node-step">Passed scenario: Login with valid credentials</div>
+					<div class="node-step">Passed scenario: Members feature search</div>
 					<div class='screenshots'>
 						<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../embedded5.png' src='../embedded5.png'>
-					</div>
-		</li>
-		<li test-id='14' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(Stepdefinitions.Signin.Al_Arabia_dashboard_should_display_successfully())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Al-Arabia dashboard should display successfully</div>
-
-
-		</li>
-		<li test-id='15' class='node * Pass' status='Pass'>
-			<div class="step-name" title="(AFTER_STEP)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Hooks.Testhooks.addScreenshot(io.cucumber.java.Scenario)</div>
-
-
-					<div class="node-step">Passed scenario: Login with valid credentials</div>
-					<div class='screenshots'>
-						<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../embedded6.png' src='../embedded6.png'>
-					</div>
-		</li>
-	</ul>
-</div>
-<div class='scenario node' test-id='17' status='pass'>
-
-	<span class='duration right label'>00 00 07.448</span>
-	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Login with invalid credentials</div>
-	</div>
-	
-	
-		<div class='category-list'>
-				<span class='category label'>@all</span>
-				<span class='category label'>@smoke</span>
-				<span class='category label'>@regression</span>
-				<span class='category label'>@signin</span>
-				<span class='category label'>@invalidemailandpassword</span>
-				<span class='category label'>@signin02</span>
-		</div>
-	
-	<ul class='steps'>
-		<li test-id='19' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(Stepdefinitions.Signin.user_enters_invalid_email_address())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User enters invalid email address</div>
-
-
-		</li>
-		<li test-id='20' class='node * Pass' status='Pass'>
-			<div class="step-name" title="(AFTER_STEP)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Hooks.Testhooks.addScreenshot(io.cucumber.java.Scenario)</div>
-
-
-					<div class="node-step">Passed scenario: Login with invalid credentials</div>
-					<div class='screenshots'>
-						<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../embedded7.png' src='../embedded7.png'>
-					</div>
-		</li>
-		<li test-id='21' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(Stepdefinitions.Signin.enter_invalid_password())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Enter invalid password</div>
-
-
-		</li>
-		<li test-id='22' class='node * Pass' status='Pass'>
-			<div class="step-name" title="(AFTER_STEP)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Hooks.Testhooks.addScreenshot(io.cucumber.java.Scenario)</div>
-
-
-					<div class="node-step">Passed scenario: Login with invalid credentials</div>
-					<div class='screenshots'>
-						<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../embedded8.png' src='../embedded8.png'>
-					</div>
-		</li>
-		<li test-id='23' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(Stepdefinitions.Signin.Click_password_field_eye_icon())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Click password field eye icon</div>
-
-
-		</li>
-		<li test-id='24' class='node * Pass' status='Pass'>
-			<div class="step-name" title="(AFTER_STEP)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Hooks.Testhooks.addScreenshot(io.cucumber.java.Scenario)</div>
-
-
-					<div class="node-step">Passed scenario: Login with invalid credentials</div>
-					<div class='screenshots'>
-						<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../embedded9.png' src='../embedded9.png'>
-					</div>
-		</li>
-		<li test-id='25' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(Stepdefinitions.Signin.User_should_get_a_invalid_email_and_password_error_message())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User should get a invalid email and password error message</div>
-
-
-		</li>
-		<li test-id='26' class='node * Pass' status='Pass'>
-			<div class="step-name" title="(AFTER_STEP)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Hooks.Testhooks.addScreenshot(io.cucumber.java.Scenario)</div>
-
-
-					<div class="node-step">Passed scenario: Login with invalid credentials</div>
-					<div class='screenshots'>
-						<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../embedded10.png' src='../embedded10.png'>
-					</div>
-		</li>
-	</ul>
-</div>
-<div class='scenario node' test-id='28' status='pass'>
-
-	<span class='duration right label'>00 00 08.492</span>
-	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Login with valid email address and invalid password</div>
-	</div>
-	
-	
-		<div class='category-list'>
-				<span class='category label'>@all</span>
-				<span class='category label'>@signin03</span>
-				<span class='category label'>@smoke</span>
-				<span class='category label'>@regression</span>
-				<span class='category label'>@signin</span>
-				<span class='category label'>@invalidpassword</span>
-		</div>
-	
-	<ul class='steps'>
-		<li test-id='30' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(Stepdefinitions.Signin.user_enters_valid_email_address())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User enters valid email address</div>
-
-
-		</li>
-		<li test-id='31' class='node * Pass' status='Pass'>
-			<div class="step-name" title="(AFTER_STEP)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Hooks.Testhooks.addScreenshot(io.cucumber.java.Scenario)</div>
-
-
-					<div class="node-step">Passed scenario: Login with valid email address and invalid password</div>
-					<div class='screenshots'>
-						<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../embedded11.png' src='../embedded11.png'>
-					</div>
-		</li>
-		<li test-id='32' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(Stepdefinitions.Signin.enter_invalid_password_Password())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Enter invalid password Password</div>
-
-
-		</li>
-		<li test-id='33' class='node * Pass' status='Pass'>
-			<div class="step-name" title="(AFTER_STEP)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Hooks.Testhooks.addScreenshot(io.cucumber.java.Scenario)</div>
-
-
-					<div class="node-step">Passed scenario: Login with valid email address and invalid password</div>
-					<div class='screenshots'>
-						<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../embedded12.png' src='../embedded12.png'>
-					</div>
-		</li>
-		<li test-id='34' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(Stepdefinitions.Signin.Click_password_field_eye_icon())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Click password field eye icon</div>
-
-
-		</li>
-		<li test-id='35' class='node * Pass' status='Pass'>
-			<div class="step-name" title="(AFTER_STEP)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Hooks.Testhooks.addScreenshot(io.cucumber.java.Scenario)</div>
-
-
-					<div class="node-step">Passed scenario: Login with valid email address and invalid password</div>
-					<div class='screenshots'>
-						<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../embedded13.png' src='../embedded13.png'>
-					</div>
-		</li>
-		<li test-id='36' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(Stepdefinitions.Signin.User_should_get_must_contain_one_number_error_message())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User should get must contain one number error message</div>
-
-
-		</li>
-		<li test-id='37' class='node * Pass' status='Pass'>
-			<div class="step-name" title="(AFTER_STEP)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Hooks.Testhooks.addScreenshot(io.cucumber.java.Scenario)</div>
-
-
-					<div class="node-step">Passed scenario: Login with valid email address and invalid password</div>
-					<div class='screenshots'>
-						<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../embedded14.png' src='../embedded14.png'>
-					</div>
-		</li>
-	</ul>
-</div>
-<div class='scenario node' test-id='39' status='pass'>
-
-	<span class='duration right label'>00 00 06.591</span>
-	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Login with invalid email address and valid password</div>
-	</div>
-	
-	
-		<div class='category-list'>
-				<span class='category label'>@signin04</span>
-				<span class='category label'>@all</span>
-				<span class='category label'>@smoke</span>
-				<span class='category label'>@regression</span>
-				<span class='category label'>@signin</span>
-				<span class='category label'>@invalidemail</span>
-		</div>
-	
-	<ul class='steps'>
-		<li test-id='41' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(Stepdefinitions.Signin.user_enters_invalid_email_address())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User enters invalid email address</div>
-
-
-		</li>
-		<li test-id='42' class='node * Pass' status='Pass'>
-			<div class="step-name" title="(AFTER_STEP)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Hooks.Testhooks.addScreenshot(io.cucumber.java.Scenario)</div>
-
-
-					<div class="node-step">Passed scenario: Login with invalid email address and valid password</div>
-					<div class='screenshots'>
-						<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../embedded15.png' src='../embedded15.png'>
-					</div>
-		</li>
-		<li test-id='43' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(Stepdefinitions.Signin.enter_valid_password())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Enter valid password</div>
-
-
-		</li>
-		<li test-id='44' class='node * Pass' status='Pass'>
-			<div class="step-name" title="(AFTER_STEP)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Hooks.Testhooks.addScreenshot(io.cucumber.java.Scenario)</div>
-
-
-					<div class="node-step">Passed scenario: Login with invalid email address and valid password</div>
-					<div class='screenshots'>
-						<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../embedded16.png' src='../embedded16.png'>
-					</div>
-		</li>
-		<li test-id='45' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(Stepdefinitions.Signin.Click_password_field_eye_icon())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Click password field eye icon</div>
-
-
-		</li>
-		<li test-id='46' class='node * Pass' status='Pass'>
-			<div class="step-name" title="(AFTER_STEP)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Hooks.Testhooks.addScreenshot(io.cucumber.java.Scenario)</div>
-
-
-					<div class="node-step">Passed scenario: Login with invalid email address and valid password</div>
-					<div class='screenshots'>
-						<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../embedded17.png' src='../embedded17.png'>
-					</div>
-		</li>
-		<li test-id='47' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(Stepdefinitions.Signin.User_should_get_a_invalid_email_and_password_error_message())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User should get a invalid email and password error message</div>
-
-
-		</li>
-		<li test-id='48' class='node * Pass' status='Pass'>
-			<div class="step-name" title="(AFTER_STEP)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Hooks.Testhooks.addScreenshot(io.cucumber.java.Scenario)</div>
-
-
-					<div class="node-step">Passed scenario: Login with invalid email address and valid password</div>
-					<div class='screenshots'>
-						<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../embedded18.png' src='../embedded18.png'>
-					</div>
-		</li>
-	</ul>
-</div>
-<div class='scenario node' test-id='50' status='pass'>
-
-	<span class='duration right label'>00 00 06.917</span>
-	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Login with valid email address and invalid password without special character</div>
-	</div>
-	
-	
-		<div class='category-list'>
-				<span class='category label'>@signin05</span>
-				<span class='category label'>@all</span>
-				<span class='category label'>@smoke</span>
-				<span class='category label'>@regression</span>
-				<span class='category label'>@signin</span>
-				<span class='category label'>@invalidpassword</span>
-		</div>
-	
-	<ul class='steps'>
-		<li test-id='52' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(Stepdefinitions.Signin.user_enters_valid_email_address())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User enters valid email address</div>
-
-
-		</li>
-		<li test-id='53' class='node * Pass' status='Pass'>
-			<div class="step-name" title="(AFTER_STEP)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Hooks.Testhooks.addScreenshot(io.cucumber.java.Scenario)</div>
-
-
-					<div class="node-step">Passed scenario: Login with valid email address and invalid password without special character</div>
-					<div class='screenshots'>
-						<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../embedded19.png' src='../embedded19.png'>
-					</div>
-		</li>
-		<li test-id='54' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(Stepdefinitions.Signin.Enter_invalid_password_without_special_character())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Enter invalid password without special character</div>
-
-
-		</li>
-		<li test-id='55' class='node * Pass' status='Pass'>
-			<div class="step-name" title="(AFTER_STEP)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Hooks.Testhooks.addScreenshot(io.cucumber.java.Scenario)</div>
-
-
-					<div class="node-step">Passed scenario: Login with valid email address and invalid password without special character</div>
-					<div class='screenshots'>
-						<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../embedded20.png' src='../embedded20.png'>
-					</div>
-		</li>
-		<li test-id='56' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(Stepdefinitions.Signin.Click_password_field_eye_icon())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Click password field eye icon</div>
-
-
-		</li>
-		<li test-id='57' class='node * Pass' status='Pass'>
-			<div class="step-name" title="(AFTER_STEP)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Hooks.Testhooks.addScreenshot(io.cucumber.java.Scenario)</div>
-
-
-					<div class="node-step">Passed scenario: Login with valid email address and invalid password without special character</div>
-					<div class='screenshots'>
-						<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../embedded21.png' src='../embedded21.png'>
-					</div>
-		</li>
-		<li test-id='58' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(Stepdefinitions.Signin.User_should_get_must_contain_one_special_case_character_error_message())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User should get must contain one special case character error message</div>
-
-
-		</li>
-		<li test-id='59' class='node * Pass' status='Pass'>
-			<div class="step-name" title="(AFTER_STEP)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Hooks.Testhooks.addScreenshot(io.cucumber.java.Scenario)</div>
-
-
-					<div class="node-step">Passed scenario: Login with valid email address and invalid password without special character</div>
-					<div class='screenshots'>
-						<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../embedded22.png' src='../embedded22.png'>
-					</div>
-		</li>
-	</ul>
-</div>
-<div class='scenario node' test-id='61' status='pass'>
-
-	<span class='duration right label'>00 00 07.141</span>
-	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Login with valid email address and invalid password without special character</div>
-	</div>
-	
-	
-		<div class='category-list'>
-				<span class='category label'>@signin06</span>
-				<span class='category label'>@all</span>
-				<span class='category label'>@smoke</span>
-				<span class='category label'>@regression</span>
-				<span class='category label'>@signin</span>
-				<span class='category label'>@invalidpassword</span>
-		</div>
-	
-	<ul class='steps'>
-		<li test-id='63' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(Stepdefinitions.Signin.user_enters_valid_email_address())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User enters valid email address</div>
-
-
-		</li>
-		<li test-id='64' class='node * Pass' status='Pass'>
-			<div class="step-name" title="(AFTER_STEP)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Hooks.Testhooks.addScreenshot(io.cucumber.java.Scenario)</div>
-
-
-					<div class="node-step">Passed scenario: Login with valid email address and invalid password without special character</div>
-					<div class='screenshots'>
-						<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../embedded23.png' src='../embedded23.png'>
-					</div>
-		</li>
-		<li test-id='65' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(Stepdefinitions.Signin.Enter_invalid_password_without_uppercase_char())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Enter invalid password without uppercase char</div>
-
-
-		</li>
-		<li test-id='66' class='node * Pass' status='Pass'>
-			<div class="step-name" title="(AFTER_STEP)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Hooks.Testhooks.addScreenshot(io.cucumber.java.Scenario)</div>
-
-
-					<div class="node-step">Passed scenario: Login with valid email address and invalid password without special character</div>
-					<div class='screenshots'>
-						<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../embedded24.png' src='../embedded24.png'>
-					</div>
-		</li>
-		<li test-id='67' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(Stepdefinitions.Signin.Click_password_field_eye_icon())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Click password field eye icon</div>
-
-
-		</li>
-		<li test-id='68' class='node * Pass' status='Pass'>
-			<div class="step-name" title="(AFTER_STEP)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Hooks.Testhooks.addScreenshot(io.cucumber.java.Scenario)</div>
-
-
-					<div class="node-step">Passed scenario: Login with valid email address and invalid password without special character</div>
-					<div class='screenshots'>
-						<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../embedded25.png' src='../embedded25.png'>
-					</div>
-		</li>
-		<li test-id='69' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(Stepdefinitions.Signin.User_should_get_must_contain_one_upper_case_character_error_message())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User should get must contain one upper case character error message</div>
-
-
-		</li>
-		<li test-id='70' class='node * Pass' status='Pass'>
-			<div class="step-name" title="(AFTER_STEP)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Hooks.Testhooks.addScreenshot(io.cucumber.java.Scenario)</div>
-
-
-					<div class="node-step">Passed scenario: Login with valid email address and invalid password without special character</div>
-					<div class='screenshots'>
-						<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../embedded26.png' src='../embedded26.png'>
-					</div>
-		</li>
-	</ul>
-</div>
-<div class='scenario node' test-id='72' status='pass'>
-
-	<span class='duration right label'>00 00 07.001</span>
-	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Login with valid email address and invalid password with short character</div>
-	</div>
-	
-	
-		<div class='category-list'>
-				<span class='category label'>@all</span>
-				<span class='category label'>@signin07</span>
-				<span class='category label'>@smoke</span>
-				<span class='category label'>@regression</span>
-				<span class='category label'>@signin</span>
-				<span class='category label'>@invalidpassword</span>
-		</div>
-	
-	<ul class='steps'>
-		<li test-id='74' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(Stepdefinitions.Signin.user_enters_valid_email_address())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User enters valid email address</div>
-
-
-		</li>
-		<li test-id='75' class='node * Pass' status='Pass'>
-			<div class="step-name" title="(AFTER_STEP)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Hooks.Testhooks.addScreenshot(io.cucumber.java.Scenario)</div>
-
-
-					<div class="node-step">Passed scenario: Login with valid email address and invalid password with short character</div>
-					<div class='screenshots'>
-						<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../embedded27.png' src='../embedded27.png'>
-					</div>
-		</li>
-		<li test-id='76' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(Stepdefinitions.Signin.Enter_invalid_password_with_short_char())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Enter invalid password with short char</div>
-
-
-		</li>
-		<li test-id='77' class='node * Pass' status='Pass'>
-			<div class="step-name" title="(AFTER_STEP)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Hooks.Testhooks.addScreenshot(io.cucumber.java.Scenario)</div>
-
-
-					<div class="node-step">Passed scenario: Login with valid email address and invalid password with short character</div>
-					<div class='screenshots'>
-						<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../embedded28.png' src='../embedded28.png'>
-					</div>
-		</li>
-		<li test-id='78' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(Stepdefinitions.Signin.Click_password_field_eye_icon())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Click password field eye icon</div>
-
-
-		</li>
-		<li test-id='79' class='node * Pass' status='Pass'>
-			<div class="step-name" title="(AFTER_STEP)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Hooks.Testhooks.addScreenshot(io.cucumber.java.Scenario)</div>
-
-
-					<div class="node-step">Passed scenario: Login with valid email address and invalid password with short character</div>
-					<div class='screenshots'>
-						<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../embedded29.png' src='../embedded29.png'>
-					</div>
-		</li>
-		<li test-id='80' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(Stepdefinitions.Signin.User_should_get_password_is_too_short_error_message())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User should get password is too short error message</div>
-
-
-		</li>
-		<li test-id='81' class='node * Pass' status='Pass'>
-			<div class="step-name" title="(AFTER_STEP)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Hooks.Testhooks.addScreenshot(io.cucumber.java.Scenario)</div>
-
-
-					<div class="node-step">Passed scenario: Login with valid email address and invalid password with short character</div>
-					<div class='screenshots'>
-						<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../embedded30.png' src='../embedded30.png'>
-					</div>
-		</li>
-	</ul>
-</div>
-<div class='scenario node' test-id='83' status='pass'>
-
-	<span class='duration right label'>00 00 06.811</span>
-	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Login without email address and password</div>
-	</div>
-	
-	
-		<div class='category-list'>
-				<span class='category label'>@all</span>
-				<span class='category label'>@signin08</span>
-				<span class='category label'>@smoke</span>
-				<span class='category label'>@regression</span>
-				<span class='category label'>@signin</span>
-				<span class='category label'>@invalidpassword</span>
-		</div>
-	
-	<ul class='steps'>
-		<li test-id='85' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(Stepdefinitions.Signin.Click_email_field())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Click email field</div>
-
-
-		</li>
-		<li test-id='86' class='node * Pass' status='Pass'>
-			<div class="step-name" title="(AFTER_STEP)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Hooks.Testhooks.addScreenshot(io.cucumber.java.Scenario)</div>
-
-
-					<div class="node-step">Passed scenario: Login without email address and password</div>
-					<div class='screenshots'>
-						<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../embedded31.png' src='../embedded31.png'>
-					</div>
-		</li>
-		<li test-id='87' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(Stepdefinitions.Signin.Click_password_field())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Click password field</div>
-
-
-		</li>
-		<li test-id='88' class='node * Pass' status='Pass'>
-			<div class="step-name" title="(AFTER_STEP)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Hooks.Testhooks.addScreenshot(io.cucumber.java.Scenario)</div>
-
-
-					<div class="node-step">Passed scenario: Login without email address and password</div>
-					<div class='screenshots'>
-						<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../embedded32.png' src='../embedded32.png'>
-					</div>
-		</li>
-		<li test-id='89' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(Stepdefinitions.Signin.User_should_get_required_error_message())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User should get required error message</div>
-
-
-		</li>
-		<li test-id='90' class='node * Pass' status='Pass'>
-			<div class="step-name" title="(AFTER_STEP)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Hooks.Testhooks.addScreenshot(io.cucumber.java.Scenario)</div>
-
-
-					<div class="node-step">Passed scenario: Login without email address and password</div>
-					<div class='screenshots'>
-						<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../embedded33.png' src='../embedded33.png'>
 					</div>
 		</li>
 	</ul>
@@ -817,7 +272,7 @@
                 </div>
                 <div class='block text-small'>
                     <span class='tooltipped' data-position='top' data-tooltip='100%'>
-                    <span class='strong'>8</span> scenarios passed</span>
+                    <span class='strong'>1</span> scenarios passed</span>
                 </div>
                 <div class='block text-small'>
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -837,7 +292,7 @@
                 </div>
                 <div class='block text-small'>
                     <span class='tooltipped' data-position='top' data-tooltip='100%'>
-                    <span class='strong'>66</span> steps passed</span>
+                    <span class='strong'>10</span> steps passed</span>
                 </div>
                 <div class='block text-small'>
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -881,143 +336,7 @@
 			<ul id='category-collection' class='category-collection'>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@all</span>
-						<span class='category-status right'>
-						<span class='label pass'>8</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 8</span>
-							
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>May 13, 2024 03:59:04 pm</td>
-										<td class='linked' test-id='2'>Login with valid credentials</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>May 13, 2024 03:59:14 pm</td>
-										<td class='linked' test-id='17'>Login with invalid credentials</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>May 13, 2024 03:59:22 pm</td>
-										<td class='linked' test-id='28'>Login with valid email address and invalid password</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>May 13, 2024 03:59:30 pm</td>
-										<td class='linked' test-id='39'>Login with invalid email address and valid password</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>May 13, 2024 03:59:37 pm</td>
-										<td class='linked' test-id='50'>Login with valid email address and invalid password without special character</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>May 13, 2024 03:59:44 pm</td>
-										<td class='linked' test-id='61'>Login with valid email address and invalid password without special character</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>May 13, 2024 03:59:51 pm</td>
-										<td class='linked' test-id='72'>Login with valid email address and invalid password with short character</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>May 13, 2024 03:59:58 pm</td>
-										<td class='linked' test-id='83'>Login without email address and password</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@signin</span>
-						<span class='category-status right'>
-						<span class='label pass'>8</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 8</span>
-							
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>May 13, 2024 03:59:04 pm</td>
-										<td class='linked' test-id='2'>Login with valid credentials</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>May 13, 2024 03:59:14 pm</td>
-										<td class='linked' test-id='17'>Login with invalid credentials</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>May 13, 2024 03:59:22 pm</td>
-										<td class='linked' test-id='28'>Login with valid email address and invalid password</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>May 13, 2024 03:59:30 pm</td>
-										<td class='linked' test-id='39'>Login with invalid email address and valid password</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>May 13, 2024 03:59:37 pm</td>
-										<td class='linked' test-id='50'>Login with valid email address and invalid password without special character</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>May 13, 2024 03:59:44 pm</td>
-										<td class='linked' test-id='61'>Login with valid email address and invalid password without special character</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>May 13, 2024 03:59:51 pm</td>
-										<td class='linked' test-id='72'>Login with valid email address and invalid password with short character</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>May 13, 2024 03:59:58 pm</td>
-										<td class='linked' test-id='83'>Login without email address and password</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@sanity</span>
+						<span class='category-name'>@members</span>
 						<span class='category-status right'>
 						<span class='label pass'>1</span>
 						</span>
@@ -1039,206 +358,8 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>May 13, 2024 03:59:04 pm</td>
-										<td class='linked' test-id='2'>Login with valid credentials</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@invalidemailandpassword</span>
-						<span class='category-status right'>
-						<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>May 13, 2024 03:59:14 pm</td>
-										<td class='linked' test-id='17'>Login with invalid credentials</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@signin07</span>
-						<span class='category-status right'>
-						<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>May 13, 2024 03:59:51 pm</td>
-										<td class='linked' test-id='72'>Login with valid email address and invalid password with short character</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@validcredentials</span>
-						<span class='category-status right'>
-						<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>May 13, 2024 03:59:04 pm</td>
-										<td class='linked' test-id='2'>Login with valid credentials</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@signin06</span>
-						<span class='category-status right'>
-						<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>May 13, 2024 03:59:44 pm</td>
-										<td class='linked' test-id='61'>Login with valid email address and invalid password without special character</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@signin08</span>
-						<span class='category-status right'>
-						<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>May 13, 2024 03:59:58 pm</td>
-										<td class='linked' test-id='83'>Login without email address and password</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@signin04</span>
-						<span class='category-status right'>
-						<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>May 13, 2024 03:59:30 pm</td>
-										<td class='linked' test-id='39'>Login with invalid email address and valid password</td>
+										<td>May 15, 2024 03:32:38 pm</td>
+										<td class='linked' test-id='2'>Members feature search</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
@@ -1250,12 +371,12 @@
 					<div class='category-heading'>
 						<span class='category-name'>@smoke</span>
 						<span class='category-status right'>
-						<span class='label pass'>7</span>
+						<span class='label pass'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 7</span>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
 							
 							
 						</div>
@@ -1270,38 +391,8 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>May 13, 2024 03:59:14 pm</td>
-										<td class='linked' test-id='17'>Login with invalid credentials</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>May 13, 2024 03:59:22 pm</td>
-										<td class='linked' test-id='28'>Login with valid email address and invalid password</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>May 13, 2024 03:59:30 pm</td>
-										<td class='linked' test-id='39'>Login with invalid email address and valid password</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>May 13, 2024 03:59:37 pm</td>
-										<td class='linked' test-id='50'>Login with valid email address and invalid password without special character</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>May 13, 2024 03:59:44 pm</td>
-										<td class='linked' test-id='61'>Login with valid email address and invalid password without special character</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>May 13, 2024 03:59:51 pm</td>
-										<td class='linked' test-id='72'>Login with valid email address and invalid password with short character</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>May 13, 2024 03:59:58 pm</td>
-										<td class='linked' test-id='83'>Login without email address and password</td>
+										<td>May 15, 2024 03:32:38 pm</td>
+										<td class='linked' test-id='2'>Members feature search</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
@@ -1311,7 +402,7 @@
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@invalidemail</span>
+						<span class='category-name'>@all</span>
 						<span class='category-status right'>
 						<span class='label pass'>1</span>
 						</span>
@@ -1333,127 +424,8 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>May 13, 2024 03:59:30 pm</td>
-										<td class='linked' test-id='39'>Login with invalid email address and valid password</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@invalidpassword</span>
-						<span class='category-status right'>
-						<span class='label pass'>5</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 5</span>
-							
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>May 13, 2024 03:59:22 pm</td>
-										<td class='linked' test-id='28'>Login with valid email address and invalid password</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>May 13, 2024 03:59:37 pm</td>
-										<td class='linked' test-id='50'>Login with valid email address and invalid password without special character</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>May 13, 2024 03:59:44 pm</td>
-										<td class='linked' test-id='61'>Login with valid email address and invalid password without special character</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>May 13, 2024 03:59:51 pm</td>
-										<td class='linked' test-id='72'>Login with valid email address and invalid password with short character</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>May 13, 2024 03:59:58 pm</td>
-										<td class='linked' test-id='83'>Login without email address and password</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@signin03</span>
-						<span class='category-status right'>
-						<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>May 13, 2024 03:59:22 pm</td>
-										<td class='linked' test-id='28'>Login with valid email address and invalid password</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@signin02</span>
-						<span class='category-status right'>
-						<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>May 13, 2024 03:59:14 pm</td>
-										<td class='linked' test-id='17'>Login with invalid credentials</td>
+										<td>May 15, 2024 03:32:38 pm</td>
+										<td class='linked' test-id='2'>Members feature search</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
@@ -1465,12 +437,12 @@
 					<div class='category-heading'>
 						<span class='category-name'>@regression</span>
 						<span class='category-status right'>
-						<span class='label pass'>8</span>
+						<span class='label pass'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 8</span>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
 							
 							
 						</div>
@@ -1485,43 +457,8 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>May 13, 2024 03:59:04 pm</td>
-										<td class='linked' test-id='2'>Login with valid credentials</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>May 13, 2024 03:59:14 pm</td>
-										<td class='linked' test-id='17'>Login with invalid credentials</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>May 13, 2024 03:59:22 pm</td>
-										<td class='linked' test-id='28'>Login with valid email address and invalid password</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>May 13, 2024 03:59:30 pm</td>
-										<td class='linked' test-id='39'>Login with invalid email address and valid password</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>May 13, 2024 03:59:37 pm</td>
-										<td class='linked' test-id='50'>Login with valid email address and invalid password without special character</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>May 13, 2024 03:59:44 pm</td>
-										<td class='linked' test-id='61'>Login with valid email address and invalid password without special character</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>May 13, 2024 03:59:51 pm</td>
-										<td class='linked' test-id='72'>Login with valid email address and invalid password with short character</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>May 13, 2024 03:59:58 pm</td>
-										<td class='linked' test-id='83'>Login without email address and password</td>
+										<td>May 15, 2024 03:32:38 pm</td>
+										<td class='linked' test-id='2'>Members feature search</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
@@ -1531,7 +468,7 @@
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@signin01</span>
+						<span class='category-name'>@members03</span>
 						<span class='category-status right'>
 						<span class='label pass'>1</span>
 						</span>
@@ -1553,41 +490,8 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>May 13, 2024 03:59:04 pm</td>
-										<td class='linked' test-id='2'>Login with valid credentials</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@signin05</span>
-						<span class='category-status right'>
-						<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>May 13, 2024 03:59:37 pm</td>
-										<td class='linked' test-id='50'>Login with valid email address and invalid password without special character</td>
+										<td>May 15, 2024 03:32:38 pm</td>
+										<td class='linked' test-id='2'>Members feature search</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
@@ -1618,31 +522,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>8</div>
+					<div class='panel-lead'>1</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>66</div>
+					<div class='panel-lead'>10</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>May 13, 2024 03:59:03 pm</div>
+					<div class='panel-lead'>May 15, 2024 03:32:37 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>May 13, 2024 04:00:05 pm</div>
+			 		<div class='panel-lead'>May 15, 2024 03:32:49 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>00 01 01.310</div>
+					<div class='panel-lead'>00 00 12.048</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -1658,79 +562,7 @@
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>@all</td>
-							<td>8</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>@signin</td>
-							<td>8</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>@sanity</td>
-							<td>1</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>@invalidemailandpassword</td>
-							<td>1</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>@signin07</td>
-							<td>1</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>@validcredentials</td>
-							<td>1</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>@signin06</td>
-							<td>1</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>@signin08</td>
-							<td>1</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>@signin04</td>
+							<td>@members</td>
 							<td>1</td>
 							<td>0</td>
 							<td>0</td>
@@ -1740,15 +572,6 @@
 						</tr>
 						<tr>
 							<td>@smoke</td>
-							<td>7</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>@invalidemail</td>
 							<td>1</td>
 							<td>0</td>
 							<td>0</td>
@@ -1757,25 +580,7 @@
 							</td>
 						</tr>
 						<tr>
-							<td>@invalidpassword</td>
-							<td>5</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>@signin03</td>
-							<td>1</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>@signin02</td>
+							<td>@all</td>
 							<td>1</td>
 							<td>0</td>
 							<td>0</td>
@@ -1785,15 +590,6 @@
 						</tr>
 						<tr>
 							<td>@regression</td>
-							<td>8</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>@signin01</td>
 							<td>1</td>
 							<td>0</td>
 							<td>0</td>
@@ -1802,7 +598,7 @@
 							</td>
 						</tr>
 						<tr>
-							<td>@signin05</td>
+							<td>@members03</td>
 							<td>1</td>
 							<td>0</td>
 							<td>0</td>
@@ -1828,16 +624,16 @@
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				childCount: 8,
-				passChild: 8,
+				childCount: 1,
+				passChild: 1,
 				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				grandChildCount: 66,
-				passGrandChild: 66,
+				grandChildCount: 10,
+				passGrandChild: 10,
 				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
@@ -1849,7 +645,7 @@
 		
 		<script>
 			var timeline = {
-			        "User Login":60.709
+			        "Members":11.495
 			};
 		</script>
 		

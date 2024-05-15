@@ -23,7 +23,7 @@ public class Testhooks extends Base {
 	public WebDriver driver;
 	public WebDriverWait wait;
 	public Signinpage signinpage;
-	public Memberspage signuppage;
+	public Memberspage memberspage;
 	public Forgotpasswordpage forgotpasswordpage;
 	 private static Logger LOGGER =
 			   LogManager.getLogger(Testhooks.class);
@@ -41,7 +41,7 @@ public class Testhooks extends Base {
 		driver = initializeDriver();
 		LOGGER.info("Browser got launched");
 		signinpage = new Signinpage(driver);
-		signuppage = new Memberspage(driver);
+		memberspage = new Memberspage(driver);
 		forgotpasswordpage = new Forgotpasswordpage(driver);
 		driver.get(prop.getProperty("Al_Arabia_URL"));
 

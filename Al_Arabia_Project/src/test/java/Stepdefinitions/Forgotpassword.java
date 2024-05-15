@@ -1,9 +1,6 @@
 package Stepdefinitions;
 
-import java.time.Duration;
-
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import Hooks.Testhooks;
 import io.cucumber.java.en.And;
@@ -13,30 +10,27 @@ import pageobjects.Forgotpasswordpage;
 import resources.Base;
 
 public class Forgotpassword extends Base {
-	public WebDriver driver;
-	public WebDriverWait wait;
+	private WebDriver driver;
+	private Forgotpasswordpage forgotPasswordPage;
 
 	public Forgotpassword(Testhooks testhooks) {
 		this.driver = testhooks.getDriver();
-		initializeWait();
-	}
-	public void initializeWait() {
-		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		this.forgotPasswordPage = new Forgotpasswordpage(driver);
 	}
 
 	@When("User clicks forgot password option")
 	public void user_clicks_forgot_password_option() {
-		Forgotpasswordpage.forgot_click();
+		forgotPasswordPage.clickForgotPasswordLink();
 	}
 
 	@When("^User enters forgot password valid email address$")
 	public void user_enters_forgot_password_valid_email_address() {
-		Forgotpasswordpage.email_field();
+		forgotPasswordPage.enterValidEmail();
 	}
 
 	@When("User clicks Send Reset link button")
 	public void user_clicks_send_reset_link_button() {
-		Forgotpasswordpage.send_resetlink();
+		forgotPasswordPage.clickSendResetLink();
 	}
 
 	@Then("Proper confirmation email message should receive to user mail")
@@ -46,23 +40,23 @@ public class Forgotpassword extends Base {
 
 	@When("^User enters forgot password invalid email address$")
 	public void user_enters_forgot_password_invalid_email_address() {
-		Forgotpasswordpage.invalid_email();
-		Forgotpasswordpage.click_english();
+		forgotPasswordPage.enterInvalidEmail();
+		forgotPasswordPage.clickEnglishLink();
 	}
 
 	@Then("User should get a email address or phone number is required error message")
 	public void User_should_get_a_email_address_or_phone_number_is_required_error_message() {
-		Forgotpasswordpage.required_error();
+		forgotPasswordPage.isRequiredErrorDisplayed();
 	}
 
 	@Then("User should get a invalid email address error message in forgotpassword page")
 	public void user_should_get_a_invalid_email_address_error_message_in_forgotpassword_page() {
-		Forgotpasswordpage.invalid_email_error();
+		forgotPasswordPage.isInvalidEmailErrorDisplayed();
 	}
-	
+
 	@And("User enters forgot password invalid email address and delete")
 	public void User_enters_forgot_password_invalid_email_address_and_delete() {
-		Forgotpasswordpage.invalid_email_delete();
-		Forgotpasswordpage.click_english();
+		forgotPasswordPage.deleteInvalidEmail();
+		forgotPasswordPage.clickEnglishLink();
 	}
 }

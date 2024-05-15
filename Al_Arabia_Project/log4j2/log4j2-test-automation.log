@@ -1,642 +1,291 @@
-[INFO ] 2024-05-10 11:42:03.881 [main] Testhooks - Execution Started
-[INFO ] 2024-05-10 11:42:04.815 [main] Testhooks - Browser got launched
-[INFO ] 2024-05-10 11:42:09.797 [main] Testhooks - Navigated to url
-[INFO ] 2024-05-10 11:42:09.941 [main] Testhooks - Page is zoomed out
-[INFO ] 2024-05-10 11:42:26.787 [main] Testhooks - Failed scenario screenshot got capturedCheck members dashboard page
-[INFO ] 2024-05-10 11:42:26.875 [main] Testhooks - Browser got closed
-[INFO ] 2024-05-10 11:43:44.673 [main] Testhooks - Execution Started
-[INFO ] 2024-05-10 11:43:45.582 [main] Testhooks - Browser got launched
-[INFO ] 2024-05-10 11:43:50.624 [main] Testhooks - Navigated to url
-[INFO ] 2024-05-10 11:43:50.767 [main] Testhooks - Page is zoomed out
-[INFO ] 2024-05-10 11:43:51.894 [main] Signinpage - >> User enters valid email address
-[INFO ] 2024-05-10 11:43:51.978 [main] Signinpage - >> User enters valid password
-[INFO ] 2024-05-10 11:43:52.038 [main] Signinpage - >> User clicks on signin button
-[INFO ] 2024-05-10 11:43:52.038 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-05-10 11:43:52.231 [main] Testhooks - Passed scenario screenshot captured: Check members dashboard page
-[INFO ] 2024-05-10 11:43:54.617 [main] Memberspage - >> Admin/User got navigated to members page
-[INFO ] 2024-05-10 11:43:54.821 [main] Testhooks - Passed scenario screenshot captured: Check members dashboard page
-[INFO ] 2024-05-10 11:44:10.519 [main] Testhooks - Failed scenario screenshot got capturedCheck members dashboard page
-[INFO ] 2024-05-10 11:44:10.607 [main] Testhooks - Browser got closed
-[INFO ] 2024-05-10 11:44:49.178 [main] Testhooks - Execution Started
-[INFO ] 2024-05-10 11:44:50.086 [main] Testhooks - Browser got launched
-[INFO ] 2024-05-10 11:44:54.242 [main] Testhooks - Navigated to url
-[INFO ] 2024-05-10 11:44:54.388 [main] Testhooks - Page is zoomed out
-[INFO ] 2024-05-10 11:44:55.520 [main] Signinpage - >> User enters valid email address
-[INFO ] 2024-05-10 11:44:55.605 [main] Signinpage - >> User enters valid password
-[INFO ] 2024-05-10 11:44:55.670 [main] Signinpage - >> User clicks on signin button
-[INFO ] 2024-05-10 11:44:55.671 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-05-10 11:44:55.875 [main] Testhooks - Passed scenario screenshot captured: Check members dashboard page
-[INFO ] 2024-05-10 11:44:58.196 [main] Memberspage - >> Admin/User got navigated to members page
-[INFO ] 2024-05-10 11:44:58.398 [main] Testhooks - Passed scenario screenshot captured: Check members dashboard page
-[INFO ] 2024-05-10 11:45:14.216 [main] Testhooks - Failed scenario screenshot got capturedCheck members dashboard page
-[INFO ] 2024-05-10 11:50:28.622 [main] Testhooks - Execution Started
-[INFO ] 2024-05-10 11:50:29.508 [main] Testhooks - Browser got launched
-[INFO ] 2024-05-10 11:50:33.583 [main] Testhooks - Navigated to url
-[INFO ] 2024-05-10 11:50:33.723 [main] Testhooks - Page is zoomed out
-[INFO ] 2024-05-10 11:50:34.848 [main] Signinpage - >> User enters valid email address
-[INFO ] 2024-05-10 11:50:34.927 [main] Signinpage - >> User enters valid password
-[INFO ] 2024-05-10 11:50:34.993 [main] Signinpage - >> User clicks on signin button
-[INFO ] 2024-05-10 11:50:34.993 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-05-10 11:50:35.184 [main] Testhooks - Passed scenario screenshot captured: Check members dashboard page
-[INFO ] 2024-05-10 11:50:51.331 [main] Testhooks - Failed scenario screenshot got capturedCheck members dashboard page
-[INFO ] 2024-05-10 11:54:29.373 [main] Testhooks - Execution Started
-[INFO ] 2024-05-10 11:54:30.301 [main] Testhooks - Browser got launched
-[INFO ] 2024-05-10 11:54:34.858 [main] Testhooks - Navigated to url
-[INFO ] 2024-05-10 11:54:34.998 [main] Testhooks - Page is zoomed out
-[INFO ] 2024-05-10 11:54:36.142 [main] Signinpage - >> User enters valid email address
-[INFO ] 2024-05-10 11:54:36.222 [main] Signinpage - >> User enters valid password
-[INFO ] 2024-05-10 11:54:36.293 [main] Signinpage - >> User clicks on signin button
-[INFO ] 2024-05-10 11:54:36.293 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-05-10 11:54:36.493 [main] Testhooks - Passed scenario screenshot captured: Check members dashboard page
-[INFO ] 2024-05-10 11:54:53.011 [main] Testhooks - Failed scenario screenshot got capturedCheck members dashboard page
-[INFO ] 2024-05-10 11:57:05.308 [main] Testhooks - Execution Started
-[INFO ] 2024-05-10 11:57:06.240 [main] Testhooks - Browser got launched
-[INFO ] 2024-05-10 11:57:10.406 [main] Testhooks - Navigated to url
-[INFO ] 2024-05-10 11:57:10.558 [main] Testhooks - Page is zoomed out
-[INFO ] 2024-05-10 11:57:11.682 [main] Signinpage - >> User enters valid email address
-[INFO ] 2024-05-10 11:57:11.763 [main] Signinpage - >> User enters valid password
-[INFO ] 2024-05-10 11:57:11.824 [main] Signinpage - >> User clicks on signin button
-[INFO ] 2024-05-10 11:57:11.824 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-05-10 11:57:11.983 [main] Testhooks - Passed scenario screenshot captured: Check members dashboard page
-[INFO ] 2024-05-10 11:57:30.053 [main] Testhooks - Failed scenario screenshot got capturedCheck members dashboard page
-[INFO ] 2024-05-10 12:00:43.718 [main] Testhooks - Execution Started
-[INFO ] 2024-05-10 12:00:44.579 [main] Testhooks - Browser got launched
-[INFO ] 2024-05-10 12:00:49.303 [main] Testhooks - Navigated to url
-[INFO ] 2024-05-10 12:00:49.449 [main] Testhooks - Page is zoomed out
-[INFO ] 2024-05-10 12:00:50.586 [main] Signinpage - >> User enters valid email address
-[INFO ] 2024-05-10 12:00:50.668 [main] Signinpage - >> User enters valid password
-[INFO ] 2024-05-10 12:00:50.731 [main] Signinpage - >> User clicks on signin button
-[INFO ] 2024-05-10 12:00:50.731 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-05-10 12:00:50.920 [main] Testhooks - Passed scenario screenshot captured: Check members dashboard page
-[INFO ] 2024-05-10 12:01:07.901 [main] Testhooks - Failed scenario screenshot got capturedCheck members dashboard page
-[INFO ] 2024-05-10 12:03:06.006 [main] Testhooks - Execution Started
-[INFO ] 2024-05-10 12:03:06.959 [main] Testhooks - Browser got launched
-[INFO ] 2024-05-10 12:03:12.609 [main] Testhooks - Navigated to url
-[INFO ] 2024-05-10 12:03:12.755 [main] Testhooks - Page is zoomed out
-[INFO ] 2024-05-10 12:03:13.881 [main] Signinpage - >> User enters valid email address
-[INFO ] 2024-05-10 12:03:13.964 [main] Signinpage - >> User enters valid password
-[INFO ] 2024-05-10 12:03:14.024 [main] Signinpage - >> User clicks on signin button
-[INFO ] 2024-05-10 12:03:14.024 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-05-10 12:03:14.212 [main] Testhooks - Passed scenario screenshot captured: Check members dashboard page
-[INFO ] 2024-05-10 12:03:29.994 [main] Testhooks - Failed scenario screenshot got capturedCheck members dashboard page
-[INFO ] 2024-05-10 12:03:59.688 [main] Testhooks - Execution Started
-[INFO ] 2024-05-10 12:04:00.648 [main] Testhooks - Browser got launched
-[INFO ] 2024-05-10 12:04:04.758 [main] Testhooks - Navigated to url
-[INFO ] 2024-05-10 12:04:04.906 [main] Testhooks - Page is zoomed out
-[INFO ] 2024-05-10 12:04:06.036 [main] Signinpage - >> User enters valid email address
-[INFO ] 2024-05-10 12:04:06.121 [main] Signinpage - >> User enters valid password
-[INFO ] 2024-05-10 12:04:06.184 [main] Signinpage - >> User clicks on signin button
-[INFO ] 2024-05-10 12:04:06.185 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-05-10 12:04:06.384 [main] Testhooks - Passed scenario screenshot captured: Check members dashboard page
-[INFO ] 2024-05-10 12:04:09.245 [main] Memberspage - >> Admin/User got navigated to members page
-[INFO ] 2024-05-10 12:04:09.363 [main] Testhooks - Passed scenario screenshot captured: Check members dashboard page
-[INFO ] 2024-05-10 12:04:25.008 [main] Testhooks - Failed scenario screenshot got capturedCheck members dashboard page
-[INFO ] 2024-05-10 12:06:02.856 [main] Testhooks - Execution Started
-[INFO ] 2024-05-10 12:06:03.770 [main] Testhooks - Browser got launched
-[INFO ] 2024-05-10 12:06:08.788 [main] Testhooks - Navigated to url
-[INFO ] 2024-05-10 12:06:08.934 [main] Testhooks - Page is zoomed out
-[INFO ] 2024-05-10 12:06:10.064 [main] Signinpage - >> User enters valid email address
-[INFO ] 2024-05-10 12:06:10.147 [main] Signinpage - >> User enters valid password
-[INFO ] 2024-05-10 12:06:10.208 [main] Signinpage - >> User clicks on signin button
-[INFO ] 2024-05-10 12:06:10.209 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-05-10 12:06:10.397 [main] Testhooks - Passed scenario screenshot captured: Check members dashboard page
-[INFO ] 2024-05-10 12:06:12.769 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-05-10 12:06:12.998 [main] Testhooks - Passed scenario screenshot captured: Check members dashboard page
-[INFO ] 2024-05-10 12:06:13.121 [main] Memberspage - >> Admin/User got navigated to members page
-[INFO ] 2024-05-10 12:06:13.247 [main] Testhooks - Passed scenario screenshot captured: Check members dashboard page
-[INFO ] 2024-05-10 12:06:13.295 [main] Memberspage - >> The members dashboard list page got displayed
-[INFO ] 2024-05-10 12:06:13.295 [main] Members - >> Admin/user got the members dashboard page >>
-[INFO ] 2024-05-10 12:06:13.415 [main] Testhooks - Passed scenario screenshot captured: Check members dashboard page
-[INFO ] 2024-05-10 12:06:29.126 [main] Testhooks - Failed scenario screenshot got capturedCheck members dashboard page
-[INFO ] 2024-05-10 12:07:47.714 [main] Testhooks - Execution Started
-[INFO ] 2024-05-10 12:07:48.637 [main] Testhooks - Browser got launched
-[INFO ] 2024-05-10 12:07:54.207 [main] Testhooks - Navigated to url
-[INFO ] 2024-05-10 12:07:54.360 [main] Testhooks - Page is zoomed out
-[INFO ] 2024-05-10 12:07:55.492 [main] Signinpage - >> User enters valid email address
-[INFO ] 2024-05-10 12:07:55.576 [main] Signinpage - >> User enters valid password
-[INFO ] 2024-05-10 12:07:55.637 [main] Signinpage - >> User clicks on signin button
-[INFO ] 2024-05-10 12:07:55.637 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-05-10 12:07:55.824 [main] Testhooks - Passed scenario screenshot captured: Check members dashboard page
-[INFO ] 2024-05-10 12:07:58.027 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-05-10 12:07:58.201 [main] Testhooks - Passed scenario screenshot captured: Check members dashboard page
-[INFO ] 2024-05-10 12:07:58.382 [main] Memberspage - >> Admin/User got navigated to members page
-[INFO ] 2024-05-10 12:07:58.497 [main] Testhooks - Passed scenario screenshot captured: Check members dashboard page
-[INFO ] 2024-05-10 12:07:58.548 [main] Memberspage - >> The members dashboard list page got displayed
-[INFO ] 2024-05-10 12:07:58.548 [main] Members - >> Admin/user got the members dashboard page >>
-[INFO ] 2024-05-10 12:07:58.674 [main] Testhooks - Passed scenario screenshot captured: Check members dashboard page
-[INFO ] 2024-05-10 12:45:27.778 [main] Testhooks - Execution Started
-[INFO ] 2024-05-10 12:45:28.670 [main] Testhooks - Browser got launched
-[INFO ] 2024-05-10 12:45:32.780 [main] Testhooks - Navigated to url
-[INFO ] 2024-05-10 12:45:32.922 [main] Testhooks - Page is zoomed out
-[INFO ] 2024-05-10 12:45:34.054 [main] Signinpage - >> User enters valid email address
-[INFO ] 2024-05-10 12:45:34.134 [main] Signinpage - >> User enters valid password
-[INFO ] 2024-05-10 12:45:34.196 [main] Signinpage - >> User clicks on signin button
-[INFO ] 2024-05-10 12:45:34.197 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-05-10 12:45:34.373 [main] Testhooks - Passed scenario screenshot captured: Check members dashboard page
-[INFO ] 2024-05-10 12:45:36.604 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-05-10 12:45:36.702 [main] Testhooks - Passed scenario screenshot captured: Check members dashboard page
-[INFO ] 2024-05-10 12:45:37.345 [main] Memberspage - >> Admin/User got navigated to members page
-[INFO ] 2024-05-10 12:45:37.482 [main] Testhooks - Passed scenario screenshot captured: Check members dashboard page
-[INFO ] 2024-05-10 12:45:38.719 [main] Testhooks - Failed scenario screenshot got capturedCheck members dashboard page
-[INFO ] 2024-05-10 12:48:06.158 [main] Testhooks - Execution Started
-[INFO ] 2024-05-10 12:48:07.070 [main] Testhooks - Browser got launched
-[INFO ] 2024-05-10 12:48:11.547 [main] Testhooks - Navigated to url
-[INFO ] 2024-05-10 12:48:11.700 [main] Testhooks - Page is zoomed out
-[INFO ] 2024-05-10 12:48:12.817 [main] Signinpage - >> User enters valid email address
-[INFO ] 2024-05-10 12:48:12.898 [main] Signinpage - >> User enters valid password
-[INFO ] 2024-05-10 12:48:12.959 [main] Signinpage - >> User clicks on signin button
-[INFO ] 2024-05-10 12:48:12.959 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-05-10 12:48:13.152 [main] Testhooks - Passed scenario screenshot captured: Check members dashboard page
-[INFO ] 2024-05-10 12:48:15.513 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-05-10 12:48:15.666 [main] Testhooks - Passed scenario screenshot captured: Check members dashboard page
-[INFO ] 2024-05-10 12:48:15.849 [main] Memberspage - >> Admin/User got navigated to members page
-[INFO ] 2024-05-10 12:48:15.967 [main] Testhooks - Passed scenario screenshot captured: Check members dashboard page
-[INFO ] 2024-05-10 12:48:17.191 [main] Testhooks - Failed scenario screenshot got capturedCheck members dashboard page
-[INFO ] 2024-05-10 12:50:40.907 [main] Testhooks - Execution Started
-[INFO ] 2024-05-10 12:50:41.825 [main] Testhooks - Browser got launched
-[INFO ] 2024-05-10 12:50:46.056 [main] Testhooks - Navigated to url
-[INFO ] 2024-05-10 12:50:46.193 [main] Testhooks - Page is zoomed out
-[INFO ] 2024-05-10 12:50:47.326 [main] Signinpage - >> User enters valid email address
-[INFO ] 2024-05-10 12:50:47.407 [main] Signinpage - >> User enters valid password
-[INFO ] 2024-05-10 12:50:47.471 [main] Signinpage - >> User clicks on signin button
-[INFO ] 2024-05-10 12:50:47.472 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-05-10 12:50:47.664 [main] Testhooks - Passed scenario screenshot captured: Check members dashboard page
-[INFO ] 2024-05-10 12:50:50.134 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-05-10 12:50:50.295 [main] Testhooks - Passed scenario screenshot captured: Check members dashboard page
-[INFO ] 2024-05-10 12:50:50.460 [main] Memberspage - >> Admin/User got navigated to members page
-[INFO ] 2024-05-10 12:50:50.595 [main] Testhooks - Passed scenario screenshot captured: Check members dashboard page
-[INFO ] 2024-05-10 12:50:50.751 [main] Testhooks - Failed scenario screenshot got capturedCheck members dashboard page
-[INFO ] 2024-05-10 12:53:29.023 [main] Testhooks - Execution Started
-[INFO ] 2024-05-10 12:53:29.908 [main] Testhooks - Browser got launched
-[INFO ] 2024-05-10 12:53:34.215 [main] Testhooks - Navigated to url
-[INFO ] 2024-05-10 12:53:34.368 [main] Testhooks - Page is zoomed out
-[INFO ] 2024-05-10 12:53:35.492 [main] Signinpage - >> User enters valid email address
-[INFO ] 2024-05-10 12:53:35.575 [main] Signinpage - >> User enters valid password
-[INFO ] 2024-05-10 12:53:35.638 [main] Signinpage - >> User clicks on signin button
-[INFO ] 2024-05-10 12:53:35.638 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-05-10 12:53:35.831 [main] Testhooks - Passed scenario screenshot captured: Check members dashboard page
-[INFO ] 2024-05-10 12:53:38.198 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-05-10 12:53:38.409 [main] Testhooks - Passed scenario screenshot captured: Check members dashboard page
-[INFO ] 2024-05-10 12:53:38.538 [main] Memberspage - >> Admin/User got navigated to members page
-[INFO ] 2024-05-10 12:53:38.650 [main] Testhooks - Passed scenario screenshot captured: Check members dashboard page
-[INFO ] 2024-05-10 12:53:39.833 [main] Testhooks - Failed scenario screenshot got capturedCheck members dashboard page
-[INFO ] 2024-05-10 12:54:25.844 [main] Testhooks - Execution Started
-[INFO ] 2024-05-10 12:54:26.739 [main] Testhooks - Browser got launched
-[INFO ] 2024-05-10 12:54:31.627 [main] Testhooks - Navigated to url
-[INFO ] 2024-05-10 12:54:31.777 [main] Testhooks - Page is zoomed out
-[INFO ] 2024-05-10 12:54:32.919 [main] Signinpage - >> User enters valid email address
-[INFO ] 2024-05-10 12:54:33.002 [main] Signinpage - >> User enters valid password
-[INFO ] 2024-05-10 12:54:33.066 [main] Signinpage - >> User clicks on signin button
-[INFO ] 2024-05-10 12:54:33.066 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-05-10 12:54:33.244 [main] Testhooks - Passed scenario screenshot captured: Check members dashboard page
-[INFO ] 2024-05-10 12:54:35.434 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-05-10 12:54:35.584 [main] Testhooks - Passed scenario screenshot captured: Check members dashboard page
-[INFO ] 2024-05-10 12:54:35.859 [main] Memberspage - >> Admin/User got navigated to members page
-[INFO ] 2024-05-10 12:54:35.964 [main] Testhooks - Passed scenario screenshot captured: Check members dashboard page
-[INFO ] 2024-05-10 12:54:37.208 [main] Testhooks - Failed scenario screenshot got capturedCheck members dashboard page
-[INFO ] 2024-05-10 12:55:32.876 [main] Testhooks - Execution Started
-[INFO ] 2024-05-10 12:55:33.776 [main] Testhooks - Browser got launched
-[INFO ] 2024-05-10 12:55:37.832 [main] Testhooks - Navigated to url
-[INFO ] 2024-05-10 12:55:37.983 [main] Testhooks - Page is zoomed out
-[INFO ] 2024-05-10 12:55:39.127 [main] Signinpage - >> User enters valid email address
-[INFO ] 2024-05-10 12:55:39.207 [main] Signinpage - >> User enters valid password
-[INFO ] 2024-05-10 12:55:39.270 [main] Signinpage - >> User clicks on signin button
-[INFO ] 2024-05-10 12:55:39.270 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-05-10 12:55:39.464 [main] Testhooks - Passed scenario screenshot captured: Invite the member with valid inputs
-[INFO ] 2024-05-10 12:55:41.876 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-05-10 12:55:42.022 [main] Testhooks - Passed scenario screenshot captured: Invite the member with valid inputs
-[INFO ] 2024-05-10 12:55:42.188 [main] Memberspage - >> Admin/User got navigated to members page
-[INFO ] 2024-05-10 12:55:42.315 [main] Testhooks - Passed scenario screenshot captured: Invite the member with valid inputs
-[INFO ] 2024-05-10 12:55:43.374 [main] Memberspage - >> User clicked the invite member button
-[INFO ] 2024-05-10 12:55:43.460 [main] Testhooks - Passed scenario screenshot captured: Invite the member with valid inputs
-[INFO ] 2024-05-10 12:55:43.698 [main] Memberspage - >> User clicked the invite member button
-[INFO ] 2024-05-10 12:55:43.806 [main] Testhooks - Passed scenario screenshot captured: Invite the member with valid inputs
-[INFO ] 2024-05-10 12:55:44.029 [main] Testhooks - Failed scenario screenshot got capturedInvite the member with valid inputs
-[INFO ] 2024-05-10 14:46:09.163 [main] Testhooks - Execution Started
-[INFO ] 2024-05-10 14:46:10.116 [main] Testhooks - Browser got launched
-[INFO ] 2024-05-10 14:46:14.333 [main] Testhooks - Navigated to url
-[INFO ] 2024-05-10 14:46:14.487 [main] Testhooks - Page is zoomed out
-[INFO ] 2024-05-10 14:46:15.625 [main] Signinpage - >> User enters valid email address
-[INFO ] 2024-05-10 14:46:15.706 [main] Signinpage - >> User enters valid password
-[INFO ] 2024-05-10 14:46:15.768 [main] Signinpage - >> User clicks on signin button
-[INFO ] 2024-05-10 14:46:15.768 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-05-10 14:46:15.950 [main] Testhooks - Passed scenario screenshot captured: Invite the member with valid inputs
-[INFO ] 2024-05-10 14:46:18.305 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-05-10 14:46:18.464 [main] Testhooks - Passed scenario screenshot captured: Invite the member with valid inputs
-[INFO ] 2024-05-10 14:46:18.668 [main] Memberspage - >> Admin/User got navigated to members page
-[INFO ] 2024-05-10 14:46:18.812 [main] Testhooks - Passed scenario screenshot captured: Invite the member with valid inputs
-[INFO ] 2024-05-10 14:46:19.872 [main] Memberspage - >> User clicked the invite member button
-[INFO ] 2024-05-10 14:46:19.976 [main] Testhooks - Passed scenario screenshot captured: Invite the member with valid inputs
-[INFO ] 2024-05-10 14:46:20.214 [main] Memberspage - >> User clicked the invite member button
-[INFO ] 2024-05-10 14:46:20.329 [main] Testhooks - Passed scenario screenshot captured: Invite the member with valid inputs
-[INFO ] 2024-05-10 14:46:30.465 [main] Testhooks - Failed scenario screenshot got capturedInvite the member with valid inputs
-[INFO ] 2024-05-10 14:47:19.055 [main] Testhooks - Execution Started
-[INFO ] 2024-05-10 14:47:19.957 [main] Testhooks - Browser got launched
-[INFO ] 2024-05-10 14:47:24.851 [main] Testhooks - Navigated to url
-[INFO ] 2024-05-10 14:47:24.995 [main] Testhooks - Page is zoomed out
-[INFO ] 2024-05-10 14:47:26.122 [main] Signinpage - >> User enters valid email address
-[INFO ] 2024-05-10 14:47:26.203 [main] Signinpage - >> User enters valid password
-[INFO ] 2024-05-10 14:47:26.264 [main] Signinpage - >> User clicks on signin button
-[INFO ] 2024-05-10 14:47:26.264 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-05-10 14:47:26.463 [main] Testhooks - Passed scenario screenshot captured: Invite the member with valid inputs
-[INFO ] 2024-05-10 14:47:28.850 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-05-10 14:47:29.019 [main] Testhooks - Passed scenario screenshot captured: Invite the member with valid inputs
-[INFO ] 2024-05-10 14:47:29.133 [main] Memberspage - >> Admin/User got navigated to members page
-[INFO ] 2024-05-10 14:47:29.297 [main] Testhooks - Passed scenario screenshot captured: Invite the member with valid inputs
-[INFO ] 2024-05-10 14:47:30.579 [main] Testhooks - Failed scenario screenshot got capturedInvite the member with valid inputs
-[INFO ] 2024-05-10 14:47:51.455 [main] Testhooks - Execution Started
-[INFO ] 2024-05-10 14:47:52.368 [main] Testhooks - Browser got launched
-[INFO ] 2024-05-10 14:47:56.605 [main] Testhooks - Navigated to url
-[INFO ] 2024-05-10 14:47:56.725 [main] Testhooks - Page is zoomed out
-[INFO ] 2024-05-10 14:47:57.849 [main] Signinpage - >> User enters valid email address
-[INFO ] 2024-05-10 14:47:57.934 [main] Signinpage - >> User enters valid password
-[INFO ] 2024-05-10 14:47:57.998 [main] Signinpage - >> User clicks on signin button
-[INFO ] 2024-05-10 14:47:57.998 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-05-10 14:47:58.153 [main] Testhooks - Passed scenario screenshot captured: Invite the member with valid inputs
-[INFO ] 2024-05-10 14:48:00.393 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-05-10 14:48:00.525 [main] Testhooks - Passed scenario screenshot captured: Invite the member with valid inputs
-[INFO ] 2024-05-10 14:48:01.742 [main] Testhooks - Failed scenario screenshot got capturedInvite the member with valid inputs
-[INFO ] 2024-05-10 14:48:27.333 [main] Testhooks - Execution Started
-[INFO ] 2024-05-10 14:48:28.289 [main] Testhooks - Browser got launched
-[INFO ] 2024-05-10 14:48:32.606 [main] Testhooks - Navigated to url
-[INFO ] 2024-05-10 14:48:32.817 [main] Testhooks - Page is zoomed out
-[INFO ] 2024-05-10 14:48:33.961 [main] Signinpage - >> User enters valid email address
-[INFO ] 2024-05-10 14:48:34.044 [main] Signinpage - >> User enters valid password
-[INFO ] 2024-05-10 14:48:34.108 [main] Signinpage - >> User clicks on signin button
-[INFO ] 2024-05-10 14:48:34.108 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-05-10 14:48:34.273 [main] Testhooks - Passed scenario screenshot captured: Invite the member with valid inputs
-[INFO ] 2024-05-10 14:48:36.510 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-05-10 14:48:36.668 [main] Testhooks - Passed scenario screenshot captured: Invite the member with valid inputs
-[INFO ] 2024-05-10 14:48:36.990 [main] Memberspage - >> Admin/User got navigated to members page
-[INFO ] 2024-05-10 14:48:37.120 [main] Testhooks - Passed scenario screenshot captured: Invite the member with valid inputs
-[INFO ] 2024-05-10 14:48:38.255 [main] Memberspage - >> User clicked the invite member button
-[INFO ] 2024-05-10 14:48:38.396 [main] Testhooks - Passed scenario screenshot captured: Invite the member with valid inputs
-[INFO ] 2024-05-10 14:48:38.631 [main] Memberspage - >> User clicked the invite member button
-[INFO ] 2024-05-10 14:48:38.735 [main] Testhooks - Passed scenario screenshot captured: Invite the member with valid inputs
-[INFO ] 2024-05-10 14:48:38.910 [main] Testhooks - Failed scenario screenshot got capturedInvite the member with valid inputs
-[INFO ] 2024-05-10 14:51:46.794 [main] Testhooks - Execution Started
-[INFO ] 2024-05-10 14:51:47.705 [main] Testhooks - Browser got launched
-[INFO ] 2024-05-10 14:51:52.572 [main] Testhooks - Navigated to url
-[INFO ] 2024-05-10 14:51:52.739 [main] Testhooks - Page is zoomed out
-[INFO ] 2024-05-10 14:51:53.868 [main] Signinpage - >> User enters valid email address
-[INFO ] 2024-05-10 14:51:53.950 [main] Signinpage - >> User enters valid password
-[INFO ] 2024-05-10 14:51:54.012 [main] Signinpage - >> User clicks on signin button
-[INFO ] 2024-05-10 14:51:54.012 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-05-10 14:51:54.191 [main] Testhooks - Passed scenario screenshot captured: Invite the member with valid inputs
-[INFO ] 2024-05-10 14:51:56.544 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-05-10 14:51:56.703 [main] Testhooks - Passed scenario screenshot captured: Invite the member with valid inputs
-[INFO ] 2024-05-10 14:51:56.827 [main] Memberspage - >> Admin/User got navigated to members page
-[INFO ] 2024-05-10 14:51:56.968 [main] Testhooks - Passed scenario screenshot captured: Invite the member with valid inputs
-[INFO ] 2024-05-10 14:51:58.279 [main] Testhooks - Failed scenario screenshot got capturedInvite the member with valid inputs
-[INFO ] 2024-05-10 14:55:17.967 [main] Testhooks - Execution Started
-[INFO ] 2024-05-10 14:55:18.891 [main] Testhooks - Browser got launched
-[INFO ] 2024-05-10 14:55:22.916 [main] Testhooks - Navigated to url
-[INFO ] 2024-05-10 14:55:23.062 [main] Testhooks - Page is zoomed out
-[INFO ] 2024-05-10 14:55:24.192 [main] Signinpage - >> User enters valid email address
-[INFO ] 2024-05-10 14:55:24.274 [main] Signinpage - >> User enters valid password
-[INFO ] 2024-05-10 14:55:24.336 [main] Signinpage - >> User clicks on signin button
-[INFO ] 2024-05-10 14:55:24.336 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-05-10 14:55:24.529 [main] Testhooks - Passed scenario screenshot captured: Invite the member with valid inputs
-[INFO ] 2024-05-10 14:55:26.776 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-05-10 14:55:26.969 [main] Testhooks - Passed scenario screenshot captured: Invite the member with valid inputs
-[INFO ] 2024-05-10 14:55:27.149 [main] Memberspage - >> Admin/User got navigated to members page
-[INFO ] 2024-05-10 14:55:27.272 [main] Testhooks - Passed scenario screenshot captured: Invite the member with valid inputs
-[INFO ] 2024-05-10 14:55:37.608 [main] Testhooks - Failed scenario screenshot got capturedInvite the member with valid inputs
-[INFO ] 2024-05-10 14:57:11.032 [main] Testhooks - Execution Started
-[INFO ] 2024-05-10 14:57:11.988 [main] Testhooks - Browser got launched
-[INFO ] 2024-05-10 14:57:16.289 [main] Testhooks - Navigated to url
-[INFO ] 2024-05-10 14:57:16.442 [main] Testhooks - Page is zoomed out
-[INFO ] 2024-05-10 14:57:17.596 [main] Signinpage - >> User enters valid email address
-[INFO ] 2024-05-10 14:57:17.685 [main] Signinpage - >> User enters valid password
-[INFO ] 2024-05-10 14:57:17.759 [main] Signinpage - >> User clicks on signin button
-[INFO ] 2024-05-10 14:57:17.759 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-05-10 14:57:17.943 [main] Testhooks - Passed scenario screenshot captured: Invite the member with valid inputs
-[INFO ] 2024-05-10 14:57:20.333 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-05-10 14:57:20.476 [main] Testhooks - Passed scenario screenshot captured: Invite the member with valid inputs
-[INFO ] 2024-05-10 14:57:20.631 [main] Memberspage - >> Admin/User got navigated to members page
-[INFO ] 2024-05-10 14:57:20.759 [main] Testhooks - Passed scenario screenshot captured: Invite the member with valid inputs
-[INFO ] 2024-05-10 14:57:21.936 [main] Memberspage - >> User clicked the invite member button
-[INFO ] 2024-05-10 14:57:22.058 [main] Testhooks - Passed scenario screenshot captured: Invite the member with valid inputs
-[INFO ] 2024-05-10 14:57:22.300 [main] Memberspage - >> User clicked the invite member button
-[INFO ] 2024-05-10 14:57:22.415 [main] Testhooks - Passed scenario screenshot captured: Invite the member with valid inputs
-[INFO ] 2024-05-10 14:57:43.043 [main] Testhooks - Failed scenario screenshot got capturedInvite the member with valid inputs
-[INFO ] 2024-05-10 14:58:09.992 [main] Testhooks - Execution Started
-[INFO ] 2024-05-10 14:58:10.873 [main] Testhooks - Browser got launched
-[INFO ] 2024-05-10 14:58:15.221 [main] Testhooks - Navigated to url
-[INFO ] 2024-05-10 14:58:15.368 [main] Testhooks - Page is zoomed out
-[INFO ] 2024-05-10 14:58:16.499 [main] Signinpage - >> User enters valid email address
-[INFO ] 2024-05-10 14:58:16.584 [main] Signinpage - >> User enters valid password
-[INFO ] 2024-05-10 14:58:16.649 [main] Signinpage - >> User clicks on signin button
-[INFO ] 2024-05-10 14:58:16.649 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-05-10 14:58:16.833 [main] Testhooks - Passed scenario screenshot captured: Invite the member with valid inputs
-[INFO ] 2024-05-10 14:58:19.107 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-05-10 14:58:19.278 [main] Testhooks - Passed scenario screenshot captured: Invite the member with valid inputs
-[INFO ] 2024-05-10 14:58:19.461 [main] Memberspage - >> Admin/User got navigated to members page
-[INFO ] 2024-05-10 14:58:19.558 [main] Testhooks - Passed scenario screenshot captured: Invite the member with valid inputs
-[INFO ] 2024-05-10 14:58:20.815 [main] Memberspage - >> User clicked the invite member button
-[INFO ] 2024-05-10 14:58:20.919 [main] Testhooks - Passed scenario screenshot captured: Invite the member with valid inputs
-[INFO ] 2024-05-10 14:58:21.149 [main] Memberspage - >> User clicked the invite member button
-[INFO ] 2024-05-10 14:58:21.256 [main] Testhooks - Passed scenario screenshot captured: Invite the member with valid inputs
-[INFO ] 2024-05-10 14:58:21.426 [main] Memberspage - >> User selected the role:Supervisor
-[INFO ] 2024-05-10 14:58:21.562 [main] Testhooks - Passed scenario screenshot captured: Invite the member with valid inputs
-[INFO ] 2024-05-10 14:58:41.711 [main] Testhooks - Failed scenario screenshot got capturedInvite the member with valid inputs
-[INFO ] 2024-05-10 15:00:43.597 [main] Testhooks - Execution Started
-[INFO ] 2024-05-10 15:00:44.518 [main] Testhooks - Browser got launched
-[INFO ] 2024-05-10 15:00:49.214 [main] Testhooks - Navigated to url
-[INFO ] 2024-05-10 15:00:49.353 [main] Testhooks - Page is zoomed out
-[INFO ] 2024-05-10 15:00:50.475 [main] Signinpage - >> User enters valid email address
-[INFO ] 2024-05-10 15:00:50.558 [main] Signinpage - >> User enters valid password
-[INFO ] 2024-05-10 15:00:50.620 [main] Signinpage - >> User clicks on signin button
-[INFO ] 2024-05-10 15:00:50.621 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-05-10 15:00:50.815 [main] Testhooks - Passed scenario screenshot captured: Invite the member with valid inputs
-[INFO ] 2024-05-10 15:00:53.108 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-05-10 15:00:53.269 [main] Testhooks - Passed scenario screenshot captured: Invite the member with valid inputs
-[INFO ] 2024-05-10 15:00:53.391 [main] Memberspage - >> Admin/User got navigated to members page
-[INFO ] 2024-05-10 15:00:53.529 [main] Testhooks - Passed scenario screenshot captured: Invite the member with valid inputs
-[INFO ] 2024-05-10 15:00:54.825 [main] Memberspage - >> User clicked the invite member button
-[INFO ] 2024-05-10 15:00:54.942 [main] Testhooks - Passed scenario screenshot captured: Invite the member with valid inputs
-[INFO ] 2024-05-10 15:00:55.192 [main] Memberspage - >> User clicked the invite member button
-[INFO ] 2024-05-10 15:00:55.303 [main] Testhooks - Passed scenario screenshot captured: Invite the member with valid inputs
-[INFO ] 2024-05-10 15:00:55.445 [main] Memberspage - >> User selected the role:Supervisor
-[INFO ] 2024-05-10 15:00:55.551 [main] Testhooks - Passed scenario screenshot captured: Invite the member with valid inputs
-[INFO ] 2024-05-10 15:01:15.746 [main] Testhooks - Failed scenario screenshot got capturedInvite the member with valid inputs
-[INFO ] 2024-05-10 15:02:25.646 [main] Testhooks - Execution Started
-[INFO ] 2024-05-10 15:02:26.540 [main] Testhooks - Browser got launched
-[INFO ] 2024-05-10 15:02:31.592 [main] Testhooks - Navigated to url
-[INFO ] 2024-05-10 15:02:31.762 [main] Testhooks - Page is zoomed out
-[INFO ] 2024-05-10 15:02:32.882 [main] Signinpage - >> User enters valid email address
-[INFO ] 2024-05-10 15:02:32.964 [main] Signinpage - >> User enters valid password
-[INFO ] 2024-05-10 15:02:33.024 [main] Signinpage - >> User clicks on signin button
-[INFO ] 2024-05-10 15:02:33.025 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-05-10 15:02:33.203 [main] Testhooks - Passed scenario screenshot captured: Invite the member with valid inputs
-[INFO ] 2024-05-10 15:02:35.416 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-05-10 15:02:35.617 [main] Testhooks - Passed scenario screenshot captured: Invite the member with valid inputs
-[INFO ] 2024-05-10 15:02:35.874 [main] Memberspage - >> Admin/User got navigated to members page
-[INFO ] 2024-05-10 15:02:36.004 [main] Testhooks - Passed scenario screenshot captured: Invite the member with valid inputs
-[INFO ] 2024-05-10 15:02:38.369 [main] Memberspage - >> User clicked the invite member button
-[INFO ] 2024-05-10 15:02:38.483 [main] Testhooks - Passed scenario screenshot captured: Invite the member with valid inputs
-[INFO ] 2024-05-10 15:02:38.708 [main] Memberspage - >> User clicked the invite member button
-[INFO ] 2024-05-10 15:02:38.806 [main] Testhooks - Passed scenario screenshot captured: Invite the member with valid inputs
-[INFO ] 2024-05-10 15:02:38.943 [main] Memberspage - >> User selected the role:Supervisor
-[INFO ] 2024-05-10 15:02:39.059 [main] Testhooks - Passed scenario screenshot captured: Invite the member with valid inputs
-[INFO ] 2024-05-10 15:02:39.174 [main] Memberspage - >> User selected the role:Installation
-[INFO ] 2024-05-10 15:02:39.288 [main] Testhooks - Passed scenario screenshot captured: Invite the member with valid inputs
-[INFO ] 2024-05-10 15:02:39.290 [main] Members - >> User got the invitation mail successfully >>
-[INFO ] 2024-05-10 15:02:39.365 [main] Testhooks - Passed scenario screenshot captured: Invite the member with valid inputs
-[INFO ] 2024-05-10 15:10:55.925 [main] Testhooks - Execution Started
-[INFO ] 2024-05-10 15:10:56.848 [main] Testhooks - Browser got launched
-[INFO ] 2024-05-10 15:11:14.538 [main] Testhooks - Navigated to url
-[INFO ] 2024-05-10 15:11:14.684 [main] Testhooks - Page is zoomed out
-[INFO ] 2024-05-10 15:11:15.818 [main] Signinpage - >> User enters valid email address
-[INFO ] 2024-05-10 15:11:15.974 [main] Testhooks - Passed scenario screenshot captured: Login with valid credentials
-[INFO ] 2024-05-10 15:11:16.065 [main] Signinpage - >> User enters valid password
-[INFO ] 2024-05-10 15:11:16.195 [main] Testhooks - Passed scenario screenshot captured: Login with valid credentials
-[INFO ] 2024-05-10 15:11:17.458 [main] Testhooks - Failed scenario screenshot got capturedLogin with valid credentials
-[INFO ] 2024-05-10 15:11:17.538 [main] Testhooks - Browser got closed
-[INFO ] 2024-05-10 15:11:17.563 [main] Testhooks - Execution Started
-[INFO ] 2024-05-10 15:11:18.144 [main] Testhooks - Browser got launched
-[INFO ] 2024-05-10 15:11:23.472 [main] Testhooks - Navigated to url
-[INFO ] 2024-05-10 15:11:23.476 [main] Testhooks - Page is zoomed out
-[INFO ] 2024-05-10 15:12:33.690 [main] Testhooks - Execution Started
-[INFO ] 2024-05-10 15:12:34.612 [main] Testhooks - Browser got launched
-[INFO ] 2024-05-10 15:12:38.988 [main] Testhooks - Navigated to url
-[INFO ] 2024-05-10 15:12:39.128 [main] Testhooks - Page is zoomed out
-[INFO ] 2024-05-10 15:12:40.266 [main] Signinpage - >> User enters valid email address
-[INFO ] 2024-05-10 15:12:40.469 [main] Testhooks - Passed scenario screenshot captured: Login with valid credentials
-[INFO ] 2024-05-10 15:12:40.556 [main] Signinpage - >> User enters valid password
-[INFO ] 2024-05-10 15:12:40.715 [main] Testhooks - Passed scenario screenshot captured: Login with valid credentials
-[INFO ] 2024-05-10 15:12:40.955 [main] Testhooks - Passed scenario screenshot captured: Login with valid credentials
-[INFO ] 2024-05-10 15:12:41.012 [main] Signinpage - >> User clicks on signin button
-[INFO ] 2024-05-10 15:12:41.185 [main] Testhooks - Passed scenario screenshot captured: Login with valid credentials
-[INFO ] 2024-05-10 15:12:43.538 [main] Signinpage - >> Al-Arabia user got signed in successfully
-[INFO ] 2024-05-10 15:12:43.716 [main] Testhooks - Passed scenario screenshot captured: Login with valid credentials
-[INFO ] 2024-05-10 15:12:43.853 [main] Signinpage - >> Al-Arabia user got signed in successfully
-[INFO ] 2024-05-10 15:12:43.965 [main] Testhooks - Passed scenario screenshot captured: Login with valid credentials
-[INFO ] 2024-05-10 15:12:44.045 [main] Testhooks - Browser got closed
-[INFO ] 2024-05-10 15:12:44.059 [main] Testhooks - Execution Started
-[INFO ] 2024-05-10 15:12:44.642 [main] Testhooks - Browser got launched
-[INFO ] 2024-05-10 15:12:48.736 [main] Testhooks - Navigated to url
-[INFO ] 2024-05-10 15:12:48.740 [main] Testhooks - Page is zoomed out
-[INFO ] 2024-05-10 15:12:50.050 [main] Testhooks - Passed scenario screenshot captured: Login with invalid credentials
-[INFO ] 2024-05-10 15:12:50.305 [main] Testhooks - Passed scenario screenshot captured: Login with invalid credentials
-[INFO ] 2024-05-10 15:12:50.530 [main] Testhooks - Passed scenario screenshot captured: Login with invalid credentials
-[INFO ] 2024-05-10 15:12:50.745 [main] Testhooks - Passed scenario screenshot captured: Login with invalid credentials
-[INFO ] 2024-05-10 15:12:50.816 [main] Testhooks - Browser got closed
-[INFO ] 2024-05-10 15:12:50.830 [main] Testhooks - Execution Started
-[INFO ] 2024-05-10 15:12:51.430 [main] Testhooks - Browser got launched
-[INFO ] 2024-05-10 15:12:55.587 [main] Testhooks - Navigated to url
-[INFO ] 2024-05-10 15:12:55.591 [main] Testhooks - Page is zoomed out
-[INFO ] 2024-05-10 15:12:56.714 [main] Signinpage - >> User enters valid email address
-[INFO ] 2024-05-10 15:12:56.898 [main] Testhooks - Passed scenario screenshot captured: Login with valid email address and invalid password
-[INFO ] 2024-05-10 15:12:57.147 [main] Testhooks - Passed scenario screenshot captured: Login with valid email address and invalid password
-[INFO ] 2024-05-10 15:12:57.368 [main] Testhooks - Passed scenario screenshot captured: Login with valid email address and invalid password
-[INFO ] 2024-05-10 15:12:57.554 [main] Testhooks - Passed scenario screenshot captured: Login with valid email address and invalid password
-[INFO ] 2024-05-10 15:12:57.623 [main] Testhooks - Browser got closed
-[INFO ] 2024-05-10 15:12:57.631 [main] Testhooks - Execution Started
-[INFO ] 2024-05-10 15:12:58.195 [main] Testhooks - Browser got launched
-[INFO ] 2024-05-10 15:13:02.443 [main] Testhooks - Navigated to url
-[INFO ] 2024-05-10 15:13:02.447 [main] Testhooks - Page is zoomed out
-[INFO ] 2024-05-10 15:13:03.729 [main] Testhooks - Passed scenario screenshot captured: Login with invalid email address and valid password
-[INFO ] 2024-05-10 15:13:03.809 [main] Signinpage - >> User enters valid password
-[INFO ] 2024-05-10 15:13:03.977 [main] Testhooks - Passed scenario screenshot captured: Login with invalid email address and valid password
-[INFO ] 2024-05-10 15:13:04.190 [main] Testhooks - Passed scenario screenshot captured: Login with invalid email address and valid password
-[INFO ] 2024-05-10 15:13:04.371 [main] Testhooks - Passed scenario screenshot captured: Login with invalid email address and valid password
-[INFO ] 2024-05-10 15:13:04.442 [main] Testhooks - Browser got closed
-[INFO ] 2024-05-10 15:13:04.449 [main] Testhooks - Execution Started
-[INFO ] 2024-05-10 15:13:05.026 [main] Testhooks - Browser got launched
-[INFO ] 2024-05-10 15:13:09.688 [main] Testhooks - Navigated to url
-[INFO ] 2024-05-10 15:13:09.692 [main] Testhooks - Page is zoomed out
-[INFO ] 2024-05-10 15:13:10.816 [main] Signinpage - >> User enters valid email address
-[INFO ] 2024-05-10 15:13:10.992 [main] Testhooks - Passed scenario screenshot captured: Login with valid email address and invalid password without special character
-[INFO ] 2024-05-10 15:13:11.245 [main] Testhooks - Passed scenario screenshot captured: Login with valid email address and invalid password without special character
-[INFO ] 2024-05-10 15:13:11.459 [main] Testhooks - Passed scenario screenshot captured: Login with valid email address and invalid password without special character
-[INFO ] 2024-05-10 15:13:11.668 [main] Testhooks - Passed scenario screenshot captured: Login with valid email address and invalid password without special character
-[INFO ] 2024-05-10 15:13:11.737 [main] Testhooks - Browser got closed
-[INFO ] 2024-05-10 15:13:11.746 [main] Testhooks - Execution Started
-[INFO ] 2024-05-10 15:13:12.312 [main] Testhooks - Browser got launched
-[INFO ] 2024-05-10 15:13:16.444 [main] Testhooks - Navigated to url
-[INFO ] 2024-05-10 15:13:16.449 [main] Testhooks - Page is zoomed out
-[INFO ] 2024-05-10 15:13:17.588 [main] Signinpage - >> User enters valid email address
-[INFO ] 2024-05-10 15:13:17.771 [main] Testhooks - Passed scenario screenshot captured: Login with valid email address and invalid password without special character
-[INFO ] 2024-05-10 15:13:18.028 [main] Testhooks - Passed scenario screenshot captured: Login with valid email address and invalid password without special character
-[INFO ] 2024-05-10 15:13:18.261 [main] Testhooks - Passed scenario screenshot captured: Login with valid email address and invalid password without special character
-[INFO ] 2024-05-10 15:13:18.485 [main] Testhooks - Passed scenario screenshot captured: Login with valid email address and invalid password without special character
-[INFO ] 2024-05-10 15:13:18.556 [main] Testhooks - Browser got closed
-[INFO ] 2024-05-10 15:13:18.562 [main] Testhooks - Execution Started
-[INFO ] 2024-05-10 15:13:19.123 [main] Testhooks - Browser got launched
-[INFO ] 2024-05-10 15:13:24.016 [main] Testhooks - Navigated to url
-[INFO ] 2024-05-10 15:13:24.020 [main] Testhooks - Page is zoomed out
-[INFO ] 2024-05-10 15:13:25.156 [main] Signinpage - >> User enters valid email address
-[INFO ] 2024-05-10 15:13:25.329 [main] Testhooks - Passed scenario screenshot captured: Login with valid email address and invalid password with short character
-[INFO ] 2024-05-10 15:13:25.558 [main] Testhooks - Passed scenario screenshot captured: Login with valid email address and invalid password with short character
-[INFO ] 2024-05-10 15:13:25.773 [main] Testhooks - Passed scenario screenshot captured: Login with valid email address and invalid password with short character
-[INFO ] 2024-05-10 15:13:25.999 [main] Testhooks - Passed scenario screenshot captured: Login with valid email address and invalid password with short character
-[INFO ] 2024-05-10 15:13:26.071 [main] Testhooks - Browser got closed
-[INFO ] 2024-05-10 15:13:26.079 [main] Testhooks - Execution Started
-[INFO ] 2024-05-10 15:13:26.665 [main] Testhooks - Browser got launched
-[INFO ] 2024-05-10 15:13:31.365 [main] Testhooks - Navigated to url
-[INFO ] 2024-05-10 15:13:31.369 [main] Testhooks - Page is zoomed out
-[INFO ] 2024-05-10 15:13:32.633 [main] Testhooks - Passed scenario screenshot captured: Login without email address and password
-[INFO ] 2024-05-10 15:13:32.857 [main] Testhooks - Passed scenario screenshot captured: Login without email address and password
-[INFO ] 2024-05-10 15:13:33.073 [main] Testhooks - Passed scenario screenshot captured: Login without email address and password
-[INFO ] 2024-05-10 15:13:33.143 [main] Testhooks - Browser got closed
-[INFO ] 2024-05-10 15:13:33.158 [main] Testhooks - Execution Started
-[INFO ] 2024-05-10 15:13:33.747 [main] Testhooks - Browser got launched
-[INFO ] 2024-05-10 15:13:38.185 [main] Testhooks - Navigated to url
-[INFO ] 2024-05-10 15:13:38.189 [main] Testhooks - Page is zoomed out
-[INFO ] 2024-05-10 15:13:39.273 [main] Forgotpasswordpage - >> User clicks on forgot password link
-[INFO ] 2024-05-10 15:13:39.449 [main] Testhooks - Passed scenario screenshot captured: Reset password on forgetting it
-[INFO ] 2024-05-10 15:13:39.775 [main] Testhooks - Passed scenario screenshot captured: Reset password on forgetting it
-[INFO ] 2024-05-10 15:13:40.005 [main] Testhooks - Passed scenario screenshot captured: Reset password on forgetting it
-[INFO ] 2024-05-10 15:13:40.202 [main] Testhooks - Passed scenario screenshot captured: Reset password on forgetting it
-[INFO ] 2024-05-10 15:13:40.271 [main] Testhooks - Browser got closed
-[INFO ] 2024-05-10 15:13:40.277 [main] Testhooks - Execution Started
-[INFO ] 2024-05-10 15:13:40.871 [main] Testhooks - Browser got launched
-[INFO ] 2024-05-10 15:13:45.969 [main] Testhooks - Navigated to url
-[INFO ] 2024-05-10 15:13:45.973 [main] Testhooks - Page is zoomed out
-[INFO ] 2024-05-10 15:13:47.052 [main] Forgotpasswordpage - >> User clicks on forgot password link
-[INFO ] 2024-05-10 15:13:47.227 [main] Testhooks - Passed scenario screenshot captured: Forgot password with invalid email address
-[INFO ] 2024-05-10 15:13:47.554 [main] Testhooks - Passed scenario screenshot captured: Forgot password with invalid email address
-[INFO ] 2024-05-10 15:13:47.738 [main] Testhooks - Passed scenario screenshot captured: Forgot password with invalid email address
-[INFO ] 2024-05-10 15:13:47.806 [main] Testhooks - Browser got closed
-[INFO ] 2024-05-10 15:13:47.815 [main] Testhooks - Execution Started
-[INFO ] 2024-05-10 15:13:48.374 [main] Testhooks - Browser got launched
-[INFO ] 2024-05-10 15:13:53.959 [main] Testhooks - Navigated to url
-[INFO ] 2024-05-10 15:13:53.963 [main] Testhooks - Page is zoomed out
-[INFO ] 2024-05-10 15:13:55.044 [main] Forgotpasswordpage - >> User clicks on forgot password link
-[INFO ] 2024-05-10 15:13:55.231 [main] Testhooks - Passed scenario screenshot captured: Forgot password without email address
-[INFO ] 2024-05-10 15:13:55.592 [main] Testhooks - Passed scenario screenshot captured: Forgot password without email address
-[INFO ] 2024-05-10 15:13:55.778 [main] Testhooks - Passed scenario screenshot captured: Forgot password without email address
-[INFO ] 2024-05-10 15:13:55.846 [main] Testhooks - Browser got closed
-[INFO ] 2024-05-10 15:13:55.854 [main] Testhooks - Execution Started
-[INFO ] 2024-05-10 15:13:56.417 [main] Testhooks - Browser got launched
-[INFO ] 2024-05-10 15:14:00.667 [main] Testhooks - Navigated to url
-[INFO ] 2024-05-10 15:14:00.671 [main] Testhooks - Page is zoomed out
-[INFO ] 2024-05-10 15:14:01.791 [main] Signinpage - >> User enters valid email address
-[INFO ] 2024-05-10 15:14:01.866 [main] Signinpage - >> User enters valid password
-[INFO ] 2024-05-10 15:14:01.939 [main] Signinpage - >> User clicks on signin button
-[INFO ] 2024-05-10 15:14:01.939 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-05-10 15:14:02.089 [main] Testhooks - Passed scenario screenshot captured: Check members dashboard page
-[INFO ] 2024-05-10 15:14:04.301 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-05-10 15:14:04.470 [main] Testhooks - Passed scenario screenshot captured: Check members dashboard page
-[INFO ] 2024-05-10 15:14:04.732 [main] Memberspage - >> Admin/User got navigated to members page
-[INFO ] 2024-05-10 15:14:06.059 [main] Testhooks - Passed scenario screenshot captured: Check members dashboard page
-[INFO ] 2024-05-10 15:14:06.098 [main] Memberspage - >> The members dashboard list page got displayed
-[INFO ] 2024-05-10 15:14:06.098 [main] Members - >> Admin/user got the members dashboard page >>
-[INFO ] 2024-05-10 15:14:06.234 [main] Testhooks - Passed scenario screenshot captured: Check members dashboard page
-[INFO ] 2024-05-10 15:14:06.305 [main] Testhooks - Browser got closed
-[INFO ] 2024-05-10 15:14:06.309 [main] Testhooks - Execution Started
-[INFO ] 2024-05-10 15:14:06.889 [main] Testhooks - Browser got launched
-[INFO ] 2024-05-10 15:14:12.073 [main] Testhooks - Navigated to url
-[INFO ] 2024-05-10 15:14:12.078 [main] Testhooks - Page is zoomed out
-[INFO ] 2024-05-10 15:14:13.203 [main] Signinpage - >> User enters valid email address
-[INFO ] 2024-05-10 15:14:13.279 [main] Signinpage - >> User enters valid password
-[INFO ] 2024-05-10 15:14:13.330 [main] Signinpage - >> User clicks on signin button
-[INFO ] 2024-05-10 15:14:13.330 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-05-10 15:14:13.488 [main] Testhooks - Passed scenario screenshot captured: Invite the member with valid inputs
-[INFO ] 2024-05-10 15:14:15.815 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-05-10 15:14:15.952 [main] Testhooks - Passed scenario screenshot captured: Invite the member with valid inputs
-[INFO ] 2024-05-10 15:14:16.151 [main] Memberspage - >> Admin/User got navigated to members page
-[INFO ] 2024-05-10 15:14:16.242 [main] Testhooks - Passed scenario screenshot captured: Invite the member with valid inputs
-[INFO ] 2024-05-10 15:14:17.465 [main] Memberspage - >> User clicked the invite member button
-[INFO ] 2024-05-10 15:14:17.583 [main] Testhooks - Passed scenario screenshot captured: Invite the member with valid inputs
-[INFO ] 2024-05-10 15:14:17.792 [main] Memberspage - >> User clicked the invite member button
-[INFO ] 2024-05-10 15:14:17.908 [main] Testhooks - Passed scenario screenshot captured: Invite the member with valid inputs
-[INFO ] 2024-05-10 15:14:18.035 [main] Memberspage - >> User selected the role:Supervisor
-[INFO ] 2024-05-10 15:14:18.142 [main] Testhooks - Passed scenario screenshot captured: Invite the member with valid inputs
-[INFO ] 2024-05-10 15:14:18.252 [main] Memberspage - >> User selected the role:Installation
-[INFO ] 2024-05-10 15:14:18.357 [main] Testhooks - Passed scenario screenshot captured: Invite the member with valid inputs
-[INFO ] 2024-05-10 15:14:18.357 [main] Members - >> User got the invitation mail successfully >>
-[INFO ] 2024-05-10 15:14:18.435 [main] Testhooks - Passed scenario screenshot captured: Invite the member with valid inputs
-[INFO ] 2024-05-10 15:14:18.506 [main] Testhooks - Browser got closed
-[INFO ] 2024-05-13 15:57:43.279 [main] Testhooks - Execution Started
-[INFO ] 2024-05-13 15:57:43.366 [main] Testhooks - Execution Started
-[INFO ] 2024-05-13 15:57:43.386 [main] Testhooks - Execution Started
-[INFO ] 2024-05-13 15:57:43.409 [main] Testhooks - Execution Started
-[INFO ] 2024-05-13 15:57:43.427 [main] Testhooks - Execution Started
-[INFO ] 2024-05-13 15:57:43.445 [main] Testhooks - Execution Started
-[INFO ] 2024-05-13 15:57:43.463 [main] Testhooks - Execution Started
-[INFO ] 2024-05-13 15:57:43.481 [main] Testhooks - Execution Started
-[INFO ] 2024-05-13 15:59:04.743 [main] Testhooks - Execution Started
-[INFO ] 2024-05-13 15:59:05.660 [main] Testhooks - Browser got launched
-[INFO ] 2024-05-13 15:59:09.723 [main] Testhooks - Navigated to url
-[INFO ] 2024-05-13 15:59:09.887 [main] Testhooks - Page is zoomed out
-[INFO ] 2024-05-13 15:59:11.013 [main] Signinpage - >> User enters valid email address
-[INFO ] 2024-05-13 15:59:11.226 [main] Testhooks - Passed scenario screenshot captured: Login with valid credentials
-[INFO ] 2024-05-13 15:59:11.308 [main] Signinpage - >> User enters valid password
-[INFO ] 2024-05-13 15:59:11.489 [main] Testhooks - Passed scenario screenshot captured: Login with valid credentials
-[INFO ] 2024-05-13 15:59:11.730 [main] Testhooks - Passed scenario screenshot captured: Login with valid credentials
-[INFO ] 2024-05-13 15:59:11.785 [main] Signinpage - >> User clicks on signin button
-[INFO ] 2024-05-13 15:59:11.961 [main] Testhooks - Passed scenario screenshot captured: Login with valid credentials
-[INFO ] 2024-05-13 15:59:14.163 [main] Signinpage - >> Al-Arabia user got signed in successfully
-[INFO ] 2024-05-13 15:59:14.363 [main] Testhooks - Passed scenario screenshot captured: Login with valid credentials
-[INFO ] 2024-05-13 15:59:14.481 [main] Signinpage - >> Al-Arabia user got signed in successfully
-[INFO ] 2024-05-13 15:59:14.618 [main] Testhooks - Passed scenario screenshot captured: Login with valid credentials
-[INFO ] 2024-05-13 15:59:14.694 [main] Testhooks - Browser got closed
-[INFO ] 2024-05-13 15:59:14.708 [main] Testhooks - Execution Started
-[INFO ] 2024-05-13 15:59:15.316 [main] Testhooks - Browser got launched
-[INFO ] 2024-05-13 15:59:20.104 [main] Testhooks - Navigated to url
-[INFO ] 2024-05-13 15:59:20.109 [main] Testhooks - Page is zoomed out
-[INFO ] 2024-05-13 15:59:21.398 [main] Testhooks - Passed scenario screenshot captured: Login with invalid credentials
-[INFO ] 2024-05-13 15:59:21.664 [main] Testhooks - Passed scenario screenshot captured: Login with invalid credentials
-[INFO ] 2024-05-13 15:59:21.881 [main] Testhooks - Passed scenario screenshot captured: Login with invalid credentials
-[INFO ] 2024-05-13 15:59:22.084 [main] Testhooks - Passed scenario screenshot captured: Login with invalid credentials
-[INFO ] 2024-05-13 15:59:22.154 [main] Testhooks - Browser got closed
-[INFO ] 2024-05-13 15:59:22.163 [main] Testhooks - Execution Started
-[INFO ] 2024-05-13 15:59:22.773 [main] Testhooks - Browser got launched
-[INFO ] 2024-05-13 15:59:28.541 [main] Testhooks - Navigated to url
-[INFO ] 2024-05-13 15:59:28.546 [main] Testhooks - Page is zoomed out
-[INFO ] 2024-05-13 15:59:29.666 [main] Signinpage - >> User enters valid email address
-[INFO ] 2024-05-13 15:59:29.868 [main] Testhooks - Passed scenario screenshot captured: Login with valid email address and invalid password
-[INFO ] 2024-05-13 15:59:30.142 [main] Testhooks - Passed scenario screenshot captured: Login with valid email address and invalid password
-[INFO ] 2024-05-13 15:59:30.370 [main] Testhooks - Passed scenario screenshot captured: Login with valid email address and invalid password
-[INFO ] 2024-05-13 15:59:30.585 [main] Testhooks - Passed scenario screenshot captured: Login with valid email address and invalid password
-[INFO ] 2024-05-13 15:59:30.655 [main] Testhooks - Browser got closed
-[INFO ] 2024-05-13 15:59:30.666 [main] Testhooks - Execution Started
-[INFO ] 2024-05-13 15:59:31.315 [main] Testhooks - Browser got launched
-[INFO ] 2024-05-13 15:59:35.337 [main] Testhooks - Navigated to url
-[INFO ] 2024-05-13 15:59:35.341 [main] Testhooks - Page is zoomed out
-[INFO ] 2024-05-13 15:59:36.592 [main] Testhooks - Passed scenario screenshot captured: Login with invalid email address and valid password
-[INFO ] 2024-05-13 15:59:36.671 [main] Signinpage - >> User enters valid password
-[INFO ] 2024-05-13 15:59:36.774 [main] Testhooks - Passed scenario screenshot captured: Login with invalid email address and valid password
-[INFO ] 2024-05-13 15:59:37.010 [main] Testhooks - Passed scenario screenshot captured: Login with invalid email address and valid password
-[INFO ] 2024-05-13 15:59:37.183 [main] Testhooks - Passed scenario screenshot captured: Login with invalid email address and valid password
-[INFO ] 2024-05-13 15:59:37.254 [main] Testhooks - Browser got closed
-[INFO ] 2024-05-13 15:59:37.263 [main] Testhooks - Execution Started
-[INFO ] 2024-05-13 15:59:37.843 [main] Testhooks - Browser got launched
-[INFO ] 2024-05-13 15:59:42.159 [main] Testhooks - Navigated to url
-[INFO ] 2024-05-13 15:59:42.165 [main] Testhooks - Page is zoomed out
-[INFO ] 2024-05-13 15:59:43.272 [main] Signinpage - >> User enters valid email address
-[INFO ] 2024-05-13 15:59:43.449 [main] Testhooks - Passed scenario screenshot captured: Login with valid email address and invalid password without special character
-[INFO ] 2024-05-13 15:59:43.689 [main] Testhooks - Passed scenario screenshot captured: Login with valid email address and invalid password without special character
-[INFO ] 2024-05-13 15:59:43.910 [main] Testhooks - Passed scenario screenshot captured: Login with valid email address and invalid password without special character
-[INFO ] 2024-05-13 15:59:44.109 [main] Testhooks - Passed scenario screenshot captured: Login with valid email address and invalid password without special character
-[INFO ] 2024-05-13 15:59:44.179 [main] Testhooks - Browser got closed
-[INFO ] 2024-05-13 15:59:44.189 [main] Testhooks - Execution Started
-[INFO ] 2024-05-13 15:59:44.760 [main] Testhooks - Browser got launched
-[INFO ] 2024-05-13 15:59:49.281 [main] Testhooks - Navigated to url
-[INFO ] 2024-05-13 15:59:49.285 [main] Testhooks - Page is zoomed out
-[INFO ] 2024-05-13 15:59:50.393 [main] Signinpage - >> User enters valid email address
-[INFO ] 2024-05-13 15:59:50.567 [main] Testhooks - Passed scenario screenshot captured: Login with valid email address and invalid password without special character
-[INFO ] 2024-05-13 15:59:50.829 [main] Testhooks - Passed scenario screenshot captured: Login with valid email address and invalid password without special character
-[INFO ] 2024-05-13 15:59:51.056 [main] Testhooks - Passed scenario screenshot captured: Login with valid email address and invalid password without special character
-[INFO ] 2024-05-13 15:59:51.258 [main] Testhooks - Passed scenario screenshot captured: Login with valid email address and invalid password without special character
-[INFO ] 2024-05-13 15:59:51.328 [main] Testhooks - Browser got closed
-[INFO ] 2024-05-13 15:59:51.334 [main] Testhooks - Execution Started
-[INFO ] 2024-05-13 15:59:51.921 [main] Testhooks - Browser got launched
-[INFO ] 2024-05-13 15:59:56.362 [main] Testhooks - Navigated to url
-[INFO ] 2024-05-13 15:59:56.366 [main] Testhooks - Page is zoomed out
-[INFO ] 2024-05-13 15:59:57.478 [main] Signinpage - >> User enters valid email address
-[INFO ] 2024-05-13 15:59:57.650 [main] Testhooks - Passed scenario screenshot captured: Login with valid email address and invalid password with short character
-[INFO ] 2024-05-13 15:59:57.857 [main] Testhooks - Passed scenario screenshot captured: Login with valid email address and invalid password with short character
-[INFO ] 2024-05-13 15:59:58.069 [main] Testhooks - Passed scenario screenshot captured: Login with valid email address and invalid password with short character
-[INFO ] 2024-05-13 15:59:58.263 [main] Testhooks - Passed scenario screenshot captured: Login with valid email address and invalid password with short character
-[INFO ] 2024-05-13 15:59:58.334 [main] Testhooks - Browser got closed
-[INFO ] 2024-05-13 15:59:58.341 [main] Testhooks - Execution Started
-[INFO ] 2024-05-13 15:59:58.940 [main] Testhooks - Browser got launched
-[INFO ] 2024-05-13 16:00:03.407 [main] Testhooks - Navigated to url
-[INFO ] 2024-05-13 16:00:03.412 [main] Testhooks - Page is zoomed out
-[INFO ] 2024-05-13 16:00:04.675 [main] Testhooks - Passed scenario screenshot captured: Login without email address and password
-[INFO ] 2024-05-13 16:00:04.872 [main] Testhooks - Passed scenario screenshot captured: Login without email address and password
-[INFO ] 2024-05-13 16:00:05.081 [main] Testhooks - Passed scenario screenshot captured: Login without email address and password
-[INFO ] 2024-05-13 16:00:05.150 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-15 14:46:40.116 [main] Testhooks - Execution Started
+[INFO ] 2024-05-15 14:46:41.017 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-15 14:46:45.744 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-15 14:46:45.917 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-15 14:46:47.056 [main] Signinpage - >> User enters valid email address
+[INFO ] 2024-05-15 14:46:47.137 [main] Signinpage - >> User enters valid password
+[INFO ] 2024-05-15 14:46:47.195 [main] Signinpage - >> User clicks on signin button
+[INFO ] 2024-05-15 14:46:47.195 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-15 14:46:47.396 [main] Testhooks - Passed scenario screenshot captured: Members feature search
+[INFO ] 2024-05-15 14:46:49.532 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-15 14:46:49.673 [main] Testhooks - Passed scenario screenshot captured: Members feature search
+[INFO ] 2024-05-15 14:46:50.003 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-15 14:46:50.130 [main] Testhooks - Passed scenario screenshot captured: Members feature search
+[INFO ] 2024-05-15 14:46:51.565 [main] Testhooks - Passed scenario screenshot captured: Members feature search
+[INFO ] 2024-05-15 14:46:51.710 [main] Testhooks - Passed scenario screenshot captured: Members feature search
+[INFO ] 2024-05-15 14:46:51.787 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-15 15:00:41.516 [main] Testhooks - Execution Started
+[INFO ] 2024-05-15 15:00:42.438 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-15 15:00:46.902 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-15 15:00:47.046 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-15 15:00:48.171 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-15 15:00:48.368 [main] Testhooks - Passed scenario screenshot captured: Login with valid credentials
+[INFO ] 2024-05-15 15:00:48.450 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-15 15:00:48.640 [main] Testhooks - Passed scenario screenshot captured: Login with valid credentials
+[INFO ] 2024-05-15 15:00:48.694 [main] Signinpage - User clicked password_field_eyeicon
+[INFO ] 2024-05-15 15:00:48.901 [main] Testhooks - Passed scenario screenshot captured: Login with valid credentials
+[INFO ] 2024-05-15 15:00:48.956 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-15 15:00:49.121 [main] Testhooks - Passed scenario screenshot captured: Login with valid credentials
+[INFO ] 2024-05-15 15:00:51.453 [main] Signinpage - Al-Arabia user got signed in successfully
+[INFO ] 2024-05-15 15:00:51.680 [main] Testhooks - Passed scenario screenshot captured: Login with valid credentials
+[INFO ] 2024-05-15 15:00:51.713 [main] Signinpage - Al-Arabia user got signed in successfully
+[INFO ] 2024-05-15 15:00:51.889 [main] Testhooks - Passed scenario screenshot captured: Login with valid credentials
+[INFO ] 2024-05-15 15:00:51.971 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-15 15:09:06.579 [main] Testhooks - Execution Started
+[INFO ] 2024-05-15 15:09:07.555 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-15 15:09:11.831 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-15 15:09:11.981 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-15 15:09:13.281 [main] Testhooks - Passed scenario screenshot captured: Reset password on forgetting it
+[INFO ] 2024-05-15 15:09:13.608 [main] Testhooks - Passed scenario screenshot captured: Reset password on forgetting it
+[INFO ] 2024-05-15 15:09:13.868 [main] Testhooks - Passed scenario screenshot captured: Reset password on forgetting it
+[INFO ] 2024-05-15 15:09:14.021 [main] Testhooks - Passed scenario screenshot captured: Reset password on forgetting it
+[INFO ] 2024-05-15 15:09:14.098 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-15 15:15:17.223 [main] Testhooks - Execution Started
+[INFO ] 2024-05-15 15:15:18.180 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-15 15:15:22.905 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-15 15:15:23.046 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-15 15:15:24.358 [main] Testhooks - Passed scenario screenshot captured: Reset password on forgetting it
+[INFO ] 2024-05-15 15:15:24.691 [main] Testhooks - Passed scenario screenshot captured: Reset password on forgetting it
+[INFO ] 2024-05-15 15:15:24.946 [main] Testhooks - Passed scenario screenshot captured: Reset password on forgetting it
+[INFO ] 2024-05-15 15:15:25.111 [main] Testhooks - Passed scenario screenshot captured: Reset password on forgetting it
+[INFO ] 2024-05-15 15:15:25.187 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-15 15:15:25.200 [main] Testhooks - Execution Started
+[INFO ] 2024-05-15 15:15:25.788 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-15 15:15:29.936 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-15 15:15:29.940 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-15 15:15:31.209 [main] Testhooks - Passed scenario screenshot captured: Forgot password with invalid email address
+[INFO ] 2024-05-15 15:15:31.569 [main] Testhooks - Passed scenario screenshot captured: Forgot password with invalid email address
+[INFO ] 2024-05-15 15:15:51.800 [main] Testhooks - Failed scenario screenshot got capturedForgot password with invalid email address
+[INFO ] 2024-05-15 15:15:51.875 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-15 15:15:51.890 [main] Testhooks - Execution Started
+[INFO ] 2024-05-15 15:15:52.482 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-15 15:15:56.993 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-15 15:15:57.027 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-15 15:15:58.314 [main] Testhooks - Passed scenario screenshot captured: Forgot password without email address
+[INFO ] 2024-05-15 15:15:58.651 [main] Testhooks - Passed scenario screenshot captured: Forgot password without email address
+[INFO ] 2024-05-15 15:16:13.203 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-15 15:17:46.271 [main] Testhooks - Execution Started
+[INFO ] 2024-05-15 15:17:47.187 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-15 15:17:51.719 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-15 15:17:51.863 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-15 15:17:53.166 [main] Testhooks - Passed scenario screenshot captured: Reset password on forgetting it
+[INFO ] 2024-05-15 15:17:53.490 [main] Testhooks - Passed scenario screenshot captured: Reset password on forgetting it
+[INFO ] 2024-05-15 15:17:53.751 [main] Testhooks - Passed scenario screenshot captured: Reset password on forgetting it
+[INFO ] 2024-05-15 15:17:53.945 [main] Testhooks - Passed scenario screenshot captured: Reset password on forgetting it
+[INFO ] 2024-05-15 15:17:54.020 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-15 15:17:54.033 [main] Testhooks - Execution Started
+[INFO ] 2024-05-15 15:17:54.613 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-15 15:17:59.353 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-15 15:17:59.357 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-15 15:18:00.606 [main] Testhooks - Passed scenario screenshot captured: Forgot password with invalid email address
+[INFO ] 2024-05-15 15:18:00.977 [main] Testhooks - Passed scenario screenshot captured: Forgot password with invalid email address
+[INFO ] 2024-05-15 15:18:21.225 [main] Testhooks - Failed scenario screenshot got capturedForgot password with invalid email address
+[INFO ] 2024-05-15 15:18:21.298 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-15 15:18:21.314 [main] Testhooks - Execution Started
+[INFO ] 2024-05-15 15:18:21.909 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-15 15:18:22.703 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-15 15:18:22.709 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-15 15:18:33.892 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-15 15:21:18.299 [main] Testhooks - Execution Started
+[INFO ] 2024-05-15 15:21:19.261 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-15 15:21:24.169 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-15 15:21:24.316 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-15 15:21:25.611 [main] Testhooks - Passed scenario screenshot captured: Forgot password with invalid email address
+[INFO ] 2024-05-15 15:21:25.956 [main] Testhooks - Passed scenario screenshot captured: Forgot password with invalid email address
+[INFO ] 2024-05-15 15:21:46.224 [main] Testhooks - Failed scenario screenshot got capturedForgot password with invalid email address
+[INFO ] 2024-05-15 15:21:46.302 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-15 15:22:46.500 [main] Testhooks - Execution Started
+[INFO ] 2024-05-15 15:22:47.445 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-15 15:22:51.523 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-15 15:22:51.664 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-15 15:22:52.971 [main] Testhooks - Passed scenario screenshot captured: Forgot password with invalid email address
+[INFO ] 2024-05-15 15:22:53.331 [main] Testhooks - Passed scenario screenshot captured: Forgot password with invalid email address
+[INFO ] 2024-05-15 15:22:53.529 [main] Testhooks - Passed scenario screenshot captured: Forgot password with invalid email address
+[INFO ] 2024-05-15 15:22:53.606 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-15 15:23:55.057 [main] Testhooks - Execution Started
+[INFO ] 2024-05-15 15:23:55.981 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-15 15:24:00.581 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-15 15:24:00.727 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-15 15:24:01.953 [main] Testhooks - Passed scenario screenshot captured: Forgot password without email address
+[INFO ] 2024-05-15 15:24:02.350 [main] Testhooks - Passed scenario screenshot captured: Forgot password without email address
+[INFO ] 2024-05-15 15:24:02.554 [main] Testhooks - Passed scenario screenshot captured: Forgot password without email address
+[INFO ] 2024-05-15 15:24:02.629 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-15 15:24:10.393 [main] Testhooks - Execution Started
+[INFO ] 2024-05-15 15:24:11.406 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-15 15:24:16.182 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-15 15:24:16.322 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-15 15:24:17.607 [main] Testhooks - Passed scenario screenshot captured: Reset password on forgetting it
+[INFO ] 2024-05-15 15:24:17.954 [main] Testhooks - Passed scenario screenshot captured: Reset password on forgetting it
+[INFO ] 2024-05-15 15:24:18.209 [main] Testhooks - Passed scenario screenshot captured: Reset password on forgetting it
+[INFO ] 2024-05-15 15:24:18.394 [main] Testhooks - Passed scenario screenshot captured: Reset password on forgetting it
+[INFO ] 2024-05-15 15:24:18.469 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-15 15:24:18.487 [main] Testhooks - Execution Started
+[INFO ] 2024-05-15 15:24:19.097 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-15 15:24:23.256 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-15 15:24:23.260 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-15 15:24:24.533 [main] Testhooks - Passed scenario screenshot captured: Forgot password with invalid email address
+[INFO ] 2024-05-15 15:24:24.877 [main] Testhooks - Passed scenario screenshot captured: Forgot password with invalid email address
+[INFO ] 2024-05-15 15:24:25.058 [main] Testhooks - Passed scenario screenshot captured: Forgot password with invalid email address
+[INFO ] 2024-05-15 15:24:25.129 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-15 15:24:25.138 [main] Testhooks - Execution Started
+[INFO ] 2024-05-15 15:24:25.755 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-15 15:24:29.911 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-15 15:24:29.915 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-15 15:24:31.164 [main] Testhooks - Passed scenario screenshot captured: Forgot password without email address
+[INFO ] 2024-05-15 15:24:31.508 [main] Testhooks - Passed scenario screenshot captured: Forgot password without email address
+[INFO ] 2024-05-15 15:24:31.697 [main] Testhooks - Passed scenario screenshot captured: Forgot password without email address
+[INFO ] 2024-05-15 15:24:31.768 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-15 15:28:05.577 [main] Testhooks - Execution Started
+[INFO ] 2024-05-15 15:28:06.482 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-15 15:28:10.736 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-15 15:28:10.877 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-15 15:28:12.032 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-15 15:28:12.248 [main] Testhooks - Passed scenario screenshot captured: Login with valid credentials
+[INFO ] 2024-05-15 15:28:12.340 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-15 15:28:12.529 [main] Testhooks - Passed scenario screenshot captured: Login with valid credentials
+[INFO ] 2024-05-15 15:28:12.592 [main] Signinpage - User clicked password_field_eyeicon
+[INFO ] 2024-05-15 15:28:12.776 [main] Testhooks - Passed scenario screenshot captured: Login with valid credentials
+[INFO ] 2024-05-15 15:28:12.842 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-15 15:28:13.004 [main] Testhooks - Passed scenario screenshot captured: Login with valid credentials
+[INFO ] 2024-05-15 15:28:15.333 [main] Signinpage - Al-Arabia user got signed in successfully
+[INFO ] 2024-05-15 15:28:15.495 [main] Testhooks - Passed scenario screenshot captured: Login with valid credentials
+[INFO ] 2024-05-15 15:28:15.612 [main] Signinpage - Al-Arabia user got signed in successfully
+[INFO ] 2024-05-15 15:28:15.763 [main] Testhooks - Passed scenario screenshot captured: Login with valid credentials
+[INFO ] 2024-05-15 15:28:15.844 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-15 15:28:30.408 [main] Testhooks - Execution Started
+[INFO ] 2024-05-15 15:28:31.446 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-15 15:28:36.049 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-15 15:28:36.191 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-15 15:28:37.530 [main] Testhooks - Passed scenario screenshot captured: Login with invalid credentials
+[INFO ] 2024-05-15 15:28:37.786 [main] Testhooks - Passed scenario screenshot captured: Login with invalid credentials
+[INFO ] 2024-05-15 15:28:37.836 [main] Signinpage - User clicked password_field_eyeicon
+[INFO ] 2024-05-15 15:28:38.026 [main] Testhooks - Passed scenario screenshot captured: Login with invalid credentials
+[INFO ] 2024-05-15 15:28:38.060 [main] Signinpage - User got an invalid username and password error message
+[INFO ] 2024-05-15 15:28:38.239 [main] Testhooks - Passed scenario screenshot captured: Login with invalid credentials
+[INFO ] 2024-05-15 15:28:38.315 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-15 15:28:46.435 [main] Testhooks - Execution Started
+[INFO ] 2024-05-15 15:28:47.358 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-15 15:28:52.188 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-15 15:28:52.331 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-15 15:28:53.457 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-15 15:28:53.639 [main] Testhooks - Passed scenario screenshot captured: Login with valid email address and invalid password
+[INFO ] 2024-05-15 15:28:53.916 [main] Testhooks - Passed scenario screenshot captured: Login with valid email address and invalid password
+[INFO ] 2024-05-15 15:28:53.973 [main] Signinpage - User clicked password_field_eyeicon
+[INFO ] 2024-05-15 15:28:54.164 [main] Testhooks - Passed scenario screenshot captured: Login with valid email address and invalid password
+[INFO ] 2024-05-15 15:28:54.196 [main] Signinpage - User got a must contain one number error message
+[INFO ] 2024-05-15 15:28:54.384 [main] Testhooks - Passed scenario screenshot captured: Login with valid email address and invalid password
+[INFO ] 2024-05-15 15:28:54.460 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-15 15:29:01.956 [main] Testhooks - Execution Started
+[INFO ] 2024-05-15 15:29:02.907 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-15 15:29:07.817 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-15 15:29:07.963 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-15 15:29:09.294 [main] Testhooks - Passed scenario screenshot captured: Login with invalid email address and valid password
+[INFO ] 2024-05-15 15:29:09.382 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-15 15:29:09.568 [main] Testhooks - Passed scenario screenshot captured: Login with invalid email address and valid password
+[INFO ] 2024-05-15 15:29:09.625 [main] Signinpage - User clicked password_field_eyeicon
+[INFO ] 2024-05-15 15:29:09.822 [main] Testhooks - Passed scenario screenshot captured: Login with invalid email address and valid password
+[INFO ] 2024-05-15 15:29:09.856 [main] Signinpage - User got an invalid username and password error message
+[INFO ] 2024-05-15 15:29:10.035 [main] Testhooks - Passed scenario screenshot captured: Login with invalid email address and valid password
+[INFO ] 2024-05-15 15:29:10.109 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-15 15:29:19.275 [main] Testhooks - Execution Started
+[INFO ] 2024-05-15 15:29:20.192 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-15 15:29:26.600 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-15 15:29:26.744 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-15 15:29:27.869 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-15 15:29:28.048 [main] Testhooks - Passed scenario screenshot captured: Login with valid email address and invalid password without special character
+[INFO ] 2024-05-15 15:29:28.320 [main] Testhooks - Passed scenario screenshot captured: Login with valid email address and invalid password without special character
+[INFO ] 2024-05-15 15:29:28.373 [main] Signinpage - User clicked password_field_eyeicon
+[INFO ] 2024-05-15 15:29:28.556 [main] Testhooks - Passed scenario screenshot captured: Login with valid email address and invalid password without special character
+[INFO ] 2024-05-15 15:29:28.586 [main] Signinpage - User got a must contain one special case character error message
+[INFO ] 2024-05-15 15:29:28.756 [main] Testhooks - Passed scenario screenshot captured: Login with valid email address and invalid password without special character
+[INFO ] 2024-05-15 15:29:28.831 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-15 15:30:26.720 [main] Testhooks - Execution Started
+[INFO ] 2024-05-15 15:30:27.648 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-15 15:30:32.391 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-15 15:30:32.539 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-15 15:30:33.665 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-15 15:30:33.866 [main] Testhooks - Passed scenario screenshot captured: Login with valid email address and invalid password without special character
+[INFO ] 2024-05-15 15:30:34.144 [main] Testhooks - Passed scenario screenshot captured: Login with valid email address and invalid password without special character
+[INFO ] 2024-05-15 15:30:34.201 [main] Signinpage - User clicked password_field_eyeicon
+[INFO ] 2024-05-15 15:30:34.398 [main] Testhooks - Passed scenario screenshot captured: Login with valid email address and invalid password without special character
+[INFO ] 2024-05-15 15:30:34.431 [main] Signinpage - User got a must contain one uppercase character error message
+[INFO ] 2024-05-15 15:30:34.602 [main] Testhooks - Passed scenario screenshot captured: Login with valid email address and invalid password without special character
+[INFO ] 2024-05-15 15:30:34.678 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-15 15:30:42.632 [main] Testhooks - Execution Started
+[INFO ] 2024-05-15 15:30:43.543 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-15 15:30:47.846 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-15 15:30:48.010 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-15 15:30:49.136 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-15 15:30:49.351 [main] Testhooks - Passed scenario screenshot captured: Login with valid email address and invalid password with short character
+[INFO ] 2024-05-15 15:30:49.616 [main] Testhooks - Passed scenario screenshot captured: Login with valid email address and invalid password with short character
+[INFO ] 2024-05-15 15:30:49.677 [main] Signinpage - User clicked password_field_eyeicon
+[INFO ] 2024-05-15 15:30:49.843 [main] Testhooks - Passed scenario screenshot captured: Login with valid email address and invalid password with short character
+[INFO ] 2024-05-15 15:30:49.876 [main] Signinpage - User got a password_is_too_short_error message
+[INFO ] 2024-05-15 15:30:50.045 [main] Testhooks - Passed scenario screenshot captured: Login with valid email address and invalid password with short character
+[INFO ] 2024-05-15 15:30:50.121 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-15 15:30:59.402 [main] Testhooks - Execution Started
+[INFO ] 2024-05-15 15:31:00.381 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-15 15:31:04.509 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-15 15:31:04.650 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-15 15:31:05.910 [main] Testhooks - Passed scenario screenshot captured: Login without email address and password
+[INFO ] 2024-05-15 15:31:06.156 [main] Testhooks - Passed scenario screenshot captured: Login without email address and password
+[INFO ] 2024-05-15 15:31:06.188 [main] Signinpage - User has got the emailphoneNo_required_error
+[INFO ] 2024-05-15 15:31:06.357 [main] Testhooks - Passed scenario screenshot captured: Login without email address and password
+[INFO ] 2024-05-15 15:31:06.432 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-15 15:32:02.411 [main] Testhooks - Execution Started
+[INFO ] 2024-05-15 15:32:03.370 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-15 15:32:07.848 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-15 15:32:07.988 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-15 15:32:09.117 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-15 15:32:09.199 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-15 15:32:09.261 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-15 15:32:09.262 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-15 15:32:09.447 [main] Testhooks - Passed scenario screenshot captured: Check members dashboard page
+[INFO ] 2024-05-15 15:32:11.906 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-15 15:32:12.084 [main] Testhooks - Passed scenario screenshot captured: Check members dashboard page
+[INFO ] 2024-05-15 15:32:12.189 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-15 15:32:12.318 [main] Testhooks - Passed scenario screenshot captured: Check members dashboard page
+[INFO ] 2024-05-15 15:32:12.367 [main] Memberspage - >> The members dashboard list page got displayed
+[INFO ] 2024-05-15 15:32:12.368 [main] Members - >> Admin/user got the members dashboard page >>
+[INFO ] 2024-05-15 15:32:12.493 [main] Testhooks - Passed scenario screenshot captured: Check members dashboard page
+[INFO ] 2024-05-15 15:32:12.570 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-15 15:32:18.601 [main] Testhooks - Execution Started
+[INFO ] 2024-05-15 15:32:19.568 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-15 15:32:23.758 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-15 15:32:23.913 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-15 15:32:25.038 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-15 15:32:25.120 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-15 15:32:25.180 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-15 15:32:25.180 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-15 15:32:25.384 [main] Testhooks - Passed scenario screenshot captured: Invite the member with valid inputs
+[INFO ] 2024-05-15 15:32:27.824 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-15 15:32:28.022 [main] Testhooks - Passed scenario screenshot captured: Invite the member with valid inputs
+[INFO ] 2024-05-15 15:32:28.126 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-15 15:32:28.247 [main] Testhooks - Passed scenario screenshot captured: Invite the member with valid inputs
+[INFO ] 2024-05-15 15:32:29.280 [main] Memberspage - >> User clicked the invite member button
+[INFO ] 2024-05-15 15:32:29.381 [main] Testhooks - Passed scenario screenshot captured: Invite the member with valid inputs
+[INFO ] 2024-05-15 15:32:29.611 [main] Memberspage - >> User clicked the invite member button
+[INFO ] 2024-05-15 15:32:29.724 [main] Testhooks - Passed scenario screenshot captured: Invite the member with valid inputs
+[INFO ] 2024-05-15 15:32:29.862 [main] Memberspage - >> User selected the role:Supervisor
+[INFO ] 2024-05-15 15:32:29.966 [main] Testhooks - Passed scenario screenshot captured: Invite the member with valid inputs
+[INFO ] 2024-05-15 15:32:30.081 [main] Memberspage - >> User selected the role:Installation
+[INFO ] 2024-05-15 15:32:30.181 [main] Testhooks - Passed scenario screenshot captured: Invite the member with valid inputs
+[INFO ] 2024-05-15 15:32:30.183 [main] Members - >> User got the invitation mail successfully >>
+[INFO ] 2024-05-15 15:32:30.279 [main] Testhooks - Passed scenario screenshot captured: Invite the member with valid inputs
+[INFO ] 2024-05-15 15:32:30.360 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-15 15:32:38.559 [main] Testhooks - Execution Started
+[INFO ] 2024-05-15 15:32:39.526 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-15 15:32:43.817 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-15 15:32:43.952 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-15 15:32:45.082 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-15 15:32:45.167 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-15 15:32:45.226 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-15 15:32:45.226 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-15 15:32:45.416 [main] Testhooks - Passed scenario screenshot captured: Members feature search
+[INFO ] 2024-05-15 15:32:47.794 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-15 15:32:47.971 [main] Testhooks - Passed scenario screenshot captured: Members feature search
+[INFO ] 2024-05-15 15:32:48.087 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-15 15:32:48.195 [main] Testhooks - Passed scenario screenshot captured: Members feature search
+[INFO ] 2024-05-15 15:32:49.489 [main] Testhooks - Passed scenario screenshot captured: Members feature search
+[INFO ] 2024-05-15 15:32:49.626 [main] Testhooks - Passed scenario screenshot captured: Members feature search
+[INFO ] 2024-05-15 15:32:49.706 [main] Testhooks - Browser got closed

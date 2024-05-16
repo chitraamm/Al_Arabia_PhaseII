@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="11.738" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="Members" name="Members feature search" time="11.561">
+<testsuite name="Cucumber" time="13.199" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Members" name="To verify the members feature filter active status members" time="13.043">
 <system-out><![CDATA[
 Given Admin logged in with valid credentials................................passed
 When Al-Arabia overall dashboard should display.............................passed
 And User clicks the members module..........................................passed
-And User search the members.................................................passed
-Then Searched member details get displayed successfully.....................passed
+And User filter the members list status-Active..............................passed
+Then Active members list get displayed successfully.........................passed
 ]]></system-out>
 </testcase>
 </testsuite>

@@ -193,5 +193,75 @@ public class Members extends Base {
     public void Searched_member_details_get_displayed_successfully() {
         membersPage.membersSearchedList();
     }
+    
+    @And("User sort the members list recently updated")
+    public void User_sort_the_members_list_recently_updated() {
+        membersPage.members_sort();
+    }
+    
+    @Then("Recently updated members list get displayed successfully")
+    public void Recently_updated_members_list_get_displayed_successfully() {
+        membersPage.members_sort_list_displayed();
+    }
+    
+    @And("User sort the members list Name A to Z")
+    public void User_sort_the_members_list_Name_A_to_Z() {
+        membersPage.members_sort_A_Z();
+    }
+    
+    @Then("Members list get displayed successfully")
+    public void A_Z_members_list_get_displayed_successfully() {
+        membersPage.members_sort_AtoZ_display();
+    }
+    
+    @And("User sort the members list Name Z to A")
+    public void User_sort_the_members_list_Name_Z_to_A () {
+        membersPage.members_sort_A_Z();
+    }
+    
+    @And("User sort the members list Recently Added")
+    public void User_sort_the_members_list_Recently_Added () {
+        membersPage.members_sort_Recently_Added();
+    }
+    
+    @And("User filter the members list status-Active")
+    public void User_filter_the_members_list_status_Active () {
+        membersPage.members_filter_sts_active();
+    }
+    
+    @Then("Active members list get displayed successfully")
+    public void Active_members_list_get_displayed_successfully() {
+        membersPage.members_filter_active_list_display();
+    }
+    
+    @And("User filter the members list status-Blocked")
+    public void User_filter_the_members_list_status_Blocked () {
+        membersPage.members_filter_sts_blocked();
+    }
+    
+    @Then("Blocked members list get displayed successfully")
+    public void Blocked_members_list_get_displayed_successfully() {
+        membersPage.members_filter_blocked_list_display();
+    }
+    
+    @And("User filter the members list status-expired")
+    public void User_filter_the_members_list_status_expired () {
+        membersPage.members_filter_sts_expired();
+    }
+    
+    @Then("Expired members list get displayed successfully")
+    public void Expired_members_list_get_displayed_successfully() {
+        membersPage.members_filter_blocked_list_display();
+    }
+    
+    @And("User filter the members list status-pending")
+    public void User_filter_the_members_list_status_pending () {
+        membersPage.members_filter_sts_pending();
+    }
+    
+    @Then("Pending members list get displayed successfully")
+    public void Pending_members_list_get_displayed_successfully() {
+        membersPage.members_filter_blocked_list_display();
+    }
 }
 

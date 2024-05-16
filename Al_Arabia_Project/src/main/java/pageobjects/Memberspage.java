@@ -35,7 +35,7 @@ public class Memberspage extends Base {
 		initializeWait();
 		LOGGER = LogManager.getLogger(Memberspage.class.getName());
 	}
-
+	private boolean condition = true;
 	private void initializeWait() {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	}
@@ -231,7 +231,7 @@ public class Memberspage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(members_filter)).click();
 		wait.until(ExpectedConditions.visibilityOf(members_filter_sts_expired)).click();
 		wait.until(ExpectedConditions.visibilityOf(members_filter_apply_btn)).click();
-		System.out.println(">> User clicked blocked status in filter");
+		System.out.println(">> User clicked expired status in filter");
 	}
 
 	@FindBy(xpath = "//h6[contains(.,'Pending')]")
@@ -276,14 +276,11 @@ public class Memberspage extends Base {
 
 	@FindBy(xpath = "//span[contains(@class,'in-active-membesr')]")
 	private WebElement members_filter_blocked_list_display;
-	private boolean condition = true;
-
 	public void members_filter_blocked_list_display() {
 
 		try {
 			if (condition) {
 				wait.until(ExpectedConditions.visibilityOf(members_filter_blocked_list_display));
-
 				AssertJUnit.assertTrue(members_filter_blocked_list_display.isDisplayed());
 				System.out.println(">> User got filtered blocked/inactive members list");
 			} else {
@@ -294,6 +291,190 @@ public class Memberspage extends Base {
 			wait.until(ExpectedConditions.visibilityOf(members_no_members_found));
 			System.out.println(">> User got no members found message");
 		} 
+	}
+	
+	@FindBy(xpath = "//h6[contains(.,'Admin')]")
+	private WebElement members_filter_role_admin;
 
+	public void members_filter_role_admin() {
+		wait.until(ExpectedConditions.visibilityOf(membersMenu)).isDisplayed();
+		wait.until(ExpectedConditions.visibilityOf(members_filter)).click();
+		wait.until(ExpectedConditions.visibilityOf(members_filter_role_admin)).click();
+		wait.until(ExpectedConditions.visibilityOf(members_filter_apply_btn)).click();
+		System.out.println(">> User clicked admin role in filter");
+	}
+	
+	@FindBy(xpath = "//h6[normalize-space()='ADMIN']")
+	private WebElement members_filter_admin_list_display;
+	public void members_filter_admin_list_display() {
+
+		try {
+			if (condition) {
+				wait.until(ExpectedConditions.visibilityOf(members_filter_admin_list_display));
+				AssertJUnit.assertTrue(members_filter_admin_list_display.isDisplayed());
+				System.out.println(">> User got filtered admin members list");
+			} else {
+				wait.until(ExpectedConditions.visibilityOf(members_no_members_found));
+				System.out.println(">> User got no members found message");
+			}
+		} catch (Exception e) {
+			wait.until(ExpectedConditions.visibilityOf(members_no_members_found));
+			System.out.println(">> User got no members found message");
+		} 
+	}
+	
+	@FindBy(xpath = "//h6[contains(.,'Manager')]")
+	private WebElement members_filter_role_manager;
+
+	public void members_filter_role_manager() {
+		wait.until(ExpectedConditions.visibilityOf(membersMenu)).isDisplayed();
+		wait.until(ExpectedConditions.visibilityOf(members_filter)).click();
+		wait.until(ExpectedConditions.visibilityOf(members_filter_role_manager)).click();
+		wait.until(ExpectedConditions.visibilityOf(members_filter_apply_btn)).click();
+		System.out.println(">> User clicked manager role in filter");
+	}
+	
+	@FindBy(xpath = "//h6[normalize-space()='MANAGER']")
+	private WebElement members_filter_manager_list_display;
+	public void members_filter_manager_list_display() {
+
+		try {
+			if (condition) {
+				wait.until(ExpectedConditions.visibilityOf(members_filter_manager_list_display));
+				AssertJUnit.assertTrue(members_filter_manager_list_display.isDisplayed());
+				System.out.println(">> User got filtered manager members list");
+			} else {
+				wait.until(ExpectedConditions.visibilityOf(members_no_members_found));
+				System.out.println(">> User got no members found message");
+			}
+		} catch (Exception e) {
+			wait.until(ExpectedConditions.visibilityOf(members_no_members_found));
+			System.out.println(">> User got no members found message");
+		} 
+	}
+	
+	@FindBy(xpath = "//h6[contains(.,'Supervisor')]")
+	private WebElement members_filter_role_Supervisor;
+
+	public void members_filter_role_Supervisor() {
+		wait.until(ExpectedConditions.visibilityOf(membersMenu)).isDisplayed();
+		wait.until(ExpectedConditions.visibilityOf(members_filter)).click();
+		wait.until(ExpectedConditions.visibilityOf(members_filter_role_Supervisor)).click();
+		wait.until(ExpectedConditions.visibilityOf(members_filter_apply_btn)).click();
+		System.out.println(">> User clicked supervisor role in filter");
+	}
+	
+	@FindBy(xpath = "//h6[.='SUPERVISOR ']")
+	private WebElement members_filter_Supervisor_list_display;
+	public void members_filter_Supervisor_list_display() {
+
+		try {
+			if (condition) {
+				wait.until(ExpectedConditions.visibilityOf(members_filter_Supervisor_list_display));
+				AssertJUnit.assertTrue(members_filter_Supervisor_list_display.isDisplayed());
+				System.out.println(">> User got filtered supervisor members list");
+			} else {
+				wait.until(ExpectedConditions.visibilityOf(members_no_members_found));
+				System.out.println(">> User got no members found message");
+			}
+		} catch (Exception e) {
+			wait.until(ExpectedConditions.visibilityOf(members_no_members_found));
+			System.out.println(">> User got no members found message");
+		} 
+	}
+	
+	@FindBy(xpath = "//h6[contains(.,'Technician')]")
+	private WebElement members_filter_role_technician;
+
+	public void members_filter_role_technician() {
+		wait.until(ExpectedConditions.visibilityOf(membersMenu)).isDisplayed();
+		wait.until(ExpectedConditions.visibilityOf(members_filter)).click();
+		wait.until(ExpectedConditions.visibilityOf(members_filter_role_technician)).click();
+		wait.until(ExpectedConditions.visibilityOf(members_filter_apply_btn)).click();
+		System.out.println(">> User clicked technician role in filter");
+	}
+	
+	@FindBy(xpath = "//h6[.='TECHNICIAN ']")
+	private WebElement members_filter_technician_list_display;
+	public void members_filter_technician_list_display() {
+
+		try {
+			if (condition) {
+				wait.until(ExpectedConditions.visibilityOf(members_filter_technician_list_display));
+				AssertJUnit.assertTrue(members_filter_technician_list_display.isDisplayed());
+				System.out.println(">> User got filtered technician members list");
+			} else {
+				wait.until(ExpectedConditions.visibilityOf(members_no_members_found));
+				System.out.println(">> User got no members found message");
+			}
+		} catch (Exception e) {
+			wait.until(ExpectedConditions.visibilityOf(members_no_members_found));
+			System.out.println(">> User got no members found message");
+		} 
+	}
+	
+	@FindBy(xpath = "//input[@autocapitalize='none']")
+	private WebElement members_filter_dept_click;
+	
+	@FindBy(id = "react-select-3-listbox")
+	private WebElement members_filter_dept_select;
+
+	public void members_filter_dept() {
+		wait.until(ExpectedConditions.visibilityOf(membersMenu)).isDisplayed();
+		wait.until(ExpectedConditions.visibilityOf(members_filter)).click();
+		wait.until(ExpectedConditions.visibilityOf(members_filter_dept_click)).click();
+		wait.until(ExpectedConditions.visibilityOf(members_filter_dept_select)).click();
+		wait.until(ExpectedConditions.visibilityOf(members_filter_apply_btn)).click();
+		System.out.println(">> User selected the dept in filter");
+	}
+	
+	@FindBy(xpath = "//td[contains(normalize-space(),'ELECTRICAL')]")
+	private WebElement members_filter_electrical_list_display;
+	public void members_filter_electrical_list_display() {
+
+		try {
+			if (condition) {
+				wait.until(ExpectedConditions.visibilityOf(members_filter_electrical_list_display));
+				AssertJUnit.assertTrue(members_filter_electrical_list_display.isDisplayed());
+				System.out.println(">> User got filtered technician members list");
+			} else {
+				wait.until(ExpectedConditions.visibilityOf(members_no_members_found));
+				System.out.println(">> User got no members found message");
+			}
+		} catch (Exception e) {
+			wait.until(ExpectedConditions.visibilityOf(members_no_members_found));
+			System.out.println(">> User got no members found message");
+		} 
+	}
+	
+	@FindBy(xpath = "//input[@itemtype='establishment']")
+	private WebElement members_filter_responsible_area;
+
+	public void members_filter_responsible_area() {
+		wait.until(ExpectedConditions.visibilityOf(membersMenu)).isDisplayed();
+		wait.until(ExpectedConditions.visibilityOf(members_filter)).click();
+		wait.until(ExpectedConditions.visibilityOf(members_filter_responsible_area)).click();
+		wait.until(ExpectedConditions.visibilityOf(members_filter_responsible_area)).sendKeys("Saudi Arabia"+Keys.ENTER);
+		wait.until(ExpectedConditions.visibilityOf(members_filter_apply_btn)).click();
+		System.out.println(">> User entered the responsible area in filter");
+	}
+	
+	@FindBy(xpath = "//h6[normalize-space()='Riyadh Saudi Arabia']")
+	private WebElement members_filter_responsible_area_list_display;
+	public void members_filter_responsible_area_list_display() {
+
+		try {
+			if (condition) {
+				wait.until(ExpectedConditions.visibilityOf(members_filter_responsible_area_list_display));
+				AssertJUnit.assertTrue(members_filter_responsible_area_list_display.isDisplayed());
+				System.out.println(">> User got filtered responsible area members list");
+			} else {
+				wait.until(ExpectedConditions.visibilityOf(members_no_members_found));
+				System.out.println(">> User got no members found message");
+			}
+		} catch (Exception e) {
+			wait.until(ExpectedConditions.visibilityOf(members_no_members_found));
+			System.out.println(">> User got no members found message");
+		} 
 	}
 }

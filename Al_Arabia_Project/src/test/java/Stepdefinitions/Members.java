@@ -245,7 +245,7 @@ public class Members extends Base {
     }
     
     @And("User filter the members list status-expired")
-    public void User_filter_the_members_list_status_expired () {
+    public void User_filter_the_members_list_status_expired() {
         membersPage.members_filter_sts_expired();
     }
     
@@ -255,13 +255,73 @@ public class Members extends Base {
     }
     
     @And("User filter the members list status-pending")
-    public void User_filter_the_members_list_status_pending () {
+    public void User_filter_the_members_list_status_pending() {
         membersPage.members_filter_sts_pending();
     }
     
     @Then("Pending members list get displayed successfully")
     public void Pending_members_list_get_displayed_successfully() {
         membersPage.members_filter_blocked_list_display();
+    }
+    
+    @And("User filter the members list role-admin")
+    public void User_filter_the_members_list_role_admin() {
+        membersPage.members_filter_role_admin();
+    }
+    
+    @Then("Admin members list get displayed successfully")
+    public void Admin_members_list_get_displayed_successfully() {
+        membersPage.members_filter_admin_list_display();
+    }
+    
+    @And("User filter the members list role-manager")
+    public void User_filter_the_members_list_role_manager() {
+        membersPage.members_filter_role_manager();
+    }
+    
+    @Then("Manager members list get displayed successfully")
+    public void Manager_members_list_get_displayed_successfully() {
+        membersPage.members_filter_manager_list_display();
+    }
+    
+    @And("User filter the members list role-supervisor")
+    public void User_filter_the_members_list_role_supervisor() {
+        membersPage.members_filter_role_Supervisor();
+    }
+    
+    @Then("Supervisor members list get displayed successfully")
+    public void Supervisor_members_list_get_displayed_successfully() {
+        membersPage.members_filter_Supervisor_list_display();
+    }
+    
+    @And("User filter the members list role-technician")
+    public void User_filter_the_members_list_role_technician() {
+        membersPage.members_filter_role_technician();
+    }
+    
+    @Then("Technician members list get displayed successfully")
+    public void Technician_members_list_get_displayed_successfully() {
+        membersPage.members_filter_technician_list_display();
+    }
+    
+    @And("User filter the members list dept-electrical")
+    public void User_filter_the_members_list_dept_electrical() {
+    	 membersPage.members_filter_dept();
+    }
+    
+    @Then("Electrical dept members list get displayed successfully")
+    public void Electrical_dept_members_list_get_displayed_successfully() {
+        membersPage.members_filter_electrical_list_display();
+    }
+    
+    @And("User filter the members list responsible area")
+    public void User_filter_the_members_list_responsible_area() {
+    	 membersPage.members_filter_responsible_area();
+    }
+    
+    @Then("Responsible area members list get displayed successfully")
+    public void Responsible_area_members_list_get_displayed_successfully() {
+        membersPage.members_filter_responsible_area_list_display();
     }
 }
 

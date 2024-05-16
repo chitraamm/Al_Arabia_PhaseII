@@ -92,4 +92,52 @@ And User clicks the members module
 And User filter the members list status-pending
 Then Pending members list get displayed successfully
 
+@members @members12 @smoke @regression @all
+Scenario Outline: To verify the members feature filter admin role members
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And User clicks the members module
+And User filter the members list role-admin
+Then Admin members list get displayed successfully
+
+@members @members13 @smoke @regression @all
+Scenario Outline: To verify the members feature filter manager role members
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And User clicks the members module
+And User filter the members list role-manager
+Then Manager members list get displayed successfully
+
+@members @members14 @smoke @regression @all
+Scenario Outline: To verify the members feature filter supervisor role members
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And User clicks the members module
+And User filter the members list role-supervisor
+Then Supervisor members list get displayed successfully
+
+@members @members15 @smoke @regression @all
+Scenario Outline: To verify the members feature filter technician role members
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And User clicks the members module
+And User filter the members list role-technician
+Then Technician members list get displayed successfully
+
+@members @members16 @smoke @regression @all
+Scenario Outline: To verify the members feature filter electrical dept members
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And User clicks the members module
+And User filter the members list dept-electrical
+Then Electrical dept members list get displayed successfully
+
+@members @members17 @smoke @regression @all
+Scenario Outline: To verify the members feature filter resposible area
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And User clicks the members module
+And User filter the members list responsible area
+Then Responsible area members list get displayed successfully
+
 

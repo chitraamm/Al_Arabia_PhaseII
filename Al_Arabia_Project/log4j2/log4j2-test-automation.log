@@ -716,3 +716,171 @@
 [INFO ] 2024-05-16 13:15:54.757 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature filter active status members
 [INFO ] 2024-05-16 13:15:56.594 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature filter active status members
 [INFO ] 2024-05-16 13:15:56.835 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature filter active status members
+[INFO ] 2024-05-16 16:08:12.451 [main] Testhooks - Execution Started
+[INFO ] 2024-05-16 16:08:13.454 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-16 16:08:32.937 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-16 16:08:33.100 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-16 16:08:34.237 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-16 16:08:34.321 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-16 16:08:34.381 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-16 16:08:34.381 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-16 16:08:34.582 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature filter admin role members
+[INFO ] 2024-05-16 16:08:36.788 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-16 16:08:36.916 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature filter admin role members
+[INFO ] 2024-05-16 16:08:37.108 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-16 16:08:37.280 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature filter admin role members
+[INFO ] 2024-05-16 16:08:57.468 [main] Testhooks - Failed scenario screenshot got capturedTo verify the members feature filter admin role members
+[INFO ] 2024-05-16 16:08:57.550 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-16 16:14:27.147 [main] Testhooks - Execution Started
+[INFO ] 2024-05-16 16:14:28.110 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-16 16:14:32.411 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-16 16:14:32.563 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-16 16:14:33.687 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-16 16:14:33.774 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-16 16:14:33.834 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-16 16:14:33.834 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-16 16:14:34.022 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature filter admin role members
+[INFO ] 2024-05-16 16:14:36.395 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-16 16:14:36.568 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature filter admin role members
+[INFO ] 2024-05-16 16:14:36.750 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-16 16:14:36.875 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature filter admin role members
+[INFO ] 2024-05-16 16:14:39.659 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature filter admin role members
+[INFO ] 2024-05-16 16:14:39.979 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature filter admin role members
+[INFO ] 2024-05-16 16:14:40.062 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-16 17:06:52.812 [main] Testhooks - Execution Started
+[INFO ] 2024-05-16 17:06:53.762 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-16 17:06:59.716 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-16 17:06:59.872 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-16 17:07:01.001 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-16 17:07:01.097 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-16 17:07:01.169 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-16 17:07:01.169 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-16 17:07:01.354 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature filter manager role members
+[INFO ] 2024-05-16 17:07:04.588 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-16 17:07:04.809 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature filter manager role members
+[INFO ] 2024-05-16 17:07:05.007 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-16 17:07:05.170 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature filter manager role members
+[INFO ] 2024-05-16 17:07:06.678 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature filter manager role members
+[INFO ] 2024-05-16 17:07:06.883 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature filter manager role members
+[INFO ] 2024-05-16 17:07:06.964 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-16 17:12:44.753 [main] Testhooks - Execution Started
+[INFO ] 2024-05-16 17:12:45.746 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-16 17:12:50.404 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-16 17:12:50.558 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-16 17:12:51.713 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-16 17:12:51.800 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-16 17:12:51.860 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-16 17:12:51.860 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-16 17:12:52.031 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature filter supervisor role members
+[INFO ] 2024-05-16 17:12:54.550 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-16 17:12:54.677 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature filter supervisor role members
+[INFO ] 2024-05-16 17:12:54.848 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-16 17:12:54.957 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature filter supervisor role members
+[INFO ] 2024-05-16 17:12:56.389 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature filter supervisor role members
+[INFO ] 2024-05-16 17:13:23.957 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-16 17:14:02.214 [main] Testhooks - Execution Started
+[INFO ] 2024-05-16 17:14:03.203 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-16 17:14:07.394 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-16 17:14:07.538 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-16 17:14:08.669 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-16 17:14:08.761 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-16 17:14:08.822 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-16 17:14:08.822 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-16 17:14:09.005 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature filter supervisor role members
+[INFO ] 2024-05-16 17:14:11.214 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-16 17:14:11.350 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature filter supervisor role members
+[INFO ] 2024-05-16 17:14:11.701 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-16 17:14:11.829 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature filter supervisor role members
+[INFO ] 2024-05-16 17:14:13.595 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature filter supervisor role members
+[INFO ] 2024-05-16 17:14:13.813 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature filter supervisor role members
+[INFO ] 2024-05-16 17:14:13.893 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-16 17:18:00.392 [main] Testhooks - Execution Started
+[INFO ] 2024-05-16 17:18:01.439 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-16 17:18:05.652 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-16 17:18:05.810 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-16 17:18:06.945 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-16 17:18:07.032 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-16 17:18:07.091 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-16 17:18:07.091 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-16 17:18:07.274 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature filter technician role members
+[INFO ] 2024-05-16 17:18:10.136 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-16 17:18:10.260 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature filter technician role members
+[INFO ] 2024-05-16 17:18:10.381 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-16 17:18:10.536 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature filter technician role members
+[INFO ] 2024-05-16 17:18:12.181 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature filter technician role members
+[INFO ] 2024-05-16 17:18:12.441 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature filter technician role members
+[INFO ] 2024-05-16 17:18:12.522 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-16 17:30:09.504 [main] Testhooks - Execution Started
+[INFO ] 2024-05-16 17:30:10.529 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-16 17:30:15.611 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-16 17:30:15.767 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-16 17:30:16.889 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-16 17:30:16.977 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-16 17:30:17.037 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-16 17:30:17.037 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-16 17:30:17.242 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature filter electrical dept members
+[INFO ] 2024-05-16 17:30:19.475 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-16 17:30:19.662 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature filter electrical dept members
+[INFO ] 2024-05-16 17:30:19.905 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-16 17:30:20.014 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature filter electrical dept members
+[INFO ] 2024-05-16 17:30:41.677 [main] Testhooks - Failed scenario screenshot got capturedTo verify the members feature filter electrical dept members
+[INFO ] 2024-05-16 17:30:41.760 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-16 17:30:51.951 [main] Testhooks - Execution Started
+[INFO ] 2024-05-16 17:30:52.948 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-16 17:30:57.931 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-16 17:30:58.049 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-16 17:30:59.183 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-16 17:30:59.267 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-16 17:30:59.328 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-16 17:30:59.328 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-16 17:30:59.516 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature filter electrical dept members
+[INFO ] 2024-05-16 17:31:01.748 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-16 17:31:01.862 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature filter electrical dept members
+[INFO ] 2024-05-16 17:31:02.512 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-16 17:31:02.649 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature filter electrical dept members
+[INFO ] 2024-05-16 17:31:25.773 [main] Testhooks - Failed scenario screenshot got capturedTo verify the members feature filter electrical dept members
+[INFO ] 2024-05-16 17:31:25.856 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-16 17:31:43.872 [main] Testhooks - Execution Started
+[INFO ] 2024-05-16 17:31:44.836 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-16 17:31:49.058 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-16 17:31:49.222 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-16 17:31:50.345 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-16 17:31:50.429 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-16 17:31:50.492 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-16 17:31:50.492 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-16 17:31:50.690 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature filter electrical dept members
+[INFO ] 2024-05-16 17:31:52.871 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-16 17:31:53.006 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature filter electrical dept members
+[INFO ] 2024-05-16 17:31:53.317 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-16 17:31:54.661 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature filter electrical dept members
+[INFO ] 2024-05-16 17:32:15.161 [main] Testhooks - Failed scenario screenshot got capturedTo verify the members feature filter electrical dept members
+[INFO ] 2024-05-16 17:33:34.803 [main] Testhooks - Execution Started
+[INFO ] 2024-05-16 17:33:35.741 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-16 17:33:41.132 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-16 17:33:41.288 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-16 17:33:42.421 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-16 17:33:42.506 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-16 17:33:42.566 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-16 17:33:42.567 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-16 17:33:42.758 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature filter electrical dept members
+[INFO ] 2024-05-16 17:33:45.089 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-16 17:33:45.275 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature filter electrical dept members
+[INFO ] 2024-05-16 17:33:45.454 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-16 17:33:45.600 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature filter electrical dept members
+[INFO ] 2024-05-16 17:33:47.310 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature filter electrical dept members
+[INFO ] 2024-05-16 17:33:47.496 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature filter electrical dept members
+[INFO ] 2024-05-16 17:54:05.430 [main] Testhooks - Execution Started
+[INFO ] 2024-05-16 17:54:06.441 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-16 17:54:11.190 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-16 17:54:11.358 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-16 17:54:12.484 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-16 17:54:12.568 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-16 17:54:12.627 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-16 17:54:12.628 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-16 17:54:12.828 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature filter resposible area
+[INFO ] 2024-05-16 17:54:15.121 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-16 17:54:15.272 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature filter resposible area
+[INFO ] 2024-05-16 17:54:15.527 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-16 17:54:15.600 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature filter resposible area
+[INFO ] 2024-05-16 17:54:17.566 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature filter resposible area
+[INFO ] 2024-05-16 17:54:17.878 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature filter resposible area

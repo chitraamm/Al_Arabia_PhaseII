@@ -170,13 +170,42 @@ And User clicks the pdf formate btn
 Then All members pdf formate list get downloaded successfully
 
 @members @members21 @smoke @regression @all
-Scenario Outline: To verify the members feature download members list pdf
+Scenario Outline: To verify the members feature download popup closing
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And User clicks the members module
 And User clicks the members list download btn
 And User clicks the close icon
 Then The popup get closed successfully
+
+@members @members22 @smoke @regression @all
+Scenario Outline: To verify the members feature pagination 1st to 2nd page
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And User clicks the members module
+And Go to next page of members page
+Then Second page get displayed successfully
+
+@members @members23 @sanity @regression @all
+Scenario Outline: To verify the members feature particular members profile page
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And User clicks the members module
+And User filter the members list status-Active
+And User search the members
+And Admin or User go the members profile page
+Then Members page get displayed successfully
+
+@members @members24 @sanity @regression @all
+Scenario Outline: To verify the members feature personal profile updation
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And User clicks the members module
+And User filter the members list status-Active
+And User search the members
+And Admin or User go the members profile page
+And Admin or User update the members profile page
+Then Particular members personal profile get updated successfully
 
 
 

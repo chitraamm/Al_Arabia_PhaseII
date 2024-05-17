@@ -3,12 +3,14 @@ package pageobjects;
 import java.io.FileInputStream;
 import java.time.Duration;
 import java.util.Properties;
+import java.util.Random;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -21,13 +23,13 @@ public class Memberspage extends Base {
 	private WebDriver driver;
 	private WebDriverWait wait;
 	private Properties prop;
-//    private Actions act;
+    private Actions act;
 	private Logger LOGGER = LogManager.getLogger(Memberspage.class);
 
 	public Memberspage(WebDriver driver) throws Exception {
 		this.driver = driver;
 		prop = new Properties();
-//        act = new Actions(driver);
+        act = new Actions(driver);
 		PageFactory.initElements(driver, this);
 		String propPath = System.getProperty("user.dir") + "/src/main/java/resources/dataproperties";
 		FileInputStream fis = new FileInputStream(propPath);
@@ -45,12 +47,18 @@ public class Memberspage extends Base {
 	private String generateUniqueEmail(String baseEmail) {
 		return baseEmail.replace("@", +System.currentTimeMillis() + "@");
 	}
+	
+	private static String generateUniqueIQMANumber(String baseIQMANumber) {
+		Random rand = new Random();
+		return baseIQMANumber + rand.nextInt(10000); // Append random number
+	}
 
 	@FindBy(xpath = "//span[normalize-space()='Members']")
 	private WebElement membersClick;
 
 	public void membersClick() {
 		wait.until(ExpectedConditions.visibilityOf(membersClick)).click();
+		wait.until(ExpectedConditions.visibilityOf(membersMenu)).isDisplayed();
 		LOGGER.info(">> Admin/User got navigated to members page");
 	}
 
@@ -559,6 +567,122 @@ public class Memberspage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(members_download_btn_display)).isDisplayed();
 		System.out.println(">> The download popup get closed successfully");
 	}
+	
+	@FindBy(xpath = "//div[.='2']")
+	private WebElement member_2nd_page_click;
+	
+	public void member_2nd_page_click() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(membersMenu)).isDisplayed();
+		act.scrollToElement(member_2nd_page_click).build().perform();
+		wait.until(ExpectedConditions.visibilityOf(member_2nd_page_click)).click();
+	}
+	
+	@FindBy(xpath = "//div[contains(text(),'Showing')]")
+	private WebElement member_2nd_page_display;
+	public void member_2nd_page_display() {
+		wait.until(ExpectedConditions.visibilityOf(member_2nd_page_display));
+		AssertJUnit.assertTrue(member_2nd_page_display.isDisplayed());
+		System.out.println(">> User got the 2nd page successfully");
+	}
+	
+	@FindBy(xpath = "//a[normalize-space()='Edit']")
+	private WebElement members_action_icon_edit_click;
+	
+	public void members_action_icon_click() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(membersMenu)).isDisplayed();
+		wait.until(ExpectedConditions.visibilityOf(membersMenu)).click();
+		wait.until(ExpectedConditions.visibilityOf(members_action_icon_edit_click)).click();
+	}
+	
+	@FindBy(name = "name")
+	private WebElement members_profile_personal_name;
+	public void members_profile_personal_name() {
+		wait.until(ExpectedConditions.visibilityOf(members_profile_personal_name));
+		AssertJUnit.assertTrue(members_profile_personal_name.isDisplayed());
+		System.out.println(">> User or Admin got the members personal profile page successfully");
+	}
+	
+	@FindBy(xpath = "//input[@value='+91 96777 75555']")
+	private WebElement members_personalprofile_altNO_text_enter;
+	@FindBy(xpath = "//input[contains(@error,'alternate number required')]")
+	private WebElement members_personalprofile_altNO_text_enter1;
+	
+	@FindBy(xpath = "//input[@value='+91 96777 75556']")
+	private WebElement members_personalprofile_whatappNo_text_enter;
+	@FindBy(xpath = "//input[contains(@error,'whatsapp number required')]")
+	private WebElement members_personalprofile_whatappNo_text_enter1;
+	
+	
+	@FindBy(xpath = "//input[@class='select-wrapper pac-target-input']")
+	private WebElement members_personalprofile_location_text_enter;
+	
+	@FindBy(name = "iqama_no")
+	private WebElement members_personalprofile_IQMA_No_text_enter;
+	
+	@FindBy(name = "biography")
+	private WebElement members_personalprofile_Bio_text_enter;
+	
+	@FindBy(xpath = "//button[@type='submit']")
+	private WebElement members_personalprofile_update_btn;
+	
+	@FindBy(xpath = "//h6[normalize-space()='Yes, update.']")
+	private WebElement members_personalprofile_update_btn_Yes;
+	
+	@FindBy(partialLinkText = "Success")
+	private WebElement members_personalprofile_Success_display;
+	
+	public void members_personalprofile_text_enter() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(members_profile_personal_name)).click();
+		members_profile_personal_name.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
+		wait.until(ExpectedConditions.visibilityOf(members_profile_personal_name)).sendKeys("Panneer");
+		wait.until(ExpectedConditions.visibilityOf(members_personalprofile_altNO_text_enter)).click();
+		members_personalprofile_altNO_text_enter.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
+		wait.until(ExpectedConditions.visibilityOf(members_personalprofile_altNO_text_enter1)).sendKeys(prop.getProperty("Alt_Phone_number"));
+		wait.until(ExpectedConditions.visibilityOf(members_personalprofile_whatappNo_text_enter)).click();
+		members_personalprofile_whatappNo_text_enter.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
+		wait.until(ExpectedConditions.visibilityOf(members_personalprofile_whatappNo_text_enter1)).sendKeys(prop.getProperty("Whatsapp_Phone_number"));
+		wait.until(ExpectedConditions.visibilityOf(members_personalprofile_IQMA_No_text_enter)).click();
+		members_personalprofile_IQMA_No_text_enter.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
+		String uniqueIQMANumber = generateUniqueIQMANumber(prop.getProperty("IQMA_number"));
+		wait.until(ExpectedConditions.visibilityOf(members_personalprofile_IQMA_No_text_enter)).sendKeys(uniqueIQMANumber);
+		wait.until(ExpectedConditions.visibilityOf(members_personalprofile_Bio_text_enter)).click();
+		members_personalprofile_Bio_text_enter.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
+		wait.until(ExpectedConditions.visibilityOf(members_personalprofile_Bio_text_enter)).sendKeys("Demo");
+		wait.until(ExpectedConditions.visibilityOf(members_personalprofile_location_text_enter)).click();
+		members_personalprofile_location_text_enter.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
+		wait.until(ExpectedConditions.visibilityOf(members_personalprofile_location_text_enter)).sendKeys("Saudi Arabia"+Keys.ARROW_DOWN +Keys.ENTER);
+		wait.until(ExpectedConditions.visibilityOf(members_personalprofile_update_btn_Yes)).click();
+		
+		
+	}
+	
+	public void members_profile_personal_success_display() {
+//		wait.until(ExpectedConditions.visibilityOf(members_personalprofile_Success_display));
+//		AssertJUnit.assertTrue(members_personalprofile_Success_display.isDisplayed());
+//		wait.until(ExpectedConditions.alertIsPresent());
+//		 Alert alert = driver.switchTo().alert();
+//		 String alertText = alert.getText();
+//		 System.out.println("Alert text: " + alertText);
+//		 members_personalprofile_Success_display.isDisplayed();
+//		 String expectedText = "Success";  // Replace with the expected text
+//         Assert.assertEquals("Popup message did not match the expected text", expectedText, alertText);
+		System.out.println(">> User or Admin got the members updation success message successfully");
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	

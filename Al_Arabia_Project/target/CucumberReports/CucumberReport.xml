@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="11.773" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="Members" name="To verify the members feature download members list pdf" time="11.569">
+<testsuite name="Cucumber" time="50.254" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Members" name="To verify the members feature personal profile updation" time="50.039">
 <system-out><![CDATA[
 Given Admin logged in with valid credentials................................passed
 When Al-Arabia overall dashboard should display.............................passed
 And User clicks the members module..........................................passed
-And User clicks the members list download btn...............................passed
-And User clicks the close icon..............................................passed
-Then The popup get closed successfully......................................passed
+And User filter the members list status-Active..............................passed
+And User search the members.................................................passed
+And Admin or User go the members profile page...............................passed
+And Admin or User update the members profile page...........................passed
+Then Particular members personal profile get updated successfully...........passed
 ]]></system-out>
 </testcase>
 </testsuite>

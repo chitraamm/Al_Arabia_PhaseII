@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="13.044" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="Members" name="To verify the members feature filter resposible area" time="12.842">
+<testsuite name="Cucumber" time="11.773" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Members" name="To verify the members feature download members list pdf" time="11.569">
 <system-out><![CDATA[
 Given Admin logged in with valid credentials................................passed
 When Al-Arabia overall dashboard should display.............................passed
 And User clicks the members module..........................................passed
-And User filter the members list responsible area...........................passed
-Then Responsible area members list get displayed successfully...............passed
+And User clicks the members list download btn...............................passed
+And User clicks the close icon..............................................passed
+Then The popup get closed successfully......................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

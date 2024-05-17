@@ -229,6 +229,11 @@ public class Members extends Base {
         membersPage.members_filter_sts_active();
     }
     
+    @And("User filter the members list status-Active1")
+    public void User_filter_the_members_list_status_Active1 () {
+        membersPage.members_filter_sts_active1();
+    }
+    
     @Then("Active members list get displayed successfully")
     public void Active_members_list_get_displayed_successfully() {
         membersPage.members_filter_active_list_display();
@@ -289,6 +294,11 @@ public class Members extends Base {
         membersPage.members_filter_role_Supervisor();
     }
     
+    @And("User filter the members list role-supervisor1")
+    public void User_filter_the_members_list_role_supervisor1() {
+        membersPage.members_filter_role_Supervisor1();
+    }
+    
     @Then("Supervisor members list get displayed successfully")
     public void Supervisor_members_list_get_displayed_successfully() {
         membersPage.members_filter_Supervisor_list_display();
@@ -309,6 +319,11 @@ public class Members extends Base {
     	 membersPage.members_filter_dept();
     }
     
+    @And("User filter the members list dept-electrical1")
+    public void User_filter_the_members_list_dept_electrical1() {
+    	 membersPage.members_filter_dept1();
+    }
+    
     @Then("Electrical dept members list get displayed successfully")
     public void Electrical_dept_members_list_get_displayed_successfully() {
         membersPage.members_filter_electrical_list_display();
@@ -319,9 +334,54 @@ public class Members extends Base {
     	 membersPage.members_filter_responsible_area();
     }
     
+    @And("User filter the members list responsible area1")
+    public void User_filter_the_members_list_responsible_area1() {
+    	 membersPage.members_filter_responsible_area1();
+    }
+    
     @Then("Responsible area members list get displayed successfully")
     public void Responsible_area_members_list_get_displayed_successfully() {
         membersPage.members_filter_responsible_area_list_display();
+    }
+    
+    @Then("Filtered members list get displayed successfully")
+    public void Filtered_members_list_get_displayed_successfully() {
+        membersPage.members_filtered_list_display();
+    }
+    
+    @And("User clicks the members list download btn")
+    public void User_clicks_the_members_list_download_btn() {
+    	 membersPage.members_download_btn();
+    }
+    
+    @And("User clicks the excel formate btn")
+    public void User_clicks_the_excel_formate_btn() {
+    	 membersPage.members_download_excel_btn();
+    }
+    
+    @Then("All members excel formate list get downloaded successfully")
+    public void All_members_excel_formate_list_get_downloaded_successfully() {
+        membersPage.excel_formate_members_list();
+    }
+    
+    @And("User clicks the pdf formate btn")
+    public void User_clicks_the_pdf_formate_btn() {
+    	 membersPage.members_download_pdf_btn();
+    }
+    
+    @Then("All members pdf formate list get downloaded successfully")
+    public void All_members_pdf_formate_list_get_downloaded_successfully() {
+        membersPage.pdf_formate_members_list();
+    }
+    
+    @And("User clicks the close icon")
+    public void User_clicks_the_close_icon() {
+    	 membersPage.members_download_popup_closeicon();
+    }
+    
+    @Then("The popup get closed successfully")
+    public void The_popup_get_closed_successfully() {
+        membersPage.members_download_btn_display();
     }
 }
 

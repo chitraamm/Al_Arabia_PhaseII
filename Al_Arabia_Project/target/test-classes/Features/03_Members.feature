@@ -140,4 +140,43 @@ And User clicks the members module
 And User filter the members list responsible area
 Then Responsible area members list get displayed successfully
 
+@members @members18 @sanity @regression @all
+Scenario Outline: To verify the members feature filter with multiple selected options
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And User clicks the members module
+And User filter the members list role-supervisor1
+And User filter the members list dept-electrical1
+And User filter the members list responsible area1
+And User filter the members list status-Active1
+Then Filtered members list get displayed successfully
+
+@members @members19 @sanity @regression @all
+Scenario Outline: To verify the members feature download members list excel
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And User clicks the members module
+And User clicks the members list download btn
+And User clicks the excel formate btn
+Then All members excel formate list get downloaded successfully
+
+@members @members20 @sanity @regression @all
+Scenario Outline: To verify the members feature download members list pdf
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And User clicks the members module
+And User clicks the members list download btn
+And User clicks the pdf formate btn
+Then All members pdf formate list get downloaded successfully
+
+@members @members21 @smoke @regression @all
+Scenario Outline: To verify the members feature download members list pdf
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And User clicks the members module
+And User clicks the members list download btn
+And User clicks the close icon
+Then The popup get closed successfully
+
+
 

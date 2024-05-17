@@ -35,7 +35,9 @@ public class Memberspage extends Base {
 		initializeWait();
 		LOGGER = LogManager.getLogger(Memberspage.class.getName());
 	}
+
 	private boolean condition = true;
+
 	private void initializeWait() {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	}
@@ -212,6 +214,12 @@ public class Memberspage extends Base {
 		System.out.println(">> User clicked active status in filter");
 	}
 
+	public void members_filter_sts_active1() {
+		wait.until(ExpectedConditions.visibilityOf(members_filter_sts_active)).click();
+		wait.until(ExpectedConditions.visibilityOf(members_filter_apply_btn)).click();
+		System.out.println(">> User clicked active status in filter");
+	}
+
 	@FindBy(xpath = "//h6[contains(.,'Blocked')][.='Blocked']")
 	private WebElement members_filter_sts_blocked;
 
@@ -271,11 +279,12 @@ public class Memberspage extends Base {
 		} catch (Exception e) {
 			wait.until(ExpectedConditions.visibilityOf(members_no_members_found)).isDisplayed();
 			System.out.println(">> User got no members found message");
-		} 
+		}
 	}
 
 	@FindBy(xpath = "//span[contains(@class,'in-active-membesr')]")
 	private WebElement members_filter_blocked_list_display;
+
 	public void members_filter_blocked_list_display() {
 
 		try {
@@ -290,9 +299,9 @@ public class Memberspage extends Base {
 		} catch (Exception e) {
 			wait.until(ExpectedConditions.visibilityOf(members_no_members_found));
 			System.out.println(">> User got no members found message");
-		} 
+		}
 	}
-	
+
 	@FindBy(xpath = "//h6[contains(.,'Admin')]")
 	private WebElement members_filter_role_admin;
 
@@ -303,9 +312,10 @@ public class Memberspage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(members_filter_apply_btn)).click();
 		System.out.println(">> User clicked admin role in filter");
 	}
-	
+
 	@FindBy(xpath = "//h6[normalize-space()='ADMIN']")
 	private WebElement members_filter_admin_list_display;
+
 	public void members_filter_admin_list_display() {
 
 		try {
@@ -320,9 +330,9 @@ public class Memberspage extends Base {
 		} catch (Exception e) {
 			wait.until(ExpectedConditions.visibilityOf(members_no_members_found));
 			System.out.println(">> User got no members found message");
-		} 
+		}
 	}
-	
+
 	@FindBy(xpath = "//h6[contains(.,'Manager')]")
 	private WebElement members_filter_role_manager;
 
@@ -333,9 +343,10 @@ public class Memberspage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(members_filter_apply_btn)).click();
 		System.out.println(">> User clicked manager role in filter");
 	}
-	
+
 	@FindBy(xpath = "//h6[normalize-space()='MANAGER']")
 	private WebElement members_filter_manager_list_display;
+
 	public void members_filter_manager_list_display() {
 
 		try {
@@ -350,9 +361,9 @@ public class Memberspage extends Base {
 		} catch (Exception e) {
 			wait.until(ExpectedConditions.visibilityOf(members_no_members_found));
 			System.out.println(">> User got no members found message");
-		} 
+		}
 	}
-	
+
 	@FindBy(xpath = "//h6[contains(.,'Supervisor')]")
 	private WebElement members_filter_role_Supervisor;
 
@@ -363,9 +374,17 @@ public class Memberspage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(members_filter_apply_btn)).click();
 		System.out.println(">> User clicked supervisor role in filter");
 	}
-	
+
+	public void members_filter_role_Supervisor1() {
+		wait.until(ExpectedConditions.visibilityOf(membersMenu)).isDisplayed();
+		wait.until(ExpectedConditions.visibilityOf(members_filter)).click();
+		wait.until(ExpectedConditions.visibilityOf(members_filter_role_Supervisor)).click();
+		System.out.println(">> User clicked supervisor role in filter");
+	}
+
 	@FindBy(xpath = "//h6[.='SUPERVISOR ']")
 	private WebElement members_filter_Supervisor_list_display;
+
 	public void members_filter_Supervisor_list_display() {
 
 		try {
@@ -380,9 +399,9 @@ public class Memberspage extends Base {
 		} catch (Exception e) {
 			wait.until(ExpectedConditions.visibilityOf(members_no_members_found));
 			System.out.println(">> User got no members found message");
-		} 
+		}
 	}
-	
+
 	@FindBy(xpath = "//h6[contains(.,'Technician')]")
 	private WebElement members_filter_role_technician;
 
@@ -393,9 +412,10 @@ public class Memberspage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(members_filter_apply_btn)).click();
 		System.out.println(">> User clicked technician role in filter");
 	}
-	
+
 	@FindBy(xpath = "//h6[.='TECHNICIAN ']")
 	private WebElement members_filter_technician_list_display;
+
 	public void members_filter_technician_list_display() {
 
 		try {
@@ -410,12 +430,12 @@ public class Memberspage extends Base {
 		} catch (Exception e) {
 			wait.until(ExpectedConditions.visibilityOf(members_no_members_found));
 			System.out.println(">> User got no members found message");
-		} 
+		}
 	}
-	
+
 	@FindBy(xpath = "//input[@autocapitalize='none']")
 	private WebElement members_filter_dept_click;
-	
+
 	@FindBy(id = "react-select-3-listbox")
 	private WebElement members_filter_dept_select;
 
@@ -427,9 +447,16 @@ public class Memberspage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(members_filter_apply_btn)).click();
 		System.out.println(">> User selected the dept in filter");
 	}
-	
+
+	public void members_filter_dept1() {
+		wait.until(ExpectedConditions.visibilityOf(members_filter_dept_click)).click();
+		wait.until(ExpectedConditions.visibilityOf(members_filter_dept_select)).click();
+		System.out.println(">> User selected the dept in filter");
+	}
+
 	@FindBy(xpath = "//td[contains(normalize-space(),'ELECTRICAL')]")
 	private WebElement members_filter_electrical_list_display;
+
 	public void members_filter_electrical_list_display() {
 
 		try {
@@ -444,9 +471,9 @@ public class Memberspage extends Base {
 		} catch (Exception e) {
 			wait.until(ExpectedConditions.visibilityOf(members_no_members_found));
 			System.out.println(">> User got no members found message");
-		} 
+		}
 	}
-	
+
 	@FindBy(xpath = "//input[@itemtype='establishment']")
 	private WebElement members_filter_responsible_area;
 
@@ -454,13 +481,22 @@ public class Memberspage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(membersMenu)).isDisplayed();
 		wait.until(ExpectedConditions.visibilityOf(members_filter)).click();
 		wait.until(ExpectedConditions.visibilityOf(members_filter_responsible_area)).click();
-		wait.until(ExpectedConditions.visibilityOf(members_filter_responsible_area)).sendKeys("Saudi Arabia"+Keys.ENTER);
+		wait.until(ExpectedConditions.visibilityOf(members_filter_responsible_area))
+				.sendKeys("Saudi Arabia" + Keys.ENTER);
 		wait.until(ExpectedConditions.visibilityOf(members_filter_apply_btn)).click();
 		System.out.println(">> User entered the responsible area in filter");
 	}
-	
+
+	public void members_filter_responsible_area1() {
+		wait.until(ExpectedConditions.visibilityOf(members_filter_responsible_area)).click();
+		wait.until(ExpectedConditions.visibilityOf(members_filter_responsible_area))
+				.sendKeys("Saudi Arabia" + Keys.ENTER);
+		System.out.println(">> User entered the responsible area in filter");
+	}
+
 	@FindBy(xpath = "//h6[normalize-space()='Riyadh Saudi Arabia']")
 	private WebElement members_filter_responsible_area_list_display;
+
 	public void members_filter_responsible_area_list_display() {
 
 		try {
@@ -475,6 +511,55 @@ public class Memberspage extends Base {
 		} catch (Exception e) {
 			wait.until(ExpectedConditions.visibilityOf(members_no_members_found));
 			System.out.println(">> User got no members found message");
-		} 
+		}
 	}
+
+	public void members_filtered_list_display() {
+		members_filter_responsible_area_list_display();
+	}
+
+	@FindBy(xpath = "//button[.='Download']")
+	private WebElement members_download_btn, members_download_btn_display;
+
+	public void members_download_btn() {
+		wait.until(ExpectedConditions.visibilityOf(membersMenu)).isDisplayed();
+		wait.until(ExpectedConditions.visibilityOf(members_download_btn)).click();
+	}
+	
+	@FindBy(xpath = "//div[.='As Excel']")
+	private WebElement members_download_excel_btn;
+	
+	public void members_download_excel_btn() {
+		wait.until(ExpectedConditions.visibilityOf(members_download_excel_btn)).click();
+	}
+	
+	@FindBy(xpath = "//div[.='As PDF']")
+	private WebElement members_download_pdf_btn;
+	
+	public void members_download_pdf_btn() {
+		wait.until(ExpectedConditions.visibilityOf(members_download_pdf_btn)).click();
+	}
+	
+	public void excel_formate_members_list() {
+		System.out.println(">> excel formate list get downloaded successfully");
+	}
+	
+	public void pdf_formate_members_list() {
+		System.out.println(">> pdf formate list get downloaded successfully");
+	}
+	
+	@FindBy(xpath = "//button[@aria-label='Close']")
+	private WebElement members_download_popup_closeicon;
+	
+	public void members_download_popup_closeicon() {
+		wait.until(ExpectedConditions.visibilityOf(members_download_popup_closeicon)).click();
+	}
+	
+	public void members_download_btn_display() {
+		wait.until(ExpectedConditions.visibilityOf(members_download_btn_display)).isDisplayed();
+		System.out.println(">> The download popup get closed successfully");
+	}
+	
+	
+	
 }

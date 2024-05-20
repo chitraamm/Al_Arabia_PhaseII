@@ -205,7 +205,8 @@ And User filter the members list status-Active
 And User search the members
 And Admin or User go the members profile page
 And Admin or User update the members profile page
-Then Particular members personal profile get updated successfully
-
-
+Then Particular members personal profile get updated successfully as "<successMessage>"
+ Examples:
+      | successMessage                        |
+      | Success Personal profile updated      |
 

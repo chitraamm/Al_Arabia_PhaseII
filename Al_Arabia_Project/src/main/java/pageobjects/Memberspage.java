@@ -628,9 +628,6 @@ public class Memberspage extends Base {
 	@FindBy(xpath = "//h6[normalize-space()='Yes, update.']")
 	private WebElement members_personalprofile_update_btn_Yes;
 	
-	@FindBy(partialLinkText = "Success")
-	private WebElement members_personalprofile_Success_display;
-	
 	public void members_personalprofile_text_enter() throws Exception {
 		wait.until(ExpectedConditions.visibilityOf(members_profile_personal_name)).click();
 		members_profile_personal_name.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
@@ -652,21 +649,14 @@ public class Memberspage extends Base {
 		members_personalprofile_location_text_enter.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
 		wait.until(ExpectedConditions.visibilityOf(members_personalprofile_location_text_enter)).sendKeys("Saudi Arabia"+Keys.ARROW_DOWN +Keys.ENTER);
 		wait.until(ExpectedConditions.visibilityOf(members_personalprofile_update_btn_Yes)).click();
-		
-		
 	}
 	
-	public void members_profile_personal_success_display() {
-//		wait.until(ExpectedConditions.visibilityOf(members_personalprofile_Success_display));
-//		AssertJUnit.assertTrue(members_personalprofile_Success_display.isDisplayed());
-//		wait.until(ExpectedConditions.alertIsPresent());
-//		 Alert alert = driver.switchTo().alert();
-//		 String alertText = alert.getText();
-//		 System.out.println("Alert text: " + alertText);
-//		 members_personalprofile_Success_display.isDisplayed();
-//		 String expectedText = "Success";  // Replace with the expected text
-//         Assert.assertEquals("Popup message did not match the expected text", expectedText, alertText);
-		System.out.println(">> User or Admin got the members updation success message successfully");
+	@FindBy(xpath = "//div[@class='toastpop position-relative']")
+	private WebElement members_personalprofile_Success_display;
+	   public String members_profile_personal_success_display() {
+	        WebElement successMessageElement = wait.until(ExpectedConditions.visibilityOf(members_personalprofile_Success_display));
+	        return successMessageElement.getText().trim();
+	    }
 	}
 	
 	
@@ -684,6 +674,6 @@ public class Memberspage extends Base {
 	
 	
 	
+
 	
-	
-}
+

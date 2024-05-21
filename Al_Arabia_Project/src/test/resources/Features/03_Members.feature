@@ -339,3 +339,28 @@ And User search the members
 And Admin or User go the members profile page
 And Admin or User delete the new password and cofirm password mismatch
 Then Reset password page error message get displayed successfully
+
+@members @members36 @sanity @regression @all
+Scenario Outline: T036_To verify the members feature block the active member
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And User clicks the members module
+And User filter the members list status-Active
+And User search the members
+And Admin or User click the menu option
+And Admin or User click the block option
+And Admin or User click the Yes button
+Then Member blocked successfully
+
+
+@members @members37 @sanity @regression @all
+Scenario Outline: T037_To verify the members feature unblock the blocked member
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And User clicks the members module
+And User filter the members list status-Blocked
+And User search the members
+And Admin or User click the menu option
+And Admin or User click the unblock option
+And Admin or User click the unblock Yes button
+Then Member activated successfully

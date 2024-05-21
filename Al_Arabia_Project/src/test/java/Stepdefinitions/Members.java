@@ -405,5 +405,40 @@ public class Members extends Base {
         System.out.println(">> User or Admin got the members profile updation success message successfully");
         assertEquals(normalizedExpectedMessage, normalizedActualMessage);
     }
+    
+    @And("Admin or User click the menu option")
+    public void Admin_or_User_click_the_menu_option() throws Exception {
+    	 membersPage.members_menu_icon_click();
+    }
+    
+    @And("Admin or User click the block option")
+    public void Admin_or_User_click_the_block_option() throws Exception {
+    	 membersPage.members_menu_block_click();
+    }
+    
+    @And("Admin or User click the Yes button")
+    public void Admin_or_User_click_the_Yes_button() throws Exception {
+    	 membersPage.members_menu_block_yes_click();
+    }
+    
+    @Then("Member blocked successfully")
+    public void Member_blocked_successfully() {
+        membersPage.members_menu_blocked_text();
+    }
+    
+    @And("Admin or User click the unblock option")
+    public void Admin_or_User_click_the_unblock_option() throws Exception {
+    	 membersPage.members_menu_unblock_click();
+    }
+    
+    @And("Admin or User click the unblock Yes button")
+    public void Admin_or_User_click_the_unblock_Yes_button() throws Exception {
+    	 membersPage.members_menu_unblock_Yes_click();
+    }
+    
+    @Then("Member activated successfully")
+    public void Member_activated_successfully() {
+        membersPage.members_menu_Active_text();
+    }
 }
 

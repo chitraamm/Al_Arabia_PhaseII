@@ -1314,3 +1314,332 @@
 [INFO ] 2024-05-21 16:18:52.875 [main] Testhooks - Passed scenario screenshot captured: T035_To verify the members feature reset password profile error messages (mismatch)
 [INFO ] 2024-05-21 16:18:52.991 [main] Testhooks - Passed scenario screenshot captured: T035_To verify the members feature reset password profile error messages (mismatch)
 [INFO ] 2024-05-21 16:18:53.069 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 16:42:00.054 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 16:42:01.073 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 16:42:05.175 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 16:42:05.315 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 16:42:06.447 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 16:42:06.532 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 16:42:06.598 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 16:42:06.598 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 16:42:06.813 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 16:42:09.279 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 16:42:09.435 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 16:42:10.779 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 16:42:10.857 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 16:42:11.297 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 16:42:11.660 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 16:42:11.894 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 16:42:12.059 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 16:42:12.240 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 16:42:32.402 [main] Testhooks - Failed scenario screenshot got capturedT036_To verify the members feature block the active member
+[INFO ] 2024-05-21 16:42:32.485 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 16:45:55.353 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 16:45:56.291 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 16:46:01.009 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 16:46:01.171 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 16:46:02.295 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 16:46:02.384 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 16:46:02.457 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 16:46:02.457 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 16:46:02.722 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 16:46:05.178 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 16:46:05.312 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 16:46:07.491 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 16:46:07.600 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 16:46:08.070 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 16:46:08.432 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 16:46:08.640 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 16:46:08.778 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 16:46:08.952 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 16:46:29.130 [main] Testhooks - Failed scenario screenshot got capturedT036_To verify the members feature block the active member
+[INFO ] 2024-05-21 16:46:29.207 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 16:52:16.884 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 16:52:17.772 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 16:52:22.878 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 16:52:23.019 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 16:52:24.150 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 16:52:24.229 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 16:52:24.287 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 16:52:24.287 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 16:52:24.482 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 16:52:26.854 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 16:52:27.008 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 16:52:28.461 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 16:52:28.572 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 16:52:29.050 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 16:52:29.361 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 16:52:49.577 [main] Testhooks - Failed scenario screenshot got capturedT036_To verify the members feature block the active member
+[INFO ] 2024-05-21 16:52:49.662 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 16:52:53.484 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 16:52:54.424 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 16:52:59.657 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 16:52:59.759 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 16:53:00.880 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 16:53:00.972 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 16:53:01.045 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 16:53:01.046 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 16:53:01.255 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 16:53:03.860 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 16:53:04.020 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 16:53:05.418 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 16:53:05.518 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 16:53:06.007 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 16:53:06.421 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 16:53:06.639 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 16:53:06.805 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 16:53:06.991 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 16:53:32.193 [main] Testhooks - Failed scenario screenshot got capturedT036_To verify the members feature block the active member
+[INFO ] 2024-05-21 16:53:32.275 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 16:56:53.557 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 16:56:54.481 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 16:56:59.138 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 16:56:59.277 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 16:57:00.418 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 16:57:00.513 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 16:57:00.578 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 16:57:00.578 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 16:57:00.773 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 16:57:04.227 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 16:57:04.409 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 16:57:06.042 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 16:57:06.141 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 16:57:06.626 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 16:57:06.901 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 16:57:24.243 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 16:57:25.233 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 16:57:27.119 [main] Testhooks - Failed scenario screenshot got capturedT036_To verify the members feature block the active member
+[INFO ] 2024-05-21 16:57:27.206 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 16:57:29.561 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 16:57:29.669 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 16:57:30.818 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 16:57:30.912 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 16:57:30.979 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 16:57:30.979 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 16:57:31.179 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 16:57:34.299 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 16:57:34.466 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 16:57:35.725 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 16:57:35.841 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 16:57:36.362 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 16:57:36.723 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 16:57:36.950 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 16:57:37.099 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 16:57:37.274 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 16:58:02.409 [main] Testhooks - Failed scenario screenshot got capturedT036_To verify the members feature block the active member
+[INFO ] 2024-05-21 16:58:02.496 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 17:03:05.847 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 17:03:06.759 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 17:03:11.232 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 17:03:11.385 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 17:03:12.517 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 17:03:12.614 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 17:03:12.691 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 17:03:12.691 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 17:03:12.914 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 17:03:15.194 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 17:03:15.386 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 17:03:16.889 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 17:03:16.975 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 17:03:17.450 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 17:03:17.911 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 17:03:38.134 [main] Testhooks - Failed scenario screenshot got capturedT036_To verify the members feature block the active member
+[INFO ] 2024-05-21 17:03:38.221 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 17:06:30.811 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 17:06:31.794 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 17:06:36.405 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 17:06:36.544 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 17:06:37.677 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 17:06:37.759 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 17:06:37.817 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 17:06:37.817 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 17:06:38.014 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 17:06:40.204 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 17:06:40.407 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 17:06:42.102 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 17:06:42.188 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 17:06:42.647 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 17:06:42.980 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 17:07:03.126 [main] Testhooks - Failed scenario screenshot got capturedT036_To verify the members feature block the active member
+[INFO ] 2024-05-21 17:07:03.208 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 17:09:00.445 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 17:09:01.487 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 17:09:06.429 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 17:09:06.538 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 17:09:07.674 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 17:09:07.757 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 17:09:07.826 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 17:09:07.826 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 17:09:08.043 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 17:09:10.377 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 17:09:10.547 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 17:09:12.021 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 17:09:12.109 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 17:09:12.597 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 17:09:12.906 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 17:09:33.062 [main] Testhooks - Failed scenario screenshot got capturedT036_To verify the members feature block the active member
+[INFO ] 2024-05-21 17:09:33.148 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 17:47:47.220 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 17:47:48.118 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 17:47:52.866 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 17:47:53.002 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 17:47:54.136 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 17:47:54.222 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 17:47:54.283 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 17:47:54.283 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 17:47:54.475 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 17:47:56.787 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 17:47:56.964 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 17:47:58.637 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 17:47:58.734 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 17:47:59.220 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 17:47:59.632 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 17:48:19.817 [main] Testhooks - Failed scenario screenshot got capturedT036_To verify the members feature block the active member
+[INFO ] 2024-05-21 17:48:19.899 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 17:48:24.939 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 17:48:25.912 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 17:48:30.217 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 17:48:30.335 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 17:48:31.468 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 17:48:31.554 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 17:48:31.621 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 17:48:31.622 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 17:48:31.845 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 17:48:34.204 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 17:48:34.387 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 17:48:36.805 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 17:48:36.903 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 17:48:37.394 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 17:48:37.751 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 17:48:37.969 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 17:48:38.117 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 17:48:38.283 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 17:49:18.635 [main] Testhooks - Failed scenario screenshot got capturedT036_To verify the members feature block the active member
+[INFO ] 2024-05-21 17:49:18.714 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 17:49:33.902 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 17:49:34.846 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 17:49:40.407 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 17:49:40.545 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 17:49:41.682 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 17:49:41.764 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 17:49:41.822 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 17:49:41.823 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 17:49:42.042 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 17:49:44.243 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 17:49:44.452 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 17:49:46.100 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 17:49:46.175 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 17:49:46.722 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 17:49:47.051 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 17:50:07.177 [main] Testhooks - Failed scenario screenshot got capturedT036_To verify the members feature block the active member
+[INFO ] 2024-05-21 17:50:07.260 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 17:50:12.550 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 17:50:13.521 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 17:50:18.424 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 17:50:18.536 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 17:50:19.670 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 17:50:19.754 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 17:50:19.815 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 17:50:19.815 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 17:50:20.005 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 17:50:22.334 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 17:50:22.482 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 17:50:24.058 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 17:50:24.123 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 17:50:24.585 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 17:50:24.908 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 17:50:25.118 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 17:50:25.242 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 17:50:25.418 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 17:50:55.661 [main] Testhooks - Failed scenario screenshot got capturedT036_To verify the members feature block the active member
+[INFO ] 2024-05-21 17:50:55.741 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 17:51:20.682 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 17:51:21.616 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 17:51:25.952 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 17:51:26.089 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 17:51:27.221 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 17:51:27.304 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 17:51:27.365 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 17:51:27.366 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 17:51:27.587 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 17:51:29.794 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 17:51:29.936 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 17:51:31.228 [main] Testhooks - Failed scenario screenshot got capturedT036_To verify the members feature block the active member
+[INFO ] 2024-05-21 17:51:31.311 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 17:51:48.516 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 17:51:49.466 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 17:51:55.192 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 17:51:55.294 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 17:51:56.434 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 17:51:56.518 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 17:51:56.578 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 17:51:56.578 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 17:51:56.802 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 17:51:58.991 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 17:51:59.157 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 17:52:01.969 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 17:52:02.092 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 17:52:02.585 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 17:52:02.921 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 17:52:03.144 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 17:52:03.293 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 17:52:03.470 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 17:52:23.695 [main] Testhooks - Passed scenario screenshot captured: T036_To verify the members feature block the active member
+[INFO ] 2024-05-21 17:52:23.774 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 17:52:47.055 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 17:52:48.009 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 17:52:53.142 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 17:52:53.280 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 17:52:54.418 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 17:52:54.501 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 17:52:54.563 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 17:52:54.563 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 17:52:54.782 [main] Testhooks - Passed scenario screenshot captured: T037_To verify the members feature unblock the blocked member
+[INFO ] 2024-05-21 17:52:56.993 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 17:52:57.153 [main] Testhooks - Passed scenario screenshot captured: T037_To verify the members feature unblock the blocked member
+[INFO ] 2024-05-21 17:52:58.743 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 17:52:58.829 [main] Testhooks - Passed scenario screenshot captured: T037_To verify the members feature unblock the blocked member
+[INFO ] 2024-05-21 17:52:59.287 [main] Testhooks - Passed scenario screenshot captured: T037_To verify the members feature unblock the blocked member
+[INFO ] 2024-05-21 17:52:59.723 [main] Testhooks - Passed scenario screenshot captured: T037_To verify the members feature unblock the blocked member
+[INFO ] 2024-05-21 17:52:59.962 [main] Testhooks - Passed scenario screenshot captured: T037_To verify the members feature unblock the blocked member
+[INFO ] 2024-05-21 17:53:00.125 [main] Testhooks - Passed scenario screenshot captured: T037_To verify the members feature unblock the blocked member
+[INFO ] 2024-05-21 17:53:00.289 [main] Testhooks - Passed scenario screenshot captured: T037_To verify the members feature unblock the blocked member
+[INFO ] 2024-05-21 17:53:20.513 [main] Testhooks - Failed scenario screenshot got capturedT037_To verify the members feature unblock the blocked member
+[INFO ] 2024-05-21 17:53:20.626 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 17:53:55.364 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 17:53:56.304 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 17:54:00.452 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 17:54:00.626 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 17:54:01.763 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 17:54:01.849 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 17:54:01.919 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 17:54:01.919 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 17:54:02.101 [main] Testhooks - Passed scenario screenshot captured: T037_To verify the members feature unblock the blocked member
+[INFO ] 2024-05-21 17:54:04.440 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 17:54:04.570 [main] Testhooks - Passed scenario screenshot captured: T037_To verify the members feature unblock the blocked member
+[INFO ] 2024-05-21 17:54:07.163 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 17:54:07.252 [main] Testhooks - Passed scenario screenshot captured: T037_To verify the members feature unblock the blocked member
+[INFO ] 2024-05-21 17:54:07.714 [main] Testhooks - Passed scenario screenshot captured: T037_To verify the members feature unblock the blocked member
+[INFO ] 2024-05-21 17:54:08.106 [main] Testhooks - Passed scenario screenshot captured: T037_To verify the members feature unblock the blocked member
+[INFO ] 2024-05-21 17:54:28.301 [main] Testhooks - Failed scenario screenshot got capturedT037_To verify the members feature unblock the blocked member
+[INFO ] 2024-05-21 17:54:28.384 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 17:55:48.005 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 17:55:48.985 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 17:55:53.284 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 17:55:53.389 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 17:55:54.530 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 17:55:54.612 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 17:55:54.672 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 17:55:54.672 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 17:55:54.870 [main] Testhooks - Passed scenario screenshot captured: T037_To verify the members feature unblock the blocked member
+[INFO ] 2024-05-21 17:55:57.377 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 17:55:57.557 [main] Testhooks - Passed scenario screenshot captured: T037_To verify the members feature unblock the blocked member
+[INFO ] 2024-05-21 17:55:59.007 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 17:55:59.111 [main] Testhooks - Passed scenario screenshot captured: T037_To verify the members feature unblock the blocked member
+[INFO ] 2024-05-21 17:55:59.579 [main] Testhooks - Passed scenario screenshot captured: T037_To verify the members feature unblock the blocked member
+[INFO ] 2024-05-21 17:55:59.958 [main] Testhooks - Passed scenario screenshot captured: T037_To verify the members feature unblock the blocked member
+[INFO ] 2024-05-21 17:56:01.765 [main] Testhooks - Passed scenario screenshot captured: T037_To verify the members feature unblock the blocked member
+[INFO ] 2024-05-21 17:56:01.908 [main] Testhooks - Passed scenario screenshot captured: T037_To verify the members feature unblock the blocked member
+[INFO ] 2024-05-21 17:56:02.070 [main] Testhooks - Passed scenario screenshot captured: T037_To verify the members feature unblock the blocked member
+[INFO ] 2024-05-21 17:56:22.277 [main] Testhooks - Passed scenario screenshot captured: T037_To verify the members feature unblock the blocked member
+[INFO ] 2024-05-21 17:56:22.355 [main] Testhooks - Browser got closed

@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="13.433" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="Members" name="T035_To verify the members feature reset password profile error messages (mismatch)" time="13.236">
+<testsuite name="Cucumber" time="34.974" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Members" name="T037_To verify the members feature unblock the blocked member" time="34.752">
 <system-out><![CDATA[
 Given Admin logged in with valid credentials................................passed
 When Al-Arabia overall dashboard should display.............................passed
 And User clicks the members module..........................................passed
-And User filter the members list status-Active..............................passed
+And User filter the members list status-Blocked.............................passed
 And User search the members.................................................passed
-And Admin or User go the members profile page...............................passed
-And Admin or User delete the new password and cofirm password mismatch......passed
-Then Reset password page error message get displayed successfully...........passed
+And Admin or User click the menu option.....................................passed
+And Admin or User click the unblock option..................................passed
+And Admin or User click the unblock Yes button..............................passed
+Then Member activated successfully..........................................passed
 ]]></system-out>
 </testcase>
 </testsuite>

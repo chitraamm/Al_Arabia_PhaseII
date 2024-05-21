@@ -847,4 +847,72 @@ public class Memberspage extends Base {
 		System.out.println(">> User or Admin got error message successfully:>>>" + members_profilepage_error.getText());
 	}
 
+	public void members_menu_icon_click() throws Exception {
+
+		wait.until(ExpectedConditions.visibilityOf(membersMenu_click)).click();
+	}
+	
+	@FindBy(xpath = "//a[normalize-space()='Block']")
+	private WebElement members_menu_block_click;
+	
+	@FindBy(xpath = "//a[normalize-space()='Unblock']")
+	private WebElement members_menu_unblock_click;
+	
+	public void members_menu_block_click() throws Exception {
+
+		wait.until(ExpectedConditions.visibilityOf(members_menu_block_click)).click();
+	}
+	
+	public void members_menu_block_yes_click() throws Exception {
+
+		wait.until(ExpectedConditions.visibilityOf(members_menu_block_Yes_click)).click();
+	}
+	@FindBy(xpath = "//h6[normalize-space()='Yes, block it.']")
+	private WebElement members_menu_block_Yes_click;
+	
+	@FindBy(xpath = "//h6[normalize-space()='Yes, unblock it.']")
+	private WebElement members_menu_unblock_Yes_click;
+	public void members_menu_unblock_Yes_click() throws Exception {
+
+		wait.until(ExpectedConditions.visibilityOf(members_menu_unblock_Yes_click)).click();
+	}
+	
+	public void members_menu_unblock_click() throws Exception {
+
+		wait.until(ExpectedConditions.visibilityOf(members_menu_unblock_click)).click();
+	}
+	
+	@FindBy(xpath = "//span[normalize-space()='BLOCKED']")
+	private WebElement members_menu_blocked_text;
+	
+	public void members_menu_blocked_text() {
+		try {
+			{
+				wait.until(ExpectedConditions.visibilityOf(members_menu_blocked_text));
+				AssertJUnit.assertTrue(members_menu_blocked_text.isDisplayed());
+				System.out.println(">> Member got blocked"+members_menu_blocked_text.getText());
+			} 
+		} catch (Exception e) {
+			wait.until(ExpectedConditions.visibilityOf(members_no_members_found));
+			System.out.println(">> User got no members found message");
+		}
+		System.out.println(">> User or Admin got blocked list successfully");
+	}
+	
+	@FindBy(xpath = "//span[contains(.,'ACTIVE')]")
+	private WebElement members_menu_Active_text;
+	
+	public void members_menu_Active_text() {
+		try {
+			{
+				wait.until(ExpectedConditions.visibilityOf(members_menu_Active_text));
+				AssertJUnit.assertTrue(members_menu_Active_text.isDisplayed());
+				System.out.println(">> Member got blocked"+members_menu_Active_text.getText());
+			} 
+		} catch (Exception e) {
+			wait.until(ExpectedConditions.visibilityOf(members_no_members_found));
+			System.out.println(">> User got no members found message");
+		}
+		System.out.println(">> User or Admin got active list successfully");
+	}
 }

@@ -309,17 +309,57 @@ public class Members extends Base {
     	 membersPage.members_personalprofile_text_enter();
     }
     
-    @Then("^Particular members personal profile get updated successfully as \"([^\"]*)\"$")
-    public void Particular_members_personal_profile_get_updated_successfully(String expectedMessage) {
-        String actualMessage = membersPage.members_profile_personal_success_display();
+    @Then("^Particular members profile get updated successfully as \"([^\"]*)\"$")
+    public void Particular_members_profile_get_updated_successfully(String expectedMessage) {
+        String actualMessage = membersPage.members_profile_success_display();
         String normalizedExpectedMessage = normalizeWhitespace(expectedMessage);
         String normalizedActualMessage = normalizeWhitespace(actualMessage);
-        System.out.println(">> User or Admin got the members updation success message successfully");
+        System.out.println(">> User or Admin got the members profile updation success message successfully");
         assertEquals(normalizedExpectedMessage, normalizedActualMessage);
     }
 
     private String normalizeWhitespace(String input) {
         return input.replaceAll("\\s+", " ").trim();
+    }
+    
+    @And("Admin or User delete the member name")
+    public void Admin_or_User_delete_the_member_name() throws Exception {
+    	 membersPage.members_profile_personal_name_delete();
+    }
+    
+    @Then("Name is required error message get displayed successfully")
+    public void Name_is_required_error_message_get_displayed_successfully() {
+        membersPage.members_profilepage_error();
+    }
+    
+    @And("Admin or User update the members company profile page")
+    public void Admin_or_User_update_the_members_company_profile_page() throws Exception {
+    	 membersPage.members_companyprofile();
+    }
+    
+    @And("Admin or User delete the workspace ID")
+    public void Admin_or_User_delete_the_workspace_ID() throws Exception {
+    	 membersPage.members_profile_personal_workspace_ID_delete();
+    }
+    
+    @Then("Workspace id is required error message get displayed successfully")
+    public void Workspace_id_is_required_error_message_get_displayed_successfully() {
+        membersPage.members_profile_personal_workspaceID_error();
+    }
+    
+    @And("Admin or User update the members vehicle info profile page")
+    public void Admin_or_User_update_the_members_vehicle_info_profile_page() throws Exception {
+    	 membersPage.members_vehicleinfo_profile();
+    }
+ 
+    @And("Admin or User delete the model")
+    public void Admin_or_User_delete_the_model() throws Exception {
+    	 membersPage.members_profile_vehicleinfo_licenceNo_delete();
+    }
+    
+    @Then("Licence plate number is required error message get displayed successfully")
+    public void Licence_plate_number_is_required_error_message_get_displayed_successfully() {
+        membersPage.members_profile_vehicleinfo_licenceNo_error();
     }
 }
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="13.84" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="Members" name="To verify the members feature personal profile updation - Example #1.1" time="13.642">
+<testsuite name="Cucumber" time="13.618" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Members" name="T029_To verify the members feature vehicle info profile error messages" time="13.423">
 <system-out><![CDATA[
 Given Admin logged in with valid credentials................................passed
 When Al-Arabia overall dashboard should display.............................passed
@@ -8,8 +8,8 @@ And User clicks the members module..........................................pass
 And User filter the members list status-Active..............................passed
 And User search the members.................................................passed
 And Admin or User go the members profile page...............................passed
-And Admin or User update the members profile page...........................passed
-Then Particular members personal profile get updated successfully as "Success Personal profile updated".passed
+And Admin or User delete the model..........................................passed
+Then Licence plate number is required error message get displayed successfully.passed
 ]]></system-out>
 </testcase>
 </testsuite>

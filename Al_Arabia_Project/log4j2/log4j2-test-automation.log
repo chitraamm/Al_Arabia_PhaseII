@@ -1,228 +1,345 @@
-[INFO ] 2024-05-20 16:13:07.962 [main] Testhooks - Execution Started
-[INFO ] 2024-05-20 16:13:08.916 [main] Testhooks - Browser got launched
-[INFO ] 2024-05-20 16:13:13.752 [main] Testhooks - Navigated to url
-[INFO ] 2024-05-20 16:13:14.071 [main] Testhooks - Page is zoomed out
-[INFO ] 2024-05-20 16:13:15.202 [main] Signinpage - User enters valid email address
-[INFO ] 2024-05-20 16:13:15.283 [main] Signinpage - User enters valid password
-[INFO ] 2024-05-20 16:13:15.340 [main] Signinpage - User clicks on signin button
-[INFO ] 2024-05-20 16:13:15.340 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-05-20 16:13:15.554 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 16:13:17.791 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-05-20 16:13:17.944 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 16:13:19.390 [main] Memberspage - >> Admin/User got navigated to members page
-[INFO ] 2024-05-20 16:13:19.474 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 16:13:19.962 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 16:13:20.347 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 16:13:20.674 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 16:13:21.898 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 16:13:22.145 [main] Testhooks - Failed scenario screenshot got capturedTo verify the members feature personal profile updation
-[INFO ] 2024-05-20 16:13:22.225 [main] Testhooks - Browser got closed
-[INFO ] 2024-05-20 16:25:41.972 [main] Testhooks - Execution Started
-[INFO ] 2024-05-20 16:25:42.926 [main] Testhooks - Browser got launched
-[INFO ] 2024-05-20 16:25:49.297 [main] Testhooks - Navigated to url
-[INFO ] 2024-05-20 16:25:49.433 [main] Testhooks - Page is zoomed out
-[INFO ] 2024-05-20 16:25:50.564 [main] Signinpage - User enters valid email address
-[INFO ] 2024-05-20 16:25:50.645 [main] Signinpage - User enters valid password
-[INFO ] 2024-05-20 16:25:50.704 [main] Signinpage - User clicks on signin button
-[INFO ] 2024-05-20 16:25:50.704 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-05-20 16:25:50.890 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 16:25:53.370 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-05-20 16:25:53.503 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 16:25:54.865 [main] Memberspage - >> Admin/User got navigated to members page
-[INFO ] 2024-05-20 16:25:54.965 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 16:25:55.439 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 16:25:55.775 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 16:25:56.057 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 16:25:57.221 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 16:25:57.348 [main] Testhooks - Failed scenario screenshot got capturedTo verify the members feature personal profile updation
-[INFO ] 2024-05-20 16:25:57.425 [main] Testhooks - Browser got closed
-[INFO ] 2024-05-20 16:28:23.464 [main] Testhooks - Execution Started
-[INFO ] 2024-05-20 16:28:24.331 [main] Testhooks - Browser got launched
-[INFO ] 2024-05-20 16:28:31.143 [main] Testhooks - Navigated to url
-[INFO ] 2024-05-20 16:28:31.278 [main] Testhooks - Page is zoomed out
-[INFO ] 2024-05-20 16:28:32.405 [main] Signinpage - User enters valid email address
-[INFO ] 2024-05-20 16:28:32.503 [main] Signinpage - User enters valid password
-[INFO ] 2024-05-20 16:28:32.568 [main] Signinpage - User clicks on signin button
-[INFO ] 2024-05-20 16:28:32.569 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-05-20 16:28:32.753 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 16:28:35.031 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-05-20 16:28:35.188 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 16:28:37.578 [main] Memberspage - >> Admin/User got navigated to members page
-[INFO ] 2024-05-20 16:28:37.688 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 16:28:38.149 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 16:28:38.515 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 16:28:38.806 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 16:28:39.987 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 16:28:40.118 [main] Testhooks - Failed scenario screenshot got capturedTo verify the members feature personal profile updation
-[INFO ] 2024-05-20 16:28:40.196 [main] Testhooks - Browser got closed
-[INFO ] 2024-05-20 16:32:26.028 [main] Testhooks - Execution Started
-[INFO ] 2024-05-20 16:32:26.925 [main] Testhooks - Browser got launched
-[INFO ] 2024-05-20 16:32:31.521 [main] Testhooks - Navigated to url
-[INFO ] 2024-05-20 16:32:31.655 [main] Testhooks - Page is zoomed out
-[INFO ] 2024-05-20 16:32:32.780 [main] Signinpage - User enters valid email address
-[INFO ] 2024-05-20 16:32:32.859 [main] Signinpage - User enters valid password
-[INFO ] 2024-05-20 16:32:32.923 [main] Signinpage - User clicks on signin button
-[INFO ] 2024-05-20 16:32:32.923 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-05-20 16:32:33.108 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 16:32:35.389 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-05-20 16:32:35.545 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 16:32:37.922 [main] Memberspage - >> Admin/User got navigated to members page
-[INFO ] 2024-05-20 16:32:38.018 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 16:32:38.470 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 16:32:38.778 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 16:32:39.104 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 16:32:40.333 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 16:32:40.469 [main] Testhooks - Failed scenario screenshot got capturedTo verify the members feature personal profile updation
-[INFO ] 2024-05-20 16:32:40.545 [main] Testhooks - Browser got closed
-[INFO ] 2024-05-20 16:35:03.140 [main] Testhooks - Execution Started
-[INFO ] 2024-05-20 16:35:04.048 [main] Testhooks - Browser got launched
-[INFO ] 2024-05-20 16:35:08.166 [main] Testhooks - Navigated to url
-[INFO ] 2024-05-20 16:35:08.300 [main] Testhooks - Page is zoomed out
-[INFO ] 2024-05-20 16:35:09.427 [main] Signinpage - User enters valid email address
-[INFO ] 2024-05-20 16:35:09.507 [main] Signinpage - User enters valid password
-[INFO ] 2024-05-20 16:35:09.563 [main] Signinpage - User clicks on signin button
-[INFO ] 2024-05-20 16:35:09.563 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-05-20 16:35:09.749 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 16:35:12.039 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-05-20 16:35:12.200 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 16:35:13.933 [main] Memberspage - >> Admin/User got navigated to members page
-[INFO ] 2024-05-20 16:35:14.016 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 16:35:14.486 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 16:35:14.851 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 16:35:15.208 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 16:35:16.404 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 16:35:16.537 [main] Testhooks - Failed scenario screenshot got capturedTo verify the members feature personal profile updation
-[INFO ] 2024-05-20 16:35:16.616 [main] Testhooks - Browser got closed
-[INFO ] 2024-05-20 16:35:46.631 [main] Testhooks - Execution Started
-[INFO ] 2024-05-20 16:35:47.536 [main] Testhooks - Browser got launched
-[INFO ] 2024-05-20 16:35:51.593 [main] Testhooks - Navigated to url
-[INFO ] 2024-05-20 16:35:51.733 [main] Testhooks - Page is zoomed out
-[INFO ] 2024-05-20 16:35:52.861 [main] Signinpage - User enters valid email address
-[INFO ] 2024-05-20 16:35:52.943 [main] Signinpage - User enters valid password
-[INFO ] 2024-05-20 16:35:53.001 [main] Signinpage - User clicks on signin button
-[INFO ] 2024-05-20 16:35:53.001 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-05-20 16:35:53.192 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 16:35:55.544 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-05-20 16:35:55.735 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 16:35:57.223 [main] Memberspage - >> Admin/User got navigated to members page
-[INFO ] 2024-05-20 16:35:57.319 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 16:35:57.818 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 16:35:58.121 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 16:35:58.459 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 16:35:59.623 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 16:35:59.754 [main] Testhooks - Failed scenario screenshot got capturedTo verify the members feature personal profile updation
-[INFO ] 2024-05-20 16:35:59.831 [main] Testhooks - Browser got closed
-[INFO ] 2024-05-20 16:37:04.995 [main] Testhooks - Execution Started
-[INFO ] 2024-05-20 16:37:05.888 [main] Testhooks - Browser got launched
-[INFO ] 2024-05-20 16:37:09.975 [main] Testhooks - Navigated to url
-[INFO ] 2024-05-20 16:37:10.117 [main] Testhooks - Page is zoomed out
-[INFO ] 2024-05-20 16:37:11.246 [main] Signinpage - User enters valid email address
-[INFO ] 2024-05-20 16:37:11.327 [main] Signinpage - User enters valid password
-[INFO ] 2024-05-20 16:37:11.384 [main] Signinpage - User clicks on signin button
-[INFO ] 2024-05-20 16:37:11.384 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-05-20 16:37:11.549 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 16:37:14.035 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-05-20 16:37:14.164 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 16:37:15.527 [main] Memberspage - >> Admin/User got navigated to members page
-[INFO ] 2024-05-20 16:37:15.609 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 16:37:16.069 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 16:37:16.378 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 16:37:16.701 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 16:37:17.887 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 16:37:18.017 [main] Testhooks - Failed scenario screenshot got capturedTo verify the members feature personal profile updation
-[INFO ] 2024-05-20 16:37:18.092 [main] Testhooks - Browser got closed
-[INFO ] 2024-05-20 16:40:20.832 [main] Testhooks - Execution Started
-[INFO ] 2024-05-20 16:40:21.715 [main] Testhooks - Browser got launched
-[INFO ] 2024-05-20 16:40:25.796 [main] Testhooks - Navigated to url
-[INFO ] 2024-05-20 16:40:25.939 [main] Testhooks - Page is zoomed out
-[INFO ] 2024-05-20 16:40:27.066 [main] Signinpage - User enters valid email address
-[INFO ] 2024-05-20 16:40:27.144 [main] Signinpage - User enters valid password
-[INFO ] 2024-05-20 16:40:27.201 [main] Signinpage - User clicks on signin button
-[INFO ] 2024-05-20 16:40:27.201 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-05-20 16:40:27.400 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 16:40:29.679 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-05-20 16:40:29.800 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 16:40:32.894 [main] Memberspage - >> Admin/User got navigated to members page
-[INFO ] 2024-05-20 16:40:32.968 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 16:40:34.504 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 16:40:34.885 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 16:40:35.222 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 16:40:36.392 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 16:40:46.543 [main] Testhooks - Failed scenario screenshot got capturedTo verify the members feature personal profile updation
-[INFO ] 2024-05-20 16:40:46.627 [main] Testhooks - Browser got closed
-[INFO ] 2024-05-20 17:24:27.630 [main] Testhooks - Execution Started
-[INFO ] 2024-05-20 17:24:28.494 [main] Testhooks - Browser got launched
-[INFO ] 2024-05-20 17:24:32.653 [main] Testhooks - Navigated to url
-[INFO ] 2024-05-20 17:24:32.797 [main] Testhooks - Page is zoomed out
-[INFO ] 2024-05-20 17:24:33.915 [main] Signinpage - User enters valid email address
-[INFO ] 2024-05-20 17:24:33.997 [main] Signinpage - User enters valid password
-[INFO ] 2024-05-20 17:24:34.053 [main] Signinpage - User clicks on signin button
-[INFO ] 2024-05-20 17:24:34.053 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-05-20 17:24:34.269 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 17:24:36.504 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-05-20 17:24:36.714 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 17:24:38.192 [main] Memberspage - >> Admin/User got navigated to members page
-[INFO ] 2024-05-20 17:24:38.285 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 17:24:38.754 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 17:24:39.020 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 17:24:39.362 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 17:24:40.532 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 17:24:40.664 [main] Testhooks - Failed scenario screenshot got capturedTo verify the members feature personal profile updation
-[INFO ] 2024-05-20 17:24:40.741 [main] Testhooks - Browser got closed
-[INFO ] 2024-05-20 17:30:04.591 [main] Testhooks - Execution Started
-[INFO ] 2024-05-20 17:30:05.481 [main] Testhooks - Browser got launched
-[INFO ] 2024-05-20 17:30:09.586 [main] Testhooks - Navigated to url
-[INFO ] 2024-05-20 17:30:09.733 [main] Testhooks - Page is zoomed out
-[INFO ] 2024-05-20 17:30:10.864 [main] Signinpage - User enters valid email address
-[INFO ] 2024-05-20 17:30:10.946 [main] Signinpage - User enters valid password
-[INFO ] 2024-05-20 17:30:11.003 [main] Signinpage - User clicks on signin button
-[INFO ] 2024-05-20 17:30:11.003 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-05-20 17:30:11.194 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 17:30:13.577 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-05-20 17:30:13.774 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 17:30:15.149 [main] Memberspage - >> Admin/User got navigated to members page
-[INFO ] 2024-05-20 17:30:15.255 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 17:30:15.733 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 17:30:16.109 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 17:30:16.435 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 17:30:17.610 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 17:30:17.734 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 17:30:17.812 [main] Testhooks - Browser got closed
-[INFO ] 2024-05-20 17:37:36.503 [main] Testhooks - Execution Started
-[INFO ] 2024-05-20 17:37:37.365 [main] Testhooks - Browser got launched
-[INFO ] 2024-05-20 17:37:41.496 [main] Testhooks - Navigated to url
-[INFO ] 2024-05-20 17:37:41.638 [main] Testhooks - Page is zoomed out
-[INFO ] 2024-05-20 17:37:42.770 [main] Signinpage - User enters valid email address
-[INFO ] 2024-05-20 17:37:42.854 [main] Signinpage - User enters valid password
-[INFO ] 2024-05-20 17:37:42.915 [main] Signinpage - User clicks on signin button
-[INFO ] 2024-05-20 17:37:42.916 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-05-20 17:37:43.107 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 17:37:45.494 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-05-20 17:37:45.651 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 17:37:47.000 [main] Memberspage - >> Admin/User got navigated to members page
-[INFO ] 2024-05-20 17:37:47.087 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 17:37:47.619 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 17:37:48.009 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 17:37:48.362 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 17:37:49.539 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 17:37:49.659 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 17:37:49.736 [main] Testhooks - Browser got closed
-[INFO ] 2024-05-20 17:51:00.976 [main] Testhooks - Execution Started
-[INFO ] 2024-05-20 17:51:01.877 [main] Testhooks - Browser got launched
-[INFO ] 2024-05-20 17:51:05.963 [main] Testhooks - Navigated to url
-[INFO ] 2024-05-20 17:51:06.093 [main] Testhooks - Page is zoomed out
-[INFO ] 2024-05-20 17:51:07.222 [main] Signinpage - User enters valid email address
-[INFO ] 2024-05-20 17:51:07.306 [main] Signinpage - User enters valid password
-[INFO ] 2024-05-20 17:51:07.361 [main] Signinpage - User clicks on signin button
-[INFO ] 2024-05-20 17:51:07.361 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-05-20 17:51:07.563 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 17:51:09.941 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-05-20 17:51:10.110 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 17:51:11.687 [main] Memberspage - >> Admin/User got navigated to members page
-[INFO ] 2024-05-20 17:51:11.773 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 17:51:12.235 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 17:51:12.546 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 17:51:12.890 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 17:51:14.082 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 17:51:14.194 [main] Testhooks - Passed scenario screenshot captured: To verify the members feature personal profile updation
-[INFO ] 2024-05-20 17:51:14.271 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 10:19:51.662 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 10:19:52.676 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 10:19:57.153 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 10:19:57.493 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 10:19:58.616 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 10:19:58.708 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 10:19:58.770 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 10:19:58.770 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 10:19:58.968 [main] Testhooks - Passed scenario screenshot captured: T025_To verify the members feature personal profile error messages
+[INFO ] 2024-05-21 10:20:01.397 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 10:20:01.608 [main] Testhooks - Passed scenario screenshot captured: T025_To verify the members feature personal profile error messages
+[INFO ] 2024-05-21 10:20:02.993 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 10:20:03.093 [main] Testhooks - Passed scenario screenshot captured: T025_To verify the members feature personal profile error messages
+[INFO ] 2024-05-21 10:20:03.601 [main] Testhooks - Passed scenario screenshot captured: T025_To verify the members feature personal profile error messages
+[INFO ] 2024-05-21 10:20:03.974 [main] Testhooks - Passed scenario screenshot captured: T025_To verify the members feature personal profile error messages
+[INFO ] 2024-05-21 10:20:04.324 [main] Testhooks - Passed scenario screenshot captured: T025_To verify the members feature personal profile error messages
+[INFO ] 2024-05-21 10:20:04.519 [main] Testhooks - Passed scenario screenshot captured: T025_To verify the members feature personal profile error messages
+[INFO ] 2024-05-21 10:20:15.115 [main] Testhooks - Failed scenario screenshot got capturedT025_To verify the members feature personal profile error messages
+[INFO ] 2024-05-21 10:20:15.194 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 10:20:45.459 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 10:20:46.423 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 10:20:50.955 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 10:20:51.115 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 10:20:52.245 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 10:20:52.330 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 10:20:52.389 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 10:20:52.389 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 10:20:52.578 [main] Testhooks - Passed scenario screenshot captured: T025_To verify the members feature personal profile error messages
+[INFO ] 2024-05-21 10:20:54.895 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 10:20:55.066 [main] Testhooks - Passed scenario screenshot captured: T025_To verify the members feature personal profile error messages
+[INFO ] 2024-05-21 10:20:56.496 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 10:20:56.591 [main] Testhooks - Passed scenario screenshot captured: T025_To verify the members feature personal profile error messages
+[INFO ] 2024-05-21 10:20:57.087 [main] Testhooks - Passed scenario screenshot captured: T025_To verify the members feature personal profile error messages
+[INFO ] 2024-05-21 10:20:57.468 [main] Testhooks - Passed scenario screenshot captured: T025_To verify the members feature personal profile error messages
+[INFO ] 2024-05-21 10:20:57.758 [main] Testhooks - Passed scenario screenshot captured: T025_To verify the members feature personal profile error messages
+[INFO ] 2024-05-21 10:20:58.005 [main] Testhooks - Passed scenario screenshot captured: T025_To verify the members feature personal profile error messages
+[INFO ] 2024-05-21 10:20:58.125 [main] Testhooks - Passed scenario screenshot captured: T025_To verify the members feature personal profile error messages
+[INFO ] 2024-05-21 10:20:58.203 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 10:51:25.978 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 10:51:26.954 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 10:51:31.998 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 10:51:32.158 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 10:51:33.314 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 10:51:33.398 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 10:51:33.459 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 10:51:33.459 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 10:51:33.631 [main] Testhooks - Passed scenario screenshot captured: T026_To verify the members feature company profile updation
+[INFO ] 2024-05-21 10:51:35.909 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 10:51:36.089 [main] Testhooks - Passed scenario screenshot captured: T026_To verify the members feature company profile updation
+[INFO ] 2024-05-21 10:51:37.868 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 10:51:37.931 [main] Testhooks - Passed scenario screenshot captured: T026_To verify the members feature company profile updation
+[INFO ] 2024-05-21 10:51:38.410 [main] Testhooks - Passed scenario screenshot captured: T026_To verify the members feature company profile updation
+[INFO ] 2024-05-21 10:51:38.729 [main] Testhooks - Passed scenario screenshot captured: T026_To verify the members feature company profile updation
+[INFO ] 2024-05-21 10:51:39.128 [main] Testhooks - Passed scenario screenshot captured: T026_To verify the members feature company profile updation
+[INFO ] 2024-05-21 10:51:49.273 [main] Testhooks - Failed scenario screenshot got capturedT026_To verify the members feature company profile updation
+[INFO ] 2024-05-21 10:51:49.352 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 10:53:00.283 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 10:53:01.255 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 10:53:07.641 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 10:53:07.805 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 10:53:08.954 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 10:53:09.040 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 10:53:09.102 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 10:53:09.103 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 10:53:09.282 [main] Testhooks - Passed scenario screenshot captured: T026_To verify the members feature company profile updation
+[INFO ] 2024-05-21 10:53:11.591 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 10:53:11.769 [main] Testhooks - Passed scenario screenshot captured: T026_To verify the members feature company profile updation
+[INFO ] 2024-05-21 10:53:13.204 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 10:53:13.291 [main] Testhooks - Passed scenario screenshot captured: T026_To verify the members feature company profile updation
+[INFO ] 2024-05-21 10:53:13.816 [main] Testhooks - Passed scenario screenshot captured: T026_To verify the members feature company profile updation
+[INFO ] 2024-05-21 10:53:14.185 [main] Testhooks - Passed scenario screenshot captured: T026_To verify the members feature company profile updation
+[INFO ] 2024-05-21 10:53:14.518 [main] Testhooks - Passed scenario screenshot captured: T026_To verify the members feature company profile updation
+[INFO ] 2024-05-21 10:53:25.114 [main] Testhooks - Failed scenario screenshot got capturedT026_To verify the members feature company profile updation
+[INFO ] 2024-05-21 10:53:25.205 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 10:54:12.159 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 10:54:13.056 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 10:54:17.183 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 10:54:17.332 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 10:54:18.469 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 10:54:18.553 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 10:54:18.612 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 10:54:18.612 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 10:54:18.797 [main] Testhooks - Passed scenario screenshot captured: T026_To verify the members feature company profile updation
+[INFO ] 2024-05-21 10:54:21.089 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 10:54:21.237 [main] Testhooks - Passed scenario screenshot captured: T026_To verify the members feature company profile updation
+[INFO ] 2024-05-21 10:54:22.734 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 10:54:22.785 [main] Testhooks - Passed scenario screenshot captured: T026_To verify the members feature company profile updation
+[INFO ] 2024-05-21 10:54:23.362 [main] Testhooks - Passed scenario screenshot captured: T026_To verify the members feature company profile updation
+[INFO ] 2024-05-21 10:54:23.732 [main] Testhooks - Passed scenario screenshot captured: T026_To verify the members feature company profile updation
+[INFO ] 2024-05-21 10:54:24.086 [main] Testhooks - Passed scenario screenshot captured: T026_To verify the members feature company profile updation
+[INFO ] 2024-05-21 10:54:24.884 [main] Testhooks - Passed scenario screenshot captured: T026_To verify the members feature company profile updation
+[INFO ] 2024-05-21 10:54:25.016 [main] Testhooks - Passed scenario screenshot captured: T026_To verify the members feature company profile updation
+[INFO ] 2024-05-21 10:54:25.093 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 10:56:11.061 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 10:56:12.041 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 10:56:16.372 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 10:56:16.518 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 10:56:17.654 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 10:56:17.741 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 10:56:17.801 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 10:56:17.801 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 10:56:18.002 [main] Testhooks - Passed scenario screenshot captured: T025_To verify the members feature personal profile error messages
+[INFO ] 2024-05-21 10:56:20.154 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 10:56:20.326 [main] Testhooks - Passed scenario screenshot captured: T025_To verify the members feature personal profile error messages
+[INFO ] 2024-05-21 10:56:22.436 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 10:56:22.499 [main] Testhooks - Passed scenario screenshot captured: T025_To verify the members feature personal profile error messages
+[INFO ] 2024-05-21 10:56:24.441 [main] Testhooks - Passed scenario screenshot captured: T025_To verify the members feature personal profile error messages
+[INFO ] 2024-05-21 10:56:24.827 [main] Testhooks - Passed scenario screenshot captured: T025_To verify the members feature personal profile error messages
+[INFO ] 2024-05-21 10:56:25.143 [main] Testhooks - Passed scenario screenshot captured: T025_To verify the members feature personal profile error messages
+[INFO ] 2024-05-21 10:56:25.409 [main] Testhooks - Passed scenario screenshot captured: T025_To verify the members feature personal profile error messages
+[INFO ] 2024-05-21 10:56:25.531 [main] Testhooks - Passed scenario screenshot captured: T025_To verify the members feature personal profile error messages
+[INFO ] 2024-05-21 10:56:25.609 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 10:56:54.737 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 10:56:55.709 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 10:57:00.309 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 10:57:00.475 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 10:57:01.617 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 10:57:01.703 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 10:57:01.777 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 10:57:01.777 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 10:57:01.952 [main] Testhooks - Passed scenario screenshot captured: T027_To verify the members feature company profile error messages
+[INFO ] 2024-05-21 10:57:04.276 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 10:57:04.418 [main] Testhooks - Passed scenario screenshot captured: T027_To verify the members feature company profile error messages
+[INFO ] 2024-05-21 10:57:07.084 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 10:57:07.189 [main] Testhooks - Passed scenario screenshot captured: T027_To verify the members feature company profile error messages
+[INFO ] 2024-05-21 10:57:08.747 [main] Testhooks - Passed scenario screenshot captured: T027_To verify the members feature company profile error messages
+[INFO ] 2024-05-21 10:57:09.089 [main] Testhooks - Passed scenario screenshot captured: T027_To verify the members feature company profile error messages
+[INFO ] 2024-05-21 10:57:09.454 [main] Testhooks - Passed scenario screenshot captured: T027_To verify the members feature company profile error messages
+[INFO ] 2024-05-21 10:57:29.589 [main] Testhooks - Failed scenario screenshot got capturedT027_To verify the members feature company profile error messages
+[INFO ] 2024-05-21 10:57:29.672 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 10:57:42.728 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 10:57:43.675 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 10:58:02.933 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 10:58:03.072 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 10:58:04.222 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 10:58:04.307 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 10:58:04.370 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 10:58:04.370 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 10:58:04.507 [main] Testhooks - Passed scenario screenshot captured: T027_To verify the members feature company profile error messages
+[INFO ] 2024-05-21 10:58:06.869 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 10:58:07.055 [main] Testhooks - Passed scenario screenshot captured: T027_To verify the members feature company profile error messages
+[INFO ] 2024-05-21 10:58:08.797 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 10:58:08.896 [main] Testhooks - Passed scenario screenshot captured: T027_To verify the members feature company profile error messages
+[INFO ] 2024-05-21 10:58:09.554 [main] Testhooks - Passed scenario screenshot captured: T027_To verify the members feature company profile error messages
+[INFO ] 2024-05-21 10:58:09.941 [main] Testhooks - Passed scenario screenshot captured: T027_To verify the members feature company profile error messages
+[INFO ] 2024-05-21 10:58:10.281 [main] Testhooks - Passed scenario screenshot captured: T027_To verify the members feature company profile error messages
+[INFO ] 2024-05-21 10:58:10.749 [main] Testhooks - Passed scenario screenshot captured: T027_To verify the members feature company profile error messages
+[INFO ] 2024-05-21 10:58:10.883 [main] Testhooks - Passed scenario screenshot captured: T027_To verify the members feature company profile error messages
+[INFO ] 2024-05-21 10:58:10.960 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 12:53:45.019 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 12:53:46.004 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 12:53:50.402 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 12:53:50.549 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 12:53:51.689 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 12:53:51.774 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 12:53:51.833 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 12:53:51.833 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 12:53:52.004 [main] Testhooks - Passed scenario screenshot captured: T028_To verify the members feature vehicle info profile updation
+[INFO ] 2024-05-21 12:53:54.193 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 12:53:54.394 [main] Testhooks - Passed scenario screenshot captured: T028_To verify the members feature vehicle info profile updation
+[INFO ] 2024-05-21 12:53:56.091 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 12:53:56.189 [main] Testhooks - Passed scenario screenshot captured: T028_To verify the members feature vehicle info profile updation
+[INFO ] 2024-05-21 12:53:56.767 [main] Testhooks - Passed scenario screenshot captured: T028_To verify the members feature vehicle info profile updation
+[INFO ] 2024-05-21 12:53:57.102 [main] Testhooks - Passed scenario screenshot captured: T028_To verify the members feature vehicle info profile updation
+[INFO ] 2024-05-21 12:53:57.408 [main] Testhooks - Passed scenario screenshot captured: T028_To verify the members feature vehicle info profile updation
+[INFO ] 2024-05-21 12:54:17.814 [main] Testhooks - Failed scenario screenshot got capturedT028_To verify the members feature vehicle info profile updation
+[INFO ] 2024-05-21 12:54:17.897 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 12:54:27.236 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 12:54:28.150 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 12:54:32.580 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 12:54:32.725 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 12:54:33.874 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 12:54:33.961 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 12:54:34.021 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 12:54:34.021 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 12:54:34.204 [main] Testhooks - Passed scenario screenshot captured: T028_To verify the members feature vehicle info profile updation
+[INFO ] 2024-05-21 12:54:36.596 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 12:54:36.749 [main] Testhooks - Passed scenario screenshot captured: T028_To verify the members feature vehicle info profile updation
+[INFO ] 2024-05-21 12:54:38.194 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 12:54:38.299 [main] Testhooks - Passed scenario screenshot captured: T028_To verify the members feature vehicle info profile updation
+[INFO ] 2024-05-21 12:54:38.811 [main] Testhooks - Passed scenario screenshot captured: T028_To verify the members feature vehicle info profile updation
+[INFO ] 2024-05-21 12:54:39.200 [main] Testhooks - Passed scenario screenshot captured: T028_To verify the members feature vehicle info profile updation
+[INFO ] 2024-05-21 12:54:39.540 [main] Testhooks - Passed scenario screenshot captured: T028_To verify the members feature vehicle info profile updation
+[INFO ] 2024-05-21 12:54:40.025 [main] Testhooks - Failed scenario screenshot got capturedT028_To verify the members feature vehicle info profile updation
+[INFO ] 2024-05-21 12:54:40.105 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 12:55:42.069 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 12:55:42.996 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 12:55:47.319 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 12:55:47.491 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 12:55:48.633 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 12:55:48.719 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 12:55:48.780 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 12:55:48.781 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 12:55:48.970 [main] Testhooks - Passed scenario screenshot captured: T028_To verify the members feature vehicle info profile updation
+[INFO ] 2024-05-21 12:55:51.267 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 12:55:51.409 [main] Testhooks - Passed scenario screenshot captured: T028_To verify the members feature vehicle info profile updation
+[INFO ] 2024-05-21 12:55:52.957 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 12:55:53.068 [main] Testhooks - Passed scenario screenshot captured: T028_To verify the members feature vehicle info profile updation
+[INFO ] 2024-05-21 12:55:53.575 [main] Testhooks - Passed scenario screenshot captured: T028_To verify the members feature vehicle info profile updation
+[INFO ] 2024-05-21 12:55:53.743 [main] Testhooks - Failed scenario screenshot got capturedT028_To verify the members feature vehicle info profile updation
+[INFO ] 2024-05-21 12:55:53.824 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 12:58:22.823 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 12:58:23.750 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 12:58:31.335 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 12:58:31.503 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 12:58:32.633 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 12:58:32.729 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 12:58:32.791 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 12:58:32.791 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 12:58:32.976 [main] Testhooks - Passed scenario screenshot captured: T028_To verify the members feature vehicle info profile updation
+[INFO ] 2024-05-21 12:58:35.193 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 12:58:35.318 [main] Testhooks - Passed scenario screenshot captured: T028_To verify the members feature vehicle info profile updation
+[INFO ] 2024-05-21 12:58:36.565 [main] Testhooks - Failed scenario screenshot got capturedT028_To verify the members feature vehicle info profile updation
+[INFO ] 2024-05-21 12:58:36.654 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 12:59:11.206 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 12:59:12.101 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 12:59:16.285 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 12:59:16.440 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 12:59:17.576 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 12:59:17.658 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 12:59:17.718 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 12:59:17.718 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 12:59:17.908 [main] Testhooks - Passed scenario screenshot captured: T028_To verify the members feature vehicle info profile updation
+[INFO ] 2024-05-21 12:59:20.182 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 12:59:20.373 [main] Testhooks - Passed scenario screenshot captured: T028_To verify the members feature vehicle info profile updation
+[INFO ] 2024-05-21 12:59:21.809 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 12:59:21.922 [main] Testhooks - Passed scenario screenshot captured: T028_To verify the members feature vehicle info profile updation
+[INFO ] 2024-05-21 12:59:22.421 [main] Testhooks - Passed scenario screenshot captured: T028_To verify the members feature vehicle info profile updation
+[INFO ] 2024-05-21 12:59:22.745 [main] Testhooks - Passed scenario screenshot captured: T028_To verify the members feature vehicle info profile updation
+[INFO ] 2024-05-21 12:59:23.080 [main] Testhooks - Passed scenario screenshot captured: T028_To verify the members feature vehicle info profile updation
+[INFO ] 2024-05-21 12:59:23.586 [main] Testhooks - Failed scenario screenshot got capturedT028_To verify the members feature vehicle info profile updation
+[INFO ] 2024-05-21 13:01:30.393 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 13:01:31.465 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 13:01:36.908 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 13:01:37.042 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 13:01:38.179 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 13:01:38.266 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 13:01:38.325 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 13:01:38.325 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 13:01:38.518 [main] Testhooks - Passed scenario screenshot captured: T028_To verify the members feature vehicle info profile updation
+[INFO ] 2024-05-21 13:01:40.881 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 13:01:41.033 [main] Testhooks - Passed scenario screenshot captured: T028_To verify the members feature vehicle info profile updation
+[INFO ] 2024-05-21 13:01:42.567 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 13:01:42.666 [main] Testhooks - Passed scenario screenshot captured: T028_To verify the members feature vehicle info profile updation
+[INFO ] 2024-05-21 13:01:43.248 [main] Testhooks - Passed scenario screenshot captured: T028_To verify the members feature vehicle info profile updation
+[INFO ] 2024-05-21 13:01:43.611 [main] Testhooks - Passed scenario screenshot captured: T028_To verify the members feature vehicle info profile updation
+[INFO ] 2024-05-21 13:01:43.929 [main] Testhooks - Passed scenario screenshot captured: T028_To verify the members feature vehicle info profile updation
+[INFO ] 2024-05-21 13:01:44.559 [main] Testhooks - Passed scenario screenshot captured: T028_To verify the members feature vehicle info profile updation
+[INFO ] 2024-05-21 13:01:44.692 [main] Testhooks - Failed scenario screenshot got capturedT028_To verify the members feature vehicle info profile updation
+[INFO ] 2024-05-21 13:01:44.772 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 13:06:33.789 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 13:06:34.758 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 13:06:39.119 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 13:06:39.270 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 13:06:40.400 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 13:06:40.487 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 13:06:40.551 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 13:06:40.552 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 13:06:40.754 [main] Testhooks - Passed scenario screenshot captured: T028_To verify the members feature vehicle info profile updation
+[INFO ] 2024-05-21 13:06:43.065 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 13:06:43.186 [main] Testhooks - Passed scenario screenshot captured: T028_To verify the members feature vehicle info profile updation
+[INFO ] 2024-05-21 13:06:44.767 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 13:06:44.869 [main] Testhooks - Passed scenario screenshot captured: T028_To verify the members feature vehicle info profile updation
+[INFO ] 2024-05-21 13:06:47.440 [main] Testhooks - Passed scenario screenshot captured: T028_To verify the members feature vehicle info profile updation
+[INFO ] 2024-05-21 13:06:47.876 [main] Testhooks - Passed scenario screenshot captured: T028_To verify the members feature vehicle info profile updation
+[INFO ] 2024-05-21 13:06:48.216 [main] Testhooks - Passed scenario screenshot captured: T028_To verify the members feature vehicle info profile updation
+[INFO ] 2024-05-21 13:06:48.827 [main] Testhooks - Passed scenario screenshot captured: T028_To verify the members feature vehicle info profile updation
+[INFO ] 2024-05-21 13:06:48.961 [main] Testhooks - Passed scenario screenshot captured: T028_To verify the members feature vehicle info profile updation
+[INFO ] 2024-05-21 13:06:49.042 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 13:07:07.933 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 13:07:08.889 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 13:07:13.558 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 13:07:13.695 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 13:07:14.830 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 13:07:14.909 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 13:07:14.967 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 13:07:14.968 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 13:07:15.184 [main] Testhooks - Passed scenario screenshot captured: T024_To verify the members feature personal profile updation
+[INFO ] 2024-05-21 13:07:17.439 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 13:07:17.611 [main] Testhooks - Passed scenario screenshot captured: T024_To verify the members feature personal profile updation
+[INFO ] 2024-05-21 13:07:19.027 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 13:07:19.119 [main] Testhooks - Passed scenario screenshot captured: T024_To verify the members feature personal profile updation
+[INFO ] 2024-05-21 13:07:19.637 [main] Testhooks - Passed scenario screenshot captured: T024_To verify the members feature personal profile updation
+[INFO ] 2024-05-21 13:07:19.896 [main] Testhooks - Passed scenario screenshot captured: T024_To verify the members feature personal profile updation
+[INFO ] 2024-05-21 13:07:20.224 [main] Testhooks - Passed scenario screenshot captured: T024_To verify the members feature personal profile updation
+[INFO ] 2024-05-21 13:07:21.428 [main] Testhooks - Passed scenario screenshot captured: T024_To verify the members feature personal profile updation
+[INFO ] 2024-05-21 13:07:21.552 [main] Testhooks - Passed scenario screenshot captured: T024_To verify the members feature personal profile updation
+[INFO ] 2024-05-21 13:07:21.633 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 13:07:27.709 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 13:07:28.665 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 13:07:33.081 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 13:07:33.235 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 13:07:34.380 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 13:07:34.468 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 13:07:34.528 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 13:07:34.528 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 13:07:34.725 [main] Testhooks - Passed scenario screenshot captured: T026_To verify the members feature company profile updation
+[INFO ] 2024-05-21 13:07:36.968 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 13:07:37.119 [main] Testhooks - Passed scenario screenshot captured: T026_To verify the members feature company profile updation
+[INFO ] 2024-05-21 13:07:38.718 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 13:07:38.803 [main] Testhooks - Passed scenario screenshot captured: T026_To verify the members feature company profile updation
+[INFO ] 2024-05-21 13:07:39.465 [main] Testhooks - Passed scenario screenshot captured: T026_To verify the members feature company profile updation
+[INFO ] 2024-05-21 13:07:39.864 [main] Testhooks - Passed scenario screenshot captured: T026_To verify the members feature company profile updation
+[INFO ] 2024-05-21 13:07:40.265 [main] Testhooks - Passed scenario screenshot captured: T026_To verify the members feature company profile updation
+[INFO ] 2024-05-21 13:07:41.042 [main] Testhooks - Passed scenario screenshot captured: T026_To verify the members feature company profile updation
+[INFO ] 2024-05-21 13:07:41.173 [main] Testhooks - Passed scenario screenshot captured: T026_To verify the members feature company profile updation
+[INFO ] 2024-05-21 13:07:41.253 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 13:11:47.524 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 13:11:48.508 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 13:11:53.159 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 13:11:53.303 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 13:11:54.424 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 13:11:54.572 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 13:11:54.637 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 13:11:54.637 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 13:11:54.805 [main] Testhooks - Passed scenario screenshot captured: T029_To verify the members feature vehicle info profile error messages
+[INFO ] 2024-05-21 13:11:57.131 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 13:11:57.304 [main] Testhooks - Passed scenario screenshot captured: T029_To verify the members feature vehicle info profile error messages
+[INFO ] 2024-05-21 13:11:58.783 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 13:11:58.878 [main] Testhooks - Passed scenario screenshot captured: T029_To verify the members feature vehicle info profile error messages
+[INFO ] 2024-05-21 13:11:59.329 [main] Testhooks - Passed scenario screenshot captured: T029_To verify the members feature vehicle info profile error messages
+[INFO ] 2024-05-21 13:11:59.629 [main] Testhooks - Passed scenario screenshot captured: T029_To verify the members feature vehicle info profile error messages
+[INFO ] 2024-05-21 13:11:59.979 [main] Testhooks - Passed scenario screenshot captured: T029_To verify the members feature vehicle info profile error messages
+[INFO ] 2024-05-21 13:12:01.282 [main] Testhooks - Passed scenario screenshot captured: T029_To verify the members feature vehicle info profile error messages
+[INFO ] 2024-05-21 13:12:21.454 [main] Testhooks - Failed scenario screenshot got capturedT029_To verify the members feature vehicle info profile error messages
+[INFO ] 2024-05-21 13:12:21.534 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 13:14:12.664 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 13:14:13.588 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 13:14:18.318 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 13:14:18.466 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 13:14:19.587 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 13:14:19.669 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 13:14:19.727 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 13:14:19.727 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 13:14:19.920 [main] Testhooks - Passed scenario screenshot captured: T029_To verify the members feature vehicle info profile error messages
+[INFO ] 2024-05-21 13:14:22.204 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 13:14:22.384 [main] Testhooks - Passed scenario screenshot captured: T029_To verify the members feature vehicle info profile error messages
+[INFO ] 2024-05-21 13:14:23.882 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 13:14:23.979 [main] Testhooks - Passed scenario screenshot captured: T029_To verify the members feature vehicle info profile error messages
+[INFO ] 2024-05-21 13:14:24.505 [main] Testhooks - Passed scenario screenshot captured: T029_To verify the members feature vehicle info profile error messages
+[INFO ] 2024-05-21 13:14:24.786 [main] Testhooks - Passed scenario screenshot captured: T029_To verify the members feature vehicle info profile error messages
+[INFO ] 2024-05-21 13:14:25.105 [main] Testhooks - Passed scenario screenshot captured: T029_To verify the members feature vehicle info profile error messages
+[INFO ] 2024-05-21 13:14:25.516 [main] Testhooks - Passed scenario screenshot captured: T029_To verify the members feature vehicle info profile error messages
+[INFO ] 2024-05-21 13:14:25.650 [main] Testhooks - Passed scenario screenshot captured: T029_To verify the members feature vehicle info profile error messages
+[INFO ] 2024-05-21 13:14:25.727 [main] Testhooks - Browser got closed

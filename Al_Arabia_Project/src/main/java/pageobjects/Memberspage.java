@@ -23,13 +23,13 @@ public class Memberspage extends Base {
 	private WebDriver driver;
 	private WebDriverWait wait;
 	private Properties prop;
-    private Actions act;
+	private Actions act;
 	private Logger LOGGER = LogManager.getLogger(Memberspage.class);
 
 	public Memberspage(WebDriver driver) throws Exception {
 		this.driver = driver;
 		prop = new Properties();
-        act = new Actions(driver);
+		act = new Actions(driver);
 		PageFactory.initElements(driver, this);
 		String propPath = System.getProperty("user.dir") + "/src/main/java/resources/dataproperties";
 		FileInputStream fis = new FileInputStream(propPath);
@@ -47,7 +47,7 @@ public class Memberspage extends Base {
 	private String generateUniqueEmail(String baseEmail) {
 		return baseEmail.replace("@", +System.currentTimeMillis() + "@");
 	}
-	
+
 	private static String generateUniqueIQMANumber(String baseIQMANumber) {
 		Random rand = new Random();
 		return baseIQMANumber + rand.nextInt(10000); // Append random number
@@ -533,147 +533,238 @@ public class Memberspage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(membersMenu)).isDisplayed();
 		wait.until(ExpectedConditions.visibilityOf(members_download_btn)).click();
 	}
-	
+
 	@FindBy(xpath = "//div[.='As Excel']")
 	private WebElement members_download_excel_btn;
-	
+
 	public void members_download_excel_btn() {
 		wait.until(ExpectedConditions.visibilityOf(members_download_excel_btn)).click();
 	}
-	
+
 	@FindBy(xpath = "//div[.='As PDF']")
 	private WebElement members_download_pdf_btn;
-	
+
 	public void members_download_pdf_btn() {
 		wait.until(ExpectedConditions.visibilityOf(members_download_pdf_btn)).click();
 	}
-	
+
 	public void excel_formate_members_list() {
 		System.out.println(">> excel formate list get downloaded successfully");
 	}
-	
+
 	public void pdf_formate_members_list() {
 		System.out.println(">> pdf formate list get downloaded successfully");
 	}
-	
+
 	@FindBy(xpath = "//button[@aria-label='Close']")
 	private WebElement members_download_popup_closeicon;
-	
+
 	public void members_download_popup_closeicon() {
 		wait.until(ExpectedConditions.visibilityOf(members_download_popup_closeicon)).click();
 	}
-	
+
 	public void members_download_btn_display() {
 		wait.until(ExpectedConditions.visibilityOf(members_download_btn_display)).isDisplayed();
 		System.out.println(">> The download popup get closed successfully");
 	}
-	
+
 	@FindBy(xpath = "//div[.='2']")
 	private WebElement member_2nd_page_click;
-	
+
 	public void member_2nd_page_click() throws Exception {
 		wait.until(ExpectedConditions.visibilityOf(membersMenu)).isDisplayed();
 		act.scrollToElement(member_2nd_page_click).build().perform();
 		wait.until(ExpectedConditions.visibilityOf(member_2nd_page_click)).click();
 	}
-	
+
 	@FindBy(xpath = "//div[contains(text(),'Showing')]")
 	private WebElement member_2nd_page_display;
+
 	public void member_2nd_page_display() {
 		wait.until(ExpectedConditions.visibilityOf(member_2nd_page_display));
 		AssertJUnit.assertTrue(member_2nd_page_display.isDisplayed());
 		System.out.println(">> User got the 2nd page successfully");
 	}
-	
+
 	@FindBy(xpath = "//a[normalize-space()='Edit']")
 	private WebElement members_action_icon_edit_click;
-	
+
 	public void members_action_icon_click() throws Exception {
 		wait.until(ExpectedConditions.visibilityOf(membersMenu)).isDisplayed();
 		wait.until(ExpectedConditions.visibilityOf(membersMenu)).click();
 		wait.until(ExpectedConditions.visibilityOf(members_action_icon_edit_click)).click();
 	}
-	
+
 	@FindBy(name = "name")
 	private WebElement members_profile_personal_name;
+
 	public void members_profile_personal_name() {
 		wait.until(ExpectedConditions.visibilityOf(members_profile_personal_name));
 		AssertJUnit.assertTrue(members_profile_personal_name.isDisplayed());
 		System.out.println(">> User or Admin got the members personal profile page successfully");
 	}
-	
+
 	@FindBy(xpath = "//input[@value='+91 96777 75555']")
 	private WebElement members_personalprofile_altNO_text_enter;
+
 	@FindBy(xpath = "//input[contains(@error,'alternate number required')]")
 	private WebElement members_personalprofile_altNO_text_enter1;
-	
+
 	@FindBy(xpath = "//input[@value='+91 96777 75556']")
 	private WebElement members_personalprofile_whatappNo_text_enter;
+	
 	@FindBy(xpath = "//input[contains(@error,'whatsapp number required')]")
 	private WebElement members_personalprofile_whatappNo_text_enter1;
-	
-	
+
 	@FindBy(xpath = "//input[@class='select-wrapper pac-target-input']")
 	private WebElement members_personalprofile_location_text_enter;
-	
+
 	@FindBy(name = "iqama_no")
 	private WebElement members_personalprofile_IQMA_No_text_enter;
-	
+
 	@FindBy(name = "biography")
 	private WebElement members_personalprofile_Bio_text_enter;
-	
+
 	@FindBy(xpath = "//button[@type='submit']")
 	private WebElement members_personalprofile_update_btn;
-	
+
 	@FindBy(xpath = "//h6[normalize-space()='Yes, update.']")
 	private WebElement members_personalprofile_update_btn_Yes;
-	
+
 	public void members_personalprofile_text_enter() throws Exception {
 		wait.until(ExpectedConditions.visibilityOf(members_profile_personal_name)).click();
 		members_profile_personal_name.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
 		wait.until(ExpectedConditions.visibilityOf(members_profile_personal_name)).sendKeys("Panneer");
 		wait.until(ExpectedConditions.visibilityOf(members_personalprofile_altNO_text_enter)).click();
 		members_personalprofile_altNO_text_enter.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
-		wait.until(ExpectedConditions.visibilityOf(members_personalprofile_altNO_text_enter1)).sendKeys(prop.getProperty("Alt_Phone_number"));
+		wait.until(ExpectedConditions.visibilityOf(members_personalprofile_altNO_text_enter1))
+				.sendKeys(prop.getProperty("Alt_Phone_number"));
 		wait.until(ExpectedConditions.visibilityOf(members_personalprofile_whatappNo_text_enter)).click();
 		members_personalprofile_whatappNo_text_enter.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
-		wait.until(ExpectedConditions.visibilityOf(members_personalprofile_whatappNo_text_enter1)).sendKeys(prop.getProperty("Whatsapp_Phone_number"));
+		wait.until(ExpectedConditions.visibilityOf(members_personalprofile_whatappNo_text_enter1))
+				.sendKeys(prop.getProperty("Whatsapp_Phone_number"));
 		wait.until(ExpectedConditions.visibilityOf(members_personalprofile_IQMA_No_text_enter)).click();
 		members_personalprofile_IQMA_No_text_enter.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
 		String uniqueIQMANumber = generateUniqueIQMANumber(prop.getProperty("IQMA_number"));
-		wait.until(ExpectedConditions.visibilityOf(members_personalprofile_IQMA_No_text_enter)).sendKeys(uniqueIQMANumber);
+		wait.until(ExpectedConditions.visibilityOf(members_personalprofile_IQMA_No_text_enter))
+				.sendKeys(uniqueIQMANumber);
 		wait.until(ExpectedConditions.visibilityOf(members_personalprofile_Bio_text_enter)).click();
 		members_personalprofile_Bio_text_enter.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
 		wait.until(ExpectedConditions.visibilityOf(members_personalprofile_Bio_text_enter)).sendKeys("Demo");
 		wait.until(ExpectedConditions.visibilityOf(members_personalprofile_location_text_enter)).click();
 		members_personalprofile_location_text_enter.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
-		wait.until(ExpectedConditions.visibilityOf(members_personalprofile_location_text_enter)).sendKeys("Saudi Arabia"+Keys.ARROW_DOWN +Keys.ENTER);
+		wait.until(ExpectedConditions.visibilityOf(members_personalprofile_location_text_enter))
+				.sendKeys("Saudi Arabia" + Keys.ARROW_DOWN + Keys.ENTER);
+		wait.until(ExpectedConditions.visibilityOf(members_personalprofile_update_btn_Yes)).click();
+	}
+
+	@FindBy(xpath = "//div[@class='toastpop position-relative']")
+	private WebElement members_profile_Success_display;
+
+	public String members_profile_success_display() {
+		WebElement successMessageElement = wait
+				.until(ExpectedConditions.visibilityOf(members_profile_Success_display));
+		return successMessageElement.getText().trim();
+	}
+
+	public void members_profile_personal_name_delete() {
+		wait.until(ExpectedConditions.visibilityOf(members_profile_personal_name)).click();
+		members_profile_personal_name.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
+		wait.until(ExpectedConditions.visibilityOf(members_personalprofile_altNO_text_enter)).click();
+		System.out.println(">> User or Admin erased the member name");
+	}
+	
+	@FindBy(xpath = "//div[@class='invalid-feedback']")
+	private WebElement members_profilepage_error;
+
+	public void members_profilepage_error() {
+		wait.until(ExpectedConditions.visibilityOf(members_profilepage_error));
+		AssertJUnit.assertTrue(members_profilepage_error.isDisplayed());
+		System.out.println(">> User or Admin got error message successfully:>>>"+members_profilepage_error.getText());
+	}
+	
+	@FindBy(xpath = "//span[normalize-space()='Company Profile']")
+	private WebElement members_companyprofile;
+	
+	@FindBy(name = "work_space_id")
+	private WebElement members_companyprofile_workspaceID;
+	
+	@FindBy(name = "date_of_joining")
+	private WebElement members_companyprofile_DOJ;
+	
+	@FindBy(xpath = "//span[normalize-space()='1']")
+	private WebElement members_companyprofile_DOJ_dateclick;
+	
+	@FindBy(xpath = "//input[@itemtype='establishment']")
+	private WebElement members_companyprofile_responsible_area;
+	
+	public void members_companyprofile() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(members_companyprofile)).click();
+		wait.until(ExpectedConditions.visibilityOf(members_companyprofile_workspaceID)).click();
+		members_companyprofile_workspaceID.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
+		wait.until(ExpectedConditions.visibilityOf(members_companyprofile_workspaceID)).sendKeys("123");
+		wait.until(ExpectedConditions.visibilityOf(members_companyprofile_DOJ)).click();
+		wait.until(ExpectedConditions.visibilityOf(members_companyprofile_DOJ_dateclick))
+				.click();
+		wait.until(ExpectedConditions.visibilityOf(members_companyprofile_responsible_area)).click();
+		members_companyprofile_responsible_area.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
+		wait.until(ExpectedConditions.visibilityOf(members_companyprofile_responsible_area))
+		.sendKeys("Saudi Arabia" + Keys.ARROW_DOWN + Keys.ENTER);
+	
 		wait.until(ExpectedConditions.visibilityOf(members_personalprofile_update_btn_Yes)).click();
 	}
 	
-	@FindBy(xpath = "//div[@class='toastpop position-relative']")
-	private WebElement members_personalprofile_Success_display;
-	   public String members_profile_personal_success_display() {
-	        WebElement successMessageElement = wait.until(ExpectedConditions.visibilityOf(members_personalprofile_Success_display));
-	        return successMessageElement.getText().trim();
-	    }
+	public void members_profile_personal_workspace_ID_delete() {
+		wait.until(ExpectedConditions.visibilityOf(members_companyprofile)).click();
+		wait.until(ExpectedConditions.visibilityOf(members_companyprofile_workspaceID)).click();
+		members_companyprofile_workspaceID.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
+		wait.until(ExpectedConditions.visibilityOf(members_companyprofile_DOJ)).click();
+		System.out.println(">> User or Admin erased the member company profile ID");
 	}
 	
+	public void members_profile_personal_workspaceID_error() {
+		wait.until(ExpectedConditions.visibilityOf(members_profilepage_error));
+		AssertJUnit.assertTrue(members_profilepage_error.isDisplayed());
+		System.out.println(">> User or Admin got error message successfully:>>>"+members_profilepage_error.getText());
+	}
 	
+	@FindBy(xpath = "//span[normalize-space()='Vehicle Information']")
+	private WebElement members_vehicleinfoprofile;
 	
+	@FindBy(xpath = "//div[contains(@class,'select__value-container select__value-container--has-value css-hlgwow')]")
+	private WebElement members_vehicleinfo_vehicletype;
 	
+	@FindBy(id = "react-select-6-listbox")
+	private WebElement members_vehicleinfo_vehicletype_select;
 	
+	@FindBy(name = "number")
+	private WebElement members_vehicleinfo_licence;
 	
+	@FindBy(name = "model")
+	private WebElement members_vehicleinfo_model;
 	
+	public void members_vehicleinfo_profile() {
+		wait.until(ExpectedConditions.visibilityOf(members_vehicleinfoprofile)).click();
+		wait.until(ExpectedConditions.visibilityOf(members_vehicleinfo_vehicletype)).click();
+		wait.until(ExpectedConditions.visibilityOf(members_vehicleinfo_vehicletype_select)).click();
+		wait.until(ExpectedConditions.visibilityOf(members_vehicleinfo_licence)).sendKeys("KA0134442E222");
+		wait.until(ExpectedConditions.visibilityOf(members_vehicleinfo_model)).sendKeys("2024"+Keys.ENTER);
 	
+		wait.until(ExpectedConditions.visibilityOf(members_personalprofile_update_btn_Yes)).click();
+	}
 	
+	public void members_profile_vehicleinfo_licenceNo_delete() {
+		wait.until(ExpectedConditions.visibilityOf(members_vehicleinfoprofile)).click();
+		wait.until(ExpectedConditions.visibilityOf(members_vehicleinfo_licence)).click();
+		members_vehicleinfo_licence.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
+		wait.until(ExpectedConditions.visibilityOf(members_vehicleinfo_model)).click();
+		System.out.println(">> User or Admin erased the member vehicle licence number");
+	}
 	
+	public void members_profile_vehicleinfo_licenceNo_error() {
+		wait.until(ExpectedConditions.visibilityOf(members_profilepage_error));
+		AssertJUnit.assertTrue(members_profilepage_error.isDisplayed());
+		System.out.println(">> User or Admin got error message successfully:>>>"+members_profilepage_error.getText());
+	}
 	
-	
-	
-	
-	
-	
-
-	
-
+}

@@ -343,3 +343,974 @@
 [INFO ] 2024-05-21 13:14:25.516 [main] Testhooks - Passed scenario screenshot captured: T029_To verify the members feature vehicle info profile error messages
 [INFO ] 2024-05-21 13:14:25.650 [main] Testhooks - Passed scenario screenshot captured: T029_To verify the members feature vehicle info profile error messages
 [INFO ] 2024-05-21 13:14:25.727 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 15:07:47.381 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 15:07:48.314 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 15:07:52.755 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 15:07:52.898 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 15:07:54.031 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 15:07:54.120 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 15:07:54.179 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 15:07:54.179 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 15:07:54.365 [main] Testhooks - Passed scenario screenshot captured: T030_To verify the members feature reset password profile updation
+[INFO ] 2024-05-21 15:07:56.693 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 15:07:56.836 [main] Testhooks - Passed scenario screenshot captured: T030_To verify the members feature reset password profile updation
+[INFO ] 2024-05-21 15:07:58.337 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 15:07:58.410 [main] Testhooks - Passed scenario screenshot captured: T030_To verify the members feature reset password profile updation
+[INFO ] 2024-05-21 15:07:58.936 [main] Testhooks - Passed scenario screenshot captured: T030_To verify the members feature reset password profile updation
+[INFO ] 2024-05-21 15:07:59.311 [main] Testhooks - Passed scenario screenshot captured: T030_To verify the members feature reset password profile updation
+[INFO ] 2024-05-21 15:07:59.635 [main] Testhooks - Passed scenario screenshot captured: T030_To verify the members feature reset password profile updation
+[INFO ] 2024-05-21 15:08:20.101 [main] Testhooks - Failed scenario screenshot got capturedT030_To verify the members feature reset password profile updation
+[INFO ] 2024-05-21 15:08:20.184 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 15:11:39.915 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 15:11:40.868 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 15:11:46.986 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 15:11:47.125 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 15:11:48.264 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 15:11:48.349 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 15:11:48.409 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 15:11:48.409 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 15:11:48.572 [main] Testhooks - Passed scenario screenshot captured: T030_To verify the members feature reset password profile updation
+[INFO ] 2024-05-21 15:11:50.800 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 15:11:50.996 [main] Testhooks - Passed scenario screenshot captured: T030_To verify the members feature reset password profile updation
+[INFO ] 2024-05-21 15:11:52.583 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 15:11:52.686 [main] Testhooks - Passed scenario screenshot captured: T030_To verify the members feature reset password profile updation
+[INFO ] 2024-05-21 15:11:53.181 [main] Testhooks - Passed scenario screenshot captured: T030_To verify the members feature reset password profile updation
+[INFO ] 2024-05-21 15:11:53.617 [main] Testhooks - Passed scenario screenshot captured: T030_To verify the members feature reset password profile updation
+[INFO ] 2024-05-21 15:11:53.977 [main] Testhooks - Passed scenario screenshot captured: T030_To verify the members feature reset password profile updation
+[INFO ] 2024-05-21 15:11:54.412 [main] Testhooks - Passed scenario screenshot captured: T030_To verify the members feature reset password profile updation
+[INFO ] 2024-05-21 15:11:54.571 [main] Testhooks - Failed scenario screenshot got capturedT030_To verify the members feature reset password profile updation
+[INFO ] 2024-05-21 15:11:54.650 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 15:14:19.449 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 15:14:20.357 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 15:14:24.782 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 15:14:24.925 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 15:14:26.060 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 15:14:26.142 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 15:14:26.200 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 15:14:26.200 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 15:14:26.396 [main] Testhooks - Passed scenario screenshot captured: T030_To verify the members feature reset password profile updation
+[INFO ] 2024-05-21 15:14:28.703 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 15:14:28.857 [main] Testhooks - Passed scenario screenshot captured: T030_To verify the members feature reset password profile updation
+[INFO ] 2024-05-21 15:14:32.242 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 15:14:32.332 [main] Testhooks - Passed scenario screenshot captured: T030_To verify the members feature reset password profile updation
+[INFO ] 2024-05-21 15:14:32.847 [main] Testhooks - Passed scenario screenshot captured: T030_To verify the members feature reset password profile updation
+[INFO ] 2024-05-21 15:14:33.154 [main] Testhooks - Passed scenario screenshot captured: T030_To verify the members feature reset password profile updation
+[INFO ] 2024-05-21 15:14:33.515 [main] Testhooks - Passed scenario screenshot captured: T030_To verify the members feature reset password profile updation
+[INFO ] 2024-05-21 15:14:33.950 [main] Testhooks - Passed scenario screenshot captured: T030_To verify the members feature reset password profile updation
+[INFO ] 2024-05-21 15:14:34.122 [main] Testhooks - Failed scenario screenshot got capturedT030_To verify the members feature reset password profile updation
+[INFO ] 2024-05-21 15:14:34.204 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 15:17:15.019 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 15:17:15.968 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 15:17:20.348 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 15:17:20.486 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 15:17:21.624 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 15:17:21.708 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 15:17:21.765 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 15:17:21.765 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 15:17:21.948 [main] Testhooks - Passed scenario screenshot captured: T030_To verify the members feature reset password profile updation
+[INFO ] 2024-05-21 15:17:24.143 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 15:17:24.283 [main] Testhooks - Passed scenario screenshot captured: T030_To verify the members feature reset password profile updation
+[INFO ] 2024-05-21 15:17:25.917 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 15:17:26.019 [main] Testhooks - Passed scenario screenshot captured: T030_To verify the members feature reset password profile updation
+[INFO ] 2024-05-21 15:17:27.628 [main] Testhooks - Passed scenario screenshot captured: T030_To verify the members feature reset password profile updation
+[INFO ] 2024-05-21 15:17:27.978 [main] Testhooks - Passed scenario screenshot captured: T030_To verify the members feature reset password profile updation
+[INFO ] 2024-05-21 15:17:28.289 [main] Testhooks - Passed scenario screenshot captured: T030_To verify the members feature reset password profile updation
+[INFO ] 2024-05-21 15:17:28.747 [main] Testhooks - Passed scenario screenshot captured: T030_To verify the members feature reset password profile updation
+[INFO ] 2024-05-21 15:17:31.906 [main] Testhooks - Failed scenario screenshot got capturedT030_To verify the members feature reset password profile updation
+[INFO ] 2024-05-21 15:17:31.984 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 15:17:52.590 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 15:17:53.534 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 15:17:58.241 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 15:17:58.353 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 15:17:59.488 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 15:17:59.572 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 15:17:59.631 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 15:17:59.632 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 15:17:59.820 [main] Testhooks - Passed scenario screenshot captured: T030_To verify the members feature reset password profile updation
+[INFO ] 2024-05-21 15:18:02.146 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 15:18:02.289 [main] Testhooks - Passed scenario screenshot captured: T030_To verify the members feature reset password profile updation
+[INFO ] 2024-05-21 15:18:03.964 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 15:18:04.047 [main] Testhooks - Passed scenario screenshot captured: T030_To verify the members feature reset password profile updation
+[INFO ] 2024-05-21 15:18:04.606 [main] Testhooks - Passed scenario screenshot captured: T030_To verify the members feature reset password profile updation
+[INFO ] 2024-05-21 15:18:04.930 [main] Testhooks - Passed scenario screenshot captured: T030_To verify the members feature reset password profile updation
+[INFO ] 2024-05-21 15:18:05.346 [main] Testhooks - Passed scenario screenshot captured: T030_To verify the members feature reset password profile updation
+[INFO ] 2024-05-21 15:18:05.758 [main] Testhooks - Passed scenario screenshot captured: T030_To verify the members feature reset password profile updation
+[INFO ] 2024-05-21 15:18:08.885 [main] Testhooks - Passed scenario screenshot captured: T030_To verify the members feature reset password profile updation
+[INFO ] 2024-05-21 15:18:08.966 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 15:18:27.845 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 15:18:28.785 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 15:18:33.153 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 15:18:33.293 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 15:18:34.433 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 15:18:34.518 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 15:18:34.576 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 15:18:34.577 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 15:18:34.771 [main] Testhooks - Passed scenario screenshot captured: T030_To verify the members feature reset password profile updation
+[INFO ] 2024-05-21 15:18:37.055 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 15:18:37.204 [main] Testhooks - Passed scenario screenshot captured: T030_To verify the members feature reset password profile updation
+[INFO ] 2024-05-21 15:18:38.909 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 15:18:38.987 [main] Testhooks - Passed scenario screenshot captured: T030_To verify the members feature reset password profile updation
+[INFO ] 2024-05-21 15:18:39.630 [main] Testhooks - Passed scenario screenshot captured: T030_To verify the members feature reset password profile updation
+[INFO ] 2024-05-21 15:18:40.033 [main] Testhooks - Passed scenario screenshot captured: T030_To verify the members feature reset password profile updation
+[INFO ] 2024-05-21 15:18:40.463 [main] Testhooks - Passed scenario screenshot captured: T030_To verify the members feature reset password profile updation
+[INFO ] 2024-05-21 15:18:40.870 [main] Testhooks - Passed scenario screenshot captured: T030_To verify the members feature reset password profile updation
+[INFO ] 2024-05-21 15:18:54.188 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 15:19:00.844 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 15:19:01.883 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 15:19:06.007 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 15:19:06.144 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 15:19:07.279 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 15:19:07.362 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 15:19:07.430 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 15:19:07.430 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 15:19:07.607 [main] Testhooks - Passed scenario screenshot captured: T030_To verify the members feature reset password profile updation
+[INFO ] 2024-05-21 15:19:09.804 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 15:19:10.016 [main] Testhooks - Passed scenario screenshot captured: T030_To verify the members feature reset password profile updation
+[INFO ] 2024-05-21 15:19:11.625 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 15:19:11.731 [main] Testhooks - Passed scenario screenshot captured: T030_To verify the members feature reset password profile updation
+[INFO ] 2024-05-21 15:19:12.263 [main] Testhooks - Passed scenario screenshot captured: T030_To verify the members feature reset password profile updation
+[INFO ] 2024-05-21 15:19:12.470 [main] Testhooks - Failed scenario screenshot got capturedT030_To verify the members feature reset password profile updation
+[INFO ] 2024-05-21 15:19:12.554 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 15:23:03.297 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 15:23:04.231 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 15:23:08.422 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 15:23:08.572 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 15:23:09.703 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 15:23:09.787 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 15:23:09.848 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 15:23:09.848 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 15:23:10.032 [main] Testhooks - Passed scenario screenshot captured: T004_To verify the members feature sort recently updated
+[INFO ] 2024-05-21 15:23:12.308 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 15:23:12.468 [main] Testhooks - Passed scenario screenshot captured: T004_To verify the members feature sort recently updated
+[INFO ] 2024-05-21 15:23:14.034 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 15:23:14.129 [main] Testhooks - Passed scenario screenshot captured: T004_To verify the members feature sort recently updated
+[INFO ] 2024-05-21 15:23:14.384 [main] Testhooks - Passed scenario screenshot captured: T004_To verify the members feature sort recently updated
+[INFO ] 2024-05-21 15:23:14.583 [main] Testhooks - Passed scenario screenshot captured: T004_To verify the members feature sort recently updated
+[INFO ] 2024-05-21 15:23:14.659 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 15:28:08.384 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 15:28:09.320 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 15:28:14.688 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 15:28:14.836 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 15:28:15.966 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 15:28:16.052 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 15:28:16.111 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 15:28:16.111 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 15:28:16.303 [main] Testhooks - Passed scenario screenshot captured: T001_Check members dashboard page
+[INFO ] 2024-05-21 15:28:18.503 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 15:28:18.708 [main] Testhooks - Passed scenario screenshot captured: T001_Check members dashboard page
+[INFO ] 2024-05-21 15:28:20.273 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 15:28:20.353 [main] Testhooks - Passed scenario screenshot captured: T001_Check members dashboard page
+[INFO ] 2024-05-21 15:28:20.398 [main] Memberspage - >> The members dashboard list page got displayed
+[INFO ] 2024-05-21 15:28:20.399 [main] Members - >> Admin/user got the members dashboard page >>
+[INFO ] 2024-05-21 15:28:20.478 [main] Testhooks - Passed scenario screenshot captured: T001_Check members dashboard page
+[INFO ] 2024-05-21 15:28:20.557 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 15:28:20.574 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 15:28:21.203 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 15:28:25.583 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 15:28:25.587 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 15:28:26.701 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 15:28:26.787 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 15:28:26.842 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 15:28:26.842 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 15:28:27.004 [main] Testhooks - Passed scenario screenshot captured: T002_Invite the member with valid inputs
+[INFO ] 2024-05-21 15:28:29.369 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 15:28:29.538 [main] Testhooks - Passed scenario screenshot captured: T002_Invite the member with valid inputs
+[INFO ] 2024-05-21 15:28:32.713 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 15:28:32.818 [main] Testhooks - Passed scenario screenshot captured: T002_Invite the member with valid inputs
+[INFO ] 2024-05-21 15:28:32.926 [main] Memberspage - >> User clicked the invite member button
+[INFO ] 2024-05-21 15:28:33.035 [main] Testhooks - Passed scenario screenshot captured: T002_Invite the member with valid inputs
+[INFO ] 2024-05-21 15:28:33.264 [main] Memberspage - >> User clicked the invite member button
+[INFO ] 2024-05-21 15:28:33.376 [main] Testhooks - Passed scenario screenshot captured: T002_Invite the member with valid inputs
+[INFO ] 2024-05-21 15:28:33.508 [main] Memberspage - >> User selected the role:Supervisor
+[INFO ] 2024-05-21 15:28:33.591 [main] Testhooks - Passed scenario screenshot captured: T002_Invite the member with valid inputs
+[INFO ] 2024-05-21 15:28:33.704 [main] Memberspage - >> User selected the role:Installation
+[INFO ] 2024-05-21 15:28:33.809 [main] Testhooks - Passed scenario screenshot captured: T002_Invite the member with valid inputs
+[INFO ] 2024-05-21 15:28:33.811 [main] Members - >> User got the invitation mail successfully >>
+[INFO ] 2024-05-21 15:28:33.925 [main] Testhooks - Passed scenario screenshot captured: T002_Invite the member with valid inputs
+[INFO ] 2024-05-21 15:28:33.998 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 15:28:34.011 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 15:28:34.615 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 15:28:39.526 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 15:28:39.529 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 15:28:40.652 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 15:28:40.731 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 15:28:40.796 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 15:28:40.796 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 15:28:40.968 [main] Testhooks - Passed scenario screenshot captured: T003_ the members feature search
+[INFO ] 2024-05-21 15:28:43.400 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 15:28:43.532 [main] Testhooks - Passed scenario screenshot captured: T003_ the members feature search
+[INFO ] 2024-05-21 15:28:44.984 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 15:28:45.089 [main] Testhooks - Passed scenario screenshot captured: T003_ the members feature search
+[INFO ] 2024-05-21 15:28:45.362 [main] Testhooks - Passed scenario screenshot captured: T003_ the members feature search
+[INFO ] 2024-05-21 15:28:45.592 [main] Testhooks - Passed scenario screenshot captured: T003_ the members feature search
+[INFO ] 2024-05-21 15:28:45.665 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 15:28:45.676 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 15:28:46.270 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 15:28:50.946 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 15:28:50.951 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 15:28:52.082 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 15:28:52.165 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 15:28:52.231 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 15:28:52.231 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 15:28:52.398 [main] Testhooks - Passed scenario screenshot captured: T004_To verify the members feature sort recently updated
+[INFO ] 2024-05-21 15:28:54.723 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 15:28:54.879 [main] Testhooks - Passed scenario screenshot captured: T004_To verify the members feature sort recently updated
+[INFO ] 2024-05-21 15:28:56.397 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 15:28:56.497 [main] Testhooks - Passed scenario screenshot captured: T004_To verify the members feature sort recently updated
+[INFO ] 2024-05-21 15:28:56.753 [main] Testhooks - Passed scenario screenshot captured: T004_To verify the members feature sort recently updated
+[INFO ] 2024-05-21 15:28:56.944 [main] Testhooks - Passed scenario screenshot captured: T004_To verify the members feature sort recently updated
+[INFO ] 2024-05-21 15:28:57.017 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 15:28:57.026 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 15:28:57.629 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 15:29:02.476 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 15:29:02.484 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 15:29:03.607 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 15:29:03.695 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 15:29:03.752 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 15:29:03.753 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 15:29:03.920 [main] Testhooks - Passed scenario screenshot captured: T005_To verify the members feature sort Name - A to Z
+[INFO ] 2024-05-21 15:29:06.104 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 15:29:06.195 [main] Testhooks - Passed scenario screenshot captured: T005_To verify the members feature sort Name - A to Z
+[INFO ] 2024-05-21 15:29:07.403 [main] Testhooks - Failed scenario screenshot got capturedT005_To verify the members feature sort Name - A to Z
+[INFO ] 2024-05-21 15:29:07.477 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 15:29:07.497 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 15:29:08.137 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 15:29:12.418 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 15:29:12.422 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 15:29:13.553 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 15:29:13.636 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 15:29:13.695 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 15:29:13.695 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 15:29:13.866 [main] Testhooks - Passed scenario screenshot captured: T006_To verify the members feature sort Name - Z to A
+[INFO ] 2024-05-21 15:29:16.117 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 15:29:16.244 [main] Testhooks - Passed scenario screenshot captured: T006_To verify the members feature sort Name - Z to A
+[INFO ] 2024-05-21 15:29:19.514 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 15:29:19.617 [main] Testhooks - Passed scenario screenshot captured: T006_To verify the members feature sort Name - Z to A
+[INFO ] 2024-05-21 15:29:19.825 [main] Testhooks - Passed scenario screenshot captured: T006_To verify the members feature sort Name - Z to A
+[INFO ] 2024-05-21 15:29:20.013 [main] Testhooks - Passed scenario screenshot captured: T006_To verify the members feature sort Name - Z to A
+[INFO ] 2024-05-21 15:29:20.089 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 15:29:20.099 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 15:29:20.728 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 15:29:24.968 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 15:29:24.973 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 15:29:26.094 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 15:29:26.173 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 15:29:26.238 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 15:29:26.238 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 15:29:26.398 [main] Testhooks - Passed scenario screenshot captured: T007_To verify the members feature sort Recently Added
+[INFO ] 2024-05-21 15:29:28.825 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 15:29:28.978 [main] Testhooks - Passed scenario screenshot captured: T007_To verify the members feature sort Recently Added
+[INFO ] 2024-05-21 15:29:32.212 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 15:29:32.315 [main] Testhooks - Passed scenario screenshot captured: T007_To verify the members feature sort Recently Added
+[INFO ] 2024-05-21 15:29:32.536 [main] Testhooks - Passed scenario screenshot captured: T007_To verify the members feature sort Recently Added
+[INFO ] 2024-05-21 15:29:32.655 [main] Testhooks - Passed scenario screenshot captured: T007_To verify the members feature sort Recently Added
+[INFO ] 2024-05-21 15:29:32.730 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 15:29:32.739 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 15:29:33.346 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 15:29:38.331 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 15:29:38.334 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 15:29:39.463 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 15:29:39.539 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 15:29:39.600 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 15:29:39.600 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 15:29:39.766 [main] Testhooks - Passed scenario screenshot captured: T008_To verify the members feature filter active status members
+[INFO ] 2024-05-21 15:29:42.048 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 15:29:42.218 [main] Testhooks - Passed scenario screenshot captured: T008_To verify the members feature filter active status members
+[INFO ] 2024-05-21 15:29:43.670 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 15:29:43.771 [main] Testhooks - Passed scenario screenshot captured: T008_To verify the members feature filter active status members
+[INFO ] 2024-05-21 15:29:44.259 [main] Testhooks - Passed scenario screenshot captured: T008_To verify the members feature filter active status members
+[INFO ] 2024-05-21 15:29:44.532 [main] Testhooks - Passed scenario screenshot captured: T008_To verify the members feature filter active status members
+[INFO ] 2024-05-21 15:29:44.604 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 15:29:44.614 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 15:29:45.226 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 15:29:50.292 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 15:29:50.296 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 15:29:51.411 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 15:29:51.487 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 15:29:51.552 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 15:29:51.552 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 15:29:51.712 [main] Testhooks - Passed scenario screenshot captured: T009_To verify the members feature filter blocked status members
+[INFO ] 2024-05-21 15:29:54.115 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 15:29:54.254 [main] Testhooks - Passed scenario screenshot captured: T009_To verify the members feature filter blocked status members
+[INFO ] 2024-05-21 15:29:55.649 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 15:29:55.744 [main] Testhooks - Passed scenario screenshot captured: T009_To verify the members feature filter blocked status members
+[INFO ] 2024-05-21 15:29:56.316 [main] Testhooks - Passed scenario screenshot captured: T009_To verify the members feature filter blocked status members
+[INFO ] 2024-05-21 15:29:56.531 [main] Testhooks - Passed scenario screenshot captured: T009_To verify the members feature filter blocked status members
+[INFO ] 2024-05-21 15:29:56.604 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 15:29:56.610 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 15:29:57.219 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 15:30:02.028 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 15:30:02.032 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 15:30:03.155 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 15:30:03.233 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 15:30:03.293 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 15:30:03.293 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 15:30:03.463 [main] Testhooks - Passed scenario screenshot captured: T010_To verify the members feature filter expired status members
+[INFO ] 2024-05-21 15:30:05.748 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 15:30:05.932 [main] Testhooks - Passed scenario screenshot captured: T010_To verify the members feature filter expired status members
+[INFO ] 2024-05-21 15:30:08.250 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 15:30:08.342 [main] Testhooks - Passed scenario screenshot captured: T010_To verify the members feature filter expired status members
+[INFO ] 2024-05-21 15:30:08.810 [main] Testhooks - Passed scenario screenshot captured: T010_To verify the members feature filter expired status members
+[INFO ] 2024-05-21 15:30:09.045 [main] Testhooks - Passed scenario screenshot captured: T010_To verify the members feature filter expired status members
+[INFO ] 2024-05-21 15:30:09.117 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 15:30:09.122 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 15:30:09.720 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 15:30:14.273 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 15:30:14.280 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 15:30:15.408 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 15:30:15.485 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 15:30:15.541 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 15:30:15.541 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 15:30:15.692 [main] Testhooks - Passed scenario screenshot captured: T011_To verify the members feature filter pending status members
+[INFO ] 2024-05-21 15:30:18.101 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 15:30:18.244 [main] Testhooks - Passed scenario screenshot captured: T011_To verify the members feature filter pending status members
+[INFO ] 2024-05-21 15:30:19.663 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 15:30:19.747 [main] Testhooks - Passed scenario screenshot captured: T011_To verify the members feature filter pending status members
+[INFO ] 2024-05-21 15:30:20.148 [main] Testhooks - Passed scenario screenshot captured: T011_To verify the members feature filter pending status members
+[INFO ] 2024-05-21 15:30:40.297 [main] Testhooks - Passed scenario screenshot captured: T011_To verify the members feature filter pending status members
+[INFO ] 2024-05-21 15:30:40.371 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 15:30:40.376 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 15:30:40.992 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 15:30:45.331 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 15:30:45.335 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 15:30:46.459 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 15:30:46.536 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 15:30:46.599 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 15:30:46.599 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 15:30:46.736 [main] Testhooks - Passed scenario screenshot captured: T012_To verify the members feature filter admin role members
+[INFO ] 2024-05-21 15:30:49.113 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 15:30:49.316 [main] Testhooks - Passed scenario screenshot captured: T012_To verify the members feature filter admin role members
+[INFO ] 2024-05-21 15:30:50.716 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 15:30:50.823 [main] Testhooks - Passed scenario screenshot captured: T012_To verify the members feature filter admin role members
+[INFO ] 2024-05-21 15:30:51.288 [main] Testhooks - Passed scenario screenshot captured: T012_To verify the members feature filter admin role members
+[INFO ] 2024-05-21 15:30:51.473 [main] Testhooks - Passed scenario screenshot captured: T012_To verify the members feature filter admin role members
+[INFO ] 2024-05-21 15:30:51.546 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 15:30:51.553 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 15:30:52.197 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 15:30:57.154 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 15:30:57.159 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 15:30:58.284 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 15:30:58.362 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 15:30:58.415 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 15:30:58.415 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 15:30:58.575 [main] Testhooks - Passed scenario screenshot captured: T013_To verify the members feature filter manager role members
+[INFO ] 2024-05-21 15:31:00.832 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 15:31:00.990 [main] Testhooks - Passed scenario screenshot captured: T013_To verify the members feature filter manager role members
+[INFO ] 2024-05-21 15:31:03.663 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 15:31:03.765 [main] Testhooks - Passed scenario screenshot captured: T013_To verify the members feature filter manager role members
+[INFO ] 2024-05-21 15:31:04.196 [main] Testhooks - Passed scenario screenshot captured: T013_To verify the members feature filter manager role members
+[INFO ] 2024-05-21 15:31:04.412 [main] Testhooks - Passed scenario screenshot captured: T013_To verify the members feature filter manager role members
+[INFO ] 2024-05-21 15:31:04.484 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 15:31:04.491 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 15:31:05.116 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 15:31:09.263 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 15:31:09.267 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 15:31:10.400 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 15:31:10.476 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 15:31:10.539 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 15:31:10.540 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 15:31:10.717 [main] Testhooks - Passed scenario screenshot captured: T014_To verify the members feature filter supervisor role members
+[INFO ] 2024-05-21 15:31:13.028 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 15:31:13.204 [main] Testhooks - Passed scenario screenshot captured: T014_To verify the members feature filter supervisor role members
+[INFO ] 2024-05-21 15:31:14.650 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 15:31:14.764 [main] Testhooks - Passed scenario screenshot captured: T014_To verify the members feature filter supervisor role members
+[INFO ] 2024-05-21 15:31:15.208 [main] Testhooks - Passed scenario screenshot captured: T014_To verify the members feature filter supervisor role members
+[INFO ] 2024-05-21 15:31:15.486 [main] Testhooks - Passed scenario screenshot captured: T014_To verify the members feature filter supervisor role members
+[INFO ] 2024-05-21 15:31:15.557 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 15:31:15.563 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 15:31:16.177 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 15:31:21.208 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 15:31:21.211 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 15:31:22.330 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 15:31:22.416 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 15:31:22.470 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 15:31:22.470 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 15:31:22.628 [main] Testhooks - Passed scenario screenshot captured: T015_To verify the members feature filter technician role members
+[INFO ] 2024-05-21 15:31:24.992 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 15:31:25.140 [main] Testhooks - Passed scenario screenshot captured: T015_To verify the members feature filter technician role members
+[INFO ] 2024-05-21 15:31:26.544 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 15:31:26.641 [main] Testhooks - Passed scenario screenshot captured: T015_To verify the members feature filter technician role members
+[INFO ] 2024-05-21 15:31:27.200 [main] Testhooks - Passed scenario screenshot captured: T015_To verify the members feature filter technician role members
+[INFO ] 2024-05-21 15:31:27.438 [main] Testhooks - Passed scenario screenshot captured: T015_To verify the members feature filter technician role members
+[INFO ] 2024-05-21 15:31:27.512 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 15:31:27.517 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 15:31:28.164 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 15:31:35.443 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 15:31:35.447 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 15:31:36.564 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 15:31:36.640 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 15:31:36.713 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 15:31:36.713 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 15:31:36.838 [main] Testhooks - Passed scenario screenshot captured: T016_To verify the members feature filter electrical dept members
+[INFO ] 2024-05-21 15:31:40.335 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 15:31:40.512 [main] Testhooks - Passed scenario screenshot captured: T016_To verify the members feature filter electrical dept members
+[INFO ] 2024-05-21 15:31:41.961 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 15:31:42.058 [main] Testhooks - Passed scenario screenshot captured: T016_To verify the members feature filter electrical dept members
+[INFO ] 2024-05-21 15:31:42.583 [main] Testhooks - Passed scenario screenshot captured: T016_To verify the members feature filter electrical dept members
+[INFO ] 2024-05-21 15:31:42.787 [main] Testhooks - Passed scenario screenshot captured: T016_To verify the members feature filter electrical dept members
+[INFO ] 2024-05-21 15:31:42.860 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 15:31:42.865 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 15:31:43.477 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 15:31:47.681 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 15:31:47.686 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 15:31:48.814 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 15:31:48.903 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 15:31:48.956 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 15:31:48.956 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 15:31:49.132 [main] Testhooks - Passed scenario screenshot captured: T017_To verify the members feature filter resposible area
+[INFO ] 2024-05-21 15:31:51.324 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 15:31:51.480 [main] Testhooks - Passed scenario screenshot captured: T017_To verify the members feature filter resposible area
+[INFO ] 2024-05-21 15:31:53.069 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 15:31:53.172 [main] Testhooks - Passed scenario screenshot captured: T017_To verify the members feature filter resposible area
+[INFO ] 2024-05-21 15:31:53.838 [main] Testhooks - Passed scenario screenshot captured: T017_To verify the members feature filter resposible area
+[INFO ] 2024-05-21 15:31:54.074 [main] Testhooks - Passed scenario screenshot captured: T017_To verify the members feature filter resposible area
+[INFO ] 2024-05-21 15:31:54.145 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 15:31:54.150 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 15:31:54.763 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 15:31:59.313 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 15:31:59.318 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 15:32:00.448 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 15:32:00.542 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 15:32:00.604 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 15:32:00.604 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 15:32:00.754 [main] Testhooks - Passed scenario screenshot captured: T018_To verify the members feature filter with multiple selected options
+[INFO ] 2024-05-21 15:32:04.178 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 15:32:04.313 [main] Testhooks - Passed scenario screenshot captured: T018_To verify the members feature filter with multiple selected options
+[INFO ] 2024-05-21 15:32:05.842 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 15:32:05.922 [main] Testhooks - Passed scenario screenshot captured: T018_To verify the members feature filter with multiple selected options
+[INFO ] 2024-05-21 15:32:06.276 [main] Testhooks - Passed scenario screenshot captured: T018_To verify the members feature filter with multiple selected options
+[INFO ] 2024-05-21 15:32:06.496 [main] Testhooks - Passed scenario screenshot captured: T018_To verify the members feature filter with multiple selected options
+[INFO ] 2024-05-21 15:32:06.794 [main] Testhooks - Passed scenario screenshot captured: T018_To verify the members feature filter with multiple selected options
+[INFO ] 2024-05-21 15:32:07.011 [main] Testhooks - Passed scenario screenshot captured: T018_To verify the members feature filter with multiple selected options
+[INFO ] 2024-05-21 15:32:27.205 [main] Testhooks - Passed scenario screenshot captured: T018_To verify the members feature filter with multiple selected options
+[INFO ] 2024-05-21 15:32:27.281 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 15:32:27.285 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 15:32:27.894 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 15:32:32.434 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 15:32:32.440 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 15:32:33.559 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 15:32:33.638 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 15:32:33.691 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 15:32:33.691 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 15:32:33.835 [main] Testhooks - Passed scenario screenshot captured: T019_To verify the members feature download members list excel
+[INFO ] 2024-05-21 15:32:36.112 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 15:32:36.261 [main] Testhooks - Passed scenario screenshot captured: T019_To verify the members feature download members list excel
+[INFO ] 2024-05-21 15:32:38.509 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 15:32:38.579 [main] Testhooks - Passed scenario screenshot captured: T019_To verify the members feature download members list excel
+[INFO ] 2024-05-21 15:32:38.769 [main] Testhooks - Passed scenario screenshot captured: T019_To verify the members feature download members list excel
+[INFO ] 2024-05-21 15:32:38.925 [main] Testhooks - Passed scenario screenshot captured: T019_To verify the members feature download members list excel
+[INFO ] 2024-05-21 15:32:39.013 [main] Testhooks - Passed scenario screenshot captured: T019_To verify the members feature download members list excel
+[INFO ] 2024-05-21 15:32:39.086 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 15:32:39.094 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 15:32:39.731 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 15:32:45.220 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 15:32:45.223 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 15:32:46.341 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 15:32:46.417 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 15:32:46.477 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 15:32:46.477 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 15:32:46.636 [main] Testhooks - Passed scenario screenshot captured: T020_To verify the members feature download members list pdf
+[INFO ] 2024-05-21 15:32:48.846 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 15:32:49.023 [main] Testhooks - Passed scenario screenshot captured: T020_To verify the members feature download members list pdf
+[INFO ] 2024-05-21 15:32:50.570 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 15:32:50.666 [main] Testhooks - Passed scenario screenshot captured: T020_To verify the members feature download members list pdf
+[INFO ] 2024-05-21 15:32:50.830 [main] Testhooks - Passed scenario screenshot captured: T020_To verify the members feature download members list pdf
+[INFO ] 2024-05-21 15:32:50.958 [main] Testhooks - Passed scenario screenshot captured: T020_To verify the members feature download members list pdf
+[INFO ] 2024-05-21 15:32:51.039 [main] Testhooks - Passed scenario screenshot captured: T020_To verify the members feature download members list pdf
+[INFO ] 2024-05-21 15:32:51.111 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 15:32:51.115 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 15:32:51.719 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 15:32:54.883 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 15:32:54.888 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 15:34:16.534 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 15:34:16.538 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 15:34:17.165 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 15:34:20.339 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 15:34:20.372 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 15:34:49.628 [main] Testhooks - Failed scenario screenshot got capturedT022_To verify the members feature pagination 1st to 2nd page
+[INFO ] 2024-05-21 15:34:49.705 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 15:34:49.710 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 15:34:50.358 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 15:34:55.383 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 15:34:55.418 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 15:34:56.559 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 15:34:56.637 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 15:34:56.697 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 15:34:56.697 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 15:34:56.884 [main] Testhooks - Passed scenario screenshot captured: T023_To verify the members feature particular members profile page
+[INFO ] 2024-05-21 15:34:59.187 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 15:34:59.345 [main] Testhooks - Passed scenario screenshot captured: T023_To verify the members feature particular members profile page
+[INFO ] 2024-05-21 15:35:02.771 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 15:35:02.867 [main] Testhooks - Passed scenario screenshot captured: T023_To verify the members feature particular members profile page
+[INFO ] 2024-05-21 15:35:03.371 [main] Testhooks - Passed scenario screenshot captured: T023_To verify the members feature particular members profile page
+[INFO ] 2024-05-21 15:35:03.857 [main] Testhooks - Passed scenario screenshot captured: T023_To verify the members feature particular members profile page
+[INFO ] 2024-05-21 15:35:04.183 [main] Testhooks - Passed scenario screenshot captured: T023_To verify the members feature particular members profile page
+[INFO ] 2024-05-21 15:35:04.327 [main] Testhooks - Passed scenario screenshot captured: T023_To verify the members feature particular members profile page
+[INFO ] 2024-05-21 15:35:04.401 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 15:35:04.410 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 15:35:05.008 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 15:35:09.211 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 15:35:09.214 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 15:35:10.347 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 15:35:10.426 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 15:35:10.486 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 15:35:10.486 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 15:35:10.659 [main] Testhooks - Passed scenario screenshot captured: T024_To verify the members feature personal profile updation
+[INFO ] 2024-05-21 15:35:13.087 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 15:35:13.267 [main] Testhooks - Passed scenario screenshot captured: T024_To verify the members feature personal profile updation
+[INFO ] 2024-05-21 15:35:14.586 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 15:35:14.661 [main] Testhooks - Passed scenario screenshot captured: T024_To verify the members feature personal profile updation
+[INFO ] 2024-05-21 15:35:15.109 [main] Testhooks - Passed scenario screenshot captured: T024_To verify the members feature personal profile updation
+[INFO ] 2024-05-21 15:35:15.418 [main] Testhooks - Passed scenario screenshot captured: T024_To verify the members feature personal profile updation
+[INFO ] 2024-05-21 15:35:15.761 [main] Testhooks - Passed scenario screenshot captured: T024_To verify the members feature personal profile updation
+[INFO ] 2024-05-21 15:35:16.919 [main] Testhooks - Passed scenario screenshot captured: T024_To verify the members feature personal profile updation
+[INFO ] 2024-05-21 15:35:17.052 [main] Testhooks - Failed scenario screenshot got capturedT024_To verify the members feature personal profile updation
+[INFO ] 2024-05-21 15:35:17.125 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 15:35:17.131 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 15:35:17.756 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 15:35:23.511 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 15:35:23.515 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 15:35:24.633 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 15:35:24.712 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 15:35:24.773 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 15:35:24.773 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 15:35:24.938 [main] Testhooks - Passed scenario screenshot captured: T025_To verify the members feature personal profile error messages
+[INFO ] 2024-05-21 15:35:27.297 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 15:35:27.479 [main] Testhooks - Passed scenario screenshot captured: T025_To verify the members feature personal profile error messages
+[INFO ] 2024-05-21 15:35:28.966 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 15:35:29.076 [main] Testhooks - Passed scenario screenshot captured: T025_To verify the members feature personal profile error messages
+[INFO ] 2024-05-21 15:35:29.609 [main] Testhooks - Passed scenario screenshot captured: T025_To verify the members feature personal profile error messages
+[INFO ] 2024-05-21 15:35:30.011 [main] Testhooks - Passed scenario screenshot captured: T025_To verify the members feature personal profile error messages
+[INFO ] 2024-05-21 15:35:33.336 [main] Testhooks - Passed scenario screenshot captured: T025_To verify the members feature personal profile error messages
+[INFO ] 2024-05-21 15:35:33.591 [main] Testhooks - Passed scenario screenshot captured: T025_To verify the members feature personal profile error messages
+[INFO ] 2024-05-21 15:35:33.708 [main] Testhooks - Passed scenario screenshot captured: T025_To verify the members feature personal profile error messages
+[INFO ] 2024-05-21 15:35:33.782 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 15:35:33.787 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 15:35:34.391 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 15:35:39.861 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 15:35:39.865 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 15:35:40.991 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 15:35:41.077 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 15:35:41.149 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 15:35:41.149 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 15:35:41.319 [main] Testhooks - Passed scenario screenshot captured: T026_To verify the members feature company profile updation
+[INFO ] 2024-05-21 15:35:43.591 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 15:35:43.774 [main] Testhooks - Passed scenario screenshot captured: T026_To verify the members feature company profile updation
+[INFO ] 2024-05-21 15:35:45.377 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 15:35:45.455 [main] Testhooks - Passed scenario screenshot captured: T026_To verify the members feature company profile updation
+[INFO ] 2024-05-21 15:35:45.888 [main] Testhooks - Passed scenario screenshot captured: T026_To verify the members feature company profile updation
+[INFO ] 2024-05-21 15:35:46.186 [main] Testhooks - Passed scenario screenshot captured: T026_To verify the members feature company profile updation
+[INFO ] 2024-05-21 15:35:46.546 [main] Testhooks - Passed scenario screenshot captured: T026_To verify the members feature company profile updation
+[INFO ] 2024-05-21 15:35:47.301 [main] Testhooks - Passed scenario screenshot captured: T026_To verify the members feature company profile updation
+[INFO ] 2024-05-21 15:35:47.401 [main] Testhooks - Passed scenario screenshot captured: T026_To verify the members feature company profile updation
+[INFO ] 2024-05-21 15:35:47.474 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 15:35:47.479 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 15:35:48.084 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 15:35:53.133 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 15:35:53.138 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 15:35:54.264 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 15:35:54.339 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 15:35:54.403 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 15:35:54.403 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 15:35:54.580 [main] Testhooks - Passed scenario screenshot captured: T027_To verify the members feature company profile error messages
+[INFO ] 2024-05-21 15:35:56.962 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 15:35:57.106 [main] Testhooks - Passed scenario screenshot captured: T027_To verify the members feature company profile error messages
+[INFO ] 2024-05-21 15:35:58.558 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 15:35:58.651 [main] Testhooks - Passed scenario screenshot captured: T027_To verify the members feature company profile error messages
+[INFO ] 2024-05-21 15:35:59.121 [main] Testhooks - Passed scenario screenshot captured: T027_To verify the members feature company profile error messages
+[INFO ] 2024-05-21 15:35:59.586 [main] Testhooks - Passed scenario screenshot captured: T027_To verify the members feature company profile error messages
+[INFO ] 2024-05-21 15:35:59.925 [main] Testhooks - Passed scenario screenshot captured: T027_To verify the members feature company profile error messages
+[INFO ] 2024-05-21 15:36:01.220 [main] Testhooks - Failed scenario screenshot got capturedT027_To verify the members feature company profile error messages
+[INFO ] 2024-05-21 15:36:01.300 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 15:36:01.307 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 15:36:02.010 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 15:36:07.165 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 15:36:07.171 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 15:36:08.290 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 15:36:08.364 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 15:36:08.424 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 15:36:08.425 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 15:36:08.572 [main] Testhooks - Passed scenario screenshot captured: T028_To verify the members feature vehicle info profile updation
+[INFO ] 2024-05-21 15:36:10.814 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 15:36:11.001 [main] Testhooks - Passed scenario screenshot captured: T028_To verify the members feature vehicle info profile updation
+[INFO ] 2024-05-21 15:36:13.275 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 15:36:13.356 [main] Testhooks - Passed scenario screenshot captured: T028_To verify the members feature vehicle info profile updation
+[INFO ] 2024-05-21 15:36:13.880 [main] Testhooks - Passed scenario screenshot captured: T028_To verify the members feature vehicle info profile updation
+[INFO ] 2024-05-21 15:36:14.259 [main] Testhooks - Passed scenario screenshot captured: T028_To verify the members feature vehicle info profile updation
+[INFO ] 2024-05-21 15:36:14.615 [main] Testhooks - Passed scenario screenshot captured: T028_To verify the members feature vehicle info profile updation
+[INFO ] 2024-05-21 15:36:35.094 [main] Testhooks - Failed scenario screenshot got capturedT028_To verify the members feature vehicle info profile updation
+[INFO ] 2024-05-21 15:36:35.169 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 15:36:35.177 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 15:36:35.797 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 15:36:40.056 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 15:36:40.059 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 15:36:41.171 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 15:36:41.243 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 15:36:41.304 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 15:36:41.304 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 15:36:41.478 [main] Testhooks - Passed scenario screenshot captured: T029_To verify the members feature vehicle info profile error messages
+[INFO ] 2024-05-21 15:36:43.669 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 15:36:43.792 [main] Testhooks - Passed scenario screenshot captured: T029_To verify the members feature vehicle info profile error messages
+[INFO ] 2024-05-21 15:36:45.620 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 15:36:45.705 [main] Testhooks - Passed scenario screenshot captured: T029_To verify the members feature vehicle info profile error messages
+[INFO ] 2024-05-21 15:36:47.273 [main] Testhooks - Passed scenario screenshot captured: T029_To verify the members feature vehicle info profile error messages
+[INFO ] 2024-05-21 15:36:47.418 [main] Testhooks - Failed scenario screenshot got capturedT029_To verify the members feature vehicle info profile error messages
+[INFO ] 2024-05-21 15:36:47.491 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 15:36:47.495 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 15:36:48.150 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 15:36:52.258 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 15:36:52.261 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 15:36:53.379 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 15:36:53.459 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 15:36:53.518 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 15:36:53.518 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 15:36:53.703 [main] Testhooks - Passed scenario screenshot captured: T030_To verify the members feature reset password profile updation
+[INFO ] 2024-05-21 15:36:55.989 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 15:36:56.139 [main] Testhooks - Passed scenario screenshot captured: T030_To verify the members feature reset password profile updation
+[INFO ] 2024-05-21 15:36:57.725 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 15:36:57.834 [main] Testhooks - Passed scenario screenshot captured: T030_To verify the members feature reset password profile updation
+[INFO ] 2024-05-21 15:36:58.292 [main] Testhooks - Passed scenario screenshot captured: T030_To verify the members feature reset password profile updation
+[INFO ] 2024-05-21 15:36:58.622 [main] Testhooks - Passed scenario screenshot captured: T030_To verify the members feature reset password profile updation
+[INFO ] 2024-05-21 15:36:58.920 [main] Testhooks - Passed scenario screenshot captured: T030_To verify the members feature reset password profile updation
+[INFO ] 2024-05-21 15:36:59.366 [main] Testhooks - Passed scenario screenshot captured: T030_To verify the members feature reset password profile updation
+[INFO ] 2024-05-21 15:37:04.502 [main] Testhooks - Passed scenario screenshot captured: T030_To verify the members feature reset password profile updation
+[INFO ] 2024-05-21 15:37:04.575 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 15:37:04.578 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 15:37:05.169 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 15:37:09.468 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 15:37:09.473 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 15:37:10.610 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 15:37:10.712 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 15:37:10.774 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 15:37:10.774 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 15:37:10.965 [main] Testhooks - Passed scenario screenshot captured: T031_To verify the members feature reset password profile error messages
+[INFO ] 2024-05-21 15:37:13.281 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 15:37:13.458 [main] Testhooks - Passed scenario screenshot captured: T031_To verify the members feature reset password profile error messages
+[INFO ] 2024-05-21 15:37:15.042 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 15:37:15.126 [main] Testhooks - Passed scenario screenshot captured: T031_To verify the members feature reset password profile error messages
+[INFO ] 2024-05-21 15:37:15.542 [main] Testhooks - Passed scenario screenshot captured: T031_To verify the members feature reset password profile error messages
+[INFO ] 2024-05-21 15:37:15.861 [main] Testhooks - Passed scenario screenshot captured: T031_To verify the members feature reset password profile error messages
+[INFO ] 2024-05-21 15:37:16.207 [main] Testhooks - Passed scenario screenshot captured: T031_To verify the members feature reset password profile error messages
+[INFO ] 2024-05-21 15:37:16.530 [main] Testhooks - Passed scenario screenshot captured: T031_To verify the members feature reset password profile error messages
+[INFO ] 2024-05-21 15:37:16.679 [main] Testhooks - Passed scenario screenshot captured: T031_To verify the members feature reset password profile error messages
+[INFO ] 2024-05-21 15:37:16.752 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 15:41:33.074 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 15:41:34.042 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 15:41:38.923 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 15:41:39.064 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 15:41:40.199 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 15:41:40.281 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 15:41:40.339 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 15:41:40.339 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 15:41:40.537 [main] Testhooks - Passed scenario screenshot captured: T005_To verify the members feature sort Name - A to Z
+[INFO ] 2024-05-21 15:41:42.838 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 15:41:43.042 [main] Testhooks - Passed scenario screenshot captured: T005_To verify the members feature sort Name - A to Z
+[INFO ] 2024-05-21 15:41:44.527 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 15:41:44.621 [main] Testhooks - Passed scenario screenshot captured: T005_To verify the members feature sort Name - A to Z
+[INFO ] 2024-05-21 15:41:44.855 [main] Testhooks - Passed scenario screenshot captured: T005_To verify the members feature sort Name - A to Z
+[INFO ] 2024-05-21 15:41:45.100 [main] Testhooks - Passed scenario screenshot captured: T005_To verify the members feature sort Name - A to Z
+[INFO ] 2024-05-21 15:41:45.178 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 15:42:06.738 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 15:42:07.710 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 15:42:11.961 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 15:42:12.098 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 15:42:13.242 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 15:42:13.323 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 15:42:13.383 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 15:42:13.384 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 15:42:13.605 [main] Testhooks - Passed scenario screenshot captured: T021_To verify the members feature download popup closing
+[INFO ] 2024-05-21 15:42:15.892 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 15:42:16.058 [main] Testhooks - Passed scenario screenshot captured: T021_To verify the members feature download popup closing
+[INFO ] 2024-05-21 15:42:17.697 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 15:42:17.752 [main] Testhooks - Passed scenario screenshot captured: T021_To verify the members feature download popup closing
+[INFO ] 2024-05-21 15:42:17.934 [main] Testhooks - Passed scenario screenshot captured: T021_To verify the members feature download popup closing
+[INFO ] 2024-05-21 15:42:18.109 [main] Testhooks - Passed scenario screenshot captured: T021_To verify the members feature download popup closing
+[INFO ] 2024-05-21 15:42:18.278 [main] Testhooks - Passed scenario screenshot captured: T021_To verify the members feature download popup closing
+[INFO ] 2024-05-21 15:42:18.356 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 15:42:34.908 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 15:42:35.856 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 15:42:41.124 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 15:42:41.261 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 15:42:42.388 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 15:42:42.475 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 15:42:42.536 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 15:42:42.536 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 15:42:42.750 [main] Testhooks - Passed scenario screenshot captured: T022_To verify the members feature pagination 1st to 2nd page
+[INFO ] 2024-05-21 15:42:44.936 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 15:42:45.094 [main] Testhooks - Passed scenario screenshot captured: T022_To verify the members feature pagination 1st to 2nd page
+[INFO ] 2024-05-21 15:42:46.996 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 15:42:47.087 [main] Testhooks - Passed scenario screenshot captured: T022_To verify the members feature pagination 1st to 2nd page
+[INFO ] 2024-05-21 15:42:47.568 [main] Testhooks - Passed scenario screenshot captured: T022_To verify the members feature pagination 1st to 2nd page
+[INFO ] 2024-05-21 15:42:47.701 [main] Testhooks - Passed scenario screenshot captured: T022_To verify the members feature pagination 1st to 2nd page
+[INFO ] 2024-05-21 15:42:47.780 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 15:43:20.851 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 15:43:21.818 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 15:43:26.033 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 15:43:26.165 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 15:43:27.304 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 15:43:27.389 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 15:43:27.454 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 15:43:27.454 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 15:43:27.678 [main] Testhooks - Passed scenario screenshot captured: T024_To verify the members feature personal profile updation
+[INFO ] 2024-05-21 15:43:29.939 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 15:43:30.065 [main] Testhooks - Passed scenario screenshot captured: T024_To verify the members feature personal profile updation
+[INFO ] 2024-05-21 15:43:34.462 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 15:43:34.542 [main] Testhooks - Passed scenario screenshot captured: T024_To verify the members feature personal profile updation
+[INFO ] 2024-05-21 15:43:35.042 [main] Testhooks - Passed scenario screenshot captured: T024_To verify the members feature personal profile updation
+[INFO ] 2024-05-21 15:43:35.430 [main] Testhooks - Passed scenario screenshot captured: T024_To verify the members feature personal profile updation
+[INFO ] 2024-05-21 15:43:35.709 [main] Testhooks - Passed scenario screenshot captured: T024_To verify the members feature personal profile updation
+[INFO ] 2024-05-21 15:43:36.964 [main] Testhooks - Passed scenario screenshot captured: T024_To verify the members feature personal profile updation
+[INFO ] 2024-05-21 15:43:37.098 [main] Testhooks - Passed scenario screenshot captured: T024_To verify the members feature personal profile updation
+[INFO ] 2024-05-21 15:43:37.176 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 15:43:54.204 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 15:43:55.182 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 15:43:59.267 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 15:43:59.415 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 15:44:00.552 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 15:44:00.640 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 15:44:00.706 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 15:44:00.706 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 15:44:00.906 [main] Testhooks - Passed scenario screenshot captured: T027_To verify the members feature company profile error messages
+[INFO ] 2024-05-21 15:44:04.239 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 15:44:04.420 [main] Testhooks - Passed scenario screenshot captured: T027_To verify the members feature company profile error messages
+[INFO ] 2024-05-21 15:44:05.944 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 15:44:06.036 [main] Testhooks - Passed scenario screenshot captured: T027_To verify the members feature company profile error messages
+[INFO ] 2024-05-21 15:44:06.511 [main] Testhooks - Passed scenario screenshot captured: T027_To verify the members feature company profile error messages
+[INFO ] 2024-05-21 15:44:06.918 [main] Testhooks - Passed scenario screenshot captured: T027_To verify the members feature company profile error messages
+[INFO ] 2024-05-21 15:44:07.277 [main] Testhooks - Passed scenario screenshot captured: T027_To verify the members feature company profile error messages
+[INFO ] 2024-05-21 15:44:08.684 [main] Testhooks - Passed scenario screenshot captured: T027_To verify the members feature company profile error messages
+[INFO ] 2024-05-21 15:44:08.816 [main] Testhooks - Passed scenario screenshot captured: T027_To verify the members feature company profile error messages
+[INFO ] 2024-05-21 15:44:08.895 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 15:44:25.831 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 15:44:26.734 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 15:44:31.136 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 15:44:31.304 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 15:44:32.444 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 15:44:32.526 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 15:44:32.596 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 15:44:32.597 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 15:44:32.784 [main] Testhooks - Passed scenario screenshot captured: T028_To verify the members feature vehicle info profile updation
+[INFO ] 2024-05-21 15:44:35.119 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 15:44:35.339 [main] Testhooks - Passed scenario screenshot captured: T028_To verify the members feature vehicle info profile updation
+[INFO ] 2024-05-21 15:44:37.861 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 15:44:37.969 [main] Testhooks - Passed scenario screenshot captured: T028_To verify the members feature vehicle info profile updation
+[INFO ] 2024-05-21 15:44:38.481 [main] Testhooks - Passed scenario screenshot captured: T028_To verify the members feature vehicle info profile updation
+[INFO ] 2024-05-21 15:44:38.837 [main] Testhooks - Passed scenario screenshot captured: T028_To verify the members feature vehicle info profile updation
+[INFO ] 2024-05-21 15:44:39.209 [main] Testhooks - Passed scenario screenshot captured: T028_To verify the members feature vehicle info profile updation
+[INFO ] 2024-05-21 15:44:59.729 [main] Testhooks - Failed scenario screenshot got capturedT028_To verify the members feature vehicle info profile updation
+[INFO ] 2024-05-21 15:44:59.816 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 15:49:32.197 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 15:49:33.164 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 15:49:37.488 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 15:49:37.631 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 15:49:38.768 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 15:49:38.850 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 15:49:38.912 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 15:49:38.912 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 15:49:39.108 [main] Testhooks - Passed scenario screenshot captured: T028_To verify the members feature vehicle info profile updation
+[INFO ] 2024-05-21 15:49:41.402 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 15:49:41.589 [main] Testhooks - Passed scenario screenshot captured: T028_To verify the members feature vehicle info profile updation
+[INFO ] 2024-05-21 15:49:43.128 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 15:49:43.240 [main] Testhooks - Passed scenario screenshot captured: T028_To verify the members feature vehicle info profile updation
+[INFO ] 2024-05-21 15:49:43.690 [main] Testhooks - Passed scenario screenshot captured: T028_To verify the members feature vehicle info profile updation
+[INFO ] 2024-05-21 15:49:44.010 [main] Testhooks - Passed scenario screenshot captured: T028_To verify the members feature vehicle info profile updation
+[INFO ] 2024-05-21 15:49:44.311 [main] Testhooks - Passed scenario screenshot captured: T028_To verify the members feature vehicle info profile updation
+[INFO ] 2024-05-21 15:49:45.054 [main] Testhooks - Passed scenario screenshot captured: T028_To verify the members feature vehicle info profile updation
+[INFO ] 2024-05-21 15:49:45.175 [main] Testhooks - Passed scenario screenshot captured: T028_To verify the members feature vehicle info profile updation
+[INFO ] 2024-05-21 15:49:45.258 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 15:50:11.676 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 15:50:12.611 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 15:50:18.175 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 15:50:18.312 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 15:50:19.453 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 15:50:19.536 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 15:50:19.599 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 15:50:19.599 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 15:50:19.793 [main] Testhooks - Passed scenario screenshot captured: T029_To verify the members feature vehicle info profile error messages
+[INFO ] 2024-05-21 15:50:22.004 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 15:50:22.171 [main] Testhooks - Passed scenario screenshot captured: T029_To verify the members feature vehicle info profile error messages
+[INFO ] 2024-05-21 15:50:23.681 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 15:50:23.774 [main] Testhooks - Passed scenario screenshot captured: T029_To verify the members feature vehicle info profile error messages
+[INFO ] 2024-05-21 15:50:24.259 [main] Testhooks - Passed scenario screenshot captured: T029_To verify the members feature vehicle info profile error messages
+[INFO ] 2024-05-21 15:50:24.576 [main] Testhooks - Passed scenario screenshot captured: T029_To verify the members feature vehicle info profile error messages
+[INFO ] 2024-05-21 15:50:24.898 [main] Testhooks - Passed scenario screenshot captured: T029_To verify the members feature vehicle info profile error messages
+[INFO ] 2024-05-21 15:50:25.304 [main] Testhooks - Passed scenario screenshot captured: T029_To verify the members feature vehicle info profile error messages
+[INFO ] 2024-05-21 15:50:25.435 [main] Testhooks - Passed scenario screenshot captured: T029_To verify the members feature vehicle info profile error messages
+[INFO ] 2024-05-21 15:50:25.514 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 16:06:58.211 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 16:06:59.173 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 16:07:04.834 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 16:07:04.972 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 16:07:06.115 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 16:07:06.197 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 16:07:06.257 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 16:07:06.258 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 16:07:06.481 [main] Testhooks - Passed scenario screenshot captured: T032_To verify the members feature reset password profile error messages
+[INFO ] 2024-05-21 16:07:09.225 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 16:07:09.377 [main] Testhooks - Passed scenario screenshot captured: T032_To verify the members feature reset password profile error messages
+[INFO ] 2024-05-21 16:07:10.959 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 16:07:11.045 [main] Testhooks - Passed scenario screenshot captured: T032_To verify the members feature reset password profile error messages
+[INFO ] 2024-05-21 16:07:11.519 [main] Testhooks - Passed scenario screenshot captured: T032_To verify the members feature reset password profile error messages
+[INFO ] 2024-05-21 16:07:11.837 [main] Testhooks - Passed scenario screenshot captured: T032_To verify the members feature reset password profile error messages
+[INFO ] 2024-05-21 16:07:12.137 [main] Testhooks - Passed scenario screenshot captured: T032_To verify the members feature reset password profile error messages
+[INFO ] 2024-05-21 16:07:12.452 [main] Testhooks - Passed scenario screenshot captured: T032_To verify the members feature reset password profile error messages
+[INFO ] 2024-05-21 16:07:12.586 [main] Testhooks - Passed scenario screenshot captured: T032_To verify the members feature reset password profile error messages
+[INFO ] 2024-05-21 16:07:12.666 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 16:09:09.923 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 16:09:10.855 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 16:09:17.346 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 16:09:17.478 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 16:09:18.616 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 16:09:18.706 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 16:09:18.776 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 16:09:18.776 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 16:09:18.988 [main] Testhooks - Passed scenario screenshot captured: T033_To verify the members feature reset password profile error messages (uppercase)
+[INFO ] 2024-05-21 16:09:21.323 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 16:09:21.487 [main] Testhooks - Passed scenario screenshot captured: T033_To verify the members feature reset password profile error messages (uppercase)
+[INFO ] 2024-05-21 16:09:23.023 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 16:09:23.076 [main] Testhooks - Passed scenario screenshot captured: T033_To verify the members feature reset password profile error messages (uppercase)
+[INFO ] 2024-05-21 16:09:23.532 [main] Testhooks - Passed scenario screenshot captured: T033_To verify the members feature reset password profile error messages (uppercase)
+[INFO ] 2024-05-21 16:09:23.733 [main] Testhooks - Failed scenario screenshot got capturedT033_To verify the members feature reset password profile error messages (uppercase)
+[INFO ] 2024-05-21 16:09:23.814 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 16:09:47.717 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 16:09:48.704 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 16:09:53.512 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 16:09:53.648 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 16:09:54.780 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 16:09:54.865 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 16:09:54.926 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 16:09:54.927 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 16:09:55.121 [main] Testhooks - Passed scenario screenshot captured: T033_To verify the members feature reset password profile error messages (uppercase)
+[INFO ] 2024-05-21 16:09:57.588 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 16:09:57.729 [main] Testhooks - Passed scenario screenshot captured: T033_To verify the members feature reset password profile error messages (uppercase)
+[INFO ] 2024-05-21 16:09:59.206 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 16:09:59.300 [main] Testhooks - Passed scenario screenshot captured: T033_To verify the members feature reset password profile error messages (uppercase)
+[INFO ] 2024-05-21 16:09:59.776 [main] Testhooks - Passed scenario screenshot captured: T033_To verify the members feature reset password profile error messages (uppercase)
+[INFO ] 2024-05-21 16:10:00.173 [main] Testhooks - Passed scenario screenshot captured: T033_To verify the members feature reset password profile error messages (uppercase)
+[INFO ] 2024-05-21 16:10:02.161 [main] Testhooks - Passed scenario screenshot captured: T033_To verify the members feature reset password profile error messages (uppercase)
+[INFO ] 2024-05-21 16:10:02.570 [main] Testhooks - Passed scenario screenshot captured: T033_To verify the members feature reset password profile error messages (uppercase)
+[INFO ] 2024-05-21 16:10:02.721 [main] Testhooks - Passed scenario screenshot captured: T033_To verify the members feature reset password profile error messages (uppercase)
+[INFO ] 2024-05-21 16:10:02.807 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 16:11:28.685 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 16:11:29.625 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 16:11:37.096 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 16:11:37.224 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 16:11:38.359 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 16:11:38.442 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 16:11:38.510 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 16:11:38.510 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 16:11:38.702 [main] Testhooks - Passed scenario screenshot captured: T033_To verify the members feature reset password profile error messages (uppercase)
+[INFO ] 2024-05-21 16:11:40.891 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 16:11:41.031 [main] Testhooks - Passed scenario screenshot captured: T033_To verify the members feature reset password profile error messages (uppercase)
+[INFO ] 2024-05-21 16:11:42.827 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 16:11:42.928 [main] Testhooks - Passed scenario screenshot captured: T033_To verify the members feature reset password profile error messages (uppercase)
+[INFO ] 2024-05-21 16:11:44.499 [main] Testhooks - Passed scenario screenshot captured: T033_To verify the members feature reset password profile error messages (uppercase)
+[INFO ] 2024-05-21 16:11:44.940 [main] Testhooks - Passed scenario screenshot captured: T033_To verify the members feature reset password profile error messages (uppercase)
+[INFO ] 2024-05-21 16:12:05.201 [main] Testhooks - Failed scenario screenshot got capturedT033_To verify the members feature reset password profile error messages (uppercase)
+[INFO ] 2024-05-21 16:12:05.280 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 16:15:12.325 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 16:15:13.270 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 16:15:19.134 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 16:15:19.257 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 16:15:20.394 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 16:15:20.484 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 16:15:20.554 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 16:15:20.554 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 16:15:20.681 [main] Testhooks - Passed scenario screenshot captured: T033_To verify the members feature reset password profile error messages (uppercase)
+[INFO ] 2024-05-21 16:15:23.099 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 16:15:23.305 [main] Testhooks - Passed scenario screenshot captured: T033_To verify the members feature reset password profile error messages (uppercase)
+[INFO ] 2024-05-21 16:15:24.702 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 16:15:24.794 [main] Testhooks - Passed scenario screenshot captured: T033_To verify the members feature reset password profile error messages (uppercase)
+[INFO ] 2024-05-21 16:15:25.296 [main] Testhooks - Passed scenario screenshot captured: T033_To verify the members feature reset password profile error messages (uppercase)
+[INFO ] 2024-05-21 16:15:25.602 [main] Testhooks - Passed scenario screenshot captured: T033_To verify the members feature reset password profile error messages (uppercase)
+[INFO ] 2024-05-21 16:15:25.934 [main] Testhooks - Passed scenario screenshot captured: T033_To verify the members feature reset password profile error messages (uppercase)
+[INFO ] 2024-05-21 16:15:26.302 [main] Testhooks - Passed scenario screenshot captured: T033_To verify the members feature reset password profile error messages (uppercase)
+[INFO ] 2024-05-21 16:15:26.449 [main] Testhooks - Passed scenario screenshot captured: T033_To verify the members feature reset password profile error messages (uppercase)
+[INFO ] 2024-05-21 16:15:26.529 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 16:15:42.423 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 16:15:43.357 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 16:15:48.197 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 16:15:48.349 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 16:15:49.497 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 16:15:49.578 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 16:15:49.639 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 16:15:49.639 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 16:15:49.860 [main] Testhooks - Passed scenario screenshot captured: T034_To verify the members feature reset password profile error messages (number)
+[INFO ] 2024-05-21 16:15:52.145 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 16:15:52.325 [main] Testhooks - Passed scenario screenshot captured: T034_To verify the members feature reset password profile error messages (number)
+[INFO ] 2024-05-21 16:15:53.823 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 16:15:53.917 [main] Testhooks - Passed scenario screenshot captured: T034_To verify the members feature reset password profile error messages (number)
+[INFO ] 2024-05-21 16:15:54.407 [main] Testhooks - Passed scenario screenshot captured: T034_To verify the members feature reset password profile error messages (number)
+[INFO ] 2024-05-21 16:15:54.787 [main] Testhooks - Passed scenario screenshot captured: T034_To verify the members feature reset password profile error messages (number)
+[INFO ] 2024-05-21 16:15:55.130 [main] Testhooks - Passed scenario screenshot captured: T034_To verify the members feature reset password profile error messages (number)
+[INFO ] 2024-05-21 16:15:55.483 [main] Testhooks - Passed scenario screenshot captured: T034_To verify the members feature reset password profile error messages (number)
+[INFO ] 2024-05-21 16:15:55.629 [main] Testhooks - Passed scenario screenshot captured: T034_To verify the members feature reset password profile error messages (number)
+[INFO ] 2024-05-21 16:15:55.707 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 16:16:07.025 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 16:16:07.957 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 16:16:12.735 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 16:16:12.886 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 16:16:14.025 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 16:16:14.111 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 16:16:14.172 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 16:16:14.172 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 16:16:14.386 [main] Testhooks - Passed scenario screenshot captured: T035_To verify the members feature reset password profile error messages (mismatch)
+[INFO ] 2024-05-21 16:16:16.543 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 16:16:16.703 [main] Testhooks - Passed scenario screenshot captured: T035_To verify the members feature reset password profile error messages (mismatch)
+[INFO ] 2024-05-21 16:16:18.335 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 16:16:18.429 [main] Testhooks - Passed scenario screenshot captured: T035_To verify the members feature reset password profile error messages (mismatch)
+[INFO ] 2024-05-21 16:16:19.796 [main] Testhooks - Failed scenario screenshot got capturedT035_To verify the members feature reset password profile error messages (mismatch)
+[INFO ] 2024-05-21 16:16:19.878 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 16:16:24.771 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 16:16:25.706 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 16:16:29.903 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 16:16:30.012 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 16:16:31.169 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 16:16:31.265 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 16:16:31.342 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 16:16:31.342 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 16:16:31.538 [main] Testhooks - Passed scenario screenshot captured: T035_To verify the members feature reset password profile error messages (mismatch)
+[INFO ] 2024-05-21 16:16:34.197 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 16:16:34.366 [main] Testhooks - Passed scenario screenshot captured: T035_To verify the members feature reset password profile error messages (mismatch)
+[INFO ] 2024-05-21 16:16:36.708 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 16:16:36.813 [main] Testhooks - Passed scenario screenshot captured: T035_To verify the members feature reset password profile error messages (mismatch)
+[INFO ] 2024-05-21 16:16:37.325 [main] Testhooks - Passed scenario screenshot captured: T035_To verify the members feature reset password profile error messages (mismatch)
+[INFO ] 2024-05-21 16:16:37.717 [main] Testhooks - Passed scenario screenshot captured: T035_To verify the members feature reset password profile error messages (mismatch)
+[INFO ] 2024-05-21 16:16:38.047 [main] Testhooks - Passed scenario screenshot captured: T035_To verify the members feature reset password profile error messages (mismatch)
+[INFO ] 2024-05-21 16:16:38.416 [main] Testhooks - Passed scenario screenshot captured: T035_To verify the members feature reset password profile error messages (mismatch)
+[INFO ] 2024-05-21 16:16:43.798 [main] Testhooks - Passed scenario screenshot captured: T035_To verify the members feature reset password profile error messages (mismatch)
+[INFO ] 2024-05-21 16:16:43.879 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 16:17:17.884 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 16:17:18.816 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 16:17:24.359 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 16:17:24.506 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 16:17:25.641 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 16:17:25.732 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 16:17:25.794 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 16:17:25.794 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 16:17:26.018 [main] Testhooks - Passed scenario screenshot captured: T035_To verify the members feature reset password profile error messages (mismatch)
+[INFO ] 2024-05-21 16:17:28.404 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 16:17:28.536 [main] Testhooks - Passed scenario screenshot captured: T035_To verify the members feature reset password profile error messages (mismatch)
+[INFO ] 2024-05-21 16:17:30.014 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 16:17:30.101 [main] Testhooks - Passed scenario screenshot captured: T035_To verify the members feature reset password profile error messages (mismatch)
+[INFO ] 2024-05-21 16:17:31.424 [main] Testhooks - Failed scenario screenshot got capturedT035_To verify the members feature reset password profile error messages (mismatch)
+[INFO ] 2024-05-21 16:17:31.509 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-21 16:18:40.216 [main] Testhooks - Execution Started
+[INFO ] 2024-05-21 16:18:41.140 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-21 16:18:45.477 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-21 16:18:45.615 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-21 16:18:46.752 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-21 16:18:46.834 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-21 16:18:46.895 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-21 16:18:46.895 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-21 16:18:47.092 [main] Testhooks - Passed scenario screenshot captured: T035_To verify the members feature reset password profile error messages (mismatch)
+[INFO ] 2024-05-21 16:18:49.394 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-21 16:18:49.605 [main] Testhooks - Passed scenario screenshot captured: T035_To verify the members feature reset password profile error messages (mismatch)
+[INFO ] 2024-05-21 16:18:51.071 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-21 16:18:51.171 [main] Testhooks - Passed scenario screenshot captured: T035_To verify the members feature reset password profile error messages (mismatch)
+[INFO ] 2024-05-21 16:18:51.636 [main] Testhooks - Passed scenario screenshot captured: T035_To verify the members feature reset password profile error messages (mismatch)
+[INFO ] 2024-05-21 16:18:52.138 [main] Testhooks - Passed scenario screenshot captured: T035_To verify the members feature reset password profile error messages (mismatch)
+[INFO ] 2024-05-21 16:18:52.470 [main] Testhooks - Passed scenario screenshot captured: T035_To verify the members feature reset password profile error messages (mismatch)
+[INFO ] 2024-05-21 16:18:52.875 [main] Testhooks - Passed scenario screenshot captured: T035_To verify the members feature reset password profile error messages (mismatch)
+[INFO ] 2024-05-21 16:18:52.991 [main] Testhooks - Passed scenario screenshot captured: T035_To verify the members feature reset password profile error messages (mismatch)
+[INFO ] 2024-05-21 16:18:53.069 [main] Testhooks - Browser got closed

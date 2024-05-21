@@ -352,14 +352,58 @@ public class Members extends Base {
     	 membersPage.members_vehicleinfo_profile();
     }
  
-    @And("Admin or User delete the model")
-    public void Admin_or_User_delete_the_model() throws Exception {
+    @And("Admin or User delete the licence number")
+    public void Admin_or_User_delete_the_licence_number() throws Exception {
     	 membersPage.members_profile_vehicleinfo_licenceNo_delete();
     }
     
     @Then("Licence plate number is required error message get displayed successfully")
     public void Licence_plate_number_is_required_error_message_get_displayed_successfully() {
         membersPage.members_profile_vehicleinfo_licenceNo_error();
+    }
+    
+    @And("Admin or User update the members reset password profile page")
+    public void Admin_or_User_update_the_members_reset_password_profile_page() throws Exception {
+    	 membersPage.members_resetpassword_profile();
+    }
+    
+    @And("Admin or User delete the new password")
+    public void Admin_or_User_delete_the_new_password() throws Exception {
+    	 membersPage.members_profile_resetpassword_delete();
+    }
+    
+    @And("Admin or User delete the new password and enter without spl char")
+    public void Admin_or_User_delete_the_new_password_and_enter_without_spl_char() throws Exception {
+    	 membersPage.members_profile_resetpassword_delete_enterwithout_splchar();
+    }
+    
+    @And("Admin or User delete the new password and enter without uppercase char")
+    public void Admin_or_User_delete_the_new_password_and_enter_without_uppercase() throws Exception {
+    	 membersPage.members_profile_resetpassword_delete_enterwithout_uppercase();
+    }
+    
+    @And("Admin or User delete the new password and enter without number char")
+    public void Admin_or_User_delete_the_new_password_and_enter_without_number() throws Exception {
+    	 membersPage.members_profile_resetpassword_delete_enterwithout_number();
+    }
+    
+    @And("Admin or User delete the new password and cofirm password mismatch")
+    public void Admin_or_User_delete_the_new_password_and_cofirm_password_mismatch() throws Exception {
+    	 membersPage.members_profile_resetpassword_delete_password_mismatch();
+    }
+    
+    @Then("Reset password page error message get displayed successfully")
+    public void Reset_password_page_error_message_get_displayed_successfully() {
+        membersPage.members_profile_resetpassword_error();
+    }
+    
+    @Then("^Particular members reset password profile get updated successfully as \"([^\"]*)\"$")
+    public void Particular_members_resetpwprofile_get_updated_successfully(String expectedMessage) throws Exception {
+        String actualMessage = membersPage.members_profile_success_display1();
+        String normalizedExpectedMessage = normalizeWhitespace(expectedMessage);
+        String normalizedActualMessage = normalizeWhitespace(actualMessage);
+        System.out.println(">> User or Admin got the members profile updation success message successfully");
+        assertEquals(normalizedExpectedMessage, normalizedActualMessage);
     }
 }
 

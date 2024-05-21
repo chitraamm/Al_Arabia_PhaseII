@@ -53,6 +53,11 @@ public class Memberspage extends Base {
 		return baseIQMANumber + rand.nextInt(10000); // Append random number
 	}
 
+	private static String generateUniqueLicenceNumber(String baseLicenceNumber) {
+		Random rand = new Random();
+		return baseLicenceNumber + rand.nextInt(1000); // Append random number
+	}
+
 	@FindBy(xpath = "//span[normalize-space()='Members']")
 	private WebElement membersClick;
 
@@ -89,6 +94,9 @@ public class Memberspage extends Base {
 	}
 
 	@FindBy(xpath = "//tbody/tr[1]/td[6]/div[1]/div[1]/button[1]//*[name()='svg']")
+	private WebElement membersMenu_click;
+	
+	@FindBy(xpath = "//tbody/tr[1]/td[1]")
 	private WebElement membersMenu;
 
 	@FindBy(name = "email")
@@ -169,7 +177,7 @@ public class Memberspage extends Base {
 	private WebElement members_sort;
 
 	public void members_sort() {
-		wait.until(ExpectedConditions.visibilityOf(membersMenu)).isDisplayed();
+
 		wait.until(ExpectedConditions.visibilityOf(members_sort)).click();
 		wait.until(ExpectedConditions.visibilityOf(members_sort_recentluupdated)).click();
 		System.out.println(">> User clicked recently updated in sort");
@@ -182,21 +190,21 @@ public class Memberspage extends Base {
 	}
 
 	public void members_sort_A_Z() {
-		wait.until(ExpectedConditions.visibilityOf(membersMenu)).isDisplayed();
+
 		wait.until(ExpectedConditions.visibilityOf(members_sort)).click();
 		wait.until(ExpectedConditions.visibilityOf(members_sort_A_Z)).click();
 		System.out.println(">> User clicked A-Z in sort");
 	}
 
 	public void members_sort_Z_A() {
-		wait.until(ExpectedConditions.visibilityOf(membersMenu)).isDisplayed();
+
 		wait.until(ExpectedConditions.visibilityOf(members_sort)).click();
 		wait.until(ExpectedConditions.visibilityOf(members_sort_Z_A)).click();
 		System.out.println(">> User clicked Z-A in sort");
 	}
 
 	public void members_sort_Recently_Added() {
-		wait.until(ExpectedConditions.visibilityOf(membersMenu)).isDisplayed();
+
 		wait.until(ExpectedConditions.visibilityOf(members_sort)).click();
 		wait.until(ExpectedConditions.visibilityOf(members_sort_Recently_Added)).click();
 		System.out.println(">> User clicked Z-A in sort");
@@ -215,7 +223,7 @@ public class Memberspage extends Base {
 	private WebElement members_filter_sts_active;
 
 	public void members_filter_sts_active() {
-		wait.until(ExpectedConditions.visibilityOf(membersMenu)).isDisplayed();
+
 		wait.until(ExpectedConditions.visibilityOf(members_filter)).click();
 		wait.until(ExpectedConditions.visibilityOf(members_filter_sts_active)).click();
 		wait.until(ExpectedConditions.visibilityOf(members_filter_apply_btn)).click();
@@ -232,7 +240,7 @@ public class Memberspage extends Base {
 	private WebElement members_filter_sts_blocked;
 
 	public void members_filter_sts_blocked() {
-		wait.until(ExpectedConditions.visibilityOf(membersMenu)).isDisplayed();
+
 		wait.until(ExpectedConditions.visibilityOf(members_filter)).click();
 		wait.until(ExpectedConditions.visibilityOf(members_filter_sts_blocked)).click();
 		wait.until(ExpectedConditions.visibilityOf(members_filter_apply_btn)).click();
@@ -243,7 +251,7 @@ public class Memberspage extends Base {
 	private WebElement members_filter_sts_expired;
 
 	public void members_filter_sts_expired() {
-		wait.until(ExpectedConditions.visibilityOf(membersMenu)).isDisplayed();
+
 		wait.until(ExpectedConditions.visibilityOf(members_filter)).click();
 		wait.until(ExpectedConditions.visibilityOf(members_filter_sts_expired)).click();
 		wait.until(ExpectedConditions.visibilityOf(members_filter_apply_btn)).click();
@@ -254,7 +262,7 @@ public class Memberspage extends Base {
 	private WebElement members_filter_sts_pending;
 
 	public void members_filter_sts_pending() {
-		wait.until(ExpectedConditions.visibilityOf(membersMenu)).isDisplayed();
+
 		wait.until(ExpectedConditions.visibilityOf(members_filter)).click();
 		wait.until(ExpectedConditions.visibilityOf(members_filter_sts_pending)).click();
 		wait.until(ExpectedConditions.visibilityOf(members_filter_apply_btn)).click();
@@ -314,7 +322,7 @@ public class Memberspage extends Base {
 	private WebElement members_filter_role_admin;
 
 	public void members_filter_role_admin() {
-		wait.until(ExpectedConditions.visibilityOf(membersMenu)).isDisplayed();
+
 		wait.until(ExpectedConditions.visibilityOf(members_filter)).click();
 		wait.until(ExpectedConditions.visibilityOf(members_filter_role_admin)).click();
 		wait.until(ExpectedConditions.visibilityOf(members_filter_apply_btn)).click();
@@ -345,7 +353,7 @@ public class Memberspage extends Base {
 	private WebElement members_filter_role_manager;
 
 	public void members_filter_role_manager() {
-		wait.until(ExpectedConditions.visibilityOf(membersMenu)).isDisplayed();
+
 		wait.until(ExpectedConditions.visibilityOf(members_filter)).click();
 		wait.until(ExpectedConditions.visibilityOf(members_filter_role_manager)).click();
 		wait.until(ExpectedConditions.visibilityOf(members_filter_apply_btn)).click();
@@ -376,7 +384,7 @@ public class Memberspage extends Base {
 	private WebElement members_filter_role_Supervisor;
 
 	public void members_filter_role_Supervisor() {
-		wait.until(ExpectedConditions.visibilityOf(membersMenu)).isDisplayed();
+
 		wait.until(ExpectedConditions.visibilityOf(members_filter)).click();
 		wait.until(ExpectedConditions.visibilityOf(members_filter_role_Supervisor)).click();
 		wait.until(ExpectedConditions.visibilityOf(members_filter_apply_btn)).click();
@@ -384,7 +392,7 @@ public class Memberspage extends Base {
 	}
 
 	public void members_filter_role_Supervisor1() {
-		wait.until(ExpectedConditions.visibilityOf(membersMenu)).isDisplayed();
+
 		wait.until(ExpectedConditions.visibilityOf(members_filter)).click();
 		wait.until(ExpectedConditions.visibilityOf(members_filter_role_Supervisor)).click();
 		System.out.println(">> User clicked supervisor role in filter");
@@ -414,7 +422,7 @@ public class Memberspage extends Base {
 	private WebElement members_filter_role_technician;
 
 	public void members_filter_role_technician() {
-		wait.until(ExpectedConditions.visibilityOf(membersMenu)).isDisplayed();
+
 		wait.until(ExpectedConditions.visibilityOf(members_filter)).click();
 		wait.until(ExpectedConditions.visibilityOf(members_filter_role_technician)).click();
 		wait.until(ExpectedConditions.visibilityOf(members_filter_apply_btn)).click();
@@ -448,7 +456,7 @@ public class Memberspage extends Base {
 	private WebElement members_filter_dept_select;
 
 	public void members_filter_dept() {
-		wait.until(ExpectedConditions.visibilityOf(membersMenu)).isDisplayed();
+
 		wait.until(ExpectedConditions.visibilityOf(members_filter)).click();
 		wait.until(ExpectedConditions.visibilityOf(members_filter_dept_click)).click();
 		wait.until(ExpectedConditions.visibilityOf(members_filter_dept_select)).click();
@@ -486,7 +494,7 @@ public class Memberspage extends Base {
 	private WebElement members_filter_responsible_area;
 
 	public void members_filter_responsible_area() {
-		wait.until(ExpectedConditions.visibilityOf(membersMenu)).isDisplayed();
+
 		wait.until(ExpectedConditions.visibilityOf(members_filter)).click();
 		wait.until(ExpectedConditions.visibilityOf(members_filter_responsible_area)).click();
 		wait.until(ExpectedConditions.visibilityOf(members_filter_responsible_area))
@@ -530,7 +538,7 @@ public class Memberspage extends Base {
 	private WebElement members_download_btn, members_download_btn_display;
 
 	public void members_download_btn() {
-		wait.until(ExpectedConditions.visibilityOf(membersMenu)).isDisplayed();
+
 		wait.until(ExpectedConditions.visibilityOf(members_download_btn)).click();
 	}
 
@@ -572,7 +580,7 @@ public class Memberspage extends Base {
 	private WebElement member_2nd_page_click;
 
 	public void member_2nd_page_click() throws Exception {
-		wait.until(ExpectedConditions.visibilityOf(membersMenu)).isDisplayed();
+
 		act.scrollToElement(member_2nd_page_click).build().perform();
 		wait.until(ExpectedConditions.visibilityOf(member_2nd_page_click)).click();
 	}
@@ -590,8 +598,8 @@ public class Memberspage extends Base {
 	private WebElement members_action_icon_edit_click;
 
 	public void members_action_icon_click() throws Exception {
-		wait.until(ExpectedConditions.visibilityOf(membersMenu)).isDisplayed();
-		wait.until(ExpectedConditions.visibilityOf(membersMenu)).click();
+
+		wait.until(ExpectedConditions.visibilityOf(membersMenu_click)).click();
 		wait.until(ExpectedConditions.visibilityOf(members_action_icon_edit_click)).click();
 	}
 
@@ -612,7 +620,7 @@ public class Memberspage extends Base {
 
 	@FindBy(xpath = "//input[@value='+91 96777 75556']")
 	private WebElement members_personalprofile_whatappNo_text_enter;
-	
+
 	@FindBy(xpath = "//input[contains(@error,'whatsapp number required')]")
 	private WebElement members_personalprofile_whatappNo_text_enter1;
 
@@ -659,11 +667,17 @@ public class Memberspage extends Base {
 	}
 
 	@FindBy(xpath = "//div[@class='toastpop position-relative']")
-	private WebElement members_profile_Success_display;
+	private WebElement members_profile_Success_display, members_profile_Success_display1;
 
 	public String members_profile_success_display() {
+		WebElement successMessageElement = wait.until(ExpectedConditions.visibilityOf(members_profile_Success_display));
+		return successMessageElement.getText().trim();
+	}
+
+	public String members_profile_success_display1() throws Exception {
+		Thread.sleep(5000);
 		WebElement successMessageElement = wait
-				.until(ExpectedConditions.visibilityOf(members_profile_Success_display));
+				.until(ExpectedConditions.visibilityOf(members_profile_Success_display1));
 		return successMessageElement.getText().trim();
 	}
 
@@ -673,47 +687,46 @@ public class Memberspage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(members_personalprofile_altNO_text_enter)).click();
 		System.out.println(">> User or Admin erased the member name");
 	}
-	
+
 	@FindBy(xpath = "//div[@class='invalid-feedback']")
 	private WebElement members_profilepage_error;
 
 	public void members_profilepage_error() {
 		wait.until(ExpectedConditions.visibilityOf(members_profilepage_error));
 		AssertJUnit.assertTrue(members_profilepage_error.isDisplayed());
-		System.out.println(">> User or Admin got error message successfully:>>>"+members_profilepage_error.getText());
+		System.out.println(">> User or Admin got error message successfully:>>>" + members_profilepage_error.getText());
 	}
-	
+
 	@FindBy(xpath = "//span[normalize-space()='Company Profile']")
 	private WebElement members_companyprofile;
-	
+
 	@FindBy(name = "work_space_id")
 	private WebElement members_companyprofile_workspaceID;
-	
+
 	@FindBy(name = "date_of_joining")
 	private WebElement members_companyprofile_DOJ;
-	
+
 	@FindBy(xpath = "//span[normalize-space()='1']")
 	private WebElement members_companyprofile_DOJ_dateclick;
-	
+
 	@FindBy(xpath = "//input[@itemtype='establishment']")
 	private WebElement members_companyprofile_responsible_area;
-	
+
 	public void members_companyprofile() throws Exception {
 		wait.until(ExpectedConditions.visibilityOf(members_companyprofile)).click();
 		wait.until(ExpectedConditions.visibilityOf(members_companyprofile_workspaceID)).click();
 		members_companyprofile_workspaceID.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
 		wait.until(ExpectedConditions.visibilityOf(members_companyprofile_workspaceID)).sendKeys("123");
 		wait.until(ExpectedConditions.visibilityOf(members_companyprofile_DOJ)).click();
-		wait.until(ExpectedConditions.visibilityOf(members_companyprofile_DOJ_dateclick))
-				.click();
+		wait.until(ExpectedConditions.visibilityOf(members_companyprofile_DOJ_dateclick)).click();
 		wait.until(ExpectedConditions.visibilityOf(members_companyprofile_responsible_area)).click();
 		members_companyprofile_responsible_area.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
 		wait.until(ExpectedConditions.visibilityOf(members_companyprofile_responsible_area))
-		.sendKeys("Saudi Arabia" + Keys.ARROW_DOWN + Keys.ENTER);
-	
+				.sendKeys("Saudi Arabia" + Keys.ARROW_DOWN + Keys.ENTER);
+
 		wait.until(ExpectedConditions.visibilityOf(members_personalprofile_update_btn_Yes)).click();
 	}
-	
+
 	public void members_profile_personal_workspace_ID_delete() {
 		wait.until(ExpectedConditions.visibilityOf(members_companyprofile)).click();
 		wait.until(ExpectedConditions.visibilityOf(members_companyprofile_workspaceID)).click();
@@ -721,38 +734,43 @@ public class Memberspage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(members_companyprofile_DOJ)).click();
 		System.out.println(">> User or Admin erased the member company profile ID");
 	}
-	
+
 	public void members_profile_personal_workspaceID_error() {
 		wait.until(ExpectedConditions.visibilityOf(members_profilepage_error));
 		AssertJUnit.assertTrue(members_profilepage_error.isDisplayed());
-		System.out.println(">> User or Admin got error message successfully:>>>"+members_profilepage_error.getText());
+		System.out.println(">> User or Admin got error message successfully:>>>" + members_profilepage_error.getText());
 	}
-	
+
 	@FindBy(xpath = "//span[normalize-space()='Vehicle Information']")
 	private WebElement members_vehicleinfoprofile;
-	
+
 	@FindBy(xpath = "//div[contains(@class,'select__value-container select__value-container--has-value css-hlgwow')]")
 	private WebElement members_vehicleinfo_vehicletype;
-	
+
 	@FindBy(id = "react-select-6-listbox")
 	private WebElement members_vehicleinfo_vehicletype_select;
-	
+
 	@FindBy(name = "number")
 	private WebElement members_vehicleinfo_licence;
-	
+
 	@FindBy(name = "model")
 	private WebElement members_vehicleinfo_model;
-	
+
 	public void members_vehicleinfo_profile() {
 		wait.until(ExpectedConditions.visibilityOf(members_vehicleinfoprofile)).click();
 		wait.until(ExpectedConditions.visibilityOf(members_vehicleinfo_vehicletype)).click();
 		wait.until(ExpectedConditions.visibilityOf(members_vehicleinfo_vehicletype_select)).click();
-		wait.until(ExpectedConditions.visibilityOf(members_vehicleinfo_licence)).sendKeys("KA0134442E222");
-		wait.until(ExpectedConditions.visibilityOf(members_vehicleinfo_model)).sendKeys("2024"+Keys.ENTER);
-	
+		wait.until(ExpectedConditions.visibilityOf(members_vehicleinfo_licence)).click();
+		members_vehicleinfo_licence.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
+		String uniqueLicenceNumber = generateUniqueLicenceNumber(prop.getProperty("Licence_number"));
+		wait.until(ExpectedConditions.visibilityOf(members_vehicleinfo_licence)).sendKeys(uniqueLicenceNumber);
+		wait.until(ExpectedConditions.visibilityOf(members_vehicleinfo_model)).click();
+		members_vehicleinfo_model.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
+		wait.until(ExpectedConditions.visibilityOf(members_vehicleinfo_model)).sendKeys("2024" + Keys.ENTER);
+
 		wait.until(ExpectedConditions.visibilityOf(members_personalprofile_update_btn_Yes)).click();
 	}
-	
+
 	public void members_profile_vehicleinfo_licenceNo_delete() {
 		wait.until(ExpectedConditions.visibilityOf(members_vehicleinfoprofile)).click();
 		wait.until(ExpectedConditions.visibilityOf(members_vehicleinfo_licence)).click();
@@ -760,11 +778,73 @@ public class Memberspage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(members_vehicleinfo_model)).click();
 		System.out.println(">> User or Admin erased the member vehicle licence number");
 	}
-	
+
 	public void members_profile_vehicleinfo_licenceNo_error() {
 		wait.until(ExpectedConditions.visibilityOf(members_profilepage_error));
 		AssertJUnit.assertTrue(members_profilepage_error.isDisplayed());
-		System.out.println(">> User or Admin got error message successfully:>>>"+members_profilepage_error.getText());
+		System.out.println(">> User or Admin got error message successfully:>>>" + members_profilepage_error.getText());
+	}
+
+	@FindBy(xpath = "//span[normalize-space()='Reset Password']")
+	private WebElement members_resetpasswordprofile;
+
+	@FindBy(name = "password")
+	private WebElement members_reset_newpw;
+
+	@FindBy(name = "password_confirmation")
+	private WebElement members_reset_confirmpw;
+
+	@FindBy(xpath = "//h6[normalize-space()='Yes, update it.']")
+	private WebElement members_resetpass_profile_update_btn_Yes;
+
+	public void members_resetpassword_profile() {
+		wait.until(ExpectedConditions.visibilityOf(members_resetpasswordprofile)).click();
+		wait.until(ExpectedConditions.visibilityOf(members_reset_newpw)).sendKeys("Password@123");
+		wait.until(ExpectedConditions.visibilityOf(members_reset_confirmpw)).sendKeys("Password@123" + Keys.ENTER);
+
+		wait.until(ExpectedConditions.visibilityOf(members_resetpass_profile_update_btn_Yes)).click();
+	}
+
+	public void members_profile_resetpassword_delete() {
+		wait.until(ExpectedConditions.visibilityOf(members_resetpasswordprofile)).click();
+		wait.until(ExpectedConditions.visibilityOf(members_reset_newpw)).sendKeys("password@123");
+		wait.until(ExpectedConditions.visibilityOf(members_reset_confirmpw)).click();
+		System.out.println(">> User or Admin enters the data into the reset password field");
+	}
+
+	public void members_profile_resetpassword_delete_enterwithout_splchar() {
+		wait.until(ExpectedConditions.visibilityOf(members_resetpasswordprofile)).click();
+		wait.until(ExpectedConditions.visibilityOf(members_reset_newpw)).sendKeys("Password123");
+		wait.until(ExpectedConditions.visibilityOf(members_reset_confirmpw)).click();
+		System.out.println(">> User or Admin enters the data into the reset password field");
 	}
 	
+	public void members_profile_resetpassword_delete_enterwithout_uppercase() {
+		wait.until(ExpectedConditions.visibilityOf(members_resetpasswordprofile)).click();
+		wait.until(ExpectedConditions.visibilityOf(members_reset_newpw)).sendKeys("password@123");
+		wait.until(ExpectedConditions.visibilityOf(members_reset_confirmpw)).click();
+		System.out.println(">> User or Admin enters the data into the reset password field");
+	}
+	
+	public void members_profile_resetpassword_delete_enterwithout_number() {
+		wait.until(ExpectedConditions.visibilityOf(members_resetpasswordprofile)).click();
+		wait.until(ExpectedConditions.visibilityOf(members_reset_newpw)).sendKeys("Password@sss");
+		wait.until(ExpectedConditions.visibilityOf(members_reset_confirmpw)).click();
+		System.out.println(">> User or Admin enters the data into the reset password field");
+	}
+	
+	public void members_profile_resetpassword_delete_password_mismatch() {
+		wait.until(ExpectedConditions.visibilityOf(members_resetpasswordprofile)).click();
+		wait.until(ExpectedConditions.visibilityOf(members_reset_newpw)).sendKeys("Password@123");
+		wait.until(ExpectedConditions.visibilityOf(members_reset_confirmpw)).sendKeys("Password@12" + Keys.ENTER);
+		wait.until(ExpectedConditions.visibilityOf(members_reset_newpw)).click();
+		System.out.println(">> User or Admin enters the data into the reset password field");
+	}
+	
+	public void members_profile_resetpassword_error() {
+		wait.until(ExpectedConditions.visibilityOf(members_profilepage_error));
+		AssertJUnit.assertTrue(members_profilepage_error.isDisplayed());
+		System.out.println(">> User or Admin got error message successfully:>>>" + members_profilepage_error.getText());
+	}
+
 }

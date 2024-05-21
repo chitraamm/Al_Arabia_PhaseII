@@ -268,6 +268,74 @@ And User clicks the members module
 And User filter the members list status-Active
 And User search the members
 And Admin or User go the members profile page
-And Admin or User delete the model
+And Admin or User delete the licence number
 Then Licence plate number is required error message get displayed successfully
 
+@members @members30 @sanity @regression @all
+Scenario Outline: T030_To verify the members feature reset password profile updation
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And User clicks the members module
+And User filter the members list status-Active
+And User search the members
+And Admin or User go the members profile page
+And Admin or User update the members reset password profile page
+Then Particular members reset password profile get updated successfully as "<successMessage>"
+ Examples:
+      | successMessage             |
+      | Success Password updated   |
+
+@members @members31 @sanity @regression @all
+Scenario Outline: T031_To verify the members feature reset password profile error messages
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And User clicks the members module
+And User filter the members list status-Active
+And User search the members
+And Admin or User go the members profile page
+And Admin or User delete the new password
+Then Reset password page error message get displayed successfully
+
+@members @members32 @sanity @regression @all
+Scenario Outline: T032_To verify the members feature reset password profile error messages (spl char)
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And User clicks the members module
+And User filter the members list status-Active
+And User search the members
+And Admin or User go the members profile page
+And Admin or User delete the new password and enter without spl char
+Then Reset password page error message get displayed successfully
+
+@members @members33 @sanity @regression @all
+Scenario Outline: T033_To verify the members feature reset password profile error messages (uppercase)
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And User clicks the members module
+And User filter the members list status-Active
+And User search the members
+And Admin or User go the members profile page
+And Admin or User delete the new password and enter without uppercase char
+Then Reset password page error message get displayed successfully
+
+@members @members34 @sanity @regression @all
+Scenario Outline: T034_To verify the members feature reset password profile error messages (number)
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And User clicks the members module
+And User filter the members list status-Active
+And User search the members
+And Admin or User go the members profile page
+And Admin or User delete the new password and enter without number char
+Then Reset password page error message get displayed successfully
+
+@members @members35 @sanity @regression @all
+Scenario Outline: T035_To verify the members feature reset password profile error messages (mismatch)
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And User clicks the members module
+And User filter the members list status-Active
+And User search the members
+And Admin or User go the members profile page
+And Admin or User delete the new password and cofirm password mismatch
+Then Reset password page error message get displayed successfully

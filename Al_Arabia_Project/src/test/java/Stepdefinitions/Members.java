@@ -440,5 +440,100 @@ public class Members extends Base {
     public void Member_activated_successfully() {
         membersPage.members_menu_Active_text();
     }
+    
+    @And("Admin click the personal profile icon")
+    public void Admin_click_the_personal_profile_icon() throws Exception {
+    	 membersPage.members_avatar_icon();
+    }
+    
+    @And("Admin go to the roles page")
+    public void Admin_go_to_the_roles_page() throws Exception {
+    	 membersPage.members_avatar_icon_roles();
+    }
+    
+    @And("Admin enable the User read access for supervisor")
+    public void Admin_enable_the_User_read_access_for_supervisor() throws Exception {
+    	 membersPage.members_roles_user_supervisor_read();
+    }
+    
+    @And("Admin clicks the logout button")
+    public void Admin_clicks_the_logout_button() throws Exception {
+    	 membersPage.Logout();
+    }
+    
+    @And("Supervisor logged in with valid credentials")
+    public void Supervisor_logged_in_with_valid_credentials() throws Exception {
+    	signinpage.emailField();
+   	 signinpage.enterValidPassword();
+        signinpage.clickSignInButton();
+       LOGGER.info(">> Supervisor got logged in >>");
+    }
+    
+    @And("Supervisor go the members profile page")
+    public void Supervisor_go_the_members_profile_page() throws Exception {
+    	 membersPage.Members_supervisor_viewdetails_btn();
+    }
+    
+    @Then("Supervisor get the read access successfully")
+    public void Supervisor_get_the_read_access_successfully() {
+        membersPage.Members_disabled_page();
+    }
+    
+    @And("Admin enable the User write access for supervisor")
+    public void Admin_enable_the_User_write_access_for_supervisor() throws Exception {
+    	 membersPage.members_roles_user_supervisor_write();
+    }
+    
+    @And("Check invite btn is displayed or not")
+    public void Check_invite_btn_is_displayed_or_not() throws Exception {
+    	 membersPage.members_supervisor_inviteBtn();
+    }
+    
+    @Then("Supervisor get the write access successfully")
+    public void Supervisor_get_the_write_access_successfully() throws Exception {
+        membersPage.members_supervisor_success();
+    }
+    
+    @And("Admin enable the User update access for supervisor")
+    public void Admin_enable_the_User_update_access_for_supervisor() throws Exception {
+    	 membersPage.members_roles_user_supervisor_update();
+    }
+    
+    @And("Supervisor update the members profile page")
+    public void Supervisor_update_the_members_profile_page() throws Exception {
+    	 membersPage.members_roles_user_supervisor_update_profile();
+    }
+    
+    @Then("Supervisor get the update access successfully")
+    public void Supervisor_get_the_update_access_successfully() throws Exception {
+        membersPage.members_supervisor_success_update();
+    }
+    
+    @And("Admin enable the User block or unblock access for supervisor")
+    public void Admin_enable_the_User_block_or_unblock_access_for_supervisor() throws Exception {
+    	 membersPage.members_roles_user_supervisor_blockunblock();
+    }
+    
+    @And("Supervisor clicks the members menu option")
+    public void Supervisor_clicks_the_members_menu_option() throws Exception {
+    	 membersPage.Members_supervisor_viewdetails_btn();
+    }
+    
+    @Then("Supervisor get the block and unblock access successfully")
+    public void Supervisor_get_the_block_and_unblock_access_successfully() throws Exception {
+        membersPage.members_supervisor_success_block();
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
 

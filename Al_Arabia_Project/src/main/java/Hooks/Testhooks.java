@@ -86,8 +86,8 @@ public class Testhooks extends Base {
 			scenario.attach(screenshot, "image/png", scenario.getName());
 			LOGGER.info("Failed scenario screenshot got captured" + scenario.getName());
 		}else {
-            scenario.attach(screenshot, "image/png", "Passed scenario: " + scenario.getName());
-            LOGGER.info("Passed scenario screenshot captured: " + scenario.getName());
+//            scenario.attach(screenshot, "image/png", "Passed scenario: " + scenario.getName());
+//            LOGGER.info("Passed scenario screenshot captured: " + scenario.getName());
         }
 	}
 

@@ -8,6 +8,9 @@ Al_Arabia_URL = http://20.74.152.254/
 Admin_email_address = help@coducer.com
 Admin_password = Password@123
 
+<---- Supervisor Login Valid Credentials ---->
+Supervisor_email_address = panneerselvam@coducer.com
+
 <---- Login Invalid Credentials ---->
 INV_email_address = help@coducer
 INV_password = password@123
@@ -19,16 +22,13 @@ INVpassword_short_character = Pass
 <---- Forgot password Credentials ---->
 Forgot_email_address = panneerselvam@coducer.com
 
-
 <---- Invite member random email ---->
 Invite_email = panneerselvam1@coducer.com
 Role_manager = Manager
 Dept_electrical = Electrical
 
-
 <---- Members page ---->
 members_search_text = panneer
-
 
 Alt_Phone_number = +919677775555
 Whatsapp_Phone_number = +919677775556

@@ -79,6 +79,11 @@ public class Signinpage extends Base {
         LOGGER.info("User enters valid email address");
     }
 
+    public void emailField() {
+        wait.until(ExpectedConditions.visibilityOf(emailField)).sendKeys(prop.getProperty("Supervisor_email_address"));
+        LOGGER.info("Supervisor enters valid email address");
+    }
+    
     public void enterInvalidEmail() {
         wait.until(ExpectedConditions.visibilityOf(emailField)).sendKeys(prop.getProperty("INV_email_address"));
     }

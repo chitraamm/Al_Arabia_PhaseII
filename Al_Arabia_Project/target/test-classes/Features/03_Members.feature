@@ -1,5 +1,5 @@
 Feature: Members
-User should be able to access the members feature
+Admin, Manager and Supervisor can able to access the members feature, if they are get the roles access only
 
 @members @members01 @smoke @regression @all
 Scenario Outline: T001_Check members dashboard page
@@ -352,7 +352,6 @@ And Admin or User click the block option
 And Admin or User click the Yes button
 Then Member blocked successfully
 
-
 @members @members37 @sanity @regression @all
 Scenario Outline: T037_To verify the members feature unblock the blocked member
 Given Admin logged in with valid credentials
@@ -364,3 +363,97 @@ And Admin or User click the menu option
 And Admin or User click the unblock option
 And Admin or User click the unblock Yes button
 Then Member activated successfully
+
+@members @members38 @sanity @regression @all
+Scenario Outline: T038_To verify the members feature roles wise (Read access for supervisor)
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And User clicks the members module
+And User filter the members list status-Active
+And User search the members
+And Admin click the personal profile icon
+And Admin go to the roles page
+And Admin enable the User read access for supervisor
+And Admin clicks the logout button
+And Supervisor logged in with valid credentials
+And User clicks the members module
+And User filter the members list status-Active
+And User search the members
+And Supervisor go the members profile page
+Then Supervisor get the read access successfully
+
+@members @members39 @sanity @regression @all
+Scenario Outline: T039_To verify the members feature roles wise (Write access for supervisor)
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And User clicks the members module
+And User filter the members list status-Active
+And User search the members
+And Admin click the personal profile icon
+And Admin go to the roles page
+And Admin enable the User write access for supervisor
+And Admin clicks the logout button
+And Supervisor logged in with valid credentials
+And User clicks the members module
+And Check invite btn is displayed or not
+Then Supervisor get the write access successfully
+
+@members @members40 @sanity @regression @all
+Scenario Outline: T040_To verify the members feature roles wise (Update access for supervisor)
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And User clicks the members module
+And User filter the members list status-Active
+And User search the members
+And Admin click the personal profile icon
+And Admin go to the roles page
+And Admin enable the User update access for supervisor
+And Admin clicks the logout button
+And Supervisor logged in with valid credentials
+And User clicks the members module
+And User filter the members list status-Active
+And User search the members
+And Supervisor go the members profile page
+And Supervisor update the members profile page
+Then Supervisor get the update access successfully
+
+@members @members41 @sanity @regression @all
+Scenario Outline: T041_To verify the members feature roles wise (Block/Unblock access for supervisor)
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And User clicks the members module
+And User filter the members list status-Active
+And User search the members
+And Admin click the personal profile icon
+And Admin go to the roles page
+And Admin enable the User block or unblock access for supervisor
+And Admin clicks the logout button
+And Supervisor logged in with valid credentials
+And User clicks the members module
+And User filter the members list status-Active
+And User search the members
+And Supervisor clicks the members menu option
+Then Supervisor get the block and unblock access successfully
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

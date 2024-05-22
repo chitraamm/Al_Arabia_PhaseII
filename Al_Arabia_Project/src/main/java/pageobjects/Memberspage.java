@@ -25,6 +25,7 @@ public class Memberspage extends Base {
 	private Properties prop;
 	private Actions act;
 	private Logger LOGGER = LogManager.getLogger(Memberspage.class);
+	private Signinpage signinpage;
 
 	public Memberspage(WebDriver driver) throws Exception {
 		this.driver = driver;
@@ -35,6 +36,7 @@ public class Memberspage extends Base {
 		FileInputStream fis = new FileInputStream(propPath);
 		prop.load(fis);
 		initializeWait();
+		this.signinpage = new Signinpage(driver);
 		LOGGER = LogManager.getLogger(Memberspage.class.getName());
 	}
 
@@ -87,15 +89,17 @@ public class Memberspage extends Base {
 	@FindBy(xpath = "//button[@class=' btn_invite_member  btn btn-primary'][normalize-space()='Invite Member']")
 	private WebElement inviteMemberBtn;
 
+	@FindBy(xpath = "//button[@class=' btn_invite_member  btn btn-primary']")
+	private WebElement inviteMemberBtn1;
+
 	public void inviteMemberBtn() {
-		wait.until(ExpectedConditions.visibilityOf(membersMenu)).isDisplayed();
 		wait.until(ExpectedConditions.visibilityOf(inviteMemberBtn)).click();
 		LOGGER.info(">> User clicked the invite member button");
 	}
 
 	@FindBy(xpath = "//tbody/tr[1]/td[6]/div[1]/div[1]/button[1]//*[name()='svg']")
 	private WebElement membersMenu_click;
-	
+
 	@FindBy(xpath = "//tbody/tr[1]/td[1]")
 	private WebElement membersMenu;
 
@@ -818,21 +822,21 @@ public class Memberspage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(members_reset_confirmpw)).click();
 		System.out.println(">> User or Admin enters the data into the reset password field");
 	}
-	
+
 	public void members_profile_resetpassword_delete_enterwithout_uppercase() {
 		wait.until(ExpectedConditions.visibilityOf(members_resetpasswordprofile)).click();
 		wait.until(ExpectedConditions.visibilityOf(members_reset_newpw)).sendKeys("password@123");
 		wait.until(ExpectedConditions.visibilityOf(members_reset_confirmpw)).click();
 		System.out.println(">> User or Admin enters the data into the reset password field");
 	}
-	
+
 	public void members_profile_resetpassword_delete_enterwithout_number() {
 		wait.until(ExpectedConditions.visibilityOf(members_resetpasswordprofile)).click();
 		wait.until(ExpectedConditions.visibilityOf(members_reset_newpw)).sendKeys("Password@sss");
 		wait.until(ExpectedConditions.visibilityOf(members_reset_confirmpw)).click();
 		System.out.println(">> User or Admin enters the data into the reset password field");
 	}
-	
+
 	public void members_profile_resetpassword_delete_password_mismatch() {
 		wait.until(ExpectedConditions.visibilityOf(members_resetpasswordprofile)).click();
 		wait.until(ExpectedConditions.visibilityOf(members_reset_newpw)).sendKeys("Password@123");
@@ -840,7 +844,7 @@ public class Memberspage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(members_reset_newpw)).click();
 		System.out.println(">> User or Admin enters the data into the reset password field");
 	}
-	
+
 	public void members_profile_resetpassword_error() {
 		wait.until(ExpectedConditions.visibilityOf(members_profilepage_error));
 		AssertJUnit.assertTrue(members_profilepage_error.isDisplayed());
@@ -851,68 +855,219 @@ public class Memberspage extends Base {
 
 		wait.until(ExpectedConditions.visibilityOf(membersMenu_click)).click();
 	}
-	
+
 	@FindBy(xpath = "//a[normalize-space()='Block']")
 	private WebElement members_menu_block_click;
-	
+
 	@FindBy(xpath = "//a[normalize-space()='Unblock']")
 	private WebElement members_menu_unblock_click;
-	
+
 	public void members_menu_block_click() throws Exception {
 
 		wait.until(ExpectedConditions.visibilityOf(members_menu_block_click)).click();
 	}
-	
+
 	public void members_menu_block_yes_click() throws Exception {
 
 		wait.until(ExpectedConditions.visibilityOf(members_menu_block_Yes_click)).click();
 	}
+
 	@FindBy(xpath = "//h6[normalize-space()='Yes, block it.']")
 	private WebElement members_menu_block_Yes_click;
-	
+
 	@FindBy(xpath = "//h6[normalize-space()='Yes, unblock it.']")
 	private WebElement members_menu_unblock_Yes_click;
+
 	public void members_menu_unblock_Yes_click() throws Exception {
 
 		wait.until(ExpectedConditions.visibilityOf(members_menu_unblock_Yes_click)).click();
 	}
-	
+
 	public void members_menu_unblock_click() throws Exception {
 
 		wait.until(ExpectedConditions.visibilityOf(members_menu_unblock_click)).click();
 	}
-	
+
 	@FindBy(xpath = "//span[normalize-space()='BLOCKED']")
 	private WebElement members_menu_blocked_text;
-	
+
 	public void members_menu_blocked_text() {
 		try {
 			{
 				wait.until(ExpectedConditions.visibilityOf(members_menu_blocked_text));
 				AssertJUnit.assertTrue(members_menu_blocked_text.isDisplayed());
-				System.out.println(">> Member got blocked"+members_menu_blocked_text.getText());
-			} 
+				System.out.println(">> Member got blocked" + members_menu_blocked_text.getText());
+			}
 		} catch (Exception e) {
 			wait.until(ExpectedConditions.visibilityOf(members_no_members_found));
 			System.out.println(">> User got no members found message");
 		}
 		System.out.println(">> User or Admin got blocked list successfully");
 	}
-	
+
 	@FindBy(xpath = "//span[contains(.,'ACTIVE')]")
 	private WebElement members_menu_Active_text;
-	
+
 	public void members_menu_Active_text() {
 		try {
 			{
 				wait.until(ExpectedConditions.visibilityOf(members_menu_Active_text));
 				AssertJUnit.assertTrue(members_menu_Active_text.isDisplayed());
-				System.out.println(">> Member got blocked"+members_menu_Active_text.getText());
-			} 
+				System.out.println(">> Member got blocked" + members_menu_Active_text.getText());
+			}
 		} catch (Exception e) {
 			wait.until(ExpectedConditions.visibilityOf(members_no_members_found));
 			System.out.println(">> User got no members found message");
 		}
 		System.out.println(">> User or Admin got active list successfully");
 	}
+
+	@FindBy(xpath = "//div[@class='avatar pointer']")
+	private WebElement members_avatar_icon;
+
+	public void members_avatar_icon() throws Exception {
+
+		wait.until(ExpectedConditions.visibilityOf(members_avatar_icon)).click();
+	}
+
+	@FindBy(xpath = "//a[normalize-space()='Roles']")
+	private WebElement members_avatar_icon_roles;
+
+	public void members_avatar_icon_roles() throws Exception {
+
+		wait.until(ExpectedConditions.visibilityOf(members_avatar_icon_roles)).click();
+	}
+
+	@FindBy(xpath = "//body[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[1]/li[1]/input[1]")
+	private WebElement members_roles_user_supervisor_read;
+
+	public void members_roles_user_supervisor_read() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(members_roles_user_supervisor_read)).isDisplayed();
+	}
+
+	@FindBy(xpath = "//a[normalize-space()='Logout']")
+	private WebElement Logout;
+
+	@FindBy(xpath = "//h6[contains(text(),'Yes,')]")
+	private WebElement Logout_yes;
+
+	public void Logout() throws Exception {
+		members_avatar_icon();
+		wait.until(ExpectedConditions.visibilityOf(Logout)).click();
+		wait.until(ExpectedConditions.visibilityOf(Logout_yes)).click();
+	}
+
+	@FindBy(xpath = "//td[@class='py-5']//button[1]")
+	private WebElement Members_supervisor_viewdetails_btn;
+
+	public void Members_supervisor_viewdetails_btn() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(Members_supervisor_viewdetails_btn)).click();
+	}
+
+	public void Members_disabled_page() {
+		members_profile_personal_name();
+	}
+
+	@FindBy(xpath = "//body[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[2]/li[1]/input[1]")
+	private WebElement members_roles_user_supervisor_write;
+
+	public void members_roles_user_supervisor_write() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(members_roles_user_supervisor_write)).isDisplayed();
+		wait.until(ExpectedConditions.visibilityOf(members_roles_user_supervisor_write)).isDisplayed();
+		wait.until(ExpectedConditions.visibilityOf(members_roles_user_supervisor_write)).isDisplayed();
+		wait.until(ExpectedConditions.elementToBeClickable(members_roles_user_supervisor_write)).click();
+	}
+
+	public void members_supervisor_inviteBtn() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(inviteMemberBtn1)).isDisplayed();
+		System.out.println(">> Invite button get displayed successfully");
+	}
+
+	public void members_supervisor_success() throws Exception {
+		Logout();
+		signinpage.enterValidEmail();
+		signinpage.enterValidPassword();
+		signinpage.clickSignInButton();
+		LOGGER.info(">> Admin/User got logged in >>");
+		members_avatar_icon();
+		members_avatar_icon_roles();
+		members_roles_user_supervisor_write();
+		Logout();
+		System.out.println(">> Supervisor get the write access successfully");
+	}
+	
+	@FindBy(xpath = "//body[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[3]/li[1]/input[1]")
+	private WebElement members_roles_user_supervisor_update;
+
+	public void members_roles_user_supervisor_update() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(members_roles_user_supervisor_update)).isDisplayed();
+		wait.until(ExpectedConditions.visibilityOf(members_roles_user_supervisor_update)).isDisplayed();
+		wait.until(ExpectedConditions.visibilityOf(members_roles_user_supervisor_update)).isDisplayed();
+		wait.until(ExpectedConditions.elementToBeClickable(members_roles_user_supervisor_update)).click();
+	}
+	
+	public void members_roles_user_supervisor_update_profile() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(members_action_icon_edit_click)).click();
+		wait.until(ExpectedConditions.visibilityOf(members_personalprofile_IQMA_No_text_enter)).click();
+		members_personalprofile_IQMA_No_text_enter.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
+		String uniqueIQMANumber = generateUniqueIQMANumber(prop.getProperty("IQMA_number"));
+		wait.until(ExpectedConditions.visibilityOf(members_personalprofile_IQMA_No_text_enter))
+				.sendKeys(uniqueIQMANumber +Keys.ENTER);
+		wait.until(ExpectedConditions.visibilityOf(members_personalprofile_update_btn_Yes)).click();
+		System.out.println(">> Supervisor updated the members successfully");
+		Thread.sleep(5000);
+	}
+	
+	public void members_supervisor_success_update() throws Exception {
+		Logout();
+		signinpage.enterValidEmail();
+		signinpage.enterValidPassword();
+		signinpage.clickSignInButton();
+		LOGGER.info(">> Admin/User got logged in >>");
+		members_avatar_icon();
+		members_avatar_icon_roles();
+		members_roles_user_supervisor_update();
+		Logout();
+		System.out.println(">> Supervisor get the update access successfully");
+	}
+	
+	@FindBy(xpath = "//body[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[4]/li[1]/input[1]")
+	private WebElement members_roles_user_supervisor_blockunblock;
+
+	public void members_roles_user_supervisor_blockunblock() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(members_roles_user_supervisor_update)).isDisplayed();
+		wait.until(ExpectedConditions.visibilityOf(members_roles_user_supervisor_update)).isDisplayed();
+		wait.until(ExpectedConditions.visibilityOf(members_roles_user_supervisor_update)).isDisplayed();
+		wait.until(ExpectedConditions.elementToBeClickable(members_roles_user_supervisor_update)).click();
+		wait.until(ExpectedConditions.visibilityOf(members_roles_user_supervisor_blockunblock)).isDisplayed();
+		wait.until(ExpectedConditions.visibilityOf(members_roles_user_supervisor_blockunblock)).isDisplayed();
+		wait.until(ExpectedConditions.visibilityOf(members_roles_user_supervisor_blockunblock)).isDisplayed();
+		wait.until(ExpectedConditions.elementToBeClickable(members_roles_user_supervisor_blockunblock)).click();
+		System.out.println(">> Supervisor got the block unblock access successfully");
+	}
+
+	public void members_supervisor_success_block() throws Exception {
+		Logout();
+		signinpage.enterValidEmail();
+		signinpage.enterValidPassword();
+		signinpage.clickSignInButton();
+		LOGGER.info(">> Admin/User got logged in >>");
+		members_avatar_icon();
+		members_avatar_icon_roles();
+		members_roles_user_supervisor_update();
+		members_roles_user_supervisor_blockunblock();
+		Logout();
+		System.out.println(">> Supervisor got the block unblock access successfully");
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
 }

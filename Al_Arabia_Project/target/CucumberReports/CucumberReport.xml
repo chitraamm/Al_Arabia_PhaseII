@@ -1,11 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="13.804" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="billboards" name="T001_Check billboards dashboard page" time="13.575">
+<testsuite name="Cucumber" time="32.59" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Members" name="T041_To verify the members feature roles wise (Block/Unblock access for supervisor)" time="32.378">
 <system-out><![CDATA[
 Given Admin logged in with valid credentials................................passed
 When Al-Arabia overall dashboard should display.............................passed
-And User clicks the billboards module.......................................passed
-Then Al-Arabia billboards dashboard should display successfully.............passed
+And User clicks the members module..........................................passed
+And User filter the members list status-Active..............................passed
+And User search the members.................................................passed
+And Admin click the personal profile icon...................................passed
+And Admin go to the roles page..............................................passed
+And Admin enable the User block or unblock access for supervisor............passed
+And Admin clicks the logout button..........................................passed
+And Supervisor logged in with valid credentials.............................passed
+And User clicks the members module..........................................passed
+And User filter the members list status-Active..............................passed
+And User search the members.................................................passed
+And Supervisor clicks the members menu option...............................passed
+Then Supervisor get the block and unblock access successfully...............passed
 ]]></system-out>
 </testcase>
 </testsuite>

@@ -12,13 +12,11 @@ Then Al-Arabia billboards dashboard should display successfully
 Scenario Outline: T002_Invite the Billboard with valid inputs
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
-And User clicks the billboards module
-And User clicks the invite Billboard button
-And User enters the email or phone number
-And User selects the role manager
-And User selects the department electrical
-#And User clicks the send invite button
-Then The invitation should sent to user given mail address successfully
+And Admin or user clicks the billboards module
+And Admin or user clicks the new billboard button
+And Admin or user enters the all new billboard mandatory fields
+#And Admin or user clicks the create billboard
+Then The billboard should created and displayed in billboard dashboard successfully
 
 @billboards @billboards03 @smoke @regression @all
 Scenario Outline: T003_ the billboards feature search

@@ -679,7 +679,7 @@ public class Memberspage extends Base {
 	}
 
 	public String members_profile_success_display1() throws Exception {
-		Thread.sleep(5000);
+		Thread.sleep(3000);
 		WebElement successMessageElement = wait
 				.until(ExpectedConditions.visibilityOf(members_profile_Success_display1));
 		return successMessageElement.getText().trim();
@@ -962,6 +962,7 @@ public class Memberspage extends Base {
 
 	public void Members_supervisor_viewdetails_btn() throws Exception {
 		wait.until(ExpectedConditions.visibilityOf(Members_supervisor_viewdetails_btn)).click();
+		wait.until(ExpectedConditions.visibilityOf(members_action_icon_edit_click)).click();
 	}
 
 	public void Members_disabled_page() {
@@ -1007,7 +1008,6 @@ public class Memberspage extends Base {
 	}
 	
 	public void members_roles_user_supervisor_update_profile() throws Exception {
-		wait.until(ExpectedConditions.visibilityOf(members_action_icon_edit_click)).click();
 		wait.until(ExpectedConditions.visibilityOf(members_personalprofile_IQMA_No_text_enter)).click();
 		members_personalprofile_IQMA_No_text_enter.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
 		String uniqueIQMANumber = generateUniqueIQMANumber(prop.getProperty("IQMA_number"));

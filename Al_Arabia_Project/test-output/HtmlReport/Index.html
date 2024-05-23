@@ -49,7 +49,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>May 22, 2024 12:54:33 pm</span>
+			<span class='label blue darken-3 suite-start-time'>May 23, 2024 09:25:38 am</span>
 			</a>
 		</ul>
 	</div>
@@ -76,11 +76,11 @@
 				<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@billboards01</a></li>
-					<li><a href='#'>@billboards</a></li>
-					<li><a href='#'>@smoke</a></li>
-					<li><a href='#'>@regression</a></li>
+					<li><a href='#'>@sanity</a></li>
+					<li><a href='#'>@members41</a></li>
 					<li><a href='#'>@all</a></li>
+					<li><a href='#'>@members</a></li>
+					<li><a href='#'>@regression</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -119,8 +119,8 @@
 			<ul id='test-collection' class='test-collection'>
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>billboards</span>
-						<span class='test-time'>May 22, 2024 12:54:34 pm</span>
+						<span class='test-name'>Members</span>
+						<span class='test-time'>May 23, 2024 09:25:39 am</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -130,22 +130,22 @@
 	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
 	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
 </div>
-	<div class='test-desc'>Admin, Manager and Supervisor can able to access the billboards feature, if they are get the roles access only</div>
+	<div class='test-desc'>Admin, Manager and Supervisor can able to access the members feature, if they are get the roles access only</div>
 
 <div class='scenario node' test-id='2' status='pass'>
 
-	<span class='duration right label'>00 00 13.481</span>
+	<span class='duration right label'>00 00 32.278</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: T001_Check billboards dashboard page</div>
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: T041_To verify the members feature roles wise (Block/Unblock access for supervisor)</div>
 	</div>
 	
 	
 		<div class='category-list'>
 				<span class='category label'>@all</span>
-				<span class='category label'>@smoke</span>
 				<span class='category label'>@regression</span>
-				<span class='category label'>@billboards01</span>
-				<span class='category label'>@billboards</span>
+				<span class='category label'>@members41</span>
+				<span class='category label'>@members</span>
+				<span class='category label'>@sanity</span>
 		</div>
 	
 	<ul class='steps'>
@@ -160,12 +160,67 @@
 
 		</li>
 		<li test-id='8' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(Stepdefinitions.Billboards.User_clicks_the_billboards_module())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User clicks the billboards module</div>
+			<div class="step-name" title="(Stepdefinitions.Members.User_clicks_the_members_module())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User clicks the members module</div>
 
 
 		</li>
-		<li test-id='10' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(Stepdefinitions.Billboards.Al_Arabia_members_dashboard_should_display_successfully())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Al-Arabia billboards dashboard should display successfully</div>
+		<li test-id='10' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(Stepdefinitions.Members.User_filter_the_members_list_status_Active())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User filter the members list status-Active</div>
+
+
+		</li>
+		<li test-id='12' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(Stepdefinitions.Members.User_search_the_members())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User search the members</div>
+
+
+		</li>
+		<li test-id='14' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(Stepdefinitions.Members.Admin_click_the_personal_profile_icon())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Admin click the personal profile icon</div>
+
+
+		</li>
+		<li test-id='16' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(Stepdefinitions.Members.Admin_go_to_the_roles_page())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Admin go to the roles page</div>
+
+
+		</li>
+		<li test-id='18' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(Stepdefinitions.Members.Admin_enable_the_User_block_or_unblock_access_for_supervisor())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Admin enable the User block or unblock access for supervisor</div>
+
+
+		</li>
+		<li test-id='20' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(Stepdefinitions.Members.Admin_clicks_the_logout_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Admin clicks the logout button</div>
+
+
+		</li>
+		<li test-id='22' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(Stepdefinitions.Members.Supervisor_logged_in_with_valid_credentials())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Supervisor logged in with valid credentials</div>
+
+
+		</li>
+		<li test-id='24' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(Stepdefinitions.Members.User_clicks_the_members_module())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User clicks the members module</div>
+
+
+		</li>
+		<li test-id='26' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(Stepdefinitions.Members.User_filter_the_members_list_status_Active())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User filter the members list status-Active</div>
+
+
+		</li>
+		<li test-id='28' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(Stepdefinitions.Members.User_search_the_members())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User search the members</div>
+
+
+		</li>
+		<li test-id='30' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(Stepdefinitions.Members.Supervisor_clicks_the_members_menu_option())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Supervisor clicks the members menu option</div>
+
+
+		</li>
+		<li test-id='32' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(Stepdefinitions.Members.Supervisor_get_the_block_and_unblock_access_successfully())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Supervisor get the block and unblock access successfully</div>
 
 
 		</li>
@@ -242,7 +297,7 @@
                 </div>
                 <div class='block text-small'>
                     <span class='tooltipped' data-position='top' data-tooltip='100%'>
-                    <span class='strong'>4</span> steps passed</span>
+                    <span class='strong'>15</span> steps passed</span>
                 </div>
                 <div class='block text-small'>
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -286,7 +341,7 @@
 			<ul id='category-collection' class='category-collection'>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@billboards01</span>
+						<span class='category-name'>@sanity</span>
 						<span class='category-status right'>
 						<span class='label pass'>1</span>
 						</span>
@@ -308,8 +363,8 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>May 22, 2024 12:54:34 pm</td>
-										<td class='linked' test-id='2'>T001_Check billboards dashboard page</td>
+										<td>May 23, 2024 09:25:39 am</td>
+										<td class='linked' test-id='2'>T041_To verify the members feature roles wise (Block/Unblock access for supervisor)</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
@@ -319,7 +374,7 @@
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@billboards</span>
+						<span class='category-name'>@members41</span>
 						<span class='category-status right'>
 						<span class='label pass'>1</span>
 						</span>
@@ -341,74 +396,8 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>May 22, 2024 12:54:34 pm</td>
-										<td class='linked' test-id='2'>T001_Check billboards dashboard page</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@smoke</span>
-						<span class='category-status right'>
-						<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>May 22, 2024 12:54:34 pm</td>
-										<td class='linked' test-id='2'>T001_Check billboards dashboard page</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@regression</span>
-						<span class='category-status right'>
-						<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>May 22, 2024 12:54:34 pm</td>
-										<td class='linked' test-id='2'>T001_Check billboards dashboard page</td>
+										<td>May 23, 2024 09:25:39 am</td>
+										<td class='linked' test-id='2'>T041_To verify the members feature roles wise (Block/Unblock access for supervisor)</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
@@ -440,8 +429,74 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>May 22, 2024 12:54:34 pm</td>
-										<td class='linked' test-id='2'>T001_Check billboards dashboard page</td>
+										<td>May 23, 2024 09:25:39 am</td>
+										<td class='linked' test-id='2'>T041_To verify the members feature roles wise (Block/Unblock access for supervisor)</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@members</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>May 23, 2024 09:25:39 am</td>
+										<td class='linked' test-id='2'>T041_To verify the members feature roles wise (Block/Unblock access for supervisor)</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@regression</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>May 23, 2024 09:25:39 am</td>
+										<td class='linked' test-id='2'>T041_To verify the members feature roles wise (Block/Unblock access for supervisor)</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
@@ -478,25 +533,25 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>4</div>
+					<div class='panel-lead'>15</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>May 22, 2024 12:54:33 pm</div>
+					<div class='panel-lead'>May 23, 2024 09:25:38 am</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>May 22, 2024 12:54:47 pm</div>
+			 		<div class='panel-lead'>May 23, 2024 09:26:11 am</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>00 00 14.134</div>
+					<div class='panel-lead'>00 00 32.896</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -512,7 +567,7 @@
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>@billboards01</td>
+							<td>@sanity</td>
 							<td>1</td>
 							<td>0</td>
 							<td>0</td>
@@ -521,25 +576,7 @@
 							</td>
 						</tr>
 						<tr>
-							<td>@billboards</td>
-							<td>1</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>@smoke</td>
-							<td>1</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>@regression</td>
+							<td>@members41</td>
 							<td>1</td>
 							<td>0</td>
 							<td>0</td>
@@ -549,6 +586,24 @@
 						</tr>
 						<tr>
 							<td>@all</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@members</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@regression</td>
 							<td>1</td>
 							<td>0</td>
 							<td>0</td>
@@ -582,8 +637,8 @@
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				grandChildCount: 4,
-				passGrandChild: 4,
+				grandChildCount: 15,
+				passGrandChild: 15,
 				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
@@ -595,7 +650,7 @@
 		
 		<script>
 			var timeline = {
-			        "billboards":13.485
+			        "Members":32.282
 			};
 		</script>
 		

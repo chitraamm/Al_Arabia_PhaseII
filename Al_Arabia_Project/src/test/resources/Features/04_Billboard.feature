@@ -22,8 +22,8 @@ Then The billboard should created and displayed in billboard dashboard successfu
 Scenario Outline: T003_ the billboards feature search
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
-And User clicks the billboards module
-And User search the billboards
+And Admin or user clicks the billboards module
+And Admin or user search the billboards
 Then Searched Billboard details get displayed successfully
 
 @billboards @billboards04 @smoke @regression @all

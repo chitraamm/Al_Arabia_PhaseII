@@ -24,8 +24,8 @@ public class Members extends Base {
 
     public Members(Testhooks testhooks) throws Exception {
         this.driver = testhooks.getDriver();
-        this.membersPage = new Memberspage(driver); // Instantiate Memberspage
-        this.signinpage = new Signinpage(driver); // Instantiate Memberspage
+        this.membersPage = new Memberspage(driver);
+        this.signinpage = new Signinpage(driver);
         LOGGER = LogManager.getLogger(Members.class.getName());
     }
 

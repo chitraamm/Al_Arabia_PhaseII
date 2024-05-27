@@ -34,7 +34,7 @@ public class Signinpage extends Base {
 
         initializeWait();
     }
-//////////////////////////////////////////
+
     private void initializeWait() {
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }

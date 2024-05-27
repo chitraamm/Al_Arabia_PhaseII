@@ -54,4 +54,14 @@ public class Billboards extends Base {
     public void The_billboard_should_created_and_displayed_in_billboard_dashboard_successfully() throws Exception {
     	billboardsPage.New_billboard_display();
     }
+    
+    @And("Admin or user search the billboards")
+    public void Admin_or_user_search_the_billboards() throws Exception {
+    	billboardsPage.Newbillboard_create_BB_btn();
+    }
+    
+    @Then("Searched Billboard details get displayed successfully")
+    public void Searched_Billboard_details_get_displayed_successfully() throws Exception {
+    	billboardsPage.New_billboard_display();
+    }
 }

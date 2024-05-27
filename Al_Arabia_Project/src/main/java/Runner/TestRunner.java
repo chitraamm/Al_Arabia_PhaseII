@@ -26,7 +26,6 @@ public class TestRunner {
 	        Element element = document.selectFirst("#content");
 	        
 	        if (element != null) {
-	            // Print the text content of the selected element
 	            System.out.println("Content: " + element.text());
 	        } else {
 	            System.out.println("Element not found!");

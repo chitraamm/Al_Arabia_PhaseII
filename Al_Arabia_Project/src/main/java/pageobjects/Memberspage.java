@@ -52,12 +52,12 @@ public class Memberspage extends Base {
 
 	private static String generateUniqueIQMANumber(String baseIQMANumber) {
 		Random rand = new Random();
-		return baseIQMANumber + rand.nextInt(10000); // Append random number
+		return baseIQMANumber + rand.nextInt(10000); 
 	}
 
 	private static String generateUniqueLicenceNumber(String baseLicenceNumber) {
 		Random rand = new Random();
-		return baseLicenceNumber + rand.nextInt(1000); // Append random number
+		return baseLicenceNumber + rand.nextInt(1000);
 	}
 
 	@FindBy(xpath = "//span[normalize-space()='Members']")

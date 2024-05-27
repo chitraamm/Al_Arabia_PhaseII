@@ -19,6 +19,7 @@ import pageobjects.Billboardspage;
 import pageobjects.Forgotpasswordpage;
 import pageobjects.Signinpage;
 import pageobjects.Memberspage;
+import pageobjects.Profilepage;
 import resources.Base;
 public class Testhooks extends Base {
 	public WebDriver driver;
@@ -27,6 +28,7 @@ public class Testhooks extends Base {
 	public Memberspage memberspage;
 	public Forgotpasswordpage forgotpasswordpage;
 	public Billboardspage billboardspage;
+	public Profilepage profilepage;
 	 private static Logger LOGGER =
 			   LogManager.getLogger(Testhooks.class);
 	 
@@ -46,6 +48,8 @@ public class Testhooks extends Base {
 		memberspage = new Memberspage(driver);
 		forgotpasswordpage = new Forgotpasswordpage(driver);
 		billboardspage = new Billboardspage(driver);
+		profilepage = new Profilepage(driver);
+		
 		driver.get(prop.getProperty("Al_Arabia_URL"));
 
 		initializeWait();

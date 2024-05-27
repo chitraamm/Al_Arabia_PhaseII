@@ -11,7 +11,7 @@
 <link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@ce8b10435bcbae260c334c0d0c6b61d2c19b6168/spark/css/spark-style.css" rel="stylesheet" />
 <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
-<style type="text/css"></style></head><body class="spa bdd-report standard">
+<style type="text/css"></style></head><body class="spa -report standard">
   <div class="app">
     <div class="layout">
 <div class="header navbar">
@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Automation Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">May 23, 2024 09:25:38 am</span></a>
+<a href="#"><span class="badge badge-primary">May 27, 2024 12:46:59 pm</span></a>
 </li>
 </ul>
 </div>
@@ -45,11 +45,6 @@
 <li class="nav-item dropdown" onclick="toggleView('test-view')">
 <a id="nav-test" class="dropdown-toggle" href="#">
 <span class="ico"><i class="fa fa-list"></i></span>
-</a>
-</li>
-<li class="nav-item dropdown" onclick="toggleView('category-view')">
-<a id="nav-category" class="dropdown-toggle" href="#">
-<span class="ico"><i class="fa fa-tag"></i></span>
 </a>
 </li>
 <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
@@ -71,137 +66,13 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
-</ul>
-</li>
-<li class="dropdown">
-<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
-<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@sanity</a><a class="dropdown-item" href="#">@members41</a><a class="dropdown-item" href="#">@all</a><a class="dropdown-item" href="#">@members</a><a class="dropdown-item" href="#">@regression</a>
 </ul>
 </li>
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="pass" test-id="1"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">Members</p>
-            <p class="text-sm">
-              <span>9:25:39 am</span> / <span>00:00:32:282</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">Members</h5>
-<span class='badge badge-success'>05.23.2024 9:25:39 am</span>
-<span class='badge badge-danger'>05.23.2024 9:26:11 am</span>
-<span class='badge badge-default'>00:00:32:282</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
-<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
-<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
-<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
-</div>
-<div class="m-t-10 m-l-5">Admin, Manager and Supervisor can able to access the members feature, if they are get the roles access only</div>
-</div>
-</div>
-<div class="accordion mt-4">
-  <div class="card">
-    <div class="card-header" role="tab">
-      <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>T041_To verify the members feature roles wise (Block/Unblock access for supervisor)</div>
-      </div>
-    </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="Stepdefinitions.Members.Admin_logged_in_with_valid_credentials()">
-                <span>Given Admin logged in with valid credentials</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="Stepdefinitions.Members.Al_Arabia_overall_dashboard_should_display()">
-                <span>When Al-Arabia overall dashboard should display</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="Stepdefinitions.Members.User_clicks_the_members_module()">
-                <span>And User clicks the members module</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="Stepdefinitions.Members.User_filter_the_members_list_status_Active()">
-                <span>And User filter the members list status-Active</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="Stepdefinitions.Members.User_search_the_members()">
-                <span>And User search the members</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="Stepdefinitions.Members.Admin_click_the_personal_profile_icon()">
-                <span>And Admin click the personal profile icon</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="Stepdefinitions.Members.Admin_go_to_the_roles_page()">
-                <span>And Admin go to the roles page</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="Stepdefinitions.Members.Admin_enable_the_User_block_or_unblock_access_for_supervisor()">
-                <span>And Admin enable the User block or unblock access for supervisor</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="Stepdefinitions.Members.Admin_clicks_the_logout_button()">
-                <span>And Admin clicks the logout button</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="Stepdefinitions.Members.Supervisor_logged_in_with_valid_credentials()">
-                <span>And Supervisor logged in with valid credentials</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="Stepdefinitions.Members.User_clicks_the_members_module()">
-                <span>And User clicks the members module</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="Stepdefinitions.Members.User_filter_the_members_list_status_Active()">
-                <span>And User filter the members list status-Active</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="Stepdefinitions.Members.User_search_the_members()">
-                <span>And User search the members</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="Stepdefinitions.Members.Supervisor_clicks_the_members_menu_option()">
-                <span>And Supervisor clicks the members menu option</span>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="Stepdefinitions.Members.Supervisor_get_the_block_and_unblock_access_successfully()">
-                <span>Then Supervisor get the block and unblock access successfully</span>
-      <div>
-      </div>
-              </div>
-          </div>
-        </div>
-  </div>
-</div>
-          </div>
-        </li>
       </ul>
     </div>
   </div>
@@ -211,234 +82,38 @@
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-<div class="test-wrapper row view category-view attributes-view">
-<div class="test-list">
-<div class="test-list-tools">
-<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">5</span></a></li></ul>
-</div>
-<div class="test-list-wrapper scrollable">
-<ul class="test-list-item">
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@sanity</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@sanity</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>09:25:39 am</td>
-<td>
-<a href="#" class="linked" test-id='1' id='2'>T041_To verify the members feature roles wise (Block/Unblock access for supervisor)</a>
-<div class="">
-<span class="badge badge-default">Members.T041_To verify the members feature roles wise (Block/Unblock access for supervisor)</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@members41</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@members41</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>09:25:39 am</td>
-<td>
-<a href="#" class="linked" test-id='1' id='2'>T041_To verify the members feature roles wise (Block/Unblock access for supervisor)</a>
-<div class="">
-<span class="badge badge-default">Members.T041_To verify the members feature roles wise (Block/Unblock access for supervisor)</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@all</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@all</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>09:25:39 am</td>
-<td>
-<a href="#" class="linked" test-id='1' id='2'>T041_To verify the members feature roles wise (Block/Unblock access for supervisor)</a>
-<div class="">
-<span class="badge badge-default">Members.T041_To verify the members feature roles wise (Block/Unblock access for supervisor)</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@members</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@members</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>09:25:39 am</td>
-<td>
-<a href="#" class="linked" test-id='1' id='2'>T041_To verify the members feature roles wise (Block/Unblock access for supervisor)</a>
-<div class="">
-<span class="badge badge-default">Members.T041_To verify the members feature roles wise (Block/Unblock access for supervisor)</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@regression</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@regression</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>09:25:39 am</td>
-<td>
-<a href="#" class="linked" test-id='1' id='2'>T041_To verify the members feature roles wise (Block/Unblock access for supervisor)</a>
-<div class="">
-<span class="badge badge-default">Members.T041_To verify the members feature roles wise (Block/Unblock access for supervisor)</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-</ul>
-</div>
-</div>
-<div class="test-content scrollable">
-<div class="test-content-detail">
-<div class="detail-body"></div>
-</div>
-</div>
-</div><div class="container-fluid p-4 view dashboard-view">
+<div class="container-fluid p-4 view dashboard-view">
 <div class="row">
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>May 23, 2024 09:25:38 am</h3>
+<h3>May 27, 2024 12:46:59 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>May 23, 2024 09:26:11 am</h3>
+<h3>May 27, 2024 12:47:00 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
-<p class="m-b-0 text-pass">Features Passed</p>
-<h3>1</h3>
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>0</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
-<p class="m-b-0 text-fail">Features Failed</p>
+<p class="m-b-0 text-fail">Tests Failed</p>
 <h3>0</h3>
 </div></div>
 </div>
 </div>
 <div class="row">
-<div class="col-md-4">
+<div class="col-md-6">
 <div class="card">
 <div class="card-header">
-<h6 class="card-title">Features</h6>
+<h6 class="card-title">Tests</h6>
 </div>
 <div class="card-body">
 <div class="">
@@ -446,53 +121,13 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'>
-<b>1</b> features passed
+<div><small data-tooltip='0%'>
+<b>0</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='0%'><b>0</b> features failed,
+<small data-tooltip='0%'><b>0</b> tests failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
-</small>
-</div>
-</div>
-</div>
-</div>
-<div class="col-md-4">
-<div class="card">
-<div class="card-header">
-<h6 class="card-title">Scenarios</h6>
-</div>
-<div class="card-body">
-<div class="">
-<canvas id='child-analysis' width='115' height='90'></canvas>
-</div>
-</div>
-<div class="card-footer">
-<div><small data-tooltip='100%'><b>1</b> scenarios passed</small></div>
-<div>
-<small data-tooltip='0%'><b>0</b> scenarios failed,
-<b>0</b> skipped, <b data-tooltip='%'>0</b> others
-</small>
-</div>
-</div>
-</div>
-</div>
-<div class="col-md-4">
-<div class="card">
-<div class="card-header">
-<h6 class="card-title">Steps</h6>
-</div>
-<div class="card-body">
-<div class="">
-<canvas id='grandchild-analysis' width='115' height='90'></canvas>
-</div>
-</div>
-<div class="card-footer">
-<div><small data-tooltip='100%'><b>15</b> steps passed</small></div>
-<div>
-<small data-tooltip='0%'><b>0</b> steps failed,
-<b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -508,81 +143,36 @@
 </div></div>
 <script>
 var timeline = {
-"Members":32.282
 };
 </script>
 <div class="row">
-<div class="col-lg-6 col-md-12 category-container">
-<div class="card">
-<div class="card-header"><p>Tags</p></div>
-<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
-<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
-<tr>
-<td>@sanity</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@members41</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@all</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@members</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@regression</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-</tbody>
-</table></div>
-</div>
-</div>
 </div>
 </div>
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 1,
+passParent: 0,
 failParent: 0,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 1,
+passChild: 0,
 failChild: 0,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 15,
+passGrandChild: 0,
 failGrandChild: 0,
 warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
+passEvents: 0,
+failEvents: 0,
+warningEvents: 0,
+skipEvents: 0,
+infoEvents: 0
 };
 </script>        </div>
       </div>

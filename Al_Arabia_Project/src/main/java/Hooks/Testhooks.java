@@ -73,17 +73,17 @@ public class Testhooks extends Base {
 		return;
 	}
 
-	@After
-	public void tearDown(Scenario scenario) throws Exception {
-
-		if (driver != null) {
-			driver.quit();
-			LOGGER.info("Browser got closed");
-			System.out.println("-- Browser got closed --");
-			System.out.println(
-					"** Execution ended for scenario -" + scenario.getName());
-		}
-	}
+//	@After
+//	public void tearDown(Scenario scenario) throws Exception {
+//
+//		if (driver != null) {
+//			driver.quit();
+//			LOGGER.info("Browser got closed");
+//			System.out.println("-- Browser got closed --");
+//			System.out.println(
+//					"** Execution ended for scenario -" + scenario.getName());
+//		}
+//	}
 
 	@AfterStep
 	public void addScreenshot(Scenario scenario) {

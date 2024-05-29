@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="13.409" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="Profile" name="T05_User must be able to provide personal profile information" time="13.142">
+<testsuite name="Cucumber" time="12.873" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Profile" name="T06_User must be able to provide personal profile information - Example #1.1" time="12.61">
 <system-out><![CDATA[
 Given Admin logged in with valid credentials................................passed
 When Al-Arabia overall dashboard should display.............................passed
 And User able to click on profile...........................................passed
 And User able to click on personal profile..................................passed
 And Personal profile should be displaying...................................passed
-When User able to give personal profile information.........................passed
-Then IQAMA is required error message get displayed successfully.............passed
+And User able to give personal profile information..........................passed
+Then Particular profile get updated successfully as "Success Personal profile updated".passed
 ]]></system-out>
 </testcase>
 </testsuite>

@@ -16,7 +16,6 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.AssertJUnit;
-
 import resources.Base;
 
 public class Profilepage extends Base {
@@ -76,27 +75,33 @@ public class Profilepage extends Base {
 	}
 
 	@FindBy(name = "name")
-	private WebElement personalinfo_display;
+	private WebElement personalinfo_name;
 
-	public void personalinfo_display() {
-		wait.until(ExpectedConditions.visibilityOf(personalinfo_display)).isDisplayed();
+	@FindBy(xpath = "//div[@class='toastpop position-relative']")
+	private WebElement profile_success_display;
+	
+	public void personalinfo_name() {
+		wait.until(ExpectedConditions.visibilityOf(personalinfo_name)).isDisplayed();
 	}
+	
+	
 
 	@FindBy(name = "iqama_no")
-	private WebElement personalinfo;
+	private WebElement personalinfo_iqma, iqmaerror;
 
-	public void personalinfo() {
-		wait.until(ExpectedConditions.visibilityOf(personalinfo)).click();
-		personalinfo.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
-		String uniqueIQMANumber = generateUniqueIQMANumber(prop.getProperty("IQMA_number"));
-		wait.until(ExpectedConditions.visibilityOf(personalinfo)).sendKeys(uniqueIQMANumber);
+	public void personalinfo_iqma() {
+		wait.until(ExpectedConditions.visibilityOf(personalinfo_iqma)).click();
+		personalinfo_iqma.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
+		String uniqueIQMANumber = generateUniqueIQMANumber(prop.getProperty("Iqma"));
+		wait.until(ExpectedConditions.visibilityOf(personalinfo_iqma)).sendKeys(uniqueIQMANumber+Keys.ENTER);
+		wait.until(ExpectedConditions.visibilityOf(members_personalprofile_update_btn_Yes)).click();
 	}
 
 	@FindBy(xpath = "//button[contains(@type,'submit')]")
-	private WebElement Updatebutton;
+	private WebElement personalinfo_Updatebutton_text_enter;
 
-	public void Updatebutton() {
-		wait.until(ExpectedConditions.visibilityOf(Updatebutton)).click();
+	public void personalinfo_Updatebutton_text_enter() {
+		wait.until(ExpectedConditions.visibilityOf(personalinfo_Updatebutton_text_enter)).click();
 
 	}
 
@@ -106,21 +111,58 @@ public class Profilepage extends Base {
 	public void Yesbutton() {
 		wait.until(ExpectedConditions.visibilityOf(Yesbutton)).click();
 	}
+	
+	public String profile_success_display() {
+		WebElement successMessageElement = wait.until(ExpectedConditions.visibilityOf(profile_success_display));
+		return successMessageElement.getText().trim();
+	}
+	
+	
+	@FindBy(xpath = "//*[@id=\"root\"]/div/div/div[2]/div/div[2]/div[2]/div[2]/form/div[1]/div[1]/div[2]/div/div[1]/input")
+	private WebElement personalinfo_contractnumber_text_enter;
 
-	@FindBy(name = "name")
-	private WebElement success;
+	@FindBy(xpath = "//input[@value='+91 88833 80008']")
+	private WebElement personalinfo_alternatenumber_text_enter;
 
-	public void members_profile_personal_name() {
-		wait.until(ExpectedConditions.visibilityOf(success));
-		AssertJUnit.assertTrue(success.isDisplayed());
-		System.out.println(">> User or Admin got the members personal profile page successfully");
+	@FindBy(xpath = "//input[contains(@error,'alternate number required')]")
+	private WebElement personalinfo_alternatenumber_text_enter1;
+
+	@FindBy(xpath = "//*[@id=\"root\"]/div/div/div[2]/div/div[2]/div[2]/div[2]/form/div[1]/div[2]/div[2]/div/div[1]/input")
+	private WebElement personalinfo_whatsappnumber_text_enter;
+
+	@FindBy(xpath = "//input[contains(@error,'whatsapp number required')]")
+	private WebElement personalinfo_whatsappnumber_text_enter1;
+
+	@FindBy(xpath = "//input[@value='Coducer Technologies Private Limited, RAJ INFINITY, AECS Layout - A Block, AECS Layout, Singasandra, Bengaluru, Karnataka, India']")
+	private WebElement personalinfo_location_text_enter;
+
+	@FindBy(name = "biography")
+	private WebElement personalinfo_biography_text_enter;
+
+	public void personalinfo_text_enter() throws Exception {
+		personalinfo_alternatenumber_text_enter.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
+		wait.until(ExpectedConditions.visibilityOf(personalinfo_alternatenumber_text_enter1))
+				.sendKeys(prop.getProperty("Phone_number"));
+		wait.until(ExpectedConditions.visibilityOf(personalinfo_whatsappnumber_text_enter)).click();
+		personalinfo_whatsappnumber_text_enter.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
+		wait.until(ExpectedConditions.visibilityOf(personalinfo_whatsappnumber_text_enter1))
+				.sendKeys(prop.getProperty("App_Phone_number"));
+		wait.until(ExpectedConditions.visibilityOf(personalinfo_biography_text_enter)).click();
+		personalinfo_biography_text_enter.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
+		wait.until(ExpectedConditions.visibilityOf(personalinfo_biography_text_enter)).sendKeys("Demo");
+		wait.until(ExpectedConditions.visibilityOf(personalinfo_location_text_enter)).click();
+		personalinfo_location_text_enter.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
+		wait.until(ExpectedConditions.visibilityOf(personalinfo_location_text_enter))
+				.sendKeys("Saudi Arabia" + Keys.ARROW_DOWN + Keys.ENTER);
+		wait.until(ExpectedConditions.visibilityOf(Yesbutton)).click();
+
 	}
 
 	@FindBy(xpath = "//span[normalize-space()='Reset from']")
 	private WebElement Resetform;
 
 	public void Resetform() {
-		wait.until(ExpectedConditions.visibilityOf(Updatebutton)).click();
+		wait.until(ExpectedConditions.visibilityOf(Resetform)).click();
 	}
 
 	@FindBy(xpath = "//h6[normalize-space()='Yes, reset it.']")
@@ -144,15 +186,13 @@ public class Profilepage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(Noupdate)).click();
 	}
 
-	@FindBy(name = "iqama_no")
-	private WebElement nameerror;
-
 	public void nameerror() {
-		wait.until(ExpectedConditions.visibilityOf(nameerror)).click();
-		personalinfo.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
-		wait.until(ExpectedConditions.visibilityOf(personalinfo_display)).click();
-		
-
+		wait.until(ExpectedConditions.visibilityOf(iqmaerror)).click();
+		iqmaerror.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
+		wait.until(ExpectedConditions.visibilityOf(personalinfo_name)).click();
 	}
+	
+	@FindBy(xpath = "//h6[normalize-space()='Yes, update.']")
+	private WebElement members_personalprofile_update_btn_Yes;
 
 }

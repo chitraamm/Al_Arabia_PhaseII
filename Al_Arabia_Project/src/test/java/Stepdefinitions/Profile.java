@@ -41,17 +41,17 @@ public class Profile extends Base {
 
 	@Then("Personal profile should be displaying")
 	public void personal_profile_should_be_displaying() {
-		profilepage.personalinfo_display();
+		profilepage.personalinfo_name();
 	}
 
 	@When("User able to give personal profile information")
 	public void user_able_to_give_personal_profile_information() {
-		profilepage.personalinfo();
+		profilepage.personalinfo_iqma();
 	}
 
 	@When("User able to click on update personal profile")
 	public void user_able_to_click_on_update_personal_profile() {
-		profilepage.Updatebutton();
+		profilepage.personalinfo_Updatebutton_text_enter();
 	}
 
 	@When("User able to select yes option for saving deatils")
@@ -61,7 +61,7 @@ public class Profile extends Base {
 
 	@Then("^User able to get success popup message \"([^\"]*)\"$")
 	public void user_able_to_get_success_popup_message() {
-		// String actualMessage = profilepage.success_display();
+		// String actualMessage = profilepage.profile_success_display();
 		// String normalizedExpectedMessage = normalizeWhitespace(expectedMessage);
 		// String normalizedActualMessage = normalizeWhitespace(actualMessage);
 		System.out.println(">> User or Admin got the members profile updation success message successfully");
@@ -82,15 +82,38 @@ public class Profile extends Base {
 	public void user_able_to_select_no_option_for_reset_the_details() {
 		profilepage.NoResetform();
 	}
-	
+
 	@Then("User able to select no option for saving deatils")
 	public void user_able_to_select_no_option_for_saving_deatils() {
-	   profilepage.Noupdate(); 
+		profilepage.Noupdate();
 	}
-	
+
+	@Then("User able to get success popup message")
+	public void User_able_to_get_success_popup_message() {
+		profilepage.personalinfo_name();
+	}
+
 	@Then("IQAMA is required error message get displayed successfully")
 	public void name_is_required_error_message_get_displayed_successfully() {
-	    profilepage.nameerror();
+		profilepage.nameerror();
+	}
+
+	@Then("^Particular profile get updated successfully as \"([^\"]*)\"$")
+	public void Particular_profile_get_updated_successfully(String expectedMessage) {
+		String actualMessage = profilepage.profile_success_display();
+		String normalizedExpectedMessage = normalizeWhitespace(expectedMessage);
+		String normalizedActualMessage = normalizeWhitespace(actualMessage);
+		System.out.println(">> User or Admin got the members profile updation success message successfully");
+		assertEquals(normalizedExpectedMessage, normalizedActualMessage);
+	}
+
+	private String normalizeWhitespace(String input) {
+		return input.replaceAll("\\s+", " ").trim();
+	}
+
+	@When("Admin or User update the  profile page")
+	public void admin_or_user_update_the_profile_page() {
+
 	}
 
 }

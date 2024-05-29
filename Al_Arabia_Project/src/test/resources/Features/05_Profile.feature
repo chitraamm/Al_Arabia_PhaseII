@@ -46,12 +46,26 @@ User should be able to complete the personal profile
 #And User able to click on update personal profile 
 #Then User able to select no option for saving deatils
 
-@profile @profile05 @validcredentials @regression @sanity @all
-Scenario Outline: T05_User must be able to provide personal profile information
+#@profile @profile05 @validcredentials @regression @sanity @all
+#Scenario Outline: T05_User must be able to provide personal profile information
+#Given Admin logged in with valid credentials
+#When Al-Arabia overall dashboard should display
+#And User able to click on profile
+#And User able to click on personal profile
+#And Personal profile should be displaying
+#When User able to give personal profile information
+#Then IQAMA is required error message get displayed successfully
+
+@profile @profile06 @validcredentials @regression @sanity @all
+Scenario Outline: T06_User must be able to provide personal profile information
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And User able to click on profile
 And User able to click on personal profile
 And Personal profile should be displaying
-When User able to give personal profile information
-Then IQAMA is required error message get displayed successfully
+And User able to give personal profile information
+Then Particular profile get updated successfully as "<successMessage>"
+Examples:
+      | successMessage                        |
+      | Success Personal profile updated      |
+

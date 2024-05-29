@@ -218,7 +218,7 @@ And User clicks the members module
 And User filter the members list status-Active
 And User search the members
 And Admin or User go the members profile page
-And Admin or User delete the member name
+And Admin or User  the membdeleteer name
 Then Name is required error message get displayed successfully
 
 @members @members26 @sanity @regression @all

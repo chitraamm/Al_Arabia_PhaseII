@@ -60,47 +60,54 @@ public class Profilepage extends Base {
 		return baseLicenceNumber + rand.nextInt(1000); // Append random number
 	}
 
-    @FindBy(xpath = "//*[@id=\"root\"]/div/div/div[2]/div/div[1]/div[3]/div/div[2]/div/div[1]/div/div")
-    private WebElement Profile;
-    
-    public void Profile() {
-		wait.until(ExpectedConditions.visibilityOf(Profile)).click();
+	@FindBy(xpath = "//div[@class='avatar pointer']")
+	private WebElement Profile;
+
+	public void Profile() {
 		wait.until(ExpectedConditions.visibilityOf(Profile)).isDisplayed();
-		
+		wait.until(ExpectedConditions.visibilityOf(Profile)).click();
 	}
-	
-    @FindBy(xpath = "//div[contains(@class,'row')]//li[1]")
-    private WebElement Persoalprofile;
-    
-    public void Personalprofile() {
-    	wait.until(ExpectedConditions.visibilityOf(Profile)).click();
-    	
-    }
-    
-    @FindBy(name = "name")
-    private WebElement personalinfo;
-    
-    public void personalinfo() {
-    	wait.until(ExpectedConditions.visibilityOf(personalinfo)).isDisplayed();
-    }
-    
-    @FindBy(xpath = "//button[contains(@type,'submit')]")
-    private WebElement Updatebutton;
-    
-    public void Updatebutton() {
-    	wait.until(ExpectedConditions.visibilityOf(Updatebutton)).click();
-    	
-    }
-    
-    @FindBy(xpath = "//h6[normalize-space()='Yes, update.']")
-    private WebElement Yesbutton;
-    
-    public void Yesbutton() {
-    	wait.until(ExpectedConditions.visibilityOf(Yesbutton)).click();
-    	wait.until(ExpectedConditions.visibilityOf(Yesbutton)).isDisplayed();
-    }
-    
-    @FindBy(name = "name")
+
+	@FindBy(xpath = "//a[normalize-space()='Personal Profile']")
+	private WebElement Personalprofile;
+
+	public void Personalprofile() {
+		wait.until(ExpectedConditions.visibilityOf(Personalprofile)).click();
+	}
+
+	@FindBy(name = "name")
+	private WebElement personalinfo_display;
+
+	public void personalinfo_display() {
+		wait.until(ExpectedConditions.visibilityOf(personalinfo_display)).isDisplayed();
+	}
+
+	@FindBy(name = "iqama_no")
+	private WebElement personalinfo;
+
+	public void personalinfo() {
+		wait.until(ExpectedConditions.visibilityOf(personalinfo)).click();
+		personalinfo.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
+		String uniqueIQMANumber = generateUniqueIQMANumber(prop.getProperty("IQMA_number"));
+		wait.until(ExpectedConditions.visibilityOf(personalinfo)).sendKeys(uniqueIQMANumber);
+	}
+
+	@FindBy(xpath = "//button[contains(@type,'submit')]")
+	private WebElement Updatebutton;
+
+	public void Updatebutton() {
+		wait.until(ExpectedConditions.visibilityOf(Updatebutton)).click();
+
+	}
+
+	@FindBy(xpath = "//h6[normalize-space()='Yes, update.']")
+	private WebElement Yesbutton;
+
+	public void Yesbutton() {
+		wait.until(ExpectedConditions.visibilityOf(Yesbutton)).click();
+	}
+
+	@FindBy(name = "name")
 	private WebElement success;
 
 	public void members_profile_personal_name() {
@@ -108,19 +115,44 @@ public class Profilepage extends Base {
 		AssertJUnit.assertTrue(success.isDisplayed());
 		System.out.println(">> User or Admin got the members personal profile page successfully");
 	}
-    
-    
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	@FindBy(xpath = "//span[normalize-space()='Reset from']")
+	private WebElement Resetform;
+
+	public void Resetform() {
+		wait.until(ExpectedConditions.visibilityOf(Updatebutton)).click();
+	}
+
+	@FindBy(xpath = "//h6[normalize-space()='Yes, reset it.']")
+	private WebElement YesResetform;
+
+	public void YesResetform() {
+		wait.until(ExpectedConditions.visibilityOf(YesResetform)).click();
+	}
+
+	@FindBy(xpath = "//div[contains(@class,'popup')]//h6[1]")
+	private WebElement NoResetform;
+
+	public void NoResetform() {
+		wait.until(ExpectedConditions.visibilityOf(NoResetform)).click();
+	}
+
+	@FindBy(xpath = "//div[contains(@class,'popup')]//h6[1]")
+	private WebElement Noupdate;
+
+	public void Noupdate() {
+		wait.until(ExpectedConditions.visibilityOf(Noupdate)).click();
+	}
+
+	@FindBy(name = "iqama_no")
+	private WebElement nameerror;
+
+	public void nameerror() {
+		wait.until(ExpectedConditions.visibilityOf(nameerror)).click();
+		personalinfo.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
+		wait.until(ExpectedConditions.visibilityOf(personalinfo_display)).click();
+		
+
+	}
 
 }

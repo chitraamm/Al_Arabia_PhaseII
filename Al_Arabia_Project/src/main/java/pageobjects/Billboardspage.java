@@ -25,8 +25,7 @@ public class Billboardspage extends Base {
 	private Properties prop;
 	private Actions act;
 	private Logger LOGGER = LogManager.getLogger(Billboardspage.class);
-	private Signinpage signinpage;
-////
+
 	public Billboardspage(WebDriver driver) throws Exception {
 		this.driver = driver;
 		prop = new Properties();
@@ -36,25 +35,14 @@ public class Billboardspage extends Base {
 		FileInputStream fis = new FileInputStream(propPath);
 		prop.load(fis);
 		initializeWait();
-		this.signinpage = new Signinpage(driver);
 		LOGGER = LogManager.getLogger(Billboardspage.class.getName());
 	}
 
-	private boolean condition = true;
 
 	private void initializeWait() {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	}
-
-	private String generateUniqueEmail(String baseEmail) {
-		return baseEmail.replace("@", +System.currentTimeMillis() + "@");
-	}
-
-	private static String generateUniqueIQMANumber(String baseIQMANumber) {
-		Random rand = new Random();
-		return baseIQMANumber + rand.nextInt(10000);
-	}
-
+	
 	private static String generateUniqueboardNumber(String baseboardNumber) {
 		Random rand = new Random();
 		return baseboardNumber + rand.nextInt(1000);

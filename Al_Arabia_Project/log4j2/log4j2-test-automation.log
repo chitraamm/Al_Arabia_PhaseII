@@ -1,1 +1,53 @@
 [INFO ] 2024-05-27 10:47:23.350 [main] Testhooks - Execution Started
+[INFO ] 2024-05-27 15:35:47.624 [main] Testhooks - Execution Started
+[INFO ] 2024-05-27 15:35:48.539 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-27 15:35:53.114 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-27 15:35:53.295 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-27 15:35:54.437 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-27 15:35:54.520 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-27 15:35:54.579 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-27 15:35:54.579 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-27 15:35:57.344 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-27 15:35:58.728 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-27 15:35:58.853 [main] Memberspage - >> The members dashboard list page got displayed
+[INFO ] 2024-05-27 15:35:58.853 [main] Members - >> Admin/user got the members dashboard page >>
+[INFO ] 2024-05-27 15:35:59.026 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-27 15:36:09.570 [main] Testhooks - Execution Started
+[INFO ] 2024-05-27 15:36:10.447 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-27 15:36:15.573 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-27 15:36:15.675 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-27 15:36:16.809 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-27 15:36:16.891 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-27 15:36:16.949 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-27 15:36:16.950 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-27 15:36:19.672 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-27 15:36:21.170 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-27 15:36:21.314 [main] Memberspage - >> The members dashboard list page got displayed
+[INFO ] 2024-05-27 15:36:21.314 [main] Members - >> Admin/user got the members dashboard page >>
+[INFO ] 2024-05-27 15:36:21.471 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-27 16:04:23.241 [main] Testhooks - Execution Started
+[INFO ] 2024-05-27 16:04:24.172 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-27 16:04:29.398 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-27 16:04:29.541 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-27 16:04:30.679 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-27 16:04:30.766 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-27 16:04:30.838 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-27 16:04:30.838 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-27 16:04:33.921 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-27 16:04:35.417 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-27 16:04:35.559 [main] Memberspage - >> The members dashboard list page got displayed
+[INFO ] 2024-05-27 16:04:35.559 [main] Members - >> Admin/user got the members dashboard page >>
+[INFO ] 2024-05-27 16:04:35.718 [main] Testhooks - Browser got closed
+[INFO ] 2024-05-27 17:17:57.795 [main] Testhooks - Execution Started
+[INFO ] 2024-05-27 17:17:58.717 [main] Testhooks - Browser got launched
+[INFO ] 2024-05-27 17:18:02.986 [main] Testhooks - Navigated to url
+[INFO ] 2024-05-27 17:18:03.127 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-05-27 17:18:04.263 [main] Signinpage - User enters valid email address
+[INFO ] 2024-05-27 17:18:04.345 [main] Signinpage - User enters valid password
+[INFO ] 2024-05-27 17:18:04.406 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-05-27 17:18:04.406 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-05-27 17:18:06.776 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-05-27 17:18:08.607 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-05-27 17:18:08.753 [main] Memberspage - >> The members dashboard list page got displayed
+[INFO ] 2024-05-27 17:18:08.754 [main] Members - >> Admin/user got the members dashboard page >>
+[INFO ] 2024-05-27 17:18:08.906 [main] Testhooks - Browser got closed

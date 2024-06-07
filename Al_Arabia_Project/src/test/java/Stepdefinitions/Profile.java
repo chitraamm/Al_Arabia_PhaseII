@@ -30,14 +30,6 @@ public class Profile extends Base {
         LOGGER = LogManager.getLogger(Profile.class.getName());
     }
     
-    @Given("Admin logged in with valid credentials")
-    public void Admin_logged_in_with_valid_credentials() throws Exception {
-    	signinpage.enterValidEmail();
-    	 signinpage.enterValidPassword();
-         signinpage.clickSignInButton();
-        LOGGER.info(">> Admin/User got logged in >>");
-    }
-    
     @When("User able to click on profile")
     public void user_able_to_click_on_profile() {
       profilepage.Profile();

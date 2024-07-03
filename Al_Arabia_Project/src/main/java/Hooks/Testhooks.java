@@ -33,7 +33,7 @@ public class Testhooks extends Base {
 			   LogManager.getLogger(Testhooks.class);
 	 
 	public void initializeWait() {
-		this.wait = new WebDriverWait(driver, Duration.ofSeconds(40));
+		this.wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 	}
 	
 	@Before

@@ -661,3 +661,859 @@
 [INFO ] 2024-07-03 15:18:15.970 [main] Testhooks - Browser got launched
 [INFO ] 2024-07-03 15:18:17.399 [main] Testhooks - Navigated to url
 [INFO ] 2024-07-03 15:18:19.729 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 15:23:16.948 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 15:23:17.819 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 15:23:19.417 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 15:23:20.628 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 15:23:20.762 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 15:23:20.870 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 15:23:20.870 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 15:23:23.579 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 15:23:24.206 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 15:23:24.491 [main] Memberspage - >> The members dashboard list page got displayed
+[INFO ] 2024-07-03 15:23:24.491 [main] Members - >> Admin/user got the members dashboard page >>
+[INFO ] 2024-07-03 15:23:24.708 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 15:24:03.354 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 15:24:04.229 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 15:24:05.724 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 15:24:06.937 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 15:24:07.068 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 15:24:07.181 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 15:24:07.181 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 15:24:10.031 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 15:24:10.704 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 15:24:31.203 [main] Testhooks - Failed scenario screenshot got capturedT002_Invite the member with valid inputs
+[INFO ] 2024-07-03 15:24:31.296 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 15:26:34.486 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 15:26:35.423 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 15:26:37.130 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 15:26:38.342 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 15:26:38.470 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 15:26:38.583 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 15:26:38.583 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 15:26:41.337 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 15:26:41.953 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 15:27:02.512 [main] Testhooks - Failed scenario screenshot got capturedT002_Invite the member with valid inputs
+[INFO ] 2024-07-03 15:27:02.656 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 15:36:14.199 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 15:36:15.099 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 15:36:45.159 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 15:36:46.372 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 15:36:46.504 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 15:36:46.616 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 15:36:46.617 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 15:36:49.415 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 15:36:49.959 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 15:36:50.267 [main] Memberspage - >> User clicked the invite member button
+[INFO ] 2024-07-03 15:37:10.828 [main] Testhooks - Failed scenario screenshot got capturedT002_Invite the member with valid inputs
+[INFO ] 2024-07-03 15:37:10.985 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 15:42:41.860 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 15:42:42.788 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 15:42:44.324 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 15:42:45.539 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 15:42:45.672 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 15:42:45.789 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 15:42:45.789 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 15:42:48.594 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 15:42:49.438 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 15:42:49.729 [main] Memberspage - >> User clicked the invite member button
+[INFO ] 2024-07-03 15:42:50.341 [main] Memberspage - >> User clicked the invite member button
+[INFO ] 2024-07-03 15:42:50.692 [main] Memberspage - >> User selected the role:Supervisor
+[INFO ] 2024-07-03 15:43:11.239 [main] Testhooks - Failed scenario screenshot got capturedT002_Invite the member with valid inputs
+[INFO ] 2024-07-03 15:43:11.389 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 15:47:11.732 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 15:47:12.679 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 15:47:15.511 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 15:47:16.731 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 15:47:16.868 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 15:47:16.984 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 15:47:16.984 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 15:47:19.807 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 15:47:20.615 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 15:47:20.926 [main] Memberspage - >> User clicked the invite member button
+[INFO ] 2024-07-03 15:47:21.542 [main] Memberspage - >> User clicked the invite member button
+[INFO ] 2024-07-03 15:47:21.894 [main] Memberspage - >> User selected the role:Supervisor
+[INFO ] 2024-07-03 15:47:22.312 [main] Testhooks - Failed scenario screenshot got capturedT002_Invite the member with valid inputs
+[INFO ] 2024-07-03 15:47:22.405 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 15:48:53.520 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 15:48:54.429 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 15:48:55.987 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 15:48:57.206 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 15:48:57.342 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 15:48:57.453 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 15:48:57.453 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 15:49:00.391 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 15:49:01.465 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 15:49:01.826 [main] Memberspage - >> User clicked the invite member button
+[INFO ] 2024-07-03 15:49:02.449 [main] Memberspage - >> User clicked the invite member button
+[INFO ] 2024-07-03 15:49:02.817 [main] Memberspage - >> User selected the role:Supervisor
+[INFO ] 2024-07-03 15:49:03.220 [main] Memberspage - >> User selected the role:
+[INFO ] 2024-07-03 15:49:03.520 [main] Memberspage - >> User clicked the send invite button
+[INFO ] 2024-07-03 15:49:03.714 [main] Members - >> User got the invitation mail successfully >>
+[INFO ] 2024-07-03 15:49:04.033 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 15:52:25.468 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 15:52:26.427 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 15:52:28.283 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 15:52:29.503 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 15:52:29.636 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 15:52:29.751 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 15:52:29.751 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 15:52:32.613 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 15:52:33.251 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 15:52:34.191 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 15:53:32.013 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 15:53:32.909 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 15:53:34.391 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 15:53:35.600 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 15:53:35.737 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 15:53:35.852 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 15:53:35.852 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 15:53:38.486 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 15:53:39.391 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 15:53:59.851 [main] Testhooks - Failed scenario screenshot got capturedT004_To verify the members feature sort recently updated
+[INFO ] 2024-07-03 15:53:59.995 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 15:59:52.713 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 15:59:53.665 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 15:59:58.779 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 15:59:59.993 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 16:00:00.134 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 16:00:00.244 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 16:00:00.244 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 16:00:02.698 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 16:00:03.925 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 16:00:24.402 [main] Testhooks - Failed scenario screenshot got capturedT004_To verify the members feature sort recently updated
+[INFO ] 2024-07-03 16:00:24.547 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 16:02:09.781 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 16:02:10.697 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 16:02:12.243 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 16:02:13.457 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 16:02:13.587 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 16:02:13.701 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 16:02:13.701 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 16:02:16.353 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 16:02:17.227 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 16:02:37.683 [main] Testhooks - Failed scenario screenshot got capturedT004_To verify the members feature sort recently updated
+[INFO ] 2024-07-03 16:02:37.821 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 16:04:57.735 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 16:04:58.620 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 16:05:00.451 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 16:05:01.666 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 16:05:01.802 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 16:05:01.916 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 16:05:01.917 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 16:05:04.778 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 16:05:05.508 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 16:05:25.961 [main] Testhooks - Failed scenario screenshot got capturedT004_To verify the members feature sort recently updated
+[INFO ] 2024-07-03 16:05:26.105 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 16:09:13.136 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 16:09:14.050 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 16:09:15.494 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 16:09:16.710 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 16:09:16.844 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 16:09:16.956 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 16:09:16.957 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 16:09:19.782 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 16:09:20.547 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 16:09:41.002 [main] Testhooks - Failed scenario screenshot got capturedT004_To verify the members feature sort recently updated
+[INFO ] 2024-07-03 16:09:41.094 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 16:19:03.115 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 16:19:04.083 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 16:19:05.534 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 16:19:06.758 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 16:19:06.891 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 16:19:07.000 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 16:19:07.001 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 16:19:09.619 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 16:19:10.528 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 16:19:31.034 [main] Testhooks - Failed scenario screenshot got capturedT004_To verify the members feature sort recently updated
+[INFO ] 2024-07-03 16:19:31.141 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 16:22:15.423 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 16:22:16.337 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 16:22:17.897 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 16:22:19.108 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 16:22:19.242 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 16:22:19.356 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 16:22:19.356 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 16:22:22.221 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 16:22:22.991 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 16:22:43.488 [main] Testhooks - Failed scenario screenshot got capturedT005_To verify the members feature sort Name - A to Z
+[INFO ] 2024-07-03 16:22:43.629 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 16:26:48.713 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 16:26:49.631 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 16:26:51.215 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 16:26:52.437 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 16:26:52.572 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 16:26:52.682 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 16:26:52.682 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 16:26:55.482 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 16:26:56.246 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 16:27:19.376 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 16:27:20.315 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 16:27:22.027 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 16:27:23.245 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 16:27:23.375 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 16:27:23.487 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 16:27:23.487 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 16:27:26.264 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 16:27:27.041 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 16:27:47.485 [main] Testhooks - Failed scenario screenshot got capturedT004_To verify the members feature sort recently updated
+[INFO ] 2024-07-03 16:27:47.624 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 16:29:18.014 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 16:29:18.967 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 16:29:20.501 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 16:29:21.714 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 16:29:21.847 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 16:29:21.957 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 16:29:21.957 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 16:29:24.816 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 16:29:25.521 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 16:29:46.117 [main] Testhooks - Failed scenario screenshot got capturedT004_To verify the members feature sort recently updated
+[INFO ] 2024-07-03 16:29:46.260 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 17:05:48.233 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 17:05:49.124 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 17:05:51.843 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 17:05:53.061 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 17:05:53.197 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 17:05:53.311 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 17:05:53.311 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 17:05:55.829 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 17:05:56.629 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 17:05:57.474 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 17:08:04.638 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 17:08:05.572 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 17:08:07.166 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 17:08:08.380 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 17:08:08.524 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 17:08:08.647 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 17:08:08.647 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 17:08:11.449 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 17:08:12.000 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 17:08:12.931 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 17:08:40.339 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 17:08:41.224 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 17:08:42.842 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 17:08:44.065 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 17:08:44.195 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 17:08:44.302 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 17:08:44.302 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 17:08:47.135 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 17:08:47.759 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 17:08:48.662 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 17:09:02.164 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 17:09:03.082 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 17:09:04.648 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 17:09:05.855 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 17:09:05.989 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 17:09:06.105 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 17:09:06.105 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 17:09:08.918 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 17:09:09.432 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 17:09:10.370 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 17:09:29.162 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 17:09:30.065 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 17:09:31.910 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 17:09:33.106 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 17:09:33.236 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 17:09:33.351 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 17:09:33.351 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 17:09:36.094 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 17:09:36.697 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 17:09:57.130 [main] Testhooks - Failed scenario screenshot got capturedT008_To verify the members feature filter active status members
+[INFO ] 2024-07-03 17:09:57.224 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 17:11:58.356 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 17:11:59.238 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 17:12:01.122 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 17:12:02.333 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 17:12:02.466 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 17:12:02.579 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 17:12:02.579 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 17:12:05.334 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 17:12:05.955 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 17:12:26.424 [main] Testhooks - Failed scenario screenshot got capturedT008_To verify the members feature filter active status members
+[INFO ] 2024-07-03 17:12:26.565 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 17:18:34.268 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 17:18:35.138 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 17:18:36.734 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 17:18:37.953 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 17:18:38.086 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 17:18:38.195 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 17:18:38.196 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 17:18:41.019 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 17:18:41.694 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 17:19:02.224 [main] Testhooks - Failed scenario screenshot got capturedT008_To verify the members feature filter active status members
+[INFO ] 2024-07-03 17:19:02.368 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 17:19:51.065 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 17:19:51.964 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 17:19:53.544 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 17:19:54.763 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 17:19:54.898 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 17:19:55.011 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 17:19:55.012 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 17:19:57.884 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 17:19:58.675 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 17:19:59.898 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 17:20:42.579 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 17:20:43.492 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 17:20:44.962 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 17:20:46.191 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 17:20:46.319 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 17:20:46.429 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 17:20:46.429 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 17:20:50.516 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 17:20:51.215 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 17:21:11.830 [main] Testhooks - Failed scenario screenshot got capturedT009_To verify the members feature filter blocked status members
+[INFO ] 2024-07-03 17:21:11.921 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 17:22:31.749 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 17:22:32.626 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 17:22:34.360 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 17:22:35.570 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 17:22:35.704 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 17:22:35.813 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 17:22:35.813 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 17:22:38.557 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 17:22:39.506 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 17:23:00.672 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 17:23:23.374 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 17:23:24.295 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 17:23:25.830 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 17:23:27.047 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 17:23:27.177 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 17:23:27.287 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 17:23:27.287 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 17:23:30.134 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 17:23:30.762 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 17:23:51.365 [main] Testhooks - Failed scenario screenshot got capturedT010_To verify the members feature filter expired status members
+[INFO ] 2024-07-03 17:23:51.507 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 17:24:37.844 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 17:24:38.764 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 17:24:40.316 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 17:24:41.529 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 17:24:41.661 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 17:24:41.770 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 17:24:41.770 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 17:24:44.230 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 17:24:45.180 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 17:24:46.348 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 17:25:22.083 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 17:25:22.981 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 17:25:24.450 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 17:25:25.659 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 17:25:25.792 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 17:25:25.904 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 17:25:25.904 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 17:25:28.783 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 17:25:29.480 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 17:25:50.150 [main] Testhooks - Failed scenario screenshot got capturedT011_To verify the members feature filter pending status members
+[INFO ] 2024-07-03 17:25:50.243 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 17:27:13.200 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 17:27:14.132 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 17:27:15.442 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 17:27:16.655 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 17:27:16.787 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 17:27:16.908 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 17:27:16.909 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 17:27:19.359 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 17:27:20.263 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 17:28:01.397 [main] Testhooks - Failed scenario screenshot got capturedT011_To verify the members feature filter pending status members
+[INFO ] 2024-07-03 17:28:01.485 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 17:29:06.516 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 17:29:07.420 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 17:29:08.907 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 17:29:10.124 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 17:29:10.254 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 17:29:10.365 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 17:29:10.365 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 17:29:13.193 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 17:29:13.896 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 17:29:55.052 [main] Testhooks - Failed scenario screenshot got capturedT011_To verify the members feature filter pending status members
+[INFO ] 2024-07-03 17:29:55.189 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 17:32:42.785 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 17:32:43.707 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 17:32:45.731 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 17:32:46.924 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 17:32:47.059 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 17:32:47.166 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 17:32:47.166 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 17:32:49.782 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 17:32:50.622 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 17:32:50.989 [main] Testhooks - Failed scenario screenshot got capturedT011_To verify the members feature filter pending status members
+[INFO ] 2024-07-03 17:32:51.077 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 17:33:43.859 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 17:33:44.801 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 17:33:46.519 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 17:33:47.732 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 17:33:47.863 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 17:33:47.975 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 17:33:47.975 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 17:33:50.842 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 17:33:51.505 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 17:33:52.085 [main] Testhooks - Failed scenario screenshot got capturedT011_To verify the members feature filter pending status members
+[INFO ] 2024-07-03 17:33:52.174 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 17:36:29.671 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 17:36:30.587 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 17:36:32.346 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 17:36:33.550 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 17:36:33.678 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 17:36:33.786 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 17:36:33.787 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 17:36:36.565 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 17:36:37.300 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 17:37:18.399 [main] Testhooks - Failed scenario screenshot got capturedT011_To verify the members feature filter pending status members
+[INFO ] 2024-07-03 17:37:18.490 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 17:40:43.923 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 17:40:44.848 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 17:40:46.200 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 17:40:47.422 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 17:40:47.553 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 17:40:47.671 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 17:40:47.671 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 17:40:50.409 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 17:40:50.938 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 17:41:32.181 [main] Testhooks - Failed scenario screenshot got capturedT011_To verify the members feature filter pending status members
+[INFO ] 2024-07-03 17:41:32.333 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 17:44:21.433 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 17:44:22.229 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 17:44:23.876 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 17:44:25.066 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 17:44:25.189 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 17:44:25.294 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 17:44:25.295 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 17:44:28.020 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 17:44:28.512 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 17:45:09.609 [main] Testhooks - Failed scenario screenshot got capturedT011_To verify the members feature filter pending status members
+[INFO ] 2024-07-03 17:45:09.697 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 17:45:37.811 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 17:45:38.650 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 17:45:40.035 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 17:45:41.239 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 17:45:41.365 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 17:45:41.472 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 17:45:41.473 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 17:45:44.232 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 17:45:44.885 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 17:46:25.899 [main] Testhooks - Failed scenario screenshot got capturedT011_To verify the members feature filter pending status members
+[INFO ] 2024-07-03 17:46:25.989 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 17:48:26.690 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 17:48:27.525 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 17:48:28.862 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 17:48:30.054 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 17:48:30.185 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 17:48:30.289 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 17:48:30.289 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 17:48:33.074 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 17:48:33.688 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 17:49:05.269 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 17:49:08.292 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 17:49:09.051 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 17:49:10.624 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 17:49:11.807 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 17:49:11.927 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 17:49:12.025 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 17:49:12.026 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 17:49:14.768 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 17:49:15.325 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 17:49:56.508 [main] Testhooks - Failed scenario screenshot got capturedT011_To verify the members feature filter pending status members
+[INFO ] 2024-07-03 17:49:56.647 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 17:50:40.723 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 17:50:41.505 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 17:50:42.816 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 17:50:44.001 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 17:50:44.119 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 17:50:44.223 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 17:50:44.223 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 17:50:46.969 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 17:50:47.779 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 17:51:28.881 [main] Testhooks - Failed scenario screenshot got capturedT011_To verify the members feature filter pending status members
+[INFO ] 2024-07-03 17:51:29.044 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 17:53:10.596 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 17:53:11.412 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 17:53:13.142 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 17:53:14.335 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 17:53:14.458 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 17:53:14.559 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 17:53:14.559 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 17:53:17.249 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 17:53:17.746 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 17:53:18.822 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 17:53:59.068 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 17:53:59.853 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 17:54:01.217 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 17:54:02.410 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 17:54:02.541 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 17:54:02.645 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 17:54:02.645 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 17:54:05.425 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 17:54:06.143 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 17:54:07.145 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 17:55:36.345 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 17:55:37.250 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 17:55:39.088 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 17:55:40.302 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 17:55:40.434 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 17:55:40.543 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 17:55:40.544 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 17:55:43.322 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 17:55:43.919 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 17:56:04.568 [main] Testhooks - Failed scenario screenshot got capturedT012_To verify the members feature filter admin role members
+[INFO ] 2024-07-03 17:56:04.708 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 17:58:25.689 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 17:58:26.622 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 17:58:28.120 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 17:58:29.324 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 17:58:29.454 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 17:58:29.565 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 17:58:29.565 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 17:58:32.379 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 17:58:32.908 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 17:58:34.017 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 17:58:50.774 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 17:58:51.692 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 17:58:53.243 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 17:58:54.455 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 17:58:54.583 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 17:58:54.690 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 17:58:54.691 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 17:58:57.488 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 17:58:58.140 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 17:59:18.796 [main] Testhooks - Failed scenario screenshot got capturedT013_To verify the members feature filter manager role members
+[INFO ] 2024-07-03 17:59:18.886 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 18:00:30.171 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 18:00:31.081 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 18:00:32.500 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 18:00:33.712 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 18:00:33.850 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 18:00:33.961 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 18:00:33.961 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 18:00:36.880 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 18:00:37.655 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 18:00:38.790 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 18:01:13.341 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 18:01:14.250 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 18:01:15.653 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 18:01:16.850 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 18:01:16.979 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 18:01:17.091 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 18:01:17.091 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 18:01:19.888 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 18:01:20.500 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 18:01:41.067 [main] Testhooks - Failed scenario screenshot got capturedT014_To verify the members feature filter supervisor role members
+[INFO ] 2024-07-03 18:01:41.158 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 18:03:03.424 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 18:03:04.363 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 18:03:05.969 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 18:03:07.192 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 18:03:07.323 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 18:03:07.435 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 18:03:07.435 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 18:03:10.317 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 18:03:10.955 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 18:03:12.007 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 18:03:40.283 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 18:03:41.227 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 18:03:42.950 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 18:03:44.163 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 18:03:44.298 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 18:03:44.405 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 18:03:44.405 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 18:03:47.187 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 18:03:47.763 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 18:04:08.325 [main] Testhooks - Failed scenario screenshot got capturedT015_To verify the members feature filter technician role members
+[INFO ] 2024-07-03 18:04:08.416 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 18:04:53.184 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 18:04:54.114 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 18:04:55.563 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 18:04:56.775 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 18:04:56.908 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 18:04:57.019 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 18:04:57.019 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 18:04:59.805 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 18:05:00.461 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 18:05:01.553 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 18:05:18.744 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 18:05:19.624 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 18:05:21.113 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 18:05:22.321 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 18:05:22.454 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 18:05:22.565 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 18:05:22.566 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 18:05:25.319 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 18:05:25.885 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 18:05:27.073 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 18:05:44.418 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 18:05:45.273 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 18:05:47.345 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 18:05:48.564 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 18:05:48.695 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 18:05:48.809 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 18:05:48.809 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 18:05:51.646 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 18:05:52.390 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 18:06:13.853 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 18:06:24.082 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 18:06:24.990 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 18:06:26.603 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 18:06:27.830 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 18:06:27.959 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 18:06:28.070 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 18:06:28.070 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 18:06:30.980 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 18:06:31.711 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 18:06:54.042 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 18:07:12.453 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 18:07:13.353 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 18:07:14.838 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 18:07:16.059 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 18:07:16.191 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 18:07:16.302 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 18:07:16.302 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 18:07:19.194 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 18:07:19.817 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 18:07:20.780 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 18:07:29.902 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 18:07:30.877 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 18:07:32.471 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 18:07:33.699 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 18:07:33.832 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 18:07:33.943 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 18:07:33.943 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 18:07:36.769 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 18:07:37.474 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 18:07:38.471 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 18:07:49.712 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 18:07:50.600 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 18:07:51.938 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 18:07:53.159 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 18:07:53.289 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 18:07:53.397 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 18:07:53.397 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 18:07:56.297 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 18:07:56.920 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 18:07:57.993 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 18:08:06.560 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 18:08:07.453 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 18:08:08.914 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 18:08:10.131 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 18:08:10.272 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 18:08:10.380 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 18:08:10.380 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 18:08:13.328 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 18:08:14.181 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 18:08:15.320 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 18:08:25.135 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 18:08:26.079 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 18:08:27.538 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 18:08:28.739 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 18:08:28.871 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 18:08:28.983 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 18:08:28.984 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 18:08:31.829 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 18:08:32.424 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 18:08:54.443 [main] Testhooks - Failed scenario screenshot got capturedT023_To verify the members feature particular members profile page
+[INFO ] 2024-07-03 18:08:54.531 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 18:12:28.559 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 18:12:29.498 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 18:12:31.171 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 18:12:32.381 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 18:12:32.517 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 18:12:32.628 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 18:12:32.629 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 18:12:35.411 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 18:12:36.001 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 18:12:57.912 [main] Testhooks - Failed scenario screenshot got capturedT023_To verify the members feature particular members profile page
+[INFO ] 2024-07-03 18:12:58.052 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 18:18:26.135 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 18:18:27.062 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 18:18:28.531 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 18:18:29.751 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 18:18:29.882 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 18:18:29.996 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 18:18:29.997 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 18:18:32.789 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 18:18:33.439 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 18:18:34.596 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 18:18:41.046 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 18:18:41.976 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 18:18:43.809 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 18:18:45.023 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 18:18:45.152 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 18:18:45.261 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 18:18:45.262 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 18:18:47.745 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 18:18:48.541 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 18:18:49.673 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 18:19:38.898 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 18:19:39.806 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 18:19:41.389 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 18:19:42.613 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 18:19:42.747 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 18:19:42.856 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 18:19:42.856 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 18:19:45.636 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 18:19:46.188 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 18:20:08.192 [main] Testhooks - Failed scenario screenshot got capturedT023_To verify the members feature particular members profile page
+[INFO ] 2024-07-03 18:20:08.334 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 18:23:37.509 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 18:23:38.430 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 18:23:39.876 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 18:23:41.091 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 18:23:41.223 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 18:23:41.330 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 18:23:41.330 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 18:23:44.133 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 18:23:44.815 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 18:24:06.622 [main] Testhooks - Failed scenario screenshot got capturedT023_To verify the members feature particular members profile page
+[INFO ] 2024-07-03 18:24:06.763 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 18:36:07.794 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 18:36:08.700 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 18:36:10.345 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 18:36:11.564 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 18:36:11.696 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 18:36:11.809 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 18:36:11.809 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 18:36:14.669 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 18:36:15.291 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 18:36:37.287 [main] Testhooks - Failed scenario screenshot got capturedT023_To verify the members feature particular members profile page
+[INFO ] 2024-07-03 18:36:37.428 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 18:42:35.879 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 18:42:36.841 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 18:42:38.346 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 18:42:39.560 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 18:42:39.691 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 18:42:39.804 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 18:42:39.804 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 18:42:42.625 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 18:42:43.289 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 18:43:05.227 [main] Testhooks - Failed scenario screenshot got capturedT023_To verify the members feature particular members profile page
+[INFO ] 2024-07-03 18:43:05.373 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 18:46:23.011 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 18:46:23.896 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 18:46:25.796 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 18:46:27.007 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 18:46:27.137 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 18:46:27.248 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 18:46:27.249 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 18:46:30.005 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 18:46:30.556 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 18:46:52.620 [main] Testhooks - Failed scenario screenshot got capturedT023_To verify the members feature particular members profile page
+[INFO ] 2024-07-03 18:46:52.762 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 19:00:52.964 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 19:00:53.880 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 19:00:56.631 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 19:00:57.844 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 19:00:57.977 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 19:00:58.089 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 19:00:58.089 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 19:01:00.799 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 19:01:01.516 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 19:01:23.037 [main] Testhooks - Failed scenario screenshot got capturedT023_To verify the members feature particular members profile page
+[INFO ] 2024-07-03 19:01:23.178 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 19:06:57.166 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 19:06:58.059 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 19:06:59.528 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 19:07:00.736 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 19:07:00.875 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 19:07:00.987 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 19:07:00.987 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 19:07:03.795 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 19:07:04.376 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 19:07:05.907 [main] Testhooks - Failed scenario screenshot got capturedT023_To verify the members feature particular members profile page
+[INFO ] 2024-07-03 19:07:05.997 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 19:08:47.367 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 19:08:48.251 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 19:08:49.684 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 19:08:50.880 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 19:08:51.012 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 19:08:51.123 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 19:08:51.123 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 19:08:53.946 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 19:08:54.675 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 19:08:56.164 [main] Testhooks - Failed scenario screenshot got capturedT023_To verify the members feature particular members profile page
+[INFO ] 2024-07-03 19:08:56.253 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 19:12:39.087 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 19:12:39.979 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 19:12:41.522 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 19:12:42.747 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 19:12:42.880 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 19:12:42.990 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 19:12:42.990 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 19:12:45.828 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 19:12:46.719 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 19:12:48.276 [main] Testhooks - Failed scenario screenshot got capturedT023_To verify the members feature particular members profile page
+[INFO ] 2024-07-03 19:12:48.366 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 19:15:00.488 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 19:15:01.366 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 19:15:24.960 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 19:15:26.182 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 19:15:26.312 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 19:15:26.424 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 19:15:26.424 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 19:15:29.189 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 19:15:29.837 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 19:15:31.386 [main] Testhooks - Failed scenario screenshot got capturedT023_To verify the members feature particular members profile page
+[INFO ] 2024-07-03 19:15:31.479 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 19:16:26.914 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 19:16:27.960 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 19:16:29.511 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 19:16:30.735 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 19:16:30.870 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 19:16:30.980 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 19:16:30.980 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 19:16:33.813 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 19:16:34.417 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 19:16:35.880 [main] Testhooks - Failed scenario screenshot got capturedT023_To verify the members feature particular members profile page
+[INFO ] 2024-07-03 19:16:35.969 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 19:17:50.610 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 19:17:51.497 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 19:17:53.155 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 19:17:54.367 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 19:17:54.497 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 19:17:54.615 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 19:17:54.615 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 19:17:57.356 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 19:17:58.032 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 19:17:59.453 [main] Testhooks - Failed scenario screenshot got capturedT023_To verify the members feature particular members profile page
+[INFO ] 2024-07-03 19:17:59.536 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 19:23:09.393 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 19:23:10.263 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 19:23:11.686 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 19:23:12.899 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 19:23:13.031 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 19:23:13.144 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 19:23:13.144 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 19:23:15.983 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 19:23:16.610 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 19:23:18.114 [main] Testhooks - Failed scenario screenshot got capturedT023_To verify the members feature particular members profile page
+[INFO ] 2024-07-03 19:23:18.206 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 19:24:09.656 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 19:24:10.524 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 19:24:12.017 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 19:24:13.241 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 19:24:13.372 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 19:24:13.484 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 19:24:13.484 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 19:24:16.345 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 19:24:17.087 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 19:24:18.669 [main] Testhooks - Failed scenario screenshot got capturedT023_To verify the members feature particular members profile page
+[INFO ] 2024-07-03 19:24:18.755 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 19:32:06.192 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 19:32:07.099 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 19:32:08.703 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 19:32:09.920 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 19:32:10.052 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 19:32:10.163 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 19:32:10.163 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 19:32:13.002 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 19:32:13.602 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 19:32:15.074 [main] Testhooks - Failed scenario screenshot got capturedT023_To verify the members feature particular members profile page
+[INFO ] 2024-07-03 19:32:15.165 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 19:33:10.220 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 19:33:11.088 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 19:33:12.600 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 19:33:13.808 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 19:33:13.944 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 19:33:14.051 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 19:33:14.051 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-03 19:33:16.885 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-03 19:33:17.567 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-03 19:33:18.953 [main] Testhooks - Failed scenario screenshot got capturedT023_To verify the members feature particular members profile page
+[INFO ] 2024-07-03 19:33:19.039 [main] Testhooks - Browser got closed

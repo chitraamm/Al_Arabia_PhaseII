@@ -40,6 +40,7 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 			<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
+			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
 		</ul>
 		<!-- report name -->
@@ -49,7 +50,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Jul 3, 2024 03:18:04 pm</span>
+			<span class='label blue darken-3 suite-start-time'>Jul 3, 2024 07:33:09 pm</span>
 			</a>
 		</ul>
 	</div>
@@ -64,7 +65,7 @@
 				<i class='material-icons'>warning</i> Status
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
-										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+										<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -76,16 +77,11 @@
 				<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@forgotpassword03</a></li>
 					<li><a href='#'>@sanity</a></li>
-					<li><a href='#'>@forgotpassword01</a></li>
-					<li><a href='#'>@forgotpassword02</a></li>
 					<li><a href='#'>@regression</a></li>
-					<li><a href='#'>@forgotpassword</a></li>
-					<li><a href='#'>@validcredentials</a></li>
+					<li><a href='#'>@members</a></li>
+					<li><a href='#'>@members23</a></li>
 					<li><a href='#'>@all</a></li>
-					<li><a href='#'>@smoke</a></li>
-					<li><a href='#'>@invalidemail</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -122,11 +118,11 @@
 	<div class='subview-left left'>
 		<div class='view-summary'>
 			<ul id='test-collection' class='test-collection'>
-				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>Forgot password functionality</span>
-						<span class='test-time'>Jul 3, 2024 03:18:04 pm</span>
-						<span class='test-status right pass'>Pass</span>
+						<span class='test-name'>Members</span>
+						<span class='test-time'>Jul 3, 2024 07:33:09 pm</span>
+						<span class='test-status right fail'>Fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class="sr-filters bdd-filters">
@@ -135,116 +131,106 @@
 	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
 	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
 </div>
-	<div class='test-desc'>User should be able to change the password if user forgot his/her password</div>
+	<div class='test-desc'>Admin, Manager and Supervisor can able to access the members feature, if they are get the roles access only</div>
 
-<div class='scenario node' test-id='2' status='pass'>
+<div class='scenario node' test-id='2' status='fail'>
 
-	<span class='duration right label'>00 00 05.686</span>
+	<span class='duration right label'>00 00 09.209</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Reset password on forgetting it</div>
+		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario: T023_To verify the members feature particular members profile page</div>
 	</div>
 	
 	
 		<div class='category-list'>
 				<span class='category label'>@all</span>
-				<span class='category label'>@forgotpassword</span>
-				<span class='category label'>@smoke</span>
-				<span class='category label'>@validcredentials</span>
+				<span class='category label'>@members23</span>
 				<span class='category label'>@regression</span>
-				<span class='category label'>@forgotpassword01</span>
+				<span class='category label'>@members</span>
 				<span class='category label'>@sanity</span>
 		</div>
 	
 	<ul class='steps'>
-		<li test-id='4' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(Stepdefinitions.Forgotpassword.user_clicks_forgot_password_option())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User clicks forgot password option</div>
+		<li test-id='4' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(Stepdefinitions.Members.Admin_logged_in_with_valid_credentials())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Admin logged in with valid credentials</div>
 
 
 		</li>
-		<li test-id='6' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(Stepdefinitions.Forgotpassword.user_enters_forgot_password_valid_email_address())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User enters forgot password valid email address</div>
+		<li test-id='6' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(Stepdefinitions.Members.Al_Arabia_overall_dashboard_should_display())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Al-Arabia overall dashboard should display</div>
 
 
 		</li>
 		<li test-id='8' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(Stepdefinitions.Forgotpassword.user_clicks_send_reset_link_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User clicks Send Reset link button</div>
+			<div class="step-name" title="(Stepdefinitions.Members.User_clicks_the_members_module())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User clicks the members module</div>
 
 
 		</li>
-		<li test-id='10' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(Stepdefinitions.Forgotpassword.proper_confirmation_email_message_should_receive_to_user_mail())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Proper confirmation email message should receive to user mail</div>
+		<li test-id='10' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(Stepdefinitions.Members.User_filter_the_members_list_status_Active())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User filter the members list status-Active</div>
 
 
 		</li>
-	</ul>
-</div>
-<div class='scenario node' test-id='13' status='pass'>
-
-	<span class='duration right label'>00 00 04.713</span>
-	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Forgot password with invalid email address</div>
-	</div>
-	
-	
-		<div class='category-list'>
-				<span class='category label'>@all</span>
-				<span class='category label'>@forgotpassword</span>
-				<span class='category label'>@smoke</span>
-				<span class='category label'>@regression</span>
-				<span class='category label'>@forgotpassword02</span>
-				<span class='category label'>@invalidemail</span>
-		</div>
-	
-	<ul class='steps'>
-		<li test-id='15' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(Stepdefinitions.Forgotpassword.user_clicks_forgot_password_option())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User clicks forgot password option</div>
+		<li test-id='12' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(Stepdefinitions.Members.User_search_the_members())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User search the members</div>
 
 
 		</li>
-		<li test-id='17' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(Stepdefinitions.Forgotpassword.user_enters_forgot_password_invalid_email_address())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User enters forgot password invalid email address</div>
+		<li test-id='14' class='node and Fail' status='Fail'>
+			<div class="step-name" title="(Stepdefinitions.Members.Admin_or_User_go_the_members_profile_page())"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>And Admin or User go the members profile page</div>
 
 
+					<textarea disabled class="code-block">org.openqa.selenium.InvalidSelectorException: invalid selector
+from javascript error: {"status":32,"value":"Unable to locate an element with the xpath expression (//a[normalize-space()='Edit'] because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '(//a[normalize-space()='Edit']' is not a valid XPath expression."}
+  (Session info: chrome=126.0.6478.114)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-107-generic', java.version: '17.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [388311fb8343af644134073c7139aca4, findElement {using=xpath, value=(//a[normalize-space()='Edit']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.114, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:35089}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:35089/devtoo..., se:cdpVersion: 126.0.6478.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 388311fb8343af644134073c7139aca4
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy39.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at pageobjects.Memberspage.members_action_icon_click(Memberspage.java:625)
+	at Stepdefinitions.Members.Admin_or_User_go_the_members_profile_page(Members.java:299)
+	at ✽.Admin or User go the members profile page(file:///home/coducer/Al_Arabia_PhaseII/Al_Arabia_Project/src/test/resources/Features/03_Members.feature:196)
+</textarea>
 		</li>
-		<li test-id='19' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(Stepdefinitions.Forgotpassword.user_should_get_a_invalid_email_address_error_message_in_forgotpassword_page())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User should get a invalid email address error message in forgotpassword page</div>
+		<li test-id='15' class='node * Pass' status='Pass'>
+			<div class="step-name" title="(AFTER_STEP)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Hooks.Testhooks.addScreenshot(io.cucumber.java.Scenario)</div>
 
 
+					<div class="node-step">T023_To verify the members feature particular members profile page</div>
+					<div class='screenshots'>
+						<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../embedded1.png' src='../embedded1.png'>
+					</div>
 		</li>
-	</ul>
-</div>
-<div class='scenario node' test-id='22' status='pass'>
-
-	<span class='duration right label'>00 00 04.290</span>
-	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Forgot password without email address</div>
-	</div>
-	
-	
-		<div class='category-list'>
-				<span class='category label'>@all</span>
-				<span class='category label'>@forgotpassword</span>
-				<span class='category label'>@smoke</span>
-				<span class='category label'>@regression</span>
-				<span class='category label'>@forgotpassword03</span>
-				<span class='category label'>@invalidemail</span>
-		</div>
-	
-	<ul class='steps'>
-		<li test-id='24' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(Stepdefinitions.Forgotpassword.user_clicks_forgot_password_option())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User clicks forgot password option</div>
+		<li test-id='16' class='node then Skip' status='Skip'>
+			<div class="step-name" title="(Stepdefinitions.Members.Members_page_get_displayed_successfully())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then Members page get displayed successfully</div>
 
 
-		</li>
-		<li test-id='26' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(Stepdefinitions.Forgotpassword.User_enters_forgot_password_invalid_email_address_and_delete())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User enters forgot password invalid email address and delete</div>
-
-
-		</li>
-		<li test-id='28' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(Stepdefinitions.Forgotpassword.User_should_get_a_email_address_or_phone_number_is_required_error_message())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User should get a email address or phone number is required error message</div>
-
-
+					<div class="node-step">Step skipped</div>
 		</li>
 	</ul>
 </div>
@@ -280,12 +266,12 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='$100%'>
-                    <span class='strong'>1</span> features passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='$0%'>
+                    <span class='strong'>0</span> features passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
-                    0</span> features failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>
+                    1</span> features failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped
                 </div>
@@ -298,12 +284,12 @@
                     <canvas id='child-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'>
-                    <span class='strong'>3</span> scenarios passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='0%'>
+                    <span class='strong'>0</span> scenarios passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
-                    0</span> scenarios failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>
+                    1</span> scenarios failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -318,14 +304,14 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'>
-                    <span class='strong'>10</span> steps passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='75%'>
+                    <span class='strong'>6</span> steps passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
-                    0</span> steps failed, 
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
-                    0</span> skipped, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='12%'>
+                    1</span> steps failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='12%'>
+                    1</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> others
                 </div>
@@ -363,48 +349,15 @@
 			<ul id='category-collection' class='category-collection'>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@forgotpassword03</span>
-						<span class='category-status right'>
-						<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Jul 3, 2024 03:18:15 pm</td>
-										<td class='linked' test-id='22'>Forgot password without email address</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
 						<span class='category-name'>@sanity</span>
 						<span class='category-status right'>
-						<span class='label pass'>1</span>
+						<span class='label fail'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
 							
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 						<div class='category-tests'>
@@ -418,75 +371,9 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 3, 2024 03:18:04 pm</td>
-										<td class='linked' test-id='2'>Reset password on forgetting it</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@forgotpassword01</span>
-						<span class='category-status right'>
-						<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Jul 3, 2024 03:18:04 pm</td>
-										<td class='linked' test-id='2'>Reset password on forgetting it</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@forgotpassword02</span>
-						<span class='category-status right'>
-						<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Jul 3, 2024 03:18:10 pm</td>
-										<td class='linked' test-id='13'>Forgot password with invalid email address</td>
-										<td><span class='test-status Pass'>Pass</span></td>
+										<td>Jul 3, 2024 07:33:09 pm</td>
+										<td class='linked' test-id='2'>T023_To verify the members feature particular members profile page</td>
+										<td><span class='test-status Fail'>Fail</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -497,13 +384,13 @@
 					<div class='category-heading'>
 						<span class='category-name'>@regression</span>
 						<span class='category-status right'>
-						<span class='label pass'>3</span>
+						<span class='label fail'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 3</span>
 							
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 						<div class='category-tests'>
@@ -517,19 +404,9 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 3, 2024 03:18:04 pm</td>
-										<td class='linked' test-id='2'>Reset password on forgetting it</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 3, 2024 03:18:10 pm</td>
-										<td class='linked' test-id='13'>Forgot password with invalid email address</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 3, 2024 03:18:15 pm</td>
-										<td class='linked' test-id='22'>Forgot password without email address</td>
-										<td><span class='test-status Pass'>Pass</span></td>
+										<td>Jul 3, 2024 07:33:09 pm</td>
+										<td class='linked' test-id='2'>T023_To verify the members feature particular members profile page</td>
+										<td><span class='test-status Fail'>Fail</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -538,15 +415,15 @@
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@forgotpassword</span>
+						<span class='category-name'>@members</span>
 						<span class='category-status right'>
-						<span class='label pass'>3</span>
+						<span class='label fail'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 3</span>
 							
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 						<div class='category-tests'>
@@ -560,19 +437,9 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 3, 2024 03:18:04 pm</td>
-										<td class='linked' test-id='2'>Reset password on forgetting it</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 3, 2024 03:18:10 pm</td>
-										<td class='linked' test-id='13'>Forgot password with invalid email address</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 3, 2024 03:18:15 pm</td>
-										<td class='linked' test-id='22'>Forgot password without email address</td>
-										<td><span class='test-status Pass'>Pass</span></td>
+										<td>Jul 3, 2024 07:33:09 pm</td>
+										<td class='linked' test-id='2'>T023_To verify the members feature particular members profile page</td>
+										<td><span class='test-status Fail'>Fail</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -581,15 +448,15 @@
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@validcredentials</span>
+						<span class='category-name'>@members23</span>
 						<span class='category-status right'>
-						<span class='label pass'>1</span>
+						<span class='label fail'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
 							
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 						<div class='category-tests'>
@@ -603,9 +470,9 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 3, 2024 03:18:04 pm</td>
-										<td class='linked' test-id='2'>Reset password on forgetting it</td>
-										<td><span class='test-status Pass'>Pass</span></td>
+										<td>Jul 3, 2024 07:33:09 pm</td>
+										<td class='linked' test-id='2'>T023_To verify the members feature particular members profile page</td>
+										<td><span class='test-status Fail'>Fail</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -616,13 +483,13 @@
 					<div class='category-heading'>
 						<span class='category-name'>@all</span>
 						<span class='category-status right'>
-						<span class='label pass'>3</span>
+						<span class='label fail'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 3</span>
 							
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 						<div class='category-tests'>
@@ -636,100 +503,9 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 3, 2024 03:18:04 pm</td>
-										<td class='linked' test-id='2'>Reset password on forgetting it</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 3, 2024 03:18:10 pm</td>
-										<td class='linked' test-id='13'>Forgot password with invalid email address</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 3, 2024 03:18:15 pm</td>
-										<td class='linked' test-id='22'>Forgot password without email address</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@smoke</span>
-						<span class='category-status right'>
-						<span class='label pass'>3</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 3</span>
-							
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Jul 3, 2024 03:18:04 pm</td>
-										<td class='linked' test-id='2'>Reset password on forgetting it</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 3, 2024 03:18:10 pm</td>
-										<td class='linked' test-id='13'>Forgot password with invalid email address</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 3, 2024 03:18:15 pm</td>
-										<td class='linked' test-id='22'>Forgot password without email address</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@invalidemail</span>
-						<span class='category-status right'>
-						<span class='label pass'>2</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 2</span>
-							
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Jul 3, 2024 03:18:10 pm</td>
-										<td class='linked' test-id='13'>Forgot password with invalid email address</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-									<tr>
-										<td>Jul 3, 2024 03:18:15 pm</td>
-										<td class='linked' test-id='22'>Forgot password without email address</td>
-										<td><span class='test-status Pass'>Pass</span></td>
+										<td>Jul 3, 2024 07:33:09 pm</td>
+										<td class='linked' test-id='2'>T023_To verify the members feature particular members profile page</td>
+										<td><span class='test-status Fail'>Fail</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -745,7 +521,98 @@
 		</div>
 	</div>
 </div>
-<!-- category view --><div id='dashboard-view' class='view hide'>
+<!-- category view --><div id='exception-view' class='view hide'>
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+				<i class='material-icons'>search</i> Search
+				</a>
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+	<div class='subview-left left'>
+		<div class='view-summary'>
+			<ul id='exception-collection' class='exception-collection'>
+				<li class='exception displayed active'>
+					<div class='exception-heading'>
+						<span class='exception-name'>org.openqa.selenium.InvalidSelectorException</span>
+						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+					</div>
+					<div class='exception-content hide'>
+						<div class='exception-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>StackTrace</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jul 3, 2024 07:33:18 pm</td>
+										<td class='linked' test-id='14'>And Admin or User go the members profile page</td>
+										<td>
+											<textarea disabled class="code-block">org.openqa.selenium.InvalidSelectorException: invalid selector
+from javascript error: {"status":32,"value":"Unable to locate an element with the xpath expression (//a[normalize-space()='Edit'] because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '(//a[normalize-space()='Edit']' is not a valid XPath expression."}
+  (Session info: chrome=126.0.6478.114)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-107-generic', java.version: '17.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [388311fb8343af644134073c7139aca4, findElement {using=xpath, value=(//a[normalize-space()='Edit']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.114, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:35089}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:35089/devtoo..., se:cdpVersion: 126.0.6478.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 388311fb8343af644134073c7139aca4
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy39.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at pageobjects.Memberspage.members_action_icon_click(Memberspage.java:625)
+	at Stepdefinitions.Members.Admin_or_User_go_the_members_profile_page(Members.java:299)
+	at ✽.Admin or User go the members profile page(file:///home/coducer/Al_Arabia_PhaseII/Al_Arabia_Project/src/test/resources/Features/03_Members.feature:196)
+</textarea>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='exception-name'></h5>
+		</div>
+	</div>
+</div>
+<!-- exception view --><div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
 		<h5>Dashboard</h5>
 
@@ -759,31 +626,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>3</div>
+					<div class='panel-lead'>1</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>10</div>
+					<div class='panel-lead'>8</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jul 3, 2024 03:18:04 pm</div>
+					<div class='panel-lead'>Jul 3, 2024 07:33:09 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jul 3, 2024 03:18:19 pm</div>
+			 		<div class='panel-lead'>Jul 3, 2024 07:33:19 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>00 00 15.406</div>
+					<div class='panel-lead'>00 00 09.929</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -799,93 +666,48 @@
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>@forgotpassword03</td>
-							<td>1</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
 							<td>@sanity</td>
+							<td>0</td>
 							<td>1</td>
 							<td>0</td>
-							<td>0</td>
 							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>@forgotpassword01</td>
-							<td>1</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>@forgotpassword02</td>
-							<td>1</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
+									0%
 							</td>
 						</tr>
 						<tr>
 							<td>@regression</td>
-							<td>3</td>
 							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>@forgotpassword</td>
-							<td>3</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>@validcredentials</td>
 							<td>1</td>
 							<td>0</td>
+							<td>
+									0%
+							</td>
+						</tr>
+						<tr>
+							<td>@members</td>
+							<td>0</td>
+							<td>1</td>
 							<td>0</td>
 							<td>
-									100%
+									0%
+							</td>
+						</tr>
+						<tr>
+							<td>@members23</td>
+							<td>0</td>
+							<td>1</td>
+							<td>0</td>
+							<td>
+									0%
 							</td>
 						</tr>
 						<tr>
 							<td>@all</td>
-							<td>3</td>
 							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>@smoke</td>
-							<td>3</td>
-							<td>0</td>
+							<td>1</td>
 							<td>0</td>
 							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>@invalidemail</td>
-							<td>2</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
+									0%
 							</td>
 						</tr>
 					</table>
@@ -900,34 +722,34 @@
 		<script>
 			var statusGroup = {
                 parentCount: 1,
-				passParent: 1,
-				failParent: 0,
+				passParent: 0,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				childCount: 3,
-				passChild: 3,
-				failChild: 0,
+				childCount: 1,
+				passChild: 0,
+				failChild: 1,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				grandChildCount: 10,
-				passGrandChild: 10,
-				failGrandChild: 0,
+				grandChildCount: 8,
+				passGrandChild: 6,
+				failGrandChild: 1,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 0,
+				skipGrandChild: 1,
 				infoGrandChild: 0,
 			};
 			</script>
 		
 		<script>
 			var timeline = {
-			        "Forgot password functionality":14.766
+			        "Members":9.212
 			};
 		</script>
 		

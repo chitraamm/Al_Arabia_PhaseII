@@ -166,7 +166,7 @@ public class Members extends Base {
     
     @Then("Pending members list get displayed successfully")
     public void Pending_members_list_get_displayed_successfully() {
-        membersPage.members_filter_blocked_list_display();
+        membersPage.members_filter_pending_list_display();
     }
     
     @And("User filter the members list role-admin")
@@ -295,13 +295,13 @@ public class Members extends Base {
     }
     
     @And("Admin or User go the members profile page")
-    public void Admin_User_go_the_members_profile_page() throws Exception {
-    	 membersPage.members_action_icon_click();
+    public void Admin_or_User_go_the_members_profile_page() throws Exception {
+    	 membersPage.members_action_icon_click();                                                          
     }
     
     @Then("Members page get displayed successfully")
     public void Members_page_get_displayed_successfully() {
-        membersPage.members_profile_personal_name();
+       membersPage.members_profile_personal_name();                 
     }
     
     @And("Admin or User update the members profile page")

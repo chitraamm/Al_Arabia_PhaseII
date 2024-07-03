@@ -17,7 +17,7 @@ And User clicks the invite member button
 And User enters the email or phone number
 And User selects the role manager
 And User selects the department electrical
-#And User clicks the send invite button
+And User clicks the send invite button
 Then The invitation should sent to user given mail address successfully
 
 @members @members03 @smoke @regression @all

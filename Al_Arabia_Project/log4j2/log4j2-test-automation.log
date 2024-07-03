@@ -51,3 +51,15 @@
 [INFO ] 2024-05-27 17:18:08.753 [main] Memberspage - >> The members dashboard list page got displayed
 [INFO ] 2024-05-27 17:18:08.754 [main] Members - >> Admin/user got the members dashboard page >>
 [INFO ] 2024-05-27 17:18:08.906 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-03 10:53:43.464 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 10:54:42.753 [main] Testhooks - Execution Started
+[INFO ] 2024-07-03 10:54:43.565 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-03 10:54:48.073 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-03 10:54:48.208 [main] Testhooks - Page is zoomed out
+[INFO ] 2024-07-03 10:54:49.414 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-03 10:54:49.815 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-03 10:54:50.106 [main] Signinpage - User clicked password_field_eyeicon
+[INFO ] 2024-07-03 10:54:50.459 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-03 10:54:52.882 [main] Signinpage - Al-Arabia user got signed in successfully
+[INFO ] 2024-07-03 10:54:53.483 [main] Signinpage - Al-Arabia user got signed in successfully
+[INFO ] 2024-07-03 10:54:53.749 [main] Testhooks - Browser got closed

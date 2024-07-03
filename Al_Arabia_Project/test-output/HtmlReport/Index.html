@@ -49,7 +49,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>May 29, 2024 03:44:01 pm</span>
+			<span class='label blue darken-3 suite-start-time'>Jul 3, 2024 03:18:04 pm</span>
 			</a>
 		</ul>
 	</div>
@@ -76,12 +76,16 @@
 				<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@all</a></li>
-					<li><a href='#'>@regression</a></li>
-					<li><a href='#'>@validcredentials</a></li>
-					<li><a href='#'>@profile</a></li>
-					<li><a href='#'>@profile06</a></li>
+					<li><a href='#'>@forgotpassword03</a></li>
 					<li><a href='#'>@sanity</a></li>
+					<li><a href='#'>@forgotpassword01</a></li>
+					<li><a href='#'>@forgotpassword02</a></li>
+					<li><a href='#'>@regression</a></li>
+					<li><a href='#'>@forgotpassword</a></li>
+					<li><a href='#'>@validcredentials</a></li>
+					<li><a href='#'>@all</a></li>
+					<li><a href='#'>@smoke</a></li>
+					<li><a href='#'>@invalidemail</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -120,8 +124,8 @@
 			<ul id='test-collection' class='test-collection'>
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>Profile</span>
-						<span class='test-time'>May 29, 2024 03:44:01 pm</span>
+						<span class='test-name'>Forgot password functionality</span>
+						<span class='test-time'>Jul 3, 2024 03:18:04 pm</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -131,61 +135,116 @@
 	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
 	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
 </div>
-	<div class='test-desc'>User should be able to complete the personal profile</div>
+	<div class='test-desc'>User should be able to change the password if user forgot his/her password</div>
 
-<div class='scenario outline node' test-id='2' status='pass'>
+<div class='scenario node' test-id='2' status='pass'>
 
-	<span class='duration right label'>00 00 12.532</span>
+	<span class='duration right label'>00 00 05.686</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: T06_User must be able to provide personal profile information</div>
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Reset password on forgetting it</div>
 	</div>
 	
-		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>successMessage</td></tr><tr><td>Success Personal profile updated</td></tr></table></div>
 	
+		<div class='category-list'>
+				<span class='category label'>@all</span>
+				<span class='category label'>@forgotpassword</span>
+				<span class='category label'>@smoke</span>
+				<span class='category label'>@validcredentials</span>
+				<span class='category label'>@regression</span>
+				<span class='category label'>@forgotpassword01</span>
+				<span class='category label'>@sanity</span>
+		</div>
 	
 	<ul class='steps'>
-		<li test-id='3' class='node scenario Pass' status='Pass'>
-			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>T06_User must be able to provide personal profile information</div>
+		<li test-id='4' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(Stepdefinitions.Forgotpassword.user_clicks_forgot_password_option())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User clicks forgot password option</div>
 
-				<div class='category-list'>
-						<span class='category label'>@all</span>
-						<span class='category label'>@profile06</span>
-						<span class='category label'>@validcredentials</span>
-						<span class='category label'>@regression</span>
-						<span class='category label'>@profile</span>
-						<span class='category label'>@sanity</span>
-				</div>
 
-			<ul class='gc steps'>
-				<li test-id='5' class='gc given Pass' status='Pass'>
-					<h6 class="step-name" title="Stepdefinitions.Members.Admin_logged_in_with_valid_credentials()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Admin logged in with valid credentials</h6>
+		</li>
+		<li test-id='6' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(Stepdefinitions.Forgotpassword.user_enters_forgot_password_valid_email_address())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User enters forgot password valid email address</div>
 
-				</li>
-				<li test-id='7' class='gc when Pass' status='Pass'>
-					<h6 class="step-name" title="Stepdefinitions.Members.Al_Arabia_overall_dashboard_should_display()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Al-Arabia overall dashboard should display</h6>
 
-				</li>
-				<li test-id='9' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="Stepdefinitions.Profile.user_able_to_click_on_profile()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User able to click on profile</h6>
+		</li>
+		<li test-id='8' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(Stepdefinitions.Forgotpassword.user_clicks_send_reset_link_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User clicks Send Reset link button</div>
 
-				</li>
-				<li test-id='11' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="Stepdefinitions.Profile.user_able_to_click_on_personal_profile()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User able to click on personal profile</h6>
 
-				</li>
-				<li test-id='13' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="Stepdefinitions.Profile.personal_profile_should_be_displaying()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Personal profile should be displaying</h6>
+		</li>
+		<li test-id='10' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(Stepdefinitions.Forgotpassword.proper_confirmation_email_message_should_receive_to_user_mail())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Proper confirmation email message should receive to user mail</div>
 
-				</li>
-				<li test-id='15' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="Stepdefinitions.Profile.user_able_to_give_personal_profile_information()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User able to give personal profile information</h6>
 
-				</li>
-				<li test-id='17' class='gc then Pass' status='Pass'>
-					<h6 class="step-name" title="Stepdefinitions.Profile.Particular_profile_get_updated_successfully(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Particular profile get updated successfully as "Success Personal profile updated"</h6>
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='13' status='pass'>
 
-				</li>
-			</ul>
+	<span class='duration right label'>00 00 04.713</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Forgot password with invalid email address</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@all</span>
+				<span class='category label'>@forgotpassword</span>
+				<span class='category label'>@smoke</span>
+				<span class='category label'>@regression</span>
+				<span class='category label'>@forgotpassword02</span>
+				<span class='category label'>@invalidemail</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='15' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(Stepdefinitions.Forgotpassword.user_clicks_forgot_password_option())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User clicks forgot password option</div>
+
+
+		</li>
+		<li test-id='17' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(Stepdefinitions.Forgotpassword.user_enters_forgot_password_invalid_email_address())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User enters forgot password invalid email address</div>
+
+
+		</li>
+		<li test-id='19' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(Stepdefinitions.Forgotpassword.user_should_get_a_invalid_email_address_error_message_in_forgotpassword_page())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User should get a invalid email address error message in forgotpassword page</div>
+
+
+		</li>
+	</ul>
+</div>
+<div class='scenario node' test-id='22' status='pass'>
+
+	<span class='duration right label'>00 00 04.290</span>
+	<div class="bdd-test">
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Forgot password without email address</div>
+	</div>
+	
+	
+		<div class='category-list'>
+				<span class='category label'>@all</span>
+				<span class='category label'>@forgotpassword</span>
+				<span class='category label'>@smoke</span>
+				<span class='category label'>@regression</span>
+				<span class='category label'>@forgotpassword03</span>
+				<span class='category label'>@invalidemail</span>
+		</div>
+	
+	<ul class='steps'>
+		<li test-id='24' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(Stepdefinitions.Forgotpassword.user_clicks_forgot_password_option())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User clicks forgot password option</div>
+
+
+		</li>
+		<li test-id='26' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(Stepdefinitions.Forgotpassword.User_enters_forgot_password_invalid_email_address_and_delete())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User enters forgot password invalid email address and delete</div>
+
+
+		</li>
+		<li test-id='28' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(Stepdefinitions.Forgotpassword.User_should_get_a_email_address_or_phone_number_is_required_error_message())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User should get a email address or phone number is required error message</div>
+
+
 		</li>
 	</ul>
 </div>
@@ -240,7 +299,7 @@
                 </div>
                 <div class='block text-small'>
                     <span class='tooltipped' data-position='top' data-tooltip='100%'>
-                    <span class='strong'>1</span> scenarios passed</span>
+                    <span class='strong'>3</span> scenarios passed</span>
                 </div>
                 <div class='block text-small'>
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -260,7 +319,7 @@
                 </div>
                 <div class='block text-small'>
                     <span class='tooltipped' data-position='top' data-tooltip='100%'>
-                    <span class='strong'>7</span> steps passed</span>
+                    <span class='strong'>10</span> steps passed</span>
                 </div>
                 <div class='block text-small'>
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -304,7 +363,7 @@
 			<ul id='category-collection' class='category-collection'>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@all</span>
+						<span class='category-name'>@forgotpassword03</span>
 						<span class='category-status right'>
 						<span class='label pass'>1</span>
 						</span>
@@ -326,140 +385,8 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>May 29, 2024 03:44:01 pm</td>
-										<td class='linked' test-id='3'>T06_User must be able to provide personal profile information</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@regression</span>
-						<span class='category-status right'>
-						<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>May 29, 2024 03:44:01 pm</td>
-										<td class='linked' test-id='3'>T06_User must be able to provide personal profile information</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@validcredentials</span>
-						<span class='category-status right'>
-						<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>May 29, 2024 03:44:01 pm</td>
-										<td class='linked' test-id='3'>T06_User must be able to provide personal profile information</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@profile</span>
-						<span class='category-status right'>
-						<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>May 29, 2024 03:44:01 pm</td>
-										<td class='linked' test-id='3'>T06_User must be able to provide personal profile information</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@profile06</span>
-						<span class='category-status right'>
-						<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>May 29, 2024 03:44:01 pm</td>
-										<td class='linked' test-id='3'>T06_User must be able to provide personal profile information</td>
+										<td>Jul 3, 2024 03:18:15 pm</td>
+										<td class='linked' test-id='22'>Forgot password without email address</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
@@ -491,8 +418,317 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>May 29, 2024 03:44:01 pm</td>
-										<td class='linked' test-id='3'>T06_User must be able to provide personal profile information</td>
+										<td>Jul 3, 2024 03:18:04 pm</td>
+										<td class='linked' test-id='2'>Reset password on forgetting it</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@forgotpassword01</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jul 3, 2024 03:18:04 pm</td>
+										<td class='linked' test-id='2'>Reset password on forgetting it</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@forgotpassword02</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jul 3, 2024 03:18:10 pm</td>
+										<td class='linked' test-id='13'>Forgot password with invalid email address</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@regression</span>
+						<span class='category-status right'>
+						<span class='label pass'>3</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 3</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jul 3, 2024 03:18:04 pm</td>
+										<td class='linked' test-id='2'>Reset password on forgetting it</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 3, 2024 03:18:10 pm</td>
+										<td class='linked' test-id='13'>Forgot password with invalid email address</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 3, 2024 03:18:15 pm</td>
+										<td class='linked' test-id='22'>Forgot password without email address</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@forgotpassword</span>
+						<span class='category-status right'>
+						<span class='label pass'>3</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 3</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jul 3, 2024 03:18:04 pm</td>
+										<td class='linked' test-id='2'>Reset password on forgetting it</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 3, 2024 03:18:10 pm</td>
+										<td class='linked' test-id='13'>Forgot password with invalid email address</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 3, 2024 03:18:15 pm</td>
+										<td class='linked' test-id='22'>Forgot password without email address</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@validcredentials</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jul 3, 2024 03:18:04 pm</td>
+										<td class='linked' test-id='2'>Reset password on forgetting it</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@all</span>
+						<span class='category-status right'>
+						<span class='label pass'>3</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 3</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jul 3, 2024 03:18:04 pm</td>
+										<td class='linked' test-id='2'>Reset password on forgetting it</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 3, 2024 03:18:10 pm</td>
+										<td class='linked' test-id='13'>Forgot password with invalid email address</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 3, 2024 03:18:15 pm</td>
+										<td class='linked' test-id='22'>Forgot password without email address</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@smoke</span>
+						<span class='category-status right'>
+						<span class='label pass'>3</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 3</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jul 3, 2024 03:18:04 pm</td>
+										<td class='linked' test-id='2'>Reset password on forgetting it</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 3, 2024 03:18:10 pm</td>
+										<td class='linked' test-id='13'>Forgot password with invalid email address</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 3, 2024 03:18:15 pm</td>
+										<td class='linked' test-id='22'>Forgot password without email address</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@invalidemail</span>
+						<span class='category-status right'>
+						<span class='label pass'>2</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 2</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jul 3, 2024 03:18:10 pm</td>
+										<td class='linked' test-id='13'>Forgot password with invalid email address</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+									<tr>
+										<td>Jul 3, 2024 03:18:15 pm</td>
+										<td class='linked' test-id='22'>Forgot password without email address</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
@@ -523,31 +759,31 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>1</div>
+					<div class='panel-lead'>3</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>7</div>
+					<div class='panel-lead'>10</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>May 29, 2024 03:44:01 pm</div>
+					<div class='panel-lead'>Jul 3, 2024 03:18:04 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>May 29, 2024 03:44:14 pm</div>
+			 		<div class='panel-lead'>Jul 3, 2024 03:18:19 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>00 00 13.302</div>
+					<div class='panel-lead'>00 00 15.406</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -563,7 +799,34 @@
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>@all</td>
+							<td>@forgotpassword03</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@sanity</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@forgotpassword01</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@forgotpassword02</td>
 							<td>1</td>
 							<td>0</td>
 							<td>0</td>
@@ -573,7 +836,16 @@
 						</tr>
 						<tr>
 							<td>@regression</td>
-							<td>1</td>
+							<td>3</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@forgotpassword</td>
+							<td>3</td>
 							<td>0</td>
 							<td>0</td>
 							<td>
@@ -590,8 +862,8 @@
 							</td>
 						</tr>
 						<tr>
-							<td>@profile</td>
-							<td>1</td>
+							<td>@all</td>
+							<td>3</td>
 							<td>0</td>
 							<td>0</td>
 							<td>
@@ -599,8 +871,8 @@
 							</td>
 						</tr>
 						<tr>
-							<td>@profile06</td>
-							<td>1</td>
+							<td>@smoke</td>
+							<td>3</td>
 							<td>0</td>
 							<td>0</td>
 							<td>
@@ -608,8 +880,8 @@
 							</td>
 						</tr>
 						<tr>
-							<td>@sanity</td>
-							<td>1</td>
+							<td>@invalidemail</td>
+							<td>2</td>
 							<td>0</td>
 							<td>0</td>
 							<td>
@@ -634,16 +906,16 @@
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				childCount: 1,
-				passChild: 1,
+				childCount: 3,
+				passChild: 3,
 				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				grandChildCount: 7,
-				passGrandChild: 7,
+				grandChildCount: 10,
+				passGrandChild: 10,
 				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
@@ -655,7 +927,7 @@
 		
 		<script>
 			var timeline = {
-			        "Profile":12.534
+			        "Forgot password functionality":14.766
 			};
 		</script>
 		

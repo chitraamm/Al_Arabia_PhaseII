@@ -5,7 +5,7 @@ Admin, Manager and Supervisor can able to access the billboards feature, if they
 Scenario Outline: T001_Check billboards dashboard page
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
-And User clicks the billboards module
+And Admin or user clicks the billboards module
 Then Al-Arabia billboards dashboard should display successfully
 
 @billboards @billboards02 @regression @sanity @all
@@ -15,7 +15,7 @@ When Al-Arabia overall dashboard should display
 And Admin or user clicks the billboards module
 And Admin or user clicks the new billboard button
 And Admin or user enters the all new billboard mandatory fields
-#And Admin or user clicks the create billboard
+And Admin or user clicks the create billboard
 Then The billboard should created and displayed in billboard dashboard successfully
 
 @billboards @billboards03 @smoke @regression @all
@@ -30,7 +30,7 @@ Then Searched Billboard details get displayed successfully
 Scenario Outline: T004_To verify the billboards feature sort recently updated
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
-And User clicks the billboards module
+And Admin or user clicks the billboards module
 And User sort the billboards list recently updated
 Then Recently updated billboards list get displayed successfully
 
@@ -38,7 +38,7 @@ Then Recently updated billboards list get displayed successfully
 Scenario Outline: T005_To verify the billboards feature sort Name - A to Z
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
-And User clicks the billboards module
+And Admin or user clicks the billboards module
 And User sort the billboards list Name A to Z
 Then billboards list get displayed successfully
 
@@ -46,7 +46,7 @@ Then billboards list get displayed successfully
 Scenario Outline: T006_To verify the billboards feature sort Name - Z to A
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
-And User clicks the billboards module
+And Admin or user clicks the billboards module
 And User sort the billboards list Name Z to A 
 Then billboards list get displayed successfully
 
@@ -54,7 +54,7 @@ Then billboards list get displayed successfully
 Scenario Outline: T007_To verify the billboards feature sort Recently Added
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
-And User clicks the billboards module
+And Admin or user clicks the billboards module
 And User sort the billboards list Recently Added
 Then billboards list get displayed successfully
 
@@ -62,7 +62,7 @@ Then billboards list get displayed successfully
 Scenario Outline: T008_To verify the billboards feature filter active status billboards
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
-And User clicks the billboards module
+And Admin or user clicks the billboards module
 And User filter the billboards list status-Active
 Then Active billboards list get displayed successfully
 
@@ -70,7 +70,7 @@ Then Active billboards list get displayed successfully
 Scenario Outline: T009_To verify the billboards feature filter blocked status billboards
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
-And User clicks the billboards module
+And Admin or user clicks the billboards module
 And User filter the billboards list status-Blocked
 Then Blocked billboards list get displayed successfully
 
@@ -78,7 +78,7 @@ Then Blocked billboards list get displayed successfully
 Scenario Outline: T010_To verify the billboards feature filter expired status billboards
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
-And User clicks the billboards module
+And Admin or user clicks the billboards module
 And User filter the billboards list status-expired
 Then Expired billboards list get displayed successfully
 
@@ -86,7 +86,7 @@ Then Expired billboards list get displayed successfully
 Scenario Outline: T011_To verify the billboards feature filter pending status billboards
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
-And User clicks the billboards module
+And Admin or user clicks the billboards module
 And User filter the billboards list status-pending
 Then Pending billboards list get displayed successfully
 
@@ -94,7 +94,7 @@ Then Pending billboards list get displayed successfully
 Scenario Outline: T012_To verify the billboards feature filter admin role billboards
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
-And User clicks the billboards module
+And Admin or user clicks the billboards module
 And User filter the billboards list role-admin
 Then Admin billboards list get displayed successfully
 
@@ -102,7 +102,7 @@ Then Admin billboards list get displayed successfully
 Scenario Outline: T013_To verify the billboards feature filter manager role billboards
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
-And User clicks the billboards module
+And Admin or user clicks the billboards module
 And User filter the billboards list role-manager
 Then Manager billboards list get displayed successfully
 
@@ -110,7 +110,7 @@ Then Manager billboards list get displayed successfully
 Scenario Outline: T014_To verify the billboards feature filter supervisor role billboards
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
-And User clicks the billboards module
+And Admin or user clicks the billboards module
 And User filter the billboards list role-supervisor
 Then Supervisor billboards list get displayed successfully
 
@@ -118,7 +118,7 @@ Then Supervisor billboards list get displayed successfully
 Scenario Outline: T015_To verify the billboards feature filter technician role billboards
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
-And User clicks the billboards module
+And Admin or user clicks the billboards module
 And User filter the billboards list role-technician
 Then Technician billboards list get displayed successfully
 
@@ -126,7 +126,7 @@ Then Technician billboards list get displayed successfully
 Scenario Outline: T016_To verify the billboards feature filter electrical dept billboards
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
-And User clicks the billboards module
+And Admin or user clicks the billboards module
 And User filter the billboards list dept-electrical
 Then Electrical dept billboards list get displayed successfully
 
@@ -134,7 +134,7 @@ Then Electrical dept billboards list get displayed successfully
 Scenario Outline: T017_To verify the billboards feature filter resposible area
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
-And User clicks the billboards module
+And Admin or user clicks the billboards module
 And User filter the billboards list responsible area
 Then Responsible area billboards list get displayed successfully
 
@@ -142,7 +142,7 @@ Then Responsible area billboards list get displayed successfully
 Scenario Outline: T018_To verify the billboards feature filter with multiple selected options
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
-And User clicks the billboards module
+And Admin or user clicks the billboards module
 And User filter the billboards list role-supervisor1
 And User filter the billboards list dept-electrical1
 And User filter the billboards list responsible area1
@@ -153,7 +153,7 @@ Then Filtered billboards list get displayed successfully
 Scenario Outline: T019_To verify the billboards feature download billboards list excel
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
-And User clicks the billboards module
+And Admin or user clicks the billboards module
 And User clicks the billboards list download btn
 And User clicks the excel formate btn
 Then All billboards excel formate list get downloaded successfully
@@ -162,7 +162,7 @@ Then All billboards excel formate list get downloaded successfully
 Scenario Outline: T020_To verify the billboards feature download billboards list pdf
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
-And User clicks the billboards module
+And Admin or user clicks the billboards module
 And User clicks the billboards list download btn
 And User clicks the pdf formate btn
 Then All billboards pdf formate list get downloaded successfully
@@ -171,7 +171,7 @@ Then All billboards pdf formate list get downloaded successfully
 Scenario Outline: T021_To verify the billboards feature download popup closing
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
-And User clicks the billboards module
+And Admin or user clicks the billboards module
 And User clicks the billboards list download btn
 And User clicks the close icon
 Then The popup get closed successfully
@@ -180,7 +180,7 @@ Then The popup get closed successfully
 Scenario Outline: T022_To verify the billboards feature pagination 1st to 2nd page
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
-And User clicks the billboards module
+And Admin or user clicks the billboards module
 And Go to next page of billboards page
 Then Second page get displayed successfully
 
@@ -188,7 +188,7 @@ Then Second page get displayed successfully
 Scenario Outline: T023_To verify the billboards feature particular billboards profile page
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
-And User clicks the billboards module
+And Admin or user clicks the billboards module
 And User filter the billboards list status-Active
 And User search the billboards
 And Admin or User go the billboards profile page
@@ -374,7 +374,7 @@ And Admin go to the roles page
 And Admin enable the User read access for supervisor
 And Admin clicks the logout button
 And Supervisor logged in with valid credentials
-And User clicks the billboards module
+And Admin or user clicks the billboards module
 And User filter the billboards list status-Active
 And User search the billboards
 And Supervisor go the billboards profile page
@@ -384,7 +384,7 @@ Then Supervisor get the read access successfully
 Scenario Outline: T039_To verify the billboards feature roles wise (Write access for supervisor)
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
-And User clicks the billboards module
+And Admin or user clicks the billboards module
 And User filter the billboards list status-Active
 And User search the billboards
 And Admin click the personal profile icon
@@ -400,7 +400,7 @@ Then Supervisor get the write access successfully
 Scenario Outline: T040_To verify the billboards feature roles wise (Update access for supervisor)
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
-And User clicks the billboards module
+And Admin or user clicks the billboards module
 And User filter the billboards list status-Active
 And User search the billboards
 And Admin click the personal profile icon
@@ -419,7 +419,7 @@ Then Supervisor get the update access successfully
 Scenario Outline: T041_To verify the billboards feature roles wise (Block/Unblock access for supervisor)
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
-And User clicks the billboards module
+And Admin or user clicks the billboards module
 And User filter the billboards list status-Active
 And User search the billboards
 And Admin click the personal profile icon

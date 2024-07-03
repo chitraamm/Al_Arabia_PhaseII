@@ -59,12 +59,12 @@ public class Billboardspage extends Base {
 		Random rand = new Random();
 		return baseboardNumber + rand.nextInt(1000);
 	}
-
-	@FindBy(xpath = "//span[normalize-space()='BillBoards']")
+//<-------------------BillBoards------------------------------------------>
+	@FindBy(xpath = "//span[normalize-space()='BillBoards']") 
 	private WebElement billboardClick;
 
 	@FindBy(xpath = "//table[contains(@class,'table')]")
-	private WebElement billboardMenu;
+	private WebElement billboardMenu;                                                       //
 
 	public void billboardClick() {
 		wait.until(ExpectedConditions.visibilityOf(billboardClick)).click();

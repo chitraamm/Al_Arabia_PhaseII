@@ -1,14 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="12.873" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="Profile" name="T06_User must be able to provide personal profile information - Example #1.1" time="12.61">
+<testsuite name="Cucumber" time="15.057" tests="3" skipped="0" failures="0" errors="0">
+<testcase classname="Forgot password functionality" name="Reset password on forgetting it" time="5.757">
 <system-out><![CDATA[
-Given Admin logged in with valid credentials................................passed
-When Al-Arabia overall dashboard should display.............................passed
-And User able to click on profile...........................................passed
-And User able to click on personal profile..................................passed
-And Personal profile should be displaying...................................passed
-And User able to give personal profile information..........................passed
-Then Particular profile get updated successfully as "Success Personal profile updated".passed
+When User clicks forgot password option.....................................passed
+And User enters forgot password valid email address.........................passed
+And User clicks Send Reset link button......................................passed
+Then Proper confirmation email message should receive to user mail..........passed
+]]></system-out>
+</testcase>
+<testcase classname="Forgot password functionality" name="Forgot password with invalid email address" time="4.713">
+<system-out><![CDATA[
+When User clicks forgot password option.....................................passed
+And User enters forgot password invalid email address.......................passed
+Then User should get a invalid email address error message in forgotpassword page.passed
+]]></system-out>
+</testcase>
+<testcase classname="Forgot password functionality" name="Forgot password without email address" time="4.29">
+<system-out><![CDATA[
+When User clicks forgot password option.....................................passed
+And User enters forgot password invalid email address and delete............passed
+Then User should get a email address or phone number is required error message.passed
 ]]></system-out>
 </testcase>
 </testsuite>

@@ -58,10 +58,16 @@ public class Billboards extends Base {
     @And("Admin or user search the billboards")
     public void Admin_or_user_search_the_billboards() throws Exception {
     	billboardsPage.Newbillboard_create_BB_btn();
-    }
+    }                                                                                                 
     
-    @Then("Searched Billboard details get displayed successfully")
+    @Then("User sort the billboards list recently updated")
     public void Searched_Billboard_details_get_displayed_successfully() throws Exception {
     	billboardsPage.New_billboard_display();
     }
+    
+//    @Then("")
+//    public void Searched_Billboard_details_get_displayed_successfully() throws Exception {
+//    	billboardsPage.New_billboard_display();
+//    }
+    
 }

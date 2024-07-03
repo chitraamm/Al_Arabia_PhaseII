@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Automation Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">May 29, 2024 03:44:01 pm</span></a>
+<a href="#"><span class="badge badge-primary">Jul 3, 2024 03:18:04 pm</span></a>
 </li>
 </ul>
 </div>
@@ -79,7 +79,7 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@all</a><a class="dropdown-item" href="#">@regression</a><a class="dropdown-item" href="#">@validcredentials</a><a class="dropdown-item" href="#">@profile</a><a class="dropdown-item" href="#">@profile06</a><a class="dropdown-item" href="#">@sanity</a>
+<a class="dropdown-item" href="#">@forgotpassword03</a><a class="dropdown-item" href="#">@sanity</a><a class="dropdown-item" href="#">@forgotpassword01</a><a class="dropdown-item" href="#">@forgotpassword02</a><a class="dropdown-item" href="#">@regression</a><a class="dropdown-item" href="#">@forgotpassword</a><a class="dropdown-item" href="#">@validcredentials</a><a class="dropdown-item" href="#">@all</a><a class="dropdown-item" href="#">@smoke</a><a class="dropdown-item" href="#">@invalidemail</a>
 </ul>
 </li>
 </ul>
@@ -90,9 +90,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Profile</p>
+            <p class="name">Forgot password functionality</p>
             <p class="text-sm">
-              <span>3:44:01 pm</span> / <span>00:00:12:534</span>
+              <span>3:18:04 pm</span> / <span>00:00:14:766</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -100,70 +100,100 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Profile</h5>
-<span class='badge badge-success'>05.29.2024 3:44:01 pm</span>
-<span class='badge badge-danger'>05.29.2024 3:44:14 pm</span>
-<span class='badge badge-default'>00:00:12:534</span>
+<h5 class="test-status text-pass">Forgot password functionality</h5>
+<span class='badge badge-success'>07.03.2024 3:18:04 pm</span>
+<span class='badge badge-danger'>07.03.2024 3:18:19 pm</span>
+<span class='badge badge-default'>00:00:14:766</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
-<div class="m-t-10 m-l-5">User should be able to complete the personal profile</div>
+<div class="m-t-10 m-l-5">User should be able to change the password if user forgot his/her password</div>
 </div>
 </div>
 <div class="accordion mt-4">
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>T06_User must be able to provide personal profile information</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Reset password on forgetting it</div>
       </div>
     </div>
-        <div class="scenario_outline collapse">
-            <div class="card-body l1">
-              <div class="card-header">
-                <div class="card-title outline-child">
-                  <div class="node" id="3"><span class="badge log pass-bg mr-2">Pass</span>T06_User must be able to provide personal profile information</div>
-                </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="Stepdefinitions.Forgotpassword.user_clicks_forgot_password_option()">
+                <span>When User clicks forgot password option</span>
+      <div>
+      </div>
               </div>
-              <div class="card-body mt-3 collapse">
-                  <div class="step pass-bg">
-                    <span>Given Admin logged in with valid credentials</span>
+              <div class="step pass-bg" title="Stepdefinitions.Forgotpassword.user_enters_forgot_password_valid_email_address()">
+                <span>And User enters forgot password valid email address</span>
       <div>
       </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>When Al-Arabia overall dashboard should display</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And User able to click on profile</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And User able to click on personal profile</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And Personal profile should be displaying</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And User able to give personal profile information</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>Then Particular profile get updated successfully as "Success Personal profile updated"</span>
-      <div>
-      </div>
-                  </div>
               </div>
-            </div>
+              <div class="step pass-bg" title="Stepdefinitions.Forgotpassword.user_clicks_send_reset_link_button()">
+                <span>And User clicks Send Reset link button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Stepdefinitions.Forgotpassword.proper_confirmation_email_message_should_receive_to_user_mail()">
+                <span>Then Proper confirmation email message should receive to user mail</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="13"><span class="badge log pass-bg mr-2">Pass</span>Forgot password with invalid email address</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="Stepdefinitions.Forgotpassword.user_clicks_forgot_password_option()">
+                <span>When User clicks forgot password option</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Stepdefinitions.Forgotpassword.user_enters_forgot_password_invalid_email_address()">
+                <span>And User enters forgot password invalid email address</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Stepdefinitions.Forgotpassword.user_should_get_a_invalid_email_address_error_message_in_forgotpassword_page()">
+                <span>Then User should get a invalid email address error message in forgotpassword page</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="22"><span class="badge log pass-bg mr-2">Pass</span>Forgot password without email address</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="Stepdefinitions.Forgotpassword.user_clicks_forgot_password_option()">
+                <span>When User clicks forgot password option</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Stepdefinitions.Forgotpassword.User_enters_forgot_password_invalid_email_address_and_delete()">
+                <span>And User enters forgot password invalid email address and delete</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="Stepdefinitions.Forgotpassword.User_should_get_a_email_address_or_phone_number_is_required_error_message()">
+                <span>Then User should get a email address or phone number is required error message</span>
+      <div>
+      </div>
+              </div>
+          </div>
         </div>
   </div>
 </div>
@@ -182,7 +212,7 @@
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">6</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">10</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
@@ -191,12 +221,12 @@
 <span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@all</p>
+<p class="name">@forgotpassword03</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@all</h4>
+<h4>@forgotpassword03</h4>
 <span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -210,155 +240,11 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>15:44:01 pm</td>
+<td>15:18:15 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='3'>T06_User must be able to provide personal profile information</a>
+<a href="#" class="linked" test-id='1' id='22'>Forgot password without email address</a>
 <div class="">
-<span class="badge badge-default">Profile.T06_User must be able to provide personal profile information</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@regression</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@regression</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>15:44:01 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='3'>T06_User must be able to provide personal profile information</a>
-<div class="">
-<span class="badge badge-default">Profile.T06_User must be able to provide personal profile information</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@validcredentials</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@validcredentials</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>15:44:01 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='3'>T06_User must be able to provide personal profile information</a>
-<div class="">
-<span class="badge badge-default">Profile.T06_User must be able to provide personal profile information</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@profile</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@profile</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>15:44:01 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='3'>T06_User must be able to provide personal profile information</a>
-<div class="">
-<span class="badge badge-default">Profile.T06_User must be able to provide personal profile information</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@profile06</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@profile06</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>15:44:01 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='3'>T06_User must be able to provide personal profile information</a>
-<div class="">
-<span class="badge badge-default">Profile.T06_User must be able to provide personal profile information</span>
+<span class="badge badge-default">Forgot password functionality.Forgot password without email address</span>
 </div>
 </td>
 </tr>
@@ -390,11 +276,389 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>15:44:01 pm</td>
+<td>15:18:04 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='3'>T06_User must be able to provide personal profile information</a>
+<a href="#" class="linked" test-id='1' id='2'>Reset password on forgetting it</a>
 <div class="">
-<span class="badge badge-default">Profile.T06_User must be able to provide personal profile information</span>
+<span class="badge badge-default">Forgot password functionality.Reset password on forgetting it</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@forgotpassword01</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@forgotpassword01</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:18:04 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Reset password on forgetting it</a>
+<div class="">
+<span class="badge badge-default">Forgot password functionality.Reset password on forgetting it</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@forgotpassword02</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@forgotpassword02</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:18:10 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='13'>Forgot password with invalid email address</a>
+<div class="">
+<span class="badge badge-default">Forgot password functionality.Forgot password with invalid email address</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+</span>
+<p class="name">@regression</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@regression</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:18:04 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Reset password on forgetting it</a>
+<div class="">
+<span class="badge badge-default">Forgot password functionality.Reset password on forgetting it</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:18:10 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='13'>Forgot password with invalid email address</a>
+<div class="">
+<span class="badge badge-default">Forgot password functionality.Forgot password with invalid email address</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:18:15 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='22'>Forgot password without email address</a>
+<div class="">
+<span class="badge badge-default">Forgot password functionality.Forgot password without email address</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+</span>
+<p class="name">@forgotpassword</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@forgotpassword</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:18:04 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Reset password on forgetting it</a>
+<div class="">
+<span class="badge badge-default">Forgot password functionality.Reset password on forgetting it</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:18:10 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='13'>Forgot password with invalid email address</a>
+<div class="">
+<span class="badge badge-default">Forgot password functionality.Forgot password with invalid email address</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:18:15 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='22'>Forgot password without email address</a>
+<div class="">
+<span class="badge badge-default">Forgot password functionality.Forgot password without email address</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@validcredentials</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@validcredentials</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:18:04 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Reset password on forgetting it</a>
+<div class="">
+<span class="badge badge-default">Forgot password functionality.Reset password on forgetting it</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+</span>
+<p class="name">@all</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@all</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:18:04 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Reset password on forgetting it</a>
+<div class="">
+<span class="badge badge-default">Forgot password functionality.Reset password on forgetting it</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:18:10 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='13'>Forgot password with invalid email address</a>
+<div class="">
+<span class="badge badge-default">Forgot password functionality.Forgot password with invalid email address</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:18:15 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='22'>Forgot password without email address</a>
+<div class="">
+<span class="badge badge-default">Forgot password functionality.Forgot password without email address</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>3</span>
+</span>
+<p class="name">@smoke</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@smoke</h4>
+<span status="pass" class='badge log pass-bg'>3 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:18:04 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Reset password on forgetting it</a>
+<div class="">
+<span class="badge badge-default">Forgot password functionality.Reset password on forgetting it</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:18:10 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='13'>Forgot password with invalid email address</a>
+<div class="">
+<span class="badge badge-default">Forgot password functionality.Forgot password with invalid email address</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:18:15 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='22'>Forgot password without email address</a>
+<div class="">
+<span class="badge badge-default">Forgot password functionality.Forgot password without email address</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">@invalidemail</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@invalidemail</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:18:10 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='13'>Forgot password with invalid email address</a>
+<div class="">
+<span class="badge badge-default">Forgot password functionality.Forgot password with invalid email address</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:18:15 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='22'>Forgot password without email address</a>
+<div class="">
+<span class="badge badge-default">Forgot password functionality.Forgot password without email address</span>
 </div>
 </td>
 </tr>
@@ -415,13 +679,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>May 29, 2024 03:44:01 pm</h3>
+<h3>Jul 3, 2024 03:18:04 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>May 29, 2024 03:44:14 pm</h3>
+<h3>Jul 3, 2024 03:18:19 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -472,7 +736,7 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>1</b> scenarios passed</small></div>
+<div><small data-tooltip='100%'><b>3</b> scenarios passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
@@ -492,7 +756,7 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>7</b> steps passed</small></div>
+<div><small data-tooltip='100%'><b>10</b> steps passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> steps failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
@@ -511,7 +775,7 @@
 </div></div>
 <script>
 var timeline = {
-"Profile":12.534
+"Forgot password functionality":14.766
 };
 </script>
 <div class="row">
@@ -521,7 +785,31 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@all</td>
+<td>@forgotpassword03</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@sanity</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@forgotpassword01</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@forgotpassword02</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -530,7 +818,15 @@ var timeline = {
 </tr>
 <tr>
 <td>@regression</td>
-<td>1</td>
+<td>3</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@forgotpassword</td>
+<td>3</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -545,24 +841,24 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@profile</td>
-<td>1</td>
+<td>@all</td>
+<td>3</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>100%</td>
 </tr>
 <tr>
-<td>@profile06</td>
-<td>1</td>
+<td>@smoke</td>
+<td>3</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
 <td>100%</td>
 </tr>
 <tr>
-<td>@sanity</td>
-<td>1</td>
+<td>@invalidemail</td>
+<td>2</td>
 <td>0</td>
 <td>0</td>
 <td>0</td>
@@ -582,13 +878,13 @@ failParent: 0,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 1,
+passChild: 3,
 failChild: 0,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 7,
+passGrandChild: 10,
 failGrandChild: 0,
 warningGrandChild: 0,
 skipGrandChild: 0,

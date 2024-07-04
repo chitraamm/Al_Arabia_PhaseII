@@ -43,7 +43,7 @@ public class Memberspage extends Base {
 	private boolean condition = true;
 
 	private void initializeWait() {
-		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 	}
 
 	private String generateUniqueEmail(String baseEmail) {
@@ -86,12 +86,9 @@ public class Memberspage extends Base {
 		LOGGER.info(">> The members dashboard list page got displayed");
 	}
 
-	@FindBy(xpath = "//div[contains(@class,'align-items-center justify-content-end')]//h6[contains(@class,'m-0 fw-normal')][normalize-space()='Invite Member']")
-	private WebElement inviteMemberBtn;
-
-	@FindBy(xpath = "//button[@class=' btn_invite_member  btn btn-primary']")
-	private WebElement inviteMemberBtn1;
-
+	@FindBy(id = "   Invite Member")
+	private WebElement inviteMemberBtn, inviteMemberBtn1;
+	
 	public void inviteMemberBtn() {
 		wait.until(ExpectedConditions.visibilityOf(inviteMemberBtn)).click();
 		LOGGER.info(">> User clicked the invite member button");
@@ -532,7 +529,7 @@ public class Memberspage extends Base {
 		System.out.println(">> User entered the responsible area in filter");
 	}
 
-	@FindBy(xpath = "//h6[normalize-space()='Riyadh Saudi Arabia']")
+	@FindBy(xpath = "(//td[contains(@class,'')])[5]")
 	private WebElement members_filter_responsible_area_list_display;
 
 	public void members_filter_responsible_area_list_display() {
@@ -616,7 +613,7 @@ public class Memberspage extends Base {
 		System.out.println(">> User got the 2nd page successfully");
 	}
 
-	@FindBy(xpath = "(//a[normalize-space()='Edit']")
+	@FindBy(xpath = "(//a[normalize-space()='Edit'])[1]")
 	private WebElement members_action_icon_edit_click;
 
 	public void members_action_icon_click() throws Exception {
@@ -625,7 +622,7 @@ public class Memberspage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(members_action_icon_edit_click)).click();
 	}
 
-	@FindBy(xpath = "(//span[@class='edit_link_routes active'])[1]")
+	@FindBy(id = "name")
 	private WebElement members_profile_personal_name;
 
 	public void members_profile_personal_name() {
@@ -637,22 +634,22 @@ public class Memberspage extends Base {
 	@FindBy(xpath = "//input[@value='+91 96777 75555']")
 	private WebElement members_personalprofile_altNO_text_enter;
 
-	@FindBy(xpath = "//input[contains(@error,'alternate number required')]")
+	@FindBy(name = "alternate_number")
 	private WebElement members_personalprofile_altNO_text_enter1;
 
 	@FindBy(xpath = "//input[@value='+91 96777 75556']")
 	private WebElement members_personalprofile_whatappNo_text_enter;
 
-	@FindBy(xpath = "//input[contains(@error,'whatsapp number required')]")
+	@FindBy(name = "whatsapp_number")
 	private WebElement members_personalprofile_whatappNo_text_enter1;
 
 	@FindBy(xpath = "//input[@class='select-wrapper pac-target-input']")
 	private WebElement members_personalprofile_location_text_enter;
 
-	@FindBy(name = "iqama_no")
+	@FindBy(id = "iqama_no")
 	private WebElement members_personalprofile_IQMA_No_text_enter;
 
-	@FindBy(name = "biography")
+	@FindBy(id = "biography")
 	private WebElement members_personalprofile_Bio_text_enter;
 
 	@FindBy(xpath = "//button[@type='submit']")
@@ -662,6 +659,7 @@ public class Memberspage extends Base {
 	private WebElement members_personalprofile_update_btn_Yes;
 
 	public void members_personalprofile_text_enter() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(members_profile_personal_name));
 		wait.until(ExpectedConditions.visibilityOf(members_profile_personal_name)).click();
 		members_profile_personal_name.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
 		wait.until(ExpectedConditions.visibilityOf(members_profile_personal_name)).sendKeys("Panneer");
@@ -688,7 +686,7 @@ public class Memberspage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(members_personalprofile_update_btn_Yes)).click();
 	}
 
-	@FindBy(xpath = "//div[@class='toastpop position-relative']")
+	@FindBy(xpath = "//div[contains(@class, 'toastpop') and contains(@class, 'position-relative')]")
 	private WebElement members_profile_Success_display, members_profile_Success_display1;
 
 	public String members_profile_success_display() {
@@ -697,7 +695,7 @@ public class Memberspage extends Base {
 	}
 
 	public String members_profile_success_display1() throws Exception {
-		Thread.sleep(3000);
+//		Thread.sleep(2000);
 		WebElement successMessageElement = wait
 				.until(ExpectedConditions.visibilityOf(members_profile_Success_display1));
 		return successMessageElement.getText().trim();
@@ -710,7 +708,7 @@ public class Memberspage extends Base {
 		System.out.println(">> User or Admin erased the member name");
 	}
 
-	@FindBy(xpath = "//div[@class='invalid-feedback']")
+	@FindBy(xpath = "//small[@class='form-text text-danger form_error']")
 	private WebElement members_profilepage_error;
 
 	public void members_profilepage_error() {
@@ -722,7 +720,7 @@ public class Memberspage extends Base {
 	@FindBy(xpath = "//span[normalize-space()='Company Profile']")
 	private WebElement members_companyprofile;
 
-	@FindBy(name = "work_space_id")
+	@FindBy(id = "work_space_id")
 	private WebElement members_companyprofile_workspaceID;
 
 	@FindBy(name = "date_of_joining")
@@ -772,7 +770,7 @@ public class Memberspage extends Base {
 	@FindBy(id = "react-select-6-listbox")
 	private WebElement members_vehicleinfo_vehicletype_select;
 
-	@FindBy(name = "number")
+	@FindBy(xpath = "//input[@id='number']")
 	private WebElement members_vehicleinfo_licence;
 
 	@FindBy(name = "model")
@@ -810,10 +808,10 @@ public class Memberspage extends Base {
 	@FindBy(xpath = "//span[normalize-space()='Reset Password']")
 	private WebElement members_resetpasswordprofile;
 
-	@FindBy(name = "password")
+	@FindBy(id = "password")
 	private WebElement members_reset_newpw;
 
-	@FindBy(name = "password_confirmation")
+	@FindBy(id = "password_confirmation")
 	private WebElement members_reset_confirmpw;
 
 	@FindBy(xpath = "//h6[normalize-space()='Yes, update it.']")
@@ -940,7 +938,7 @@ public class Memberspage extends Base {
 		System.out.println(">> User or Admin got active list successfully");
 	}
 
-	@FindBy(xpath = "//div[@class='avatar pointer']")
+	@FindBy(xpath = "//div[contains(@class,'pointer sb-avatar__text')]")
 	private WebElement members_avatar_icon;
 
 	public void members_avatar_icon() throws Exception {
@@ -963,10 +961,10 @@ public class Memberspage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(members_roles_user_supervisor_read)).isDisplayed();
 	}
 
-	@FindBy(xpath = "//a[normalize-space()='Logout']")
+	@FindBy(xpath = "(//a[normalize-space()='Logout'])[1]")
 	private WebElement Logout;
 
-	@FindBy(xpath = "//h6[contains(text(),'Yes,')]")
+	@FindBy(xpath = "(//h6[contains(text(),'Yes,')])[1]")
 	private WebElement Logout_yes;
 
 	public void Logout() throws Exception {
@@ -980,7 +978,6 @@ public class Memberspage extends Base {
 
 	public void Members_supervisor_viewdetails_btn() throws Exception {
 		wait.until(ExpectedConditions.visibilityOf(Members_supervisor_viewdetails_btn)).click();
-		wait.until(ExpectedConditions.visibilityOf(members_action_icon_edit_click)).click();
 	}
 
 	public void Members_disabled_page() {

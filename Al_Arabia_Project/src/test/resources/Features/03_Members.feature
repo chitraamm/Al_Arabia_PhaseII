@@ -191,8 +191,8 @@ Scenario Outline: T023_To verify the members feature particular members profile 
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And User clicks the members module
-And User filter the members list status-Active
 And User search the members
+And User filter the members list status-Active
 And Admin or User go the members profile page
 Then Members page get displayed successfully
 
@@ -218,7 +218,7 @@ And User clicks the members module
 And User filter the members list status-Active
 And User search the members
 And Admin or User go the members profile page
-And Admin or User  the membdeleteer name
+And Admin or User delete the member name
 Then Name is required error message get displayed successfully
 
 @members @members26 @sanity @regression @all
@@ -413,7 +413,7 @@ And Supervisor logged in with valid credentials
 And User clicks the members module
 And User filter the members list status-Active
 And User search the members
-And Supervisor go the members profile page
+And Supervisor go the members profile page1
 And Supervisor update the members profile page
 Then Supervisor get the update access successfully
 

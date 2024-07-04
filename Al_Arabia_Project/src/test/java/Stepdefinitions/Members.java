@@ -402,7 +402,7 @@ public class Members extends Base {
         String actualMessage = membersPage.members_profile_success_display1();
         String normalizedExpectedMessage = normalizeWhitespace(expectedMessage);
         String normalizedActualMessage = normalizeWhitespace(actualMessage);
-        System.out.println(">> User or Admin got the members profile updation success message successfully");
+        System.out.println(">> User or Admin got the members profile updation success message successfully"+ actualMessage);
         assertEquals(normalizedExpectedMessage, normalizedActualMessage);
     }
     
@@ -473,6 +473,12 @@ public class Members extends Base {
     public void Supervisor_go_the_members_profile_page() throws Exception {
     	 membersPage.Members_supervisor_viewdetails_btn();
     }
+    
+    @And("Supervisor go the members profile page1")
+    public void Supervisor_go_the_members_profile_page1() throws Exception {
+    	 membersPage.members_action_icon_click();
+    }
+    
     
     @Then("Supervisor get the read access successfully")
     public void Supervisor_get_the_read_access_successfully() {

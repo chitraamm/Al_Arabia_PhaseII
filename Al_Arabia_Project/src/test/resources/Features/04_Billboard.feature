@@ -16,7 +16,12 @@ And Admin or user clicks the billboards module
 And Admin or user clicks the new billboard button
 And Admin or user enters the all new billboard mandatory fields
 And Admin or user clicks the create billboard
+And Particular billboard get created successfully as "<successMessage>"
 Then The billboard should created and displayed in billboard dashboard successfully
+ Examples:
+      | successMessage                        |
+      | Success Billboard created				      |
+
 
 @billboards @billboards03 @smoke @regression @all
 Scenario Outline: T003_ the billboards feature search
@@ -31,7 +36,7 @@ Scenario Outline: T004_To verify the billboards feature sort recently updated
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the billboards module
-And User sort the billboards list recently updated
+And Admin or user sort the billboards list recently updated
 Then Recently updated billboards list get displayed successfully
 
 @billboards @billboards05 @smoke @regression @all
@@ -48,7 +53,7 @@ Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the billboards module
 And User sort the billboards list Name Z to A 
-Then billboards list get displayed successfully
+Then billboards list Z get displayed successfully
 
 @billboards @billboards07 @smoke @regression @all
 Scenario Outline: T007_To verify the billboards feature sort Recently Added

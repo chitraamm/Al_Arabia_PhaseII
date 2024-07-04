@@ -81,7 +81,7 @@ public class Billboardspage extends Base {
 		LOGGER.info(">> The billboard dashboard list page got displayed");
 	}
 
-	@FindBy(xpath = "//button[contains(@class,'btn_invite_member  btn btn-primary')]")
+	@FindBy(id = "New BillBoard")
 	private WebElement New_billboardClick, New_billboard_display;
 
 	public void New_billboardClick() {
@@ -90,101 +90,199 @@ public class Billboardspage extends Base {
 	}
 	
 	public void New_billboard_display() {
-		wait.until(ExpectedConditions.visibilityOf(New_billboard_display)).isDisplayed();
+		act.moveToElement(New_billboard_display).perform();
+
+		wait.until(ExpectedConditions.visibilityOf(New_billboard_display));
+
+		if (New_billboard_display.isDisplayed()) {
+		    System.out.println("Element is displayed");
+		} else {
+		    System.out.println("Element is not displayed");
+		}
 		LOGGER.info(">> Admin/User clicked new billboard btn");
 	}
 
-	@FindBy(name = "board_no")
+	@FindBy(id = "board_no")
 	private WebElement Newbillboard_boardno;
 
-	@FindBy(xpath = "//input[contains(@itemtype,'establishment')]")
+	@FindBy(xpath = "(//input[@placeholder='Enter Location'])[1]")
 	private WebElement Newbillboard_BB_location;
 
-	@FindBy(xpath = "//input[@type='text'][@tabindex='0']")
+	@FindBy(id = "react-select-12-input")
 	private WebElement Newbillboard_BB_type;
+	
+	@FindBy(xpath = "//div[@class='select__menu css-1nmdiq5_menu'][1]")
+	private WebElement Newbillboard_BB_type1;
 
-	@FindBy(xpath = "//body[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[2]/form[1]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/div[1]/div[2]")
+	@FindBy(id = "react-select-13-input")
 	private WebElement Newbillboard_BOM_type;
 	
 	@FindBy(xpath = "//body[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[2]/form[1]/div[1]/div[3]/div[1]/div[1]/div[1]/input[1]")
 	private WebElement Newbillboard_city;
 	
-	@FindBy(name = "team_viewer_id")
+	@FindBy(id = "team_viewer_id")
 	private WebElement Newbillboard_teamviewer_id;
 	
-	@FindBy(name = "team_viewer_password")
+	@FindBy(id = "team_viewer_password")
 	private WebElement Newbillboard_teamviewer_password;
 	
-	@FindBy(name = "longitude")
+	@FindBy(id = "longitude")
 	private WebElement Newbillboard_longtitude;
 	
-	@FindBy(name = "latitude")
+	@FindBy(id = "latitude")
 	private WebElement Newbillboard_lontitude;
 	
-	@FindBy(name = "screen_width")
+	@FindBy(id = "screen_width")
 	private WebElement Newbillboard_screen_width;
 	
-	@FindBy(name = "screen_height")
+	@FindBy(id = "screen_height")
 	private WebElement Newbillboard_screen_height;
 	
-	@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[2]/div[2]/div[2]/form/div[1]/div[6]/div[2]/div/div[1]/div/div[1]/div[2]")
+	@FindBy(xpath = "(//div)[95]")
 	private WebElement Newbillboard_screen_resolution;
 	
-	@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[2]/div[2]/div[2]/form/div[1]/div[7]/div[1]/div/div/div/div[1]")
+	@FindBy(xpath = "(//div[contains(@class,'select__value-container select__value-container--has-value css-hlgwow')])[4]")
 	private WebElement Newbillboard_screen_units;
 	
-	@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[2]/div[2]/div[2]/form/div[1]/div[7]/div[2]/div/div[1]/div/div[1]/div[2]")
+	@FindBy(xpath = "(//div)[114]")
 	private WebElement Newbillboard_screen_pixel;
 	
-	@FindBy(name = "screen_model")
+	@FindBy(id = "screen_model")
 	private WebElement Newbillboard_screen_model;
 
 	public void NewBillboard_mandatory_fields_enter() {
 		String uniqueboardno = generateUniqueboardNumber(prop.getProperty("BB_NO"));
 		wait.until(ExpectedConditions.visibilityOf(Newbillboard_boardno)).sendKeys(uniqueboardno);
 		wait.until(ExpectedConditions.visibilityOf(Newbillboard_BB_location))
-				.sendKeys("Saudi Arabia" + Keys.ARROW_DOWN + Keys.ENTER);
-		wait.until(ExpectedConditions.visibilityOf(Newbillboard_BB_type)).click();
-		Newbillboard_BB_type.sendKeys("" + Keys.ARROW_DOWN + Keys.ENTER);
-		wait.until(ExpectedConditions.visibilityOf(Newbillboard_BOM_type)).click();
-		Newbillboard_BOM_type.sendKeys("" + Keys.ARROW_DOWN +Keys.ARROW_DOWN+ Keys.ENTER);
-		wait.until(ExpectedConditions.visibilityOf(Newbillboard_city)).click();
-		Newbillboard_city.sendKeys("" + Keys.ARROW_DOWN + Keys.ENTER);
+				.sendKeys("Riyadh Saudi Arabia" + Keys.ARROW_DOWN + Keys.ENTER);
+		act.moveToElement(Newbillboard_BB_type).click().sendKeys("" +Keys.ENTER).perform();
+		act.moveToElement(Newbillboard_BOM_type).click().sendKeys(""+Keys.ARROW_DOWN +Keys.ENTER).perform();
 		
 		wait.until(ExpectedConditions.visibilityOf(Newbillboard_teamviewer_id)).sendKeys("123456789");
 		wait.until(ExpectedConditions.visibilityOf(Newbillboard_teamviewer_password)).sendKeys("Password@123");
-		wait.until(ExpectedConditions.visibilityOf(Newbillboard_longtitude)).sendKeys("23.8859");
-		wait.until(ExpectedConditions.visibilityOf(Newbillboard_lontitude)).sendKeys("45.0792");
-		
 		wait.until(ExpectedConditions.visibilityOf(Newbillboard_screen_width)).sendKeys("80");
 		wait.until(ExpectedConditions.visibilityOf(Newbillboard_screen_height)).sendKeys("40");
 		
-		wait.until(ExpectedConditions.visibilityOf(Newbillboard_screen_resolution)).click();
-		Newbillboard_screen_resolution.sendKeys("" + Keys.ARROW_DOWN + Keys.ENTER);
-		wait.until(ExpectedConditions.visibilityOf(Newbillboard_screen_units)).click();
-		Newbillboard_screen_units.sendKeys("" + Keys.ARROW_DOWN + Keys.ENTER);
-		
-		wait.until(ExpectedConditions.visibilityOf(Newbillboard_screen_pixel)).click();
-		Newbillboard_screen_pixel.sendKeys("" + Keys.ARROW_DOWN + Keys.ENTER);
-		
+		act.moveToElement(Newbillboard_screen_resolution).click().sendKeys(""+Keys.ARROW_DOWN +Keys.ENTER).perform();
+		act.moveToElement(Newbillboard_screen_units).click().sendKeys(""+Keys.ARROW_DOWN +Keys.ENTER).perform();
+		act.moveToElement(Newbillboard_screen_pixel).click().sendKeys(""+Keys.ARROW_DOWN +Keys.ENTER).perform();
 	}
 	
-	
-	@FindBy(name = "//button[@type='submit']")
+	@FindBy(id = "Create BillBoard")
 	private WebElement Newbillboard_create_BB_btn;
 
 	public void Newbillboard_create_BB_btn() {
-	act.scrollToElement(Newbillboard_create_BB_btn).click().perform();
+	act.moveToElement(Newbillboard_create_BB_btn).click().perform();
+	}
+
+	
+	@FindBy(xpath = "//div[contains(@class, 'toastpop') and contains(@class, 'position-relative')]")
+	private WebElement billboard_created_Success_display;
+
+	public String billboard_created_Success_display() throws Exception {
+		WebElement successMessageElement = wait.until(ExpectedConditions.visibilityOf(billboard_created_Success_display));
+		return successMessageElement.getText().trim();
+	}
+	
+	@FindBy(id = "doc_searchQueryInput")
+	private WebElement BBSearch;
+	
+	public void Billboard_search_enter_text() 
+	{
+		wait.until(ExpectedConditions.visibilityOf(BBSearch)).click();
+		String billboard_search = prop.getProperty("BB_NO");
+		wait.until(ExpectedConditions.visibilityOf(BBSearch)).sendKeys(billboard_search + Keys.ENTER);
+		System.out.println(">> User enter the BB name in search field: " + billboard_search);
+	}
+
+	@FindBy(xpath = "//table[@class='table']")
+	private WebElement BBSearchedList;
+
+	public void BBSearchedList() {
+		wait.until(ExpectedConditions.visibilityOf(BBSearchedList));
+
+		if (BBSearchedList.isDisplayed()) {
+		    System.out.println("Element is displayed");
+		} else {
+		    System.out.println("Element is not displayed");
+		}
+		LOGGER.info(">> Admin/User clicked new billboard btn");
+		System.out.println(">> User got searched BB list: " + BBSearchedList.getText());
+	}
+	
+	@FindBy(xpath = "(//div[contains(@class,'d-flex sortbox')])[1]")
+	private WebElement BB_sort;
+	
+	
+	@FindBy(xpath = "(//h6[contains(text(),'Recently Updated')])[1]")
+	private WebElement Billboards_sort_recentlyupdated;
+	
+	
+	public void BB_sort() {	
+		wait.until(ExpectedConditions.visibilityOf(BB_sort)).click();
+		wait.until(ExpectedConditions.visibilityOf(Billboards_sort_recentlyupdated)).click();
+		System.out.println(">> User clicked recently updated in sort");
+	}
+
+	public void Billboards_sort_recentlyupdated() {
+		//wait.until(ExpectedConditions.visibilityOf(BBMenu)).isDisplayed();
+		//AssertJUnit.assertTrue(BBMenu.isDisplayed());
+		System.out.println(">> User got sorted the BillBoard list");
 	}
 
 	
 	
 	
+	@FindBy(xpath = "(//h6[contains(text(),'Name - A to Z')])[1]")
+	private WebElement Name_A_to_Z;
+	
+	public void Billboard_sort() {	
+		wait.until(ExpectedConditions.visibilityOf(BB_sort)).click();
+		wait.until(ExpectedConditions.visibilityOf(Name_A_to_Z)).click();
+		System.out.println(">> User clicked recently updated in sort");
+	}
+	
+	
+	public void BB_A_to_Z() {	
+//		wait.until(ExpectedConditions.visibilityOf(BB_sort)).click();
+//		wait.until(ExpectedConditions.visibilityOf(Name_A_to_Z)).click();
+		System.out.println(">> User clicked A-Z in sort");
+	}
 	
 	
 	
 	
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	@FindBy(xpath = "(//h6[contains(text(),'Name - Z to A')])[1]")
+	private WebElement Name_Z_to_A;
+	
+	public void Billboard_sortZ() {	
+		wait.until(ExpectedConditions.visibilityOf(BB_sort)).click();
+		wait.until(ExpectedConditions.visibilityOf(Name_Z_to_A)).click();
+		System.out.println(">> User clicked recently updated in sort");
+	}
+	
+	
+	public void BB_Z_to_A() {	
+//		wait.until(ExpectedConditions.visibilityOf(BB_sort)).click();
+//		wait.until(ExpectedConditions.visibilityOf(Name_A_to_Z)).click();
+		System.out.println(">> User clicked A-Z in sort");
+	}
+	
+	
+//	public void Billboards_sort_recentlyupdated() {
+//		// TODO Auto-generated method stub
+//		
+//	}
+//	
 	
 	
 	

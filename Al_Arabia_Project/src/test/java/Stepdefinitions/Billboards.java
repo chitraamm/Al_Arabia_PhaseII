@@ -1,5 +1,7 @@
 package Stepdefinitions;
 
+import static org.junit.Assert.assertEquals;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
@@ -57,17 +59,59 @@ public class Billboards extends Base {
     
     @And("Admin or user search the billboards")
     public void Admin_or_user_search_the_billboards() throws Exception {
-    	billboardsPage.Newbillboard_create_BB_btn();
+    	billboardsPage.Billboard_search_enter_text();
     }                                                                                                 
     
-    @Then("User sort the billboards list recently updated")
-    public void Searched_Billboard_details_get_displayed_successfully() throws Exception {
-    	billboardsPage.New_billboard_display();
+    @Then("Searched Billboard details get displayed successfully")
+    public void Searched_Billboard_details_get_displayed_successfully() {
+    	billboardsPage.BBSearchedList();
     }
     
-//    @Then("")
-//    public void Searched_Billboard_details_get_displayed_successfully() throws Exception {
-//    	billboardsPage.New_billboard_display();
-//    }
+    @And("^Particular billboard get created successfully as \"([^\"]*)\"$")
+    public void Particular_billboard_get_created_successfully(String expectedMessage) throws Exception {
+        String actualMessage = billboardsPage.billboard_created_Success_display();
+        String normalizedExpectedMessage = normalizeWhitespace(expectedMessage);
+        String normalizedActualMessage = normalizeWhitespace(actualMessage);
+        System.out.println(">> User or Admin got the billboard created success message successfully"+actualMessage);
+        assertEquals(normalizedExpectedMessage, normalizedActualMessage);
+    }
+
+    private String normalizeWhitespace(String input) {
+        return input.replaceAll("\\s+", " ").trim();
+    }
+    
+    
+    @And("Admin or user sort the billboards list recently updated")
+    public void Admin_or_user_sort_the_billboards_list_recently_updated() throws Exception {
+    	billboardsPage.BB_sort();
+    }  
+    
+    
+    @Then("Recently updated billboards list get displayed successfully")
+    public void Recently_updated_billboards_list_get_displayed_successfully() throws Exception {
+    	billboardsPage.Billboards_sort_recentlyupdated();
+    }  
+    
+    @Then("User sort the billboards list Name A to Z")
+    public void User_sort_the_billboards_list_Name_A_to_Z() throws Exception {
+    	billboardsPage.Billboard_sort();
+    } 
+    
+    
+    @Then("billboards list get displayed successfully")
+    public void billboards_list_get_displayed_successfully() throws Exception {
+    	billboardsPage.BB_A_to_Z();
+    } 
+    
+    @Then("User sort the billboards list Name Z to A")
+    public void User_sort_the_billboards_list_Name_Z_to_A() throws Exception {
+    	billboardsPage.BB_Z_to_A();
+    } 
+    
+    
+    @Then("billboards list Z-A get displayed successfully")
+    public void billboards_list_Z_get_displayed_successfully() throws Exception {
+    	billboardsPage.BB_Z_to_A();
+    } 
     
 }

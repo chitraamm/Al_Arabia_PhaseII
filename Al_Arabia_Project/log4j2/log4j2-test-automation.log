@@ -2612,3 +2612,643 @@
 [INFO ] 2024-07-04 14:56:03.081 [main] Members - >> Supervisor got logged in >>
 [INFO ] 2024-07-04 14:56:23.833 [main] Testhooks - Failed scenario screenshot got capturedT041_To verify the members feature roles wise (Block/Unblock access for supervisor)
 [INFO ] 2024-07-04 14:56:23.928 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-04 14:59:25.922 [main] Testhooks - Execution Started
+[INFO ] 2024-07-04 14:59:26.853 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-04 14:59:28.342 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-04 14:59:29.559 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-04 14:59:29.691 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-04 14:59:29.803 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-04 14:59:29.803 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-04 14:59:32.596 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-04 14:59:33.391 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-04 15:00:06.443 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-04 15:00:33.857 [main] Testhooks - Execution Started
+[INFO ] 2024-07-04 15:00:34.745 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-04 15:00:36.292 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-04 15:00:37.506 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-04 15:00:37.638 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-04 15:00:37.750 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-04 15:00:37.751 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-04 15:00:40.575 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-04 15:00:41.267 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-04 15:00:45.854 [main] Signinpage - Supervisor enters valid email address
+[INFO ] 2024-07-04 15:00:46.029 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-04 15:00:46.141 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-04 15:00:46.142 [main] Members - >> Supervisor got logged in >>
+[INFO ] 2024-07-04 15:00:49.352 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-04 15:00:51.075 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-04 15:01:14.518 [main] Testhooks - Execution Started
+[INFO ] 2024-07-04 15:01:15.425 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-04 15:01:17.430 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-04 15:01:18.647 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-04 15:01:18.775 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-04 15:01:18.886 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-04 15:01:18.886 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-04 15:01:21.376 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-04 15:01:22.606 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-04 15:01:27.296 [main] Signinpage - Supervisor enters valid email address
+[INFO ] 2024-07-04 15:01:27.424 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-04 15:01:27.537 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-04 15:01:27.538 [main] Members - >> Supervisor got logged in >>
+[INFO ] 2024-07-04 15:01:30.756 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-04 15:02:01.904 [main] Testhooks - Failed scenario screenshot got capturedT039_To verify the members feature roles wise (Write access for supervisor)
+[INFO ] 2024-07-04 15:02:02.047 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-04 15:07:25.296 [main] Testhooks - Execution Started
+[INFO ] 2024-07-04 15:07:26.260 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-04 15:07:27.657 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-04 15:07:28.871 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-04 15:07:29.004 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-04 15:07:29.119 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-04 15:07:29.119 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-04 15:07:32.078 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-04 15:07:32.765 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-04 15:08:05.742 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-04 15:08:34.924 [main] Testhooks - Execution Started
+[INFO ] 2024-07-04 15:08:35.821 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-04 15:08:37.431 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-04 15:08:38.635 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-04 15:08:38.775 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-04 15:08:38.890 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-04 15:08:38.890 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-04 15:08:41.617 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-04 15:08:42.251 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-04 15:09:15.161 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-04 15:09:25.875 [main] Testhooks - Execution Started
+[INFO ] 2024-07-04 15:09:26.754 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-04 15:09:28.231 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-04 15:09:29.447 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-04 15:09:29.577 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-04 15:09:29.693 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-04 15:09:29.693 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-04 15:09:32.574 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-04 15:09:33.297 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-04 15:09:38.164 [main] Signinpage - Supervisor enters valid email address
+[INFO ] 2024-07-04 15:09:38.301 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-04 15:09:38.406 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-04 15:09:38.407 [main] Members - >> Supervisor got logged in >>
+[INFO ] 2024-07-04 15:09:41.818 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-04 15:09:44.632 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-04 15:09:44.761 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-04 15:09:44.850 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-04 15:09:44.851 [main] Memberspage - >> Admin/User got logged in >>
+[INFO ] 2024-07-04 15:09:48.698 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-04 15:12:59.770 [main] Testhooks - Execution Started
+[INFO ] 2024-07-04 15:13:00.677 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-04 15:13:02.421 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-04 15:13:03.636 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-04 15:13:03.772 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-04 15:13:03.881 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-04 15:13:03.881 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-04 15:13:06.593 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-04 15:13:07.277 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-04 15:13:07.474 [main] Billboardspage - >> The billboard dashboard list page got displayed
+[INFO ] 2024-07-04 15:13:07.474 [main] Billboards - >> Admin/user got the members dashboard page >>
+[INFO ] 2024-07-04 15:13:07.718 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-04 15:13:37.527 [main] Testhooks - Execution Started
+[INFO ] 2024-07-04 15:13:38.458 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-04 15:13:39.887 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-04 15:13:41.106 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-04 15:13:41.242 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-04 15:13:41.350 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-04 15:13:41.350 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-04 15:13:44.141 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-04 15:13:44.915 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-04 15:14:05.402 [main] Testhooks - Failed scenario screenshot got capturedT002_Invite the Billboard with valid inputs
+[INFO ] 2024-07-04 15:14:05.498 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-04 15:14:49.779 [main] Testhooks - Execution Started
+[INFO ] 2024-07-04 15:14:50.694 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-04 15:14:52.739 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-04 15:14:53.962 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-04 15:14:54.098 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-04 15:14:54.209 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-04 15:14:54.210 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-04 15:14:56.638 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-04 15:14:57.598 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-04 15:15:18.096 [main] Testhooks - Failed scenario screenshot got capturedT002_Invite the Billboard with valid inputs
+[INFO ] 2024-07-04 15:15:18.190 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-04 15:18:51.420 [main] Testhooks - Execution Started
+[INFO ] 2024-07-04 15:18:52.308 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-04 15:18:53.866 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-04 15:18:55.080 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-04 15:18:55.239 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-04 15:18:56.782 [main] Testhooks - Failed scenario screenshot got capturedT002_Invite the Billboard with valid inputs
+[INFO ] 2024-07-04 15:18:56.878 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-04 15:19:14.885 [main] Testhooks - Execution Started
+[INFO ] 2024-07-04 15:19:15.798 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-04 15:19:17.321 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-04 15:19:18.540 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-04 15:19:18.669 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-04 15:19:18.776 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-04 15:19:18.777 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-04 15:19:21.678 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-04 15:19:22.400 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-04 15:19:22.752 [main] Billboardspage - >> Admin/User clicked new billboard btn
+[INFO ] 2024-07-04 15:19:43.147 [main] Testhooks - Failed scenario screenshot got capturedT002_Invite the Billboard with valid inputs
+[INFO ] 2024-07-04 15:19:43.290 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-04 15:31:52.201 [main] Testhooks - Execution Started
+[INFO ] 2024-07-04 15:31:53.111 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-04 15:31:54.940 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-04 15:31:56.148 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-04 15:31:56.286 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-04 15:31:56.396 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-04 15:31:56.396 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-04 15:31:58.908 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-04 15:31:59.817 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-04 15:32:20.276 [main] Testhooks - Failed scenario screenshot got capturedT002_Invite the Billboard with valid inputs
+[INFO ] 2024-07-04 15:32:20.423 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-04 15:32:52.157 [main] Testhooks - Execution Started
+[INFO ] 2024-07-04 15:32:53.057 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-04 15:32:54.549 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-04 15:32:55.759 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-04 15:32:55.890 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-04 15:32:55.998 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-04 15:32:55.998 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-04 15:32:58.741 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-04 15:32:59.365 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-04 15:32:59.770 [main] Billboardspage - >> Admin/User clicked new billboard btn
+[INFO ] 2024-07-04 15:33:01.149 [main] Testhooks - Failed scenario screenshot got capturedT002_Invite the Billboard with valid inputs
+[INFO ] 2024-07-04 15:33:01.238 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-04 15:36:28.548 [main] Testhooks - Execution Started
+[INFO ] 2024-07-04 15:36:29.397 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-04 15:36:31.223 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-04 15:36:32.438 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-04 15:36:32.570 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-04 15:36:32.682 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-04 15:36:32.682 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-04 15:36:35.480 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-04 15:36:36.202 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-04 15:36:36.541 [main] Billboardspage - >> Admin/User clicked new billboard btn
+[INFO ] 2024-07-04 15:36:37.769 [main] Testhooks - Failed scenario screenshot got capturedT002_Invite the Billboard with valid inputs
+[INFO ] 2024-07-04 15:41:14.220 [main] Testhooks - Execution Started
+[INFO ] 2024-07-04 15:41:15.053 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-04 15:41:17.049 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-04 15:41:18.234 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-04 15:41:18.351 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-04 15:41:18.453 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-04 15:41:18.453 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-04 15:41:21.229 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-04 15:41:21.916 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-04 15:41:22.236 [main] Billboardspage - >> Admin/User clicked new billboard btn
+[INFO ] 2024-07-04 15:41:23.600 [main] Testhooks - Failed scenario screenshot got capturedT002_Invite the Billboard with valid inputs
+[INFO ] 2024-07-04 15:43:05.154 [main] Testhooks - Execution Started
+[INFO ] 2024-07-04 15:43:05.953 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-04 15:43:07.157 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-04 15:43:08.362 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-04 15:43:08.483 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-04 15:43:08.589 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-04 15:43:08.590 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-04 15:43:11.298 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-04 15:43:11.964 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-04 15:43:12.274 [main] Billboardspage - >> Admin/User clicked new billboard btn
+[INFO ] 2024-07-04 15:43:20.533 [main] Testhooks - Failed scenario screenshot got capturedT002_Invite the Billboard with valid inputs
+[INFO ] 2024-07-04 15:44:42.492 [main] Testhooks - Execution Started
+[INFO ] 2024-07-04 15:44:43.312 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-04 15:44:44.681 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-04 15:44:45.872 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-04 15:44:45.995 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-04 15:44:46.097 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-04 15:44:46.097 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-04 15:44:48.693 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-04 15:44:49.833 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-04 15:44:50.139 [main] Billboardspage - >> Admin/User clicked new billboard btn
+[INFO ] 2024-07-04 15:45:01.857 [main] Testhooks - Failed scenario screenshot got capturedT002_Invite the Billboard with valid inputs
+[INFO ] 2024-07-04 15:45:16.162 [main] Testhooks - Execution Started
+[INFO ] 2024-07-04 15:45:16.957 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-04 15:45:18.396 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-04 15:45:19.580 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-04 15:45:19.706 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-04 15:45:19.814 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-04 15:45:19.814 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-04 15:45:22.296 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-04 15:45:23.547 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-04 15:45:23.805 [main] Billboardspage - >> Admin/User clicked new billboard btn
+[INFO ] 2024-07-04 15:45:35.120 [main] Testhooks - Failed scenario screenshot got capturedT002_Invite the Billboard with valid inputs
+[INFO ] 2024-07-04 15:46:27.988 [main] Testhooks - Execution Started
+[INFO ] 2024-07-04 15:46:28.825 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-04 15:46:30.186 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-04 15:46:31.397 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-04 15:46:31.522 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-04 15:46:31.625 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-04 15:46:31.625 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-04 15:46:34.038 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-04 15:46:34.601 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-04 15:46:34.914 [main] Billboardspage - >> Admin/User clicked new billboard btn
+[INFO ] 2024-07-04 15:46:46.594 [main] Testhooks - Failed scenario screenshot got capturedT002_Invite the Billboard with valid inputs
+[INFO ] 2024-07-04 15:47:09.309 [main] Testhooks - Execution Started
+[INFO ] 2024-07-04 15:47:10.287 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-04 15:47:11.932 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-04 15:47:13.158 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-04 15:47:13.293 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-04 15:47:13.404 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-04 15:47:13.404 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-04 15:47:16.129 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-04 15:47:16.890 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-04 15:47:17.210 [main] Billboardspage - >> Admin/User clicked new billboard btn
+[INFO ] 2024-07-04 15:47:28.667 [main] Testhooks - Failed scenario screenshot got capturedT002_Invite the Billboard with valid inputs
+[INFO ] 2024-07-04 15:48:25.171 [main] Testhooks - Execution Started
+[INFO ] 2024-07-04 15:48:26.165 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-04 15:48:34.448 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-04 15:48:35.774 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-04 15:48:35.946 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-04 15:48:36.096 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-04 15:48:36.096 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-04 15:48:39.000 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-04 15:48:40.211 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-04 15:48:40.533 [main] Billboardspage - >> Admin/User clicked new billboard btn
+[INFO ] 2024-07-04 15:48:42.008 [main] Testhooks - Failed scenario screenshot got capturedT002_Invite the Billboard with valid inputs
+[INFO ] 2024-07-04 15:49:47.732 [main] Testhooks - Execution Started
+[INFO ] 2024-07-04 15:49:48.692 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-04 15:49:50.670 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-04 15:49:51.885 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-04 15:49:52.022 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-04 15:49:52.142 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-04 15:49:52.142 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-04 15:49:55.088 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-04 15:49:55.905 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-04 15:49:56.244 [main] Billboardspage - >> Admin/User clicked new billboard btn
+[INFO ] 2024-07-04 15:49:57.965 [main] Testhooks - Failed scenario screenshot got capturedT002_Invite the Billboard with valid inputs
+[INFO ] 2024-07-04 15:52:17.187 [main] Testhooks - Execution Started
+[INFO ] 2024-07-04 15:52:18.132 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-04 15:52:19.553 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-04 15:52:20.763 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-04 15:52:20.893 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-04 15:52:21.006 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-04 15:52:21.006 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-04 15:52:23.433 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-04 15:52:24.784 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-04 15:52:25.125 [main] Billboardspage - >> Admin/User clicked new billboard btn
+[INFO ] 2024-07-04 15:52:26.680 [main] Testhooks - Failed scenario screenshot got capturedT002_Invite the Billboard with valid inputs
+[INFO ] 2024-07-04 15:53:22.883 [main] Testhooks - Execution Started
+[INFO ] 2024-07-04 15:53:23.765 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-04 15:53:25.826 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-04 15:53:27.044 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-04 15:53:27.178 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-04 15:53:27.289 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-04 15:53:27.289 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-04 15:53:30.035 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-04 15:53:30.819 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-04 15:53:31.151 [main] Billboardspage - >> Admin/User clicked new billboard btn
+[INFO ] 2024-07-04 15:53:42.680 [main] Testhooks - Failed scenario screenshot got capturedT002_Invite the Billboard with valid inputs
+[INFO ] 2024-07-04 15:54:40.116 [main] Testhooks - Execution Started
+[INFO ] 2024-07-04 15:54:41.049 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-04 15:54:42.514 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-04 15:54:43.726 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-04 15:54:43.852 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-04 15:54:43.962 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-04 15:54:43.962 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-04 15:54:46.826 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-04 15:54:47.598 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-04 15:54:47.905 [main] Billboardspage - >> Admin/User clicked new billboard btn
+[INFO ] 2024-07-04 15:54:59.109 [main] Testhooks - Failed scenario screenshot got capturedT002_Invite the Billboard with valid inputs
+[INFO ] 2024-07-04 15:55:25.994 [main] Testhooks - Execution Started
+[INFO ] 2024-07-04 15:55:26.914 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-04 15:55:28.292 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-04 15:55:29.499 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-04 15:55:29.634 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-04 15:55:29.743 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-04 15:55:29.744 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-04 15:55:32.580 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-04 15:55:33.349 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-04 15:55:33.651 [main] Billboardspage - >> Admin/User clicked new billboard btn
+[INFO ] 2024-07-04 15:55:45.738 [main] Testhooks - Failed scenario screenshot got capturedT002_Invite the Billboard with valid inputs
+[INFO ] 2024-07-04 16:03:56.377 [main] Testhooks - Execution Started
+[INFO ] 2024-07-04 16:03:57.304 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-04 16:03:59.709 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-04 16:04:00.918 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-04 16:04:01.049 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-04 16:04:01.158 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-04 16:04:01.158 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-04 16:04:04.001 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-04 16:04:04.574 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-04 16:04:04.934 [main] Billboardspage - >> Admin/User clicked new billboard btn
+[INFO ] 2024-07-04 16:04:16.117 [main] Testhooks - Failed scenario screenshot got capturedT002_Invite the Billboard with valid inputs
+[INFO ] 2024-07-04 16:06:27.656 [main] Testhooks - Execution Started
+[INFO ] 2024-07-04 16:06:28.626 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-04 16:06:29.940 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-04 16:06:31.161 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-04 16:06:31.292 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-04 16:06:31.405 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-04 16:06:31.405 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-04 16:06:34.493 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-04 16:06:35.293 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-04 16:06:35.609 [main] Billboardspage - >> Admin/User clicked new billboard btn
+[INFO ] 2024-07-04 16:06:57.119 [main] Testhooks - Failed scenario screenshot got capturedT002_Invite the Billboard with valid inputs
+[INFO ] 2024-07-04 16:08:47.608 [main] Testhooks - Execution Started
+[INFO ] 2024-07-04 16:08:48.484 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-04 16:08:50.321 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-04 16:08:51.532 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-04 16:08:51.665 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-04 16:08:51.776 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-04 16:08:51.776 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-04 16:08:54.504 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-04 16:08:55.296 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-04 16:08:55.648 [main] Billboardspage - >> Admin/User clicked new billboard btn
+[INFO ] 2024-07-04 16:09:17.079 [main] Testhooks - Failed scenario screenshot got capturedT002_Invite the Billboard with valid inputs
+[INFO ] 2024-07-04 16:11:00.730 [main] Testhooks - Execution Started
+[INFO ] 2024-07-04 16:11:01.592 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-04 16:11:02.961 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-04 16:11:04.165 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-04 16:11:04.297 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-04 16:11:04.407 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-04 16:11:04.408 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-04 16:11:07.143 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-04 16:11:07.895 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-04 16:11:08.243 [main] Billboardspage - >> Admin/User clicked new billboard btn
+[INFO ] 2024-07-04 16:11:09.891 [main] Testhooks - Failed scenario screenshot got capturedT002_Invite the Billboard with valid inputs
+[INFO ] 2024-07-04 16:12:44.853 [main] Testhooks - Execution Started
+[INFO ] 2024-07-04 16:12:45.753 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-04 16:12:48.335 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-04 16:12:49.547 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-04 16:12:49.675 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-04 16:12:49.786 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-04 16:12:49.786 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-04 16:12:52.585 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-04 16:12:53.815 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-04 16:12:54.101 [main] Billboardspage - >> Admin/User clicked new billboard btn
+[INFO ] 2024-07-04 16:12:58.049 [main] Testhooks - Failed scenario screenshot got capturedT002_Invite the Billboard with valid inputs
+[INFO ] 2024-07-04 16:13:38.333 [main] Testhooks - Execution Started
+[INFO ] 2024-07-04 16:13:39.258 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-04 16:13:40.832 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-04 16:13:42.042 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-04 16:13:42.171 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-04 16:13:42.282 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-04 16:13:42.282 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-04 16:13:45.127 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-04 16:13:45.877 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-04 16:13:46.154 [main] Billboardspage - >> Admin/User clicked new billboard btn
+[INFO ] 2024-07-04 16:13:50.268 [main] Testhooks - Failed scenario screenshot got capturedT002_Invite the Billboard with valid inputs
+[INFO ] 2024-07-04 16:15:52.921 [main] Testhooks - Execution Started
+[INFO ] 2024-07-04 16:15:53.921 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-04 16:15:55.336 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-04 16:15:56.555 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-04 16:15:56.688 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-04 16:15:56.799 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-04 16:15:56.799 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-04 16:15:59.611 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-04 16:16:00.759 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-04 16:16:01.110 [main] Billboardspage - >> Admin/User clicked new billboard btn
+[INFO ] 2024-07-04 16:16:25.513 [main] Testhooks - Failed scenario screenshot got capturedT002_Invite the Billboard with valid inputs
+[INFO ] 2024-07-04 16:17:21.230 [main] Testhooks - Execution Started
+[INFO ] 2024-07-04 16:17:22.162 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-04 16:17:23.754 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-04 16:17:24.977 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-04 16:17:25.112 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-04 16:17:25.226 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-04 16:17:25.227 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-04 16:17:28.092 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-04 16:17:28.893 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-04 16:17:29.208 [main] Billboardspage - >> Admin/User clicked new billboard btn
+[INFO ] 2024-07-04 16:17:36.186 [main] Billboardspage - >> Admin/User clicked new billboard btn
+[INFO ] 2024-07-04 16:24:10.096 [main] Testhooks - Execution Started
+[INFO ] 2024-07-04 16:24:11.035 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-04 16:24:12.776 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-04 16:24:13.998 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-04 16:24:14.134 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-04 16:24:14.245 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-04 16:24:14.246 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-04 16:24:16.970 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-04 16:24:17.615 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-04 16:24:17.968 [main] Billboardspage - >> Admin/User clicked new billboard btn
+[INFO ] 2024-07-04 16:24:21.979 [main] Testhooks - Failed scenario screenshot got capturedT002_Invite the Billboard with valid inputs
+[INFO ] 2024-07-04 16:25:54.048 [main] Testhooks - Execution Started
+[INFO ] 2024-07-04 16:25:54.952 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-04 16:25:56.434 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-04 16:25:57.644 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-04 16:25:57.774 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-04 16:25:57.885 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-04 16:25:57.886 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-04 16:26:00.766 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-04 16:26:01.618 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-04 16:26:01.905 [main] Billboardspage - >> Admin/User clicked new billboard btn
+[INFO ] 2024-07-04 16:26:29.655 [main] Testhooks - Failed scenario screenshot got capturedT002_Invite the Billboard with valid inputs
+[INFO ] 2024-07-04 16:28:41.891 [main] Testhooks - Execution Started
+[INFO ] 2024-07-04 16:28:42.802 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-04 16:28:44.207 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-04 16:28:45.420 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-04 16:28:45.557 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-04 16:28:45.666 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-04 16:28:45.667 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-04 16:28:48.504 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-04 16:28:49.186 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-04 16:28:49.527 [main] Billboardspage - >> Admin/User clicked new billboard btn
+[INFO ] 2024-07-04 16:29:16.900 [main] Testhooks - Failed scenario screenshot got capturedT002_Invite the Billboard with valid inputs
+[INFO ] 2024-07-04 16:30:06.840 [main] Testhooks - Execution Started
+[INFO ] 2024-07-04 16:30:07.762 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-04 16:30:09.207 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-04 16:30:10.423 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-04 16:30:10.555 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-04 16:30:10.660 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-04 16:30:10.660 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-04 16:30:13.476 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-04 16:30:14.712 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-04 16:30:14.977 [main] Billboardspage - >> Admin/User clicked new billboard btn
+[INFO ] 2024-07-04 16:30:41.184 [main] Testhooks - Failed scenario screenshot got capturedT002_Invite the Billboard with valid inputs
+[INFO ] 2024-07-04 16:31:20.089 [main] Testhooks - Execution Started
+[INFO ] 2024-07-04 16:31:21.004 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-04 16:31:22.330 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-04 16:31:23.544 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-04 16:31:23.676 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-04 16:31:23.789 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-04 16:31:23.789 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-04 16:31:26.685 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-04 16:31:27.390 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-04 16:31:27.730 [main] Billboardspage - >> Admin/User clicked new billboard btn
+[INFO ] 2024-07-04 16:31:34.261 [main] Testhooks - Failed scenario screenshot got capturedT002_Invite the Billboard with valid inputs
+[INFO ] 2024-07-04 16:33:08.865 [main] Testhooks - Execution Started
+[INFO ] 2024-07-04 16:33:09.794 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-04 16:33:11.585 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-04 16:33:12.789 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-04 16:33:12.922 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-04 16:33:13.035 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-04 16:33:13.035 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-04 16:33:15.867 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-04 16:33:16.635 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-04 16:33:16.942 [main] Billboardspage - >> Admin/User clicked new billboard btn
+[INFO ] 2024-07-04 16:33:21.541 [main] Testhooks - Failed scenario screenshot got capturedT002_Invite the Billboard with valid inputs
+[INFO ] 2024-07-04 16:33:59.583 [main] Testhooks - Execution Started
+[INFO ] 2024-07-04 16:34:00.526 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-04 16:34:02.073 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-04 16:34:03.276 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-04 16:34:03.411 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-04 16:34:03.522 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-04 16:34:03.522 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-04 16:34:06.391 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-04 16:34:07.396 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-04 16:34:07.692 [main] Billboardspage - >> Admin/User clicked new billboard btn
+[INFO ] 2024-07-04 16:34:11.905 [main] Testhooks - Failed scenario screenshot got capturedT002_Invite the Billboard with valid inputs
+[INFO ] 2024-07-04 16:34:44.675 [main] Testhooks - Execution Started
+[INFO ] 2024-07-04 16:34:45.620 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-04 16:34:47.146 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-04 16:34:48.363 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-04 16:34:48.493 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-04 16:34:48.603 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-04 16:34:48.603 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-04 16:34:51.463 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-04 16:34:52.523 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-04 16:34:52.858 [main] Billboardspage - >> Admin/User clicked new billboard btn
+[INFO ] 2024-07-04 16:34:57.365 [main] Testhooks - Failed scenario screenshot got capturedT002_Invite the Billboard with valid inputs
+[INFO ] 2024-07-04 16:36:34.108 [main] Testhooks - Execution Started
+[INFO ] 2024-07-04 16:36:35.046 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-04 16:36:37.466 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-04 16:36:38.680 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-04 16:36:38.812 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-04 16:36:38.925 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-04 16:36:38.926 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-04 16:36:41.724 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-04 16:36:42.384 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-04 16:36:42.745 [main] Billboardspage - >> Admin/User clicked new billboard btn
+[INFO ] 2024-07-04 16:38:03.310 [main] Testhooks - Execution Started
+[INFO ] 2024-07-04 16:38:04.222 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-04 16:38:05.786 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-04 16:38:07.008 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-04 16:38:07.141 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-04 16:38:07.252 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-04 16:38:07.252 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-04 16:38:10.123 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-04 16:38:10.861 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-04 16:38:11.200 [main] Billboardspage - >> Admin/User clicked new billboard btn
+[INFO ] 2024-07-04 16:38:15.678 [main] Testhooks - Failed scenario screenshot got capturedT002_Invite the Billboard with valid inputs
+[INFO ] 2024-07-04 16:40:28.320 [main] Testhooks - Execution Started
+[INFO ] 2024-07-04 16:40:29.147 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-04 16:40:30.526 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-04 16:40:31.706 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-04 16:40:31.829 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-04 16:40:31.932 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-04 16:40:31.932 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-04 16:40:34.653 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-04 16:40:35.298 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-04 16:40:35.613 [main] Billboardspage - >> Admin/User clicked new billboard btn
+[INFO ] 2024-07-04 16:40:41.853 [main] Billboardspage - >> Admin/User clicked new billboard btn
+[INFO ] 2024-07-04 16:42:50.157 [main] Testhooks - Execution Started
+[INFO ] 2024-07-04 16:42:51.055 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-04 16:42:52.561 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-04 16:42:53.747 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-04 16:42:53.870 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-04 16:42:53.976 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-04 16:42:53.976 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-04 16:42:56.775 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-04 16:42:57.362 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-04 16:43:07.760 [main] Testhooks - Failed scenario screenshot got capturedT003_ the billboards feature search
+[INFO ] 2024-07-04 16:43:30.843 [main] Testhooks - Execution Started
+[INFO ] 2024-07-04 16:43:31.681 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-04 16:43:33.031 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-04 16:43:34.244 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-04 16:43:34.368 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-04 16:43:34.474 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-04 16:43:34.474 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-04 16:43:37.310 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-04 16:43:37.962 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-04 16:43:38.326 [main] Billboardspage - >> Admin/User clicked new billboard btn
+[INFO ] 2024-07-04 16:43:51.420 [main] Testhooks - Execution Started
+[INFO ] 2024-07-04 16:43:52.336 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-04 16:43:53.832 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-04 16:43:55.039 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-04 16:43:55.172 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-04 16:43:55.286 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-04 16:43:55.286 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-04 16:43:57.776 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-04 16:44:00.880 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-04 16:44:17.945 [main] Testhooks - Execution Started
+[INFO ] 2024-07-04 16:44:18.792 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-04 16:44:20.300 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-04 16:44:21.471 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-04 16:44:21.598 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-04 16:44:21.700 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-04 16:44:21.700 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-04 16:44:24.614 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-04 16:44:25.494 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-04 16:46:36.188 [main] Testhooks - Execution Started
+[INFO ] 2024-07-04 16:46:37.114 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-04 16:46:38.599 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-04 16:46:39.797 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-04 16:46:39.924 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-04 16:46:40.031 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-04 16:46:40.031 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-04 16:46:42.921 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-04 16:46:43.572 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-04 16:46:53.975 [main] Testhooks - Failed scenario screenshot got capturedT003_ the billboards feature search
+[INFO ] 2024-07-04 17:47:02.951 [main] Testhooks - Execution Started
+[INFO ] 2024-07-04 17:47:04.041 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-04 17:47:06.344 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-04 17:47:07.568 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-04 17:47:07.713 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-04 17:47:07.828 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-04 17:47:07.829 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-04 17:47:10.660 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-04 17:47:11.453 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-04 17:47:12.076 [main] Billboardspage - >> Admin/User clicked new billboard btn
+[INFO ] 2024-07-04 18:25:27.130 [main] Testhooks - Execution Started
+[INFO ] 2024-07-04 18:25:28.202 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-04 18:25:30.782 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-04 18:25:32.031 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-04 18:25:32.201 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-04 18:25:32.349 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-04 18:25:32.349 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-04 18:25:34.785 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-04 18:25:36.191 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-04 18:25:36.870 [main] Billboardspage - >> Admin/User clicked new billboard btn
+[INFO ] 2024-07-04 18:26:10.700 [main] Testhooks - Execution Started
+[INFO ] 2024-07-04 18:26:11.715 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-04 18:26:13.404 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-04 18:26:14.642 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-04 18:26:14.816 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-04 18:26:14.959 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-04 18:26:14.959 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-04 18:26:17.876 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-04 18:26:19.157 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-04 18:26:39.672 [main] Testhooks - Failed scenario screenshot got capturedT004_To verify the billboards feature sort recently updated
+[INFO ] 2024-07-04 18:35:53.263 [main] Testhooks - Execution Started
+[INFO ] 2024-07-04 18:35:54.436 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-04 18:35:55.964 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-04 18:35:57.186 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-04 18:35:57.334 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-04 18:35:57.461 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-04 18:35:57.461 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-04 18:36:00.495 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-04 18:36:01.525 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-04 18:36:22.078 [main] Testhooks - Failed scenario screenshot got capturedT004_To verify the billboards feature sort recently updated
+[INFO ] 2024-07-04 18:37:12.405 [main] Testhooks - Execution Started
+[INFO ] 2024-07-04 18:37:13.406 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-04 18:37:15.024 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-04 18:37:16.248 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-04 18:37:16.393 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-04 18:37:16.511 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-04 18:37:16.511 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-04 18:37:19.453 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-04 18:37:20.066 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-07-04 18:45:33.348 [main] Testhooks - Execution Started
+[INFO ] 2024-07-04 18:45:34.358 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-04 18:45:35.940 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-04 18:45:37.163 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-04 18:45:37.314 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-04 18:45:37.437 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-04 18:45:37.437 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-04 18:45:40.436 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-04 18:45:41.312 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-04 19:14:21.205 [main] Testhooks - Execution Started
+[INFO ] 2024-07-04 19:14:22.259 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-04 19:14:24.430 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-04 19:14:25.642 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-04 19:14:25.788 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-04 19:14:25.906 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-04 19:14:25.907 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-04 19:14:28.786 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-04 19:14:29.511 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-04 19:29:28.289 [main] Testhooks - Execution Started
+[INFO ] 2024-07-04 19:29:29.334 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-04 19:29:31.094 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-04 19:29:32.316 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-04 19:29:32.463 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-04 19:29:32.582 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-04 19:29:32.582 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-04 19:29:35.511 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-04 19:29:36.361 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-04 19:40:25.888 [main] Testhooks - Execution Started
+[INFO ] 2024-07-04 19:40:26.892 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-04 19:40:28.417 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-04 19:40:29.635 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-04 19:40:29.780 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-04 19:40:29.904 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-04 19:40:29.905 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-04 19:40:32.855 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-04 19:40:33.632 [main] Billboardspage - >> Admin/User got navigated to billboard page

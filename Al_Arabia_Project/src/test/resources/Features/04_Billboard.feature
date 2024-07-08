@@ -166,14 +166,70 @@ And Admin or user clicks the billboards module
 And User filter the billboards Online Team viewer Novastar IVMS with Not installed
 Then Online and Not installed status billboards list get displayed successfully for IVMS and Novastar
 
-#@billboards @billboards21 @smoke @regression @all
-#Scenario Outline: T021_To verify the billboards feature filters Offine for Team Viewer,Novostar and Not installed for IVMS 4200 N/A,Novastar N/A
-#Given Admin logged in with valid credentials
-#When Al-Arabia overall dashboard should display
-#And Admin or user clicks the billboards module
-#And User filter the billboards Offline Team viewer Novastar IVMS with Not installed
-#Then Online and Not installed status billboards list get displayed successfully for IVMS and Novastar
+@billboards @billboards21 @smoke @regression @all
+Scenario Outline: T021_To verify the billboards feature filters Offine for Team Viewer,Novostar and Not installed for IVMS 4200 N/A,Novastar N/A
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the billboards module
+And User filter the billboards Offline Team viewer Novastar IVMS with Not installed
+Then Offline and Not installed status billboards list get displayed successfully for IVMS and Novastar
 
+@billboards @billboards22 @smoke @regression @all
+Scenario Outline: T022_To verify the billboards feature filter Screen resolution
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the billboards module
+And User filter the Screen resolution drop down
+Then Screen resolution billboards list get displayed successfully
+
+@billboards @billboards23 @smoke @regression @all
+Scenario Outline: T023_To verify the billboards feature Download button
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the billboards module
+And User clicks Download button 
+Then Download pop up displayed successfully
+
+@billboards @billboards24 @smoke @regression @all
+Scenario Outline: T024_To verify the billboards feature Download as excel
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the billboards module
+And User clicks Download button with Download As Excel
+Then Excel file will be downloaded successfully as "<successMessage>"
+  Examples:
+      | successMessage       |
+      | LOADING...           |
+
+@billboards @billboards25 @smoke @regression @all
+Scenario Outline: T025_To verify the billboards feature Download as excel
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the billboards module
+And User clicks Download button with Download As PDF
+Then PDF file will be downloaded successfully as "<successMessage>"
+  Examples:
+      | successMessage       |
+      | LOADING...           |
+      
+@billboards @billboards26 @smoke @regression @all
+Scenario Outline: T026_To verify the billboards feature Download as excel
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the billboards module
+And User clicks Download button with Download As QR Code
+Then QR file will be downloaded successfully as "<successMessage>"
+  Examples:
+      | successMessage       |
+      | LOADING...           |  
+@billboards @billboards27 @smoke @regression @all
+Scenario Outline: T027_To verify the billboards feature Close button in Download popup
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the billboards module
+And User clicks Download button after that click on close button 
+Then Download pop up get closed successfully and display the Billboard list
+          
 #@billboards @billboards18 @sanity @regression @all
 #Scenario Outline: T018_To verify the billboards feature filter with multiple selected options
 #Given Admin logged in with valid credentials

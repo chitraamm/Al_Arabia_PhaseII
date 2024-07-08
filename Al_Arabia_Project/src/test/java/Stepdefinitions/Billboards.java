@@ -1,5 +1,6 @@
 package Stepdefinitions;
 
+import static org.junit.Assert.assertEquals;
 //import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
@@ -247,5 +248,91 @@ public class Billboards extends Base {
 	@Then("Online and Not installed status billboards list get displayed successfully for IVMS and Novastar")
 	public void Online_and_Not_installed_status_billboards_list_get_displayed_successfully_for_IVMS_and_Novastar () throws Exception {
 	    billboardsPage.BB_filtered_result_display();
+}
+	@And("User filter the billboards Offline Team viewer Novastar IVMS with Not installed")
+	public void User_filter_the_billboards_Offline_Team_viewer_Novastar_IVMS_with_Not_installed() throws Exception {
+	    billboardsPage.BB_filter_offline_Not_installed();
+}
+	@Then("Offline and Not installed status billboards list get displayed successfully for IVMS and Novastar")
+	public void Offline_and_Not_installed_status_billboards_list_get_displayed_successfully_for_IVMS_and_Novastar () throws Exception {
+	    billboardsPage.BB_filtered_result_display();
+}
+	
+	@And("User filter the Screen resolution drop down")
+	public void User_filter_the_Screen_resolution_drop_down() throws Exception {
+	    billboardsPage.BB_filter_Screen_Resolution();
+}
+	@Then("Screen resolution billboards list get displayed successfully")
+	public void Screen_resolution_billboards_list_get_displayed_successfully () throws Exception {
+	    billboardsPage.BB_filtered_result_display();
+}
+	@And("User clicks Download button")
+	public void User_clicks_Download_button() throws Exception {
+	    billboardsPage.BB_Download_popup();
+}
+	@Then("Download pop up displayed successfully")
+	public void Download_pop_up_displayed_successfully () throws Exception {
+	    billboardsPage.BB_Download_popup_display();
+}
+	@And("User clicks Download button with Download As Excel")
+	public void User_clicks_Download_button_with_Download_As_Excel() throws Exception {
+		billboardsPage.BB_Download_popup();
+		billboardsPage.BB_Download_excel();
+}
+	@And("Excel file will be downloaded successfully as")
+	public void Excel_file_will_be_downloaded_successfully () throws Exception {
+	    billboardsPage.BB_Download_popup_display();
+}
+	
+	@Then("^Excel file will be downloaded successfully as \"([^\"]*)\"$")
+  public void Excel_file_will_be_downloaded_successfully(String expectedMessage) throws Exception {
+      String actualMessage = billboardsPage.billboard_created_Success_display();
+      String normalizedExpectedMessage = normalizeWhitespace(expectedMessage);
+      String normalizedActualMessage = normalizeWhitespace(actualMessage);
+      System.out.println(">> User or Admin got the BB excel downloaded successfully"+actualMessage);
+      assertEquals(normalizedExpectedMessage, normalizedActualMessage);
+  }
+	@And("User clicks Download button with Download As PDF")
+	public void User_clicks_Download_button_with_Download_As_PDF() throws Exception {
+		billboardsPage.BB_Download_popup();
+		billboardsPage.BB_Download_PDF();
+}
+	@And("PDF file will be downloaded successfully as")
+	public void PDF_file_will_be_downloaded_successfully () throws Exception {
+	    billboardsPage.BB_Download_popup_display();
+}
+	@Then("^PDF file will be downloaded successfully as \"([^\"]*)\"$")
+	  public void PDF_file_will_be_downloaded_successfully(String expectedMessage) throws Exception {
+	      String actualMessage = billboardsPage.billboard_created_Success_display();
+	      String normalizedExpectedMessage = normalizeWhitespace(expectedMessage);
+	      String normalizedActualMessage = normalizeWhitespace(actualMessage);
+	      System.out.println(">> User or Admin got the BB PDF downloaded successfully"+actualMessage);
+	      assertEquals(normalizedExpectedMessage, normalizedActualMessage);
+	  }
+	@And("User clicks Download button with Download As QR Code")
+	public void User_clicks_Download_button_with_Download_As_QR_Code() throws Exception {
+		billboardsPage.BB_Download_popup();
+		billboardsPage.BB_Download_QR_Code_file();
+}
+	@And("QR Code file will be downloaded successfully as")
+	public void QR_Code_file_will_be_downloaded_successfully () throws Exception {
+	    billboardsPage.BB_Download_popup_display();
+}
+	@Then("^QR file will be downloaded successfully as \"([^\"]*)\"$")
+	  public void QR_Code_file_will_be_downloaded_successfully(String expectedMessage) throws Exception {
+	      String actualMessage = billboardsPage.billboard_created_Success_display();
+	      String normalizedExpectedMessage = normalizeWhitespace(expectedMessage);
+	      String normalizedActualMessage = normalizeWhitespace(actualMessage);
+	      System.out.println(">> User or Admin got the QR code file downloaded successfully"+actualMessage);
+	      assertEquals(normalizedExpectedMessage, normalizedActualMessage);
+	  }
+	@And("User clicks Download button after that click on close button")
+	public void User_clicks_Download_button_after_that_click_on_close_button() throws Exception {
+		billboardsPage.BB_Download_popup();
+		billboardsPage.BB_Download_popup_close();
+}
+	@Then("Download pop up get closed successfully and display the Billboard list")
+	public void Download_pop_up_get_closed_successfully_and_display_the_Billboard_list () throws Exception {
+	    billboardsPage.BB_Download_popupclosd_displayed_Billboards();
 }
 }

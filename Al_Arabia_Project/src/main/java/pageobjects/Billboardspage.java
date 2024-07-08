@@ -317,7 +317,6 @@ public class Billboardspage extends Base {
 		System.out.println(">> User clicked Request status in filter");
 	}
 
-
 	// <-------------------------------------Filter by Location
 	// EnterDropdown---------------------------------------->
 
@@ -334,7 +333,6 @@ public class Billboardspage extends Base {
 		System.out.println(">> User selected the bb location in filter" + bb_location);
 	}
 
-	
 	// <-------------------------------------Filter by Bill Board Ticket
 	// count---------------------------------------->
 
@@ -349,7 +347,6 @@ public class Billboardspage extends Base {
 		act.moveToElement(Billboard_filter_apply_btn).click().perform();
 		System.out.println(">> User entered the Ticket count in filter");
 	}
-
 
 	// <-------------------------------------Filter by Bill Board Type drop down
 	// ---------------------------------------->
@@ -367,7 +364,6 @@ public class Billboardspage extends Base {
 		System.out.println(">> User selected the bb Type in filter" + bb_Type);
 	}
 
-	
 	// <-------------------------------------Filter Online status for Team
 	// viewer,Novostar,IVMS ---------------------------------------->
 
@@ -388,8 +384,6 @@ public class Billboardspage extends Base {
 		System.out.println(">> User clicked Offline status in filter");
 	}
 
-	
-
 //<-------------------------------------Filter Offline status for Team viewer,Novostar,IVMS ---------------------------------------->
 
 	@FindBy(xpath = "(//span[contains(text(),'Offline')])[1]")
@@ -409,8 +403,6 @@ public class Billboardspage extends Base {
 		System.out.println(">> User clicked Offline status in filter");
 	}
 
-	
-
 //<-------------------------------------Filter installed for Novostar,IVMS ---------------------------------------->
 
 	@FindBy(xpath = "(//span[@id='installed'])[1]")
@@ -427,7 +419,6 @@ public class Billboardspage extends Base {
 		System.out.println(">> User clicked IVMS and Novastar installed status in filter");
 	}
 
-	
 //<-------------------------------------Filter Not installed status for Novostar,IVMS ---------------------------------------->
 
 	@FindBy(xpath = "(//span[@id='not_installed'])[1]")
@@ -457,7 +448,7 @@ public class Billboardspage extends Base {
 		act.moveToElement(Billboard_filter_apply_btn).click().perform();
 		System.out.println(">> User filtered the online with ivms and novastar installed BB");
 	}
-//<----------------------common if condition--------------------------------------------->
+//<----------------------common if condition for filters--------------------------------------------->
 
 	public void BB_filtered_result_display() {
 		try {
@@ -472,7 +463,8 @@ public class Billboardspage extends Base {
 			wait.until(ExpectedConditions.visibilityOf(billboard_no_BB_found));
 		}
 	}
-	//<-------------------------------------Filter Offline and installed status for BillBoards ---------------------------------------->
+	// <-------------------------------------Filter Offline and installed status for
+	// BillBoards ---------------------------------------->
 
 	public void BB_filter_offline_installed() throws InterruptedException {
 
@@ -485,8 +477,9 @@ public class Billboardspage extends Base {
 		act.moveToElement(Billboard_filter_apply_btn).click().perform();
 		System.out.println(">> User filtered the offline with ivms and novastar installed BB");
 	}
-	
-	//<-------------------------------------Filter Online and Not installed status for BillBoards ---------------------------------------->
+
+	// <-------------------------------------Filter Online and Not installed status
+	// for BillBoards ---------------------------------------->
 
 	public void BB_filter_online_Not_installed() throws InterruptedException {
 
@@ -499,5 +492,104 @@ public class Billboardspage extends Base {
 		act.moveToElement(Billboard_filter_apply_btn).click().perform();
 		System.out.println(">> User filtered the online with ivms and novastar Not installed BB");
 	}
-}
 
+	// <-------------------------------------Filter Online and Not installed status
+	// for BillBoards ---------------------------------------->
+	public void BB_filter_offline_Not_installed() throws InterruptedException {
+
+		wait.until(ExpectedConditions.visibilityOf(Billboard_filter)).click();
+		wait.until(ExpectedConditions.visibilityOf(teamvieweroffline)).click();
+		act.moveToElement(novostaroffline).click().perform();
+		act.moveToElement(ivmsoffline).click().perform();
+		act.moveToElement(IVMS_Not_installed).click().perform();
+		act.moveToElement(Novastar_Not_installed).click().perform();
+		act.moveToElement(Billboard_filter_apply_btn).click().perform();
+		System.out.println(">> User filtered the online with ivms and novastar Not installed BB");
+
+	}
+	// <-------------------------------------Filter Screen Resolution for BillBoards
+	// ---------------------------------------->
+
+	@FindBy(id = "react-select-5-input")
+	private WebElement scr_Resolutiondropdown;
+
+	public void BB_filter_Screen_Resolution() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(Billboard_filter)).click();
+		act.moveToElement(Billboard_filter_apply_btn).perform();
+		Thread.sleep(2000);
+
+		act.moveToElement(scr_Resolutiondropdown).click().sendKeys("" + Keys.ARROW_DOWN + Keys.ENTER).perform();
+
+		act.moveToElement(Billboard_filter_apply_btn).click().perform();
+		System.out.println(">> User selected the Screen resolution in filter");
+	}
+	// <-------------------------------------Download button for BillBoards
+	// ---------------------------------------->
+
+	@FindBy(xpath = "(//h6[contains(@class,'m-0 fw-normal')][normalize-space()='Download'])[1]")
+	private WebElement BB_Download_btn;
+
+	public void BB_Download_popup() throws Exception {
+
+		act.moveToElement(BB_Download_btn).click().perform();
+	}
+
+	// <-------------------------------------Download popup display for BillBoards
+	// ---------------------------------------->
+	@FindBy(xpath = "(//div[@class='modal-header'])[1]")
+	private WebElement BB_Download_popup_display;
+
+	public void BB_Download_popup_display() {
+		wait.until(ExpectedConditions.visibilityOf(BB_Download_popup_display)).isDisplayed();
+		AssertJUnit.assertTrue(BB_Download_popup_display.isDisplayed());
+		LOGGER.info(">> The Download Popup got displayed");
+	}
+
+	// <-------------------------------------Clicked Download As excel in Billboards
+	// ---------------------------------------->
+	@FindBy(xpath = "(//div[normalize-space()='As QR Code'])[1]")
+	private WebElement BB_Download_excel;
+
+	public void BB_Download_excel() throws Exception {
+
+		act.moveToElement(BB_Download_excel).click().perform();
+	}
+	// <-------------------------------------Clicked Download As PDF in Billboards
+		// ---------------------------------------->
+	@FindBy(xpath = "(//div[normalize-space()='As PDF'])[1]")
+	private WebElement BB_Download_As_PDF;
+
+	public void BB_Download_PDF() throws Exception {
+
+		act.moveToElement(BB_Download_As_PDF).click().perform();
+	}
+	// <-------------------------------------Clicked Download As QR Code file in Billboards
+			// ---------------------------------------->
+	@FindBy(xpath = "(//div[normalize-space()='As QR Code'])[1]")
+	private WebElement BB_Download_As_QR_Code_file;
+
+	public void BB_Download_QR_Code_file() throws Exception {
+
+		act.moveToElement(BB_Download_As_QR_Code_file).click().perform();
+	}
+	// <-------------------------------------Clicked Close button in Download popup in Billboards
+				// ---------------------------------------->
+		@FindBy(xpath = "(//div[@role='dialog'])[1]")
+		private WebElement BB_Download_popupclose;
+
+		public void BB_Download_popup_close() throws Exception {
+
+			act.moveToElement(BB_Download_popupclose).click().perform();
+		}
+		// <-------------------------------------------Download popup closed and displayed Billboard list
+		// ---------------------------------------->
+       @FindBy(xpath = "(//h5[contains(@class,'mb-0')])[1]")
+        private WebElement BB_Download_popupclosed_and_displyd_billboards;
+
+       public void BB_Download_popupclosd_displayed_Billboards() {
+   		wait.until(ExpectedConditions.visibilityOf(BB_Download_popupclosed_and_displyd_billboards)).isDisplayed();
+   		AssertJUnit.assertTrue(BB_Download_popupclosed_and_displyd_billboards.isDisplayed());
+   		LOGGER.info(">> The Download Popup get closed and listed BillBoards");
+   	} 
+		
+}

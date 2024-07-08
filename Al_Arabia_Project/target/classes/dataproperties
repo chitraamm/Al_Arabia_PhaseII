@@ -41,6 +41,7 @@ BB_NO = BB_NO_01865
 bb_location = Riyadh
 bb_ticket_count = 2
 bb_Type = Kazi
+Scr_Resolution = 1.24	
 
 <-------Profile------>
 personalinfo = coducer

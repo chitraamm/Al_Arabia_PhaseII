@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="9.398" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="billboards" name="T027_To verify the billboards feature Close button in Download popup" time="9.135">
+<system-out><![CDATA[
+Given Admin logged in with valid credentials................................passed
+When Al-Arabia overall dashboard should display.............................passed
+And Admin or user clicks the billboards module..............................passed
+And User clicks Download button after that click on close button............passed
+Then Download pop up get closed successfully and display the Billboard list.passed
+]]></system-out>
+</testcase>
+</testsuite>

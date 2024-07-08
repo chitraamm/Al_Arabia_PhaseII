@@ -118,30 +118,62 @@ And Admin or user clicks the billboards module
 And User filter the billboards Online Team viewer Novastar IVMS 
 Then Online billboards list get displayed successfully for Team viewer Novastar IVMS 
 
-#@billboards @billboards15 @smoke @regression @all
-#Scenario Outline: T015_To verify the billboards feature filter technician role billboards
+@billboards @billboards15 @smoke @regression @all
+Scenario Outline: T015_To verify the billboards feature filters Offline for Team viewer,Novastar,IVMS 
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the billboards module
+And User filter the billboards Offline Team viewer Novastar IVMS 
+Then Offline billboards list get displayed successfully for Team viewer Novastar IVMS
+
+@billboards @billboards16 @smoke @regression @all
+Scenario Outline: T016_To verify the billboards feature filters installed for IVMS 4200 N/A,Novastar N/A
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the billboards module
+And User filter the billboards installed IVMS and Novastar 
+Then installed billboards list get displayed successfully for IVMS and Novastar
+
+@billboards @billboards17 @smoke @regression @all
+Scenario Outline: T017_To verify the billboards feature filters Not installed for IVMS 4200 N/A,Novastar N/A
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the billboards module
+And User filter the billboards Not installed IVMS and Novastar 
+Then Not installed billboards list get displayed successfully for IVMS and Novastar
+
+@billboards @billboards18 @smoke @regression @all
+Scenario Outline: T018_To verify the billboards feature filters Online for Team Viewer,Novostar and installed for IVMS 4200 N/A,Novastar N/A
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the billboards module
+And User filter the billboards installed IVMS and Novastar with online
+Then Online and installed status billboards list get displayed successfully for IVMS and Novastar
+
+@billboards @billboards19 @smoke @regression @all
+Scenario Outline: T019_To verify the billboards feature filters Onine for Team Viewer,Novostar and installed for IVMS 4200 N/A,Novastar N/A
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the billboards module
+And User filter the billboards Offline Team viewer Novastar IVMS with installed
+Then Offline and installed status billboards list get displayed successfully for IVMS and Novastar
+
+@billboards @billboards20 @smoke @regression @all
+Scenario Outline: T020_To verify the billboards feature filters Onine for Team Viewer,Novostar and Not installed for IVMS 4200 N/A,Novastar N/A
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the billboards module
+And User filter the billboards Online Team viewer Novastar IVMS with Not installed
+Then Online and Not installed status billboards list get displayed successfully for IVMS and Novastar
+
+#@billboards @billboards21 @smoke @regression @all
+#Scenario Outline: T021_To verify the billboards feature filters Offine for Team Viewer,Novostar and Not installed for IVMS 4200 N/A,Novastar N/A
 #Given Admin logged in with valid credentials
 #When Al-Arabia overall dashboard should display
 #And Admin or user clicks the billboards module
-#And User filter the billboards list role technician
-#Then Technician billboards list get displayed successfully
-#
-#@billboards @billboards16 @smoke @regression @all
-#Scenario Outline: T016_To verify the billboards feature filter electrical dept billboards
-#Given Admin logged in with valid credentials
-#When Al-Arabia overall dashboard should display
-#And Admin or user clicks the billboards module
-#And User filter the billboards list dept-electrical
-#Then Electrical dept billboards list get displayed successfully
-#
-#@billboards @billboards17 @smoke @regression @all
-#Scenario Outline: T017_To verify the billboards feature filter resposible area
-#Given Admin logged in with valid credentials
-#When Al-Arabia overall dashboard should display
-#And Admin or user clicks the billboards module
-#And User filter the billboards list responsible area
-#Then Responsible area billboards list get displayed successfully
-#
+#And User filter the billboards Offline Team viewer Novastar IVMS with Not installed
+#Then Online and Not installed status billboards list get displayed successfully for IVMS and Novastar
+
 #@billboards @billboards18 @sanity @regression @all
 #Scenario Outline: T018_To verify the billboards feature filter with multiple selected options
 #Given Admin logged in with valid credentials

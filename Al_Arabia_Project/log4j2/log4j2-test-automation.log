@@ -1,20 +1,707 @@
-[INFO ] 2024-07-06 01:52:20.438 [main] Testhooks - Execution Started
-[INFO ] 2024-07-06 01:52:21.285 [main] Testhooks - Browser got launched
-[INFO ] 2024-07-06 01:52:25.549 [main] Testhooks - Navigated to url
-[INFO ] 2024-07-06 01:52:47.032 [main] Testhooks - Failed scenario screenshot got capturedT014_To verify the billboards feature filters Online for Team viewer,Novastar,IVMS
-[INFO ] 2024-07-06 01:56:20.694 [main] Testhooks - Execution Started
-[INFO ] 2024-07-06 01:56:21.522 [main] Testhooks - Browser got launched
-[INFO ] 2024-07-06 01:56:25.794 [main] Testhooks - Navigated to url
-[INFO ] 2024-07-06 01:56:26.972 [main] Signinpage - User enters valid email address
-[INFO ] 2024-07-06 01:56:27.097 [main] Signinpage - User enters valid password
-[INFO ] 2024-07-06 01:56:47.632 [main] Testhooks - Failed scenario screenshot got capturedT014_To verify the billboards feature filters Online for Team viewer,Novastar,IVMS
-[INFO ] 2024-07-06 01:58:07.394 [main] Testhooks - Execution Started
-[INFO ] 2024-07-06 01:58:08.171 [main] Testhooks - Browser got launched
-[INFO ] 2024-07-06 01:58:12.455 [main] Testhooks - Navigated to url
-[INFO ] 2024-07-06 01:58:13.661 [main] Signinpage - User enters valid email address
-[INFO ] 2024-07-06 01:58:13.782 [main] Signinpage - User enters valid password
-[INFO ] 2024-07-06 01:58:13.886 [main] Signinpage - User clicks on signin button
-[INFO ] 2024-07-06 01:58:13.886 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-07-06 01:58:16.838 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-07-06 01:58:18.396 [main] Billboardspage - >> Admin/User got navigated to billboard page
-[INFO ] 2024-07-06 01:58:38.866 [main] Testhooks - Failed scenario screenshot got capturedT014_To verify the billboards feature filters Online for Team viewer,Novastar,IVMS
+[INFO ] 2024-07-08 00:02:08.304 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 00:02:09.145 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 00:02:13.455 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 00:02:14.641 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-08 00:02:14.757 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-08 00:02:14.861 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-08 00:02:14.861 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-08 00:02:17.770 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-08 00:02:19.366 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-08 00:02:30.237 [main] Testhooks - Failed scenario screenshot got capturedT015_To verify the billboards feature filters Offline for Team viewer,Novastar,IVMS
+[INFO ] 2024-07-08 00:08:10.461 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 00:08:11.264 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 00:08:15.541 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 00:08:16.730 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-08 00:08:16.855 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-08 00:08:16.963 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-08 00:08:16.963 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-08 00:08:19.619 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-08 00:08:21.565 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-08 00:08:23.531 [main] Testhooks - Failed scenario screenshot got capturedT015_To verify the billboards feature filters Offline for Team viewer,Novastar,IVMS
+[INFO ] 2024-07-08 00:08:47.194 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 00:08:48.034 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 00:08:52.337 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 00:08:53.539 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-08 00:08:53.653 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-08 00:08:53.761 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-08 00:08:53.761 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-08 00:08:56.672 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-08 00:08:58.822 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-08 00:09:00.620 [main] Testhooks - Failed scenario screenshot got capturedT015_To verify the billboards feature filters Offline for Team viewer,Novastar,IVMS
+[INFO ] 2024-07-08 00:09:43.890 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 00:09:44.720 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 00:09:49.030 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 00:09:50.233 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-08 00:09:50.352 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-08 00:09:50.462 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-08 00:09:50.462 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-08 00:09:53.080 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-08 00:09:55.611 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-08 00:09:57.391 [main] Testhooks - Failed scenario screenshot got capturedT015_To verify the billboards feature filters Offline for Team viewer,Novastar,IVMS
+[INFO ] 2024-07-08 00:16:28.671 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 00:16:29.473 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 00:16:34.646 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 00:16:35.875 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-08 00:16:35.995 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-08 00:16:36.103 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-08 00:16:36.104 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-08 00:16:39.129 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-08 00:16:41.748 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-08 00:16:43.575 [main] Testhooks - Failed scenario screenshot got capturedT015_To verify the billboards feature filters Offline for Team viewer,Novastar,IVMS
+[INFO ] 2024-07-08 00:23:19.691 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 00:23:20.480 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 00:23:24.804 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 00:23:25.991 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-08 00:23:26.108 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-08 00:23:26.216 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-08 00:23:26.216 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-08 00:23:28.617 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-08 00:23:31.841 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-08 00:24:01.526 [main] Testhooks - Failed scenario screenshot got capturedT015_To verify the billboards feature filters Offline for Team viewer,Novastar,IVMS
+[INFO ] 2024-07-08 00:31:32.263 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 00:31:33.093 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 00:31:37.916 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 00:31:39.096 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-08 00:31:39.214 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-08 00:31:39.322 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-08 00:31:39.322 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-08 00:31:42.203 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-08 00:31:43.815 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-08 00:31:44.384 [main] Billboardspage - >> User selected the Billboard Type:
+[INFO ] 2024-07-08 00:32:55.406 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 00:32:56.191 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 00:33:00.627 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 00:33:11.582 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 00:33:12.360 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 00:33:16.640 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 00:33:17.840 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-08 00:33:17.959 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-08 00:33:18.065 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-08 00:33:18.065 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-08 00:33:20.918 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-08 00:33:22.531 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-08 00:33:23.338 [main] Billboardspage - >> User selected the Billboard Type:
+[INFO ] 2024-07-08 01:04:18.085 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 01:04:18.862 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 01:04:23.185 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 01:04:24.394 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-08 01:04:24.515 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-08 01:04:24.617 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-08 01:04:24.617 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-08 01:04:27.541 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-08 01:04:29.113 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-08 01:04:29.703 [main] Billboardspage - >> User selected the Billboard Type:
+[INFO ] 2024-07-08 01:05:39.021 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 01:05:39.859 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 01:05:44.255 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 01:05:45.460 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-08 01:05:45.580 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-08 01:05:45.685 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-08 01:05:45.685 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-08 01:05:48.424 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-08 01:05:50.170 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-08 01:05:52.049 [main] Testhooks - Failed scenario screenshot got capturedT015_To verify the billboards feature filters Offline for Team viewer,Novastar,IVMS
+[INFO ] 2024-07-08 01:40:23.569 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 01:40:24.400 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 01:40:29.474 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 01:40:30.663 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-08 01:40:30.800 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-08 01:40:30.930 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-08 01:40:30.930 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-08 01:40:33.418 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-08 01:40:34.750 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-08 01:40:36.316 [main] Testhooks - Failed scenario screenshot got capturedT013_To verify the billboards feature filter Billboard Type
+[INFO ] 2024-07-08 01:41:07.936 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 01:41:08.769 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 01:41:13.103 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 01:41:14.283 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-08 01:41:14.412 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-08 01:41:14.517 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-08 01:41:14.518 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-08 01:41:17.381 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-08 01:41:19.081 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-08 01:41:19.735 [main] Billboardspage - >> User selected the Billboard Type:
+[INFO ] 2024-07-08 09:49:56.791 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 09:49:57.704 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 09:49:59.146 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 09:50:00.358 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-08 09:50:00.494 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-08 09:50:00.647 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-08 09:50:00.648 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-08 09:50:03.437 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-08 09:50:04.186 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-08 09:50:04.486 [main] Billboardspage - >> Admin/User clicked new billboard btn
+[INFO ] 2024-07-08 09:50:28.100 [main] Testhooks - Failed scenario screenshot got capturedT002_Invite the Billboard with valid inputs
+[INFO ] 2024-07-08 09:53:13.957 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 09:53:14.907 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 09:53:16.355 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 09:53:17.568 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-08 09:53:17.702 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-08 09:53:17.814 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-08 09:53:17.815 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-08 09:53:20.661 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-08 09:53:21.520 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-08 09:53:22.216 [main] Billboardspage - >> User selected the Billboard Type:
+[INFO ] 2024-07-08 09:54:39.585 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 09:54:40.455 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 09:54:42.032 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 09:54:43.245 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-08 09:54:43.377 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-08 09:54:43.490 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-08 09:54:43.491 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-08 09:54:46.315 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-08 09:54:47.563 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-08 09:58:06.917 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 09:58:07.827 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 09:58:09.256 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 09:58:10.463 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-08 09:58:10.596 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-08 09:58:10.709 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-08 09:58:10.710 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-08 09:58:13.553 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-08 09:58:14.421 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-08 09:58:15.141 [main] Testhooks - Failed scenario screenshot got capturedT015_To verify the billboards feature filters Offline for Team viewer,Novastar,IVMS
+[INFO ] 2024-07-08 10:03:47.159 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 10:03:48.019 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 10:03:49.646 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 10:03:50.864 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-08 10:03:50.992 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-08 10:03:51.101 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-08 10:03:51.101 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-08 10:03:53.887 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-08 10:03:54.485 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-08 10:03:55.263 [main] Testhooks - Failed scenario screenshot got capturedT015_To verify the billboards feature filters Offline for Team viewer,Novastar,IVMS
+[INFO ] 2024-07-08 10:05:08.030 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 10:05:08.948 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 10:05:10.481 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 10:05:11.694 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-08 10:05:11.827 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-08 10:05:11.940 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-08 10:05:11.940 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-08 10:05:14.680 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-08 10:05:15.382 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-08 10:05:16.192 [main] Testhooks - Failed scenario screenshot got capturedT015_To verify the billboards feature filters Offline for Team viewer,Novastar,IVMS
+[INFO ] 2024-07-08 10:06:15.755 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 10:06:16.678 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 10:06:18.265 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 10:06:19.482 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-08 10:06:19.614 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-08 10:06:19.725 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-08 10:06:19.725 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-08 10:06:22.223 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-08 10:06:23.025 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-08 10:09:35.449 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 10:09:36.414 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 10:09:37.953 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 10:09:39.163 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-08 10:09:39.294 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-08 10:09:39.406 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-08 10:09:39.406 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-08 10:09:42.287 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-08 10:09:43.485 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-08 10:12:46.619 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 10:12:47.540 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 10:12:49.185 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 10:12:50.388 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-08 10:12:50.518 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-08 10:12:50.631 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-08 10:12:50.631 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-08 10:12:53.408 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-08 10:12:54.342 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-08 10:16:50.356 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 10:16:51.350 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 10:17:08.190 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 10:17:09.402 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-08 10:17:09.537 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-08 10:17:09.655 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-08 10:17:09.655 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-08 10:17:12.725 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-08 10:17:15.401 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-08 10:18:08.388 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 10:18:09.288 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 10:18:12.554 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 10:18:13.771 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-08 10:18:13.900 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-08 10:18:14.010 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-08 10:18:14.010 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-08 10:18:19.648 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-08 10:18:22.468 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-08 10:18:46.783 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 10:18:47.964 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 10:18:51.821 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 10:23:19.223 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 10:23:20.160 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 10:23:24.432 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 10:23:25.647 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-08 10:23:25.799 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-08 10:23:25.911 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-08 10:23:25.911 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-08 10:23:28.625 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-08 10:23:34.996 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-08 10:25:16.935 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 10:25:17.813 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 10:25:23.339 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 10:25:24.562 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-08 10:25:24.696 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-08 10:25:24.805 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-08 10:25:24.806 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-08 10:25:27.885 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-08 10:25:28.980 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-08 10:52:55.307 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 10:52:56.226 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 10:53:11.510 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 10:53:12.732 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-08 10:53:12.861 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-08 10:53:12.974 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-08 10:53:12.975 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-08 10:53:17.498 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-08 10:53:19.157 [main] Testhooks - Failed scenario screenshot got capturedT017_To verify the billboards feature filters Not installed for IVMS 4200 N/A,Novastar N/A
+[INFO ] 2024-07-08 10:53:50.494 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 10:53:51.385 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 10:53:59.315 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 10:54:00.530 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-08 10:54:00.695 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-08 10:54:00.810 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-08 10:54:00.810 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-08 10:54:09.343 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-08 10:54:11.029 [main] Testhooks - Failed scenario screenshot got capturedT017_To verify the billboards feature filters Not installed for IVMS 4200 N/A,Novastar N/A
+[INFO ] 2024-07-08 10:55:56.507 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 10:55:57.447 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 10:56:01.827 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 10:56:03.131 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-08 10:56:03.279 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-08 10:56:03.406 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-08 10:56:03.406 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-08 10:56:07.609 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-08 10:56:10.396 [main] Testhooks - Failed scenario screenshot got capturedT017_To verify the billboards feature filters Not installed for IVMS 4200 N/A,Novastar N/A
+[INFO ] 2024-07-08 10:56:35.032 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 10:56:35.997 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 10:56:39.358 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 10:56:40.568 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-08 10:56:40.698 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-08 10:56:40.822 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-08 10:56:40.822 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-08 10:56:44.920 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-08 10:56:46.592 [main] Testhooks - Failed scenario screenshot got capturedT016_To verify the billboards feature filters installed for IVMS 4200 N/A,Novastar N/A
+[INFO ] 2024-07-08 10:59:36.920 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 10:59:37.896 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 10:59:40.719 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 10:59:41.960 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-08 10:59:42.104 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-08 10:59:42.224 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-08 10:59:42.224 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-08 10:59:45.907 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-08 10:59:47.531 [main] Testhooks - Failed scenario screenshot got capturedT016_To verify the billboards feature filters installed for IVMS 4200 N/A,Novastar N/A
+[INFO ] 2024-07-08 11:12:30.939 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 11:12:31.991 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 11:12:48.338 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 11:12:49.541 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-08 11:12:49.665 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-08 11:12:49.778 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-08 11:12:49.778 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-08 11:12:54.192 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-08 11:12:55.681 [main] Testhooks - Failed scenario screenshot got capturedT016_To verify the billboards feature filters installed for IVMS 4200 N/A,Novastar N/A
+[INFO ] 2024-07-08 11:13:36.918 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 11:13:37.835 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 11:13:46.767 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 11:13:48.002 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-08 11:13:48.134 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-08 11:13:48.256 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-08 11:13:48.256 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-08 11:13:51.985 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-08 11:15:36.887 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 11:15:37.824 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 11:15:47.296 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 11:15:48.492 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-08 11:15:48.628 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-08 11:15:48.762 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-08 11:15:48.762 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-08 11:15:51.291 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-08 11:15:52.928 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-08 11:16:45.729 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 11:16:46.616 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 11:17:09.603 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 11:17:41.981 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 11:17:42.913 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 11:18:11.285 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 11:18:12.476 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-08 11:18:12.632 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-08 11:18:12.757 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-08 11:18:12.757 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-08 11:18:17.032 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-08 11:18:19.446 [main] Testhooks - Failed scenario screenshot got capturedT016_To verify the billboards feature filters installed for IVMS 4200 N/A,Novastar N/A
+[INFO ] 2024-07-08 11:18:49.288 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 11:18:50.209 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 11:19:06.089 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 11:19:07.315 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-08 11:19:07.463 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-08 11:19:07.584 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-08 11:19:07.586 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-08 11:19:12.025 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-08 11:19:23.598 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-08 11:20:08.163 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 11:20:09.077 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 11:20:45.555 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 11:20:46.770 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-08 11:20:46.905 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-08 11:20:47.017 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-08 11:20:47.017 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-08 11:20:51.493 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-08 11:20:53.158 [main] Testhooks - Failed scenario screenshot got capturedT016_To verify the billboards feature filters installed for IVMS 4200 N/A,Novastar N/A
+[INFO ] 2024-07-08 11:21:35.241 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 11:21:36.145 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 11:23:05.228 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 11:29:17.308 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 11:29:18.091 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 11:29:35.699 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 11:29:36.903 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-08 11:29:37.026 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-08 11:29:37.131 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-08 11:29:37.131 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-08 11:29:41.355 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-08 11:29:53.526 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-08 11:30:40.930 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 11:30:41.724 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 11:30:49.121 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 11:30:50.296 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-08 11:30:50.433 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-08 11:30:50.536 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-08 11:30:50.536 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-08 11:30:54.089 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-08 11:30:55.126 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-08 11:31:25.025 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 11:31:25.867 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 11:31:37.393 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 11:31:38.591 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-08 11:31:38.729 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-08 11:31:38.835 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-08 11:31:38.835 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-08 11:31:44.704 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-08 11:31:48.804 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-08 11:32:17.900 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 11:32:18.691 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 11:32:43.065 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 11:32:44.262 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-08 11:32:44.378 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-08 11:32:44.481 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-08 11:32:44.481 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-08 11:32:51.313 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-08 11:32:52.919 [main] Testhooks - Failed scenario screenshot got capturedT017_To verify the billboards feature filters Not installed for IVMS 4200 N/A,Novastar N/A
+[INFO ] 2024-07-08 11:33:06.521 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 11:33:07.297 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 11:33:23.877 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 11:33:25.087 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-08 11:33:25.223 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-08 11:33:25.329 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-08 11:33:25.329 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-08 11:33:28.623 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-08 11:33:32.896 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-08 12:37:47.318 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 12:37:48.166 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 12:37:50.551 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 12:37:51.767 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-08 12:37:51.887 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-08 12:37:51.994 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-08 12:37:51.994 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-08 12:37:56.161 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-08 12:38:04.965 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-08 12:47:35.455 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 12:47:36.335 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 12:47:48.853 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 12:47:50.043 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-08 12:47:50.162 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-08 12:47:50.266 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-08 12:47:50.266 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-08 12:47:52.916 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-08 12:47:54.958 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-08 12:56:28.923 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 12:56:29.714 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 12:56:38.845 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 12:56:40.067 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-08 12:56:40.201 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-08 12:56:40.305 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-08 12:56:40.305 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-08 12:56:45.881 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-08 12:56:47.605 [main] Testhooks - Failed scenario screenshot got capturedT019_To verify the billboards feature filters Offine for Team Viewer,Novostar and installed for IVMS 4200 N/A,Novastar N/A
+[INFO ] 2024-07-08 12:57:34.225 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 12:57:35.018 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 12:57:40.533 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 12:57:41.725 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-08 12:57:41.853 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-08 12:57:41.954 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-08 12:57:41.954 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-08 12:57:44.819 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-08 12:57:46.566 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-08 12:57:49.109 [main] Testhooks - Failed scenario screenshot got capturedT019_To verify the billboards feature filters Offine for Team Viewer,Novostar and installed for IVMS 4200 N/A,Novastar N/A
+[INFO ] 2024-07-08 13:00:02.911 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 13:00:03.864 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 13:00:04.362 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 13:00:31.519 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 13:00:32.416 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 13:00:38.193 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 13:00:39.396 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-08 13:00:39.527 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-08 13:00:39.642 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-08 13:00:39.642 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-08 13:00:44.100 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-08 13:00:45.873 [main] Testhooks - Failed scenario screenshot got capturedT019_To verify the billboards feature filters Offine for Team Viewer,Novostar and installed for IVMS 4200 N/A,Novastar N/A
+[INFO ] 2024-07-08 13:01:18.108 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 13:01:18.901 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 13:01:30.850 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 13:01:32.060 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-08 13:01:32.183 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-08 13:01:32.305 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-08 13:01:32.305 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-08 13:01:39.904 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-08 13:01:41.517 [main] Testhooks - Failed scenario screenshot got capturedT019_To verify the billboards feature filters Offine for Team Viewer,Novostar and installed for IVMS 4200 N/A,Novastar N/A
+[INFO ] 2024-07-08 14:12:40.144 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 14:12:41.547 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 14:12:43.846 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 14:12:45.041 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-08 14:12:45.167 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-08 14:12:45.285 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-08 14:12:45.285 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-08 14:12:48.289 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-08 14:12:54.678 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-08 14:12:58.260 [main] Testhooks - Failed scenario screenshot got capturedT019_To verify the billboards feature filters Offine for Team Viewer,Novostar and installed for IVMS 4200 N/A,Novastar N/A
+[INFO ] 2024-07-08 14:17:20.919 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 14:17:21.716 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 14:17:41.257 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 14:17:42.448 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-08 14:17:42.568 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-08 14:17:42.673 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-08 14:17:42.673 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-08 14:17:48.645 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-08 14:17:50.938 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-08 14:17:53.861 [main] Testhooks - Failed scenario screenshot got capturedT019_To verify the billboards feature filters Offine for Team Viewer,Novostar and installed for IVMS 4200 N/A,Novastar N/A
+[INFO ] 2024-07-08 14:21:29.942 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 14:21:30.778 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 14:21:40.117 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 14:21:41.318 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-08 14:21:41.438 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-08 14:21:41.548 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-08 14:21:41.548 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-08 14:21:44.656 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-08 14:21:49.207 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-08 14:21:51.671 [main] Testhooks - Failed scenario screenshot got capturedT019_To verify the billboards feature filters Offine for Team Viewer,Novostar and installed for IVMS 4200 N/A,Novastar N/A
+[INFO ] 2024-07-08 14:25:12.389 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 14:25:13.291 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 14:25:17.999 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 14:25:19.214 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-08 14:25:19.349 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-08 14:25:19.471 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-08 14:25:19.472 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-08 14:25:25.419 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-08 14:25:28.273 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-08 14:25:31.051 [main] Testhooks - Failed scenario screenshot got capturedT019_To verify the billboards feature filters Offine for Team Viewer,Novostar and installed for IVMS 4200 N/A,Novastar N/A
+[INFO ] 2024-07-08 14:32:42.721 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 14:32:43.617 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 14:33:19.667 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 14:33:20.883 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-08 14:33:21.014 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-08 14:33:21.124 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-08 14:33:21.124 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-08 14:33:24.773 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-08 14:33:35.555 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-08 14:36:00.568 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 14:36:01.382 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 14:36:08.067 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 14:36:09.279 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-08 14:36:09.402 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-08 14:36:09.507 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-08 14:36:09.507 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-08 14:36:13.193 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-08 14:36:14.772 [main] Testhooks - Failed scenario screenshot got capturedT018_To verify the billboards feature filters Online for Team Viewer,Novostar and installed for IVMS 4200 N/A,Novastar N/A
+[INFO ] 2024-07-08 14:36:39.733 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 14:36:40.572 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 14:36:50.957 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 14:36:52.172 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-08 14:36:52.339 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-08 14:36:52.446 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-08 14:36:52.446 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-08 14:36:55.187 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-08 14:36:56.798 [main] Testhooks - Failed scenario screenshot got capturedT018_To verify the billboards feature filters Online for Team Viewer,Novostar and installed for IVMS 4200 N/A,Novastar N/A
+[INFO ] 2024-07-08 14:46:09.492 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 14:46:10.302 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 14:46:19.134 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 14:46:20.349 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-08 14:46:20.472 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-08 14:46:20.578 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-08 14:46:20.578 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-08 14:46:24.771 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-08 14:46:26.517 [main] Testhooks - Failed scenario screenshot got capturedT018_To verify the billboards feature filters Online for Team Viewer,Novostar and installed for IVMS 4200 N/A,Novastar N/A
+[INFO ] 2024-07-08 14:47:45.167 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 14:47:46.002 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 14:48:12.074 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 14:48:13.279 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-08 14:48:13.404 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-08 14:48:13.507 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-08 14:48:13.508 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-08 14:48:18.726 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-08 14:48:20.472 [main] Testhooks - Failed scenario screenshot got capturedT018_To verify the billboards feature filters Online for Team Viewer,Novostar and installed for IVMS 4200 N/A,Novastar N/A
+[INFO ] 2024-07-08 14:51:07.185 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 14:51:07.969 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 14:51:22.569 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 14:51:23.767 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-08 14:51:23.897 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-08 14:51:24.001 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-08 14:51:24.002 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-08 14:51:28.841 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-08 14:51:35.322 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-08 15:07:10.087 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 15:07:10.869 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 15:09:44.235 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 15:09:45.072 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 15:10:02.728 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 15:10:03.934 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-08 15:10:04.058 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-08 15:10:04.160 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-08 15:10:04.160 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-08 15:10:09.161 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-08 15:10:14.020 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-08 15:13:26.972 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 15:13:27.855 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 15:13:46.823 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 15:13:48.021 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-08 15:13:48.146 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-08 15:13:48.259 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-08 15:13:48.260 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-08 15:13:53.106 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-08 15:13:59.833 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-08 15:14:02.495 [main] Billboardspage - >> The billboard dashboard list page got displayed
+[INFO ] 2024-07-08 15:14:02.495 [main] Billboards - >> Admin/user got the members dashboard page >>
+[INFO ] 2024-07-08 15:14:02.742 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-08 15:14:02.862 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 15:14:03.440 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 15:14:24.298 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 15:14:25.497 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-08 15:14:25.641 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-08 15:14:25.745 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-08 15:14:25.745 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-08 15:14:28.627 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-08 15:14:34.597 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-08 15:14:38.296 [main] Billboardspage - >> Admin/User clicked new billboard btn
+[INFO ] 2024-07-08 15:14:45.256 [main] Billboardspage - >> Admin/User clicked new billboard btn
+[INFO ] 2024-07-08 15:14:45.490 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-08 15:14:45.518 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 15:14:46.055 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 15:15:00.240 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 15:15:01.412 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-08 15:15:01.541 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-08 15:15:01.642 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-08 15:15:01.642 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-08 15:15:04.096 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-08 15:15:05.780 [main] Testhooks - Failed scenario screenshot got capturedT003_ the billboards feature search
+[INFO ] 2024-07-08 15:15:05.865 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-08 15:15:05.898 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 15:15:06.456 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 15:15:20.467 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 15:15:21.634 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-08 15:15:21.750 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-08 15:15:21.857 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-08 15:15:21.857 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-08 15:15:25.719 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-08 15:15:30.589 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-08 15:15:32.226 [main] Billboardspage - >> Admin/User clicked new billboard btn
+[INFO ] 2024-07-08 15:15:32.649 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-08 15:15:32.663 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 15:15:33.200 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 15:16:02.851 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 15:16:04.051 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-08 15:16:04.174 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-08 15:16:04.271 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-08 15:16:04.271 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-08 15:16:07.829 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-08 15:16:09.841 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-08 15:16:10.431 [main] Billboardspage - >> Admin/User clicked new billboard btn
+[INFO ] 2024-07-08 15:16:10.850 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-08 15:16:10.865 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 15:16:11.396 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 15:16:19.610 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 15:16:20.835 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-08 15:16:20.951 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-08 15:16:21.055 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-08 15:16:21.055 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-08 15:16:24.856 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-08 15:16:35.357 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-08 15:16:37.326 [main] Billboardspage - >> Admin/User clicked new billboard btn
+[INFO ] 2024-07-08 15:16:37.685 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-08 15:16:37.695 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 15:16:38.245 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 15:16:44.369 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 15:16:45.535 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-08 15:16:45.655 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-08 15:16:45.772 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-08 15:16:45.772 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-08 15:16:50.283 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-08 15:16:57.951 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-08 15:16:58.468 [main] Billboardspage - >> Admin/User clicked new billboard btn
+[INFO ] 2024-07-08 15:16:58.799 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-08 15:16:58.811 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 15:16:59.295 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 15:17:07.558 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 15:17:08.739 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-08 15:17:08.866 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-08 15:17:08.971 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-08 15:17:08.971 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-08 15:17:13.487 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-08 15:17:15.123 [main] Billboardspage - >> Admin/User got navigated to billboard page
+[INFO ] 2024-07-08 15:17:16.370 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-08 15:17:16.388 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 15:17:16.995 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 15:17:20.277 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 15:17:21.491 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-08 15:17:21.618 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-08 15:17:21.713 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-08 15:17:21.714 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-08 15:17:24.761 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-08 15:17:26.296 [main] Testhooks - Failed scenario screenshot got capturedT009_To verify the billboards feature filter Non oper status billboards
+[INFO ] 2024-07-08 15:17:26.374 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-08 15:17:26.389 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 15:17:26.888 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 15:17:56.052 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 15:17:57.213 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-08 15:17:57.325 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-08 15:17:57.423 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-08 15:17:57.423 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-08 15:18:01.457 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-08 15:18:02.947 [main] Testhooks - Failed scenario screenshot got capturedT010_To verify the billboards feature filter expired status billboards
+[INFO ] 2024-07-08 15:18:03.024 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-08 15:18:03.035 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 15:18:03.624 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 15:18:36.454 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 15:18:37.644 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-08 15:18:37.767 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-08 15:18:37.869 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-08 15:18:37.869 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-08 15:18:41.835 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-08 15:18:43.347 [main] Testhooks - Failed scenario screenshot got capturedT011_To verify the billboards feature filter location billboards
+[INFO ] 2024-07-08 15:18:43.424 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-08 15:18:43.434 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 15:18:43.907 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 15:19:19.775 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 15:19:20.930 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-08 15:19:21.051 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-08 15:19:21.170 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-08 15:19:21.170 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-08 15:19:23.609 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-08 15:19:25.150 [main] Testhooks - Failed scenario screenshot got capturedT012_To verify the billboards feature filter ticket count billboards
+[INFO ] 2024-07-08 15:19:25.228 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-08 15:19:25.237 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 15:19:25.710 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 15:19:39.389 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 15:19:40.591 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-08 15:19:40.718 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-08 15:19:40.824 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-08 15:19:40.825 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-08 15:19:44.094 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-07-08 15:19:45.692 [main] Testhooks - Failed scenario screenshot got capturedT013_To verify the billboards feature filter Billboard Type
+[INFO ] 2024-07-08 15:19:45.770 [main] Testhooks - Browser got closed
+[INFO ] 2024-07-08 15:19:45.780 [main] Testhooks - Execution Started
+[INFO ] 2024-07-08 15:19:46.233 [main] Testhooks - Browser got launched
+[INFO ] 2024-07-08 15:20:13.392 [main] Testhooks - Navigated to url
+[INFO ] 2024-07-08 15:20:14.573 [main] Signinpage - User enters valid email address
+[INFO ] 2024-07-08 15:20:14.696 [main] Signinpage - User enters valid password
+[INFO ] 2024-07-08 15:20:14.792 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-07-08 15:20:14.792 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-07-08 15:20:22.646 [main] Memberspage - >> Admin/User got navigated to dashboard page

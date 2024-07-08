@@ -7,6 +7,7 @@ import java.util.Random;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -69,7 +70,7 @@ public class Billboardspage extends Base {
 	private WebElement billboardMenu; //
 
 	public void billboardClick() {
-		wait.until(ExpectedConditions.visibilityOf(billboardClick)).click();
+		wait.until(ExpectedConditions.elementToBeClickable(billboardClick)).click();
 		wait.until(ExpectedConditions.visibilityOf(billboardMenu)).isDisplayed();
 		LOGGER.info(">> Admin/User got navigated to billboard page");
 	}
@@ -210,7 +211,7 @@ public class Billboardspage extends Base {
 		LOGGER.info(">> Admin/User clicked new billboard btn");
 		System.out.println(">> User got searched BB list: " + BBSearchedList.getText());
 	}
-	
+
 	public void BBlist() {
 		wait.until(ExpectedConditions.visibilityOf(BBSearchedList));
 
@@ -228,7 +229,7 @@ public class Billboardspage extends Base {
 
 	@FindBy(xpath = "(//h6[contains(text(),'Recently Updated')])[1]")
 	private WebElement Billboards_sort_recentlyupdated;
-	
+
 	@FindBy(xpath = "(//h6[contains(text(),'Recently Added')])[2]")
 	private WebElement Billboards_sort_recentlyadded;
 
@@ -243,7 +244,7 @@ public class Billboardspage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(Billboards_sort_recentlyadded)).click();
 		System.out.println(">> User clicked recently added in sort");
 	}
-	
+
 	@FindBy(xpath = "(//h6[contains(text(),'Name - A to Z')])[1]")
 	private WebElement Name_A_to_Z;
 
@@ -270,7 +271,8 @@ public class Billboardspage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(Name_decending)).click();
 		System.out.println(">> User clicked decending updated in sort");
 	}
- //<------------------------------------------Activestatus------------------------------------------->
+
+	// <------------------------------------------Activestatus------------------------------------------->
 	@FindBy(xpath = "(//span[@id='ACTIVE'])[1]")
 	private WebElement activestatus;
 
@@ -280,7 +282,8 @@ public class Billboardspage extends Base {
 		act.moveToElement(Billboard_filter_apply_btn).click().perform();
 		System.out.println(">> User clicked active status in filter");
 	}
-	//<--------------------------------------Filter by non oper.status---------------------------->
+	// <--------------------------------------Filter by non
+	// oper.status---------------------------->
 
 	@FindBy(xpath = "(//span[@id='NON_OPERATIONAL'])[1]")
 	private WebElement Nonoperstatus;
@@ -295,30 +298,14 @@ public class Billboardspage extends Base {
 	@FindBy(xpath = "(//div[contains(@class,'filterbox foractivefilter')])[1]")
 	private WebElement Billboard_filter;
 
-	@FindBy(xpath = "(//button[@type='submit'])[2]")
+	@FindBy(xpath = "(//h6[contains(@class,'m-0 fw-normal')][normalize-space()='Apply'])[1]")
 	private WebElement Billboard_filter_apply_btn;
-	
+
 	@FindBy(xpath = "//div[contains(text(),'No BillBoard Found')]")
 	private WebElement billboard_no_BB_found;
-	
-	public void BB_filter_nonop_list_display() {
 
-		try {
-			if (condition) {
-				wait.until(ExpectedConditions.visibilityOf(BBlist));
-				AssertJUnit.assertTrue(BBlist.isDisplayed());
-				System.out.println(">> User got filtered non operational bb list");
-			} else {
-				wait.until(ExpectedConditions.visibilityOf(billboard_no_BB_found));
-				System.out.println(">> User got no billboard found message");
-			}
-		} catch (Exception e) {
-			wait.until(ExpectedConditions.visibilityOf(billboard_no_BB_found));
-			System.out.println(">> User got no billboard found message");
-		}
-	}
-	
-	//<-------------------------------------Filter by Request status---------------------------------->
+	// <-------------------------------------Filter by Request
+	// status---------------------------------->
 
 	@FindBy(xpath = "(//span[@id='REQUEST'])[1]")
 	private WebElement Requeststatus;
@@ -329,24 +316,10 @@ public class Billboardspage extends Base {
 		act.moveToElement(Billboard_filter_apply_btn).click().perform();
 		System.out.println(">> User clicked Request status in filter");
 	}
-	
-	
-	public void BB_filter_Request_list_display() {
-		try {
-			if (condition) {
-				wait.until(ExpectedConditions.visibilityOf(BBlist));
-				AssertJUnit.assertTrue(BBlist.isDisplayed());
-				System.out.println(">> User got filtered request bb list");
-			} else {
-				wait.until(ExpectedConditions.visibilityOf(billboard_no_BB_found));
-				System.out.println(">> User got no billboard found message");
-			}
-		} catch (Exception e) {
-			wait.until(ExpectedConditions.visibilityOf(billboard_no_BB_found));
-			System.out.println(">> User got no billboard found message");
-		}
-	}
-	//<-------------------------------------Filter by Location EnterDropdown---------------------------------------->
+
+
+	// <-------------------------------------Filter by Location
+	// EnterDropdown---------------------------------------->
 
 	@FindBy(id = "react-select-3-input")
 	private WebElement selectlocationdropdown;
@@ -358,25 +331,12 @@ public class Billboardspage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(selectlocationdropdown)).sendKeys(bb_location + Keys.ENTER);
 		LOGGER.info(">> User selected the location:" + selectlocationdropdown.getText());
 		act.moveToElement(Billboard_filter_apply_btn).click().perform();
-		System.out.println(">> User selected the bb location in filter"+bb_location);
+		System.out.println(">> User selected the bb location in filter" + bb_location);
 	}
+
 	
-	public void BB_filter_location_list_display() {
-		try {
-			if (condition) {
-				wait.until(ExpectedConditions.visibilityOf(BBlist));
-				AssertJUnit.assertTrue(BBlist.isDisplayed());
-				System.out.println(">> User got filtered location bb list");
-			} else {
-				wait.until(ExpectedConditions.visibilityOf(billboard_no_BB_found));
-				System.out.println(">> User got no billboard found message");
-			}
-		} catch (Exception e) {
-			wait.until(ExpectedConditions.visibilityOf(billboard_no_BB_found));
-			System.out.println(">> User got no billboard found message");
-		}
-	}
-	//<-------------------------------------Filter by Bill Board Ticket count---------------------------------------->
+	// <-------------------------------------Filter by Bill Board Ticket
+	// count---------------------------------------->
 
 	@FindBy(id = "doc_searchQueryInputfilter")
 	private WebElement BB_filter_Ticket_count;
@@ -389,23 +349,10 @@ public class Billboardspage extends Base {
 		act.moveToElement(Billboard_filter_apply_btn).click().perform();
 		System.out.println(">> User entered the Ticket count in filter");
 	}
-	
-	public void BB_filter_ticketcount_list_displayed() {
-		try {
-			if (condition) {
-				wait.until(ExpectedConditions.visibilityOf(BBlist));
-				AssertJUnit.assertTrue(BBlist.isDisplayed());
-				System.out.println(">> User got filtered location bb list");
-			} else {
-				wait.until(ExpectedConditions.visibilityOf(billboard_no_BB_found));
-				System.out.println(">> User got no billboard found message");
-			}
-		} catch (Exception e) {
-			wait.until(ExpectedConditions.visibilityOf(billboard_no_BB_found));
-			System.out.println(">> User got no billboard found message");
-		}
-	}
-	//<-------------------------------------Filter by Bill Board Type drop down ---------------------------------------->
+
+
+	// <-------------------------------------Filter by Bill Board Type drop down
+	// ---------------------------------------->
 
 	@FindBy(id = "react-select-4-input")
 	private WebElement BB_Typedropdown;
@@ -417,26 +364,12 @@ public class Billboardspage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(BB_Typedropdown)).sendKeys(bb_Type + Keys.ENTER);
 		LOGGER.info(">> User selected the Billboard Type:" + BB_Typedropdown.getText());
 		act.moveToElement(Billboard_filter_apply_btn).click().perform();
-		System.out.println(">> User selected the bb Type in filter"+bb_Type);
+		System.out.println(">> User selected the bb Type in filter" + bb_Type);
 	}
+
 	
-	public void BB_filter_Type_list_display() {
-		try {
-			if (condition) {
-				wait.until(ExpectedConditions.visibilityOf(BBlist));
-				AssertJUnit.assertTrue(BBlist.isDisplayed());
-				System.out.println(">> User got filtered BB Type list");
-			} else {
-				wait.until(ExpectedConditions.visibilityOf(billboard_no_BB_found));
-				System.out.println(">> User got no billboard found message");
-			}
-		} catch (Exception e) {
-			wait.until(ExpectedConditions.visibilityOf(billboard_no_BB_found));
-			System.out.println(">> User got no billboard found message");
-		}
-	}
-	
-	//<-------------------------------------Filter Online status for Team viewer,Novostar,IVMS ---------------------------------------->
+	// <-------------------------------------Filter Online status for Team
+	// viewer,Novostar,IVMS ---------------------------------------->
 
 	@FindBy(xpath = "(//span[@id='online'])[1]")
 	private WebElement teamvieweronline;
@@ -444,38 +377,127 @@ public class Billboardspage extends Base {
 	private WebElement novostaronline;
 	@FindBy(xpath = "(//span[@id='online'])[3]")
 	private WebElement ivmsonline;
+
 	public void BB_filter_onlinestatus() {
+
 		wait.until(ExpectedConditions.visibilityOf(Billboard_filter)).click();
 		wait.until(ExpectedConditions.visibilityOf(teamvieweronline)).click();
-		wait.until(ExpectedConditions.visibilityOf(novostaronline)).click();
-		wait.until(ExpectedConditions.visibilityOf(ivmsonline)).click();
+		act.moveToElement(novostaronline).click().perform();
+		act.moveToElement(ivmsonline).click().perform();
 		act.moveToElement(Billboard_filter_apply_btn).click().perform();
-		System.out.println(">> User clicked Request status in filter");
+		System.out.println(">> User clicked Offline status in filter");
 	}
+
 	
+
+//<-------------------------------------Filter Offline status for Team viewer,Novostar,IVMS ---------------------------------------->
+
+	@FindBy(xpath = "(//span[contains(text(),'Offline')])[1]")
+	private WebElement teamvieweroffline;
+	@FindBy(xpath = "(//span[contains(text(),'Offline')])[2]")
+	private WebElement novostaroffline;
+	@FindBy(xpath = "(//span[contains(text(),'Offline')])[3]")
+	private WebElement ivmsoffline;
+
+	public void BB_filter_offlinestatus() throws InterruptedException {
+
+		wait.until(ExpectedConditions.visibilityOf(Billboard_filter)).click();
+		wait.until(ExpectedConditions.visibilityOf(teamvieweroffline)).click();
+		act.moveToElement(novostaroffline).click().perform();
+		act.moveToElement(ivmsoffline).click().perform();
+		act.moveToElement(Billboard_filter_apply_btn).click().perform();
+		System.out.println(">> User clicked Offline status in filter");
+	}
+
 	
-	public void BB_filter_online_status_display() {
+
+//<-------------------------------------Filter installed for Novostar,IVMS ---------------------------------------->
+
+	@FindBy(xpath = "(//span[@id='installed'])[1]")
+	private WebElement IVMS_installed;
+	@FindBy(xpath = "(//span[@id='installed'])[2]")
+	private WebElement Novastar_installed;
+
+	public void BB_filter_installedstatus() {
+
+		wait.until(ExpectedConditions.visibilityOf(Billboard_filter)).click();
+		act.moveToElement(IVMS_installed).click().perform();
+		act.moveToElement(Novastar_installed).click().perform();
+		act.moveToElement(Billboard_filter_apply_btn).click().perform();
+		System.out.println(">> User clicked IVMS and Novastar installed status in filter");
+	}
+
+	
+//<-------------------------------------Filter Not installed status for Novostar,IVMS ---------------------------------------->
+
+	@FindBy(xpath = "(//span[@id='not_installed'])[1]")
+	private WebElement IVMS_Not_installed;
+	@FindBy(xpath = "(//span[@id='not_installed'])[2]")
+	private WebElement Novastar_Not_installed;
+
+	public void BB_filter_Not_installedstatus() {
+
+		wait.until(ExpectedConditions.visibilityOf(Billboard_filter)).click();
+		act.moveToElement(IVMS_Not_installed).click().perform();
+		act.moveToElement(Novastar_Not_installed).click().perform();
+		act.moveToElement(Billboard_filter_apply_btn).click().perform();
+		System.out.println(">> User clicked IVMS and Novastar Not installed status in filter");
+	}
+
+//<-------------------------------------Filter Online and installed status for BillBoards ---------------------------------------->
+
+	public void BB_filter_online_installed() throws InterruptedException {
+
+		wait.until(ExpectedConditions.visibilityOf(Billboard_filter)).click();
+		wait.until(ExpectedConditions.visibilityOf(teamvieweronline)).click();
+		act.moveToElement(novostaronline).click().perform();
+		act.moveToElement(ivmsonline).click().perform();
+		act.moveToElement(IVMS_installed).click().perform();
+		act.moveToElement(Novastar_installed).click().perform();
+		act.moveToElement(Billboard_filter_apply_btn).click().perform();
+		System.out.println(">> User filtered the online with ivms and novastar installed BB");
+	}
+//<----------------------common if condition--------------------------------------------->
+
+	public void BB_filtered_result_display() {
 		try {
 			if (condition) {
 				wait.until(ExpectedConditions.visibilityOf(BBlist));
 				AssertJUnit.assertTrue(BBlist.isDisplayed());
-				System.out.println(">> User got filtered Online status for Team viewer Novastar IVMS");
+				System.out.println(">> User got the filtered BB list");
 			} else {
 				wait.until(ExpectedConditions.visibilityOf(billboard_no_BB_found));
-				System.out.println(">> User got no billboard found message");
 			}
 		} catch (Exception e) {
 			wait.until(ExpectedConditions.visibilityOf(billboard_no_BB_found));
-			System.out.println(">> User got no billboard found message");
 		}
 	}
+	//<-------------------------------------Filter Offline and installed status for BillBoards ---------------------------------------->
+
+	public void BB_filter_offline_installed() throws InterruptedException {
+
+		wait.until(ExpectedConditions.visibilityOf(Billboard_filter)).click();
+		wait.until(ExpectedConditions.visibilityOf(teamvieweroffline)).click();
+		act.moveToElement(novostaroffline).click().perform();
+		act.moveToElement(ivmsoffline).click().perform();
+		act.moveToElement(IVMS_installed).click().perform();
+		act.moveToElement(Novastar_installed).click().perform();
+		act.moveToElement(Billboard_filter_apply_btn).click().perform();
+		System.out.println(">> User filtered the offline with ivms and novastar installed BB");
+	}
 	
-	
-	
-	
+	//<-------------------------------------Filter Online and Not installed status for BillBoards ---------------------------------------->
+
+	public void BB_filter_online_Not_installed() throws InterruptedException {
+
+		wait.until(ExpectedConditions.visibilityOf(Billboard_filter)).click();
+		wait.until(ExpectedConditions.visibilityOf(teamvieweronline)).click();
+		act.moveToElement(novostaronline).click().perform();
+		act.moveToElement(ivmsonline).click().perform();
+		act.moveToElement(IVMS_Not_installed).click().perform();
+		act.moveToElement(Novastar_Not_installed).click().perform();
+		act.moveToElement(Billboard_filter_apply_btn).click().perform();
+		System.out.println(">> User filtered the online with ivms and novastar Not installed BB");
+	}
 }
-
-
-
-
 

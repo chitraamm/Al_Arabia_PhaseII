@@ -1,6 +1,6 @@
 package Stepdefinitions;
 
-import static org.junit.Assert.assertEquals;
+//import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 import org.apache.logging.log4j.LogManager;
@@ -141,7 +141,7 @@ public class Billboards extends Base {
 
 	@Then("Active billboards list get displayed successfully")
 	public void Active_billboards_list_get_displayed_successfully() throws Exception {
-		billboardsPage.BBlist();
+		billboardsPage.BB_filtered_result_display();
 	}
 
 	@And("User filter the billboards list status Non Oper")
@@ -152,7 +152,7 @@ public class Billboards extends Base {
 
 	@Then("Non Oper billboards list get displayed successfully")
 	public void Non_Oper_billboards_list_get_displayed_successfully() throws Exception {
-		billboardsPage.BB_filter_nonop_list_display();
+		billboardsPage.BB_filtered_result_display();
 	}
 	@And("User filter the billboards list status Request")
 	public void And_User_filter_the_billboards_list_status_Request() throws Exception {
@@ -160,7 +160,7 @@ public class Billboards extends Base {
 	}
 	@Then("Request billboards list get displayed successfully")
 	public void Request_billboards_list_get_displayed_successfully() throws Exception {
-		billboardsPage.BB_filter_Request_list_display();
+		billboardsPage.BB_filtered_result_display();
 	}
 	@And("User selects billboard location")
 	public void User_selects_billboard_location() throws Exception {
@@ -168,7 +168,7 @@ public class Billboards extends Base {
 }
 	@Then("Selected location billboards list get displayed successfully")
 	public void Selected_location_billboards_list_get_displayed_successfully () throws Exception {
-	    billboardsPage.BB_filter_location_list_display();
+	    billboardsPage.BB_filtered_result_display();
 	}
 	
 	@And("User filter the billboards ticket count")
@@ -178,7 +178,7 @@ public class Billboards extends Base {
 	
 	@Then("ticket count billboards list get displayed successfully")
 	public void ticket_count_billboards_list_get_displayed_successfully () throws Exception {
-	    billboardsPage.BB_filter_ticketcount_list_displayed();
+	    billboardsPage.BB_filtered_result_display();
 	}
 	
 	@And("User filter the Billboard Type")
@@ -188,7 +188,7 @@ public class Billboards extends Base {
 	
 	@Then("Billboard type billboards list get displayed successfully")
 	public void Billboard_type_billboards_list_get_displayed_successfully () throws Exception {
-	    billboardsPage.BB_filter_Type_list_display();
+	    billboardsPage.BB_filtered_result_display();
 	}
 	
 	@And("User filter the billboards Online Team viewer Novastar IVMS")
@@ -197,6 +197,55 @@ public class Billboards extends Base {
 	}
 	@Then("Online billboards list get displayed successfully for Team viewer Novastar IVMS")
 	public void Online_billboards_list_get_displayed_successfully_for_Team_viewer_Novastar_IVMS () throws Exception {
-	    billboardsPage.BB_filter_online_status_display();
+	    billboardsPage.BB_filtered_result_display();
 	}
+	@And("User filter the billboards Offline Team viewer Novastar IVMS")
+	public void User_filter_the_billboards_Offline_Team_viewer_Novastar_IVMS () throws Exception {
+	    billboardsPage.BB_filter_offlinestatus();
+	}
+	@And("User filter the billboards Offline Team viewer Novastar IVMS with installed")
+	public void User_filter_the_billboards_Offline_Team_viewer_Novastar_IVMS_installed () throws Exception {
+	    billboardsPage.BB_filter_offline_installed();
+	}
+	@Then("Offline billboards list get displayed successfully for Team viewer Novastar IVMS")
+	public void Offline_billboards_list_get_displayed_successfully_for_Team_viewer_Novastar_IVMS () throws Exception {
+	    billboardsPage.BB_filtered_result_display();
+	}
+	@And("User filter the billboards installed IVMS and Novastar")
+	public void User_filter_the_billboards_installed_IVMS_and_Novastar  () throws Exception {
+	    billboardsPage.BB_filter_installedstatus();
+	}
+	@Then("installed billboards list get displayed successfully for IVMS and Novastar")
+	public void installed_billboards_list_get_displayed_successfully_for_IVMS_and_Novastar () throws Exception {
+	    billboardsPage.BB_filtered_result_display();
+}
+	@And("User filter the billboards Not installed IVMS and Novastar")
+	public void User_filter_the_billboards_Not_installed_IVMS_and_Novastar  () throws Exception {
+	    billboardsPage.BB_filter_Not_installedstatus();
+	}
+	@Then("Not installed billboards list get displayed successfully for IVMS and Novastar")
+	public void Not_installed_billboards_list_get_displayed_successfully_for_IVMS_and_Novastar () throws Exception {
+	    billboardsPage.BB_filtered_result_display();
+}
+	
+	@And("User filter the billboards installed IVMS and Novastar with online")
+	public void User_filter_the_billboards_installed_IVMS_and_Novastar_with_online() throws Exception {
+	    billboardsPage.BB_filter_online_installed();
+}
+	@Then("Online and installed status billboards list get displayed successfully for IVMS and Novastar")
+	public void Online_and_installed_status_billboards_list_get_displayed_successfully_for_IVMS_and_Novastar () throws Exception {
+	    billboardsPage.BB_filtered_result_display();
+}
+	@Then("Offline and installed status billboards list get displayed successfully for IVMS and Novastar")
+	public void Offline_and_installed_status_billboards_list_get_displayed_successfully_for_IVMS_and_Novastar () throws Exception {
+	    billboardsPage.BB_filtered_result_display();
+}
+	@And("User filter the billboards Online Team viewer Novastar IVMS with Not installed")
+	public void User_filter_the_billboards_Online_Team_viewer_Novastar_IVMS_with_Not_installed() throws Exception {
+	    billboardsPage.BB_filter_online_Not_installed();
+}
+	@Then("Online and Not installed status billboards list get displayed successfully for IVMS and Novastar")
+	public void Online_and_Not_installed_status_billboards_list_get_displayed_successfully_for_IVMS_and_Novastar () throws Exception {
+	    billboardsPage.BB_filtered_result_display();
+}
 }

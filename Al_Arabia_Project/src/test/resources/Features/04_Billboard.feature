@@ -221,15 +221,63 @@ And User clicks Download button with Download As QR Code
 Then QR file will be downloaded successfully as "<successMessage>"
   Examples:
       | successMessage       |
-      | LOADING...           |  
+      | LOADING...           |     
+          
 @billboards @billboards27 @smoke @regression @all
-Scenario Outline: T027_To verify the billboards feature Close button in Download popup
+Scenario Outline: T027_To verify the billboards feature edit
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the billboards module
 And User clicks Download button after that click on close button 
-Then Download pop up get closed successfully and display the Billboard list
-          
+Then Download pop up get closed successfully and display the Billboard list 
+         
+@billboards @billboards28 @smoke @regression @all
+Scenario Outline: T028_To verify the billboards feature Edit button in BillBoards page
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the billboards module
+And User clicks the Edit button 
+Then Edit BillBoard page will be displayed successfully
+         
+@billboards @billboards29 @smoke @regression @all
+Scenario Outline: T029_To verify the billboards feature Plus button in BillBoards page
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the billboards module
+And User clicks on the Plus button 
+Then BillBoard View page will be displayed successfully  
+       
+@billboards @billboards30 @smoke @regression @all
+Scenario Outline: T030_To verify the billboards feature Delete button in BillBoards page
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the billboards module
+And User clicks on the Delete button with clicks confirm yes button
+Then BillBoard delete popup will be displayed successfully as "<successMessage>"
+  Examples:
+      | successMessage     								    |
+      | Success deleted this billboard        |      
+
+@billboards @billboards31 @smoke @regression @all
+Scenario Outline: T031_To verify the billboards features Billboard location in the BillBoards page when the location text is clicked
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the billboards module
+And User selects billboard location
+And User click on the Billboard location text 
+Then page redirected to the map page with billboard location
+      
+@billboards @billboards31 @smoke @regression @all
+Scenario Outline: T031_To verify the billboards features Update BillBoard
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And User clicks the Edit button 
+And User edit screen height 
+And User click on Update BillBoard button with confirm yes button
+Then BillBoard Updated popup will be displayed successfully as "<successMessage>"
+  Examples:
+      | successMessage     								    |
+      | Success Billboard updated             |    
 #@billboards @billboards18 @sanity @regression @all
 #Scenario Outline: T018_To verify the billboards feature filter with multiple selected options
 #Given Admin logged in with valid credentials

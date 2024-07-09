@@ -2,6 +2,7 @@ package pageobjects;
 
 import java.io.FileInputStream;
 import java.time.Duration;
+import java.util.ArrayList;
 import java.util.Properties;
 import java.util.Random;
 
@@ -547,15 +548,16 @@ public class Billboardspage extends Base {
 
 	// <-------------------------------------Clicked Download As excel in Billboards
 	// ---------------------------------------->
-	@FindBy(xpath = "(//div[normalize-space()='As QR Code'])[1]")
+	@FindBy(xpath = "(//div[normalize-space()='As Excel'])[1]")
 	private WebElement BB_Download_excel;
 
 	public void BB_Download_excel() throws Exception {
 
 		act.moveToElement(BB_Download_excel).click().perform();
 	}
+
 	// <-------------------------------------Clicked Download As PDF in Billboards
-		// ---------------------------------------->
+	// ---------------------------------------->
 	@FindBy(xpath = "(//div[normalize-space()='As PDF'])[1]")
 	private WebElement BB_Download_As_PDF;
 
@@ -563,8 +565,10 @@ public class Billboardspage extends Base {
 
 		act.moveToElement(BB_Download_As_PDF).click().perform();
 	}
-	// <-------------------------------------Clicked Download As QR Code file in Billboards
-			// ---------------------------------------->
+
+	// <-------------------------------------Clicked Download As QR Code file in
+	// Billboards
+	// ---------------------------------------->
 	@FindBy(xpath = "(//div[normalize-space()='As QR Code'])[1]")
 	private WebElement BB_Download_As_QR_Code_file;
 
@@ -572,24 +576,116 @@ public class Billboardspage extends Base {
 
 		act.moveToElement(BB_Download_As_QR_Code_file).click().perform();
 	}
-	// <-------------------------------------Clicked Close button in Download popup in Billboards
-				// ---------------------------------------->
-		@FindBy(xpath = "(//div[@role='dialog'])[1]")
-		private WebElement BB_Download_popupclose;
 
-		public void BB_Download_popup_close() throws Exception {
+	// <-------------------------------------Clicked Close button in Download popup
+	// in Billboards
+	// ---------------------------------------->
+	@FindBy(xpath = "(//div[@role='dialog'])[1]")
+	private WebElement BB_Download_popupclose;
 
-			act.moveToElement(BB_Download_popupclose).click().perform();
-		}
-		// <-------------------------------------------Download popup closed and displayed Billboard list
-		// ---------------------------------------->
-       @FindBy(xpath = "(//h5[contains(@class,'mb-0')])[1]")
-        private WebElement BB_Download_popupclosed_and_displyd_billboards;
+	public void BB_Download_popup_close() throws Exception {
 
-       public void BB_Download_popupclosd_displayed_Billboards() {
-   		wait.until(ExpectedConditions.visibilityOf(BB_Download_popupclosed_and_displyd_billboards)).isDisplayed();
-   		AssertJUnit.assertTrue(BB_Download_popupclosed_and_displyd_billboards.isDisplayed());
-   		LOGGER.info(">> The Download Popup get closed and listed BillBoards");
-   	} 
-		
+		act.moveToElement(BB_Download_popupclose).click().perform();
+	}
+
+	// <-------------------------------------------Download popup closed and
+	// displayed Billboard list
+	// ---------------------------------------->
+	@FindBy(xpath = "(//img[@class='pointer'])[4]")
+	private WebElement BB_Download_popupclosed_and_displyd_billboards;
+
+	public void BB_Download_popupclosd_displayed_Billboards() {
+		wait.until(ExpectedConditions.visibilityOf(BB_Download_popupclosed_and_displyd_billboards)).isDisplayed();
+		AssertJUnit.assertTrue(BB_Download_popupclosed_and_displyd_billboards.isDisplayed());
+		LOGGER.info(">> The Download Popup get closed and listed BillBoards");
+	}
+
+	// <-------------------------------------Clicked BillBoards Edit icon
+	// ---------------------------------------->
+	@FindBy(xpath = "(//img[@class='pointer'])[4]")
+	private WebElement BB_Edit_Buttonclick;
+
+	public void BB_Edit_icon() throws Exception {
+
+		act.moveToElement(BB_Edit_Buttonclick).click().perform();
+	}
+
+	// <-------------------------------------Displayed BillBoards Edit page
+	// ---------------------------------------->
+	@FindBy(xpath = "(//span[@class='edit_link_routes active'])[1]")
+	private WebElement BB_Edit_page_display;
+
+	public void BB_Edit_page() throws Exception {
+
+		wait.until(ExpectedConditions.visibilityOf(BB_Edit_page_display)).isDisplayed();
+		AssertJUnit.assertTrue(BB_Edit_page_display.isDisplayed());
+		LOGGER.info(">>Billboard edit page displayed");
+
+	}
+
+	// <-------------------------------------Clicked BillBoards plus icon
+	// ---------------------------------------->
+	@FindBy(xpath = "(//img[@class='pointer'])[5]")
+	private WebElement BB_plus_Buttonclick;
+
+	public void BB_plus_icon() throws Exception {
+
+		act.moveToElement(BB_plus_Buttonclick).click().perform();
+	}
+
+	// <-------------------------------------Displayed BillBoards View page
+	// ---------------------------------------->
+	@FindBy(xpath = "(//h5[normalize-space()='BillBoard Number'])[1]")
+	private WebElement BB_View_page_display;
+
+	public void BB_View_page() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(BB_View_page_display)).isDisplayed();
+		AssertJUnit.assertTrue(BB_View_page_display.isDisplayed());
+		LOGGER.info("BillBoard View page displayed");
+
+	}
+
+	// <-------------------------------------BillBoards Delete button
+	// ---------------------------------------->
+	@FindBy(xpath = "(//img[contains(@class,'pointer')])[6]")
+	private WebElement BB_Delete_button;
+
+	public void BB_Delete_icon() throws Exception {
+		act.moveToElement(BB_Delete_button).click().perform();
+	}
+	// <-------------------------------------BillBoards Delete confirm yes
+	// ---------------------------------------->
+
+	@FindBy(xpath = "(//h6[normalize-space()='Yes, delete it.'])[1]")
+	private WebElement BB_Delete_confirm_yes_button;
+
+	public void BB_delete_popup_confirmed() throws Exception {
+
+		wait.until(ExpectedConditions.visibilityOf(BB_Delete_confirm_yes_button)).click();
+
+	}
+	// <-------------------------------------Redirect to billboard location when
+	// click on location text
+	// ---------------------------------------->
+
+	@FindBy(xpath = "(//h6[contains(text(),'Riyadh Saudi Arabia')])[2]")
+	private WebElement BB_location_text_click;
+
+	public void BB_location_click() throws Exception {
+		String oldwindow1 = driver.getWindowHandle();
+		System.out.println("oldwindow id:" + oldwindow1);
+		act.moveToElement(BB_location_text_click).click().perform();
+		ArrayList<String> tabs = new ArrayList<String>(driver.getWindowHandles());
+		driver.switchTo().window(tabs.get(1));
+	}
+
+	@FindBy(xpath = "//canvas[@class='aFsglc widget-scene-canvas']")
+	private WebElement BB_Google_map;
+
+	public void BB_Google_map_display() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(BB_Google_map)).isDisplayed();
+		AssertJUnit.assertTrue(BB_Google_map.isDisplayed());
+		LOGGER.info("BillBoard google map view displayed");
+	}
+
 }

@@ -335,4 +335,53 @@ public class Billboards extends Base {
 	public void Download_pop_up_get_closed_successfully_and_display_the_Billboard_list () throws Exception {
 	    billboardsPage.BB_Download_popupclosd_displayed_Billboards();
 }
+	@And("User clicks the Edit button")
+	public void User_clicks_the_Edit_button() throws Exception {
+		billboardsPage.BB_Edit_icon();
+}
+	@Then("Edit BillBoard page will be displayed successfully")
+	public void Edit_BillBoard_page_will_be_displayed_successfully () throws Exception {
+	    billboardsPage.BB_Edit_page();
+}
+	@And("User clicks on the Plus button")
+	public void User_clicks_on_the_Plus_button() throws Exception {
+		billboardsPage.BB_plus_icon();
+}
+	@Then("BillBoard View page will be displayed successfully")
+	public void BillBoard_View_page_will_be_displayed_successfully () throws Exception {
+	    billboardsPage.BB_View_page();
+	}	    
+	@And("User clicks on the Delete button with clicks confirm yes button")
+	public void User_clicks_on_the_Delete_button_with_clicks_confirm_yes_button() throws Exception {
+		billboardsPage.BB_Delete_icon();
+		billboardsPage.BB_delete_popup_confirmed();
+}
+	@Then("^BillBoard delete popup will be displayed successfully as \"([^\"]*)\"$")
+	public void BillBoard_delete_popup_will_be_displayed_successfully (String expectedMessage) throws Exception {
+		  String actualMessage = billboardsPage.billboard_created_Success_display();
+	      String normalizedExpectedMessage = normalizeWhitespace(expectedMessage);
+	      String normalizedActualMessage = normalizeWhitespace(actualMessage);
+	      System.out.println(">> User or Admin got the QR code file downloaded successfully"+actualMessage);
+	      assertEquals(normalizedExpectedMessage, normalizedActualMessage);
+	}	
+	@Then("User click on the Billboard location text")
+	public void User_click_on_the_Billboard_location_text () throws Exception {
+	    billboardsPage.BB_location_click();
+	}	    
+	@And("User edit screen height")
+	public void User_edit_screen_height () throws Exception {
+		billboardsPage.BB_edit_screen_height();
+}
+	@And("User click on Update BillBoard button with confirm yes button")
+	public void User_click_on_Update_BillBoard_button_with_confirm_yes_button() throws Exception {
+		billboardsPage.BB_update_confirmed();
+}
+	@Then("^BillBoard Updated popup will be displayed successfully as \"([^\"]*)\"$")
+	public void BillBoard_Updated_popup_will_be_displayed_successfully_as_(String expectedMessage) throws Exception {
+		  String actualMessage = billboardsPage.billboard_created_Success_display();
+	      String normalizedExpectedMessage = normalizeWhitespace(expectedMessage);
+	      String normalizedActualMessage = normalizeWhitespace(actualMessage);
+	      System.out.println(">> User or Admin got the QR code file downloaded successfully"+actualMessage);
+	      assertEquals(normalizedExpectedMessage, normalizedActualMessage);
+	}
 }

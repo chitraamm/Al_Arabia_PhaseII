@@ -267,17 +267,77 @@ And User selects billboard location
 And User click on the Billboard location text 
 Then page redirected to the map page with billboard location
       
-@billboards @billboards31 @smoke @regression @all
-Scenario Outline: T031_To verify the billboards features Update BillBoard
+@billboards @billboards32 @smoke @regression @all
+Scenario Outline: T032_To verify the billboards features Update BillBoard
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
+And Admin or user clicks the billboards module
+And User filter the billboards list status Active32
+And User selects billboard location32
 And User clicks the Edit button 
 And User edit screen height 
 And User click on Update BillBoard button with confirm yes button
 Then BillBoard Updated popup will be displayed successfully as "<successMessage>"
   Examples:
       | successMessage     								    |
-      | Success Billboard updated             |    
+      | Success Billboard updated             |  
+        
+@billboards @billboards33 @smoke @regression @all
+Scenario Outline: T033_To verify the billboards features BOM Tab in Update BillBoard page
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the billboards module
+And User filter the billboards list status Active32
+And User selects billboard location32
+And User clicks the Edit button 
+And User click on BOM Tab
+Then BOM details of BillBoard will be display successfully
+      
+@billboards @billboards34 @smoke @regression @all
+Scenario Outline: T034_To verify the billboards features Download PDF File in BOM Details page
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the billboards module
+And User filter the billboards list status Active32
+And User selects billboard location32
+And User clicks the Edit button 
+And User click on BOM Tab
+Then User click on Download PDF button and will be downloaded the PDF file of BOM
+  
+@billboards @billboards35 @smoke @regression @all
+Scenario Outline: T035_To verify the billboards features QR display in Update BillBoard page
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the billboards module
+And User filter the billboards list status Active32
+And User selects billboard location32
+And User clicks the Edit button 
+And User click on Download QR code icon
+Then BillBoard QR code will be displayed sucessfully
+
+@billboards @billboards36 @smoke @regression @all
+Scenario Outline: T036_To verify the billboards features clicks Mark it as non operational in Update BillBoard page
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the billboards module
+And User filter the billboards list status Active32
+And User selects billboard location32
+And User clicks the Edit button 
+Then User clicks on Mark it as non operational and click yes mark it
+
+@billboards @billboards37 @smoke @regression @all
+Scenario Outline: T037_To verify the billboards features Mark it as non operational in Update BillBoard page
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the billboards module
+And User filter the billboards list status Active32
+And User selects billboard location32
+And User clicks the Edit button 
+Then User Mark it as non operational and Added the reason successfully
+  Examples:
+      | successMessage1       | successMessage2          |
+      | LOADING...            | Success Billboard created|
+      
 #@billboards @billboards18 @sanity @regression @all
 #Scenario Outline: T018_To verify the billboards feature filter with multiple selected options
 #Given Admin logged in with valid credentials

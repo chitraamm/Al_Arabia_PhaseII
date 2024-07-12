@@ -167,6 +167,14 @@ public class Billboards extends Base {
 	public void User_selects_billboard_location() throws Exception {
 	    billboardsPage.select_bb_location();
 }
+	@And("User selects billboard location32")
+	public void User_selects_billboard_location32() throws Exception {
+	    billboardsPage.select_bb_location32();
+}
+	@And("User filter the billboards list status Active32")
+	public void User_filter_the_billboards_list_status_Active32() throws Exception {
+	    billboardsPage.BB_filter_active_32();
+}
 	@Then("Selected location billboards list get displayed successfully")
 	public void Selected_location_billboards_list_get_displayed_successfully () throws Exception {
 	    billboardsPage.BB_filtered_result_display();
@@ -374,6 +382,7 @@ public class Billboards extends Base {
 }
 	@And("User click on Update BillBoard button with confirm yes button")
 	public void User_click_on_Update_BillBoard_button_with_confirm_yes_button() throws Exception {
+		billboardsPage.BB_update_clicked();
 		billboardsPage.BB_update_confirmed();
 }
 	@Then("^BillBoard Updated popup will be displayed successfully as \"([^\"]*)\"$")
@@ -384,4 +393,37 @@ public class Billboards extends Base {
 	      System.out.println(">> User or Admin got the QR code file downloaded successfully"+actualMessage);
 	      assertEquals(normalizedExpectedMessage, normalizedActualMessage);
 	}
+	@And("User click on BOM Tab")
+	public void User_click_on_BOM_Tab () throws Exception {
+		billboardsPage.BB_editpage_BOM();
+}
+	@And("BOM details of BillBoard will be display successfully")
+	public void BOM_details_of_BillBoard_will_be_display_successfully () throws Exception {
+		billboardsPage.BB_editpage_BOMdisplay();
+}
+	@And("User click on Download PDF button and will be downloaded the PDF file of BOM")
+	public void User_click_on_Download_PDF_button_and_will_be_downloaded_the_PDF_file_of_BOM () throws Exception {
+		billboardsPage.BB_BOMDetails_Download_PDF();
+}
+	@And("User click on Download QR code icon")
+	public void User_click_on_Download_QR_code_icon () throws Exception {
+		billboardsPage.BB_editpage_BOMTab_QRcode();
+}
+	@And("BillBoard QR code will be displayed sucessfully")
+	public void BillBoard_QR_code_will_be_displayed_sucessfully () throws Exception {
+		billboardsPage.BB_editpage_BOMTab_QRcodedisplay();
+}
+	@And("User clicks on Mark it as non operational and click yes mark it")
+	public void User_clicks_on_Mark_it_as_non_operational_and_click_yes_mark_it () throws Exception {
+		billboardsPage.BB_Mark_it_as_nonoperational();
+		billboardsPage.BB_Mark_it_as_nonoperational_confirmed();
+}
+	@And("User Mark it as non operational and Added the reason successfully")
+	public void User_Mark_it_as_non_operational_and_Added_the_reason_successfully () throws Exception {
+		billboardsPage.BB_Mark_it_as_nonoperational();
+		billboardsPage.BB_Mark_it_as_nonoperational_confirmed();
+		billboardsPage.BB_non_operatnl_reason_added();
+		billboardsPage.BB_clicked_reason_button();
+		//billboardsPage.BB_Marked_non_opernl_with_reason();
+}
 }

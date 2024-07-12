@@ -42,7 +42,8 @@ bb_location = Riyadh
 bb_ticket_count = 2
 bb_Type = Kazi
 Scr_Resolution = 1.24	
-
+Screen_height = 5
+reason = test
 <-------Profile------>
 personalinfo = coducer
 Phone_number = 9341152902

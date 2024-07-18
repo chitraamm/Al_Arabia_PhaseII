@@ -52,7 +52,7 @@ Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the billboards module
 And User sort the billboards list Name Z to A 
-Then billboards list Z get displayed successfully
+Then billboards list Z to A get displayed successfully
 
 @billboards @billboards07 @smoke @regression @all
 Scenario Outline: T007_To verify the billboards feature sort Recently Added
@@ -63,135 +63,143 @@ And User sort the billboards list Recently Added
 Then Recent billboards list get displayed successfully
 
 @billboards @billboards08 @smoke @regression @all
-Scenario Outline: T008_To verify the billboards feature filter active status billboards
+Scenario Outline: T008_To verify the billboards feature sort decending
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the billboards module
+And User sort the billboards list decending
+Then Decending billboards list get displayed successfully
+
+@billboards @billboards09 @smoke @regression @all
+Scenario Outline: T009_To verify the billboards feature filter active status billboards
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the billboards module
 And User filter the billboards list status Active
 Then Active billboards list get displayed successfully
 
-@billboards @billboards09 @smoke @regression @all
-Scenario Outline: T009_To verify the billboards feature filter Non oper status billboards
+@billboards @billboards10 @smoke @regression @all
+Scenario Outline: T010_To verify the billboards feature filter Non oper status billboards
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the billboards module
 And User filter the billboards list status Non Oper
 Then Non Oper billboards list get displayed successfully
 
-@billboards @billboards10 @smoke @regression @all
-Scenario Outline: T010_To verify the billboards feature filter expired status billboards
+@billboards @billboards11 @smoke @regression @all
+Scenario Outline: T011_To verify the billboards feature filter expired status billboards
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the billboards module
 And User filter the billboards list status Request
 Then Request billboards list get displayed successfully
 
-@billboards @billboards11 @smoke @regression @all
-Scenario Outline: T011_To verify the billboards feature filter location billboards
+@billboards @billboards12 @smoke @regression @all
+Scenario Outline: T012_To verify the billboards feature filter location billboards
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the billboards module
 And User selects billboard location
 Then Selected location billboards list get displayed successfully
 
-@billboards @billboards12 @smoke @regression @all
-Scenario Outline: T012_To verify the billboards feature filter ticket count billboards
+@billboards @billboards13 @smoke @regression @all
+Scenario Outline: T013_To verify the billboards feature filter ticket count billboards
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the billboards module
 And User filter the billboards ticket count
 Then ticket count billboards list get displayed successfully
 
-@billboards @billboards13 @smoke @regression @all
-Scenario Outline: T013_To verify the billboards feature filter Billboard Type
+@billboards @billboards14 @smoke @regression @all
+Scenario Outline: T014_To verify the billboards feature filter Billboard Type
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the billboards module
 And User filter the Billboard Type 
 Then Billboard type billboards list get displayed successfully
 
-@billboards @billboards14 @smoke @regression @all
-Scenario Outline: T014_To verify the billboards feature filters Online for Team viewer,Novastar,IVMS 
+@billboards @billboards15 @smoke @regression @all
+Scenario Outline: T015_To verify the billboards feature filters Online for Team viewer,Novastar,IVMS 
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the billboards module
 And User filter the billboards Online Team viewer Novastar IVMS 
 Then Online billboards list get displayed successfully for Team viewer Novastar IVMS 
 
-@billboards @billboards15 @smoke @regression @all
-Scenario Outline: T015_To verify the billboards feature filters Offline for Team viewer,Novastar,IVMS 
+@billboards @billboards16 @smoke @regression @all
+Scenario Outline: T016_To verify the billboards feature filters Offline for Team viewer,Novastar,IVMS 
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the billboards module
 And User filter the billboards Offline Team viewer Novastar IVMS 
 Then Offline billboards list get displayed successfully for Team viewer Novastar IVMS
 
-@billboards @billboards16 @smoke @regression @all
-Scenario Outline: T016_To verify the billboards feature filters installed for IVMS 4200 N/A,Novastar N/A
+@billboards @billboards17 @smoke @regression @all
+Scenario Outline: T017_To verify the billboards feature filters installed for IVMS 4200 N/A,Novastar N/A
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the billboards module
 And User filter the billboards installed IVMS and Novastar 
 Then installed billboards list get displayed successfully for IVMS and Novastar
 
-@billboards @billboards17 @smoke @regression @all
-Scenario Outline: T017_To verify the billboards feature filters Not installed for IVMS 4200 N/A,Novastar N/A
+@billboards @billboards18 @smoke @regression @all
+Scenario Outline: T018_To verify the billboards feature filters Not installed for IVMS 4200 N/A,Novastar N/A
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the billboards module
 And User filter the billboards Not installed IVMS and Novastar 
 Then Not installed billboards list get displayed successfully for IVMS and Novastar
 
-@billboards @billboards18 @smoke @regression @all
-Scenario Outline: T018_To verify the billboards feature filters Online for Team Viewer,Novostar and installed for IVMS 4200 N/A,Novastar N/A
+@billboards @billboards19 @smoke @regression @all
+Scenario Outline: T019_To verify the billboards feature filters Online for Team Viewer,Novostar and installed for IVMS 4200 N/A,Novastar N/A
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the billboards module
 And User filter the billboards installed IVMS and Novastar with online
 Then Online and installed status billboards list get displayed successfully for IVMS and Novastar
 
-@billboards @billboards19 @smoke @regression @all
-Scenario Outline: T019_To verify the billboards feature filters Onine for Team Viewer,Novostar and installed for IVMS 4200 N/A,Novastar N/A
+@billboards @billboards20 @smoke @regression @all
+Scenario Outline: T020_To verify the billboards feature filters Onine for Team Viewer,Novostar and installed for IVMS 4200 N/A,Novastar N/A
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the billboards module
 And User filter the billboards Offline Team viewer Novastar IVMS with installed
 Then Offline and installed status billboards list get displayed successfully for IVMS and Novastar
 
-@billboards @billboards20 @smoke @regression @all
-Scenario Outline: T020_To verify the billboards feature filters Onine for Team Viewer,Novostar and Not installed for IVMS 4200 N/A,Novastar N/A
+@billboards @billboards21 @smoke @regression @all
+Scenario Outline: T021_To verify the billboards feature filters Onine for Team Viewer,Novostar and Not installed for IVMS 4200 N/A,Novastar N/A
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the billboards module
 And User filter the billboards Online Team viewer Novastar IVMS with Not installed
 Then Online and Not installed status billboards list get displayed successfully for IVMS and Novastar
 
-@billboards @billboards21 @smoke @regression @all
-Scenario Outline: T021_To verify the billboards feature filters Offine for Team Viewer,Novostar and Not installed for IVMS 4200 N/A,Novastar N/A
+@billboards @billboards22 @smoke @regression @all
+Scenario Outline: T022_To verify the billboards feature filters Offine for Team Viewer,Novostar and Not installed for IVMS 4200 N/A,Novastar N/A
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the billboards module
 And User filter the billboards Offline Team viewer Novastar IVMS with Not installed
 Then Offline and Not installed status billboards list get displayed successfully for IVMS and Novastar
 
-@billboards @billboards22 @smoke @regression @all
-Scenario Outline: T022_To verify the billboards feature filter Screen resolution
+@billboards @billboards23 @smoke @regression @all
+Scenario Outline: T023_To verify the billboards feature filter Screen resolution
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the billboards module
 And User filter the Screen resolution drop down
 Then Screen resolution billboards list get displayed successfully
 
-@billboards @billboards23 @smoke @regression @all
-Scenario Outline: T023_To verify the billboards feature Download button
+@billboards @billboards24 @smoke @regression @all
+Scenario Outline: T024_To verify the billboards feature Download button
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the billboards module
 And User clicks Download button 
 Then Download pop up displayed successfully
 
-@billboards @billboards24 @smoke @regression @all
-Scenario Outline: T024_To verify the billboards feature Download as excel
+@billboards @billboards25 @smoke @regression @all
+Scenario Outline: T025_To verify the billboards feature Download as excel
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the billboards module
@@ -201,8 +209,8 @@ Then Excel file will be downloaded successfully as "<successMessage>"
       | successMessage       |
       | LOADING...           |
 
-@billboards @billboards25 @smoke @regression @all
-Scenario Outline: T025_To verify the billboards feature Download as excel
+@billboards @billboards26 @smoke @regression @all
+Scenario Outline: T026_To verify the billboards feature Download as excel
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the billboards module
@@ -212,8 +220,8 @@ Then PDF file will be downloaded successfully as "<successMessage>"
       | successMessage       |
       | LOADING...           |
       
-@billboards @billboards26 @smoke @regression @all
-Scenario Outline: T026_To verify the billboards feature Download as excel
+@billboards @billboards27 @smoke @regression @all
+Scenario Outline: T027_To verify the billboards feature Download as excel
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the billboards module
@@ -223,32 +231,32 @@ Then QR file will be downloaded successfully as "<successMessage>"
       | successMessage       |
       | LOADING...           |     
           
-@billboards @billboards27 @smoke @regression @all
-Scenario Outline: T027_To verify the billboards feature edit
+@billboards @billboards28 @smoke @regression @all
+Scenario Outline: T028_To verify the billboards feature edit
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the billboards module
 And User clicks Download button after that click on close button 
 Then Download pop up get closed successfully and display the Billboard list 
          
-@billboards @billboards28 @smoke @regression @all
-Scenario Outline: T028_To verify the billboards feature Edit button in BillBoards page
+@billboards @billboards29 @smoke @regression @all
+Scenario Outline: T029_To verify the billboards feature Edit button in BillBoards page
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the billboards module
 And User clicks the Edit button 
 Then Edit BillBoard page will be displayed successfully
          
-@billboards @billboards29 @smoke @regression @all
-Scenario Outline: T029_To verify the billboards feature Plus button in BillBoards page
+@billboards @billboards30 @smoke @regression @all
+Scenario Outline: T030_To verify the billboards feature Plus button in BillBoards page
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the billboards module
 And User clicks on the Plus button 
 Then BillBoard View page will be displayed successfully  
        
-@billboards @billboards30 @smoke @regression @all
-Scenario Outline: T030_To verify the billboards feature Delete button in BillBoards page
+@billboards @billboards31 @smoke @regression @all
+Scenario Outline: T031_To verify the billboards feature Delete button in BillBoards page
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the billboards module
@@ -258,8 +266,8 @@ Then BillBoard delete popup will be displayed successfully as "<successMessage>"
       | successMessage     								    |
       | Success deleted this billboard        |      
 
-@billboards @billboards31 @smoke @regression @all
-Scenario Outline: T031_To verify the billboards features Billboard location in the BillBoards page when the location text is clicked
+@billboards @billboards32 @smoke @regression @all
+Scenario Outline: T032_To verify the billboards features Billboard location in the BillBoards page when the location text is clicked
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the billboards module
@@ -267,8 +275,8 @@ And User selects billboard location
 And User click on the Billboard location text 
 Then page redirected to the map page with billboard location
       
-@billboards @billboards32 @smoke @regression @all
-Scenario Outline: T032_To verify the billboards features Update BillBoard
+@billboards @billboards33 @smoke @regression @all
+Scenario Outline: T033_To verify the billboards features Update BillBoard
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the billboards module
@@ -282,8 +290,8 @@ Then BillBoard Updated popup will be displayed successfully as "<successMessage>
       | successMessage     								    |
       | Success Billboard updated             |  
         
-@billboards @billboards33 @smoke @regression @all
-Scenario Outline: T033_To verify the billboards features BOM Tab in Update BillBoard page
+@billboards @billboards34 @smoke @regression @all
+Scenario Outline: T034_To verify the billboards features BOM Tab in Update BillBoard page
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the billboards module
@@ -293,8 +301,8 @@ And User clicks the Edit button
 And User click on BOM Tab
 Then BOM details of BillBoard will be display successfully
       
-@billboards @billboards34 @smoke @regression @all
-Scenario Outline: T034_To verify the billboards features Download PDF File in BOM Details page
+@billboards @billboards35 @smoke @regression @all
+Scenario Outline: T035_To verify the billboards features Download PDF File in BOM Details page
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the billboards module
@@ -304,8 +312,8 @@ And User clicks the Edit button
 And User click on BOM Tab
 Then User click on Download PDF button and will be downloaded the PDF file of BOM
   
-@billboards @billboards35 @smoke @regression @all
-Scenario Outline: T035_To verify the billboards features QR display in Update BillBoard page
+@billboards @billboards36 @smoke @regression @all
+Scenario Outline: T036_To verify the billboards features QR display in Update BillBoard page
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the billboards module
@@ -315,8 +323,8 @@ And User clicks the Edit button
 And User click on Download QR code icon
 Then BillBoard QR code will be displayed sucessfully
 
-@billboards @billboards36 @smoke @regression @all
-Scenario Outline: T036_To verify the billboards features clicks Mark it as non operational in Update BillBoard page
+@billboards @billboards37 @smoke @regression @all
+Scenario Outline: T037_To verify the billboards features clicks Mark it as non operational in Update BillBoard page
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the billboards module
@@ -325,8 +333,8 @@ And User selects billboard location32
 And User clicks the Edit button 
 Then User clicks on Mark it as non operational and click yes mark it
 
-@billboards @billboards37 @smoke @regression @all
-Scenario Outline: T037_To verify the billboards features Mark it as non operational in Update BillBoard page
+@billboards @billboards38 @smoke @regression @all
+Scenario Outline: T038_To verify the billboards features Mark it as non operational in Update BillBoard page
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the billboards module
@@ -336,8 +344,8 @@ And User clicks the Edit button
 And User Mark it as non operational and Added the reason 
 Then reason added popup will be displayed successfully as "<successMessage>"
   Examples:
-      | successMessage1       | successMessage2          |
-      | LOADING...            | Success reason added     |
+      | successMessage1       | successMessage2                    |
+      | LOADING...            | Success Updated as non-operational |
       
 #@billboards @billboards18 @sanity @regression @all
 #Scenario Outline: T018_To verify the billboards feature filter with multiple selected options

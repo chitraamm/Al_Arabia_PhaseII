@@ -120,8 +120,8 @@ public class Billboards extends Base {
 		billboardsPage.Billboard_sortZ_A();
 	}
 
-	@Then("billboards list Z get displayed successfully")
-	public void billboards_list_Z_get_displayed_successfully() throws Exception {
+	@Then("billboards list Z to A get displayed successfully")
+	public void billboards_list_Z_to_A_get_displayed_successfully() throws Exception {
 		billboardsPage.BBlist();
 	}
 
@@ -134,7 +134,16 @@ public class Billboards extends Base {
 	public void Recent_billboards_list_get_displayed_successfully() throws Exception {
 		billboardsPage.BBlist();
 	}
+	@And("User sort the billboards list decending")
+	public void User_sort_the_billboards_list_decending() throws Exception {
+		billboardsPage.DecendingDate();
+	}
 
+	@Then("Decending billboards list get displayed successfully")
+	public void Decending_billboards_list_get_displayed_successfully() throws Exception {
+		billboardsPage.BBlist();
+	}
+	
 	@And("User filter the billboards list status Active")
 	public void User_filter_the_billboards_list_status_Active() throws Exception {
 		billboardsPage.BB_filter_active();

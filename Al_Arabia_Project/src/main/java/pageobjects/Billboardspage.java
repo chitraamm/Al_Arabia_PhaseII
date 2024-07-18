@@ -812,24 +812,25 @@ act.moveToElement(BB_Mark_it_as_non_opernl_confirm_click).click().perform();
 }
 // <-------------------------------------Added reason and marked as non operationl
 // ---------------------------------------->
-@FindBy(xpath = "(//input[@type='text'])[4]")
+@FindBy(xpath = "(//input[@type='text'])[16]")
 private WebElement Reason_enter_for_Mark_Non_operntl;
-
+@FindBy(xpath = "//h4[normalize-space()='Reason']")
+private WebElement BB_reason_text;
 public void BB_non_operatnl_reason_added() {
 	
-	//wait.until(ExpectedConditions.visibilityOf(BB_Mark_it_as_non_opernl_confirm_click)).isDisplayed();
-
 	String reason = prop.getProperty("reason");
-	//wait.until(ExpectedConditions.visibilityOf(Newbillboard_boardno)).isDisplayed();
-	act.moveToElement(Reason_enter_for_Mark_Non_operntl).sendKeys(reason);
+	wait.until(ExpectedConditions.visibilityOf(BB_reason_text));
+
+	act.moveToElement(Reason_enter_for_Mark_Non_operntl).sendKeys(""+reason).perform();
     LOGGER.info("User enters reason");
 
 }
 // <-------------------------------------click on reason button
 // ---------------------------------------->
 
-@FindBy(xpath = "")
+@FindBy(xpath = "//h6[normalize-space()='Reason']")
 private WebElement BB_reason_buttn_click;
+
 public void BB_clicked_reason_button() throws Exception {
 
 wait.until(ExpectedConditions.visibilityOf(Newbillboard_boardno)).isDisplayed();

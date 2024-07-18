@@ -156,4 +156,87 @@ public class Ticketspage extends Base {
 				.until(ExpectedConditions.visibilityOf(Ticket_created_Success_display));
 		return successMessageElement.getText().trim();
 	}
+	@FindBy(id = "doc_searchQueryInput")
+	private WebElement TicketSearch;
+
+	public void Ticket_search_enter_text() {
+		wait.until(ExpectedConditions.visibilityOf(TicketSearch)).click();
+		String ticket_search = prop.getProperty("Ticketno");
+		wait.until(ExpectedConditions.visibilityOf(TicketSearch)).sendKeys(ticket_search + Keys.ENTER);
+		System.out.println(">> User enter the Ticket number in search field: " + ticket_search);
+	}
+
+	@FindBy(xpath = "//tbody/tr[@class='table_white']/td[1]/div[1]")
+	private WebElement ticketSearchedList, Ticketlist;
+
+	public void TicketSearchedList() {
+		wait.until(ExpectedConditions.visibilityOf(ticketSearchedList));
+
+		if (ticketSearchedList.isDisplayed()) {
+			System.out.println("Element is displayed");
+		} else {
+			System.out.println("Element is not displayed");
+		}
+		LOGGER.info(">> Admin/User clicked new ticket btn");
+		System.out.println(">> User got searched BB list: " + ticketSearchedList.getText());
+	}
+
+	public void Ticketlist() {
+		wait.until(ExpectedConditions.visibilityOf(ticketSearchedList));
+
+		if (Ticketlist.isDisplayed()) {
+			System.out.println("Element is displayed");
+		} else {
+			System.out.println("Element is not displayed");
+		}
+		LOGGER.info(">> Admin/User clicked new ticket btn");
+		System.out.println(">> User got sorted Ticket list: " + Ticketlist.getText());
+	}
+	@FindBy(xpath = "(//h6[contains(@class,'m-0 by fw-normal')][normalize-space()='Recently Added'])[1]")
+	private WebElement ticket_sort;
+
+	@FindBy(xpath = "(//h6[contains(text(),'Recently Updated')])[1]")
+	private WebElement tickets_sort_recentlyupdated;
+
+	@FindBy(xpath = "(//h6[contains(text(),'Recently Added')])[2]")
+	private WebElement tickets_sort_recentlyadded;
+
+	public void Tickets_sort_recentlyupdated() {
+		wait.until(ExpectedConditions.visibilityOf(ticket_sort)).click();
+		wait.until(ExpectedConditions.visibilityOf(tickets_sort_recentlyupdated)).click();
+		System.out.println(">> User clicked recently updated in sort");
+	}
+
+	public void Tickets_sort_recentlyadded() {
+		wait.until(ExpectedConditions.visibilityOf(ticket_sort)).click();
+		wait.until(ExpectedConditions.visibilityOf(tickets_sort_recentlyadded)).click();
+		System.out.println(">> User clicked recently added in sort");
+	}
+
+	@FindBy(xpath = "(//h6[contains(text(),'Name - A to Z')])[1]")
+	private WebElement ticket_Name_A_to_Z;
+
+	public void Ticket_A_to_Z() {
+		wait.until(ExpectedConditions.visibilityOf(ticket_sort)).click();
+		wait.until(ExpectedConditions.visibilityOf(ticket_Name_A_to_Z)).click();
+		System.out.println(">> User clicked recently updated in sort");
+	}
+
+	@FindBy(xpath = "(//h6[contains(text(),'Name - Z to A')])[1]")
+	private WebElement ticket_Name_Z_to_A;
+
+	public void Ticket_sortZ_A() {
+		wait.until(ExpectedConditions.visibilityOf(ticket_sort)).click();
+		wait.until(ExpectedConditions.visibilityOf(ticket_Name_Z_to_A)).click();
+		System.out.println(">> User clicked Z-A updated in sort");
+	}
+
+	@FindBy(xpath = "(//h6[contains(text(),'Decending - Date')])[1]")
+	private WebElement Ticket_Name_decending;
+
+	public void Ticket_DecendingDate() {
+		wait.until(ExpectedConditions.visibilityOf(ticket_sort)).click();
+		wait.until(ExpectedConditions.visibilityOf(Ticket_Name_decending)).click();
+		System.out.println(">> User clicked decending updated in sort");
+	}
 }

@@ -64,4 +64,61 @@ public class Tickets extends Base {
 	private String normalizeWhitespace(String input) {
 		return input.replaceAll("\\s+", " ").trim();
 	}
+	@And("Admin or user search the Tickets")
+	public void Admin_or_user_search_the_Tickets() throws Exception {
+		ticketsPage.Ticket_search_enter_text();
+	}
+
+	@Then("Searched Ticket details get displayed successfully")
+	public void Searched_Ticket_details_get_displayed_successfully() {
+		ticketsPage.TicketSearchedList();
+	}
+	@And("Admin or user sort the Tickets list recently updated")
+	public void Admin_or_user_sort_the_Tickets_list_recently_updated() throws Exception {
+		ticketsPage.Tickets_sort_recentlyupdated();
+	}
+
+	@Then("Recently updated Tickets list get displayed successfully")
+	public void Recently_updated_Tickets_list_get_displayed_successfully() throws Exception {
+		ticketsPage.Ticketlist();
+	}
+
+	@And("User sort the Tickets list Name A to Z")
+	public void User_sort_the_Tickets_list_Ticket_Name_A_to_Z() throws Exception {
+		ticketsPage.Ticket_A_to_Z();
+	}
+
+	@Then("Tickets list get displayed successfully")
+	public void Tickets_list_get_displayed_successfully() throws Exception {
+		ticketsPage.Ticketlist();
+	}
+
+	@And("User sort the Tickets list Name Z to A")
+	public void User_sort_the_Tickets_list_Name_Z_to_A() throws Exception {
+		ticketsPage.Ticket_sortZ_A();
+	}
+
+	@Then("Tickets list Z to A get displayed successfully")
+	public void Tickets_list_Z_to_A_get_displayed_successfully() throws Exception {
+		ticketsPage.Ticketlist();
+	}
+
+	@And("User sort the Tickets list Recently Added")
+	public void User_sort_the_Tickets_list_Recently_Added() throws Exception {
+		ticketsPage.Tickets_sort_recentlyadded();
+	}
+
+	@Then("Recent Tickets list get displayed successfully")
+	public void Recent_Tickets_list_get_displayed_successfully() throws Exception {
+		ticketsPage.Ticketlist();
+	}
+	@And("User sort the Tickets list decending")
+	public void User_sort_the_Tickets_list_Decending() throws Exception {
+		ticketsPage.Ticket_DecendingDate();
+	}
+
+	@Then("Decending Tickets list get displayed successfully")
+	public void Decending_Tickets_list_get_displayed_successfully() throws Exception {
+		ticketsPage.Ticketlist();
+	}
 }

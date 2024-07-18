@@ -333,10 +333,11 @@ And Admin or user clicks the billboards module
 And User filter the billboards list status Active32
 And User selects billboard location32
 And User clicks the Edit button 
-Then User Mark it as non operational and Added the reason successfully
+And User Mark it as non operational and Added the reason 
+Then reason added popup will be displayed successfully as "<successMessage>"
   Examples:
       | successMessage1       | successMessage2          |
-      | LOADING...            | Success Billboard created|
+      | LOADING...            | Success reason added     |
       
 #@billboards @billboards18 @sanity @regression @all
 #Scenario Outline: T018_To verify the billboards feature filter with multiple selected options

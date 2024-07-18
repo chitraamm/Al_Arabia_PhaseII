@@ -49,7 +49,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Jul 12, 2024 06:40:09 pm</span>
+			<span class='label blue darken-3 suite-start-time'>Jul 17, 2024 11:10:19 pm</span>
 			</a>
 		</ul>
 	</div>
@@ -64,7 +64,7 @@
 				<i class='material-icons'>warning</i> Status
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
-										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+										<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -76,11 +76,11 @@
 				<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@smoke</a></li>
-					<li><a href='#'>@all</a></li>
+					<li><a href='#'>@Tickets</a></li>
 					<li><a href='#'>@regression</a></li>
-					<li><a href='#'>@billboards36</a></li>
-					<li><a href='#'>@billboards</a></li>
+					<li><a href='#'>@Tickets02</a></li>
+					<li><a href='#'>@sanity</a></li>
+					<li><a href='#'>@all</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -117,11 +117,11 @@
 	<div class='subview-left left'>
 		<div class='view-summary'>
 			<ul id='test-collection' class='test-collection'>
-				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>billboards</span>
-						<span class='test-time'>Jul 12, 2024 06:40:09 pm</span>
-						<span class='test-status right pass'>Pass</span>
+						<span class='test-name'>Tickets</span>
+						<span class='test-time'>Jul 17, 2024 11:10:19 pm</span>
+						<span class='test-status right fail'>Fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class="sr-filters bdd-filters">
@@ -130,59 +130,66 @@
 	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
 	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
 </div>
-	<div class='test-desc'>Admin, Manager and Supervisor can able to access the billboards feature, if they are get the roles access only</div>
+	<div class='test-desc'>Admin, Manager and Supervisor can able to access the Tickets feature, if they are get the roles access only</div>
 
-<div class='scenario node' test-id='2' status='pass'>
+<div class='scenario outline node' test-id='2' status='fail'>
 
-	<span class='duration right label'>00 00 15.927</span>
+	<span class='duration right label'>00 00 15.604</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: T036_To verify the billboards features clicks Mark it as non operational in Update BillBoard page</div>
+		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario Outline: T002_Create the Ticket with valid inputs</div>
 	</div>
 	
+		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>successMessage1</td><td>successMessage2</td></tr><tr><td>LOADING...</td><td>Success Ticket created</td></tr></table></div>
 	
-		<div class='category-list'>
-				<span class='category label'>@all</span>
-				<span class='category label'>@smoke</span>
-				<span class='category label'>@regression</span>
-				<span class='category label'>@billboards</span>
-				<span class='category label'>@billboards36</span>
-		</div>
 	
 	<ul class='steps'>
-		<li test-id='4' class='node given Pass' status='Pass'>
-			<div class="step-name" title="(Stepdefinitions.Members.Admin_logged_in_with_valid_credentials())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Admin logged in with valid credentials</div>
+		<li test-id='3' class='node scenario Fail' status='Fail'>
+			<div class="step-name" title="()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>T002_Create the Ticket with valid inputs</div>
 
+				<div class='category-list'>
+						<span class='category label'>@all</span>
+						<span class='category label'>@Tickets02</span>
+						<span class='category label'>@regression</span>
+						<span class='category label'>@Tickets</span>
+						<span class='category label'>@sanity</span>
+				</div>
 
-		</li>
-		<li test-id='6' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(Stepdefinitions.Members.Al_Arabia_overall_dashboard_should_display())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Al-Arabia overall dashboard should display</div>
+			<ul class='gc steps'>
+				<li test-id='5' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="Stepdefinitions.Members.Admin_logged_in_with_valid_credentials()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Admin logged in with valid credentials</h6>
 
+				</li>
+				<li test-id='7' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="Stepdefinitions.Members.Al_Arabia_overall_dashboard_should_display()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Al-Arabia overall dashboard should display</h6>
 
-		</li>
-		<li test-id='8' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(Stepdefinitions.Billboards.Admin_or_user_clicks_the_billboards_module())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Admin or user clicks the billboards module</div>
+				</li>
+				<li test-id='9' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="Stepdefinitions.Tickets.Admin_or_user_clicks_the_Tickets_module()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Admin or user clicks the Tickets module</h6>
 
+				</li>
+				<li test-id='11' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="Stepdefinitions.Tickets.Admin_or_user_clicks_the_new_Ticket_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Admin or user clicks the new Ticket button</h6>
 
-		</li>
-		<li test-id='10' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(Stepdefinitions.Billboards.User_filter_the_billboards_list_status_Active32())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User filter the billboards list status Active32</div>
+				</li>
+				<li test-id='13' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="Stepdefinitions.Tickets.Admin_or_user_enters_the_all_mandatory_fields()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Admin or user enters the all mandatory fields</h6>
 
+				</li>
+				<li test-id='15' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="Stepdefinitions.Tickets.Admin_or_user_clicks_the_create_Ticket()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Admin or user clicks the create Ticket</h6>
 
-		</li>
-		<li test-id='12' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(Stepdefinitions.Billboards.User_selects_billboard_location32())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User selects billboard location32</div>
+				</li>
+				<li test-id='17' class='gc and Fail' status='Fail'>
+					<h6 class="step-name" title=""><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>And Particular Ticket gets created successfully with either "LOADING..." or "Success Ticket created"</h6>
 
+							<div class="node-step">Step undefined</div>
+				</li>
+				<li test-id='19' class='gc then Skip' status='Skip'>
+					<h6 class="step-name" title=""><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then The Ticket should created and displayed in Tickets page successfully</h6>
 
-		</li>
-		<li test-id='14' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(Stepdefinitions.Billboards.User_clicks_the_Edit_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User clicks the Edit button</div>
-
-
-		</li>
-		<li test-id='16' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(Stepdefinitions.Billboards.User_clicks_on_Mark_it_as_non_operational_and_click_yes_mark_it())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User clicks on Mark it as non operational and click yes mark it</div>
-
-
+							<div class="node-step">Step skipped</div>
+				</li>
+			</ul>
 		</li>
 	</ul>
 </div>
@@ -218,12 +225,12 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='$100%'>
-                    <span class='strong'>1</span> features passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='$0%'>
+                    <span class='strong'>0</span> features passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
-                    0</span> features failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>
+                    1</span> features failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped
                 </div>
@@ -236,12 +243,12 @@
                     <canvas id='child-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'>
-                    <span class='strong'>1</span> scenarios passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='0%'>
+                    <span class='strong'>0</span> scenarios passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
-                    0</span> scenarios failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>
+                    1</span> scenarios failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -256,14 +263,14 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'>
-                    <span class='strong'>7</span> steps passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='75%'>
+                    <span class='strong'>6</span> steps passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
-                    0</span> steps failed, 
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
-                    0</span> skipped, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='12%'>
+                    1</span> steps failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='12%'>
+                    1</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> others
                 </div>
@@ -301,15 +308,15 @@
 			<ul id='category-collection' class='category-collection'>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@smoke</span>
+						<span class='category-name'>@Tickets</span>
 						<span class='category-status right'>
-						<span class='label pass'>1</span>
+						<span class='label fail'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
 							
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 						<div class='category-tests'>
@@ -323,42 +330,9 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 12, 2024 06:40:09 pm</td>
-										<td class='linked' test-id='2'>T036_To verify the billboards features clicks Mark it as non operational in Update BillBoard page</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@all</span>
-						<span class='category-status right'>
-						<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Jul 12, 2024 06:40:09 pm</td>
-										<td class='linked' test-id='2'>T036_To verify the billboards features clicks Mark it as non operational in Update BillBoard page</td>
-										<td><span class='test-status Pass'>Pass</span></td>
+										<td>Jul 17, 2024 11:10:19 pm</td>
+										<td class='linked' test-id='3'>T002_Create the Ticket with valid inputs</td>
+										<td><span class='test-status Fail'>Fail</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -369,13 +343,13 @@
 					<div class='category-heading'>
 						<span class='category-name'>@regression</span>
 						<span class='category-status right'>
-						<span class='label pass'>1</span>
+						<span class='label fail'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
 							
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 						<div class='category-tests'>
@@ -389,9 +363,9 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 12, 2024 06:40:09 pm</td>
-										<td class='linked' test-id='2'>T036_To verify the billboards features clicks Mark it as non operational in Update BillBoard page</td>
-										<td><span class='test-status Pass'>Pass</span></td>
+										<td>Jul 17, 2024 11:10:19 pm</td>
+										<td class='linked' test-id='3'>T002_Create the Ticket with valid inputs</td>
+										<td><span class='test-status Fail'>Fail</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -400,15 +374,15 @@
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@billboards36</span>
+						<span class='category-name'>@Tickets02</span>
 						<span class='category-status right'>
-						<span class='label pass'>1</span>
+						<span class='label fail'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
 							
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 						<div class='category-tests'>
@@ -422,9 +396,9 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 12, 2024 06:40:09 pm</td>
-										<td class='linked' test-id='2'>T036_To verify the billboards features clicks Mark it as non operational in Update BillBoard page</td>
-										<td><span class='test-status Pass'>Pass</span></td>
+										<td>Jul 17, 2024 11:10:19 pm</td>
+										<td class='linked' test-id='3'>T002_Create the Ticket with valid inputs</td>
+										<td><span class='test-status Fail'>Fail</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -433,15 +407,15 @@
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@billboards</span>
+						<span class='category-name'>@sanity</span>
 						<span class='category-status right'>
-						<span class='label pass'>1</span>
+						<span class='label fail'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
 							
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 						<div class='category-tests'>
@@ -455,9 +429,42 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 12, 2024 06:40:09 pm</td>
-										<td class='linked' test-id='2'>T036_To verify the billboards features clicks Mark it as non operational in Update BillBoard page</td>
-										<td><span class='test-status Pass'>Pass</span></td>
+										<td>Jul 17, 2024 11:10:19 pm</td>
+										<td class='linked' test-id='3'>T002_Create the Ticket with valid inputs</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@all</span>
+						<span class='category-status right'>
+						<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jul 17, 2024 11:10:19 pm</td>
+										<td class='linked' test-id='3'>T002_Create the Ticket with valid inputs</td>
+										<td><span class='test-status Fail'>Fail</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -493,25 +500,25 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>7</div>
+					<div class='panel-lead'>8</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jul 12, 2024 06:40:09 pm</div>
+					<div class='panel-lead'>Jul 17, 2024 11:10:19 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jul 12, 2024 06:40:25 pm</div>
+			 		<div class='panel-lead'>Jul 17, 2024 11:10:35 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>00 00 16.590</div>
+					<div class='panel-lead'>00 00 16.248</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -527,48 +534,48 @@
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>@smoke</td>
+							<td>@Tickets</td>
+							<td>0</td>
 							<td>1</td>
 							<td>0</td>
-							<td>0</td>
 							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>@all</td>
-							<td>1</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
+									0%
 							</td>
 						</tr>
 						<tr>
 							<td>@regression</td>
+							<td>0</td>
 							<td>1</td>
 							<td>0</td>
-							<td>0</td>
 							<td>
-									100%
+									0%
 							</td>
 						</tr>
 						<tr>
-							<td>@billboards36</td>
+							<td>@Tickets02</td>
+							<td>0</td>
 							<td>1</td>
 							<td>0</td>
-							<td>0</td>
 							<td>
-									100%
+									0%
 							</td>
 						</tr>
 						<tr>
-							<td>@billboards</td>
+							<td>@sanity</td>
+							<td>0</td>
 							<td>1</td>
 							<td>0</td>
+							<td>
+									0%
+							</td>
+						</tr>
+						<tr>
+							<td>@all</td>
+							<td>0</td>
+							<td>1</td>
 							<td>0</td>
 							<td>
-									100%
+									0%
 							</td>
 						</tr>
 					</table>
@@ -583,34 +590,34 @@
 		<script>
 			var statusGroup = {
                 parentCount: 1,
-				passParent: 1,
-				failParent: 0,
+				passParent: 0,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
 				childCount: 1,
-				passChild: 1,
-				failChild: 0,
+				passChild: 0,
+				failChild: 1,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				grandChildCount: 7,
-				passGrandChild: 7,
-				failGrandChild: 0,
+				grandChildCount: 8,
+				passGrandChild: 6,
+				failGrandChild: 1,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 0,
+				skipGrandChild: 1,
 				infoGrandChild: 0,
 			};
 			</script>
 		
 		<script>
 			var timeline = {
-			        "billboards":15.93
+			        "Tickets":15.606
 			};
 		</script>
 		

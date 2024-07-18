@@ -36,7 +36,7 @@ public class Billboards extends Base {
 	@Then("Al-Arabia billboards dashboard should display successfully")
 	public void Al_Arabia_members_dashboard_should_display_successfully() throws Exception {
 		billboardsPage.allBillboardsCount();
-		LOGGER.info(">> Admin/user got the members dashboard page >>");
+		LOGGER.info(">> Admin/user got the billboards page >>");
 	}
 
 	@And("Admin or user clicks the new billboard button")
@@ -417,13 +417,29 @@ public class Billboards extends Base {
 	public void User_clicks_on_Mark_it_as_non_operational_and_click_yes_mark_it () throws Exception {
 		billboardsPage.BB_Mark_it_as_nonoperational();
 		billboardsPage.BB_Mark_it_as_nonoperational_confirmed();
-}
-	@And("User Mark it as non operational and Added the reason successfully")
-	public void User_Mark_it_as_non_operational_and_Added_the_reason_successfully () throws Exception {
+	}
+		
+      @And("User Mark it as non operational and Added the reason")
+	  public void User_Mark_it_as_non_operational_and_Added_the_reason () throws Exception {	
+		
 		billboardsPage.BB_Mark_it_as_nonoperational();
 		billboardsPage.BB_Mark_it_as_nonoperational_confirmed();
 		billboardsPage.BB_non_operatnl_reason_added();
 		billboardsPage.BB_clicked_reason_button();
-		//billboardsPage.BB_Marked_non_opernl_with_reason();
+		
+}
+	@Then("^reason added popup will be displayed successfully as \"([^\"]*)\"$")
+	public void reason_added_popup_will_be_displayed_successfully (String expectedMessage) throws Exception {
+		  String actualMessage = billboardsPage.billboard_created_Success_display();
+	      String normalizedExpectedMessage = normalizeWhitespace(expectedMessage);
+	      String normalizedActualMessage = normalizeWhitespace(actualMessage);
+	      System.out.println(">> User or Admin added reason for Mark it as non operational successfully"+actualMessage);
+	      assertEquals(normalizedExpectedMessage, normalizedActualMessage);
+	
+//		billboardsPage.BB_Mark_it_as_nonoperational();
+//		billboardsPage.BB_Mark_it_as_nonoperational_confirmed();
+//		billboardsPage.BB_non_operatnl_reason_added();
+//		billboardsPage.BB_clicked_reason_button();
+//	//	billboardsPage.BB_Marked_non_opernl_with_reason();
 }
 }

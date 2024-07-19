@@ -121,4 +121,125 @@ public class Tickets extends Base {
 	public void Decending_Tickets_list_get_displayed_successfully() throws Exception {
 		ticketsPage.Ticketlist();
 	}
+	@And("User filter the Tickets list status Closed")
+	public void User_filter_the_Tickets_list_status_Closed() throws Exception {
+		ticketsPage.Tickets_status_closed();
+	}
+	@Then("Closed Tickets list get displayed successfully")
+	public void Closed_Tickets_list_get_displayed_successfully() throws Exception {
+		ticketsPage.Tickets_filtered_result_display();
+	}
+	@And("User filter the Tickets list status Created")
+	public void User_filter_the_Tickets_list_status_Created() throws Exception {
+		ticketsPage.Tickets_status_created();
+	}
+	@Then("Created Tickets list get displayed successfully")
+	public void Created_Tickets_list_get_displayed_successfully() throws Exception {
+		ticketsPage.Tickets_filtered_result_display();
+	}
+	@And("User filter the Tickets list status Reassigned")
+	public void User_filter_the_Tickets_list_status_Reassigned() throws Exception {
+		ticketsPage.Tickets_status_Reassigned();
+	}
+	@Then("Reassigned Tickets list get displayed successfully")
+	public void Reassigned_Tickets_list_get_displayed_successfully() throws Exception {
+		ticketsPage.Tickets_filtered_result_display();
+	}
+	@And("User filter the Tickets list status Submitted")
+	public void User_filter_the_Tickets_list_status_Submitted() throws Exception {
+		ticketsPage.Tickets_status_Submitted();
+	}
+	@Then("Submitted Tickets list get displayed successfully")
+	public void Submitted_Tickets_list_get_displayed_successfully() throws Exception {
+		ticketsPage.Tickets_filtered_result_display();
+	}
+	
+	@And("User filter the Tickets list status Viewed")
+	public void User_filter_the_Tickets_list_status_Viewed() throws Exception {
+		ticketsPage.Tickets_status_Viewed();
+	}
+	@Then("Viewed Tickets list get displayed successfully")
+	public void Viewed_Tickets_list_get_displayed_successfully() throws Exception {
+		ticketsPage.Tickets_filtered_result_display();
+	}
+	@And("User filter the Tickets list status Verified")
+	public void User_filter_the_Tickets_list_status_Verified() throws Exception {
+		ticketsPage.Tickets_status_Verified();
+	}
+	@Then("Verified Tickets list get displayed successfully")
+	public void Verified_Tickets_list_get_displayed_successfully() throws Exception {
+		ticketsPage.Tickets_filtered_result_display();
+	}
+	@And("User filter the Tickets list status Overdue")
+	public void User_filter_the_Tickets_list_status_Overdue() throws Exception {
+		ticketsPage.Tickets_status_Overdue();
+	}
+	@Then("Overdue Tickets list get displayed successfully")
+	public void Overdue_Tickets_list_get_displayed_successfully() throws Exception {
+		ticketsPage.Tickets_filtered_result_display();
+	}
+	@And("User selects billboard number")
+	public void User_selects_billboard_number() throws Exception {
+		ticketsPage.select_BB_Number();
+	}
+	@Then("Selected BillBoard number list get displayed successfully")
+	public void Selected_BillBoard_number_list_get_displayed_successfully() throws Exception {
+		ticketsPage.Tickets_filtered_result_display();
+	}
+	@And("User selects Assignee")
+	public void User_selects_Assignee() throws Exception {
+		ticketsPage.select_Assignee();
+	}
+	@Then("Selected Assignee list get displayed successfully")
+	public void Selected_Assignee_list_get_displayed_successfully() throws Exception {
+		ticketsPage.Tickets_filtered_result_display();
+	}
+	@And("User selects city")
+	public void User_selects_city() throws Exception {
+		ticketsPage.select_City();
+	}
+	@Then("Selected city list get displayed successfully")
+	public void Selected_city_list_get_displayed_successfully() throws Exception {
+		ticketsPage.Tickets_filtered_result_display();
+	}
+	@And("User selects Department")
+	public void User_selects_Department() throws Exception {
+		ticketsPage.select_Department();
+	}
+	@Then("Selected Department list get displayed successfully")
+	public void Selected_Department_list_get_displayed_successfully() throws Exception {
+		ticketsPage.Tickets_filtered_result_display();
+	}
+	@And("User Clicks Cleaning Tickets")
+	public void User_Clicks_Cleaning_Tickets() throws Exception {
+		ticketsPage.Cleaning_Ticket();
+	}
+	@Then("Cleaning Tickets list get displayed successfully")
+	public void Cleaning_Tickets_list_get_displayed_successfully() throws Exception {
+		ticketsPage.Tickets_filtered_result_display();
+	}
+	@And("User Clicks Non Cleaning Tickets")
+	public void User_Clicks_Non_Cleaning_Tickets() throws Exception {
+		ticketsPage.Non_Cleaning_Ticket();
+	}
+	@Then("Non Cleaning Tickets list get displayed successfully")
+	public void Non_Cleaning_Tickets_list_get_displayed_successfully() throws Exception {
+		ticketsPage.Tickets_filtered_result_display();
+	}
+	@Then("multiple status Tickets list get displayed successfully")
+	public void multiple_status_Tickets_list_get_displayed_successfully() throws Exception {
+		ticketsPage.Tickets_filtered_result_display();
+	}
+	@And("User selected all statuses and submitted")
+	public void User_selected_all_statuses_and_submitted() throws Exception {
+		ticketsPage.Multiple_Ticket_statuses();
+	}
+	@And("User clicks the Download button")
+	public void User_clicks_the_Download_button() throws Exception {
+		ticketsPage.Download_button_Ticketspage();
+	}
+	@Then("Download pop up will be displayed successfully")
+	public void Download_pop_up_will_be_displayed_successfully() throws Exception {
+		ticketsPage.Tickets_Download_popup_display();
+	}
 }

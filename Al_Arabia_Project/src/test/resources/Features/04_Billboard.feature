@@ -210,7 +210,7 @@ Then Excel file will be downloaded successfully as "<successMessage>"
       | LOADING...           |
 
 @billboards @billboards26 @smoke @regression @all
-Scenario Outline: T026_To verify the billboards feature Download as excel
+Scenario Outline: T026_To verify the billboards feature Download as PDF
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the billboards module
@@ -221,7 +221,7 @@ Then PDF file will be downloaded successfully as "<successMessage>"
       | LOADING...           |
       
 @billboards @billboards27 @smoke @regression @all
-Scenario Outline: T027_To verify the billboards feature Download as excel
+Scenario Outline: T027_To verify the billboards feature Download as QR code
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the billboards module

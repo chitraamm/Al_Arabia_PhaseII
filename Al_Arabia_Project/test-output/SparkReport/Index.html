@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Automation Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jul 18, 2024 07:31:45 pm</span></a>
+<a href="#"><span class="badge badge-primary">Jul 19, 2024 07:13:06 pm</span></a>
 </li>
 </ul>
 </div>
@@ -45,11 +45,6 @@
 <li class="nav-item dropdown" onclick="toggleView('test-view')">
 <a id="nav-test" class="dropdown-toggle" href="#">
 <span class="ico"><i class="fa fa-list"></i></span>
-</a>
-</li>
-<li class="nav-item dropdown" onclick="toggleView('exception-view')">
-<a id="nav-exception" class="dropdown-toggle" href="#">
-<span class="ico"><i class="fa fa-bug"></i></span>
 </a>
 </li>
 <li class="nav-item dropdown" onclick="toggleView('category-view')">
@@ -76,7 +71,7 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -84,31 +79,31 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@Tickets</a><a class="dropdown-item" href="#">@Tickets04</a><a class="dropdown-item" href="#">@all</a><a class="dropdown-item" href="#">@smoke</a><a class="dropdown-item" href="#">@regression</a>
+<a class="dropdown-item" href="#">@Tickets</a><a class="dropdown-item" href="#">@Tickets23</a><a class="dropdown-item" href="#">@smoke</a><a class="dropdown-item" href="#">@all</a><a class="dropdown-item" href="#">@regression</a>
 </ul>
 </li>
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="fail" test-id="1"
+        <li class="test-item"  status="pass" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">Tickets</p>
             <p class="text-sm">
-              <span>7:31:45 pm</span> / <span>00:00:08:449</span>
-              <span class="badge fail-bg log float-right">Fail</span>
+              <span>7:13:07 pm</span> / <span>00:00:10:059</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-fail">Tickets</h5>
-<span class='badge badge-success'>07.18.2024 7:31:45 pm</span>
-<span class='badge badge-danger'>07.18.2024 7:31:54 pm</span>
-<span class='badge badge-default'>00:00:08:449</span>
+<h5 class="test-status text-pass">Tickets</h5>
+<span class='badge badge-success'>07.19.2024 7:13:07 pm</span>
+<span class='badge badge-danger'>07.19.2024 7:13:17 pm</span>
+<span class='badge badge-default'>00:00:10:059</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -121,63 +116,34 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>T004_To verify the Tickets feature sort recently updated</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>T023_To verify the Tickets feature Download button</div>
       </div>
     </div>
-        <div class="">
+        <div class="collapse">
           <div class="card-body">
-              <div class="step fail-bg" title="BEFORE">
-                <span>Hooks.Testhooks.setup(io.cucumber.java.Scenario)</span>
-      <div>
-        <textarea disabled class="code-block">org.openqa.selenium.WebDriverException: unknown error: net::ERR_ADDRESS_UNREACHABLE
-  (Session info: chrome=126.0.6478.114)
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-113-generic', java.version: '17.0.11'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [615dd717d233b68fb002365dc32f3990, get {url=http://192.168.0.24:3000/login}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.114, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:33013}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:33013/devtoo..., se:cdpVersion: 126.0.6478.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 615dd717d233b68fb002365dc32f3990
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
-	at Hooks.Testhooks.setup(Testhooks.java:53)
-</textarea>
-      
-      </div>
-              </div>
-              <div class="step skip-bg" title="Stepdefinitions.Members.Admin_logged_in_with_valid_credentials()">
+              <div class="step pass-bg" title="Stepdefinitions.Members.Admin_logged_in_with_valid_credentials()">
                 <span>Given Admin logged in with valid credentials</span>
-      <div>Step skipped
+      <div>
       </div>
               </div>
-              <div class="step skip-bg" title="Stepdefinitions.Members.Al_Arabia_overall_dashboard_should_display()">
+              <div class="step pass-bg" title="Stepdefinitions.Members.Al_Arabia_overall_dashboard_should_display()">
                 <span>When Al-Arabia overall dashboard should display</span>
-      <div>Step skipped
+      <div>
       </div>
               </div>
-              <div class="step skip-bg" title="Stepdefinitions.Tickets.Admin_or_user_clicks_the_Tickets_module()">
+              <div class="step pass-bg" title="Stepdefinitions.Tickets.Admin_or_user_clicks_the_Tickets_module()">
                 <span>And Admin or user clicks the Tickets module</span>
-      <div>Step skipped
+      <div>
       </div>
               </div>
-              <div class="step skip-bg" title="Stepdefinitions.Tickets.Admin_or_user_sort_the_Tickets_list_recently_updated()">
-                <span>And Admin or user sort the Tickets list recently updated</span>
-      <div>Step skipped
+              <div class="step pass-bg" title="Stepdefinitions.Tickets.User_clicks_the_Download_button()">
+                <span>And User clicks the Download button</span>
+      <div>
       </div>
               </div>
-              <div class="step skip-bg" title="Stepdefinitions.Tickets.Recently_updated_Tickets_list_get_displayed_successfully()">
-                <span>Then Recently updated Tickets list get displayed successfully</span>
-      <div>Step skipped
+              <div class="step pass-bg" title="Stepdefinitions.Tickets.Download_pop_up_will_be_displayed_successfully()">
+                <span>Then Download pop up will be displayed successfully</span>
+      <div>
       </div>
               </div>
           </div>
@@ -195,59 +161,7 @@ Session ID: 615dd717d233b68fb002365dc32f3990
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-<div class="test-wrapper row view exception-view attributes-view">
-<div class="test-list">
-<div class="test-list-tools">
-<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
-</div>
-<div class="test-list-wrapper scrollable">
-<ul class="test-list-item">
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log badge-danger'>1</span>
-</span>
-<p class="name">org.openqa.selenium.WebDriverException</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>org.openqa.selenium.WebDriverException</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>19:31:45 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='3'>Hooks.Testhooks.setup(io.cucumber.java.Scenario)</a>
-<div class="">
-<span class="badge badge-default">Tickets.T004_To verify the Tickets feature sort recently updated.Hooks.Testhooks.setup(io.cucumber.java.Scenario)</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-</ul>
-</div>
-</div>
-<div class="test-content scrollable">
-<div class="test-content-detail">
-<div class="detail-body"></div>
-</div>
-</div>
-</div><div class="test-wrapper row view category-view attributes-view">
+<div class="test-wrapper row view category-view attributes-view">
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
@@ -258,7 +172,7 @@ Session ID: 615dd717d233b68fb002365dc32f3990
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log badge-danger'>1</span>
+<span class='badge log pass-bg'>1</span>
 </span>
 <p class="name">@Tickets</p>
 <p class="duration text-sm">1 tests</p>
@@ -266,7 +180,7 @@ Session ID: 615dd717d233b68fb002365dc32f3990
 <div class="test-contents d-none">
 <div class="info">
 <h4>@Tickets</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -277,13 +191,13 @@ Session ID: 615dd717d233b68fb002365dc32f3990
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>19:31:45 pm</td>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:13:07 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>T004_To verify the Tickets feature sort recently updated</a>
+<a href="#" class="linked" test-id='1' id='2'>T023_To verify the Tickets feature Download button</a>
 <div class="">
-<span class="badge badge-default">Tickets.T004_To verify the Tickets feature sort recently updated</span>
+<span class="badge badge-default">Tickets.T023_To verify the Tickets feature Download button</span>
 </div>
 </td>
 </tr>
@@ -294,15 +208,15 @@ Session ID: 615dd717d233b68fb002365dc32f3990
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log badge-danger'>1</span>
+<span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@Tickets04</p>
+<p class="name">@Tickets23</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@Tickets04</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
+<h4>@Tickets23</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -313,13 +227,13 @@ Session ID: 615dd717d233b68fb002365dc32f3990
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>19:31:45 pm</td>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:13:07 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>T004_To verify the Tickets feature sort recently updated</a>
+<a href="#" class="linked" test-id='1' id='2'>T023_To verify the Tickets feature Download button</a>
 <div class="">
-<span class="badge badge-default">Tickets.T004_To verify the Tickets feature sort recently updated</span>
+<span class="badge badge-default">Tickets.T023_To verify the Tickets feature Download button</span>
 </div>
 </td>
 </tr>
@@ -330,43 +244,7 @@ Session ID: 615dd717d233b68fb002365dc32f3990
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log badge-danger'>1</span>
-</span>
-<p class="name">@all</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@all</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>19:31:45 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='2'>T004_To verify the Tickets feature sort recently updated</a>
-<div class="">
-<span class="badge badge-default">Tickets.T004_To verify the Tickets feature sort recently updated</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log badge-danger'>1</span>
+<span class='badge log pass-bg'>1</span>
 </span>
 <p class="name">@smoke</p>
 <p class="duration text-sm">1 tests</p>
@@ -374,7 +252,7 @@ Session ID: 615dd717d233b68fb002365dc32f3990
 <div class="test-contents d-none">
 <div class="info">
 <h4>@smoke</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -385,13 +263,13 @@ Session ID: 615dd717d233b68fb002365dc32f3990
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>19:31:45 pm</td>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:13:07 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>T004_To verify the Tickets feature sort recently updated</a>
+<a href="#" class="linked" test-id='1' id='2'>T023_To verify the Tickets feature Download button</a>
 <div class="">
-<span class="badge badge-default">Tickets.T004_To verify the Tickets feature sort recently updated</span>
+<span class="badge badge-default">Tickets.T023_To verify the Tickets feature Download button</span>
 </div>
 </td>
 </tr>
@@ -402,15 +280,15 @@ Session ID: 615dd717d233b68fb002365dc32f3990
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log badge-danger'>1</span>
+<span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@regression</p>
+<p class="name">@all</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@regression</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
+<h4>@all</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -421,13 +299,49 @@ Session ID: 615dd717d233b68fb002365dc32f3990
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>19:31:45 pm</td>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:13:07 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>T004_To verify the Tickets feature sort recently updated</a>
+<a href="#" class="linked" test-id='1' id='2'>T023_To verify the Tickets feature Download button</a>
 <div class="">
-<span class="badge badge-default">Tickets.T004_To verify the Tickets feature sort recently updated</span>
+<span class="badge badge-default">Tickets.T023_To verify the Tickets feature Download button</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@regression</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@regression</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>19:13:07 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>T023_To verify the Tickets feature Download button</a>
+<div class="">
+<span class="badge badge-default">Tickets.T023_To verify the Tickets feature Download button</span>
 </div>
 </td>
 </tr>
@@ -448,25 +362,25 @@ Session ID: 615dd717d233b68fb002365dc32f3990
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jul 18, 2024 07:31:45 pm</h3>
+<h3>Jul 19, 2024 07:13:06 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jul 18, 2024 07:31:54 pm</h3>
+<h3>Jul 19, 2024 07:13:17 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Features Passed</p>
-<h3>0</h3>
+<h3>1</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Features Failed</p>
-<h3>1</h3>
+<h3>0</h3>
 </div></div>
 </div>
 </div>
@@ -482,12 +396,12 @@ Session ID: 615dd717d233b68fb002365dc32f3990
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'>
-<b>0</b> features passed
+<div><small data-tooltip='100%'>
+<b>1</b> features passed
 </small>
 </div>
 <div>
-<small data-tooltip='100%'><b>1</b> features failed,
+<small data-tooltip='0%'><b>0</b> features failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -505,9 +419,9 @@ Session ID: 615dd717d233b68fb002365dc32f3990
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'><b>0</b> scenarios passed</small></div>
+<div><small data-tooltip='100%'><b>1</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='100%'><b>1</b> scenarios failed,
+<small data-tooltip='0%'><b>0</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -525,10 +439,10 @@ Session ID: 615dd717d233b68fb002365dc32f3990
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'><b>0</b> steps passed</small></div>
+<div><small data-tooltip='100%'><b>5</b> steps passed</small></div>
 <div>
-<small data-tooltip='16%'><b>1</b> steps failed,
-<b>5</b> skipped, <b data-tooltip='%'>0</b> others
+<small data-tooltip='0%'><b>0</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -544,7 +458,7 @@ Session ID: 615dd717d233b68fb002365dc32f3990
 </div></div>
 <script>
 var timeline = {
-"Tickets":8.449
+"Tickets":10.059
 };
 </script>
 <div class="row">
@@ -555,43 +469,43 @@ var timeline = {
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
 <td>@Tickets</td>
-<td>0</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>0%</td>
+<td>0</td>
+<td>100%</td>
 </tr>
 <tr>
-<td>@Tickets04</td>
-<td>0</td>
+<td>@Tickets23</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>0%</td>
-</tr>
-<tr>
-<td>@all</td>
 <td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0%</td>
+<td>100%</td>
 </tr>
 <tr>
 <td>@smoke</td>
-<td>0</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>0%</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@all</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
 </tr>
 <tr>
 <td>@regression</td>
-<td>0</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>0%</td>
+<td>0</td>
+<td>100%</td>
 </tr>
 </tbody>
 </table></div>
@@ -602,21 +516,21 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 0,
-failParent: 1,
+passParent: 1,
+failParent: 0,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 0,
-failChild: 1,
+passChild: 1,
+failChild: 0,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 0,
-failGrandChild: 1,
+passGrandChild: 5,
+failGrandChild: 0,
 warningGrandChild: 0,
-skipGrandChild: 5,
+skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
 };

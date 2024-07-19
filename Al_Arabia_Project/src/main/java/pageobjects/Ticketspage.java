@@ -213,7 +213,7 @@ public class Ticketspage extends Base {
 		System.out.println(">> User clicked recently added in sort");
 	}
 
-	@FindBy(xpath = "(//h6[contains(text(),'Name - A to Z')])[1]")
+	@FindBy(xpath = "(//h6[contains(text(),'Recently Updated')])[1]")
 	private WebElement ticket_Name_A_to_Z;
 
 	public void Ticket_A_to_Z() {
@@ -238,5 +238,186 @@ public class Ticketspage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(ticket_sort)).click();
 		wait.until(ExpectedConditions.visibilityOf(Ticket_Name_decending)).click();
 		System.out.println(">> User clicked decending updated in sort");
+	}
+	@FindBy(xpath = "(//h6[contains(@class,'mb-0 by fw-normal')][normalize-space()='Filter By'])[1]")
+	private WebElement Tickets_filter;
+	
+	@FindBy(xpath = "(//span[contains(text(),'Closed')])[1]")
+	private WebElement closed_status;
+	
+	@FindBy(xpath = "(//button[@type='submit'])[2]")
+	private WebElement Tickets_filter_apply_btn;
+
+	public void Tickets_status_closed() {
+		wait.until(ExpectedConditions.visibilityOf(Tickets_filter)).click();
+		wait.until(ExpectedConditions.visibilityOf(closed_status)).click();
+		act.moveToElement(Tickets_filter_apply_btn).click().perform();
+		System.out.println(">> User clicked closed status in filter");
+	}
+	@FindBy(xpath = "//div[contains(text(),'No Tickets Found')]")
+	private WebElement No_Tickets_found;
+	
+	public void Tickets_filtered_result_display() {
+		try {
+			if (condition) {
+				wait.until(ExpectedConditions.visibilityOf(Ticketlist));
+				AssertJUnit.assertTrue(Ticketlist.isDisplayed());
+				System.out.println(">> User got the filtered Tickets list");
+			} else {
+				wait.until(ExpectedConditions.visibilityOf(No_Tickets_found));
+			}
+		} catch (Exception e) {
+			wait.until(ExpectedConditions.visibilityOf(No_Tickets_found));
+		}
+	}
+	@FindBy(xpath = "(//span[contains(text(),'Created')])[1]")
+	private WebElement Tickets_created;
+
+	public void Tickets_status_created() {
+		wait.until(ExpectedConditions.visibilityOf(Tickets_filter)).click();
+		wait.until(ExpectedConditions.visibilityOf(Tickets_created)).click();
+		act.moveToElement(Tickets_filter_apply_btn).click().perform();
+		System.out.println(">> User clicked Created status in filter");
+	}
+	@FindBy(xpath = "(//span[contains(text(),'Reassigned')])[1]")
+	private WebElement Tickets_Reassigned;
+
+	public void Tickets_status_Reassigned() {
+		wait.until(ExpectedConditions.visibilityOf(Tickets_filter)).click();
+		wait.until(ExpectedConditions.visibilityOf(Tickets_Reassigned)).click();
+		act.moveToElement(Tickets_filter_apply_btn).click().perform();
+		System.out.println(">> User clicked Reassigned status in filter");
+	}
+	
+	@FindBy(xpath = "(//span[contains(text(),'Submitted')])[1]")
+	private WebElement Tickets_Submitted;
+
+	public void Tickets_status_Submitted() {
+		wait.until(ExpectedConditions.visibilityOf(Tickets_filter)).click();
+		wait.until(ExpectedConditions.visibilityOf(Tickets_Submitted)).click();
+		act.moveToElement(Tickets_filter_apply_btn).click().perform();
+		System.out.println(">> User clicked Submitted status in filter");
+	}
+	
+	@FindBy(xpath = "(//span[contains(text(),'Viewed')])[1]")
+	private WebElement Tickets_Viewed;
+
+	public void Tickets_status_Viewed() {
+		wait.until(ExpectedConditions.visibilityOf(Tickets_filter)).click();
+		wait.until(ExpectedConditions.visibilityOf(Tickets_Viewed)).click();
+		act.moveToElement(Tickets_filter_apply_btn).click().perform();
+		System.out.println(">> User clicked Viewed status in filter");
+	}
+	@FindBy(xpath = "(//span[contains(text(),'Verified')])[1]")
+	private WebElement Tickets_Verifed;
+
+	public void Tickets_status_Verified() {
+		wait.until(ExpectedConditions.visibilityOf(Tickets_filter)).click();
+		wait.until(ExpectedConditions.visibilityOf(Tickets_Verifed)).click();
+		act.moveToElement(Tickets_filter_apply_btn).click().perform();
+		System.out.println(">> User clicked Verifed status in filter");
+	}
+	@FindBy(xpath = "(//span[contains(text(),'Overdue')])[1]")
+	private WebElement Tickets_Overdue;
+	
+	public void Tickets_status_Overdue() {
+		wait.until(ExpectedConditions.visibilityOf(Tickets_filter)).click();
+		wait.until(ExpectedConditions.visibilityOf(Tickets_Overdue)).click();
+		act.moveToElement(Tickets_filter_apply_btn).click().perform();
+		System.out.println(">> User clicked Verifed status in filter");
+	}
+	public void Multiple_Ticket_statuses() {
+		wait.until(ExpectedConditions.visibilityOf(Tickets_filter)).click();
+		wait.until(ExpectedConditions.visibilityOf(closed_status)).click();
+	
+		act.moveToElement(Tickets_created).click().perform();
+		act.moveToElement(Tickets_Reassigned).click().perform();
+		act.moveToElement(Tickets_Submitted).click().perform();
+		act.moveToElement(Tickets_Verifed).click().perform();
+		act.moveToElement(Tickets_Viewed).click().perform();
+		act.moveToElement(Tickets_Overdue).click().perform();
+		act.moveToElement(Tickets_filter_apply_btn).click().perform();
+		System.out.println(">> User clicked Verifed status in filter");
+	}
+	@FindBy(id = "react-select-3-input")
+	private WebElement billboard_number;
+
+	public void select_BB_Number() {
+		wait.until(ExpectedConditions.visibilityOf(Tickets_filter)).click();
+		String BB_NO = prop.getProperty("bb_no");
+		wait.until(ExpectedConditions.visibilityOf(billboard_number)).click();
+		wait.until(ExpectedConditions.visibilityOf(billboard_number)).sendKeys(BB_NO + Keys.ENTER);
+		LOGGER.info(">> User selected the Billboard number:" + billboard_number.getText());
+		act.moveToElement(Tickets_filter_apply_btn).click().perform();
+		System.out.println(">> User selected the billboard number in filter" + BB_NO);
+	}
+	@FindBy(id = "react-select-4-input")
+	private WebElement assignee_select;
+
+	public void select_Assignee() {
+		wait.until(ExpectedConditions.visibilityOf(Tickets_filter)).click();
+		String assignee = prop.getProperty("assignee");
+		wait.until(ExpectedConditions.visibilityOf(assignee_select)).click();
+		wait.until(ExpectedConditions.visibilityOf(assignee_select)).sendKeys(assignee + Keys.ENTER);
+		LOGGER.info(">> User selected the assignee:" + assignee_select.getText());
+		act.moveToElement(Tickets_filter_apply_btn).click().perform();
+		System.out.println(">> User selected the assignee in filter" + assignee);
+	}
+	@FindBy(id = "react-select-5-input")
+	private WebElement city_select;
+
+	public void select_City() {
+		wait.until(ExpectedConditions.visibilityOf(Tickets_filter)).click();
+		wait.until(ExpectedConditions.visibilityOf(city_select)).click();
+		wait.until(ExpectedConditions.visibilityOf(city_select)).sendKeys(""+ Keys.ARROW_DOWN + Keys.ENTER);
+		LOGGER.info(">> User selected the city:" + city_select.getText());
+		act.moveToElement(Tickets_filter_apply_btn).click().perform();
+		System.out.println(">> User selected the city in filter");
+	}
+	@FindBy(id = "react-select-6-input")
+	private WebElement department_select;
+
+	public void select_Department() {
+		wait.until(ExpectedConditions.visibilityOf(Tickets_filter)).click();
+		wait.until(ExpectedConditions.visibilityOf(department_select)).click();
+		wait.until(ExpectedConditions.visibilityOf(department_select)).sendKeys(""+ Keys.ARROW_DOWN + Keys.ENTER);
+		LOGGER.info(">> User selected the department:" + department_select.getText());
+		act.moveToElement(Tickets_filter_apply_btn).click().perform();
+		System.out.println(">> User selected the department in filter");
+	}
+	@FindBy(xpath = "(//div[contains(@class,'ps-4 pe-1 fw-semibold off')][normalize-space()='Non-Cleaning'])[1]")
+	private WebElement Click_Cleaning_Ticket;
+
+	public void Cleaning_Ticket() {
+		wait.until(ExpectedConditions.visibilityOf(Tickets_filter)).click();
+		wait.until(ExpectedConditions.visibilityOf(Click_Cleaning_Ticket)).click();
+		act.moveToElement(Tickets_filter_apply_btn).click().perform();
+		System.out.println(">> User clicked Cleaning Ticket in filter");
+	}
+	@FindBy(xpath = "(//div[contains(@class,'pe-4 fw-semibold on')][normalize-space()='Cleaning'])[1]")
+	private WebElement Click_non_Cleaning_Ticket;
+
+	public void Non_Cleaning_Ticket() {
+		wait.until(ExpectedConditions.visibilityOf(Tickets_filter)).click();
+		wait.until(ExpectedConditions.visibilityOf(Click_non_Cleaning_Ticket)).click();
+		act.moveToElement(Tickets_filter_apply_btn).click().perform();
+		System.out.println(">> User clicked Non Cleaning Ticket in filter");
+	}
+	@FindBy(xpath = "(//h6[contains(@class,'m-0 fw-normal')][normalize-space()='Download'])[1]")
+	private WebElement download_buttn_ticketspage;
+
+	public void Download_button_Ticketspage() {
+		//wait.until(ExpectedConditions.visibilityOf(Tickets_filter)).click();
+		//wait.until(ExpectedConditions.visibilityOf(Click_non_Cleaning_Ticket)).click();
+		act.moveToElement(download_buttn_ticketspage).click().perform();
+		System.out.println(">> User clicked Download button");
+	}
+	@FindBy(xpath = "//div[@class='modal-header']")
+	private WebElement tickets_Download_popup_display;
+
+	public void Tickets_Download_popup_display() {
+		wait.until(ExpectedConditions.visibilityOf(tickets_Download_popup_display)).isDisplayed();
+		AssertJUnit.assertTrue(tickets_Download_popup_display.isDisplayed());
+		LOGGER.info(">> The Download Popup got displayed");
 	}
 }

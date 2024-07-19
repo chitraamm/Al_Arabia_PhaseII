@@ -283,7 +283,7 @@ public class Billboards extends Base {
 	public void Screen_resolution_billboards_list_get_displayed_successfully () throws Exception {
 	    billboardsPage.BB_filtered_result_display();
 }
-	@And("User clicks Download button")
+	@And("User clicks Download button") 
 	public void User_clicks_Download_button() throws Exception {
 	    billboardsPage.BB_Download_popup();
 }

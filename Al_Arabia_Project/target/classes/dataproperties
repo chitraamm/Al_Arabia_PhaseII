@@ -2,7 +2,7 @@
 browser = chrome
 
 <---- Web App URL ---->
-Al_Arabia_URL = http://192.168.0.24:3000/login
+Al_Arabia_URL = https://test-alarabia.coducer.xyz/
 
 <---- Admin Login Valid Credentials ---->
 Admin_email_address = help@coducer.com

@@ -16,10 +16,10 @@ And Admin or user clicks the Tickets module
 And Admin or user clicks the new Ticket button
 And Admin or user enters the all mandatory fields
 And Admin or user clicks the create Ticket
-Then Particular Ticket gets created successfully with either "<successMessage1>" or "<successMessage2>"
+Then Particular Ticket gets created successfully with either "<successMessage>"
   Examples:
-      | successMessage1       | successMessage2          |
-      | LOADING...            | Success Ticket created   |
+           | successMessage         |
+        | Success Ticket created   |
 
 @Tickets @Tickets03 @smoke @regression @all
 Scenario Outline: T003_ the Tickets feature search
@@ -189,3 +189,33 @@ When Al-Arabia overall dashboard should display
 And Admin or user clicks the Tickets module
 And User clicks the Download button 
 Then Download pop up will be displayed successfully
+
+@Tickets @Tickets24 @smoke @regression @all
+Scenario Outline: T024_To verify the billboards feature Download as Excel
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Tickets module
+And User clicks the Download button with Download As Excel
+      
+@Tickets @Tickets25 @smoke @regression @all
+Scenario Outline: T025_To verify the billboards feature Download as PDF
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Tickets module
+And User clicks the Download button with Download As PDF
+      
+@Tickets @Tickets26 @smoke @regression @all
+Scenario Outline: T026_To verify the Tickets feature Download popup close
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Tickets module
+And User clicks the Download button after that click on close button 
+Then The Download pop up get closed successfully and display the Tickets list      
+
+@Tickets @Tickets27 @smoke @regression @all
+Scenario Outline: T027_To verify the Tickets feature Edit button in Tickets page
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Tickets module
+And The User clicks the Edit button 
+Then Edit Tickets page will be displayed successfully

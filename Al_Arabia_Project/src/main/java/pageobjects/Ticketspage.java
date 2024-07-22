@@ -407,8 +407,6 @@ public class Ticketspage extends Base {
 	private WebElement download_buttn_ticketspage;
 
 	public void Download_button_Ticketspage() {
-		//wait.until(ExpectedConditions.visibilityOf(Tickets_filter)).click();
-		//wait.until(ExpectedConditions.visibilityOf(Click_non_Cleaning_Ticket)).click();
 		act.moveToElement(download_buttn_ticketspage).click().perform();
 		System.out.println(">> User clicked Download button");
 	}
@@ -419,5 +417,47 @@ public class Ticketspage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(tickets_Download_popup_display)).isDisplayed();
 		AssertJUnit.assertTrue(tickets_Download_popup_display.isDisplayed());
 		LOGGER.info(">> The Download Popup got displayed");
+	}
+	@FindBy(xpath = "(//div[normalize-space()='As Excel'])[1]")
+	private WebElement tickets_Download_excel;
+
+	public void Tickets_Download_Excel() {
+		wait.until(ExpectedConditions.visibilityOf(tickets_Download_excel)).click();
+	}
+	@FindBy(xpath = "//div[normalize-space()='As PDF']")
+	private WebElement tickets_Download_pdf;
+
+	public void Tickets_Download_PDF() {
+		wait.until(ExpectedConditions.visibilityOf(tickets_Download_pdf)).click();
+	}
+	@FindBy(xpath = "//button[@aria-label='Close']")
+	private WebElement ticket_Download_popupclose;
+
+	public void Ticket_Download_popup_close() throws Exception {
+
+		wait.until(ExpectedConditions.visibilityOf(ticket_Download_popupclose)).click();
+	}
+	public void Ticket_Download_popupclosd_displayed_Tickets() {
+		wait.until(ExpectedConditions.visibilityOf(ticketsCount)).isDisplayed();
+		AssertJUnit.assertTrue(ticketsCount.isDisplayed());
+		LOGGER.info(">> The Download Popup get closed and listed Tickets");
+	}
+	@FindBy(xpath = "(//img[@class='pointer'])[3]")
+	private WebElement tickets_Edit_Buttonclick;
+
+	public void Tickets_Edit_icon() throws Exception {
+
+		act.moveToElement(tickets_Edit_Buttonclick).click().perform();
+	}
+
+	@FindBy(xpath = "(//span[@class='edit_link_routes active'])[1]")
+	private WebElement ticket_Edit_page_display;
+
+	public void Ticket_Edit_page() throws Exception {
+
+		wait.until(ExpectedConditions.visibilityOf(ticket_Edit_page_display)).isDisplayed();
+		AssertJUnit.assertTrue(ticket_Edit_page_display.isDisplayed());
+		LOGGER.info(">>Ticket edit page displayed");
+
 	}
 }

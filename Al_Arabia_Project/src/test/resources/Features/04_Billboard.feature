@@ -232,7 +232,7 @@ Then QR file will be downloaded successfully as "<successMessage>"
       | LOADING...           |     
           
 @billboards @billboards28 @smoke @regression @all
-Scenario Outline: T028_To verify the billboards feature edit
+Scenario Outline: T028_To verify the billboards feature Download popup close
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the billboards module
@@ -244,7 +244,7 @@ Scenario Outline: T029_To verify the billboards feature Edit button in BillBoard
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the billboards module
-And User clicks the Edit button 
+And User clicks the Edit button	 
 Then Edit BillBoard page will be displayed successfully
          
 @billboards @billboards30 @smoke @regression @all

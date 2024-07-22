@@ -53,7 +53,7 @@ public class Tickets extends Base {
 		ticketsPage.NewTicket_create_btn();
 	}
 
-	@Then("^Particular Ticket gets created successfully with either \"([^\"]*)\" or \"([^\"]*)\"$")
+	@Then("^Particular Ticket gets created successfully with either \"([^\"]*)\"$")
 	public void Particular_Ticket_gets_created_successfully_with_either (String expectedMessage) throws Exception {
 		  String actualMessage = ticketsPage.ticket_create_Success_display();
 	      String normalizedExpectedMessage = normalizeWhitespace(expectedMessage);
@@ -242,4 +242,31 @@ public class Tickets extends Base {
 	public void Download_pop_up_will_be_displayed_successfully() throws Exception {
 		ticketsPage.Tickets_Download_popup_display();
 	}
+	@And("User clicks the Download button with Download As Excel")
+	public void User_clicks_the_Download_button_with_Download_As_Excel() throws Exception {
+		ticketsPage.Download_button_Ticketspage();
+		ticketsPage.Tickets_Download_Excel();
+	}
+	@And("User clicks the Download button with Download As PDF")
+	public void User_clicks_the_Download_button_with_Download_As_PDF() throws Exception {
+		ticketsPage.Download_button_Ticketspage();
+		ticketsPage.Tickets_Download_PDF();
+	}
+	@And("User clicks the Download button after that click on close button")
+	public void User_clicks_the_Download_button_after_that_click_on_close_button() throws Exception {
+		ticketsPage.Download_button_Ticketspage();
+		ticketsPage.Ticket_Download_popup_close();
+	}
+	@Then("The Download pop up get closed successfully and display the Tickets list")
+	public void The_Download_pop_up_get_closed_successfully_and_display_the_Tickets_list() throws Exception {
+		ticketsPage.Ticket_Download_popupclosd_displayed_Tickets();
+	}
+	@And("The User clicks the Edit button")
+	public void The_User_clicks_the_Edit_button() throws Exception {
+		ticketsPage.Tickets_Edit_icon();
+}
+	@Then("Edit Tickets page will be displayed successfully")
+	public void Edit_Tickets_page_will_be_displayed_successfully () throws Exception {
+		ticketsPage.Ticket_Edit_page();
+}
 }

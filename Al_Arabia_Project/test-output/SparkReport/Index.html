@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Automation Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jul 22, 2024 06:56:51 pm</span></a>
+<a href="#"><span class="badge badge-primary">Jul 23, 2024 07:04:45 pm</span></a>
 </li>
 </ul>
 </div>
@@ -45,6 +45,11 @@
 <li class="nav-item dropdown" onclick="toggleView('test-view')">
 <a id="nav-test" class="dropdown-toggle" href="#">
 <span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
 </a>
 </li>
 <li class="nav-item dropdown" onclick="toggleView('category-view')">
@@ -71,7 +76,7 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -79,31 +84,31 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@all</a><a class="dropdown-item" href="#">@Tickets</a><a class="dropdown-item" href="#">@Tickets27</a><a class="dropdown-item" href="#">@smoke</a><a class="dropdown-item" href="#">@regression</a>
+<a class="dropdown-item" href="#">@smoke</a><a class="dropdown-item" href="#">@Tickets</a><a class="dropdown-item" href="#">@all</a><a class="dropdown-item" href="#">@Tickets29</a><a class="dropdown-item" href="#">@regression</a>
 </ul>
 </li>
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="pass" test-id="1"
+        <li class="test-item"  status="fail" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">Tickets</p>
             <p class="text-sm">
-              <span>6:56:51 pm</span> / <span>00:00:08:551</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>7:04:45 pm</span> / <span>00:00:09:251</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Tickets</h5>
-<span class='badge badge-success'>07.22.2024 6:56:51 pm</span>
-<span class='badge badge-danger'>07.22.2024 6:57:00 pm</span>
-<span class='badge badge-default'>00:00:08:551</span>
+<h5 class="test-status text-fail">Tickets</h5>
+<span class='badge badge-success'>07.23.2024 7:04:45 pm</span>
+<span class='badge badge-danger'>07.23.2024 7:04:55 pm</span>
+<span class='badge badge-default'>00:00:09:251</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -116,37 +121,84 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>T027_To verify the Tickets feature Edit button in Tickets page</div>
+        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>T029_To verify the Tickets features Update a Ticket</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
       </div>
     </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="Stepdefinitions.Members.Admin_logged_in_with_valid_credentials()">
-                <span>Given Admin logged in with valid credentials</span>
+        <div class="scenario_outline ">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="3"><span class="badge log fail-bg mr-2">Fail</span>T029_To verify the Tickets features Update a Ticket</div>
+                    <div class="status-avatar float-right">
+                      <i class="fa fa-paperclip"></i>
+                    </div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step pass-bg">
+                    <span>Given Admin logged in with valid credentials</span>
       <div>
       </div>
-              </div>
-              <div class="step pass-bg" title="Stepdefinitions.Members.Al_Arabia_overall_dashboard_should_display()">
-                <span>When Al-Arabia overall dashboard should display</span>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Al-Arabia overall dashboard should display</span>
       <div>
       </div>
-              </div>
-              <div class="step pass-bg" title="Stepdefinitions.Tickets.Admin_or_user_clicks_the_Tickets_module()">
-                <span>And Admin or user clicks the Tickets module</span>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Admin or user clicks the Tickets module</span>
       <div>
       </div>
-              </div>
-              <div class="step pass-bg" title="Stepdefinitions.Tickets.The_User_clicks_the_Edit_button()">
-                <span>And The User clicks the Edit button</span>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User filter the Tickets list status Created</span>
       <div>
       </div>
-              </div>
-              <div class="step pass-bg" title="Stepdefinitions.Tickets.Edit_Tickets_page_will_be_displayed_successfully()">
-                <span>Then Edit Tickets page will be displayed successfully</span>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And The User clicks the Edit button</span>
       <div>
       </div>
+                  </div>
+                  <div class="step fail-bg">
+                    <span>And User edit Description</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "java.lang.CharSequence.codePoints()" because "key" is null
+	at org.openqa.selenium.interactions.Actions.sendKeysInTicks(Actions.java:153)
+	at org.openqa.selenium.interactions.Actions.sendKeys(Actions.java:130)
+	at pageobjects.Ticketspage.Description_edit(Ticketspage.java:479)
+	at Stepdefinitions.Tickets.User_edit_Description(Tickets.java:287)
+	at ✽.User edit Description(file:///home/coducer/Al_Arabia_PhaseII/Al_Arabia_Project/src/test/resources/Features/06_Tickets.feature:242)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Hooks.Testhooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>T029_To verify the Tickets features Update a Ticket
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../embedded1.png' src="../embedded1.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>And User click on Update Tickets button with confirm yes button</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then Ticket Updated popup will be displayed successfully as "Success Tickets updated"</span>
+      <div>Step skipped
+      </div>
+                  </div>
               </div>
-          </div>
+            </div>
         </div>
   </div>
 </div>
@@ -161,7 +213,59 @@
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-<div class="test-wrapper row view category-view attributes-view">
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">java.lang.NullPointerException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.NullPointerException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:04:54 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='15'>And User edit Description</a>
+<div class="">
+<span class="badge badge-default">Tickets.T029_To verify the Tickets features Update a Ticket.And User edit Description</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view category-view attributes-view">
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
@@ -172,115 +276,7 @@
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@all</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@all</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>18:56:51 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='2'>T027_To verify the Tickets feature Edit button in Tickets page</a>
-<div class="">
-<span class="badge badge-default">Tickets.T027_To verify the Tickets feature Edit button in Tickets page</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@Tickets</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@Tickets</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>18:56:51 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='2'>T027_To verify the Tickets feature Edit button in Tickets page</a>
-<div class="">
-<span class="badge badge-default">Tickets.T027_To verify the Tickets feature Edit button in Tickets page</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@Tickets27</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@Tickets27</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>18:56:51 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='2'>T027_To verify the Tickets feature Edit button in Tickets page</a>
-<div class="">
-<span class="badge badge-default">Tickets.T027_To verify the Tickets feature Edit button in Tickets page</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
+<span class='badge log badge-danger'>1</span>
 </span>
 <p class="name">@smoke</p>
 <p class="duration text-sm">1 tests</p>
@@ -288,7 +284,7 @@
 <div class="test-contents d-none">
 <div class="info">
 <h4>@smoke</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -299,13 +295,13 @@
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>18:56:51 pm</td>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:04:45 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>T027_To verify the Tickets feature Edit button in Tickets page</a>
+<a href="#" class="linked" test-id='1' id='3'>T029_To verify the Tickets features Update a Ticket</a>
 <div class="">
-<span class="badge badge-default">Tickets.T027_To verify the Tickets feature Edit button in Tickets page</span>
+<span class="badge badge-default">Tickets.T029_To verify the Tickets features Update a Ticket</span>
 </div>
 </td>
 </tr>
@@ -316,15 +312,15 @@
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>1</span>
+<span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">@regression</p>
+<p class="name">@Tickets</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@regression</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
+<h4>@Tickets</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -335,13 +331,121 @@
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>18:56:51 pm</td>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:04:45 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>T027_To verify the Tickets feature Edit button in Tickets page</a>
+<a href="#" class="linked" test-id='1' id='3'>T029_To verify the Tickets features Update a Ticket</a>
 <div class="">
-<span class="badge badge-default">Tickets.T027_To verify the Tickets feature Edit button in Tickets page</span>
+<span class="badge badge-default">Tickets.T029_To verify the Tickets features Update a Ticket</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@all</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@all</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:04:45 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='3'>T029_To verify the Tickets features Update a Ticket</a>
+<div class="">
+<span class="badge badge-default">Tickets.T029_To verify the Tickets features Update a Ticket</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@Tickets29</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Tickets29</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:04:45 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='3'>T029_To verify the Tickets features Update a Ticket</a>
+<div class="">
+<span class="badge badge-default">Tickets.T029_To verify the Tickets features Update a Ticket</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@regression</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@regression</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:04:45 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='3'>T029_To verify the Tickets features Update a Ticket</a>
+<div class="">
+<span class="badge badge-default">Tickets.T029_To verify the Tickets features Update a Ticket</span>
 </div>
 </td>
 </tr>
@@ -362,25 +466,25 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jul 22, 2024 06:56:51 pm</h3>
+<h3>Jul 23, 2024 07:04:45 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jul 22, 2024 06:57:00 pm</h3>
+<h3>Jul 23, 2024 07:04:55 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Features Passed</p>
-<h3>1</h3>
+<h3>0</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Features Failed</p>
-<h3>0</h3>
+<h3>1</h3>
 </div></div>
 </div>
 </div>
@@ -396,12 +500,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'>
-<b>1</b> features passed
+<div><small data-tooltip='0%'>
+<b>0</b> features passed
 </small>
 </div>
 <div>
-<small data-tooltip='0%'><b>0</b> features failed,
+<small data-tooltip='100%'><b>1</b> features failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -419,9 +523,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>1</b> scenarios passed</small></div>
+<div><small data-tooltip='0%'><b>0</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> scenarios failed,
+<small data-tooltip='100%'><b>1</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -439,10 +543,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>5</b> steps passed</small></div>
+<div><small data-tooltip='66%'><b>6</b> steps passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> steps failed,
-<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+<small data-tooltip='11%'><b>1</b> steps failed,
+<b>2</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -458,7 +562,7 @@
 </div></div>
 <script>
 var timeline = {
-"Tickets":8.551
+"Tickets":9.251
 };
 </script>
 <div class="row">
@@ -468,44 +572,44 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@all</td>
+<td>@smoke</td>
+<td>0</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
-<td>100%</td>
+<td>0%</td>
 </tr>
 <tr>
 <td>@Tickets</td>
+<td>0</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
-<td>100%</td>
+<td>0%</td>
 </tr>
 <tr>
-<td>@Tickets27</td>
+<td>@all</td>
+<td>0</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
-<td>100%</td>
+<td>0%</td>
 </tr>
 <tr>
-<td>@smoke</td>
+<td>@Tickets29</td>
+<td>0</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
-<td>100%</td>
+<td>0%</td>
 </tr>
 <tr>
 <td>@regression</td>
+<td>0</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
-<td>100%</td>
+<td>0%</td>
 </tr>
 </tbody>
 </table></div>
@@ -516,21 +620,21 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 1,
-failParent: 0,
+passParent: 0,
+failParent: 1,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 1,
-failChild: 0,
+passChild: 0,
+failChild: 1,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 5,
-failGrandChild: 0,
+passGrandChild: 6,
+failGrandChild: 1,
 warningGrandChild: 0,
-skipGrandChild: 0,
+skipGrandChild: 2,
 infoGrandChild: 0,
 eventsCount: 5,
 };

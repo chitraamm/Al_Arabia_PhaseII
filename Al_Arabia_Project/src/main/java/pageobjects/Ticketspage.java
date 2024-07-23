@@ -460,4 +460,40 @@ public class Ticketspage extends Base {
 		LOGGER.info(">>Ticket edit page displayed");
 
 	}
+	@FindBy(xpath = "//tbody/tr[1]/td[6]/div[2]/div[1]/img[1]")
+	private WebElement ticket_delete_click;
+	public void Ticket_delete_icon() throws Exception {
+		act.moveToElement(ticket_delete_click).click().perform();
+	}
+	@FindBy(xpath = "//h6[normalize-space()='Yes, delete it.']")
+	private WebElement ticket_delete_confirm_bttn;
+	public void Ticket_delete_popup_confirmed() {
+		act.moveToElement(ticket_delete_confirm_bttn).click().perform();
+	}
+	@FindBy(xpath = "//textarea[@id='description']")
+	private WebElement edit_description;
+	public void Description_edit() {
+			
+		wait.until(ExpectedConditions.visibilityOf(ticket_Edit_page_display));
+		String EditDescription = prop.getProperty("Edited Description");
+		act.moveToElement(edit_description).click().sendKeys(EditDescription);
+        LOGGER.info("User enters ");
+	}
+ 	@FindBy(xpath = "//h6[normalize-space()='Update Ticket']")
+ 	private WebElement ticket_update_button;	
+
+ 	
+ 	public void Ticket_update_clicked() throws Exception {
+
+ 		act.moveToElement(ticket_update_button).click().perform();
+ 	}
+ 	
+	@FindBy(xpath = "//h6[normalize-space()='Yes, update it.']")
+	private WebElement ticket_update_confirm_yes_button;
+
+	public void Update_Ticket_confirmed() throws Exception {
+
+		wait.until(ExpectedConditions.visibilityOf(ticket_update_confirm_yes_button)).click();
+
+	}
 }

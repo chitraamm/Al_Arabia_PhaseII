@@ -266,7 +266,37 @@ public class Tickets extends Base {
 		ticketsPage.Tickets_Edit_icon();
 }
 	@Then("Edit Tickets page will be displayed successfully")
-	public void Edit_Tickets_page_will_be_displayed_successfully () throws Exception {
+	public void Edit_Tickets_page_will_be_displayed_successfully() throws Exception {
 		ticketsPage.Ticket_Edit_page();
 }
+	@And("The User clicks on the Delete button with clicks confirm yes button")
+	public void The_User_clicks_on_the_Delete_button_with_clicks_confirm_yes_button() throws Exception {
+		ticketsPage.Ticket_delete_icon();
+		ticketsPage.Ticket_delete_popup_confirmed();
+}
+	@Then("^Tickets delete popup will be displayed successfully with either \"([^\"]*)\" or \"([^\"]*)\"$")
+	public void BillBoard_delete_popup_will_be_displayed_successfully (String expectedMessage) throws Exception {
+		  String actualMessage = ticketsPage.ticket_create_Success_display();
+	      String normalizedExpectedMessage = normalizeWhitespace(expectedMessage);
+	      String normalizedActualMessage = normalizeWhitespace(actualMessage);
+	      System.out.println(">> User or Admin Deleted Ticket successfully"+actualMessage);
+	      assertEquals(normalizedExpectedMessage, normalizedActualMessage);
+	}
+	@And("User edit Description")
+	public void User_edit_Description() throws Exception {
+		ticketsPage.Description_edit();
+}
+	@And("User click on Update Tickets button with confirm yes button")
+	public void User_click_on_Update_Tickets_button_with_confirm_yes_button() throws Exception {
+		ticketsPage.Ticket_update_clicked();
+		ticketsPage.Update_Ticket_confirmed();
+}
+	@Then("^Ticket Updated popup will be displayed successfully as \"([^\"]*)\"$")
+	public void BillBoard_Updated_popup_will_be_displayed_successfully_as_(String expectedMessage) throws Exception {
+		  String actualMessage = ticketsPage.ticket_create_Success_display();
+	      String normalizedExpectedMessage = normalizeWhitespace(expectedMessage);
+	      String normalizedActualMessage = normalizeWhitespace(actualMessage);
+	      System.out.println(">> User or Admin updated Ticket successfully"+actualMessage);
+	      assertEquals(normalizedExpectedMessage, normalizedActualMessage);
+	}	
 }

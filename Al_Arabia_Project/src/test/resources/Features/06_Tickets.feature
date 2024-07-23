@@ -219,3 +219,30 @@ When Al-Arabia overall dashboard should display
 And Admin or user clicks the Tickets module
 And The User clicks the Edit button 
 Then Edit Tickets page will be displayed successfully
+
+@Tickets @Tickets28 @smoke @regression @all
+Scenario Outline: T028_To verify the Tickets feature Delete button in Tickets page
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Tickets module
+And User filter the Tickets list status Created
+And The User clicks on the Delete button with clicks confirm yes button
+Then Tickets delete popup will be displayed successfully with either "<successMessage1>" or "<successMessage2>"
+ Examples:
+      | successMessage1       | successMessage2                          |
+      | LOADING...            | Success Ticket Deleted successfull       |  
+      
+@Tickets @Tickets29 @smoke @regression @all
+Scenario Outline: T029_To verify the Tickets features Update a Ticket
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Tickets module
+And User filter the Tickets list status Created
+And The User clicks the Edit button 
+And User edit Description 
+And User click on Update Tickets button with confirm yes button
+Then Ticket Updated popup will be displayed successfully as "<successMessage>"
+  Examples:
+      | successMessage     								  |
+      | Success Tickets updated             |        
+      

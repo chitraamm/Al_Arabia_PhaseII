@@ -442,15 +442,14 @@ public class Ticketspage extends Base {
 		AssertJUnit.assertTrue(ticketsCount.isDisplayed());
 		LOGGER.info(">> The Download Popup get closed and listed Tickets");
 	}
-	@FindBy(xpath = "(//img[@class='pointer'])[3]")
+	@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[2]/div[1]/div[3]/div/table/tbody/tr[1]/td[6]/div[1]/div/img")
 	private WebElement tickets_Edit_Buttonclick;
 
 	public void Tickets_Edit_icon() throws Exception {
-
-		act.moveToElement(tickets_Edit_Buttonclick).click().perform();
+		wait.until(ExpectedConditions.visibilityOf(tickets_Edit_Buttonclick)).click();
 	}
 
-	@FindBy(xpath = "(//span[@class='edit_link_routes active'])[1]")
+	@FindBy(xpath = "(//h5[normalize-space()='All Tickets'])[1]")
 	private WebElement ticket_Edit_page_display;
 
 	public void Ticket_Edit_page() throws Exception {
@@ -463,22 +462,26 @@ public class Ticketspage extends Base {
 	@FindBy(xpath = "//tbody/tr[1]/td[6]/div[2]/div[1]/img[1]")
 	private WebElement ticket_delete_click;
 	public void Ticket_delete_icon() throws Exception {
-		act.moveToElement(ticket_delete_click).click().perform();
+		wait.until(ExpectedConditions.visibilityOf(ticket_delete_click)).click();
 	}
 	@FindBy(xpath = "//h6[normalize-space()='Yes, delete it.']")
 	private WebElement ticket_delete_confirm_bttn;
 	public void Ticket_delete_popup_confirmed() {
-		act.moveToElement(ticket_delete_confirm_bttn).click().perform();
+		wait.until(ExpectedConditions.visibilityOf(ticket_delete_confirm_bttn)).click();
 	}
-	@FindBy(xpath = "//textarea[@id='description']")
+	@FindBy(xpath = "(//textarea[@id='description'])[1]")
 	private WebElement edit_description;
+	
+	@FindBy(xpath = "//div[@class='p-5 mt-4 rounded-1 ']")
+	private WebElement edit_priority_label;
 	public void Description_edit() {
 			
-		wait.until(ExpectedConditions.visibilityOf(ticket_Edit_page_display));
-		String EditDescription = prop.getProperty("Edited Description");
+		wait.until(ExpectedConditions.visibilityOf(edit_priority_label));
+		String EditDescription = prop.getProperty("EditDescription");
 		act.moveToElement(edit_description).click().sendKeys(EditDescription);
-        LOGGER.info("User enters ");
+        LOGGER.info("User updated the description ");
 	}
+	
  	@FindBy(xpath = "//h6[normalize-space()='Update Ticket']")
  	private WebElement ticket_update_button;	
 
@@ -495,5 +498,20 @@ public class Ticketspage extends Base {
 
 		wait.until(ExpectedConditions.visibilityOf(ticket_update_confirm_yes_button)).click();
 
+	}
+	@FindBy(xpath = "//span[normalize-space()='Activity Feed']")
+	private WebElement click_Activity_feed;
+	@FindBy(xpath = "//span[@class='edit_link_routes active']")
+	private WebElement view_ticket_tab;
+	public void Activity_Feed_Display() throws Exception {
+		//wait.until(ExpectedConditions.visibilityOf(view_ticket_tab));
+		wait.until(ExpectedConditions.visibilityOf(click_Activity_feed)).click();
+	}
+	@FindBy(xpath = "//span[normalize-space()='Activity Feed']")
+	private WebElement activity_Feed_display;
+	public void Activity_Feed_Displayed() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(activity_Feed_display));
+		AssertJUnit.assertTrue(activity_Feed_display.isDisplayed());
+		LOGGER.info("Activity Feed page displayed");
 	}
 }

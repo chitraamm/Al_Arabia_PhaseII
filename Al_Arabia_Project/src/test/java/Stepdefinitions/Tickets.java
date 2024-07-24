@@ -274,7 +274,7 @@ public class Tickets extends Base {
 		ticketsPage.Ticket_delete_icon();
 		ticketsPage.Ticket_delete_popup_confirmed();
 }
-	@Then("^Tickets delete popup will be displayed successfully with either \"([^\"]*)\" or \"([^\"]*)\"$")
+	@Then("^Tickets delete popup will be displayed successfully with either \"([^\"]*)\"$")
 	public void BillBoard_delete_popup_will_be_displayed_successfully (String expectedMessage) throws Exception {
 		  String actualMessage = ticketsPage.ticket_create_Success_display();
 	      String normalizedExpectedMessage = normalizeWhitespace(expectedMessage);
@@ -298,5 +298,13 @@ public class Tickets extends Base {
 	      String normalizedActualMessage = normalizeWhitespace(actualMessage);
 	      System.out.println(">> User or Admin updated Ticket successfully"+actualMessage);
 	      assertEquals(normalizedExpectedMessage, normalizedActualMessage);
-	}	
+	}
+	@And("User click on Activity Feed Tab")
+	public void User_click_on_Activity_Feed_Tab() throws Exception {
+		ticketsPage.Activity_Feed_Display();
+}
+	@Then("Activity Feed Tab page will be displayed successfully")
+	public void Activity_Feed_Tab_page_will_be_displayed_successfully() throws Exception {
+		ticketsPage.Ticket_Edit_page();
+}
 }

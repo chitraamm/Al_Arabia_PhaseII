@@ -50,7 +50,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Jul 23, 2024 07:04:45 pm</span>
+			<span class='label blue darken-3 suite-start-time'>Jul 25, 2024 12:24:41 am</span>
 			</a>
 		</ul>
 	</div>
@@ -78,9 +78,9 @@
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
 					<li><a href='#'>@smoke</a></li>
-					<li><a href='#'>@Tickets</a></li>
-					<li><a href='#'>@all</a></li>
 					<li><a href='#'>@Tickets29</a></li>
+					<li><a href='#'>@all</a></li>
+					<li><a href='#'>@Tickets</a></li>
 					<li><a href='#'>@regression</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
@@ -121,7 +121,7 @@
 				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Tickets</span>
-						<span class='test-time'>Jul 23, 2024 07:04:45 pm</span>
+						<span class='test-time'>Jul 25, 2024 12:24:41 am</span>
 						<span class='test-status right fail'>Fail</span>
 					</div>
 					<div class='test-content hide'>
@@ -135,7 +135,7 @@
 
 <div class='scenario outline node' test-id='2' status='fail'>
 
-	<span class='duration right label'>00 00 09.248</span>
+	<span class='duration right label'>00 00 15.174</span>
 	<div class="bdd-test">
 		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario Outline: T029_To verify the Tickets features Update a Ticket</div>
 	</div>
@@ -169,41 +169,46 @@
 
 				</li>
 				<li test-id='11' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="Stepdefinitions.Tickets.User_filter_the_Tickets_list_status_Created()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User filter the Tickets list status Created</h6>
+					<h6 class="step-name" title="Stepdefinitions.Tickets.Admin_or_user_clicks_the_new_Ticket_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Admin or user clicks the new Ticket button</h6>
 
 				</li>
 				<li test-id='13' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="Stepdefinitions.Tickets.Admin_or_user_enters_the_all_mandatory_fields()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Admin or user enters the all mandatory fields</h6>
+
+				</li>
+				<li test-id='15' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="Stepdefinitions.Tickets.Admin_or_user_clicks_the_create_Ticket()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Admin or user clicks the create Ticket</h6>
+
+				</li>
+				<li test-id='17' class='gc and Pass' status='Pass'>
 					<h6 class="step-name" title="Stepdefinitions.Tickets.The_User_clicks_the_Edit_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And The User clicks the Edit button</h6>
 
 				</li>
-				<li test-id='15' class='gc and Fail' status='Fail'>
-					<h6 class="step-name" title="Stepdefinitions.Tickets.User_edit_Description()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>And User edit Description</h6>
+				<li test-id='19' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="Stepdefinitions.Tickets.User_edit_Description()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User edit Description</h6>
 
-							<textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "java.lang.CharSequence.codePoints()" because "key" is null
-	at org.openqa.selenium.interactions.Actions.sendKeysInTicks(Actions.java:153)
-	at org.openqa.selenium.interactions.Actions.sendKeys(Actions.java:130)
-	at pageobjects.Ticketspage.Description_edit(Ticketspage.java:479)
-	at Stepdefinitions.Tickets.User_edit_Description(Tickets.java:287)
-	at ✽.User edit Description(file:///home/coducer/Al_Arabia_PhaseII/Al_Arabia_Project/src/test/resources/Features/06_Tickets.feature:242)
+				</li>
+				<li test-id='21' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="Stepdefinitions.Tickets.User_click_on_Update_Tickets_button_with_confirm_yes_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User click on Update Tickets button with confirm yes button</h6>
+
+				</li>
+				<li test-id='23' class='gc then Fail' status='Fail'>
+					<h6 class="step-name" title="Stepdefinitions.Tickets.BillBoard_Updated_popup_will_be_displayed_successfully_as_(java.lang.String)"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Then Ticket Updated popup will be displayed successfully as "Success Tickets updated"</h6>
+
+							<textarea disabled class="code-block">org.junit.ComparisonFailure: expected:<[Success Tickets updated]> but was:<[Error please choose valid title]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at Stepdefinitions.Tickets.BillBoard_Updated_popup_will_be_displayed_successfully_as_(Tickets.java:300)
+	at ✽.Ticket Updated popup will be displayed successfully as "Success Tickets updated"(file:///home/coducer/Al_Arabia_PhaseII/Al_Arabia_Project/src/test/resources/Features/06_Tickets.feature:248)
 </textarea>
 				</li>
-				<li test-id='16' class='gc * Pass' status='Pass'>
+				<li test-id='24' class='gc * Pass' status='Pass'>
 					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Hooks.Testhooks.addScreenshot(io.cucumber.java.Scenario)</h6>
 
 							<div class="node-step">T029_To verify the Tickets features Update a Ticket</div>
 							<div class='screenshots'>
 								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../embedded1.png' src='../embedded1.png'>
 							</div>
-				</li>
-				<li test-id='17' class='gc and Skip' status='Skip'>
-					<h6 class="step-name" title="Stepdefinitions.Tickets.User_click_on_Update_Tickets_button_with_confirm_yes_button()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>And User click on Update Tickets button with confirm yes button</h6>
-
-							<div class="node-step">Step skipped</div>
-				</li>
-				<li test-id='19' class='gc then Skip' status='Skip'>
-					<h6 class="step-name" title="Stepdefinitions.Tickets.BillBoard_Updated_popup_will_be_displayed_successfully_as_(java.lang.String)"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then Ticket Updated popup will be displayed successfully as "Success Tickets updated"</h6>
-
-							<div class="node-step">Step skipped</div>
 				</li>
 			</ul>
 		</li>
@@ -279,14 +284,14 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='66%'>
-                    <span class='strong'>6</span> steps passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='90%'>
+                    <span class='strong'>10</span> steps passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='11%'>
+                    <span class='strong tooltipped' data-position='top' data-tooltip='9%'>
                     1</span> steps failed, 
-                    <span class='strong tooltipped' data-position='top' data-tooltip='22%'>
-                    2</span> skipped, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> others
                 </div>
@@ -346,73 +351,7 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 23, 2024 07:04:45 pm</td>
-										<td class='linked' test-id='3'>T029_To verify the Tickets features Update a Ticket</td>
-										<td><span class='test-status Fail'>Fail</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@Tickets</span>
-						<span class='category-status right'>
-						<span class='label fail'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							
-							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Jul 23, 2024 07:04:45 pm</td>
-										<td class='linked' test-id='3'>T029_To verify the Tickets features Update a Ticket</td>
-										<td><span class='test-status Fail'>Fail</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@all</span>
-						<span class='category-status right'>
-						<span class='label fail'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							
-							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Jul 23, 2024 07:04:45 pm</td>
+										<td>Jul 25, 2024 12:24:41 am</td>
 										<td class='linked' test-id='3'>T029_To verify the Tickets features Update a Ticket</td>
 										<td><span class='test-status Fail'>Fail</span></td>
 									</tr>
@@ -445,7 +384,73 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 23, 2024 07:04:45 pm</td>
+										<td>Jul 25, 2024 12:24:41 am</td>
+										<td class='linked' test-id='3'>T029_To verify the Tickets features Update a Ticket</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@all</span>
+						<span class='category-status right'>
+						<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jul 25, 2024 12:24:41 am</td>
+										<td class='linked' test-id='3'>T029_To verify the Tickets features Update a Ticket</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@Tickets</span>
+						<span class='category-status right'>
+						<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jul 25, 2024 12:24:41 am</td>
 										<td class='linked' test-id='3'>T029_To verify the Tickets features Update a Ticket</td>
 										<td><span class='test-status Fail'>Fail</span></td>
 									</tr>
@@ -478,7 +483,7 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 23, 2024 07:04:45 pm</td>
+										<td>Jul 25, 2024 12:24:41 am</td>
 										<td class='linked' test-id='3'>T029_To verify the Tickets features Update a Ticket</td>
 										<td><span class='test-status Fail'>Fail</span></td>
 									</tr>
@@ -516,7 +521,7 @@
 			<ul id='exception-collection' class='exception-collection'>
 				<li class='exception displayed active'>
 					<div class='exception-heading'>
-						<span class='exception-name'>java.lang.NullPointerException</span>
+						<span class='exception-name'>org.junit.ComparisonFailure</span>
 						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
 					</div>
 					<div class='exception-content hide'>
@@ -531,15 +536,14 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 23, 2024 07:04:54 pm</td>
-										<td class='linked' test-id='15'>And User edit Description</td>
+										<td>Jul 25, 2024 12:24:56 am</td>
+										<td class='linked' test-id='23'>Then Ticket Updated popup will be displayed successfully as "Success Tickets updated"</td>
 										<td>
-											<textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "java.lang.CharSequence.codePoints()" because "key" is null
-	at org.openqa.selenium.interactions.Actions.sendKeysInTicks(Actions.java:153)
-	at org.openqa.selenium.interactions.Actions.sendKeys(Actions.java:130)
-	at pageobjects.Ticketspage.Description_edit(Ticketspage.java:479)
-	at Stepdefinitions.Tickets.User_edit_Description(Tickets.java:287)
-	at ✽.User edit Description(file:///home/coducer/Al_Arabia_PhaseII/Al_Arabia_Project/src/test/resources/Features/06_Tickets.feature:242)
+											<textarea disabled class="code-block">org.junit.ComparisonFailure: expected:<[Success Tickets updated]> but was:<[Error please choose valid title]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at Stepdefinitions.Tickets.BillBoard_Updated_popup_will_be_displayed_successfully_as_(Tickets.java:300)
+	at ✽.Ticket Updated popup will be displayed successfully as "Success Tickets updated"(file:///home/coducer/Al_Arabia_PhaseII/Al_Arabia_Project/src/test/resources/Features/06_Tickets.feature:248)
 </textarea>
 										</td>
 									</tr>
@@ -577,25 +581,25 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>9</div>
+					<div class='panel-lead'>11</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jul 23, 2024 07:04:45 pm</div>
+					<div class='panel-lead'>Jul 25, 2024 12:24:41 am</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jul 23, 2024 07:04:55 pm</div>
+			 		<div class='panel-lead'>Jul 25, 2024 12:24:56 am</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>00 00 09.943</div>
+					<div class='panel-lead'>00 00 15.929</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -620,7 +624,7 @@
 							</td>
 						</tr>
 						<tr>
-							<td>@Tickets</td>
+							<td>@Tickets29</td>
 							<td>0</td>
 							<td>1</td>
 							<td>0</td>
@@ -638,7 +642,7 @@
 							</td>
 						</tr>
 						<tr>
-							<td>@Tickets29</td>
+							<td>@Tickets</td>
 							<td>0</td>
 							<td>1</td>
 							<td>0</td>
@@ -681,20 +685,20 @@
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				grandChildCount: 9,
-				passGrandChild: 6,
+				grandChildCount: 11,
+				passGrandChild: 10,
 				failGrandChild: 1,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 2,
+				skipGrandChild: 0,
 				infoGrandChild: 0,
 			};
 			</script>
 		
 		<script>
 			var timeline = {
-			        "Tickets":9.251
+			        "Tickets":15.177
 			};
 		</script>
 		

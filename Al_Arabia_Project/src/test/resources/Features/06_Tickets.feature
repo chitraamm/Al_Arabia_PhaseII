@@ -257,5 +257,72 @@ When Al-Arabia overall dashboard should display
 And Admin or user clicks the Tickets module
 And The User clicks the Edit button
 And User click on Activity Feed Tab 
-Then Activity Feed Tab page will be displayed successfully         
+Then Activity Feed Tab page will be displayed successfully  
+
+@Tickets @Tickets31 @smoke @regression @all
+Scenario Outline: T031_To verify the Tickets feature upload photos and videos
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Tickets module
+And Admin or user clicks the new Ticket button
+And Admin or user enters the all mandatory fields
+And Admin or user clicks the create Ticket
+And The User clicks the Edit button 
+And User Click on Upload Photos and videos      
+And User click on Update Tickets button with confirm yes button
+Then Ticket Updated popup will be displayed successfully as "<successMessage>"
+  Examples:
+      | successMessage     								  |
+      | Success Tickets updated             |  
       
+@Tickets @Tickets32 @smoke @regression @all
+Scenario Outline: T032_To verify the Tickets feature verify submitted
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Tickets module 
+And User filter the Tickets list status Submitted
+And The User clicks the Edit button 
+And User clicks verify button and confirm yes button
+Then Ticket verified popup will be displayed successfully as "<successMessage>"
+  Examples:
+      | successMessage     								  |
+      | Success Ticket verified             | 
+         
+@Tickets @Tickets33 @smoke @regression @all
+Scenario Outline: T033_To verify the Tickets feature verify submitted
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Tickets module 
+And User filter the Tickets list status Submitted
+And The User clicks the Edit button 
+And User clicks Reassign button and confirm yes button
+Then Ticket Reassigned popup will be displayed successfully as "<successMessage>"
+  Examples:
+      | successMessage     								  |
+      | Success Ticket reassigned           |
+      
+@Tickets @Tickets34 @smoke @regression @all
+Scenario Outline: T033_To verify the Tickets feature verify submitted
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Tickets module 
+And User filter the Tickets list status Verified
+And The User clicks the Edit button 
+And User clicks Approve button and confirm yes button
+Then Ticket Approved popup will be displayed successfully as "<successMessage>"
+  Examples:
+      | successMessage     							  |
+      | Success Ticket approved           |  
+@Tickets @Tickets35 @smoke @regression @all
+Scenario Outline: T035_To verify the Tickets feature  
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Tickets module 
+And User filter the Tickets list status Verified
+And The User clicks the Edit button 
+And User clicks Reject button and confirm yes button
+Then Ticket Rejected popup will be displayed successfully as "<successMessage>"
+  Examples:
+      | successMessage     							  |
+      | Success Ticket rejected           |  
+                        

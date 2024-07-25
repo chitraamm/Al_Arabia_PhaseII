@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Automation Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jul 25, 2024 12:24:41 am</span></a>
+<a href="#"><span class="badge badge-primary">Jul 25, 2024 04:51:22 pm</span></a>
 </li>
 </ul>
 </div>
@@ -84,7 +84,7 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@smoke</a><a class="dropdown-item" href="#">@Tickets29</a><a class="dropdown-item" href="#">@all</a><a class="dropdown-item" href="#">@Tickets</a><a class="dropdown-item" href="#">@regression</a>
+<a class="dropdown-item" href="#">@regression</a><a class="dropdown-item" href="#">@Tickets</a><a class="dropdown-item" href="#">@Tickets33</a><a class="dropdown-item" href="#">@all</a><a class="dropdown-item" href="#">@smoke</a>
 </ul>
 </li>
 </ul>
@@ -97,7 +97,7 @@
           <div class="test-detail">
             <p class="name">Tickets</p>
             <p class="text-sm">
-              <span>12:24:41 am</span> / <span>00:00:15:177</span>
+              <span>4:51:23 pm</span> / <span>00:00:24:816</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -106,9 +106,9 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">Tickets</h5>
-<span class='badge badge-success'>07.25.2024 12:24:41 am</span>
-<span class='badge badge-danger'>07.25.2024 12:24:56 am</span>
-<span class='badge badge-default'>00:00:15:177</span>
+<span class='badge badge-success'>07.25.2024 4:51:23 pm</span>
+<span class='badge badge-danger'>07.25.2024 4:51:47 pm</span>
+<span class='badge badge-default'>00:00:24:816</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -121,7 +121,7 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>T029_To verify the Tickets features Update a Ticket</div>
+        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>T033_To verify the Tickets feature verify submitted</div>
           <div class="status-avatar float-right mr-4">
             <i class="fa fa-paperclip"></i>
           </div>
@@ -131,7 +131,7 @@
             <div class="card-body l1">
               <div class="card-header">
                 <div class="card-title outline-child">
-                  <div class="node" id="3"><span class="badge log fail-bg mr-2">Fail</span>T029_To verify the Tickets features Update a Ticket</div>
+                  <div class="node" id="3"><span class="badge log fail-bg mr-2">Fail</span>T033_To verify the Tickets feature verify submitted</div>
                     <div class="status-avatar float-right">
                       <i class="fa fa-paperclip"></i>
                     </div>
@@ -154,17 +154,7 @@
       </div>
                   </div>
                   <div class="step pass-bg">
-                    <span>And Admin or user clicks the new Ticket button</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And Admin or user enters the all mandatory fields</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And Admin or user clicks the create Ticket</span>
+                    <span>And User filter the Tickets list status Submitted</span>
       <div>
       </div>
                   </div>
@@ -174,30 +164,25 @@
       </div>
                   </div>
                   <div class="step pass-bg">
-                    <span>And User edit Description</span>
-      <div>
-      </div>
-                  </div>
-                  <div class="step pass-bg">
-                    <span>And User click on Update Tickets button with confirm yes button</span>
+                    <span>And User clicks Reassign button and confirm yes button</span>
       <div>
       </div>
                   </div>
                   <div class="step fail-bg">
-                    <span>Then Ticket Updated popup will be displayed successfully as "Success Tickets updated"</span>
+                    <span>Then Ticket Reassigned popup will be displayed successfully as "Success Ticket Reassigned"</span>
       <div>
-        <textarea disabled class="code-block">org.junit.ComparisonFailure: expected:<[Success Tickets updated]> but was:<[Error please choose valid title]>
+        <textarea disabled class="code-block">org.junit.ComparisonFailure: expected:<Success Ticket [R]eassigned> but was:<Success Ticket [r]eassigned>
 	at org.junit.Assert.assertEquals(Assert.java:117)
 	at org.junit.Assert.assertEquals(Assert.java:146)
-	at Stepdefinitions.Tickets.BillBoard_Updated_popup_will_be_displayed_successfully_as_(Tickets.java:300)
-	at ✽.Ticket Updated popup will be displayed successfully as "Success Tickets updated"(file:///home/coducer/Al_Arabia_PhaseII/Al_Arabia_Project/src/test/resources/Features/06_Tickets.feature:248)
+	at Stepdefinitions.Tickets.Ticket_Reassign_popup_will_be_displayed_successfully_as(Tickets.java:342)
+	at ✽.Ticket Reassigned popup will be displayed successfully as "Success Ticket Reassigned"(file:///home/coducer/Al_Arabia_PhaseII/Al_Arabia_Project/src/test/resources/Features/06_Tickets.feature:299)
 </textarea>
       
       </div>
                   </div>
                   <div class="step pass-bg">
                     <span>Hooks.Testhooks.addScreenshot(io.cucumber.java.Scenario)</span>
-      <div>T029_To verify the Tickets features Update a Ticket
+      <div>T033_To verify the Tickets feature verify submitted
           <div class="row mb-3"><div class="col-md-3">
 <img data-featherlight='../embedded1.png' src="../embedded1.png">
     
@@ -254,11 +239,11 @@
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>00:24:56 am</td>
+<td>16:51:46 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='23'>Then Ticket Updated popup will be displayed successfully as "Success Tickets updated"</a>
+<a href="#" class="linked" test-id='1' id='17'>Then Ticket Reassigned popup will be displayed successfully as "Success Ticket Reassigned"</a>
 <div class="">
-<span class="badge badge-default">Tickets.T029_To verify the Tickets features Update a Ticket.Then Ticket Updated popup will be displayed successfully as "Success Tickets updated"</span>
+<span class="badge badge-default">Tickets.T033_To verify the Tickets feature verify submitted.Then Ticket Reassigned popup will be displayed successfully as "Success Ticket Reassigned"</span>
 </div>
 </td>
 </tr>
@@ -287,12 +272,12 @@
 <span class="meta">
 <span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">@smoke</p>
+<p class="name">@regression</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@smoke</h4>
+<h4>@regression</h4>
 <span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -306,83 +291,11 @@
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>00:24:41 am</td>
+<td>16:51:23 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='3'>T029_To verify the Tickets features Update a Ticket</a>
+<a href="#" class="linked" test-id='1' id='3'>T033_To verify the Tickets feature verify submitted</a>
 <div class="">
-<span class="badge badge-default">Tickets.T029_To verify the Tickets features Update a Ticket</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log badge-danger'>1</span>
-</span>
-<p class="name">@Tickets29</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@Tickets29</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>00:24:41 am</td>
-<td>
-<a href="#" class="linked" test-id='1' id='3'>T029_To verify the Tickets features Update a Ticket</a>
-<div class="">
-<span class="badge badge-default">Tickets.T029_To verify the Tickets features Update a Ticket</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log badge-danger'>1</span>
-</span>
-<p class="name">@all</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@all</h4>
-<span status="fail" class='badge log badge-danger'>1 failed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="fail">
-<td><span class="badge log fail-bg">Fail</span></td>
-<td>00:24:41 am</td>
-<td>
-<a href="#" class="linked" test-id='1' id='3'>T029_To verify the Tickets features Update a Ticket</a>
-<div class="">
-<span class="badge badge-default">Tickets.T029_To verify the Tickets features Update a Ticket</span>
+<span class="badge badge-default">Tickets.T033_To verify the Tickets feature verify submitted</span>
 </div>
 </td>
 </tr>
@@ -414,11 +327,11 @@
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>00:24:41 am</td>
+<td>16:51:23 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='3'>T029_To verify the Tickets features Update a Ticket</a>
+<a href="#" class="linked" test-id='1' id='3'>T033_To verify the Tickets feature verify submitted</a>
 <div class="">
-<span class="badge badge-default">Tickets.T029_To verify the Tickets features Update a Ticket</span>
+<span class="badge badge-default">Tickets.T033_To verify the Tickets feature verify submitted</span>
 </div>
 </td>
 </tr>
@@ -431,12 +344,12 @@
 <span class="meta">
 <span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">@regression</p>
+<p class="name">@Tickets33</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@regression</h4>
+<h4>@Tickets33</h4>
 <span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -450,11 +363,83 @@
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>00:24:41 am</td>
+<td>16:51:23 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='3'>T029_To verify the Tickets features Update a Ticket</a>
+<a href="#" class="linked" test-id='1' id='3'>T033_To verify the Tickets feature verify submitted</a>
 <div class="">
-<span class="badge badge-default">Tickets.T029_To verify the Tickets features Update a Ticket</span>
+<span class="badge badge-default">Tickets.T033_To verify the Tickets feature verify submitted</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@all</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@all</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>16:51:23 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='3'>T033_To verify the Tickets feature verify submitted</a>
+<div class="">
+<span class="badge badge-default">Tickets.T033_To verify the Tickets feature verify submitted</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@smoke</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@smoke</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>16:51:23 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='3'>T033_To verify the Tickets feature verify submitted</a>
+<div class="">
+<span class="badge badge-default">Tickets.T033_To verify the Tickets feature verify submitted</span>
 </div>
 </td>
 </tr>
@@ -475,13 +460,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jul 25, 2024 12:24:41 am</h3>
+<h3>Jul 25, 2024 04:51:22 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jul 25, 2024 12:24:56 am</h3>
+<h3>Jul 25, 2024 04:51:47 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -552,9 +537,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='90%'><b>10</b> steps passed</small></div>
+<div><small data-tooltip='87%'><b>7</b> steps passed</small></div>
 <div>
-<small data-tooltip='9%'><b>1</b> steps failed,
+<small data-tooltip='12%'><b>1</b> steps failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -571,7 +556,7 @@
 </div></div>
 <script>
 var timeline = {
-"Tickets":15.177
+"Tickets":24.816
 };
 </script>
 <div class="row">
@@ -581,23 +566,7 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@smoke</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0%</td>
-</tr>
-<tr>
-<td>@Tickets29</td>
-<td>0</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0%</td>
-</tr>
-<tr>
-<td>@all</td>
+<td>@regression</td>
 <td>0</td>
 <td>1</td>
 <td>0</td>
@@ -613,7 +582,23 @@ var timeline = {
 <td>0%</td>
 </tr>
 <tr>
-<td>@regression</td>
+<td>@Tickets33</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@all</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@smoke</td>
 <td>0</td>
 <td>1</td>
 <td>0</td>
@@ -640,7 +625,7 @@ warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 10,
+passGrandChild: 7,
 failGrandChild: 1,
 warningGrandChild: 0,
 skipGrandChild: 0,

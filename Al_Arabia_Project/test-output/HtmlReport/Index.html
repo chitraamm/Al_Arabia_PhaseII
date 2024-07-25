@@ -50,7 +50,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Jul 25, 2024 12:24:41 am</span>
+			<span class='label blue darken-3 suite-start-time'>Jul 25, 2024 04:51:22 pm</span>
 			</a>
 		</ul>
 	</div>
@@ -77,11 +77,11 @@
 				<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@smoke</a></li>
-					<li><a href='#'>@Tickets29</a></li>
-					<li><a href='#'>@all</a></li>
-					<li><a href='#'>@Tickets</a></li>
 					<li><a href='#'>@regression</a></li>
+					<li><a href='#'>@Tickets</a></li>
+					<li><a href='#'>@Tickets33</a></li>
+					<li><a href='#'>@all</a></li>
+					<li><a href='#'>@smoke</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -121,7 +121,7 @@
 				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Tickets</span>
-						<span class='test-time'>Jul 25, 2024 12:24:41 am</span>
+						<span class='test-time'>Jul 25, 2024 04:51:23 pm</span>
 						<span class='test-status right fail'>Fail</span>
 					</div>
 					<div class='test-content hide'>
@@ -135,22 +135,22 @@
 
 <div class='scenario outline node' test-id='2' status='fail'>
 
-	<span class='duration right label'>00 00 15.174</span>
+	<span class='duration right label'>00 00 24.812</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario Outline: T029_To verify the Tickets features Update a Ticket</div>
+		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario Outline: T033_To verify the Tickets feature verify submitted</div>
 	</div>
 	
-		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>successMessage</td></tr><tr><td>Success Tickets updated</td></tr></table></div>
+		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>successMessage</td></tr><tr><td>Success Ticket Reassigned</td></tr></table></div>
 	
 	
 	<ul class='steps'>
 		<li test-id='3' class='node scenario Fail' status='Fail'>
-			<div class="step-name" title="()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>T029_To verify the Tickets features Update a Ticket</div>
+			<div class="step-name" title="()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>T033_To verify the Tickets feature verify submitted</div>
 
 				<div class='category-list'>
 						<span class='category label'>@all</span>
+						<span class='category label'>@Tickets33</span>
 						<span class='category label'>@smoke</span>
-						<span class='category label'>@Tickets29</span>
 						<span class='category label'>@regression</span>
 						<span class='category label'>@Tickets</span>
 				</div>
@@ -169,43 +169,31 @@
 
 				</li>
 				<li test-id='11' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="Stepdefinitions.Tickets.Admin_or_user_clicks_the_new_Ticket_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Admin or user clicks the new Ticket button</h6>
+					<h6 class="step-name" title="Stepdefinitions.Tickets.User_filter_the_Tickets_list_status_Submitted()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User filter the Tickets list status Submitted</h6>
 
 				</li>
 				<li test-id='13' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="Stepdefinitions.Tickets.Admin_or_user_enters_the_all_mandatory_fields()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Admin or user enters the all mandatory fields</h6>
-
-				</li>
-				<li test-id='15' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="Stepdefinitions.Tickets.Admin_or_user_clicks_the_create_Ticket()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Admin or user clicks the create Ticket</h6>
-
-				</li>
-				<li test-id='17' class='gc and Pass' status='Pass'>
 					<h6 class="step-name" title="Stepdefinitions.Tickets.The_User_clicks_the_Edit_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And The User clicks the Edit button</h6>
 
 				</li>
-				<li test-id='19' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="Stepdefinitions.Tickets.User_edit_Description()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User edit Description</h6>
+				<li test-id='15' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="Stepdefinitions.Tickets.User_clicks_Reassign_button_and_confirm_yes_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User clicks Reassign button and confirm yes button</h6>
 
 				</li>
-				<li test-id='21' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="Stepdefinitions.Tickets.User_click_on_Update_Tickets_button_with_confirm_yes_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User click on Update Tickets button with confirm yes button</h6>
+				<li test-id='17' class='gc then Fail' status='Fail'>
+					<h6 class="step-name" title="Stepdefinitions.Tickets.Ticket_Reassign_popup_will_be_displayed_successfully_as(java.lang.String)"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Then Ticket Reassigned popup will be displayed successfully as "Success Ticket Reassigned"</h6>
 
-				</li>
-				<li test-id='23' class='gc then Fail' status='Fail'>
-					<h6 class="step-name" title="Stepdefinitions.Tickets.BillBoard_Updated_popup_will_be_displayed_successfully_as_(java.lang.String)"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Then Ticket Updated popup will be displayed successfully as "Success Tickets updated"</h6>
-
-							<textarea disabled class="code-block">org.junit.ComparisonFailure: expected:<[Success Tickets updated]> but was:<[Error please choose valid title]>
+							<textarea disabled class="code-block">org.junit.ComparisonFailure: expected:<Success Ticket [R]eassigned> but was:<Success Ticket [r]eassigned>
 	at org.junit.Assert.assertEquals(Assert.java:117)
 	at org.junit.Assert.assertEquals(Assert.java:146)
-	at Stepdefinitions.Tickets.BillBoard_Updated_popup_will_be_displayed_successfully_as_(Tickets.java:300)
-	at ✽.Ticket Updated popup will be displayed successfully as "Success Tickets updated"(file:///home/coducer/Al_Arabia_PhaseII/Al_Arabia_Project/src/test/resources/Features/06_Tickets.feature:248)
+	at Stepdefinitions.Tickets.Ticket_Reassign_popup_will_be_displayed_successfully_as(Tickets.java:342)
+	at ✽.Ticket Reassigned popup will be displayed successfully as "Success Ticket Reassigned"(file:///home/coducer/Al_Arabia_PhaseII/Al_Arabia_Project/src/test/resources/Features/06_Tickets.feature:299)
 </textarea>
 				</li>
-				<li test-id='24' class='gc * Pass' status='Pass'>
+				<li test-id='18' class='gc * Pass' status='Pass'>
 					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Hooks.Testhooks.addScreenshot(io.cucumber.java.Scenario)</h6>
 
-							<div class="node-step">T029_To verify the Tickets features Update a Ticket</div>
+							<div class="node-step">T033_To verify the Tickets feature verify submitted</div>
 							<div class='screenshots'>
 								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../embedded1.png' src='../embedded1.png'>
 							</div>
@@ -284,11 +272,11 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='90%'>
-                    <span class='strong'>10</span> steps passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='87%'>
+                    <span class='strong'>7</span> steps passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='9%'>
+                    <span class='strong tooltipped' data-position='top' data-tooltip='12%'>
                     1</span> steps failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped, 
@@ -329,7 +317,7 @@
 			<ul id='category-collection' class='category-collection'>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@smoke</span>
+						<span class='category-name'>@regression</span>
 						<span class='category-status right'>
 						<span class='label fail'>1</span>
 						</span>
@@ -351,74 +339,8 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 25, 2024 12:24:41 am</td>
-										<td class='linked' test-id='3'>T029_To verify the Tickets features Update a Ticket</td>
-										<td><span class='test-status Fail'>Fail</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@Tickets29</span>
-						<span class='category-status right'>
-						<span class='label fail'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							
-							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Jul 25, 2024 12:24:41 am</td>
-										<td class='linked' test-id='3'>T029_To verify the Tickets features Update a Ticket</td>
-										<td><span class='test-status Fail'>Fail</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@all</span>
-						<span class='category-status right'>
-						<span class='label fail'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							
-							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Jul 25, 2024 12:24:41 am</td>
-										<td class='linked' test-id='3'>T029_To verify the Tickets features Update a Ticket</td>
+										<td>Jul 25, 2024 04:51:23 pm</td>
+										<td class='linked' test-id='3'>T033_To verify the Tickets feature verify submitted</td>
 										<td><span class='test-status Fail'>Fail</span></td>
 									</tr>
 								</tbody>
@@ -450,8 +372,8 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 25, 2024 12:24:41 am</td>
-										<td class='linked' test-id='3'>T029_To verify the Tickets features Update a Ticket</td>
+										<td>Jul 25, 2024 04:51:23 pm</td>
+										<td class='linked' test-id='3'>T033_To verify the Tickets feature verify submitted</td>
 										<td><span class='test-status Fail'>Fail</span></td>
 									</tr>
 								</tbody>
@@ -461,7 +383,7 @@
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@regression</span>
+						<span class='category-name'>@Tickets33</span>
 						<span class='category-status right'>
 						<span class='label fail'>1</span>
 						</span>
@@ -483,8 +405,74 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 25, 2024 12:24:41 am</td>
-										<td class='linked' test-id='3'>T029_To verify the Tickets features Update a Ticket</td>
+										<td>Jul 25, 2024 04:51:23 pm</td>
+										<td class='linked' test-id='3'>T033_To verify the Tickets feature verify submitted</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@all</span>
+						<span class='category-status right'>
+						<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jul 25, 2024 04:51:23 pm</td>
+										<td class='linked' test-id='3'>T033_To verify the Tickets feature verify submitted</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@smoke</span>
+						<span class='category-status right'>
+						<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Jul 25, 2024 04:51:23 pm</td>
+										<td class='linked' test-id='3'>T033_To verify the Tickets feature verify submitted</td>
 										<td><span class='test-status Fail'>Fail</span></td>
 									</tr>
 								</tbody>
@@ -536,14 +524,14 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Jul 25, 2024 12:24:56 am</td>
-										<td class='linked' test-id='23'>Then Ticket Updated popup will be displayed successfully as "Success Tickets updated"</td>
+										<td>Jul 25, 2024 04:51:46 pm</td>
+										<td class='linked' test-id='17'>Then Ticket Reassigned popup will be displayed successfully as "Success Ticket Reassigned"</td>
 										<td>
-											<textarea disabled class="code-block">org.junit.ComparisonFailure: expected:<[Success Tickets updated]> but was:<[Error please choose valid title]>
+											<textarea disabled class="code-block">org.junit.ComparisonFailure: expected:<Success Ticket [R]eassigned> but was:<Success Ticket [r]eassigned>
 	at org.junit.Assert.assertEquals(Assert.java:117)
 	at org.junit.Assert.assertEquals(Assert.java:146)
-	at Stepdefinitions.Tickets.BillBoard_Updated_popup_will_be_displayed_successfully_as_(Tickets.java:300)
-	at ✽.Ticket Updated popup will be displayed successfully as "Success Tickets updated"(file:///home/coducer/Al_Arabia_PhaseII/Al_Arabia_Project/src/test/resources/Features/06_Tickets.feature:248)
+	at Stepdefinitions.Tickets.Ticket_Reassign_popup_will_be_displayed_successfully_as(Tickets.java:342)
+	at ✽.Ticket Reassigned popup will be displayed successfully as "Success Ticket Reassigned"(file:///home/coducer/Al_Arabia_PhaseII/Al_Arabia_Project/src/test/resources/Features/06_Tickets.feature:299)
 </textarea>
 										</td>
 									</tr>
@@ -581,25 +569,25 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>11</div>
+					<div class='panel-lead'>8</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Jul 25, 2024 12:24:41 am</div>
+					<div class='panel-lead'>Jul 25, 2024 04:51:22 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Jul 25, 2024 12:24:56 am</div>
+			 		<div class='panel-lead'>Jul 25, 2024 04:51:47 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>00 00 15.929</div>
+					<div class='panel-lead'>00 00 25.605</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -615,25 +603,7 @@
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>@smoke</td>
-							<td>0</td>
-							<td>1</td>
-							<td>0</td>
-							<td>
-									0%
-							</td>
-						</tr>
-						<tr>
-							<td>@Tickets29</td>
-							<td>0</td>
-							<td>1</td>
-							<td>0</td>
-							<td>
-									0%
-							</td>
-						</tr>
-						<tr>
-							<td>@all</td>
+							<td>@regression</td>
 							<td>0</td>
 							<td>1</td>
 							<td>0</td>
@@ -651,7 +621,25 @@
 							</td>
 						</tr>
 						<tr>
-							<td>@regression</td>
+							<td>@Tickets33</td>
+							<td>0</td>
+							<td>1</td>
+							<td>0</td>
+							<td>
+									0%
+							</td>
+						</tr>
+						<tr>
+							<td>@all</td>
+							<td>0</td>
+							<td>1</td>
+							<td>0</td>
+							<td>
+									0%
+							</td>
+						</tr>
+						<tr>
+							<td>@smoke</td>
 							<td>0</td>
 							<td>1</td>
 							<td>0</td>
@@ -685,8 +673,8 @@
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				grandChildCount: 11,
-				passGrandChild: 10,
+				grandChildCount: 8,
+				passGrandChild: 7,
 				failGrandChild: 1,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
@@ -698,7 +686,7 @@
 		
 		<script>
 			var timeline = {
-			        "Tickets":15.177
+			        "Tickets":24.816
 			};
 		</script>
 		

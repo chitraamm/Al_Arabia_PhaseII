@@ -307,4 +307,66 @@ public class Tickets extends Base {
 	public void Activity_Feed_Tab_page_will_be_displayed_successfully() throws Exception {
 		ticketsPage.Ticket_Edit_page();
 }
+
+	@And("User Click on Upload Photos and videos")
+	public void And_User_Click_on_Upload_Photos_and_videos() throws Exception {
+		ticketsPage.Upload_Photos();
+		ticketsPage.Upload_videos();
+}
+	@And("User clicks verify button and confirm yes button")
+	public void User_clicks_verify_button_and_confirm_yes_button() throws Exception {
+		ticketsPage.Verify();
+		ticketsPage.confirm_verify();
+
+}
+	@Then("^Ticket verified popup will be displayed successfully as \"([^\"]*)\"$")
+	public void Ticket_verified_popup_will_be_displayed_successfully_as(String expectedMessage) throws Exception {
+		  String actualMessage = ticketsPage.ticket_create_Success_display();
+	      String normalizedExpectedMessage = normalizeWhitespace(expectedMessage);
+	      String normalizedActualMessage = normalizeWhitespace(actualMessage);
+	      System.out.println(">> User or Admin verified Ticket successfully"+actualMessage);
+	      assertEquals(normalizedExpectedMessage, normalizedActualMessage);
+	}
+	@And("User clicks Reassign button and confirm yes button")
+	public void User_clicks_Reassign_button_and_confirm_yes_button() throws Exception {
+		ticketsPage.Reassign();
+		ticketsPage.confirm_Reassign();
+
+}
+	@Then("^Ticket Reassigned popup will be displayed successfully as \"([^\"]*)\"$")
+	public void Ticket_Reassign_popup_will_be_displayed_successfully_as(String expectedMessage) throws Exception {
+		  String actualMessage = ticketsPage.ticket_create_Success_display();
+	      String normalizedExpectedMessage = normalizeWhitespace(expectedMessage);
+	      String normalizedActualMessage = normalizeWhitespace(actualMessage);
+	      System.out.println(">> User or Admin verified Ticket successfully"+actualMessage);
+	      assertEquals(normalizedExpectedMessage, normalizedActualMessage);
+	}
+	@And("User clicks Approve button and confirm yes button")
+	public void User_clicks_Approve_button_and_confirm_yes_button() throws Exception {
+		ticketsPage.Reassign();
+		ticketsPage.confirm_Reassign();
+
+}
+	@Then("^Ticket Approved popup will be displayed successfully as \"([^\"]*)\"$")
+	public void Ticket_Approved_popup_will_be_displayed_successfully_as(String expectedMessage) throws Exception {
+		  String actualMessage = ticketsPage.ticket_create_Success_display();
+	      String normalizedExpectedMessage = normalizeWhitespace(expectedMessage);
+	      String normalizedActualMessage = normalizeWhitespace(actualMessage);
+	      System.out.println(">> User or Admin verified Ticket successfully"+actualMessage);
+	      assertEquals(normalizedExpectedMessage, normalizedActualMessage);
+	}
+	@And("User clicks Reject button and confirm yes button")
+	public void User_clicks_Reject_button_and_confirm_yes_button() throws Exception {
+		ticketsPage.Reassign();
+		ticketsPage.confirm_Reassign();
+
+}
+	@Then("^Ticket Rejected popup will be displayed successfully as \"([^\"]*)\"$")
+	public void Ticket_Rejected_popup_will_be_displayed_successfully_as(String expectedMessage) throws Exception {
+		  String actualMessage = ticketsPage.ticket_create_Success_display();
+	      String normalizedExpectedMessage = normalizeWhitespace(expectedMessage);
+	      String normalizedActualMessage = normalizeWhitespace(actualMessage);
+	      System.out.println(">> User or Admin verified Ticket successfully"+actualMessage);
+	      assertEquals(normalizedExpectedMessage, normalizedActualMessage);
+	}
 }

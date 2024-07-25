@@ -52,26 +52,26 @@ public class Ticketspage extends Base {
 
 	private static String generateUniqueIQMANumber(String baseIQMANumber) {
 		Random rand = new Random();
-		return baseIQMANumber + rand.nextInt(10000); 
+		return baseIQMANumber + rand.nextInt(10000);
 	}
 
 	private static String generateUniqueLicenceNumber(String baseLicenceNumber) {
 		Random rand = new Random();
 		return baseLicenceNumber + rand.nextInt(1000);
 	}
-	
+
 	@FindBy(xpath = "//span[normalize-space()='Tickets']")
 	private WebElement ticketsClick;
 
 	@FindBy(xpath = "(//td[contains(@class,'d-flex')])[2]")
-	private WebElement tickets_menu; 
+	private WebElement tickets_menu;
 
 	public void Tickets_click() {
 		wait.until(ExpectedConditions.elementToBeClickable(ticketsClick)).click();
 		wait.until(ExpectedConditions.visibilityOf(tickets_menu)).isDisplayed();
 		LOGGER.info(">> Admin/User got navigated to Tickets page");
 	}
-	
+
 	@FindBy(xpath = "(//h5[contains(@class,'mb-0')])[1]")
 	private WebElement ticketsCount;
 
@@ -80,7 +80,7 @@ public class Ticketspage extends Base {
 		AssertJUnit.assertTrue(ticketsCount.isDisplayed());
 		LOGGER.info(">> The Tickets page got displayed");
 	}
-	
+
 	@FindBy(xpath = "(//h6[contains(@class,'m-0 fw-normal')][normalize-space()='New Ticket'])[1]")
 	private WebElement New_TicketClick, New_Ticket_display;
 
@@ -101,31 +101,31 @@ public class Ticketspage extends Base {
 		}
 		LOGGER.info(">> Admin/User clicked new billboard btn");
 	}
-	
+
 	@FindBy(id = "react-select-15-input")
-	private WebElement BB_no_select ;
-	
+	private WebElement BB_no_select;
+
 	@FindBy(id = "react-select-16-input")
-	private WebElement Department_select ;
-	
+	private WebElement Department_select;
+
 	@FindBy(id = "react-select-17-input")
-	private WebElement Priority_select ;
-	
+	private WebElement Priority_select;
+
 	@FindBy(id = "react-select-18-input")
-	private WebElement Ticket_title_select ;
-	
+	private WebElement Ticket_title_select;
+
 	@FindBy(xpath = "(//div[contains(@class,'select__input-container css-19bb58m')])[5]")
-	private WebElement Assignee_select ;
-	
+	private WebElement Assignee_select;
+
 	@FindBy(xpath = "//input[@id='formikDateField_start_date']")
-	private WebElement Start_date ;
-	
+	private WebElement Start_date;
+
 	@FindBy(xpath = "//input[@id='formikDateField_end_date']")
-	private WebElement End_date ;
-	
+	private WebElement End_date;
+
 	@FindBy(xpath = "//textarea[@id='description']")
 	private WebElement Description_enter;
-	
+
 	public void NewTicket_mandatory_fields_enter() {
 		wait.until(ExpectedConditions.visibilityOf(BB_no_select));
 
@@ -140,22 +140,23 @@ public class Ticketspage extends Base {
 		act.moveToElement(End_date).click().sendKeys("" + Keys.ENTER).perform();
 		String Description = prop.getProperty("Description");
 		wait.until(ExpectedConditions.visibilityOf(Description_enter)).sendKeys(Description);
-}
+	}
+
 	@FindBy(id = "Create Ticket")
 	private WebElement Ticket_create_BB_btn;
 
 	public void NewTicket_create_btn() {
 		act.moveToElement(Ticket_create_BB_btn).click().perform();
 	}
-	
+
 	@FindBy(xpath = "//div[contains(@class, 'toastpop') and contains(@class, 'position-relative')]")
 	private WebElement Ticket_created_Success_display;
 
 	public String ticket_create_Success_display() throws Exception {
-		WebElement successMessageElement = wait
-				.until(ExpectedConditions.visibilityOf(Ticket_created_Success_display));
+		WebElement successMessageElement = wait.until(ExpectedConditions.visibilityOf(Ticket_created_Success_display));
 		return successMessageElement.getText().trim();
 	}
+
 	@FindBy(id = "doc_searchQueryInput")
 	private WebElement TicketSearch;
 
@@ -192,6 +193,7 @@ public class Ticketspage extends Base {
 		LOGGER.info(">> Admin/User clicked new ticket btn");
 		System.out.println(">> User got sorted Ticket list: " + Ticketlist.getText());
 	}
+
 	@FindBy(xpath = "(//h6[contains(@class,'m-0 by fw-normal')][normalize-space()='Recently Added'])[1]")
 	private WebElement ticket_sort;
 
@@ -239,12 +241,13 @@ public class Ticketspage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(Ticket_Name_decending)).click();
 		System.out.println(">> User clicked decending updated in sort");
 	}
+
 	@FindBy(xpath = "(//h6[contains(@class,'mb-0 by fw-normal')][normalize-space()='Filter By'])[1]")
 	private WebElement Tickets_filter;
-	
+
 	@FindBy(xpath = "(//span[contains(text(),'Closed')])[1]")
 	private WebElement closed_status;
-	
+
 	@FindBy(xpath = "(//button[@type='submit'])[2]")
 	private WebElement Tickets_filter_apply_btn;
 
@@ -254,9 +257,10 @@ public class Ticketspage extends Base {
 		act.moveToElement(Tickets_filter_apply_btn).click().perform();
 		System.out.println(">> User clicked closed status in filter");
 	}
+
 	@FindBy(xpath = "//div[contains(text(),'No Tickets Found')]")
 	private WebElement No_Tickets_found;
-	
+
 	public void Tickets_filtered_result_display() {
 		try {
 			if (condition) {
@@ -270,6 +274,7 @@ public class Ticketspage extends Base {
 			wait.until(ExpectedConditions.visibilityOf(No_Tickets_found));
 		}
 	}
+
 	@FindBy(xpath = "(//span[contains(text(),'Created')])[1]")
 	private WebElement Tickets_created;
 
@@ -279,6 +284,7 @@ public class Ticketspage extends Base {
 		act.moveToElement(Tickets_filter_apply_btn).click().perform();
 		System.out.println(">> User clicked Created status in filter");
 	}
+
 	@FindBy(xpath = "(//span[contains(text(),'Reassigned')])[1]")
 	private WebElement Tickets_Reassigned;
 
@@ -288,7 +294,7 @@ public class Ticketspage extends Base {
 		act.moveToElement(Tickets_filter_apply_btn).click().perform();
 		System.out.println(">> User clicked Reassigned status in filter");
 	}
-	
+
 	@FindBy(xpath = "(//span[contains(text(),'Submitted')])[1]")
 	private WebElement Tickets_Submitted;
 
@@ -298,7 +304,7 @@ public class Ticketspage extends Base {
 		act.moveToElement(Tickets_filter_apply_btn).click().perform();
 		System.out.println(">> User clicked Submitted status in filter");
 	}
-	
+
 	@FindBy(xpath = "(//span[contains(text(),'Viewed')])[1]")
 	private WebElement Tickets_Viewed;
 
@@ -308,6 +314,7 @@ public class Ticketspage extends Base {
 		act.moveToElement(Tickets_filter_apply_btn).click().perform();
 		System.out.println(">> User clicked Viewed status in filter");
 	}
+
 	@FindBy(xpath = "(//span[contains(text(),'Verified')])[1]")
 	private WebElement Tickets_Verifed;
 
@@ -317,19 +324,21 @@ public class Ticketspage extends Base {
 		act.moveToElement(Tickets_filter_apply_btn).click().perform();
 		System.out.println(">> User clicked Verifed status in filter");
 	}
+
 	@FindBy(xpath = "(//span[contains(text(),'Overdue')])[1]")
 	private WebElement Tickets_Overdue;
-	
+
 	public void Tickets_status_Overdue() {
 		wait.until(ExpectedConditions.visibilityOf(Tickets_filter)).click();
 		wait.until(ExpectedConditions.visibilityOf(Tickets_Overdue)).click();
 		act.moveToElement(Tickets_filter_apply_btn).click().perform();
 		System.out.println(">> User clicked Verifed status in filter");
 	}
+
 	public void Multiple_Ticket_statuses() {
 		wait.until(ExpectedConditions.visibilityOf(Tickets_filter)).click();
 		wait.until(ExpectedConditions.visibilityOf(closed_status)).click();
-	
+
 		act.moveToElement(Tickets_created).click().perform();
 		act.moveToElement(Tickets_Reassigned).click().perform();
 		act.moveToElement(Tickets_Submitted).click().perform();
@@ -339,6 +348,7 @@ public class Ticketspage extends Base {
 		act.moveToElement(Tickets_filter_apply_btn).click().perform();
 		System.out.println(">> User clicked Verifed status in filter");
 	}
+
 	@FindBy(id = "react-select-3-input")
 	private WebElement billboard_number;
 
@@ -351,6 +361,7 @@ public class Ticketspage extends Base {
 		act.moveToElement(Tickets_filter_apply_btn).click().perform();
 		System.out.println(">> User selected the billboard number in filter" + BB_NO);
 	}
+
 	@FindBy(id = "react-select-4-input")
 	private WebElement assignee_select;
 
@@ -363,28 +374,31 @@ public class Ticketspage extends Base {
 		act.moveToElement(Tickets_filter_apply_btn).click().perform();
 		System.out.println(">> User selected the assignee in filter" + assignee);
 	}
+
 	@FindBy(id = "react-select-5-input")
 	private WebElement city_select;
 
 	public void select_City() {
 		wait.until(ExpectedConditions.visibilityOf(Tickets_filter)).click();
 		wait.until(ExpectedConditions.visibilityOf(city_select)).click();
-		wait.until(ExpectedConditions.visibilityOf(city_select)).sendKeys(""+ Keys.ARROW_DOWN + Keys.ENTER);
+		wait.until(ExpectedConditions.visibilityOf(city_select)).sendKeys("" + Keys.ARROW_DOWN + Keys.ENTER);
 		LOGGER.info(">> User selected the city:" + city_select.getText());
 		act.moveToElement(Tickets_filter_apply_btn).click().perform();
 		System.out.println(">> User selected the city in filter");
 	}
+
 	@FindBy(id = "react-select-6-input")
 	private WebElement department_select;
 
 	public void select_Department() {
 		wait.until(ExpectedConditions.visibilityOf(Tickets_filter)).click();
 		wait.until(ExpectedConditions.visibilityOf(department_select)).click();
-		wait.until(ExpectedConditions.visibilityOf(department_select)).sendKeys(""+ Keys.ARROW_DOWN + Keys.ENTER);
+		wait.until(ExpectedConditions.visibilityOf(department_select)).sendKeys("" + Keys.ARROW_DOWN + Keys.ENTER);
 		LOGGER.info(">> User selected the department:" + department_select.getText());
 		act.moveToElement(Tickets_filter_apply_btn).click().perform();
 		System.out.println(">> User selected the department in filter");
 	}
+
 	@FindBy(xpath = "(//div[contains(@class,'ps-4 pe-1 fw-semibold off')][normalize-space()='Non-Cleaning'])[1]")
 	private WebElement Click_Cleaning_Ticket;
 
@@ -394,6 +408,7 @@ public class Ticketspage extends Base {
 		act.moveToElement(Tickets_filter_apply_btn).click().perform();
 		System.out.println(">> User clicked Cleaning Ticket in filter");
 	}
+
 	@FindBy(xpath = "(//div[contains(@class,'pe-4 fw-semibold on')][normalize-space()='Cleaning'])[1]")
 	private WebElement Click_non_Cleaning_Ticket;
 
@@ -403,6 +418,7 @@ public class Ticketspage extends Base {
 		act.moveToElement(Tickets_filter_apply_btn).click().perform();
 		System.out.println(">> User clicked Non Cleaning Ticket in filter");
 	}
+
 	@FindBy(xpath = "(//h6[contains(@class,'m-0 fw-normal')][normalize-space()='Download'])[1]")
 	private WebElement download_buttn_ticketspage;
 
@@ -410,6 +426,7 @@ public class Ticketspage extends Base {
 		act.moveToElement(download_buttn_ticketspage).click().perform();
 		System.out.println(">> User clicked Download button");
 	}
+
 	@FindBy(xpath = "//div[@class='modal-header']")
 	private WebElement tickets_Download_popup_display;
 
@@ -418,18 +435,21 @@ public class Ticketspage extends Base {
 		AssertJUnit.assertTrue(tickets_Download_popup_display.isDisplayed());
 		LOGGER.info(">> The Download Popup got displayed");
 	}
+
 	@FindBy(xpath = "(//div[normalize-space()='As Excel'])[1]")
 	private WebElement tickets_Download_excel;
 
 	public void Tickets_Download_Excel() {
 		wait.until(ExpectedConditions.visibilityOf(tickets_Download_excel)).click();
 	}
+
 	@FindBy(xpath = "//div[normalize-space()='As PDF']")
 	private WebElement tickets_Download_pdf;
 
 	public void Tickets_Download_PDF() {
 		wait.until(ExpectedConditions.visibilityOf(tickets_Download_pdf)).click();
 	}
+
 	@FindBy(xpath = "//button[@aria-label='Close']")
 	private WebElement ticket_Download_popupclose;
 
@@ -437,11 +457,13 @@ public class Ticketspage extends Base {
 
 		wait.until(ExpectedConditions.visibilityOf(ticket_Download_popupclose)).click();
 	}
+
 	public void Ticket_Download_popupclosd_displayed_Tickets() {
 		wait.until(ExpectedConditions.visibilityOf(ticketsCount)).isDisplayed();
 		AssertJUnit.assertTrue(ticketsCount.isDisplayed());
 		LOGGER.info(">> The Download Popup get closed and listed Tickets");
 	}
+
 	@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[2]/div[1]/div[3]/div/table/tbody/tr[1]/td[6]/div[1]/div/img")
 	private WebElement tickets_Edit_Buttonclick;
 
@@ -459,38 +481,45 @@ public class Ticketspage extends Base {
 		LOGGER.info(">>Ticket edit page displayed");
 
 	}
+
 	@FindBy(xpath = "//tbody/tr[1]/td[6]/div[2]/div[1]/img[1]")
 	private WebElement ticket_delete_click;
+
 	public void Ticket_delete_icon() throws Exception {
 		wait.until(ExpectedConditions.visibilityOf(ticket_delete_click)).click();
 	}
+
 	@FindBy(xpath = "//h6[normalize-space()='Yes, delete it.']")
 	private WebElement ticket_delete_confirm_bttn;
+
 	public void Ticket_delete_popup_confirmed() {
 		wait.until(ExpectedConditions.visibilityOf(ticket_delete_confirm_bttn)).click();
 	}
+
 	@FindBy(xpath = "(//textarea[@id='description'])[1]")
 	private WebElement edit_description;
-	
+
 	@FindBy(xpath = "//div[@class='p-5 mt-4 rounded-1 ']")
 	private WebElement edit_priority_label;
+
 	public void Description_edit() {
-			
+
 		wait.until(ExpectedConditions.visibilityOf(edit_priority_label));
 		String EditDescription = prop.getProperty("EditDescription");
 		act.moveToElement(edit_description).click().sendKeys(EditDescription);
-        LOGGER.info("User updated the description ");
+		LOGGER.info("User updated the description ");
 	}
-	
- 	@FindBy(xpath = "//h6[normalize-space()='Update Ticket']")
- 	private WebElement ticket_update_button;	
 
- 	
- 	public void Ticket_update_clicked() throws Exception {
+	@FindBy(id = "Update Ticket")
+	private WebElement ticket_update_button;
 
- 		act.moveToElement(ticket_update_button).click().perform();
- 	}
- 	
+	public void Ticket_update_clicked() throws Exception {
+		Thread.sleep(2000);
+		act.moveToElement(ticket_update_button).perform();
+		wait.until(ExpectedConditions.visibilityOf(ticket_update_button)).click();
+
+	}
+
 	@FindBy(xpath = "//h6[normalize-space()='Yes, update it.']")
 	private WebElement ticket_update_confirm_yes_button;
 
@@ -499,19 +528,67 @@ public class Ticketspage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(ticket_update_confirm_yes_button)).click();
 
 	}
+
 	@FindBy(xpath = "//span[normalize-space()='Activity Feed']")
 	private WebElement click_Activity_feed;
 	@FindBy(xpath = "//span[@class='edit_link_routes active']")
 	private WebElement view_ticket_tab;
+
 	public void Activity_Feed_Display() throws Exception {
-		//wait.until(ExpectedConditions.visibilityOf(view_ticket_tab));
+		// wait.until(ExpectedConditions.visibilityOf(view_ticket_tab));
 		wait.until(ExpectedConditions.visibilityOf(click_Activity_feed)).click();
 	}
+
 	@FindBy(xpath = "//span[normalize-space()='Activity Feed']")
 	private WebElement activity_Feed_display;
+
 	public void Activity_Feed_Displayed() throws Exception {
 		wait.until(ExpectedConditions.visibilityOf(activity_Feed_display));
 		AssertJUnit.assertTrue(activity_Feed_display.isDisplayed());
 		LOGGER.info("Activity Feed page displayed");
+	}
+
+	@FindBy(xpath = "//input[@accept='image/png, image/gif, image/jpeg']")
+
+	private WebElement Click_upload_photos;
+
+	public void Upload_Photos() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(edit_priority_label));
+		act.moveToElement(Click_upload_photos).perform();
+		String image = System.getProperty("user.dir") + "/Documents/Image.png";
+		Click_upload_photos.sendKeys(image);
+	}
+	@FindBy(xpath = "//input[@class='inputfilevideo']")
+	private WebElement click_upload_videos;
+	
+	public void Upload_videos() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(edit_priority_label));
+		act.moveToElement(click_upload_videos).perform();
+		String video = System.getProperty("user.dir") + "/Documents/Video.webm";
+		click_upload_videos.sendKeys(video);
+	}
+	@FindBy(xpath = "//h6[normalize-space()='Verify']")
+	private WebElement click_verify_button;
+	public void Verify() throws Exception {
+		Thread.sleep(2000);
+		act.moveToElement(click_verify_button).perform();
+		wait.until(ExpectedConditions.visibilityOf(click_verify_button)).click();;
+	}
+	@FindBy(xpath = "(//h6[normalize-space()='Yes, verify it.'])[1]")
+	private WebElement click_verify_confirm_button;
+	public void confirm_verify() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(click_verify_confirm_button)).click();
+	}
+	@FindBy(xpath = "//h6[normalize-space()='Reassign']")
+	private WebElement click_reassign_button;
+	public void Reassign() throws Exception {
+		Thread.sleep(2000);
+		act.moveToElement(click_reassign_button).perform();
+		wait.until(ExpectedConditions.visibilityOf(click_reassign_button)).click();;
+	}
+	@FindBy(xpath = "//h6[normalize-space()='Yes, reassign it.']")
+	private WebElement click_reassign_confirm_button;
+	public void confirm_Reassign() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(click_reassign_confirm_button)).click();
 	}
 }

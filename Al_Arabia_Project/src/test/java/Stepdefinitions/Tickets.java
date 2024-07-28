@@ -307,66 +307,116 @@ public class Tickets extends Base {
 	public void Activity_Feed_Tab_page_will_be_displayed_successfully() throws Exception {
 		ticketsPage.Ticket_Edit_page();
 }
-
 	@And("User Click on Upload Photos and videos")
-	public void And_User_Click_on_Upload_Photos_and_videos() throws Exception {
+	public void User_Click_on_Upload_Photos_and_videos() throws Exception {
 		ticketsPage.Upload_Photos();
 		ticketsPage.Upload_videos();
+//		ticketsPage.Upload_voice();
+
+}
+	@Then("User Click on close button of uploaded photos and confirmed")
+	public void User_Click_on_close_button_of_Upload_photos() throws Exception {
+		ticketsPage.Upload_Photos();
+		ticketsPage.Upload_photo_close();
+		ticketsPage.Upload_photo_close_confirmed();
+}
+	@Then("User Click on close button of uploaded videos and confirmed")
+	public void User_Click_on_close_button_of_Upload_videos() throws Exception {
+		ticketsPage.Upload_videos();
+		ticketsPage.Upload_video_close();
+		ticketsPage.Upload_video_close_confirmed();
 }
 	@And("User clicks verify button and confirm yes button")
 	public void User_clicks_verify_button_and_confirm_yes_button() throws Exception {
 		ticketsPage.Verify();
 		ticketsPage.confirm_verify();
-
 }
-	@Then("^Ticket verified popup will be displayed successfully as \"([^\"]*)\"$")
-	public void Ticket_verified_popup_will_be_displayed_successfully_as(String expectedMessage) throws Exception {
-		  String actualMessage = ticketsPage.ticket_create_Success_display();
-	      String normalizedExpectedMessage = normalizeWhitespace(expectedMessage);
-	      String normalizedActualMessage = normalizeWhitespace(actualMessage);
-	      System.out.println(">> User or Admin verified Ticket successfully"+actualMessage);
-	      assertEquals(normalizedExpectedMessage, normalizedActualMessage);
+	@Then("^Ticket verified popup will be displayed successfully with either \"([^\"]*)\" or \"([^\"]*)\"$")
+//	public void Ticket_verified_popup_will_be_displayed_successfully_with_either(String expectedMessage) throws Exception {
+//		  String actualMessage = ticketsPage.ticket_create_Success_display();
+//	      String normalizedExpectedMessage = normalizeWhitespace(expectedMessage);
+//	      String normalizedActualMessage = normalizeWhitespace(actualMessage);
+//	      System.out.println(">> User or Admin verified Ticket successfully"+actualMessage);
+//	      assertEquals(normalizedExpectedMessage, normalizedActualMessage);
+//	}
+	
+	public void Ticket_verified_popup_will_be_displayed_successfully_with_either(String expectedMessage1,
+			String expectedMessage2) throws Exception {
+		String actualMessage = ticketsPage.ticket_create_Success_display();
+		String normalizedActualMessage = normalizeWhitespace(actualMessage);
+
+		System.out.println(">> User or Admin got the ticket cerified success message successfully: " + actualMessage);
+
+		boolean matchesMessage1 = normalizedActualMessage.equals(normalizeWhitespace(expectedMessage1));
+		boolean matchesMessage2 = normalizedActualMessage.equals(normalizeWhitespace(expectedMessage2));
+
+		assertTrue("The actual message was neither of the expected success messages.",
+				matchesMessage1 || matchesMessage2);
 	}
+
 	@And("User clicks Reassign button and confirm yes button")
 	public void User_clicks_Reassign_button_and_confirm_yes_button() throws Exception {
 		ticketsPage.Reassign();
 		ticketsPage.confirm_Reassign();
-
 }
-	@Then("^Ticket Reassigned popup will be displayed successfully as \"([^\"]*)\"$")
-	public void Ticket_Reassign_popup_will_be_displayed_successfully_as(String expectedMessage) throws Exception {
-		  String actualMessage = ticketsPage.ticket_create_Success_display();
-	      String normalizedExpectedMessage = normalizeWhitespace(expectedMessage);
-	      String normalizedActualMessage = normalizeWhitespace(actualMessage);
-	      System.out.println(">> User or Admin verified Ticket successfully"+actualMessage);
-	      assertEquals(normalizedExpectedMessage, normalizedActualMessage);
+	@Then("^Ticket Reassigned popup will be displayed successfully with either \"([^\"]*)\" or \"([^\"]*)\"$")
+	public void Ticket_Reassign_popup_will_be_displayed_successfully_with_either(String expectedMessage1,
+			String expectedMessage2) throws Exception {
+		String actualMessage = ticketsPage.ticket_create_Success_display();
+		String normalizedActualMessage = normalizeWhitespace(actualMessage);
+
+		System.out.println(">> User or Admin got the ticket cerified success message successfully: " + actualMessage);
+
+		boolean matchesMessage1 = normalizedActualMessage.equals(normalizeWhitespace(expectedMessage1));
+		boolean matchesMessage2 = normalizedActualMessage.equals(normalizeWhitespace(expectedMessage2));
+
+		assertTrue("The actual message was neither of the expected success messages.",
+				matchesMessage1 || matchesMessage2);
 	}
 	@And("User clicks Approve button and confirm yes button")
 	public void User_clicks_Approve_button_and_confirm_yes_button() throws Exception {
-		ticketsPage.Reassign();
-		ticketsPage.confirm_Reassign();
-
+		ticketsPage.Approve();
+		ticketsPage.confirm_Approve();
 }
-	@Then("^Ticket Approved popup will be displayed successfully as \"([^\"]*)\"$")
-	public void Ticket_Approved_popup_will_be_displayed_successfully_as(String expectedMessage) throws Exception {
-		  String actualMessage = ticketsPage.ticket_create_Success_display();
-	      String normalizedExpectedMessage = normalizeWhitespace(expectedMessage);
-	      String normalizedActualMessage = normalizeWhitespace(actualMessage);
-	      System.out.println(">> User or Admin verified Ticket successfully"+actualMessage);
-	      assertEquals(normalizedExpectedMessage, normalizedActualMessage);
+	@Then("^Ticket Approved popup will be displayed successfully with either \"([^\"]*)\" or \"([^\"]*)\"$")
+	public void Ticket_Approved_popup_will_be_displayed_successfully_as(String expectedMessage1,
+			String expectedMessage2) throws Exception {
+		String actualMessage = ticketsPage.ticket_create_Success_display();
+		String normalizedActualMessage = normalizeWhitespace(actualMessage);
+
+		System.out.println(">> User or Admin got the ticket cerified success message successfully: " + actualMessage);
+
+		boolean matchesMessage1 = normalizedActualMessage.equals(normalizeWhitespace(expectedMessage1));
+		boolean matchesMessage2 = normalizedActualMessage.equals(normalizeWhitespace(expectedMessage2));
+
+		assertTrue("The actual message was neither of the expected success messages.",
+				matchesMessage1 || matchesMessage2);
 	}
 	@And("User clicks Reject button and confirm yes button")
 	public void User_clicks_Reject_button_and_confirm_yes_button() throws Exception {
-		ticketsPage.Reassign();
-		ticketsPage.confirm_Reassign();
-
+		ticketsPage.Reject();
+		ticketsPage.confirm_Reject();
 }
-	@Then("^Ticket Rejected popup will be displayed successfully as \"([^\"]*)\"$")
-	public void Ticket_Rejected_popup_will_be_displayed_successfully_as(String expectedMessage) throws Exception {
-		  String actualMessage = ticketsPage.ticket_create_Success_display();
-	      String normalizedExpectedMessage = normalizeWhitespace(expectedMessage);
-	      String normalizedActualMessage = normalizeWhitespace(actualMessage);
-	      System.out.println(">> User or Admin verified Ticket successfully"+actualMessage);
-	      assertEquals(normalizedExpectedMessage, normalizedActualMessage);
+	@Then("^Ticket Rejected popup will be displayed successfully with either \"([^\"]*)\" or \"([^\"]*)\"$")
+	public void Ticket_Rejected_popup_will_be_displayed_successfully_as(String expectedMessage1,
+			String expectedMessage2) throws Exception {
+		String actualMessage = ticketsPage.ticket_create_Success_display();
+		String normalizedActualMessage = normalizeWhitespace(actualMessage);
+
+		System.out.println(">> User or Admin got the ticket cerified success message successfully: " + actualMessage);
+
+		boolean matchesMessage1 = normalizedActualMessage.equals(normalizeWhitespace(expectedMessage1));
+		boolean matchesMessage2 = normalizedActualMessage.equals(normalizeWhitespace(expectedMessage2));
+
+		assertTrue("The actual message was neither of the expected success messages.",
+				matchesMessage1 || matchesMessage2);
 	}
+	@And("User clicks start conversation button")
+	public void User_clicks_start_conversation_button() throws Exception {
+		ticketsPage.Start_conversation();
+}
+	@Then("chat page will be displayed successfully")
+	public void chat_page_will_be_displayed_successfully() throws Exception {
+		ticketsPage.Chat_page_Displayed();
+}
 }

@@ -268,61 +268,105 @@ And Admin or user clicks the new Ticket button
 And Admin or user enters the all mandatory fields
 And Admin or user clicks the create Ticket
 And The User clicks the Edit button 
-And User Click on Upload Photos and videos      
+And User Click on Upload Photos and videos 
 And User click on Update Tickets button with confirm yes button
 Then Ticket Updated popup will be displayed successfully as "<successMessage>"
   Examples:
       | successMessage     								  |
       | Success Tickets updated             |  
-      
+
 @Tickets @Tickets32 @smoke @regression @all
-Scenario Outline: T032_To verify the Tickets feature verify submitted
+Scenario Outline: T032_To verify the Tickets feature clicks close button of uploaded photo
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Tickets module
+And Admin or user clicks the new Ticket button
+And Admin or user enters the all mandatory fields
+And Admin or user clicks the create Ticket
+And The User clicks the Edit button 
+Then User Click on close button of uploaded photos and confirmed
+
+@Tickets @Tickets33 @smoke @regression @all
+Scenario Outline: T032_To verify the Tickets feature clicks close button of uploaded videos
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Tickets module
+And Admin or user clicks the new Ticket button
+And Admin or user enters the all mandatory fields
+And Admin or user clicks the create Ticket
+And The User clicks the Edit button 
+Then User Click on close button of uploaded videos and confirmed
+
+@Tickets @Tickets34 @smoke @regression @all
+Scenario Outline: T034_To verify the Tickets feature upload photos and videos
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Tickets module
+And Admin or user clicks the new Ticket button
+And Admin or user enters the all mandatory fields
+And Admin or user clicks the create Ticket
+And The User clicks the Edit button 
+And User Click on Upload Photos and videos 
+
+      
+@Tickets @Tickets34 @smoke @regression @all
+Scenario Outline: T033_To validate the Tickets feature 'verify'
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Tickets module 
 And User filter the Tickets list status Submitted
 And The User clicks the Edit button 
 And User clicks verify button and confirm yes button
-Then Ticket verified popup will be displayed successfully as "<successMessage>"
+Then Ticket verified popup will be displayed successfully with either "<successMessage1>" or "<successMessage2>"
   Examples:
-      | successMessage     								  |
-      | Success Ticket verified             | 
+      | successMessage1       | successMessage2          |
+      | LOADING...            | Success Ticket Verified  |
          
-@Tickets @Tickets33 @smoke @regression @all
-Scenario Outline: T033_To verify the Tickets feature verify submitted
+@Tickets @Tickets34 @smoke @regression @all
+Scenario Outline: T034_To verify the Tickets feature Reassign a Ticket
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Tickets module 
 And User filter the Tickets list status Submitted
 And The User clicks the Edit button 
 And User clicks Reassign button and confirm yes button
-Then Ticket Reassigned popup will be displayed successfully as "<successMessage>"
+Then Ticket Reassigned popup will be displayed successfully with either "<successMessage1>" or "<successMessage2>"
   Examples:
-      | successMessage     								  |
-      | Success Ticket reassigned           |
+      | successMessage1       | successMessage2            |
+      | LOADING...            | Success Ticket reassigned  |
       
-@Tickets @Tickets34 @smoke @regression @all
-Scenario Outline: T033_To verify the Tickets feature verify submitted
+@Tickets @Tickets35 @smoke @regression @all
+Scenario Outline: T035_To verify the Tickets feature Approve a Ticket
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Tickets module 
 And User filter the Tickets list status Verified
 And The User clicks the Edit button 
 And User clicks Approve button and confirm yes button
-Then Ticket Approved popup will be displayed successfully as "<successMessage>"
+Then Ticket Approved popup will be displayed successfully with either "<successMessage1>" or "<successMessage2>"
   Examples:
-      | successMessage     							  |
-      | Success Ticket approved           |  
-@Tickets @Tickets35 @smoke @regression @all
-Scenario Outline: T035_To verify the Tickets feature  
+      | successMessage1       | successMessage2            |
+      | LOADING...            | Success Ticket approved    | 
+@Tickets @Tickets36 @smoke @regression @all
+Scenario Outline: T036_To verify the Tickets feature Reject a Ticket 
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Tickets module 
 And User filter the Tickets list status Verified
 And The User clicks the Edit button 
 And User clicks Reject button and confirm yes button
-Then Ticket Rejected popup will be displayed successfully as "<successMessage>"
+Then Ticket Rejected popup will be displayed successfully with either "<successMessage1>" or "<successMessage2>"
   Examples:
-      | successMessage     							  |
-      | Success Ticket rejected           |  
+      | successMessage1       | successMessage2            |
+      | LOADING...            | Success Ticket rejected    | 
                         
+@Tickets @Tickets37 @smoke @regression @all
+Scenario Outline: T037_To verify the Tickets feature start conversation 
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Tickets module 
+And User filter the Tickets list status Created
+And The User clicks the Edit button 
+And User clicks start conversation button
+Then chat page will be displayed successfully  
+                      

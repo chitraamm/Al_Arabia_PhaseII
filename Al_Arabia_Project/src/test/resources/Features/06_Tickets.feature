@@ -18,8 +18,8 @@ And Admin or user enters the all mandatory fields
 And Admin or user clicks the create Ticket
 Then Particular Ticket gets created successfully with either "<successMessage>"
   Examples:
-           | successMessage         |
-        | Success Ticket created   |
+           | successMessage           |
+           | Success Ticket created   |
 
 @Tickets @Tickets03 @smoke @regression @all
 Scenario Outline: T003_ the Tickets feature search
@@ -239,9 +239,6 @@ Scenario Outline: T029_To verify the Tickets features Update a Ticket
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Tickets module
-And Admin or user clicks the new Ticket button
-And Admin or user enters the all mandatory fields
-And Admin or user clicks the create Ticket
 And The User clicks the Edit button 
 And User edit Description 
 And User click on Update Tickets button with confirm yes button
@@ -264,11 +261,8 @@ Scenario Outline: T031_To verify the Tickets feature upload photos and videos
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Tickets module
-And Admin or user clicks the new Ticket button
-And Admin or user enters the all mandatory fields
-And Admin or user clicks the create Ticket
 And The User clicks the Edit button 
-And User Click on Upload Photos and videos 
+And User Click on Upload Photos videos and voice
 And User click on Update Tickets button with confirm yes button
 Then Ticket Updated popup will be displayed successfully as "<successMessage>"
   Examples:
@@ -280,34 +274,16 @@ Scenario Outline: T032_To verify the Tickets feature clicks close button of uplo
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Tickets module
-And Admin or user clicks the new Ticket button
-And Admin or user enters the all mandatory fields
-And Admin or user clicks the create Ticket
 And The User clicks the Edit button 
 Then User Click on close button of uploaded photos and confirmed
 
 @Tickets @Tickets33 @smoke @regression @all
-Scenario Outline: T032_To verify the Tickets feature clicks close button of uploaded videos
+Scenario Outline: T033_To verify the Tickets feature clicks close button of uploaded videos
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Tickets module
-And Admin or user clicks the new Ticket button
-And Admin or user enters the all mandatory fields
-And Admin or user clicks the create Ticket
 And The User clicks the Edit button 
 Then User Click on close button of uploaded videos and confirmed
-
-@Tickets @Tickets34 @smoke @regression @all
-Scenario Outline: T034_To verify the Tickets feature upload photos and videos
-Given Admin logged in with valid credentials
-When Al-Arabia overall dashboard should display
-And Admin or user clicks the Tickets module
-And Admin or user clicks the new Ticket button
-And Admin or user enters the all mandatory fields
-And Admin or user clicks the create Ticket
-And The User clicks the Edit button 
-And User Click on Upload Photos and videos 
-
       
 @Tickets @Tickets34 @smoke @regression @all
 Scenario Outline: T033_To validate the Tickets feature 'verify'
@@ -322,8 +298,8 @@ Then Ticket verified popup will be displayed successfully with either "<successM
       | successMessage1       | successMessage2          |
       | LOADING...            | Success Ticket Verified  |
          
-@Tickets @Tickets34 @smoke @regression @all
-Scenario Outline: T034_To verify the Tickets feature Reassign a Ticket
+@Tickets @Tickets35 @smoke @regression @all
+Scenario Outline: T035_To verify the Tickets feature Reassign a Ticket
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Tickets module 
@@ -335,8 +311,8 @@ Then Ticket Reassigned popup will be displayed successfully with either "<succes
       | successMessage1       | successMessage2            |
       | LOADING...            | Success Ticket reassigned  |
       
-@Tickets @Tickets35 @smoke @regression @all
-Scenario Outline: T035_To verify the Tickets feature Approve a Ticket
+@Tickets @Tickets36 @smoke @regression @all
+Scenario Outline: T036_To verify the Tickets feature Approve a Ticket
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Tickets module 
@@ -347,8 +323,8 @@ Then Ticket Approved popup will be displayed successfully with either "<successM
   Examples:
       | successMessage1       | successMessage2            |
       | LOADING...            | Success Ticket approved    | 
-@Tickets @Tickets36 @smoke @regression @all
-Scenario Outline: T036_To verify the Tickets feature Reject a Ticket 
+@Tickets @Tickets37 @smoke @regression @all
+Scenario Outline: T037_To verify the Tickets feature Reject a Ticket 
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Tickets module 
@@ -360,8 +336,8 @@ Then Ticket Rejected popup will be displayed successfully with either "<successM
       | successMessage1       | successMessage2            |
       | LOADING...            | Success Ticket rejected    | 
                         
-@Tickets @Tickets37 @smoke @regression @all
-Scenario Outline: T037_To verify the Tickets feature start conversation 
+@Tickets @Tickets38 @smoke @regression @all
+Scenario Outline: T038_To verify the Tickets feature start conversation 
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Tickets module 
@@ -369,4 +345,56 @@ And User filter the Tickets list status Created
 And The User clicks the Edit button 
 And User clicks start conversation button
 Then chat page will be displayed successfully  
-                      
+ 
+@Tickets @Tickets39 @smoke @regression @all
+Scenario Outline: T039_To verify the Tickets feature pagination 1st to 2nd page 
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Tickets module 
+And User click on second page button
+Then Second page Tickets get displayed successfully    
+
+@Tickets @Tickets40 @smoke @regression @all
+Scenario Outline: T040_To verify the Tickets feature pagination next page 
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Tickets module 
+And Go to Next page of Tickets page
+Then Next page Tickets get displayed successfully  
+
+@Tickets @Tickets41 @smoke @regression @all
+Scenario Outline: T041_To verify the Tickets feature pagination previous page 
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Tickets module 
+And Go to Next page of Tickets page 
+And Go to Previous page of Tickets page
+Then Previous page Tickets get displayed successfully 
+
+@Tickets @Tickets42 @smoke @regression @all
+Scenario Outline: T042_To verify the Tickets feature pagination last page 
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Tickets module
+And Go to Last page of Tickets page
+Then Last page Tickets get displayed successfully   
+
+@Tickets @Tickets43 @smoke @regression @all
+Scenario Outline: T043_To verify the Tickets feature pagination last page to first page
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Tickets module 
+And Go to Last page of Tickets page
+And User click on first page button
+Then First page Tickets get displayed successfully 
+
+@Tickets @Tickets44 @smoke @regression @all
+Scenario Outline: T044_To verify the Tickets features Reset the form changes
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Tickets module
+And The User clicks the Edit button 
+And User edit Description 
+And User click on Reset button with confirm yes button
+Then The ticket reset form changes are being done
+             

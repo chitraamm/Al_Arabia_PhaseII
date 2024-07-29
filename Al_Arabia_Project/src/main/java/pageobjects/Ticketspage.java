@@ -115,7 +115,8 @@ public class Ticketspage extends Base {
 
 	@FindBy(id = "react-select-18-input")
 	private WebElement Ticket_title_select;
-
+//	@FindBy(id = "react-select-18-input")
+//	private WebElement Ticket_title_select1;
 	@FindBy(xpath = "(//div[contains(@class,'select__input-container css-19bb58m')])[5]")
 	private WebElement Assignee_select;
 
@@ -128,13 +129,19 @@ public class Ticketspage extends Base {
 	@FindBy(xpath = "//textarea[@id='description']")
 	private WebElement Description_enter;
 
-	public void NewTicket_mandatory_fields_enter() {
+	public void NewTicket_mandatory_fields_enter() throws Exception{
 		wait.until(ExpectedConditions.visibilityOf(BB_no_select));
 
 		act.moveToElement(BB_no_select).click().sendKeys("" + Keys.ENTER).perform();
 		act.moveToElement(Department_select).click().sendKeys("" + Keys.ENTER).perform();
 		act.moveToElement(Priority_select).click().sendKeys("" + Keys.ENTER).perform();
-		act.moveToElement(Ticket_title_select).click().sendKeys("" + Keys.ENTER).perform();
+			
+		String Tckt_title = prop.getProperty("Tckt_title");
+		wait.until(ExpectedConditions.visibilityOf(Ticket_title_select)).sendKeys(Tckt_title);
+		Thread.sleep(2000);
+
+		act.moveToElement(Ticket_title_select).click().sendKeys(""+Keys.ENTER+Keys.ARROW_RIGHT).perform();
+
 		act.moveToElement(Assignee_select).click().sendKeys("" + Keys.ENTER).perform();
 		act.moveToElement(Start_date).click().sendKeys("" + Keys.ENTER).perform();
 		wait.until(ExpectedConditions.visibilityOf(Start_date));
@@ -143,6 +150,25 @@ public class Ticketspage extends Base {
 		String Description = prop.getProperty("Description");
 		wait.until(ExpectedConditions.visibilityOf(Description_enter)).sendKeys(Description);
 	}
+//	public void NewTicket_mandatory_fields_enter1() throws Exception {
+//		wait.until(ExpectedConditions.visibilityOf(BB_no_select));
+//
+//		act.moveToElement(BB_no_select).click().sendKeys("" + Keys.ENTER).perform();
+//		act.moveToElement(Department_select).click().sendKeys("" + Keys.ENTER).perform();
+//		act.moveToElement(Priority_select).click().sendKeys("" + Keys.ENTER).perform();
+//		
+//		String Tckt_title1 = prop.getProperty("Tckt_title1");
+//		wait.until(ExpectedConditions.visibilityOf(Ticket_title_select)).sendKeys(Tckt_title1);
+//		act.moveToElement(Ticket_title_select1).click().sendKeys(""+Keys.ENTER).perform();
+//
+//		act.moveToElement(Assignee_select).click().sendKeys("" + Keys.ENTER).perform();
+//		act.moveToElement(Start_date).click().sendKeys("" + Keys.ENTER).perform();
+//		wait.until(ExpectedConditions.visibilityOf(Start_date));
+//
+//		act.moveToElement(End_date).click().sendKeys("" + Keys.ENTER).perform();
+//		String Description = prop.getProperty("Description");
+//		wait.until(ExpectedConditions.visibilityOf(Description_enter)).sendKeys(Description);
+//	}
 
 	@FindBy(id = "Create Ticket")
 	private WebElement Ticket_create_BB_btn;
@@ -687,5 +713,59 @@ public class Ticketspage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(chat_page_display));
 		AssertJUnit.assertTrue(chat_page_display.isDisplayed());
 		LOGGER.info("Chat page displayed");
+	}
+	@FindBy(xpath = "//div[normalize-space()='2']")
+	private WebElement click_second_page;
+	public void Second_page() throws Exception {
+		act.scrollToElement(click_second_page).build().perform();
+		wait.until(ExpectedConditions.visibilityOf(click_second_page)).click();
+	}
+	@FindBy(xpath = "//div[contains(text(),'Showing')]")
+	private WebElement second_page_display;
+	public void Second_page_Display() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(second_page_display));
+		AssertJUnit.assertTrue(second_page_display.isDisplayed());
+	}
+	@FindBy(xpath = "(//div[contains(@class,'round-effect')][contains(text(),'›')])[1]")
+	private WebElement click_next_page;
+	public void next_page() throws Exception {
+		act.scrollToElement(click_next_page).build().perform();
+		wait.until(ExpectedConditions.visibilityOf(click_next_page)).click();
+	}
+	@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[2]/div[1]/div[4]/div[2]/div[1]")
+	private WebElement click_previous_page;
+	public void Previous_page() throws Exception {
+		act.scrollToElement(click_previous_page).build().perform();
+		wait.until(ExpectedConditions.visibilityOf(click_previous_page)).click();
+	}
+	@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[2]/div[1]/div[4]/div[2]/div[5]")
+	private WebElement click_last_page;
+	public void last_page() throws Exception {
+		act.scrollToElement(click_last_page).build().perform();
+		wait.until(ExpectedConditions.visibilityOf(click_last_page)).click();
+	}
+	@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[2]/div[1]/div[4]/div[2]/div[1]")
+	private WebElement click_first_page;
+	public void First_page() throws Exception {
+		act.scrollToElement(click_first_page).build().perform();
+		wait.until(ExpectedConditions.visibilityOf(click_first_page)).click();
+	}
+	@FindBy(xpath = "//h6[normalize-space()='Reset Form']")
+	private WebElement ticket_reset_button;
+
+	public void Ticket_Reset_clicked() throws Exception {
+		Thread.sleep(2000);
+		act.moveToElement(ticket_reset_button).perform();
+		wait.until(ExpectedConditions.visibilityOf(ticket_reset_button)).click();
+
+	}
+
+	@FindBy(xpath = "//h6[normalize-space()='Yes, reset it.']")
+	private WebElement ticket_reset_confirm_yes_button;
+
+	public void Reset_Ticket_confirmed() throws Exception {
+
+		wait.until(ExpectedConditions.visibilityOf(ticket_reset_confirm_yes_button)).click();
+
 	}
 }

@@ -47,7 +47,10 @@ public class Tickets extends Base {
 	public void Admin_or_user_enters_the_all_mandatory_fields() throws Exception {
 		ticketsPage.NewTicket_mandatory_fields_enter();
 	}
-	
+//	@And("Admin or user enters the all mandatory fields1")
+//	public void Admin_or_user_enters_the_all_mandatory_fields1() throws Exception {
+//		ticketsPage.NewTicket_mandatory_fields_enter1();
+//	}
 	@And("Admin or user clicks the create Ticket")
 	public void Admin_or_user_clicks_the_create_Ticket() throws Exception {
 		ticketsPage.NewTicket_create_btn();
@@ -307,11 +310,11 @@ public class Tickets extends Base {
 	public void Activity_Feed_Tab_page_will_be_displayed_successfully() throws Exception {
 		ticketsPage.Ticket_Edit_page();
 }
-	@And("User Click on Upload Photos and videos")
-	public void User_Click_on_Upload_Photos_and_videos() throws Exception {
+	@And("User Click on Upload Photos videos and voice")
+	public void User_Click_on_Upload_videos_and_voice() throws Exception {
 		ticketsPage.Upload_Photos();
 		ticketsPage.Upload_videos();
-//		ticketsPage.Upload_voice();
+		ticketsPage.Upload_voice();
 
 }
 	@Then("User Click on close button of uploaded photos and confirmed")
@@ -418,5 +421,50 @@ public class Tickets extends Base {
 	@Then("chat page will be displayed successfully")
 	public void chat_page_will_be_displayed_successfully() throws Exception {
 		ticketsPage.Chat_page_Displayed();
+}
+	@And("User click on second page button")
+	public void User_click_on_second_page_button() throws Exception {
+		ticketsPage.Second_page();
+}
+	@Then("Second page Tickets get displayed successfully")
+	public void Second_page_Tickets_get_displayed_successfully() throws Exception {
+		ticketsPage.Second_page_Display();
+}
+	@And("Go to Next page of Tickets page")
+	public void Go_to_Next_page_of_Tickets_page() throws Exception {
+		ticketsPage.next_page();
+}
+	@Then("Next page Tickets get displayed successfully")
+	public void Next_page_Tickets_get_displayed_successfully() throws Exception {
+}
+	@And("Go to Previous page of Tickets page")
+	public void Go_to_Previous_page_of_Tickets_page() throws Exception {
+		ticketsPage.Previous_page();
+}
+	@Then("Previous page Tickets get displayed successfully")
+	public void Previous_page_Tickets_get_displayed_successfully() throws Exception {
+}
+	@And("Go to Last page of Tickets page")
+	public void Go_to_Last_page_of_Tickets_page() throws Exception {
+		ticketsPage.last_page();
+}
+	@Then("Last page Tickets get displayed successfully")
+	public void Last_page_Tickets_get_displayed_successfully() throws Exception {
+}
+	@And("User click on first page button")
+	public void User_click_on_first_page_button() throws Exception {
+		ticketsPage.First_page();
+}
+	@Then("First page Tickets get displayed successfully")
+	public void First_page_Tickets_get_displayed_successfully() throws Exception {
+}
+	@And("User click on Reset button with confirm yes button")
+	public void User_click_on_Reset_button_with_confirm_yes_button() throws Exception {
+		ticketsPage.Ticket_Reset_clicked();
+		ticketsPage.Reset_Ticket_confirmed();
+
+}
+	@Then("The ticket reset form changes are being done")
+	public void The_ticket_reset_form_changes_are_being_done() throws Exception {
 }
 }

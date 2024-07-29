@@ -37,6 +37,7 @@ IQMA_number = 123456
 Licence_number = KA0134442E2
 
 <---- Billboards page ---->
+
 BB_NO = BB_NO_01865
 bb_location = Riyadh
 bb_ticket_count = 2
@@ -49,9 +50,13 @@ personalinfo = coducer
 Phone_number = 9341152902
 App_Phone_number = 9341152902
 Iqma = 87654321
+
 <--------Tickets------>
+
 Description = Test
 EditDescription = Tested
 Ticketno = 2812218JUL2024
 assignee =  coducer
 city = Riyadh
+Tckt_title = Elipse Screen
+Tckt_title1 =Power Cable

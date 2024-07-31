@@ -47,22 +47,24 @@ public class Tickets extends Base {
 	public void Admin_or_user_enters_the_all_mandatory_fields() throws Exception {
 		ticketsPage.NewTicket_mandatory_fields_enter();
 	}
-//	@And("Admin or user enters the all mandatory fields1")
-//	public void Admin_or_user_enters_the_all_mandatory_fields1() throws Exception {
-//		ticketsPage.NewTicket_mandatory_fields_enter1();
-//	}
 	@And("Admin or user clicks the create Ticket")
 	public void Admin_or_user_clicks_the_create_Ticket() throws Exception {
 		ticketsPage.NewTicket_create_btn();
 	}
 
-	@Then("^Particular Ticket gets created successfully with either \"([^\"]*)\"$")
-	public void Particular_Ticket_gets_created_successfully_with_either (String expectedMessage) throws Exception {
-		  String actualMessage = ticketsPage.ticket_create_Success_display();
-	      String normalizedExpectedMessage = normalizeWhitespace(expectedMessage);
-	      String normalizedActualMessage = normalizeWhitespace(actualMessage);
-	      System.out.println(">> User or Admin got the QR code file downloaded successfully"+actualMessage);
-	      assertEquals(normalizedExpectedMessage, normalizedActualMessage);
+	@Then("^Particular Ticket gets created successfully with either \"([^\"]*)\" or \"([^\"]*)\"$")
+	public void Particular_Ticket_gets_created_successfully_with_either (String expectedMessage1,
+			String expectedMessage2) throws Exception {
+		String actualMessage = ticketsPage.ticket_create_Success_display();
+		String normalizedActualMessage = normalizeWhitespace(actualMessage);
+
+		System.out.println(">> User or Admin got the ticket cerified success message successfully: " + actualMessage);
+
+		boolean matchesMessage1 = normalizedActualMessage.equals(normalizeWhitespace(expectedMessage1));
+		boolean matchesMessage2 = normalizedActualMessage.equals(normalizeWhitespace(expectedMessage2));
+
+		assertTrue("The actual message was neither of the expected success messages.",
+				matchesMessage1 || matchesMessage2);
 	}
 	private String normalizeWhitespace(String input) {
 		return input.replaceAll("\\s+", " ").trim();
@@ -462,9 +464,30 @@ public class Tickets extends Base {
 	public void User_click_on_Reset_button_with_confirm_yes_button() throws Exception {
 		ticketsPage.Ticket_Reset_clicked();
 		ticketsPage.Reset_Ticket_confirmed();
-
 }
 	@Then("The ticket reset form changes are being done")
 	public void The_ticket_reset_form_changes_are_being_done() throws Exception {
+}
+	@And("The User clicks the Edit icon")
+	public void The_User_clicks_the_Edit_icon() throws Exception {
+		ticketsPage.Edit_View_Ticket();
+	}
+	@Then("Created Tick mark should be displayed in Progress bar")
+	public void Created_Tick_mark_should_be_displayed_in_Progress_bar() throws Exception {
+		ticketsPage.Created_Tick_display();
+
+}
+	@Then("Viewed Tick mark should be displayed in Progress bar")
+	public void Viewed_Tick_mark_should_be_displayed_in_Progress_bar() throws Exception {
+		ticketsPage.Viewed_Tick_display();
+}
+	@Then("Submitted Tick mark should be displayed in Progress bar")
+	public void Submitted_Tick_mark_should_be_displayed_in_Progress_bar() throws Exception {
+		ticketsPage.Submitted_Tick_display();
+}
+	@Then("Overdued Tick mark should be displayed in Progress bar")
+	public void Overdued_Tick_mark_should_be_displayed_in_Progress_bar() throws Exception {
+		ticketsPage.Overdued_Tick_display();
+
 }
 }

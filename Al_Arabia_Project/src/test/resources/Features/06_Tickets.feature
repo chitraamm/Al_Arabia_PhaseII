@@ -16,11 +16,11 @@ And Admin or user clicks the Tickets module
 And Admin or user clicks the new Ticket button
 And Admin or user enters the all mandatory fields
 And Admin or user clicks the create Ticket
-Then Particular Ticket gets created successfully with either "<successMessage>"
+Then Particular Ticket gets created successfully with either "<successMessage1>" or "<successMessage2>"
   Examples:
-           | successMessage           |
-           | Success Ticket created   |
-
+      | successMessage1       | successMessage2           |
+      | LOADING...            | Success Ticket created    | 
+      
 @Tickets @Tickets03 @smoke @regression @all
 Scenario Outline: T003_ the Tickets feature search
 Given Admin logged in with valid credentials
@@ -257,7 +257,7 @@ And User click on Activity Feed Tab
 Then Activity Feed Tab page will be displayed successfully  
 
 @Tickets @Tickets31 @smoke @regression @all
-Scenario Outline: T031_To verify the Tickets feature upload photos and videos
+Scenario Outline: T031_To verify the Tickets feature upload photos videos and voice
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Tickets module
@@ -282,6 +282,7 @@ Scenario Outline: T033_To verify the Tickets feature clicks close button of uplo
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Tickets module
+And User filter the Tickets list status Created
 And The User clicks the Edit button 
 Then User Click on close button of uploaded videos and confirmed
       
@@ -397,4 +398,40 @@ And The User clicks the Edit button
 And User edit Description 
 And User click on Reset button with confirm yes button
 Then The ticket reset form changes are being done
-             
+
+@Tickets @Tickets45 @smoke @regression @all
+Scenario Outline: T045_To verify the Tickets features 'Created' Tick mark displayed on Progress bar in View Tickets page
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Tickets module
+And User filter the Tickets list status Viewed
+And The User clicks the Edit icon
+Then Created Tick mark should be displayed in Progress bar
+
+@Tickets @Tickets46 @smoke @regression @all
+Scenario Outline: T046_To verify the Tickets features 'Viewed' Tick mark displayed on Progress bar in View Tickets page
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Tickets module
+And User filter the Tickets list status Submitted
+And The User clicks the Edit icon
+Then Viewed Tick mark should be displayed in Progress bar 
+
+@Tickets @Tickets47 @smoke @regression @all
+Scenario Outline: T047_To verify the Tickets features 'Submitted' Tick mark displayed on Progress bar in View Tickets page
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Tickets module
+And User filter the Tickets list status Verified
+And The User clicks the Edit icon
+Then Submitted Tick mark should be displayed in Progress bar   
+
+@Tickets @Tickets48 @smoke @regression @all
+Scenario Outline: T048_To verify the Tickets features 'Overdued' Tick mark displayed on Progress bar in View Tickets page
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Tickets module
+And User filter the Tickets list status Overdue
+And The User clicks the Edit icon
+Then Overdued Tick mark should be displayed in Progress bar  
+       

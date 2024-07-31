@@ -272,8 +272,6 @@ public class Billboardspage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(Name_decending)).click();
 		System.out.println(">> User clicked decending updated in sort");
 	}
-
-	// <------------------------------------------Activestatus------------------------------------------->
 	@FindBy(xpath = "(//span[@id='ACTIVE'])[1]")
 	private WebElement activestatus;
 
@@ -288,9 +286,6 @@ public class Billboardspage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(activestatus)).click();
 		System.out.println(">> User clicked active status in filter");
 	}
-	// <--------------------------------------Filter by non
-	// oper.status---------------------------->
-
 	@FindBy(xpath = "(//span[@id='NON_OPERATIONAL'])[1]")
 	private WebElement Nonoperstatus;
 
@@ -309,10 +304,7 @@ public class Billboardspage extends Base {
 
 	@FindBy(xpath = "//div[contains(text(),'No BillBoard Found')]")
 	private WebElement billboard_no_BB_found;
-
-	// <-------------------------------------Filter by Request
-	// status---------------------------------->
-
+	
 	@FindBy(xpath = "(//span[@id='REQUEST'])[1]")
 	private WebElement Requeststatus;
 
@@ -322,9 +314,6 @@ public class Billboardspage extends Base {
 		act.moveToElement(Billboard_filter_apply_btn).click().perform();
 		System.out.println(">> User clicked Request status in filter");
 	}
-
-	// <-------------------------------------Filter by Location
-	// EnterDropdown---------------------------------------->
 
 	@FindBy(id = "react-select-3-input")
 	private WebElement selectlocationdropdown;
@@ -346,9 +335,6 @@ public class Billboardspage extends Base {
 		LOGGER.info(">> User selected the location:" + selectlocationdropdown.getText());
 		act.moveToElement(Billboard_filter_apply_btn).click().perform();
 	}
-	// <-------------------------------------Filter by Bill Board Ticket
-	// count---------------------------------------->
-
 	@FindBy(id = "doc_searchQueryInputfilter")
 	private WebElement BB_filter_Ticket_count;
 
@@ -360,9 +346,6 @@ public class Billboardspage extends Base {
 		act.moveToElement(Billboard_filter_apply_btn).click().perform();
 		System.out.println(">> User entered the Ticket count in filter");
 	}
-
-	// <-------------------------------------Filter by Bill Board Type drop down
-	// ---------------------------------------->
 
 	@FindBy(id = "react-select-4-input")
 	private WebElement BB_Typedropdown;
@@ -520,8 +503,6 @@ public class Billboardspage extends Base {
 		System.out.println(">> User filtered the online with ivms and novastar Not installed BB");
 
 	}
-	// <-------------------------------------Filter Screen Resolution for BillBoards
-	// ---------------------------------------->
 
 	@FindBy(id = "react-select-5-input")
 	private WebElement scr_Resolutiondropdown;
@@ -536,8 +517,6 @@ public class Billboardspage extends Base {
 		act.moveToElement(Billboard_filter_apply_btn).click().perform();
 		System.out.println(">> User selected the Screen resolution in filter");
 	}
-	// <-------------------------------------Download button for BillBoards
-	// ---------------------------------------->
 
 	@FindBy(xpath = "(//h6[contains(@class,'m-0 fw-normal')][normalize-space()='Download'])[1]")
 	private WebElement BB_Download_btn;
@@ -547,8 +526,6 @@ public class Billboardspage extends Base {
 		act.moveToElement(BB_Download_btn).click().perform();
 	}
 
-	// <-------------------------------------Download popup display for BillBoards
-	// ---------------------------------------->
 	@FindBy(xpath = "(//div[@class='modal-header'])[1]")
 	private WebElement BB_Download_popup_display;
 
@@ -558,8 +535,6 @@ public class Billboardspage extends Base {
 		LOGGER.info(">> The Download Popup got displayed");
 	}
 
-	// <-------------------------------------Clicked Download As excel in Billboards
-	// ---------------------------------------->
 	@FindBy(xpath = "(//div[normalize-space()='As Excel'])[1]")
 	private WebElement BB_Download_excel;
 
@@ -567,9 +542,6 @@ public class Billboardspage extends Base {
 
 		act.moveToElement(BB_Download_excel).click().perform();
 	}
-
-	// <-------------------------------------Clicked Download As PDF in Billboards
-	// ---------------------------------------->
 	@FindBy(xpath = "(//div[normalize-space()='As PDF'])[1]")
 	private WebElement BB_Download_As_PDF;
 
@@ -578,9 +550,6 @@ public class Billboardspage extends Base {
 		act.moveToElement(BB_Download_As_PDF).click().perform();
 	}
 
-	// <-------------------------------------Clicked Download As QR Code file in
-	// Billboards
-	// ---------------------------------------->
 	@FindBy(xpath = "(//div[normalize-space()='As QR Code'])[1]")
 	private WebElement BB_Download_As_QR_Code_file;
 
@@ -589,9 +558,6 @@ public class Billboardspage extends Base {
 		act.moveToElement(BB_Download_As_QR_Code_file).click().perform();
 	}
 
-	// <-------------------------------------Clicked Close button in Download popup
-	// in Billboards
-	// ---------------------------------------->
 	@FindBy(xpath = "(//div[@role='dialog'])[1]")
 	private WebElement BB_Download_popupclose;
 
@@ -600,9 +566,6 @@ public class Billboardspage extends Base {
 		act.moveToElement(BB_Download_popupclose).click().perform();
 	}
 
-	// <-------------------------------------------Download popup closed and
-	// displayed Billboard list
-	// ---------------------------------------->
 	@FindBy(xpath = "(//img[@class='pointer'])[4]")
 	private WebElement BB_Download_popupclosed_and_displyd_billboards;
 
@@ -612,8 +575,6 @@ public class Billboardspage extends Base {
 		LOGGER.info(">> The Download Popup get closed and listed BillBoards");
 	}
 
-	// <-------------------------------------Clicked BillBoards Edit icon
-	// ---------------------------------------->
 	@FindBy(xpath = "(//img[@class='pointer'])[16]")
 	private WebElement BB_Edit_Buttonclick;
 
@@ -622,8 +583,6 @@ public class Billboardspage extends Base {
 		act.moveToElement(BB_Edit_Buttonclick).click().perform();
 	}
 
-	// <-------------------------------------Displayed BillBoards Edit page
-	// ---------------------------------------->
 	@FindBy(xpath = "(//span[@class='edit_link_routes active'])[1]")
 	private WebElement BB_Edit_page_display;
 
@@ -635,8 +594,6 @@ public class Billboardspage extends Base {
 
 	}
 
-	// <-------------------------------------Clicked BillBoards plus icon
-	// ---------------------------------------->
 	@FindBy(xpath = "(//img[@class='pointer'])[5]")
 	private WebElement BB_plus_Buttonclick;
 
@@ -645,8 +602,6 @@ public class Billboardspage extends Base {
 		act.moveToElement(BB_plus_Buttonclick).click().perform();
 	}
 
-	// <-------------------------------------Displayed BillBoards View page
-	// ---------------------------------------->
 	@FindBy(xpath = "(//h5[normalize-space()='BillBoard Number'])[1]")
 	private WebElement BB_View_page_display;
 
@@ -657,17 +612,12 @@ public class Billboardspage extends Base {
 
 	}
 
-	// <-------------------------------------BillBoards Delete button
-	// ---------------------------------------->
 	@FindBy(xpath = "(//img[contains(@class,'pointer')])[6]")
 	private WebElement BB_Delete_button;
 
 	public void BB_Delete_icon() throws Exception {
 		act.moveToElement(BB_Delete_button).click().perform();
 	}
-	// <-------------------------------------BillBoards Delete confirm yes
-	// ---------------------------------------->
-
 	@FindBy(xpath = "(//h6[normalize-space()='Yes, delete it.'])[1]")
 	private WebElement BB_Delete_confirm_yes_button;
 
@@ -699,8 +649,7 @@ public class Billboardspage extends Base {
 		AssertJUnit.assertTrue(BB_Google_map.isDisplayed());
 		LOGGER.info("BillBoard google map view displayed");
 	}
-	// <-------------------------------------Editing screen height
-	// ---------------------------------------->
+
     @FindBy(xpath = "(//input[@id='screen_height'])[1]")
     private WebElement screenheight;
 
@@ -711,23 +660,15 @@ public class Billboardspage extends Base {
 		act.moveToElement(screenheight).click().sendKeys(""+Keys.DELETE+Screen_height).perform();
         LOGGER.info("User enters screenheight");
 }
- // <-------------------------------------Update BillBoard button
- 	// ---------------------------------------->
+
  	@FindBy(xpath = "//h6[normalize-space()='Update BillBoard']")
  	private WebElement BB_update_button;
 
  	
  	public void BB_update_clicked() throws Exception {
 
- 		//act.moveToElement(BB_update_button).perform();
-
- 		//Thread.sleep(2000);
-
  		act.moveToElement(BB_update_button).click().perform();
  	}
-	// <-------------------------------------Update BillBoard confirm yes
-	// ---------------------------------------->
-
 	@FindBy(xpath = "//h6[normalize-space()='Yes, update it.']")
 	private WebElement BB_update_confirm_yes_button;
 
@@ -736,8 +677,6 @@ public class Billboardspage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(BB_update_confirm_yes_button)).click();
 
 	}
-	// <-------------------------------------BOM Tab Click
-		// ---------------------------------------->
 
 		@FindBy(xpath = "(//span[@class='edit_link_routes false'])[1]")
 		private WebElement BB_update_BOM_click;
@@ -746,10 +685,6 @@ public class Billboardspage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(Newbillboard_boardno)).isDisplayed();
 		act.moveToElement(BB_update_BOM_click).click().perform();
 	}
-	// <-------------------------------------BOM Tab display
-			// ---------------------------------------->
-
-	
 	@FindBy(xpath = "//h5[normalize-space()='All Stocks']")
 	private WebElement BB_BOMTab_ALLstocks_displayed;
 
@@ -758,8 +693,6 @@ public class Billboardspage extends Base {
 		AssertJUnit.assertTrue(BB_BOMTab_ALLstocks_displayed.isDisplayed());
 		LOGGER.info("BillBoard BOM details page displayed");
 	}
-	// <-------------------------------------BOM Details PDF Download
-			// ---------------------------------------->
 
 			@FindBy(xpath = "(//a[normalize-space()='Download PDF'])[1]")
 			private WebElement BB_BOM_Download;
@@ -769,9 +702,6 @@ public class Billboardspage extends Base {
 			act.moveToElement(BB_BOM_Download).click().perform();
 		}
 		
-		// <-------------------------------------BOM Tab Billboard QR code click
-		// ---------------------------------------->
-
 		@FindBy(xpath = "//span[@class='mx-3 pointer']//*[name()='svg']")
 		private WebElement BB_QR_click;
 	public void BB_editpage_BOMTab_QRcode() throws Exception {
@@ -779,10 +709,7 @@ public class Billboardspage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(Newbillboard_boardno)).isDisplayed();
 		act.moveToElement(BB_QR_click).click().perform();
 	}
-	// <-------------------------------------BOM Tab Billboard QR code display
-			// ---------------------------------------->
 
-	
 	@FindBy(xpath = "//a[normalize-space()='Download QR']")
 	private WebElement BB_BOM_QR;
 
@@ -791,8 +718,6 @@ public class Billboardspage extends Base {
 		AssertJUnit.assertTrue(BB_BOM_QR.isDisplayed());
 		LOGGER.info("BillBoard QR code displayed");
 	}
-	// <-------------------------------------click on Mark it as Non operational button
-	// ---------------------------------------->
 
 	@FindBy(xpath = "//span[normalize-space()='Mark it as non-operational']")
 	private WebElement BB_Mark_it_as_non_opernl_buttn_click;
@@ -801,8 +726,6 @@ public void BB_Mark_it_as_nonoperational() throws Exception {
 	wait.until(ExpectedConditions.visibilityOf(Newbillboard_boardno)).isDisplayed();
 	act.moveToElement(BB_Mark_it_as_non_opernl_buttn_click).click().perform();
 }
-// <-------------------------------------click on Mark it as Non operational confirmed
-// ---------------------------------------->
 
 @FindBy(xpath = "//h6[normalize-space()='Yes, mark it.']")
 private WebElement BB_Mark_it_as_non_opernl_confirm_click;
@@ -810,8 +733,7 @@ public void BB_Mark_it_as_nonoperational_confirmed() throws Exception {
 
 act.moveToElement(BB_Mark_it_as_non_opernl_confirm_click).click().perform();
 }
-// <-------------------------------------Added reason and marked as non operationl
-// ---------------------------------------->
+
 @FindBy(xpath = "(//input[@type='text'])[16]")
 private WebElement Reason_enter_for_Mark_Non_operntl;
 @FindBy(xpath = "//h4[normalize-space()='Reason']")
@@ -825,8 +747,6 @@ public void BB_non_operatnl_reason_added() {
     LOGGER.info("User enters reason");
 
 }
-// <-------------------------------------click on reason button
-// ---------------------------------------->
 
 @FindBy(xpath = "//h6[normalize-space()='Reason']")
 private WebElement BB_reason_buttn_click;

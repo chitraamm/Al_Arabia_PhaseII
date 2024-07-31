@@ -28,7 +28,6 @@ public class Ticketspage extends Base {
 	private Actions act;
 	private Logger LOGGER = LogManager.getLogger(Ticketspage.class);
 	private Signinpage signinpage;
-
 	public Ticketspage(WebDriver driver) throws Exception {
 		this.driver = driver;
 		prop = new Properties();
@@ -115,9 +114,8 @@ public class Ticketspage extends Base {
 
 	@FindBy(id = "react-select-18-input")
 	private WebElement Ticket_title_select;
-//	@FindBy(id = "react-select-18-input")
-//	private WebElement Ticket_title_select1;
-	@FindBy(xpath = "(//div[contains(@class,'select__input-container css-19bb58m')])[5]")
+
+	@FindBy(id = "react-select-19-input")
 	private WebElement Assignee_select;
 
 	@FindBy(xpath = "//input[@id='formikDateField_start_date']")
@@ -133,16 +131,25 @@ public class Ticketspage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(BB_no_select));
 
 		act.moveToElement(BB_no_select).click().sendKeys("" + Keys.ENTER).perform();
-		act.moveToElement(Department_select).click().sendKeys("" + Keys.ENTER).perform();
+		
+		String Departmnt = prop.getProperty("Departmnt");
+		wait.until(ExpectedConditions.visibilityOf(Department_select)).sendKeys(Departmnt);
+		Thread.sleep(1000);
+		act.moveToElement(Department_select).click().sendKeys(""+Keys.ENTER+Keys.ARROW_RIGHT).perform();
+		
 		act.moveToElement(Priority_select).click().sendKeys("" + Keys.ENTER).perform();
 			
 		String Tckt_title = prop.getProperty("Tckt_title");
 		wait.until(ExpectedConditions.visibilityOf(Ticket_title_select)).sendKeys(Tckt_title);
 		Thread.sleep(2000);
-
 		act.moveToElement(Ticket_title_select).click().sendKeys(""+Keys.ENTER+Keys.ARROW_RIGHT).perform();
 
-		act.moveToElement(Assignee_select).click().sendKeys("" + Keys.ENTER).perform();
+		Thread.sleep(2000);
+		String Assignee = prop.getProperty("Assignee");
+		wait.until(ExpectedConditions.visibilityOf(Assignee_select)).sendKeys(Assignee);
+		Thread.sleep(5000);
+		act.moveToElement(Assignee_select).click().sendKeys(""+Keys.ENTER+Keys.ARROW_RIGHT).perform();
+		
 		act.moveToElement(Start_date).click().sendKeys("" + Keys.ENTER).perform();
 		wait.until(ExpectedConditions.visibilityOf(Start_date));
 
@@ -150,33 +157,12 @@ public class Ticketspage extends Base {
 		String Description = prop.getProperty("Description");
 		wait.until(ExpectedConditions.visibilityOf(Description_enter)).sendKeys(Description);
 	}
-//	public void NewTicket_mandatory_fields_enter1() throws Exception {
-//		wait.until(ExpectedConditions.visibilityOf(BB_no_select));
-//
-//		act.moveToElement(BB_no_select).click().sendKeys("" + Keys.ENTER).perform();
-//		act.moveToElement(Department_select).click().sendKeys("" + Keys.ENTER).perform();
-//		act.moveToElement(Priority_select).click().sendKeys("" + Keys.ENTER).perform();
-//		
-//		String Tckt_title1 = prop.getProperty("Tckt_title1");
-//		wait.until(ExpectedConditions.visibilityOf(Ticket_title_select)).sendKeys(Tckt_title1);
-//		act.moveToElement(Ticket_title_select1).click().sendKeys(""+Keys.ENTER).perform();
-//
-//		act.moveToElement(Assignee_select).click().sendKeys("" + Keys.ENTER).perform();
-//		act.moveToElement(Start_date).click().sendKeys("" + Keys.ENTER).perform();
-//		wait.until(ExpectedConditions.visibilityOf(Start_date));
-//
-//		act.moveToElement(End_date).click().sendKeys("" + Keys.ENTER).perform();
-//		String Description = prop.getProperty("Description");
-//		wait.until(ExpectedConditions.visibilityOf(Description_enter)).sendKeys(Description);
-//	}
-
 	@FindBy(id = "Create Ticket")
 	private WebElement Ticket_create_BB_btn;
 
 	public void NewTicket_create_btn() {
 		act.moveToElement(Ticket_create_BB_btn).click().perform();
 	}
-
 	@FindBy(xpath = "//div[contains(@class, 'toastpop') and contains(@class, 'position-relative')]")
 	private WebElement Ticket_created_Success_display;
 
@@ -184,17 +170,15 @@ public class Ticketspage extends Base {
 		WebElement successMessageElement = wait.until(ExpectedConditions.visibilityOf(Ticket_created_Success_display));
 		return successMessageElement.getText().trim();
 	}
-
 	@FindBy(id = "doc_searchQueryInput")
 	private WebElement TicketSearch;
-
+	
 	public void Ticket_search_enter_text() {
 		wait.until(ExpectedConditions.visibilityOf(TicketSearch)).click();
 		String ticket_search = prop.getProperty("Ticketno");
 		wait.until(ExpectedConditions.visibilityOf(TicketSearch)).sendKeys(ticket_search + Keys.ENTER);
 		System.out.println(">> User enter the Ticket number in search field: " + ticket_search);
 	}
-
 	@FindBy(xpath = "//tbody/tr[@class='table_white']/td[1]/div[1]")
 	private WebElement ticketSearchedList, Ticketlist;
 
@@ -498,6 +482,12 @@ public class Ticketspage extends Base {
 	public void Tickets_Edit_icon() throws Exception {
 		wait.until(ExpectedConditions.visibilityOf(tickets_Edit_Buttonclick)).click();
 	}
+	@FindBy(xpath = "(//img[contains(@class,'pointer')])[3]")
+	private WebElement view_tickets_Edit_Buttonclick;
+
+	public void Edit_View_Ticket() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(view_tickets_Edit_Buttonclick)).click();
+	}
 
 	@FindBy(xpath = "(//h5[normalize-space()='All Tickets'])[1]")
 	private WebElement ticket_Edit_page_display;
@@ -547,7 +537,6 @@ public class Ticketspage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(ticket_update_button)).click();
 
 	}
-
 	@FindBy(xpath = "//h6[normalize-space()='Yes, update it.']")
 	private WebElement ticket_update_confirm_yes_button;
 
@@ -556,7 +545,6 @@ public class Ticketspage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(ticket_update_confirm_yes_button)).click();
 
 	}
-
 	@FindBy(xpath = "//span[normalize-space()='Activity Feed']")
 	private WebElement click_Activity_feed;
 	@FindBy(xpath = "//span[@class='edit_link_routes active']")
@@ -631,13 +619,13 @@ public class Ticketspage extends Base {
 	public void Upload_photo_close_confirmed() throws Exception {
 		wait.until(ExpectedConditions.visibilityOf(click_uploaded_photo_close_confirm)).click();;
 	}
-//	@FindBy(xpath = "(//div[contains(@class,'col-md-6 col-12 pe-md-4')])[2]")
-//	private WebElement click_uploaded_video_close_visible;
-	@FindBy(xpath = "(//img[contains(@class,'position-absolute x_close')])[2]")
+	@FindBy(xpath = "//div[@class=' d-flex py-5 flex-wrap gap-4']")
+	private WebElement attach_medias;
+	@FindBy(xpath = "//img[@class=' position-absolute x_close']")
 	private WebElement click_uploaded_video_close;
 	public void Upload_video_close() throws Exception {
-		Thread.sleep(3000);
-		wait.until(ExpectedConditions.visibilityOf(click_upload_videos));
+		Thread.sleep(4000);
+		wait.until(ExpectedConditions.visibilityOf(attach_medias));
 
 		act.moveToElement(click_uploaded_video_close).perform();
 		wait.until(ExpectedConditions.visibilityOf(click_uploaded_video_close)).click();
@@ -699,13 +687,10 @@ public class Ticketspage extends Base {
 	private WebElement click_start_conversation;
 
 	public void Start_conversation() throws Exception {
-		
-		//wait.until(ExpectedConditions.visibilityOf(click_start_conversation)).click();
 		Thread.sleep(2000);
 		act.moveToElement(click_start_conversation).perform();
 		wait.until(ExpectedConditions.visibilityOf(click_start_conversation)).click();
 	}
-
 	@FindBy(xpath = "(//h5[normalize-space()='Ticket'])[1]")
 	private WebElement chat_page_display;
 
@@ -757,15 +742,36 @@ public class Ticketspage extends Base {
 		Thread.sleep(2000);
 		act.moveToElement(ticket_reset_button).perform();
 		wait.until(ExpectedConditions.visibilityOf(ticket_reset_button)).click();
-
 	}
-
 	@FindBy(xpath = "//h6[normalize-space()='Yes, reset it.']")
 	private WebElement ticket_reset_confirm_yes_button;
 
 	public void Reset_Ticket_confirmed() throws Exception {
 
 		wait.until(ExpectedConditions.visibilityOf(ticket_reset_confirm_yes_button)).click();
-
+	}
+	@FindBy(xpath = "(//*[name()='svg'][@stroke='currentColor'])[9]")
+	private WebElement created_Tickmark;
+	public void Created_Tick_display () throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(created_Tickmark)).isDisplayed();
+		AssertJUnit.assertTrue(created_Tickmark.isDisplayed());
+	}
+	@FindBy(xpath = "(//*[name()='svg'][contains(@stroke,'currentColor')])[10]")
+	private WebElement viewed_Tickmark;
+	public void Viewed_Tick_display () throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(viewed_Tickmark)).isDisplayed();
+		AssertJUnit.assertTrue(viewed_Tickmark.isDisplayed());
+	}
+	@FindBy(xpath = "(//*[name()='svg'][contains(@stroke,'currentColor')])[11]")
+	private WebElement submitted_Tickmark;
+	public void Submitted_Tick_display () throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(submitted_Tickmark)).isDisplayed();
+		AssertJUnit.assertTrue(submitted_Tickmark.isDisplayed());
+	}
+	@FindBy(xpath = "(//*[name()='path'])[16]")
+	private WebElement overdued_Tickmark;
+	public void Overdued_Tick_display () throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(overdued_Tickmark)).isDisplayed();
+		AssertJUnit.assertTrue(overdued_Tickmark.isDisplayed());
 	}
 }

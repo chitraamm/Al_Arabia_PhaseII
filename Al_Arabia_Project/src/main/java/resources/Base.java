@@ -29,7 +29,7 @@ public class Base {
 		FileInputStream fis = new FileInputStream(propPath);
 
 		prop.load(fis);
-
+        System.setProperty("webdriver.chrome.driver", "path/to/chromedriver");
 		String browserName = prop.getProperty("browser");
 
 		if (browserName.equalsIgnoreCase("chrome")) {

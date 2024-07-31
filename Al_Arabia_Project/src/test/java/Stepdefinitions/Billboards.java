@@ -90,46 +90,37 @@ public class Billboards extends Base {
 		assertTrue("The actual message was neither of the expected success messages.",
 				matchesMessage1 || matchesMessage2);
 	}
-
 	private String normalizeWhitespace(String input) {
 		return input.replaceAll("\\s+", " ").trim();
 	}
-
 	@And("Admin or user sort the billboards list recently updated")
 	public void Admin_or_user_sort_the_billboards_list_recently_updated() throws Exception {
 		billboardsPage.Billboards_sort_recentlyupdated();
 	}
-
 	@Then("Recently updated billboards list get displayed successfully")
 	public void Recently_updated_billboards_list_get_displayed_successfully() throws Exception {
 		billboardsPage.BBlist();
 	}
-
 	@And("User sort the billboards list Name A to Z")
 	public void User_sort_the_billboards_list_Name_A_to_Z() throws Exception {
 		billboardsPage.BB_A_to_Z();
 	}
-
 	@Then("billboards list get displayed successfully")
 	public void billboards_list_get_displayed_successfully() throws Exception {
 		billboardsPage.BBlist();
 	}
-
 	@And("User sort the billboards list Name Z to A")
 	public void User_sort_the_billboards_list_Name_Z_to_A() throws Exception {
 		billboardsPage.Billboard_sortZ_A();
 	}
-
 	@Then("billboards list Z to A get displayed successfully")
 	public void billboards_list_Z_to_A_get_displayed_successfully() throws Exception {
 		billboardsPage.BBlist();
 	}
-
 	@And("User sort the billboards list Recently Added")
 	public void User_sort_the_billboards_list_Recently_Added() throws Exception {
 		billboardsPage.Billboards_sort_recentlyadded();
 	}
-
 	@Then("Recent billboards list get displayed successfully")
 	public void Recent_billboards_list_get_displayed_successfully() throws Exception {
 		billboardsPage.BBlist();
@@ -138,28 +129,22 @@ public class Billboards extends Base {
 	public void User_sort_the_billboards_list_decending() throws Exception {
 		billboardsPage.DecendingDate();
 	}
-
 	@Then("Decending billboards list get displayed successfully")
 	public void Decending_billboards_list_get_displayed_successfully() throws Exception {
 		billboardsPage.BBlist();
 	}
-	
 	@And("User filter the billboards list status Active")
 	public void User_filter_the_billboards_list_status_Active() throws Exception {
 		billboardsPage.BB_filter_active();
 	}
-
 	@Then("Active billboards list get displayed successfully")
 	public void Active_billboards_list_get_displayed_successfully() throws Exception {
 		billboardsPage.BB_filtered_result_display();
 	}
-
 	@And("User filter the billboards list status Non Oper")
 	public void User_filter_the_billboards_list_status_Non_Oper() throws Exception {
 		billboardsPage.Nonoper();
-
 	}
-
 	@Then("Non Oper billboards list get displayed successfully")
 	public void Non_Oper_billboards_list_get_displayed_successfully() throws Exception {
 		billboardsPage.BB_filtered_result_display();
@@ -187,28 +172,23 @@ public class Billboards extends Base {
 	@Then("Selected location billboards list get displayed successfully")
 	public void Selected_location_billboards_list_get_displayed_successfully () throws Exception {
 	    billboardsPage.BB_filtered_result_display();
-	}
-	
+	}	
 	@And("User filter the billboards ticket count")
 	public void User_filter_the_billboards_ticket_count () throws Exception {
 	    billboardsPage.BB_filter_ticketcount_enter();
-	}
-	
+	}	
 	@Then("ticket count billboards list get displayed successfully")
 	public void ticket_count_billboards_list_get_displayed_successfully () throws Exception {
 	    billboardsPage.BB_filtered_result_display();
-	}
-	
+	}	
 	@And("User filter the Billboard Type")
 	public void User_filter_the_Billboard_Type () throws Exception {
 	    billboardsPage.select_bb_Type();
-	}
-	
+	}	
 	@Then("Billboard type billboards list get displayed successfully")
 	public void Billboard_type_billboards_list_get_displayed_successfully () throws Exception {
 	    billboardsPage.BB_filtered_result_display();
 	}
-	
 	@And("User filter the billboards Online Team viewer Novastar IVMS")
 	public void User_filter_the_billboards_Online_Team_viewer_Novastar_IVMS () throws Exception {
 	    billboardsPage.BB_filter_onlinestatus();
@@ -274,7 +254,6 @@ public class Billboards extends Base {
 	public void Offline_and_Not_installed_status_billboards_list_get_displayed_successfully_for_IVMS_and_Novastar () throws Exception {
 	    billboardsPage.BB_filtered_result_display();
 }
-	
 	@And("User filter the Screen resolution drop down")
 	public void User_filter_the_Screen_resolution_drop_down() throws Exception {
 	    billboardsPage.BB_filter_Screen_Resolution();
@@ -299,8 +278,7 @@ public class Billboards extends Base {
 	@And("Excel file will be downloaded successfully as")
 	public void Excel_file_will_be_downloaded_successfully () throws Exception {
 	    billboardsPage.BB_Download_popup_display();
-}
-	
+}	
 	@Then("^Excel file will be downloaded successfully as \"([^\"]*)\"$")
   public void Excel_file_will_be_downloaded_successfully(String expectedMessage) throws Exception {
       String actualMessage = billboardsPage.billboard_created_Success_display();
@@ -426,16 +404,14 @@ public class Billboards extends Base {
 	public void User_clicks_on_Mark_it_as_non_operational_and_click_yes_mark_it () throws Exception {
 		billboardsPage.BB_Mark_it_as_nonoperational();
 		billboardsPage.BB_Mark_it_as_nonoperational_confirmed();
-	}
-		
+	}	
       @And("User Mark it as non operational and Added the reason")
 	  public void User_Mark_it_as_non_operational_and_Added_the_reason () throws Exception {	
 		
 		billboardsPage.BB_Mark_it_as_nonoperational();
 		billboardsPage.BB_Mark_it_as_nonoperational_confirmed();
 		billboardsPage.BB_non_operatnl_reason_added();
-		billboardsPage.BB_clicked_reason_button();
-		
+		billboardsPage.BB_clicked_reason_button();	
 }
 	@Then("^reason added popup will be displayed successfully as \"([^\"]*)\"$")
 	public void reason_added_popup_will_be_displayed_successfully (String expectedMessage) throws Exception {

@@ -191,14 +191,14 @@ And User clicks the Download button
 Then Download pop up will be displayed successfully
 
 @Tickets @Tickets24 @smoke @regression @all
-Scenario Outline: T024_To verify the billboards feature Download as Excel
+Scenario Outline: T024_To verify the Tickets feature Download as Excel
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Tickets module
 And User clicks the Download button with Download As Excel
       
 @Tickets @Tickets25 @smoke @regression @all
-Scenario Outline: T025_To verify the billboards feature Download as PDF
+Scenario Outline: T025_To verify the Tickets feature Download as PDF
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Tickets module
@@ -433,5 +433,22 @@ When Al-Arabia overall dashboard should display
 And Admin or user clicks the Tickets module
 And User filter the Tickets list status Overdue
 And The User clicks the Edit icon
-Then Overdued Tick mark should be displayed in Progress bar  
+Then Overdued Tick mark should be displayed in Progress bar 
+
+@Tickets @Tickets49 @smoke @regression @all
+Scenario Outline: T049_To verify the Tickets features 'Reassigned' Tick mark displayed on Progress bar in View Tickets page
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Tickets module
+And User filter the Tickets list status Reassigned
+And The User clicks the Edit icon
+Then Reassigned Tick mark should be displayed in Progress bar 
+
+@Tickets @Tickets50 @smoke @regression @all
+Scenario Outline: T0050_To verify the Tickets feature filter Pending status Tickets
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Tickets module
+And User filter the Tickets list status Pending
+Then Pending Tickets list get displayed successfully  
        

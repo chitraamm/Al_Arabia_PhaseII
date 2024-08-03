@@ -490,4 +490,16 @@ public class Tickets extends Base {
 		ticketsPage.Overdued_Tick_display();
 
 }
+	@And("User filter the Tickets list status Pending")
+	public void User_filter_the_Tickets_list_status_Pending() throws Exception {
+		ticketsPage.Tickets_status_Pending();
+	}
+	@Then("Pending Tickets list get displayed successfully")
+	public void Pending_Tickets_list_get_displayed_successfully() throws Exception {
+		ticketsPage.Tickets_filtered_result_display();
+	}
+	@Then("Reassigned Tick mark should be displayed in Progress bar")
+	public void Reassigned_Tick_mark_should_be_displayed_in_Progress_bar() throws Exception {
+		ticketsPage.Reassingned_Tickmark();
+	}
 }

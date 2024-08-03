@@ -16,6 +16,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.AssertJUnit;
 
 import io.cucumber.core.backend.Options;
@@ -462,7 +463,7 @@ public class Ticketspage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(tickets_Download_pdf)).click();
 	}
 
-	@FindBy(xpath = "//button[@aria-label='Close']")
+	@FindBy(xpath = "(//*[name()='svg'][@stroke='currentColor'])[7] ")
 	private WebElement ticket_Download_popupclose;
 
 	public void Ticket_Download_popup_close() throws Exception {
@@ -773,5 +774,23 @@ public class Ticketspage extends Base {
 	public void Overdued_Tick_display () throws Exception {
 		wait.until(ExpectedConditions.visibilityOf(overdued_Tickmark)).isDisplayed();
 		AssertJUnit.assertTrue(overdued_Tickmark.isDisplayed());
+	}
+	@FindBy(xpath = "(//span[@id='PENDING'])[1]")
+	private WebElement Tickets_Pending;
+
+	public void Tickets_status_Pending() {
+		wait.until(ExpectedConditions.visibilityOf(Tickets_filter)).click();
+		wait.until(ExpectedConditions.visibilityOf(Tickets_Pending)).click();
+		act.moveToElement(Tickets_filter_apply_btn).click().perform();
+		System.out.println(">> User clicked Pending status in filter");
+	}
+
+	@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[2]/div[2]/div[2]/div/div[1]/h6")
+	private WebElement tickets_reassign_tickmark_display;
+
+	public void Reassingned_Tickmark() {
+	wait.until(ExpectedConditions.visibilityOf(tickets_reassign_tickmark_display)).isDisplayed();
+	AssertJUnit.assertTrue(tickets_reassign_tickmark_display.isDisplayed());
+		System.out.println(">> Reassigned Tick mark displayed in Tickets view page");
 	}
 }

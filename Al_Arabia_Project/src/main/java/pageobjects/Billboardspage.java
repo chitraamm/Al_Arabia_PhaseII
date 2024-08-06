@@ -757,4 +757,42 @@ wait.until(ExpectedConditions.visibilityOf(Newbillboard_boardno)).isDisplayed();
 act.moveToElement(BB_reason_buttn_click).click().perform();
 }
 
+
+
+@FindBy(xpath = "//div[normalize-space()='2']")
+private WebElement click_second_page;
+public void Second_page() throws Exception {
+	act.scrollToElement(click_second_page).build().perform();
+	wait.until(ExpectedConditions.visibilityOf(click_second_page)).click();
+}
+@FindBy(xpath = "//div[contains(text(),'Showing')]")
+private WebElement second_page_display;
+public void Second_page_Display() throws Exception {
+	wait.until(ExpectedConditions.visibilityOf(second_page_display));
+	AssertJUnit.assertTrue(second_page_display.isDisplayed());
+}
+@FindBy(xpath = "(//div[contains(@class,'round-effect')][contains(text(),'›')])[1]")
+private WebElement click_next_page;
+public void next_page() throws Exception {
+	act.scrollToElement(click_next_page).build().perform();
+	wait.until(ExpectedConditions.visibilityOf(click_next_page)).click();
+}
+@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[2]/div[1]/div[4]/div[2]/div[1]")
+private WebElement click_previous_page;
+public void Previous_page() throws Exception {
+	act.scrollToElement(click_previous_page).build().perform();
+	wait.until(ExpectedConditions.visibilityOf(click_previous_page)).click();
+}
+@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[2]/div[1]/div[4]/div[2]/div[5]")
+private WebElement click_last_page;
+public void last_page() throws Exception {
+	act.scrollToElement(click_last_page).build().perform();
+	wait.until(ExpectedConditions.visibilityOf(click_last_page)).click();
+}
+@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[2]/div[1]/div[4]/div[2]/div[1]")
+private WebElement click_first_page;
+public void First_page() throws Exception {
+	act.scrollToElement(click_first_page).build().perform();
+	wait.until(ExpectedConditions.visibilityOf(click_first_page)).click();
+}
 }

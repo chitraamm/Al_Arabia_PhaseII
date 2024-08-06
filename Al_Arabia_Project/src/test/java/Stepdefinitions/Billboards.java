@@ -427,4 +427,40 @@ public class Billboards extends Base {
 //		billboardsPage.BB_clicked_reason_button();
 //	//	billboardsPage.BB_Marked_non_opernl_with_reason();
 }
+	@And("User click on second page button of billboards")
+	public void User_click_on_second_page_button_of_billboards () throws Exception {
+		billboardsPage.Second_page();
+}
+	@Then("Second page billboards get displayed successfully")
+	public void Second_page_billboards_get_displayed_successfully () throws Exception {
+		billboardsPage.Second_page_Display();
+}
+	@And("Go to Next page of billboards page")
+	public void Go_to_Next_page_of_billboards_page() throws Exception {
+		billboardsPage.next_page();
+}
+	@Then("Next page billboards get displayed successfully")
+	public void Next_page_billboards_get_displayed_successfully() throws Exception {
+}
+	@And("Go to Previous page of billboards page")
+	public void Go_to_Previous_page_of_billboards_page() throws Exception {
+		billboardsPage.Previous_page();
+}
+	@Then("Previous page billboards get displayed successfully")
+	public void Previous_page_billboards_get_displayed_successfully() throws Exception {
+}
+	@And("Go to Last page of billboards page")
+	public void Go_to_Last_page_of_billboards_page() throws Exception {
+		billboardsPage.last_page();
+}
+	@Then("Last page billboards get displayed successfully")
+	public void Last_page_billboards_get_displayed_successfully() throws Exception {
+}
+	@And("User click on first page button of billboards")
+	public void User_click_on_first_page_button_of_billboards() throws Exception {
+		billboardsPage.First_page();
+}
+	@Then("First page billboards get displayed successfully")
+	public void First_page_billboards_get_displayed_successfully() throws Exception {
+}
 }

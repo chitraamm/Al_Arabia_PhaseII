@@ -346,6 +346,50 @@ Then reason added popup will be displayed successfully as "<successMessage>"
   Examples:
       | successMessage1       | successMessage2                    |
       | LOADING...            | Success Updated as non-operational |
+@billboards @billboards39 @smoke @regression @all
+Scenario Outline: T039_To verify the billboards feature pagination 1st to 2nd page 
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the billboards module
+And User click on second page button of billboards
+Then Second page billboards get displayed successfully    
+
+@billboards @billboards40 @smoke @regression @all
+Scenario Outline: T040_To verify the billboards feature pagination next page 
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the billboards module
+And Go to Next page of billboards page
+Then Next page billboards get displayed successfully  
+
+@billboards @billboards41 @smoke @regression @all
+Scenario Outline: T041_To verify the billboards feature pagination previous page 
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the billboards module
+And Go to Next page of billboards page 
+And Go to Previous page of billboards page
+Then Previous page billboards get displayed successfully 
+
+@billboards @billboards42 @smoke @regression @all
+Scenario Outline: T042_To verify the billboards feature pagination last page 
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the billboards module
+And Go to Last page of billboards page
+Then Last page billboards get displayed successfully   
+
+@billboards @billboards43 @smoke @regression @all
+Scenario Outline: T043_To verify the billboards feature pagination last page to first page
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the billboards module
+And Go to Last page of billboards page
+And User click on first page button of billboards
+Then First page billboards get displayed successfully 
+      
+      
+      
       
 #@billboards @billboards18 @sanity @regression @all
 #Scenario Outline: T018_To verify the billboards feature filter with multiple selected options

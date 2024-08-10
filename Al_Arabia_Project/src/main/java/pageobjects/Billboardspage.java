@@ -171,11 +171,14 @@ public class Billboardspage extends Base {
 		act.moveToElement(Newbillboard_screen_units).click().sendKeys("" + Keys.ARROW_DOWN + Keys.ENTER).perform();
 		act.moveToElement(Newbillboard_screen_pixel).click().sendKeys("" + Keys.ARROW_DOWN + Keys.ENTER).perform();
 	}
-
+	@FindBy(xpath = "//div[@class='d-flex justify-content-between py-5']")
+	private WebElement create_BB_container;
+	
 	@FindBy(id = "Create BillBoard")
 	private WebElement Newbillboard_create_BB_btn;
 
 	public void Newbillboard_create_BB_btn() {
+		//wait.until(ExpectedConditions.visibilityOf(create_BB_container));
 		act.moveToElement(Newbillboard_create_BB_btn).click().perform();
 	}
 
@@ -317,6 +320,7 @@ public class Billboardspage extends Base {
 
 	@FindBy(id = "react-select-3-input")
 	private WebElement selectlocationdropdown;
+	
 
 	public void select_bb_location() {
 		wait.until(ExpectedConditions.visibilityOf(Billboard_filter)).click();
@@ -575,7 +579,7 @@ public class Billboardspage extends Base {
 		LOGGER.info(">> The Download Popup get closed and listed BillBoards");
 	}
 
-	@FindBy(xpath = "(//img[@class='pointer'])[16]")
+	@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[2]/div[1]/div[3]/div/table/tbody/tr[1]/td[6]/div[2]/div[1]/img")
 	private WebElement BB_Edit_Buttonclick;
 
 	public void BB_Edit_icon() throws Exception {
@@ -795,4 +799,38 @@ public void First_page() throws Exception {
 	act.scrollToElement(click_first_page).build().perform();
 	wait.until(ExpectedConditions.visibilityOf(click_first_page)).click();
 }
+@FindBy(xpath = "(//span[@id='REQUEST'])[1]")
+private WebElement pendingstatus;
+
+public void Pending_Billboards() {
+	wait.until(ExpectedConditions.visibilityOf(Billboard_filter)).click();
+	wait.until(ExpectedConditions.visibilityOf(pendingstatus)).click();
+	act.moveToElement(Billboard_filter_apply_btn).click().perform();
+	System.out.println(">> User clicked Non Oper. status in filter");
+}
+@FindBy(xpath = "//body[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[3]/div[1]/table[1]/tbody[1]/tr[1]/td[6]/div[2]/div[1]/img[1]")
+private WebElement BB_Edit_pending_Buttonclick;
+
+public void BB_Edit_pending_icon() throws Exception {
+
+	act.moveToElement(BB_Edit_Buttonclick).click().perform();
+}
+@FindBy(xpath = "//div[@class='d-flex justify-content-end py-5']")
+private WebElement approve_container;
+@FindBy(id = "Mark it as Approved")
+private WebElement BB_approve_button;
+
+	public void Approve_for_non_operational_Billboards() throws Exception {
+        wait.until(ExpectedConditions.visibilityOf(approve_container)).isDisplayed();  
+		act.moveToElement(BB_approve_button).click().perform();
+	}
+@FindBy(xpath = "//h6[normalize-space()='Yes, mark it.']")
+private WebElement BB_approve_confirm_yes_button;
+
+public void BB_approve_non_operational_confirmed() throws Exception {
+
+	wait.until(ExpectedConditions.visibilityOf(BB_update_confirm_yes_button)).click();
+
+}
+
 }

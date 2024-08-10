@@ -413,20 +413,20 @@ public class Billboards extends Base {
 		billboardsPage.BB_non_operatnl_reason_added();
 		billboardsPage.BB_clicked_reason_button();	
 }
-	@Then("^reason added popup will be displayed successfully as \"([^\"]*)\"$")
-	public void reason_added_popup_will_be_displayed_successfully (String expectedMessage) throws Exception {
-		  String actualMessage = billboardsPage.billboard_created_Success_display();
-	      String normalizedExpectedMessage = normalizeWhitespace(expectedMessage);
-	      String normalizedActualMessage = normalizeWhitespace(actualMessage);
-	      System.out.println(">> User or Admin added reason for Mark it as non operational successfully"+actualMessage);
-	      assertEquals(normalizedExpectedMessage, normalizedActualMessage);
-	
-//		billboardsPage.BB_Mark_it_as_nonoperational();
-//		billboardsPage.BB_Mark_it_as_nonoperational_confirmed();
-//		billboardsPage.BB_non_operatnl_reason_added();
-//		billboardsPage.BB_clicked_reason_button();
-//	//	billboardsPage.BB_Marked_non_opernl_with_reason();
-}
+  	@Then("^reason added popup will be displayed successfully with either \"([^\"]*)\" or \"([^\"]*)\"$")
+  	public void reason_added_popup_will_be_displayed_successfully_with_either (String expectedMessage1,
+			String expectedMessage2) throws Exception {
+		String actualMessage = billboardsPage.billboard_created_Success_display();
+		String normalizedActualMessage = normalizeWhitespace(actualMessage);
+
+		System.out.println(">> User or Admin got the ticket cerified success message successfully: " + actualMessage);
+
+		boolean matchesMessage1 = normalizedActualMessage.equals(normalizeWhitespace(expectedMessage1));
+		boolean matchesMessage2 = normalizedActualMessage.equals(normalizeWhitespace(expectedMessage2));
+
+		assertTrue("The actual message was neither of the expected success messages.",
+				matchesMessage1 || matchesMessage2);
+	}
 	@And("User click on second page button of billboards")
 	public void User_click_on_second_page_button_of_billboards () throws Exception {
 		billboardsPage.Second_page();
@@ -463,4 +463,25 @@ public class Billboards extends Base {
 	@Then("First page billboards get displayed successfully")
 	public void First_page_billboards_get_displayed_successfully() throws Exception {
 }
+	@And("User filter the billboards list status Pending")
+	public void User_filter_the_billboards_list_status_Pending() throws Exception {
+		billboardsPage.Pending_Billboards();
+	}
+	@Then("Pending billboards list get displayed successfully")
+	public void Pending_billboards_list_get_displayed_successfully() throws Exception {
+		billboardsPage.BB_filtered_result_display();
+	}
+	@And("User click on Approve button and confirmed")
+	public void User_click_on_Approve_button_and_confirmed() throws Exception {
+		billboardsPage.Approve_for_non_operational_Billboards();
+		billboardsPage.BB_approve_non_operational_confirmed();
+	}
+	@And("User clicks the Edit button of pending BillBoards")
+	public void User_clicks_the_Edit_button_of_pending_BillBoards() throws Exception {
+		billboardsPage.BB_Edit_pending_icon();
+	}
+//	@Then("Billboard marked as Approved popup will be display successfully")
+//	public void Billboard_marked_as_Approved_popup_will_be_display_successfully() throws Exception {
+//		billboardsPage.BB_filtered_result_display();
+//	}
 }

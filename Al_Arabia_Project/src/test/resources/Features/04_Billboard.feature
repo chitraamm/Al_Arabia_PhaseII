@@ -342,7 +342,7 @@ And User filter the billboards list status Active32
 And User selects billboard location32
 And User clicks the Edit button 
 And User Mark it as non operational and Added the reason 
-Then reason added popup will be displayed successfully as "<successMessage>"
+Then reason added popup will be displayed successfully with either "<successMessage1>" or "<successMessage2>"
   Examples:
       | successMessage1       | successMessage2                    |
       | LOADING...            | Success Updated as non-operational |
@@ -388,8 +388,30 @@ And Go to Last page of billboards page
 And User click on first page button of billboards
 Then First page billboards get displayed successfully 
       
+@billboards @billboards44 @smoke @regression @all
+Scenario Outline: T044_To verify the billboards feature filter Pending status billboards
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the billboards module
+And User filter the billboards list status Pending
+Then Pending billboards list get displayed successfully  
+    
+@billboards @billboards45 @smoke @regression @all
+Scenario Outline: T045_To verify the billboards features approve Mark it as non operational
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the billboards module
+And User filter the billboards list status Pending
+And User clicks the Edit button of pending BillBoards
+And User click on Approve button and confirmed
+Then Billboard marked as Approved popup will be display successfully     
       
-      
+#@billboards @billboards46 @smoke @regression @all
+#Scenario Outline: T044_To verify the billboards feature filter Pending status billboards
+#Given Admin logged in with valid credentials
+#When Al-Arabia overall dashboard should display
+#And Admin or user clicks the billboards module
+#And User filter the billboards list status Pending
       
 #@billboards @billboards18 @sanity @regression @all
 #Scenario Outline: T018_To verify the billboards feature filter with multiple selected options

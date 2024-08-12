@@ -474,14 +474,31 @@ public class Billboards extends Base {
 	@And("User click on Approve button and confirmed")
 	public void User_click_on_Approve_button_and_confirmed() throws Exception {
 		billboardsPage.Approve_for_non_operational_Billboards();
-		billboardsPage.BB_approve_non_operational_confirmed();
+		billboardsPage.approve_non_operational_confirmed();
 	}
 	@And("User clicks the Edit button of pending BillBoards")
 	public void User_clicks_the_Edit_button_of_pending_BillBoards() throws Exception {
 		billboardsPage.BB_Edit_pending_icon();
 	}
-//	@Then("Billboard marked as Approved popup will be display successfully")
-//	public void Billboard_marked_as_Approved_popup_will_be_display_successfully() throws Exception {
-//		billboardsPage.BB_filtered_result_display();
-//	}
+	@Then("^Billboard marked as Approved popup will be display successfully as \"([^\"]*)\"$")
+	public void Billboard_marked_as_Approved_popup_will_be_display_successfully_as_(String expectedMessage)throws Exception {
+	      String actualMessage = billboardsPage.billboard_created_Success_display();
+	      String normalizedExpectedMessage = normalizeWhitespace(expectedMessage);
+	      String normalizedActualMessage = normalizeWhitespace(actualMessage);
+	      System.out.println(">> User or Admin got the BB PDF downloaded successfully"+actualMessage);
+	      assertEquals(normalizedExpectedMessage, normalizedActualMessage);
+	  }
+	@And("User click on Reject button and confirmed")
+	public void User_click_on_Reject_button_and_confirmed() throws Exception {
+		billboardsPage.Reject_for_non_operational_Billboards();
+		billboardsPage.reject_non_operational_confirmed();
+	}
+	@Then("^Billboard marked as Reject popup will be display successfully as \"([^\"]*)\"$")
+	public void Billboard_marked_as_Reject_popup_will_be_display_successfully_as_(String expectedMessage)throws Exception {
+	      String actualMessage = billboardsPage.billboard_created_Success_display();
+	      String normalizedExpectedMessage = normalizeWhitespace(expectedMessage);
+	      String normalizedActualMessage = normalizeWhitespace(actualMessage);
+	      System.out.println(">> User or Admin got the BB PDF downloaded successfully"+actualMessage);
+	      assertEquals(normalizedExpectedMessage, normalizedActualMessage);
+	  }
 }

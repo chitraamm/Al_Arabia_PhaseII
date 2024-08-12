@@ -9,7 +9,7 @@ And Admin or user clicks the billboards module
 Then Al-Arabia billboards dashboard should display successfully
 
 @billboards @billboards02 @regression @sanity @all
-Scenario Outline: T002_Invite the Billboard with valid inputs
+Scenario Outline: T002_Create new Billboard with valid inputs
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the billboards module
@@ -404,7 +404,23 @@ And Admin or user clicks the billboards module
 And User filter the billboards list status Pending
 And User clicks the Edit button of pending BillBoards
 And User click on Approve button and confirmed
-Then Billboard marked as Approved popup will be display successfully     
+Then Billboard marked as Approved popup will be display successfully as "<successMessage>"
+  Examples:
+      | successMessage                     |
+      | Success Approve as non-operational |  
+@billboards @billboards46 @smoke @regression @all
+Scenario Outline: T046_To verify the billboards features Reject Mark it as non operational
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the billboards module
+And User filter the billboards list status Pending
+And User clicks the Edit button of pending BillBoards
+And User click on Reject button and confirmed
+Then Billboard marked as Reject popup will be display successfully as "<successMessage>"
+  Examples:
+      | successMessage                     |
+      | Success Reject as non-operational | 
+        
       
 #@billboards @billboards46 @smoke @regression @all
 #Scenario Outline: T044_To verify the billboards feature filter Pending status billboards

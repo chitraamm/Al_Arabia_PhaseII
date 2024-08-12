@@ -177,8 +177,9 @@ public class Billboardspage extends Base {
 	@FindBy(id = "Create BillBoard")
 	private WebElement Newbillboard_create_BB_btn;
 
-	public void Newbillboard_create_BB_btn() {
-		//wait.until(ExpectedConditions.visibilityOf(create_BB_container));
+	public void Newbillboard_create_BB_btn() throws Exception {
+		Thread.sleep(2000);
+		wait.until(ExpectedConditions.visibilityOf(create_BB_container));
 		act.moveToElement(Newbillboard_create_BB_btn).click().perform();
 	}
 
@@ -821,15 +822,43 @@ private WebElement approve_container;
 private WebElement BB_approve_button;
 
 	public void Approve_for_non_operational_Billboards() throws Exception {
+		Thread.sleep(2000);
         wait.until(ExpectedConditions.visibilityOf(approve_container)).isDisplayed();  
 		act.moveToElement(BB_approve_button).click().perform();
 	}
+	@FindBy(xpath = "//h4[@class=' fw-semibold text-center text-black']")
+	private WebElement BB_approve_confirm_popup_display;
 @FindBy(xpath = "//h6[normalize-space()='Yes, mark it.']")
-private WebElement BB_approve_confirm_yes_button;
+private WebElement approve_confirm_yes_button;
 
-public void BB_approve_non_operational_confirmed() throws Exception {
 
-	wait.until(ExpectedConditions.visibilityOf(BB_update_confirm_yes_button)).click();
+public void approve_non_operational_confirmed() throws Exception {
+	Thread.sleep(2000);
+
+	wait.until(ExpectedConditions.visibilityOf(BB_approve_confirm_popup_display)).isDisplayed();
+	wait.until(ExpectedConditions.visibilityOf(approve_confirm_yes_button)).click();
+
+}
+
+@FindBy(id = "Reject")
+private WebElement reject_button;
+
+	public void Reject_for_non_operational_Billboards() throws Exception {
+		Thread.sleep(2000);
+        wait.until(ExpectedConditions.visibilityOf(approve_container)).isDisplayed();  
+		act.moveToElement(reject_button).click().perform();
+	}
+	@FindBy(xpath = "//h4[@class=' fw-semibold text-center text-black']")
+	private WebElement reject_confirm_popup_display;
+@FindBy(xpath = "//h6[normalize-space()='Yes, mark it.']")
+private WebElement reject_confirm_yes_button;
+
+
+public void reject_non_operational_confirmed() throws Exception {
+	Thread.sleep(2000);
+
+	wait.until(ExpectedConditions.visibilityOf(reject_confirm_popup_display)).isDisplayed();
+	wait.until(ExpectedConditions.visibilityOf(reject_confirm_yes_button)).click();
 
 }
 

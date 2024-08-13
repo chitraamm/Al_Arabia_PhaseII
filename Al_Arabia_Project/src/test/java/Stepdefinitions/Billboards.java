@@ -340,7 +340,7 @@ public class Billboards extends Base {
 }
 	@And("User clicks on the Plus button")
 	public void User_clicks_on_the_Plus_button() throws Exception {
-		billboardsPage.BB_plus_icon();
+		billboardsPage.plus_icon_click();
 }
 	@Then("BillBoard View page will be displayed successfully")
 	public void BillBoard_View_page_will_be_displayed_successfully () throws Exception {
@@ -501,4 +501,45 @@ public class Billboards extends Base {
 	      System.out.println(">> User or Admin got the BB PDF downloaded successfully"+actualMessage);
 	      assertEquals(normalizedExpectedMessage, normalizedActualMessage);
 	  }
+	@And("User enters mandatory fields of new ticket")
+	public void User_enters_mandatory_fields_of_new_ticket() throws Exception {
+		billboardsPage.Mandatory_fields_newticket();
+	}
+	@And("User clicks the create Ticket")
+	public void User_clicks_the_create_Ticket() throws Exception {
+		billboardsPage.NewTicket_create_btn();
+	}
+	@Then("^Ticket gets created from Add BillBoards page successfully with either \"([^\"]*)\" or \"([^\"]*)\"$")
+	public void Ticket_gets_created_from_Add_BillBoards_page_successfully_with_either (String expectedMessage1,
+			String expectedMessage2) throws Exception {
+		String actualMessage = billboardsPage.ticket_create_Success_display();
+		String normalizedActualMessage = normalizeWhitespace(actualMessage);
+
+		System.out.println(">> User or Admin got the ticket cerified success message successfully: " + actualMessage);
+
+		boolean matchesMessage1 = normalizedActualMessage.equals(normalizeWhitespace(expectedMessage1));
+		boolean matchesMessage2 = normalizedActualMessage.equals(normalizeWhitespace(expectedMessage2));
+
+		assertTrue("The actual message was neither of the expected success messages.",
+				matchesMessage1 || matchesMessage2);
+	}
+//	private String normalizeWhitespace(String input) {
+//		return input.replaceAll("\\s+", " ").trim();
+//	}
+	@And("User clicks on the View Ticket Tab")
+	public void User_clicks_on_the_View_Ticket_Tab() throws Exception {
+		billboardsPage.View_ticketBB();
+	}
+	@Then("View Ticket page will be displayed successfully")
+	public void View_Ticket_page_will_be_displayed_successfully() throws Exception {
+		billboardsPage.View_ticketBB_display();
+	}
+	@And("User clicks on the Activity Feed Tab")
+	public void User_clicks_on_the_Activity_Feed_Tab() throws Exception {
+		billboardsPage.Activity_FeedBB();
+	}
+	@Then("Activity Feed page will be displayed successfully")
+	public void Activity_page_will_be_displayed_successfully() throws Exception {
+		billboardsPage.Activity_FeedBB_display();
+	}
 }

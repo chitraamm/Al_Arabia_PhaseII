@@ -418,9 +418,38 @@ And User clicks the Edit button of pending BillBoards
 And User click on Reject button and confirmed
 Then Billboard marked as Reject popup will be display successfully as "<successMessage>"
   Examples:
-      | successMessage                     |
+      | successMessage                    |
       | Success Reject as non-operational | 
-        
+@billboards @billboards47 @smoke @regression @all
+Scenario Outline: T047_To verify the billboards feature Create New Ticket from Add BillBoards page
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the billboards module
+And User filter the billboards list status Active
+And User clicks on the Plus button
+And User enters mandatory fields of new ticket  
+And User clicks the create Ticket   
+Then Ticket gets created from Add BillBoards page successfully with either "<successMessage1>" or "<successMessage2>"
+  Examples:
+      | successMessage1       | successMessage2           |
+      | LOADING...            | Success Ticket created    |    
+@billboards @billboards48 @smoke @regression @all
+Scenario Outline: T048_To verify the billboards feature 'View Ticket' Tab in Add BillBoards page
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the billboards module
+And User clicks on the Plus button
+And User clicks on the View Ticket Tab
+Then View Ticket page will be displayed successfully
+
+@billboards @billboards49 @smoke @regression @all
+Scenario Outline: T049_To verify the billboards feature 'Activity Feed' in Add BillBoards page
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the billboards module
+And User clicks on the Plus button
+And User clicks on the Activity Feed Tab
+Then Activity Feed page will be displayed successfully	
       
 #@billboards @billboards46 @smoke @regression @all
 #Scenario Outline: T044_To verify the billboards feature filter Pending status billboards
@@ -491,7 +520,7 @@ Then Billboard marked as Reject popup will be display successfully as "<successM
 #When Al-Arabia overall dashboard should display
 #And User clicks the billboards module
 #And User filter the billboards list status-Active
-#And User search the billboards
+#And User the billboards
 #And Admin or User go the billboards profile page
 #And Admin or User update the billboards profile page
 #Then Particular billboards profile get updated successfully as "<successMessage>"

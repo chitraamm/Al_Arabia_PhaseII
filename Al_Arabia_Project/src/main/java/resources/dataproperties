@@ -38,7 +38,7 @@ Licence_number = KA0134442E2
 
 <---- Billboards page ---->
 
-BB_NO = BB_NO_01865
+BB_NO = BB_NO_01865942
 bb_location = Riyadh
 bb_ticket_count = 2
 bb_Type = Kazi
@@ -68,8 +68,8 @@ Departmnt1 = Cleaning
 Departmnt1 = Monitoring
 Departmnt1 = Spare Parts
 Departmnt1 = Installation
-Departmnt = Module Replacement
-Departmnt1 = Finance
+Departmnt1 = Module Replacement
+Departmnt = Finance
 Departmnt1 = Electrical
 Departmnt1 = Marketingdw
 Assignee = tomgeorge

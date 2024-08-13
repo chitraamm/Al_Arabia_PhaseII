@@ -599,12 +599,13 @@ public class Billboardspage extends Base {
 
 	}
 
-	@FindBy(xpath = "(//img[@class='pointer'])[5]")
-	private WebElement BB_plus_Buttonclick;
+	@FindBy(xpath = "//tbody/tr[1]/td[6]/div[2]/div[2]/img[1]")
+	private WebElement plus_Buttonclick;
 
-	public void BB_plus_icon() throws Exception {
+	public void plus_icon_click() throws Exception {
 
-		act.moveToElement(BB_plus_Buttonclick).click().perform();
+	//	act.moveToElement(plus_Buttonclick).click().perform();
+		wait.until(ExpectedConditions.visibilityOf(plus_Buttonclick)).click();
 	}
 
 	@FindBy(xpath = "(//h5[normalize-space()='BillBoard Number'])[1]")
@@ -861,5 +862,110 @@ public void reject_non_operational_confirmed() throws Exception {
 	wait.until(ExpectedConditions.visibilityOf(reject_confirm_yes_button)).click();
 
 }
+@FindBy(id = "react-select-13-input")
+private WebElement Department_select;
 
+@FindBy(id = "react-select-14-input")
+private WebElement Priority_select;
+
+@FindBy(id = "react-select-15-input")
+private WebElement Ticket_title_select;
+
+@FindBy(id = "react-select-16-input")
+private WebElement Assignee_select;
+
+@FindBy(id = "formikDateField_start_date")
+private WebElement Start_date;
+
+@FindBy(id = "formikDateField_end_date")
+private WebElement End_date;
+
+@FindBy(xpath = "//textarea[@id='description']")
+private WebElement Description_enter;
+
+public void Mandatory_fields_newticket() throws Exception{
+//	wait.until(ExpectedConditions.visibilityOf(BB_no_select));
+
+	//act.moveToElement(BB_no_select).click().sendKeys("" + Keys.ENTER).perform();
+	
+	String Departmnt = prop.getProperty("Departmnt");
+	wait.until(ExpectedConditions.visibilityOf(Department_select)).sendKeys(Departmnt);
+	Thread.sleep(1000);
+	act.moveToElement(Department_select).click().sendKeys(""+Keys.ENTER+Keys.ARROW_RIGHT).perform();
+	
+	act.moveToElement(Priority_select).click().sendKeys("" + Keys.ENTER).perform();
+		
+	String Tckt_title = prop.getProperty("Tckt_title");
+	wait.until(ExpectedConditions.visibilityOf(Ticket_title_select)).sendKeys(Tckt_title);
+	Thread.sleep(2000);
+	act.moveToElement(Ticket_title_select).click().sendKeys(""+Keys.ENTER+Keys.ARROW_RIGHT).perform();
+
+	Thread.sleep(2000);
+	String Assignee = prop.getProperty("Assignee");
+	wait.until(ExpectedConditions.visibilityOf(Assignee_select)).sendKeys(Assignee);
+	Thread.sleep(5000);
+	act.moveToElement(Assignee_select).click().sendKeys(""+Keys.ENTER+Keys.ARROW_RIGHT).perform();
+	
+	act.moveToElement(Start_date).click().sendKeys("" + Keys.ENTER).perform();
+	wait.until(ExpectedConditions.visibilityOf(Start_date));
+
+	act.moveToElement(End_date).click().sendKeys("" + Keys.ENTER).perform();
+	Thread.sleep(5000);
+
+	String Description = prop.getProperty("Description");
+	wait.until(ExpectedConditions.visibilityOf(Description_enter)).sendKeys(Description);
+}
+@FindBy(id = "Create Ticket")
+private WebElement Ticket_create_BB_btn;
+
+public void NewTicket_create_btn() {
+	act.moveToElement(Ticket_create_BB_btn).click().perform();
+}
+@FindBy(xpath = "//div[contains(@class, 'toastpop') and contains(@class, 'position-relative')]")
+private WebElement Ticket_created_Success_display;
+
+public String ticket_create_Success_display() throws Exception {
+	WebElement successMessageElement = wait.until(ExpectedConditions.visibilityOf(Ticket_created_Success_display));
+	return successMessageElement.getText().trim();
+}
+@FindBy(xpath = "//span[normalize-space()='View Tickets']")
+private WebElement click_view_ticket;
+
+public void View_ticketBB() throws Exception {
+	act.moveToElement(click_view_ticket).click().perform();
+	//wait.until(ExpectedConditions.visibilityOf(click_view_ticket)).click();
+}
+@FindBy(xpath = "//label[normalize-space()='Created By']")
+private WebElement View_Tickets_display;
+
+@FindBy(xpath = "//div[contains(text(),'No Tickets Found')]")
+private WebElement No_Tickets_found;
+
+public void View_ticketBB_display() {
+	try {
+		if (condition) {
+			wait.until(ExpectedConditions.visibilityOf(View_Tickets_display));
+			AssertJUnit.assertTrue(View_Tickets_display.isDisplayed());
+			System.out.println(">> User got the View Ticket page");
+		} else {
+			wait.until(ExpectedConditions.visibilityOf(No_Tickets_found));
+		}
+	} catch (Exception e) {
+		wait.until(ExpectedConditions.visibilityOf(No_Tickets_found));
+	}
+}
+@FindBy(xpath = "//span[normalize-space()='Activity Feed']")
+private WebElement activity_feed;
+
+public void Activity_FeedBB() throws Exception {
+	//wait.until(ExpectedConditions.visibilityOf(BB_View_page_display)).isDisplayed();
+	act.moveToElement(activity_feed).click().perform();
+}
+@FindBy(xpath = "//span[normalize-space()='Activity Feed']")
+private WebElement activityfeed_display;
+
+public void Activity_FeedBB_display() throws Exception {
+	wait.until(ExpectedConditions.visibilityOf(activityfeed_display)).isDisplayed();
+	AssertJUnit.assertTrue(activityfeed_display.isDisplayed());
+}
 }

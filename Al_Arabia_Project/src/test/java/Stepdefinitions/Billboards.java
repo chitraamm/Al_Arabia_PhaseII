@@ -542,4 +542,20 @@ public class Billboards extends Base {
 	public void Activity_page_will_be_displayed_successfully() throws Exception {
 		billboardsPage.Activity_FeedBB_display();
 	}
+	@And("User filter the billboards Faulty")
+	public void User_filter_the_billboards_Faulty() throws Exception {
+		billboardsPage.Faulty_status();
+	}
+	@Then("Faulty billboards list get displayed successfully")
+	public void Faulty_billboards_list_get_displayed_successfully() throws Exception {
+		billboardsPage.BB_filtered_result_display();
+	}
+	@And("User filter the billboards Alarm")
+	public void User_filter_the_billboards_Alarm() throws Exception {
+		billboardsPage.Alarm_status();
+	}
+	@Then("Alarm billboards list get displayed successfully")
+	public void Alarm_billboards_list_get_displayed_successfully() throws Exception {
+		billboardsPage.BB_filtered_result_display();
+	}
 }

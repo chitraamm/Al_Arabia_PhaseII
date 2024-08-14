@@ -968,4 +968,20 @@ public void Activity_FeedBB_display() throws Exception {
 	wait.until(ExpectedConditions.visibilityOf(activityfeed_display)).isDisplayed();
 	AssertJUnit.assertTrue(activityfeed_display.isDisplayed());
 }
+@FindBy(id = "fault")
+private WebElement faulty_status;
+public void Faulty_status() {
+	wait.until(ExpectedConditions.visibilityOf(Billboard_filter)).click();;
+	act.moveToElement(faulty_status).click().perform();
+	act.moveToElement(Billboard_filter_apply_btn).click().perform();
+	System.out.println(">> User clicked Faulty status in filter");
+}
+@FindBy(id = "alaram")
+private WebElement alarm_status;
+public void Alarm_status() {
+	wait.until(ExpectedConditions.visibilityOf(Billboard_filter)).click();;
+	act.moveToElement(alarm_status).click().perform();
+	act.moveToElement(Billboard_filter_apply_btn).click().perform();
+	System.out.println(">> User clicked Alarm status in filter");
+}
 }

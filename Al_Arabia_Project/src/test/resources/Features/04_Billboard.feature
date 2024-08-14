@@ -450,7 +450,23 @@ And Admin or user clicks the billboards module
 And User clicks on the Plus button
 And User clicks on the Activity Feed Tab
 Then Activity Feed page will be displayed successfully	
-      
+
+@billboards @billboards50 @smoke @regression @all
+Scenario Outline: T050_To verify the billboards feature faulty
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the billboards module
+And User filter the billboards Faulty
+Then Faulty billboards list get displayed successfully
+
+@billboards @billboards51 @smoke @regression @all
+Scenario Outline: T051_To verify the billboards feature Alarm
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the billboards module
+And User filter the billboards Alarm
+Then Alarm billboards list get displayed successfully
+       
 #@billboards @billboards46 @smoke @regression @all
 #Scenario Outline: T044_To verify the billboards feature filter Pending status billboards
 #Given Admin logged in with valid credentials

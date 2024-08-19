@@ -1,5 +1,5 @@
 Feature: Tickets
-Admin, Manager and Supervisor can able to access the Tickets feature, if they are get the roles access only
+Admin, Manager and Supervisor can able to access the Tickets feature,only if they have roles access
 
 @Tickets @Tickets01 @smoke @regression @all
 Scenario Outline: T001_Verify Tickets page

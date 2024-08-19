@@ -17,6 +17,7 @@ import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import pageobjects.Billboardspage;
 import pageobjects.Forgotpasswordpage;
+import pageobjects.Inventorypage;
 import pageobjects.Signinpage;
 import pageobjects.Memberspage;
 import pageobjects.Profilepage;
@@ -28,6 +29,8 @@ public class Testhooks extends Base {
 	public Memberspage memberspage;
 	public Forgotpasswordpage forgotpasswordpage;
 	public Billboardspage billboardspage;
+		public Inventorypage inventorypage;
+
 	public Profilepage profilepage;
 	 private static Logger LOGGER =
 			   LogManager.getLogger(Testhooks.class);
@@ -48,6 +51,8 @@ public class Testhooks extends Base {
 		memberspage = new Memberspage(driver);
 		forgotpasswordpage = new Forgotpasswordpage(driver);
 		billboardspage = new Billboardspage(driver);
+		inventorypage = new Inventorypage(driver);
+
 		profilepage = new Profilepage(driver);
 		
 		driver.get(prop.getProperty("Al_Arabia_URL"));

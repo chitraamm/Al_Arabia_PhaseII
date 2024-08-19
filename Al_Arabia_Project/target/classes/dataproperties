@@ -74,3 +74,10 @@ Departmnt1 = Electrical
 Departmnt1 = Marketingdw
 Assignee = tomgeorge
 Assignee1 = tom
+
+<---------Inventory--------->
+
+invoiceid = 6545
+purchasenumber = 57
+consignmentnumber = 30
+projectname = testproject

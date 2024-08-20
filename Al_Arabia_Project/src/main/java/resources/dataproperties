@@ -77,7 +77,10 @@ Assignee1 = tom
 
 <---------Inventory--------->
 
+suppliername = FABULUX
 invoiceid = 6545
 purchasenumber = 57
 consignmentnumber = 30
 projectname = testproject
+QTY = 5
+Invoiceid = 6545

@@ -203,8 +203,8 @@ public class Ticketspage extends Base {
 		} else {
 			System.out.println("Element is not displayed");
 		}
-		LOGGER.info(">> Admin/User clicked new ticket btn");
-		System.out.println(">> User got sorted Ticket list: " + Ticketlist.getText());
+		LOGGER.info(">> Admin/User searched a Ticket");
+		System.out.println(">> User got searched Ticket list: " + Ticketlist.getText());
 	}
 
 	@FindBy(xpath = "(//h6[contains(@class,'m-0 by fw-normal')][normalize-space()='Recently Added'])[1]")

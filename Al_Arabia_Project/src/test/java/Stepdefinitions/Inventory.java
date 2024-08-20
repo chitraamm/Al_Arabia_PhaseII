@@ -61,4 +61,62 @@ public class Inventory extends Base {
 	private String normalizeWhitespace(String input) {
 		return input.replaceAll("\\s+", " ").trim();
 	}
+	@And("Admin or user search the Purchases")
+	public void Admin_or_user_search_the_Purchases() throws Exception {
+		inventorypage.Purchases_search_enter_text();
+	}
+
+	@Then("Searched Purchase details get displayed successfully")
+	public void Searched_Purchase_details_get_displayed_successfully() {
+		inventorypage.PurchasesSearchedList();
+	}
+	@And("Admin or user sort the Purchases list recently updated")
+	public void Admin_or_user_sort_the_Purchases_list_recently_updated() throws Exception {
+		inventorypage.Purchases_sort_recentlyupdated();
+	}
+
+	@Then("Recently updated Purchases list get displayed successfully")
+	public void Recently_updated_Purchases_list_get_displayed_successfully() throws Exception {
+		inventorypage.Purchaseslist();
+	}
+
+	@And("User sort the Purchases list Name A to Z")
+	public void User_sort_the_Purchases_list_Name_A_to_Z() throws Exception {
+		inventorypage.Purchases_sortZ_A();
+	}
+
+	@Then("Purchases list get displayed successfully")
+	public void Purchases_list_get_displayed_successfully() throws Exception {
+		inventorypage.Purchaseslist();
+	}
+
+	@And("User sort the Purchases list Name Z to A")
+	public void User_sort_the_Purchases_list_Name_Z_to_A() throws Exception {
+		inventorypage.Purchases_sortZ_A();
+	}
+
+	@Then("Purchases list Z to A get displayed successfully")
+	public void Purchases_list_Z_to_A_get_displayed_successfully() throws Exception {
+		inventorypage.Purchaseslist();
+	}
+
+	@And("User sort the Purchases list Recently Added")
+	public void User_sort_the_Purchases_list_Recently_Added() throws Exception {
+		inventorypage.Purchases_sort_recentlyadded();
+	}
+
+	@Then("Recent Purchases list get displayed successfully")
+	public void Recent_Purchases_list_get_displayed_successfully() throws Exception {
+		inventorypage.Purchaseslist();
+	}
+	@And("User sort the Purchases list decending")
+	public void User_sort_the_Purchases_list_Decending() throws Exception {
+		inventorypage.Purchases_DecendingDate();
+	}
+
+	@Then("Decending Purchases list get displayed successfully")
+	public void Decending_Purchases_list_get_displayed_successfully() throws Exception {
+		inventorypage.Purchaseslist();
+	}
+	
 }

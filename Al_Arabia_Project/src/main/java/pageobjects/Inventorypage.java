@@ -19,6 +19,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.AssertJUnit;
 
+import net.bytebuddy.asm.Advice.Enter;
 import resources.Base;
 
 public class Inventorypage extends Base {
@@ -121,10 +122,22 @@ public class Inventorypage extends Base {
 	@FindBy(xpath = "//input[@name='project_name']")
 	private WebElement project_name;
 	
+	@FindBy(id = "react-select-4-input")
+	private WebElement stock_code;
+	
+	@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[2]/div[2]/form/div[3]/div[2]/div/table/tbody/tr/td[4]/form/div/div/input")
+	private WebElement quantity;
+	
+	@FindBy(id = "Save")
+	private WebElement save_stock;
+	
 	public void Mandatory_fields_enter_new_purchase() throws Exception {
-		wait.until(ExpectedConditions.visibilityOf(supplier_name));
-
-		act.moveToElement(supplier_name).click().sendKeys("" + Keys.ENTER).perform();
+		
+		String suppliername = prop.getProperty("suppliername");
+		wait.until(ExpectedConditions.visibilityOf(supplier_name)).sendKeys(suppliername);
+		Thread.sleep(2000);
+		act.moveToElement(supplier_name).click().sendKeys(""+Keys.ENTER+Keys.ARROW_RIGHT).perform();
+		
 		
 		String invoiceid = prop.getProperty("invoiceid");
 		wait.until(ExpectedConditions.visibilityOf(invoice_id)).sendKeys(invoiceid);
@@ -146,12 +159,113 @@ public class Inventorypage extends Base {
 		
 		String projectname = prop.getProperty("projectname");
 		wait.until(ExpectedConditions.visibilityOf(project_name)).sendKeys(projectname);
+		
+		wait.until(ExpectedConditions.visibilityOf(stock_code));
+		act.moveToElement(stock_code).click().sendKeys(""+Keys.ENTER).perform();
+		
+		wait.until(ExpectedConditions.visibilityOf(stock_code));
+		String QTY =prop.getProperty("QTY");
+		Thread.sleep(2000);
+        act.moveToElement(quantity).click().sendKeys(""+(QTY)).perform();
+        
+        act.moveToElement(save_stock).click().perform();
 	}
-	@FindBy(xpath = "")
+	@FindBy(id = "Add Purchase")
 	private WebElement add_purchase_button;
 	
 	public void Add_purchase_button() {
 		wait.until(ExpectedConditions.visibilityOf(add_purchase_button)).click();
+	}
+	@FindBy(xpath = "//div[contains(@class, 'toastpop') and contains(@class, 'position-relative')]")
+	private WebElement inventory_created_Success_display;
+
+	public String inventory_create_Success_display() throws Exception {
+		WebElement successMessageElement = wait.until(ExpectedConditions.visibilityOf(inventory_created_Success_display));
+		return successMessageElement.getText().trim();
+	}
+	
+	@FindBy(id = "doc_searchQueryInput")
+	private WebElement PurchasesSearch;
+	
+	public void Purchases_search_enter_text() {
+		wait.until(ExpectedConditions.visibilityOf(PurchasesSearch)).click();
+		String Purchases_Search = prop.getProperty("Invoiceid");
+		wait.until(ExpectedConditions.visibilityOf(PurchasesSearch)).sendKeys(Purchases_Search + Keys.ENTER);
+		System.out.println(">> User enter the Purchase id in search field: " + Purchases_Search);
+	}
+	@FindBy(xpath = "(//input[@id='doc_searchQueryInput'])[1]")
+	private WebElement PurchasesSearched, purchasesSearch;
+
+	public void PurchasesSearchedList() {
+		wait.until(ExpectedConditions.visibilityOf(purchasesSearch));
+
+		if (PurchasesSearched.isDisplayed()) {
+			System.out.println("Element is displayed");
+		} else {
+			System.out.println("Element is not displayed");
+		}
+		LOGGER.info(">> Admin/User searched purchases");
+		System.out.println(">> User got searched purchases list: " + PurchasesSearched.getText());
+	}
+
+	public void Purchaseslist() {
+		wait.until(ExpectedConditions.visibilityOf(purchasesSearch));
+
+		if (purchasesSearch.isDisplayed()) {
+			System.out.println("Element is displayed");
+		} else {
+			System.out.println("Element is not displayed");
+		}
+		LOGGER.info(">> Admin/User clicked new purchase btn");
+		System.out.println(">> User got sorted purchase list: " + purchasesSearch.getText());
+	}
+
+	@FindBy(xpath = "(//h6[contains(@class,'m-0 by fw-normal')][normalize-space()='Recently Added'])[1]")
+	private WebElement purchase_sort;
+
+	@FindBy(xpath = "(//h6[contains(text(),'Recently Updated')])[1]")
+	private WebElement purchases_sort_recentlyupdated;
+
+	@FindBy(xpath = "(//h6[contains(text(),'Recently Added')])[2]")
+	private WebElement purchases_sort_recentlyadded;
+
+	public void Purchases_sort_recentlyupdated() {
+		wait.until(ExpectedConditions.visibilityOf(purchase_sort)).click();
+		wait.until(ExpectedConditions.visibilityOf(purchases_sort_recentlyupdated)).click();
+		System.out.println(">> User clicked recently updated in sort");
+	}
+
+	public void Purchases_sort_recentlyadded() {
+		wait.until(ExpectedConditions.visibilityOf(purchase_sort)).click();
+		wait.until(ExpectedConditions.visibilityOf(purchases_sort_recentlyadded)).click();
+		System.out.println(">> User clicked recently added in sort");
+	}
+
+	@FindBy(xpath = "(//h6[contains(text(),'Name - A to Z')])[1]")
+	private WebElement purchase_Name_A_to_Z;
+
+	public void Purchases_sortZ_A() {
+		wait.until(ExpectedConditions.visibilityOf(purchase_sort)).click();
+		wait.until(ExpectedConditions.visibilityOf(purchase_Name_A_to_Z)).click();
+		System.out.println(">> User clicked recently updated in sort");
+	}
+
+	@FindBy(xpath = "(//h6[contains(text(),'Name - Z to A')])[1]")
+	private WebElement purchase_Name_Z_to_A;
+
+	public void Purchase_sortZ_A() {
+		wait.until(ExpectedConditions.visibilityOf(purchase_sort)).click();
+		wait.until(ExpectedConditions.visibilityOf(purchase_Name_Z_to_A)).click();
+		System.out.println(">> User clicked Z-A updated in sort");
+	}
+
+	@FindBy(xpath = "(//h6[contains(text(),'Decending - Date')])[1]")
+	private WebElement purchase_Name_decending;
+
+	public void Purchases_DecendingDate() {
+		wait.until(ExpectedConditions.visibilityOf(purchase_sort)).click();
+		wait.until(ExpectedConditions.visibilityOf(purchase_Name_decending)).click();
+		System.out.println(">> User clicked decending updated in sort");
 	}
 	 
 }

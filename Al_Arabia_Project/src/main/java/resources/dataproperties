@@ -84,3 +84,8 @@ consignmentnumber = 30
 projectname = testproject
 QTY = 5
 Invoiceid = 6545
+
+<---------Cleaning--------->
+
+groupname = cleanings1
+billboardsname = AHDBL03 B

@@ -1,0 +1,69 @@
+[INFO ] 2024-08-21 15:44:34.998 [main] Testhooks - Execution Started
+[INFO ] 2024-08-21 15:44:35.885 [main] Testhooks - Browser got launched
+[INFO ] 2024-08-21 15:44:37.959 [main] Testhooks - Navigated to url
+[INFO ] 2024-08-21 15:44:39.169 [main] Signinpage - User enters valid email address
+[INFO ] 2024-08-21 15:44:39.301 [main] Signinpage - User enters valid password
+[INFO ] 2024-08-21 15:44:39.409 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-08-21 15:44:39.409 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-08-21 15:44:50.518 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-08-21 15:44:51.789 [main] Ticketspage - >> Admin/User got navigated to Tickets page
+[INFO ] 2024-08-21 15:44:52.463 [main] Ticketspage - >> The Download Popup got displayed
+[INFO ] 2024-08-21 15:45:08.611 [main] Testhooks - Execution Started
+[INFO ] 2024-08-21 15:45:09.464 [main] Testhooks - Browser got launched
+[INFO ] 2024-08-21 15:45:11.221 [main] Testhooks - Navigated to url
+[INFO ] 2024-08-21 15:45:12.428 [main] Signinpage - User enters valid email address
+[INFO ] 2024-08-21 15:45:12.556 [main] Signinpage - User enters valid password
+[INFO ] 2024-08-21 15:45:12.665 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-08-21 15:45:12.665 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-08-21 15:45:23.768 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-08-21 15:45:24.167 [main] Inventorypage - >> Admin/User got navigated to inventory page
+[INFO ] 2024-08-21 15:45:37.545 [main] Testhooks - Execution Started
+[INFO ] 2024-08-21 15:45:38.381 [main] Testhooks - Browser got launched
+[INFO ] 2024-08-21 15:45:40.900 [main] Testhooks - Navigated to url
+[INFO ] 2024-08-21 15:45:42.110 [main] Signinpage - User enters valid email address
+[INFO ] 2024-08-21 15:45:42.240 [main] Signinpage - User enters valid password
+[INFO ] 2024-08-21 15:45:42.349 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-08-21 15:45:42.349 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-08-21 15:45:50.801 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-08-21 15:45:51.358 [main] Inventorypage - >> Admin/User got navigated to inventory page
+[INFO ] 2024-08-21 15:46:22.669 [main] Testhooks - Failed scenario screenshot got capturedT011_To verify the Inventory feature Download as PDF
+[INFO ] 2024-08-21 15:48:09.490 [main] Testhooks - Execution Started
+[INFO ] 2024-08-21 15:48:10.284 [main] Testhooks - Browser got launched
+[INFO ] 2024-08-21 15:48:11.990 [main] Testhooks - Navigated to url
+[INFO ] 2024-08-21 15:48:13.199 [main] Signinpage - User enters valid email address
+[INFO ] 2024-08-21 15:48:13.330 [main] Signinpage - User enters valid password
+[INFO ] 2024-08-21 15:48:13.436 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-08-21 15:48:13.437 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-08-21 15:48:22.348 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-08-21 15:48:22.891 [main] Inventorypage - >> Admin/User got navigated to inventory page
+[INFO ] 2024-08-21 16:54:06.604 [main] Testhooks - Execution Started
+[INFO ] 2024-08-21 16:54:07.399 [main] Testhooks - Browser got launched
+[INFO ] 2024-08-21 16:54:11.838 [main] Testhooks - Navigated to url
+[INFO ] 2024-08-21 16:54:13.023 [main] Signinpage - User enters valid email address
+[INFO ] 2024-08-21 16:54:13.153 [main] Signinpage - User enters valid password
+[INFO ] 2024-08-21 16:54:13.259 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-08-21 16:54:13.260 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-08-21 16:54:18.143 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-08-21 16:54:18.720 [main] Cleaningpage - >> Admin/User got navigated to cleaning page
+[INFO ] 2024-08-21 16:54:19.026 [main] Cleaningpage - >> The Cleaning page got displayed
+[INFO ] 2024-08-21 16:54:19.026 [main] Cleaning - >> Admin/user got the Cleaning page >>
+[INFO ] 2024-08-21 17:23:07.758 [main] Testhooks - Execution Started
+[INFO ] 2024-08-21 17:23:08.793 [main] Testhooks - Browser got launched
+[INFO ] 2024-08-21 17:23:11.198 [main] Testhooks - Navigated to url
+[INFO ] 2024-08-21 17:23:12.419 [main] Signinpage - User enters valid email address
+[INFO ] 2024-08-21 17:23:12.556 [main] Signinpage - User enters valid password
+[INFO ] 2024-08-21 17:23:12.665 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-08-21 17:23:12.665 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-08-21 17:23:20.671 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-08-21 17:23:21.400 [main] Cleaningpage - >> Admin/User got navigated to cleaning page
+[INFO ] 2024-08-21 17:23:21.852 [main] Cleaningpage - >> The Cleaning page got displayed
+[INFO ] 2024-08-21 17:23:21.852 [main] Cleaning - >> Admin/user got the Cleaning page >>
+[INFO ] 2024-08-21 17:28:21.808 [main] Testhooks - Execution Started
+[INFO ] 2024-08-21 17:28:22.734 [main] Testhooks - Browser got launched
+[INFO ] 2024-08-21 17:28:26.880 [main] Testhooks - Navigated to url
+[INFO ] 2024-08-21 17:28:28.103 [main] Signinpage - User enters valid email address
+[INFO ] 2024-08-21 17:28:28.235 [main] Signinpage - User enters valid password
+[INFO ] 2024-08-21 17:28:28.342 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-08-21 17:28:28.342 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-08-21 17:28:30.748 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-08-21 17:28:32.415 [main] Testhooks - Failed scenario screenshot got capturedT002_Create the New Purchase with valid inputs

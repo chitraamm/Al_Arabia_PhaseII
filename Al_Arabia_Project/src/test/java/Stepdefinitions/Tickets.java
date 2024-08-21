@@ -243,8 +243,8 @@ public class Tickets extends Base {
 	public void User_clicks_the_Download_button() throws Exception {
 		ticketsPage.Download_button_Ticketspage();
 	}
-	@Then("Download pop up will be displayed successfully")
-	public void Download_pop_up_will_be_displayed_successfully() throws Exception {
+	@Then("Purchase Download pop up will be displayed successfully")
+	public void Purchase_Download_pop_up_will_be_displayed_successfully() throws Exception {
 		ticketsPage.Tickets_Download_popup_display();
 	}
 	@And("User clicks the Download button with Download As Excel")
@@ -252,8 +252,8 @@ public class Tickets extends Base {
 		ticketsPage.Download_button_Ticketspage();
 		ticketsPage.Tickets_Download_Excel();
 	}
-	@And("User clicks the Download button with Download As PDF")
-	public void User_clicks_the_Download_button_with_Download_As_PDF() throws Exception {
+	@And("User clicks the Download button with Download As PDF for purchases")
+	public void User_clicks_the_Download_button_with_Download_As_PDF_for_purchases() throws Exception {
 		ticketsPage.Download_button_Ticketspage();
 		ticketsPage.Tickets_Download_PDF();
 	}

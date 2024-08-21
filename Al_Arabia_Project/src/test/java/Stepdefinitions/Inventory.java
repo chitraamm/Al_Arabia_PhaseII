@@ -118,5 +118,32 @@ public class Inventory extends Base {
 	public void Decending_Purchases_list_get_displayed_successfully() throws Exception {
 		inventorypage.Purchaseslist();
 	}
+	@And("User clicks the Download button in inventory page")
+	public void User_clicks_the_Download_button_in_inventory_page() throws Exception {
+		inventorypage.Download_button_inventorypage();
+	}
+	@Then("Download pop up will be displayed successfully")
+	public void Download_pop_up_will_be_displayed_successfully() throws Exception {
+		inventorypage.Purchases_Download_popup_display();
+	}
+	@And("User clicks the Download button with Download As Excel of Purchase list")
+	public void User_clicks_the_Download_button_with_Download_As_Excel_of_Purchase_list() throws Exception {
+		inventorypage.Download_button_inventorypage();
+		inventorypage.Purchases_Download_Excel();
+	}
+	@And("User clicks the Download button with Download As PDF")
+	public void User_clicks_the_Download_button_with_Download_As_PDF() throws Exception {
+		inventorypage.Download_button_inventorypage();
+		inventorypage.Purchases_Download_PDF();
+	}
+	@And("User clicks the Download button in inventory page after that click on close button")
+	public void User_clicks_the_Download_in_inventory_page_after_that_click_on_close_button() throws Exception {
+		inventorypage.Download_button_inventorypage();
+		inventorypage.Purchases_Download_popup_close();
+	}
+	@Then("The Download pop up get closed successfully and display the Inventory list")
+	public void The_Download_pop_up_get_closed_successfully_and_display_the_Inventory_list() throws Exception {
+		inventorypage.Download_popupclosd_displayed_Purchases();
+	}
 	
 }

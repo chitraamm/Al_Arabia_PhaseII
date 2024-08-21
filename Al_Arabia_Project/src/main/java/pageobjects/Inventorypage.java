@@ -267,5 +267,48 @@ public class Inventorypage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(purchase_Name_decending)).click();
 		System.out.println(">> User clicked decending updated in sort");
 	}
-	 
+	@FindBy(xpath = "(//h6[contains(@class,'m-0 fw-normal')][normalize-space()='Download'])[1]")
+	private WebElement download_buttn_inventorypage;
+
+	public void Download_button_inventorypage() {
+		act.moveToElement(download_buttn_inventorypage).click().perform();
+		System.out.println(">> User clicked Download button");
+	}
+
+	@FindBy(xpath = "//div[contains(text(),'Download')]")
+	private WebElement purchases_Download_popup_display;
+
+	public void Purchases_Download_popup_display() {
+		wait.until(ExpectedConditions.visibilityOf(purchases_Download_popup_display)).isDisplayed();
+		AssertJUnit.assertTrue(purchases_Download_popup_display.isDisplayed());
+		LOGGER.info(">> The Download Popup got displayed");
+	}
+
+	@FindBy(xpath = "//div[normalize-space()='As Excel']")
+	private WebElement purchases_Download_excel;
+
+	public void Purchases_Download_Excel() {
+		wait.until(ExpectedConditions.visibilityOf(purchases_Download_excel)).click();
+	}
+
+	@FindBy(xpath = "//div[normalize-space()='As PDF']")
+	private WebElement purchases_Download_pdf;
+
+	public void Purchases_Download_PDF() {
+		wait.until(ExpectedConditions.visibilityOf(purchases_Download_pdf)).click();
+	}
+
+	@FindBy(xpath = "//span[@class='cursor-pointer']//*[name()='svg']")
+	private WebElement purchase_Download_popupclose;
+
+	public void Purchases_Download_popup_close() throws Exception {
+
+		wait.until(ExpectedConditions.visibilityOf(purchase_Download_popupclose)).click();
+	}
+
+	public void Download_popupclosd_displayed_Purchases() {
+		wait.until(ExpectedConditions.visibilityOf(purchaseCount)).isDisplayed();
+		AssertJUnit.assertTrue(purchaseCount.isDisplayed());
+		LOGGER.info(">> The Download Popup get closed and listed Purchases");
+	}
 }

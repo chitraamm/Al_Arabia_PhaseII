@@ -2,7 +2,7 @@ Feature: Inventory
 Admin, Manager and Supervisor can able to access the Inventory feature,only if they have roles access
 
 @Inventory @Inventory01 @smoke @regression @all
-Scenario Outline: T001_Verify Inventory page
+Scenario Outline: T001_Verify Inventory page of Materials received from supplier
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module
@@ -50,7 +50,7 @@ Scenario Outline: T006_To verify the Purchases feature sort Name - Z to A
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module
-And User sort the billboards list Name Z to A 
+And User sort the Purchases list Name Z to A 
 Then Purchases list Z to A get displayed successfully
 
 @Inventory @Inventory07 @smoke @regression @all
@@ -67,4 +67,36 @@ Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module
 And User sort the Purchases list decending
-Then Decending Purchases list get displayed successfully      
+Then Decending Purchases list get displayed successfully  
+
+@Inventory @Inventory09 @smoke @regression @all
+Scenario Outline: T009_To verify the Tickets feature Download button in inventory page
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Tickets module
+And User clicks the Download button 
+Then Purchase Download pop up will be displayed successfully
+
+@Inventory @Inventory10 @smoke @regression @all
+Scenario Outline: T010_To verify the Inventory feature Download as Excel Purchases
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Inventory module
+And User clicks the Download button with Download As Excel of Purchase list
+      
+@Inventory @Inventory11 @smoke @regression @all
+Scenario Outline: T011_To verify the Inventory feature Download as PDF
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Inventory module
+And User clicks the Download button with Download As PDF for purchases
+      
+@Inventory @Inventory12 @smoke @regression @all
+Scenario Outline: T012_To verify the Inventory feature Download popup close
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Inventory module
+And User clicks the Download button in inventory page after that click on close button 
+Then The Download pop up get closed successfully and display the Inventory list
+
+    

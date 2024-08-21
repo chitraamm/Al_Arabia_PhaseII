@@ -1,5 +1,5 @@
 package Runner;
-
+	
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -9,7 +9,7 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/test/resources/Features", glue = {"Hooks",
-		"Stepdefinitions"}, tags = "@Inventory08", plugin = {"pretty",
+		"Stepdefinitions"}, tags = "@Cleaning02", plugin = {"pretty",
 				"html:target/CucumberReports/CucumberReport.html",
 				"json:target/CucumberReports/CucumberReport.json",
 				"junit:target/CucumberReports/CucumberReport.xml",

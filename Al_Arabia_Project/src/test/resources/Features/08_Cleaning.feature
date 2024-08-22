@@ -18,8 +18,8 @@ And Admin or user enters the all mandatory fields of New Group
 And Admin or user clicks the Create Group button 
 Then Particular Group gets created successfully with either "<successMessage1>" or "<successMessage2>"
   Examples:
-      | successMessage1       | successMessage2              |
-      | LOADING...            | Success Material info added  |
+      | successMessage1       | successMessage2        |
+      | LOADING...            | Success Group Created  |
 
 @Cleaning @Cleaning03 @smoke @regression @all
 Scenario Outline: T003_ the Purchases feature search a Purchase by using Invoice id

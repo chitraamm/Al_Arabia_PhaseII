@@ -22,7 +22,7 @@ public class Cleaning extends Base {
 		this.driver = testhooks.getDriver();
 		this.cleaningpage = new Cleaningpage(driver);
 		new Signinpage(driver);
-		LOGGER = LogManager.getLogger(Cleaning.class.getName());
+		LOGGER = LogManager.getLogger(Master.class.getName());
 	}
 	@And("Admin or user clicks the Cleaning module")
 	public void Admin_or_user_clicks_the_Cleaning_module() throws Exception {

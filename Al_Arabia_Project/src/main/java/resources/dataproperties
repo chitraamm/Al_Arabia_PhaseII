@@ -87,5 +87,7 @@ Invoiceid = 6545
 
 <---------Cleaning--------->
 
-groupname = cleanings1
-billboardsname = AHDBL03 B
+groupname = cleanings3
+billboardsname = AJB01
+assignee = tomgeorge
+descriptiontexts = cleaning created

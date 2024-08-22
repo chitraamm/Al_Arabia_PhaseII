@@ -25,7 +25,7 @@ public class Cleaningpage extends Base {
 	private Properties prop;
 	private Actions act;
 	private Logger LOGGER = LogManager.getLogger(Cleaningpage.class);
-	private Signinpage signinpage;
+	//private Signinpage signinpage;
 
 
 	public Cleaningpage(WebDriver driver) throws Exception {
@@ -37,7 +37,7 @@ public class Cleaningpage extends Base {
 		FileInputStream fis = new FileInputStream(propPath);
 		prop.load(fis);
 		initializeWait();
-		this.signinpage = new Signinpage(driver);
+		//this.signinpage = new Signinpage(driver);
 		LOGGER = LogManager.getLogger(Cleaningpage.class.getName());
 	}
 
@@ -82,43 +82,43 @@ public class Cleaningpage extends Base {
 		LOGGER.info(">> The Cleaning page got displayed");
 	}
 	
-	@FindBy(xpath = "(//h6[contains(@class,'m-0 fw-normal')][normalize-space()='New Group'])[1]")
+	@FindBy(id = "New Group")
 	private WebElement click_New_Group_button;
 	
 	public void New_Group_button() {
 		wait.until(ExpectedConditions.visibilityOf(click_New_Group_button)).click();
 	}
-	@FindBy(id = "group_name")
+	@FindBy(xpath = "//*[@id=\"group_name\"]")
 	private WebElement group_Name;
 	
-	@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[2]/div[2]/div/form/div/div[1]/div/div[2]/div/div/div/div/div[1]/div")
+	@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[2]/div[2]/div/form/div/div/div/div[2]/div/div/div/div/div[1]")
 	private WebElement ticket_title;
 	
-	@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[2]/div[2]/div/form/div/div[1]/div/div[4]/div/div/div/div/div[1]/div")
+	@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[2]/div[2]/div/form/div/div/div/div[4]/div/div/div/div")
 	private WebElement schedule;
 	
-	@FindBy(id = "react-select-11-input")
+	@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[2]/div[2]/div/form/div/div/div/div[5]/div/div/div/div/div[1]/div[2]")
 	private WebElement Billboard_Type ;
 	
-	@FindBy(id = "react-select-14-input")
-	private WebElement Billboards;
+	@FindBy(xpath = "(//div[contains(@class,'select__input-container css-19bb58m')])[3]")
+	private WebElement nameofBillboard;
 	
-	@FindBy(xpath = "//div[contains(text(),'Medium')]")
+	@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[2]/div[2]/div/form/div/div/div/div[10]/div/div/div/div/div[1]")
 	private WebElement Priority;
 	
-	@FindBy(xpath = "react-select-16-input")
+	@FindBy(id = "react-select-16-input")
 	private WebElement Assignee;
 	
-	@FindBy(xpath = "//input[@name='start_date']")
+	@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[2]/div[2]/div/form/div/div/div/div[12]/div/div[1]/input")
 	private WebElement Start_Date;
 	
-	@FindBy(xpath = "//input[@name='start_date']")
+	@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[2]/div[2]/div/form/div/div/div/div[12]/div/div[1]/div[2]/div/div/div/div/div[2]/div[1]/div/div[6]/div[3]/span")
 	private WebElement selected_start_date;
 	
 //	@FindBy(xpath = "//input[@name='invoice_date']")
 //	private WebElement End_Date;
 	
-	@FindBy(xpath = "//textarea[@id='description']")
+	@FindBy(xpath = "//*[@id=\"description\"]")
 	private WebElement Description;
 	
 	public void Mandatory_fields_enter_new_cleaning() throws Exception {
@@ -134,19 +134,42 @@ public class Cleaningpage extends Base {
 	Thread.sleep(1000);
 	act.moveToElement(schedule).click().sendKeys(""+Keys.ARROW_DOWN+Keys.ENTER).perform();
 	
+	wait.until(ExpectedConditions.visibilityOf(schedule)).isDisplayed();
+	Thread.sleep(2000);
+	act.moveToElement(Billboard_Type).click().sendKeys(""+Keys.ARROW_DOWN+Keys.ENTER).perform();
+	Thread.sleep(2000);
+
+//	String billboard = prop.getProperty("billboardsname");
+//	Thread.sleep(5000);
+//    act.moveToElement(nameofBillboard).click().sendKeys(""+(billboard)).perform();
+//	Thread.sleep(2000);
+
+	Thread.sleep(2000);
 	String billboard = prop.getProperty("billboardsname");
+	wait.until(ExpectedConditions.visibilityOf(Assignee)).sendKeys(billboard);
+	Thread.sleep(5000);
+	act.moveToElement(nameofBillboard).click().sendKeys(""+Keys.ENTER+Keys.ARROW_RIGHT).perform();
+  
+	wait.until(ExpectedConditions.visibilityOf(nameofBillboard)).isDisplayed();
 	Thread.sleep(1000);
+	act.moveToElement(Priority).click().sendKeys(""+Keys.ARROW_DOWN+Keys.ENTER).perform();
+	
+	wait.until(ExpectedConditions.visibilityOf(Priority)).isDisplayed();
+	Thread.sleep(1000);
+	act.moveToElement(Assignee).click().sendKeys(""+Keys.ARROW_DOWN+Keys.ENTER).perform();
+	Thread.sleep(2000);
 
-    act.moveToElement(Billboards).click().sendKeys(""+(billboard)).perform();
-    
-    String assignee = prop.getProperty("assigneename");
-    act.moveToElement(Assignee).click().sendKeys(""+(assignee)).perform();
-    
     act.moveToElement(Start_Date).click().perform();
-    act.moveToElement(selected_start_date).click().perform();
+	Thread.sleep(2000);
 
-    String description = prop.getProperty("description_texts");
-    act.moveToElement(Assignee).click().sendKeys(""+(description)).perform();
+    act.moveToElement(selected_start_date).click().perform();
+	Thread.sleep(2000);
+
+    String description = prop.getProperty("descriptiontexts");
+    act.moveToElement(Description).click().sendKeys(""+(description)).perform();
+    
+//	String description = prop.getProperty("groupname");
+//	wait.until(ExpectedConditions.visibilityOf(group_Name)).sendKeys(groupname);
 	}
 	@FindBy(id = "Create Group")
 	private WebElement create_group;
@@ -154,5 +177,12 @@ public class Cleaningpage extends Base {
 	public void Create_group_button() {
 		wait.until(ExpectedConditions.visibilityOf(cleaningCount)).isDisplayed();
 		act.moveToElement(create_group).click().perform();
+	}
+	@FindBy(xpath = "//div[contains(@class, 'toastpop') and contains(@class, 'position-relative')]")
+	private WebElement Cleaning_created_Success_display;
+
+	public String cleaning_create_Success_display() throws Exception {
+		WebElement successMessageElement = wait.until(ExpectedConditions.visibilityOf(Cleaning_created_Success_display));
+		return successMessageElement.getText().trim();
 	}
 }

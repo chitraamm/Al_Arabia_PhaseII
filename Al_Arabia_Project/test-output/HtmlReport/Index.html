@@ -49,7 +49,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Aug 23, 2024 02:27:06 am</span>
+			<span class='label blue darken-3 suite-start-time'>Aug 23, 2024 06:43:45 pm</span>
 			</a>
 		</ul>
 	</div>
@@ -76,11 +76,11 @@
 				<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@Cleaning02</a></li>
 					<li><a href='#'>@all</a></li>
+					<li><a href='#'>@Cleaning08</a></li>
 					<li><a href='#'>@Cleaning</a></li>
 					<li><a href='#'>@regression</a></li>
-					<li><a href='#'>@sanity</a></li>
+					<li><a href='#'>@smoke</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -120,7 +120,7 @@
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Cleaning</span>
-						<span class='test-time'>Aug 23, 2024 02:27:07 am</span>
+						<span class='test-time'>Aug 23, 2024 06:43:45 pm</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -132,58 +132,47 @@
 </div>
 	<div class='test-desc'>Admin, Manager and Supervisor can able to access the Cleaning feature,only if they have roles access</div>
 
-<div class='scenario outline node' test-id='2' status='pass'>
+<div class='scenario node' test-id='2' status='pass'>
 
-	<span class='duration right label'>00 00 32.735</span>
+	<span class='duration right label'>00 00 09.394</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: T002_Create the New Group with valid inputs</div>
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: T008_To verify the Purchases feature sort decending</div>
 	</div>
 	
-		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>successMessage1</td><td>successMessage2</td></tr><tr><td>LOADING...</td><td>Success Group Created</td></tr></table></div>
 	
+		<div class='category-list'>
+				<span class='category label'>@all</span>
+				<span class='category label'>@smoke</span>
+				<span class='category label'>@regression</span>
+				<span class='category label'>@Cleaning</span>
+				<span class='category label'>@Cleaning08</span>
+		</div>
 	
 	<ul class='steps'>
-		<li test-id='3' class='node scenario Pass' status='Pass'>
-			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>T002_Create the New Group with valid inputs</div>
+		<li test-id='4' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(Stepdefinitions.Members.Admin_logged_in_with_valid_credentials())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Admin logged in with valid credentials</div>
 
-				<div class='category-list'>
-						<span class='category label'>@Cleaning02</span>
-						<span class='category label'>@all</span>
-						<span class='category label'>@regression</span>
-						<span class='category label'>@Cleaning</span>
-						<span class='category label'>@sanity</span>
-				</div>
 
-			<ul class='gc steps'>
-				<li test-id='5' class='gc given Pass' status='Pass'>
-					<h6 class="step-name" title="Stepdefinitions.Members.Admin_logged_in_with_valid_credentials()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Admin logged in with valid credentials</h6>
+		</li>
+		<li test-id='6' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(Stepdefinitions.Members.Al_Arabia_overall_dashboard_should_display())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Al-Arabia overall dashboard should display</div>
 
-				</li>
-				<li test-id='7' class='gc when Pass' status='Pass'>
-					<h6 class="step-name" title="Stepdefinitions.Members.Al_Arabia_overall_dashboard_should_display()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Al-Arabia overall dashboard should display</h6>
 
-				</li>
-				<li test-id='9' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="Stepdefinitions.Cleaning.Admin_or_user_clicks_the_Cleaning_module()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Admin or user clicks the Cleaning module</h6>
+		</li>
+		<li test-id='8' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(Stepdefinitions.Cleaning.Admin_or_user_clicks_the_Cleaning_module())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Admin or user clicks the Cleaning module</div>
 
-				</li>
-				<li test-id='11' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="Stepdefinitions.Cleaning.Admin_or_user_clicks_New_Group_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Admin or user clicks the New Group button</h6>
 
-				</li>
-				<li test-id='13' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="Stepdefinitions.Cleaning.Admin_or_user_enters_the_all_mandatory_fields_of_New_Group()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Admin or user enters the all mandatory fields of New Group</h6>
+		</li>
+		<li test-id='10' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(Stepdefinitions.Inventory.User_sort_the_Purchases_list_Decending())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User sort the Purchases list decending</div>
 
-				</li>
-				<li test-id='15' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="Stepdefinitions.Cleaning.Admin_or_user_clicks_Create_Group_Add_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Admin or user clicks the Create Group button</h6>
 
-				</li>
-				<li test-id='17' class='gc then Pass' status='Pass'>
-					<h6 class="step-name" title="Stepdefinitions.Cleaning.Particular_Group_gets_created_successfully_with_either(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Particular Group gets created successfully with either "LOADING..." or "Success Group Created"</h6>
+		</li>
+		<li test-id='12' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(Stepdefinitions.Inventory.Decending_Purchases_list_get_displayed_successfully())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Decending Purchases list get displayed successfully</div>
 
-				</li>
-			</ul>
+
 		</li>
 	</ul>
 </div>
@@ -258,7 +247,7 @@
                 </div>
                 <div class='block text-small'>
                     <span class='tooltipped' data-position='top' data-tooltip='100%'>
-                    <span class='strong'>7</span> steps passed</span>
+                    <span class='strong'>5</span> steps passed</span>
                 </div>
                 <div class='block text-small'>
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -302,39 +291,6 @@
 			<ul id='category-collection' class='category-collection'>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@Cleaning02</span>
-						<span class='category-status right'>
-						<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Aug 23, 2024 02:27:07 am</td>
-										<td class='linked' test-id='3'>T002_Create the New Group with valid inputs</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
 						<span class='category-name'>@all</span>
 						<span class='category-status right'>
 						<span class='label pass'>1</span>
@@ -357,8 +313,41 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Aug 23, 2024 02:27:07 am</td>
-										<td class='linked' test-id='3'>T002_Create the New Group with valid inputs</td>
+										<td>Aug 23, 2024 06:43:45 pm</td>
+										<td class='linked' test-id='2'>T008_To verify the Purchases feature sort decending</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@Cleaning08</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Aug 23, 2024 06:43:45 pm</td>
+										<td class='linked' test-id='2'>T008_To verify the Purchases feature sort decending</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
@@ -390,8 +379,8 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Aug 23, 2024 02:27:07 am</td>
-										<td class='linked' test-id='3'>T002_Create the New Group with valid inputs</td>
+										<td>Aug 23, 2024 06:43:45 pm</td>
+										<td class='linked' test-id='2'>T008_To verify the Purchases feature sort decending</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
@@ -423,8 +412,8 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Aug 23, 2024 02:27:07 am</td>
-										<td class='linked' test-id='3'>T002_Create the New Group with valid inputs</td>
+										<td>Aug 23, 2024 06:43:45 pm</td>
+										<td class='linked' test-id='2'>T008_To verify the Purchases feature sort decending</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
@@ -434,7 +423,7 @@
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@sanity</span>
+						<span class='category-name'>@smoke</span>
 						<span class='category-status right'>
 						<span class='label pass'>1</span>
 						</span>
@@ -456,8 +445,8 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Aug 23, 2024 02:27:07 am</td>
-										<td class='linked' test-id='3'>T002_Create the New Group with valid inputs</td>
+										<td>Aug 23, 2024 06:43:45 pm</td>
+										<td class='linked' test-id='2'>T008_To verify the Purchases feature sort decending</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
@@ -494,25 +483,25 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>7</div>
+					<div class='panel-lead'>5</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Aug 23, 2024 02:27:06 am</div>
+					<div class='panel-lead'>Aug 23, 2024 06:43:45 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Aug 23, 2024 02:27:39 am</div>
+			 		<div class='panel-lead'>Aug 23, 2024 06:43:55 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>00 00 33.321</div>
+					<div class='panel-lead'>00 00 10.143</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -528,7 +517,7 @@
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>@Cleaning02</td>
+							<td>@all</td>
 							<td>1</td>
 							<td>0</td>
 							<td>0</td>
@@ -537,7 +526,7 @@
 							</td>
 						</tr>
 						<tr>
-							<td>@all</td>
+							<td>@Cleaning08</td>
 							<td>1</td>
 							<td>0</td>
 							<td>0</td>
@@ -564,7 +553,7 @@
 							</td>
 						</tr>
 						<tr>
-							<td>@sanity</td>
+							<td>@smoke</td>
 							<td>1</td>
 							<td>0</td>
 							<td>0</td>
@@ -598,8 +587,8 @@
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				grandChildCount: 7,
-				passGrandChild: 7,
+				grandChildCount: 5,
+				passGrandChild: 5,
 				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
@@ -611,7 +600,7 @@
 		
 		<script>
 			var timeline = {
-			        "Cleaning":32.738
+			        "Cleaning":9.397
 			};
 		</script>
 		

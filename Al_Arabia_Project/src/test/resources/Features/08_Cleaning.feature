@@ -22,7 +22,7 @@ Then Particular Group gets created successfully with either "<successMessage1>" 
       | LOADING...            | Success Group Created  |
 
 @Cleaning @Cleaning03 @smoke @regression @all
-Scenario Outline: T003_ the Purchases feature search a Purchase by using Invoice id
+Scenario Outline: T003_ the Purchases feature search a Group by Group name
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Cleaning module
@@ -68,3 +68,35 @@ When Al-Arabia overall dashboard should display
 And Admin or user clicks the Cleaning module
 And User sort the Purchases list decending
 Then Decending Purchases list get displayed successfully 
+
+@Cleaning @Cleaning09 @smoke @regression @all
+Scenario Outline: T009_To verify the Cleaning feature filter shedule Type Automatic cleaning 
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Cleaning module
+And User filter the Cleaning list status Automatic
+Then Automatic Cleaning list get displayed successfully
+
+@Cleaning @Cleaning10 @smoke @regression @all
+Scenario Outline: T010_To verify the Cleaning feature filter shedule Type Manual cleaning 
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Cleaning module
+And User filter the Cleaning list status Manual
+Then Manual Cleaning list get displayed successfully
+
+@Cleaning @Cleaning11 @smoke @regression @all
+Scenario Outline: T011_To verify the Cleaning feature filter Cleaning Type Dry 
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Cleaning module
+And User filter the Cleaning list status Dry
+Then Automatic Cleaning list get displayed successfully
+
+@Cleaning @Cleaning12 @smoke @regression @all
+Scenario Outline: T012_To verify the Cleaning feature filter Cleaning Type Wet 
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Cleaning module
+And User filter the Cleaning list status Dry
+Then Automatic Cleaning list get displayed successfully

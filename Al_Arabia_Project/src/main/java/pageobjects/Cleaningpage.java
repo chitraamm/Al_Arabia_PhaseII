@@ -185,4 +185,89 @@ public class Cleaningpage extends Base {
 		WebElement successMessageElement = wait.until(ExpectedConditions.visibilityOf(Cleaning_created_Success_display));
 		return successMessageElement.getText().trim();
 	}
+	@FindBy(id = "doc_searchQueryInput")
+	private WebElement CleaningSearch;
+	
+	public void Cleaning_search_enter_text() {
+		wait.until(ExpectedConditions.visibilityOf(CleaningSearch)).click();
+		String ticket_search = prop.getProperty("Cleaningno");
+		wait.until(ExpectedConditions.visibilityOf(CleaningSearch)).sendKeys(ticket_search + Keys.ENTER);
+		System.out.println(">> User enter the Cleaning number in search field: " + ticket_search);
+	}
+	@FindBy(xpath = "//tbody/tr[contains(@class,'table_white')]/td[1]/div[1]")
+	private WebElement cleaningSearchedList, Cleaninglist;
+
+	public void CleaningSearchedList() {
+		wait.until(ExpectedConditions.visibilityOf(cleaningSearchedList));
+
+		if (cleaningSearchedList.isDisplayed()) {
+			System.out.println("Element is displayed");
+		} else {
+			System.out.println("Element is not displayed");
+		}
+		LOGGER.info(">> Admin/User clicked new ticket btn");
+		System.out.println(">> User got searched BB list: " + cleaningSearchedList.getText());
+	}
+
+	public void Cleaninglist() {
+		wait.until(ExpectedConditions.visibilityOf(cleaningSearchedList));
+
+		if (Cleaninglist.isDisplayed()) {
+			System.out.println("Element is displayed");
+		} else {
+			System.out.println("Element is not displayed");
+		}
+		LOGGER.info(">> Admin/User searched a Cleaning");
+		System.out.println(">> User got searched Cleaning list: " + Cleaninglist.getText());
+	}
+
+	@FindBy(xpath = "(//h6[contains(@class,'m-0 by fw-normal')][normalize-space()='Recently Added'])[1]")
+	private WebElement cleaning_sort;
+
+	@FindBy(xpath = "(//h6[contains(text(),'Recently Updated')])[1]")
+	private WebElement cleaning_sort_recentlyupdated;
+
+	@FindBy(xpath = "(//h6[contains(text(),'Recently Added')])[2]")
+	private WebElement cleaning_sort_recentlyadded;
+
+	public void Cleaning_sort_recentlyupdated() {
+		wait.until(ExpectedConditions.visibilityOf(cleaning_sort)).click();
+		wait.until(ExpectedConditions.visibilityOf(cleaning_sort_recentlyupdated)).click();
+		System.out.println(">> User clicked recently updated in sort");
+	}
+
+	public void Cleaning_sort_recentlyadded() {
+		wait.until(ExpectedConditions.visibilityOf(cleaning_sort)).click();
+		wait.until(ExpectedConditions.visibilityOf(cleaning_sort_recentlyadded)).click();
+		System.out.println(">> User clicked recently added in sort");
+	}
+
+	@FindBy(xpath = "(//h6[contains(text(),'Recently Updated')])[1]")
+	private WebElement cleaning_Name_A_to_Z;
+
+	public void Cleaning_A_to_Z() {
+		wait.until(ExpectedConditions.visibilityOf(cleaning_sort)).click();
+		wait.until(ExpectedConditions.visibilityOf(cleaning_Name_A_to_Z)).click();
+		System.out.println(">> User clicked recently updated in sort");
+	}
+
+	@FindBy(xpath = "(//h6[contains(text(),'Name - Z to A')])[1]")
+	private WebElement cleaning_Name_Z_to_A;
+
+	public void Cleaning_sortZ_A() {
+		wait.until(ExpectedConditions.visibilityOf(cleaning_sort)).click();
+		wait.until(ExpectedConditions.visibilityOf(cleaning_Name_Z_to_A)).click();
+		System.out.println(">> User clicked Z-A updated in sort");
+	}
+
+	@FindBy(xpath = "(//h6[contains(text(),'Decending - Date')])[1]")
+	private WebElement Cleaning_Name_decending;
+
+	public void Cleaning_DecendingDate() {
+		wait.until(ExpectedConditions.visibilityOf(cleaning_sort)).click();
+		wait.until(ExpectedConditions.visibilityOf(Cleaning_Name_decending)).click();
+		System.out.println(">> User clicked decending updated in sort");
+	}
+
+	
 }

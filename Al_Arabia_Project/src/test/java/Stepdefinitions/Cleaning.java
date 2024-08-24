@@ -61,7 +61,7 @@ public class Cleaning extends Base {
 	private String normalizeWhitespace(String input) {
 		return input.replaceAll("\\s+", " ").trim();
 	}
-	@And("Admin or user search the Cleaning")
+	@And("Admin or user search the Group")
 	public void Admin_or_user_search_the_Cleaning() throws Exception {
 		cleaningpage.Cleaning_search_enter_text();
 	}
@@ -97,7 +97,7 @@ public class Cleaning extends Base {
 
 	@Then("Cleaning list Z to A get displayed successfully")
 	public void Cleaning_list_Z_to_A_get_displayed_successfully() throws Exception {
-		cleaningpage.cleanicleanilist();
+		cleaningpage.Cleaninglist();
 	}
 
 	@And("User sort the Cleaning list Recently Added")
@@ -116,6 +116,22 @@ public class Cleaning extends Base {
 
 	@Then("Decending Cleaning list get displayed successfully")
 	public void Decending_Cleaning_list_get_displayed_successfully() throws Exception {
+		cleaningpage.Cleaninglist();
+	}
+	@And("User filter the Cleaning list status Automatic")
+	public void User_filter_the_Cleaning_list_status_Automatic() throws Exception {
+		cleaningpage.Automatic_list();	
+}
+	@Then("Automatic Cleaning list get displayed successfully")
+	public void Automatic_Cleaning_list_get_displayed_successfully() throws Exception {
+		cleaningpage.Cleaninglist();
+	}
+	@And("User filter the Cleaning list status Closed")
+	public void User_filter_the_Cleaning_list_status_Closed() throws Exception {
+		cleaningpage.Automatic_list();	
+}
+	@Then("Closed Cleaning list get displayed successfully")
+	public void Closed_Cleaning_list_get_displayed_successfully() throws Exception {
 		cleaningpage.Cleaninglist();
 	}
 }

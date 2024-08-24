@@ -124,14 +124,113 @@ public class Cleaning extends Base {
 }
 	@Then("Automatic Cleaning list get displayed successfully")
 	public void Automatic_Cleaning_list_get_displayed_successfully() throws Exception {
-		cleaningpage.Cleaninglist();
+		cleaningpage.Cleaning_filtered_result_display();
 	}
-	@And("User filter the Cleaning list status Closed")
-	public void User_filter_the_Cleaning_list_status_Closed() throws Exception {
-		cleaningpage.Automatic_list();	
+	@And("User filter the Cleaning list status Manual")
+	public void User_filter_the_Cleaning_list_status_Manual() throws Exception {
+		cleaningpage.Manual_list();	
 }
-	@Then("Closed Cleaning list get displayed successfully")
-	public void Closed_Cleaning_list_get_displayed_successfully() throws Exception {
-		cleaningpage.Cleaninglist();
+	@Then("Manual Cleaning list get displayed successfully")
+	public void Manual_Cleaning_list_get_displayed_successfully() throws Exception {
+		cleaningpage.Cleaning_filtered_result_display();
 	}
+	@And("User filter the Cleaning list status Dry")
+	public void User_filter_the_Cleaning_list_status_Dry() throws Exception {
+		cleaningpage.Dry_list();	
+}
+	@Then("Dry Cleaning list get displayed successfully")
+	public void Dry_Cleaning_list_get_displayed_successfully() throws Exception {
+		cleaningpage.Cleaning_filtered_result_display();
+	}
+	@And("User filter the Cleaning list status Wet")
+	public void User_filter_the_Cleaning_list_status_Wet() throws Exception {
+		cleaningpage.Wet_list();	
+}
+	@Then("Wet Cleaning list get displayed successfully")
+	public void Wet_Cleaning_list_get_displayed_successfully() throws Exception {
+		cleaningpage.Cleaning_filtered_result_display();
+	}
+	@And("User filter the Priority High status")
+	public void User_filter_the_Priority_High_status() throws Exception {
+		cleaningpage.Priority_High_list();	
+}
+	@Then("Priority High Cleaning list get displayed successfully")
+	public void Priority_High_Cleaning_list_get_displayed_successfully() throws Exception {
+		cleaningpage.Cleaning_filtered_result_display();
+	}
+	@And("User filter the Priority Medium status")
+	public void User_filter_the_Priority_Medium_status() throws Exception {
+		cleaningpage.Priority_Medium_list();	
+}
+	@Then("Priority Medium Cleaning list get displayed successfully")
+	public void Priority_Medium_Cleaning_list_get_displayed_successfully() throws Exception {
+		cleaningpage.Cleaning_filtered_result_display();
+	}
+	@And("User filter the Priority Low status")
+	public void User_filter_the_Priority_Low_status() throws Exception {
+		cleaningpage.Priority_Low_list();	
+}
+	@Then("Priority Low Cleaning list get displayed successfully")
+	public void Priority_Low_Cleaning_list_get_displayed_successfully () throws Exception {
+		cleaningpage.Cleaning_filtered_result_display();
+	}
+	@And("User filter the multiple statuses")
+	public void User_filter_the_multiple_statuses()throws Exception{
+		cleaningpage.Multiple_status_filter();
+	}
+	@Then("Multiple status Cleaning list get displayed successfully")
+	public void Multiple_status_Cleaning_list_get_displayed_successfully() throws Exception {
+		cleaningpage.Cleaning_filtered_result_display();
+	}
+	@And("User filter the Start Date")
+	public void User_filter_the_Start_Date()throws Exception{
+		cleaningpage.StartDate_filter();
+	}
+	@Then("Cleaning from Start Date list get displayed successfully")
+	public void Cleaning_from_Start_Date_list_get_displayed_successfully() throws Exception {
+		cleaningpage.Cleaning_filtered_result_display();
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	@And("Admin or user clicks the Download button in Cleaning page")
+	public void Admin_or_user_clicks_the_Download_button_in_Cleaning_page() throws Exception {
+		cleaningpage.Cleaning_Download();
+	}
+	@Then("Download popup get displayed successfully")
+	public void Download_popup_get_displayed_successfully() throws Exception {
+		cleaningpage.Popup_download_cleaning_display();
+	}
+	@And("User click on Excel Download")
+	public void User_click_on_Excel_Download() throws Exception {
+		cleaningpage.Excel_Download();
+	}
+	@Then("Excel file get downloaded successfully")
+	public void Excel_file_get_downloaded_successfully() throws Exception {
+	}
+	@And("User click on PDF Download")
+	public void User_click_on_PDF_Download() throws Exception {
+		cleaningpage.PDF_Download();
+	}
+	@Then("PDF file get downloaded successfully")
+	public void PDF_file_get_downloaded_successfully() throws Exception {
+	}
+	@And("User click on close button")
+	public void User_click_on_close_button() throws Exception {
+		cleaningpage.Close_Download();
+	}
+	@Then("download popup closed successfully")
+	public void download_popup_closed_successfully() throws Exception {
+	}
+	
 }

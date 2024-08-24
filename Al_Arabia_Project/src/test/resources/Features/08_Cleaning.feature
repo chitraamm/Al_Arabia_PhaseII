@@ -67,7 +67,7 @@ Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Cleaning module
 And User sort the Purchases list decending
-Then Decending Purchases list get displayed successfully 
+Then Decending Purchases list get displayed successfully  
 
 @Cleaning @Cleaning09 @smoke @regression @all
 Scenario Outline: T009_To verify the Cleaning feature filter shedule Type Automatic cleaning 
@@ -91,12 +91,93 @@ Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Cleaning module
 And User filter the Cleaning list status Dry
-Then Automatic Cleaning list get displayed successfully
+Then Dry Cleaning list get displayed successfully
 
 @Cleaning @Cleaning12 @smoke @regression @all
 Scenario Outline: T012_To verify the Cleaning feature filter Cleaning Type Wet 
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Cleaning module
-And User filter the Cleaning list status Dry
-Then Automatic Cleaning list get displayed successfully
+And User filter the Cleaning list status Wet
+Then Wet Cleaning list get displayed successfully
+
+@Cleaning @Cleaning13 @smoke @regression @all
+Scenario Outline: T013_To verify the Cleaning feature filter the priority High
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Cleaning module
+And User filter the Priority High status
+Then Priority High Cleaning list get displayed successfully
+
+@Cleaning @Cleaning14 @smoke @regression @all
+Scenario Outline: T014_To verify the Cleaning feature filter the priority Medium
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Cleaning module
+And User filter the Priority Medium status
+Then Priority Medium Cleaning list get displayed successfully
+
+@Cleaning @Cleaning15 @smoke @regression @all
+Scenario Outline: T015_To verify the Cleaning feature filter the priority Low
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Cleaning module
+And User filter the Priority Low status
+Then Priority Low Cleaning list get displayed successfully
+
+@Cleaning @Cleaning16 @smoke @regression @all
+Scenario Outline: T016_To verify the Cleaning feature Multiple statuses filter
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Cleaning module
+And User filter the multiple statuses
+Then Multiple status Cleaning list get displayed successfully
+
+@Cleaning @Cleaning17 @smoke @regression @all
+Scenario Outline: T017_To verify the Cleaning feature filter Start Date
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Cleaning module
+And User filter the Start Date
+Then Cleaning from Start Date list get displayed successfully
+
+
+
+
+
+
+
+@Cleaning @Cleaning22 @smoke @regression @all
+Scenario Outline: T017_To verify the Cleaning feature Download button
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Cleaning module
+And Admin or user clicks the Download button in Cleaning page
+Then Download popup get displayed successfully
+
+@Cleaning @Cleaning18 @smoke @regression @all
+Scenario Outline: T017_To verify the Cleaning feature Excel Download
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Cleaning module
+And Admin or user clicks the Download button in Cleaning page
+And User click on Excel Download
+Then Excel file get downloaded successfully
+
+@Cleaning @Cleaning19 @smoke @regression @all
+Scenario Outline: T019_To verify the Cleaning feature PDF Download
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Cleaning module
+And Admin or user clicks the Download button in Cleaning page
+And User click on PDF Download
+Then PDF file get downloaded successfully
+
+@Cleaning @Cleaning20 @smoke @regression @all
+Scenario Outline: T019_To verify the Cleaning feature Close Download popup
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Cleaning module
+And Admin or user clicks the Download button in Cleaning page
+And User click on close button
+Then download popup closed successfully

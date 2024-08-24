@@ -268,6 +268,127 @@ public class Cleaningpage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(Cleaning_Name_decending)).click();
 		System.out.println(">> User clicked decending updated in sort");
 	}
+	@FindBy(xpath = "(//div[contains(@class,'filterbox')])[1]")
+	private WebElement cleaning_filter;
 
-	
+	@FindBy(xpath = "(//span[contains(text(),'Automatic')])[1]")
+	private WebElement automatic_status;
+
+	@FindBy(id = "Apply")
+	private WebElement cleaning_filter_apply_btn;
+
+	public void Automatic_list() {
+		wait.until(ExpectedConditions.visibilityOf(cleaning_filter)).click();
+		wait.until(ExpectedConditions.visibilityOf(automatic_status)).click();
+		act.moveToElement(cleaning_filter_apply_btn).click().perform();
+		System.out.println(">> User clicked automatic status in filter");
+	}
+	@FindBy(xpath = "(//div[contains(text(),'No Data Found')])[1]")
+	private WebElement No_Cleanings_found;
+
+	public void Cleaning_filtered_result_display() {
+		try {
+			if (condition) {
+				wait.until(ExpectedConditions.visibilityOf(Cleaninglist));
+				AssertJUnit.assertTrue(Cleaninglist.isDisplayed());
+				System.out.println(">> User got the filtered Cleaning list");
+			} else {
+				wait.until(ExpectedConditions.visibilityOf(No_Cleanings_found));
+			}
+		} catch (Exception e) {
+			wait.until(ExpectedConditions.visibilityOf(No_Cleanings_found));
+		}
+	}
+	@FindBy(id = "MANUAL")
+	private WebElement manual_status;
+	public void Manual_list() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(cleaning_filter)).click();
+		wait.until(ExpectedConditions.visibilityOf(manual_status)).click();
+		act.moveToElement(cleaning_filter_apply_btn).click().perform();
+
+		System.out.println(">>Manual status Cleaning list filtered");
+	}
+	@FindBy(id = "DRY")
+	private WebElement dry_status;
+	public void Dry_list()throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(cleaning_filter)).click();
+		wait.until(ExpectedConditions.visibilityOf(dry_status)).click();
+		act.moveToElement(cleaning_filter_apply_btn).click().perform();
+	}
+	@FindBy(xpath = "(//span[contains(text(),'Wet')])[1]")
+	private WebElement wet_status;
+	public void Wet_list()throws Exception {
+	wait.until(ExpectedConditions.visibilityOf(cleaning_filter)).click();
+	act.moveToElement(wet_status).click().perform();
+	wait.until(ExpectedConditions.visibilityOf(wet_status)).isDisplayed();
+
+	act.moveToElement(cleaning_filter_apply_btn).click().perform();
+	}
+	@FindBy(id = "HIGH")
+	private WebElement high_priority;
+	public void Priority_High_list()throws Exception{
+		wait.until(ExpectedConditions.visibilityOf(cleaning_filter)).click();
+		wait.until(ExpectedConditions.visibilityOf(high_priority)).click();
+		act.moveToElement(cleaning_filter_apply_btn).click().perform();
+	}
+	@FindBy(id = "MEDIUM")
+	private WebElement medium_priority;
+	public void Priority_Medium_list()throws Exception{
+		wait.until(ExpectedConditions.visibilityOf(cleaning_filter)).click();
+		wait.until(ExpectedConditions.visibilityOf(medium_priority)).click();
+		act.moveToElement(cleaning_filter_apply_btn).click().perform();
+	}
+	@FindBy(id = "LOW")
+	private WebElement low_priority;
+	public void Priority_Low_list()throws Exception{
+		wait.until(ExpectedConditions.visibilityOf(cleaning_filter)).click();
+		wait.until(ExpectedConditions.visibilityOf(low_priority)).click();
+		act.moveToElement(cleaning_filter_apply_btn).click().perform();
+	}
+
+	public void Multiple_status_filter()throws Exception{
+		wait.until(ExpectedConditions.visibilityOf(cleaning_filter)).click();
+		wait.until(ExpectedConditions.visibilityOf(automatic_status)).click();
+		//act.moveToElement(automatic_status).click().perform();
+		act.moveToElement(wet_status).click().perform();
+		act.moveToElement(high_priority).click().perform();
+		act.moveToElement(cleaning_filter_apply_btn).click().perform();
+	}
+	@FindBy(xpath = "(//h6[contains(@class,'m-0 fw-normal')][normalize-space()='Download'])[1]")
+	private WebElement download_cleaning;
+	public void Cleaning_Download()throws Exception{
+		wait.until(ExpectedConditions.visibilityOf(download_cleaning)).click();
+	}
+	@FindBy(xpath = "(//h6[contains(@class,'m-0 fw-normal')][normalize-space()='Download'])[1]")
+	private WebElement popup_download_cleaning_display;
+	public void Popup_download_cleaning_display()throws Exception{
+		wait.until(ExpectedConditions.visibilityOf(download_cleaning)).isDisplayed();
+        AssertJUnit.assertTrue(download_cleaning.isDisplayed());
 }
+	@FindBy(xpath = "//div[normalize-space()='As Excel']")
+	private WebElement excel_download_cleaning;
+	public void Excel_Download()throws Exception{
+		wait.until(ExpectedConditions.visibilityOf(excel_download_cleaning)).click();;
+}
+	@FindBy(xpath = "//div[normalize-space()='As PDF']")
+	private WebElement pdf_download_cleaning;
+	public void PDF_Download()throws Exception{
+		wait.until(ExpectedConditions.visibilityOf(pdf_download_cleaning)).click();;
+}
+	@FindBy(xpath = "(//*[name()='path'][contains(@fill-rule,'evenodd')])[2]")
+	private WebElement close_download_cleaning;
+	public void Close_Download()throws Exception{
+		wait.until(ExpectedConditions.visibilityOf(close_download_cleaning)).click();;
+}
+	@FindBy(xpath = "(//input[contains(@placeholder,'DD-MM-YYYY')])[1]")
+	private WebElement startdate_clicked;
+	@FindBy(xpath = "//span[normalize-space()='20']")
+	private WebElement startdate_selected;
+	public void StartDate_filter()throws Exception{
+		wait.until(ExpectedConditions.visibilityOf(cleaning_filter)).click();
+		wait.until(ExpectedConditions.visibilityOf(startdate_clicked)).click();
+		wait.until(ExpectedConditions.visibilityOf(startdate_selected)).click();
+
+		act.moveToElement(cleaning_filter_apply_btn).click().perform();
+	}
+}	

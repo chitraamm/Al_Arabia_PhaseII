@@ -1,5 +1,6 @@
 package Stepdefinitions;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 import org.apache.logging.log4j.LogManager;
@@ -190,11 +191,51 @@ public class Cleaning extends Base {
 	public void Cleaning_from_Start_Date_list_get_displayed_successfully() throws Exception {
 		cleaningpage.Cleaning_filtered_result_display();
 	}
-	
-	
-	
-	
-	
+	@And("User filter the Start Date and End date")
+	public void User_filter_the_Start_Date_and_End_date()throws Exception{
+		cleaningpage.StartEnd_Date_filter();
+	}
+	@Then("Cleaning from Start date and End date list get displayed successfully")
+	public void Cleaning_from_Start_date_and_End_Date_list_get_displayed_successfully() throws Exception {
+		cleaningpage.Cleaning_filtered_result_display();
+	}
+	@And("User filter the Assignee")
+	public void User_filter_the_Assignee()throws Exception{
+		cleaningpage.Select_Assignee_filter();
+	}
+	@Then("Assignee cleaning list get displayed successfully")
+	public void Assignee_cleaning_list_get_displayed_successfully() throws Exception {
+		cleaningpage.Cleaning_filtered_result_display();
+	}
+	@And("User filter the Billboard Type cleaning")
+	public void User_filter_the_Billboard_Type_cleaning()throws Exception{
+		cleaningpage.Select_Billboard_Type_cleaning_filter();
+	}
+	@Then("Billboard Type cleaning list get displayed successfully")
+	public void Billboard_Type_cleaning_list_get_displayed_successfully() throws Exception {
+		cleaningpage.Cleaning_filtered_result_display();
+	}
+	@And("User click edit button")
+	public void User_click_edit_button()throws Exception{
+		cleaningpage.Click_edit_group();
+	}
+	@And("User edit the Group name")
+	public void User_edit_the_Group_name()throws Exception{
+		cleaningpage.Group_edited();
+	}
+	@And("User Update the group and confirmed yes button")
+	public void User_Update_the_group_and_confirmed_yes_button() throws Exception {
+		cleaningpage.Group_update_clicked();
+		cleaningpage.update_Group_confirmed();
+}
+	@Then("^Particular Group gets updated successfully as \"([^\"]*)\"$")
+	public void Particular_Group_gets_updated_successfully_as_(String expectedMessage) throws Exception {
+		  String actualMessage = cleaningpage.cleaning_create_Success_display();
+	      String normalizedExpectedMessage = normalizeWhitespace(expectedMessage);
+	      String normalizedActualMessage = normalizeWhitespace(actualMessage);
+	      System.out.println(">> User or Admin updated Ticket successfully"+actualMessage);
+	      assertEquals(normalizedExpectedMessage, normalizedActualMessage);
+	}
 	
 	
 	

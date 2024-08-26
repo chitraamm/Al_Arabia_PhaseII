@@ -391,4 +391,75 @@ public class Cleaningpage extends Base {
 
 		act.moveToElement(cleaning_filter_apply_btn).click().perform();
 	}
+	@FindBy(xpath = "(//input[contains(@placeholder,'DD-MM-YYYY')])[2]")
+	private WebElement enddate_clicked;
+	@FindBy(xpath = "//span[normalize-space()='20']")
+	private WebElement enddate_selected;
+	public void StartEnd_Date_filter()throws Exception{
+		wait.until(ExpectedConditions.visibilityOf(cleaning_filter)).click();
+		wait.until(ExpectedConditions.visibilityOf(startdate_clicked)).click();
+		wait.until(ExpectedConditions.visibilityOf(startdate_selected)).click();
+		wait.until(ExpectedConditions.visibilityOf(enddate_clicked)).click();
+		wait.until(ExpectedConditions.visibilityOf(enddate_selected)).click();
+		act.moveToElement(cleaning_filter_apply_btn).click().perform();
+	}
+	@FindBy(id = "react-select-3-input")
+	private WebElement assignee_select;
+
+	public void Select_Assignee_filter() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(cleaning_filter)).click();
+		//String assignee = prop.getProperty("Assignee");
+		wait.until(ExpectedConditions.visibilityOf(assignee_select)).click();
+		Thread.sleep(2000);
+		wait.until(ExpectedConditions.visibilityOf(assignee_select)).sendKeys("" + Keys.ENTER);
+		act.moveToElement(cleaning_filter_apply_btn).click().perform();
+		System.out.println(">> User selected the assignee in filter" + assignee_select);
+	}
+	@FindBy(id = "react-select-4-input")
+	private WebElement billboard_type_select;
+
+	public void Select_Billboard_Type_cleaning_filter() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(cleaning_filter)).click();
+		act.moveToElement(billboard_type_select).click().sendKeys(""+Keys.ENTER).perform();
+		Thread.sleep(2000);
+		act.moveToElement(cleaning_filter_apply_btn).click().perform();
+		System.out.println(">> User selected the assignee in filter" + billboard_type_select);
+	}
+	@FindBy(xpath = "(//img[contains(@class,'pointer')])[2]")
+	private WebElement Edit_Buttonclick;
+
+	public void Click_edit_group() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(Edit_Buttonclick)).click();
+	}
+	@FindBy(id = "group_name")
+	private WebElement group_edited;
+
+	@FindBy(xpath = "//h5[normalize-space()='Cleaning']")
+	private WebElement edit_priority_label;
+
+	public void Group_edited() {
+
+		wait.until(ExpectedConditions.visibilityOf(edit_priority_label));
+		String Editgroup = prop.getProperty("Editgroup");
+		act.moveToElement(group_edited).click().sendKeys(Editgroup);
+		LOGGER.info("User updated the Group ");
+	}
+
+	@FindBy(xpath = "//h6[normalize-space()='Update Group']")
+	private WebElement group_update_button;
+
+	public void Group_update_clicked() throws Exception {
+		Thread.sleep(2000);
+		act.moveToElement(group_update_button).perform();
+		wait.until(ExpectedConditions.visibilityOf(group_update_button)).click();
+
+	}
+	@FindBy(xpath = "//h6[normalize-space()='Yes, update it.']")
+	private WebElement group_update_confirm_yes_button;
+
+	public void update_Group_confirmed() throws Exception {
+
+		wait.until(ExpectedConditions.visibilityOf(group_update_confirm_yes_button)).click();
+
+	}
 }	

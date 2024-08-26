@@ -141,7 +141,42 @@ And Admin or user clicks the Cleaning module
 And User filter the Start Date
 Then Cleaning from Start Date list get displayed successfully
 
+@Cleaning @Cleaning18 @smoke @regression @all
+Scenario Outline: T018_To verify the Cleaning feature filter Start Date and End date 
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Cleaning module
+And User filter the Start Date and End date
+Then Cleaning from Start date and End date list get displayed successfully
 
+@Cleaning @Cleaning19 @smoke @regression @all
+Scenario Outline: T018_To verify the Cleaning feature filter by Assignee
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Cleaning module
+And User filter the Assignee
+Then Assignee cleaning list get displayed successfully
+
+@Cleaning @Cleaning20 @smoke @regression @all
+Scenario Outline: T018_To verify the Cleaning feature filter by Assignee
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Cleaning module
+And User filter the Billboard Type cleaning
+Then Billboard Type cleaning list get displayed successfully
+
+@Cleaning @Cleaning21 @smoke @regression @all
+Scenario Outline: T018_To verify the Cleaning feature filter by Assignee
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Cleaning module
+And User click edit button
+And User edit the Group name
+And User Update the group and confirmed yes button 
+Then Particular Group gets updated successfully as "<successMessage>"
+  Examples:
+      | successMessage         |
+      | Success Group updated  |
 
 
 
@@ -155,7 +190,7 @@ And Admin or user clicks the Cleaning module
 And Admin or user clicks the Download button in Cleaning page
 Then Download popup get displayed successfully
 
-@Cleaning @Cleaning18 @smoke @regression @all
+@Cleaning @Cleaning31 @smoke @regression @all
 Scenario Outline: T017_To verify the Cleaning feature Excel Download
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
@@ -164,7 +199,7 @@ And Admin or user clicks the Download button in Cleaning page
 And User click on Excel Download
 Then Excel file get downloaded successfully
 
-@Cleaning @Cleaning19 @smoke @regression @all
+@Cleaning @Cleaning39 @smoke @regression @all
 Scenario Outline: T019_To verify the Cleaning feature PDF Download
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
@@ -173,7 +208,7 @@ And Admin or user clicks the Download button in Cleaning page
 And User click on PDF Download
 Then PDF file get downloaded successfully
 
-@Cleaning @Cleaning20 @smoke @regression @all
+@Cleaning @Cleaning40 @smoke @regression @all
 Scenario Outline: T019_To verify the Cleaning feature Close Download popup
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display

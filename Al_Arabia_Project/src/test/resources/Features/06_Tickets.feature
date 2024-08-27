@@ -163,7 +163,7 @@ Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Tickets module
 And User selects Department
-Then Selected Department list get displayed successfully 
+Then Selected Department list get displayed successfully  
 
 @Tickets @Tickets21 @smoke @regression @all
 Scenario Outline: T021_To verify the Tickets feature filter Cleaning
@@ -451,4 +451,5 @@ When Al-Arabia overall dashboard should display
 And Admin or user clicks the Tickets module
 And User filter the Tickets list status Pending
 Then Pending Tickets list get displayed successfully  
+
        

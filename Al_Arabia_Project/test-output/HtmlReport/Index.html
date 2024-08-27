@@ -49,7 +49,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Aug 27, 2024 01:39:19 am</span>
+			<span class='label blue darken-3 suite-start-time'>Aug 27, 2024 11:02:00 pm</span>
 			</a>
 		</ul>
 	</div>
@@ -76,11 +76,11 @@
 				<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@all</a></li>
-					<li><a href='#'>@Cleaning</a></li>
 					<li><a href='#'>@smoke</a></li>
+					<li><a href='#'>@Cleaning</a></li>
+					<li><a href='#'>@Cleaning40</a></li>
 					<li><a href='#'>@regression</a></li>
-					<li><a href='#'>@Cleaning21</a></li>
+					<li><a href='#'>@all</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -120,7 +120,7 @@
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Cleaning</span>
-						<span class='test-time'>Aug 27, 2024 01:39:20 am</span>
+						<span class='test-time'>Aug 27, 2024 11:02:01 pm</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -132,58 +132,52 @@
 </div>
 	<div class='test-desc'>Admin, Manager and Supervisor can able to access the Cleaning feature,only if they have roles access</div>
 
-<div class='scenario outline node' test-id='2' status='pass'>
+<div class='scenario node' test-id='2' status='pass'>
 
-	<span class='duration right label'>00 00 12.456</span>
+	<span class='duration right label'>00 00 16.355</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: T018_To verify the Cleaning feature filter by Assignee</div>
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: T040_To verify the Cleaning feature pagination last page to first page</div>
 	</div>
 	
-		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>successMessage</td></tr><tr><td>Success Group updated</td></tr></table></div>
 	
+		<div class='category-list'>
+				<span class='category label'>@all</span>
+				<span class='category label'>@Cleaning40</span>
+				<span class='category label'>@smoke</span>
+				<span class='category label'>@regression</span>
+				<span class='category label'>@Cleaning</span>
+		</div>
 	
 	<ul class='steps'>
-		<li test-id='3' class='node scenario Pass' status='Pass'>
-			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>T018_To verify the Cleaning feature filter by Assignee</div>
+		<li test-id='4' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(Stepdefinitions.Members.Admin_logged_in_with_valid_credentials())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Admin logged in with valid credentials</div>
 
-				<div class='category-list'>
-						<span class='category label'>@all</span>
-						<span class='category label'>@Cleaning21</span>
-						<span class='category label'>@smoke</span>
-						<span class='category label'>@regression</span>
-						<span class='category label'>@Cleaning</span>
-				</div>
 
-			<ul class='gc steps'>
-				<li test-id='5' class='gc given Pass' status='Pass'>
-					<h6 class="step-name" title="Stepdefinitions.Members.Admin_logged_in_with_valid_credentials()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Admin logged in with valid credentials</h6>
+		</li>
+		<li test-id='6' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(Stepdefinitions.Members.Al_Arabia_overall_dashboard_should_display())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Al-Arabia overall dashboard should display</div>
 
-				</li>
-				<li test-id='7' class='gc when Pass' status='Pass'>
-					<h6 class="step-name" title="Stepdefinitions.Members.Al_Arabia_overall_dashboard_should_display()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Al-Arabia overall dashboard should display</h6>
 
-				</li>
-				<li test-id='9' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="Stepdefinitions.Cleaning.Admin_or_user_clicks_the_Cleaning_module()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Admin or user clicks the Cleaning module</h6>
+		</li>
+		<li test-id='8' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(Stepdefinitions.Cleaning.Admin_or_user_clicks_the_Cleaning_module())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Admin or user clicks the Cleaning module</div>
 
-				</li>
-				<li test-id='11' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="Stepdefinitions.Cleaning.User_click_edit_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User click edit button</h6>
 
-				</li>
-				<li test-id='13' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="Stepdefinitions.Cleaning.User_edit_the_Group_name()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User edit the Group name</h6>
+		</li>
+		<li test-id='10' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(Stepdefinitions.Cleaning.Go_to_Last_page_of_Cleaning_page())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Go to Last page of Cleaning page</div>
 
-				</li>
-				<li test-id='15' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="Stepdefinitions.Cleaning.User_Update_the_group_and_confirmed_yes_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User Update the group and confirmed yes button</h6>
 
-				</li>
-				<li test-id='17' class='gc then Pass' status='Pass'>
-					<h6 class="step-name" title="Stepdefinitions.Cleaning.Particular_Group_gets_updated_successfully_as_(java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Particular Group gets updated successfully as "Success Group updated"</h6>
+		</li>
+		<li test-id='12' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(Stepdefinitions.Cleaning.User_click_on_first_page_button_of_Cleaning())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User click on first page button of Cleaning</div>
 
-				</li>
-			</ul>
+
+		</li>
+		<li test-id='14' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(Stepdefinitions.Tickets.First_page_Cleaning_get_displayed_successfully())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then First page Cleaning get displayed successfully</div>
+
+
 		</li>
 	</ul>
 </div>
@@ -258,7 +252,7 @@
                 </div>
                 <div class='block text-small'>
                     <span class='tooltipped' data-position='top' data-tooltip='100%'>
-                    <span class='strong'>7</span> steps passed</span>
+                    <span class='strong'>6</span> steps passed</span>
                 </div>
                 <div class='block text-small'>
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -302,7 +296,7 @@
 			<ul id='category-collection' class='category-collection'>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@all</span>
+						<span class='category-name'>@smoke</span>
 						<span class='category-status right'>
 						<span class='label pass'>1</span>
 						</span>
@@ -324,8 +318,8 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Aug 27, 2024 01:39:20 am</td>
-										<td class='linked' test-id='3'>T018_To verify the Cleaning feature filter by Assignee</td>
+										<td>Aug 27, 2024 11:02:01 pm</td>
+										<td class='linked' test-id='2'>T040_To verify the Cleaning feature pagination last page to first page</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
@@ -357,8 +351,8 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Aug 27, 2024 01:39:20 am</td>
-										<td class='linked' test-id='3'>T018_To verify the Cleaning feature filter by Assignee</td>
+										<td>Aug 27, 2024 11:02:01 pm</td>
+										<td class='linked' test-id='2'>T040_To verify the Cleaning feature pagination last page to first page</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
@@ -368,7 +362,7 @@
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@smoke</span>
+						<span class='category-name'>@Cleaning40</span>
 						<span class='category-status right'>
 						<span class='label pass'>1</span>
 						</span>
@@ -390,8 +384,8 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Aug 27, 2024 01:39:20 am</td>
-										<td class='linked' test-id='3'>T018_To verify the Cleaning feature filter by Assignee</td>
+										<td>Aug 27, 2024 11:02:01 pm</td>
+										<td class='linked' test-id='2'>T040_To verify the Cleaning feature pagination last page to first page</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
@@ -423,8 +417,8 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Aug 27, 2024 01:39:20 am</td>
-										<td class='linked' test-id='3'>T018_To verify the Cleaning feature filter by Assignee</td>
+										<td>Aug 27, 2024 11:02:01 pm</td>
+										<td class='linked' test-id='2'>T040_To verify the Cleaning feature pagination last page to first page</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
@@ -434,7 +428,7 @@
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@Cleaning21</span>
+						<span class='category-name'>@all</span>
 						<span class='category-status right'>
 						<span class='label pass'>1</span>
 						</span>
@@ -456,8 +450,8 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Aug 27, 2024 01:39:20 am</td>
-										<td class='linked' test-id='3'>T018_To verify the Cleaning feature filter by Assignee</td>
+										<td>Aug 27, 2024 11:02:01 pm</td>
+										<td class='linked' test-id='2'>T040_To verify the Cleaning feature pagination last page to first page</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
@@ -494,25 +488,25 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>7</div>
+					<div class='panel-lead'>6</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Aug 27, 2024 01:39:19 am</div>
+					<div class='panel-lead'>Aug 27, 2024 11:02:00 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Aug 27, 2024 01:39:32 am</div>
+			 		<div class='panel-lead'>Aug 27, 2024 11:02:17 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>00 00 13.215</div>
+					<div class='panel-lead'>00 00 17.585</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -528,7 +522,7 @@
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>@all</td>
+							<td>@smoke</td>
 							<td>1</td>
 							<td>0</td>
 							<td>0</td>
@@ -546,7 +540,7 @@
 							</td>
 						</tr>
 						<tr>
-							<td>@smoke</td>
+							<td>@Cleaning40</td>
 							<td>1</td>
 							<td>0</td>
 							<td>0</td>
@@ -564,7 +558,7 @@
 							</td>
 						</tr>
 						<tr>
-							<td>@Cleaning21</td>
+							<td>@all</td>
 							<td>1</td>
 							<td>0</td>
 							<td>0</td>
@@ -598,8 +592,8 @@
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				grandChildCount: 7,
-				passGrandChild: 7,
+				grandChildCount: 6,
+				passGrandChild: 6,
 				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
@@ -611,7 +605,7 @@
 		
 		<script>
 			var timeline = {
-			        "Cleaning":12.459
+			        "Cleaning":16.361
 			};
 		</script>
 		

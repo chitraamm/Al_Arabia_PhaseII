@@ -238,12 +238,6 @@ public class Cleaning extends Base {
 	}
 	
 	
-	
-	
-	
-	
-	
-	
 	@And("Admin or user clicks the Download button in Cleaning page")
 	public void Admin_or_user_clicks_the_Download_button_in_Cleaning_page() throws Exception {
 		cleaningpage.Cleaning_Download();
@@ -273,5 +267,118 @@ public class Cleaning extends Base {
 	@Then("download popup closed successfully")
 	public void download_popup_closed_successfully() throws Exception {
 	}
-	
+	@And("User click on View Ticket Tab")
+	public void User_click_on_View_Ticket_Tab() throws Exception {
+		cleaningpage.View_Ticket();
+	}
+	@Then("View Ticket page will display successfully")
+	public void View_Ticket_page_will_display_successfully() throws Exception {
+	}
+	@And("User Click on Upload Photos videos and voice in View Ticket page")
+	public void User_Click_on_Upload_videos_and_voice_in_View_Ticket_page() throws Exception {
+		cleaningpage.Upload_Photos();
+		cleaningpage.Upload_videos();
+		cleaningpage.Upload_voice();
+	}
+	@And("User Click on close button of uploaded photos and confirmed in view ticket page")
+	public void User_Click_on_close_button_of_Upload_photos_and_confirmed_in_view_ticket_page() throws Exception {
+		cleaningpage.Upload_Photos();
+		cleaningpage.Upload_photo_close();
+		cleaningpage.Upload_photo_close_confirmed();
+}
+	@Then("User Click on close button of uploaded videos and confirmed in view ticket page")
+	public void User_clicks_verify_button_and_confirm_yes_button_and_confirmed_in_view_ticket_page() throws Exception {
+		cleaningpage.Upload_videos();
+		cleaningpage.Upload_video_close();
+		cleaningpage.Upload_video_close_confirmed();
+}
+	@And("User clicks start conversation button in view ticket page")
+	public void User_clicks_start_conversation_button_in_view_ticket_page() throws Exception {
+		cleaningpage.Start_conversation();
+}
+	@Then("Chat page will be displayed successfully")
+	public void Chat_page_will_be_displayed_successfully() throws Exception {
+		cleaningpage.Chat_page_Displayed();
+}
+	@And("User clicks Viewed Tab in Edit page")
+	public void User_clicks_Viewed_Tab_in_Edit_page() throws Exception {
+		cleaningpage.Viewed_ticket();
+}
+	@Then("Viewed ticket Tab will be displayed successfully")
+	public void Viewed_ticket_Tab_will_be_displayed_successfully() throws Exception {
+		cleaningpage.Viewed_ticket_Displayed();
+}
+	@And("User clicks Overdue Tab in Edit page")
+	public void User_clicks_Overdue_Tab_in_Edit_page() throws Exception {
+		cleaningpage.Overdue_ticket();
+}
+	@Then("Overdue ticket Tab will be displayed successfully")
+	public void Overdue_ticket_Tab_will_be_displayed_successfully() throws Exception {
+		cleaningpage.Overdue_ticket_Displayed();
+}    
+	@And("User clicks Submitted Tab in Edit page")
+	public void User_clicks_Submitted_Tab_in_Edit_page() throws Exception {
+		cleaningpage.Submitted_ticket();
+}
+	@Then("Submitted ticket Tab will be displayed successfully")
+	public void Submitted_ticket_Tab_will_be_displayed_successfully() throws Exception {
+		cleaningpage.Submitted_ticket_Displayed();
+}
+	@And("User clicks Verified Tab in Edit page")
+	public void User_clicks_Verified_Tab_in_Edit_page() throws Exception {
+		cleaningpage.Verified_ticket();
+}
+	@Then("Verified ticket Tab will be displayed successfully")
+	public void Verified_ticket_Tab_will_be_displayed_successfully() throws Exception {
+		cleaningpage.Verified_ticket_Displayed();
+}
+	@And("User clicks Reassigned Tab in Edit page")
+	public void User_clicks_Reassigned_Tab_in_Edit_page() throws Exception {
+		cleaningpage.Reassigned_ticket();
+}
+	@Then("Reassigned ticket Tab will be displayed successfully")
+	public void Reassigned_ticket_Tab_will_be_displayed_successfully() throws Exception {
+		cleaningpage.Reassigned_ticket_Displayed();
+}
+	@And("User clicks Closed Tab in Edit page")
+	public void User_clicks_Closed_Tab_in_Edit_page() throws Exception {
+		cleaningpage.Closed_ticket();
+}
+	@Then("Closed ticket Tab will be displayed successfully")
+	public void Closed_ticket_Tab_will_be_displayed_successfully() throws Exception {
+		cleaningpage.Closed_ticket_Displayed();
+}
+	@And("User click on second page button in the Cleaning module")
+	public void User_click_on_second_page_button_in_the_Cleaning_module() throws Exception {
+		cleaningpage.Second_page();
+}
+	@Then("Second page of Cleaning get displayed successfully")
+	public void Second_page_of_Cleaning_get_displayed_successfully() throws Exception {
+		cleaningpage.Second_page_Display();
+}
+	@And("Go to Next page of Cleaning page")
+	public void Go_to_Next_page_of_Cleaning_page() throws Exception {
+		cleaningpage.next_page();
+}
+	@Then("Next page Cleaning get displayed successfully")
+	public void Next_page_Cleaning_get_displayed_successfully() throws Exception {
+}
+	@And("Go to Previous page of Cleaning page")
+	public void Go_to_Previous_page_of_Cleaning_page() throws Exception {
+		cleaningpage.Previous_page();
+}
+	@Then("Previous page Cleaning get displayed successfully")
+	public void Previous_page_Cleaning_get_displayed_successfully() throws Exception {
+}
+	@And("Go to Last page of Cleaning page")
+	public void Go_to_Last_page_of_Cleaning_page() throws Exception {
+		cleaningpage.last_page();
+}
+	@Then("Last page Cleaning get displayed successfully")
+	public void Last_page_Cleaning_get_displayed_successfully() throws Exception {
+}
+	@And("User click on first page button of Cleaning")
+	public void User_click_on_first_page_button_of_Cleaning() throws Exception {
+		cleaningpage.First_page();
+}
 }

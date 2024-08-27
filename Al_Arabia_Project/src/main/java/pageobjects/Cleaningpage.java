@@ -17,6 +17,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.AssertJUnit;
 
+import io.cucumber.java.en.And;
+import io.cucumber.java.en.Then;
 import resources.Base;
 
 public class Cleaningpage extends Base {
@@ -79,7 +81,7 @@ public class Cleaningpage extends Base {
 	public void AllcleaningCount() {
 		wait.until(ExpectedConditions.visibilityOf(cleaningCount)).isDisplayed();
 		AssertJUnit.assertTrue(cleaningCount.isDisplayed());
-		LOGGER.info(">> The Cleaning page got displayed");
+		LOGGER.info(">> The Cleaning page get displayed");
 	}
 	
 	@FindBy(id = "New Group")
@@ -461,5 +463,214 @@ public class Cleaningpage extends Base {
 
 		wait.until(ExpectedConditions.visibilityOf(group_update_confirm_yes_button)).click();
 
+	}
+	@FindBy(xpath = "//span[@class='edit_link_routes false']")
+	private WebElement view_ticket;
+	public void View_Ticket()throws Exception{
+		wait.until(ExpectedConditions.visibilityOf(edit_priority_label)).isDisplayed();
+		wait.until(ExpectedConditions.visibilityOf(view_ticket)).click();
+	}
+	@FindBy(xpath = "//span[@class='edit_link_routes false']")
+	private WebElement view_ticket_display;
+	public void View_Ticket_display()throws Exception{
+		wait.until(ExpectedConditions.visibilityOf(view_ticket_display)).isDisplayed();
+		AssertJUnit.assertTrue(view_ticket_display.isDisplayed());
+		LOGGER.info("<< View Ticket page get displayed");
+	}
+
+	@FindBy(xpath = "//input[@accept='image/png, image/gif, image/jpeg']")
+
+	private WebElement Click_upload_photos;
+
+	public void Upload_Photos() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(edit_priority_label));
+		act.moveToElement(Click_upload_photos).perform();
+		String image = System.getProperty("user.dir") + "/Documents/Image.png";
+		Click_upload_photos.sendKeys(image);
+	}
+	@FindBy(xpath = "//input[@class='inputfilevideo']")
+	private WebElement click_upload_videos;
+	
+	public void Upload_videos() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(edit_priority_label));
+		act.moveToElement(click_upload_videos).perform();
+		String video = System.getProperty("user.dir") + "/Documents/Video.webm";
+		click_upload_videos.sendKeys(video);
+	}
+	@FindBy(xpath = "//h6[normalize-space()='VOICE']")
+	private WebElement click_upload_voice;
+	@FindBy(xpath = "//h6[normalize-space()='Record']")
+	private WebElement record_button;
+	@FindBy(xpath = "//h6[normalize-space()='Stop']")
+	private WebElement stop_button;
+	@FindBy(xpath = "//span[contains(@class,'fw-semibold')]")
+	private WebElement update_audio_button;
+	@FindBy(xpath = "//div[@class=' d-flex justify-content-end']//img")
+	private WebElement record_close_button;
+	
+	public void Upload_voice() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(edit_priority_label));
+		act.moveToElement(click_upload_voice).perform();
+		wait.until(ExpectedConditions.visibilityOf(click_upload_voice)).click();
+		wait.until(ExpectedConditions.visibilityOf(record_button)).click();
+	//	Thread.sleep(2000);
+
+		wait.until(ExpectedConditions.visibilityOf(stop_button)).click();
+		Thread.sleep(2000);
+
+		wait.until(ExpectedConditions.visibilityOf(update_audio_button)).click();
+		wait.until(ExpectedConditions.visibilityOf(record_close_button)).click();
+
+	}
+	@FindBy(xpath = "//div[contains(@class,'attachment position-relative')]//img[contains(@class,'position-absolute x_close')]")
+	private WebElement click_uploaded_photo_close;
+	public void Upload_photo_close() throws Exception {
+	act.moveToElement(click_uploaded_photo_close).perform();
+		wait.until(ExpectedConditions.visibilityOf(click_uploaded_photo_close)).click();;
+	}
+	@FindBy(xpath = "//h6[normalize-space()='Yes, remove it.']")
+	private WebElement click_uploaded_photo_close_confirm;
+	public void Upload_photo_close_confirmed() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(click_uploaded_photo_close_confirm)).click();;
+	}
+	@FindBy(xpath = "//div[@class=' d-flex py-5 flex-wrap gap-4']")
+	private WebElement attach_medias;
+	@FindBy(xpath = "//img[@class=' position-absolute x_close']")
+	private WebElement click_uploaded_video_close;
+	public void Upload_video_close() throws Exception {
+		Thread.sleep(4000);
+		wait.until(ExpectedConditions.visibilityOf(attach_medias));
+
+		act.moveToElement(click_uploaded_video_close).perform();
+		wait.until(ExpectedConditions.visibilityOf(click_uploaded_video_close)).click();
+	}
+	@FindBy(xpath = "//h6[normalize-space()='Yes, remove it.']")
+	private WebElement click_uploaded_video_close_confirm;
+	public void Upload_video_close_confirmed() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(click_uploaded_video_close_confirm)).click();;
+	}
+	@FindBy(id = "Start Conversation")
+	private WebElement click_start_conversation;
+
+	public void Start_conversation() throws Exception {
+		Thread.sleep(2000);
+		act.moveToElement(click_start_conversation).perform();
+		wait.until(ExpectedConditions.visibilityOf(click_start_conversation)).click();
+	}
+	@FindBy(xpath = "(//h5[normalize-space()='Ticket'])[1]")
+	private WebElement chat_page_display;
+
+	public void Chat_page_Displayed() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(chat_page_display));
+		AssertJUnit.assertTrue(chat_page_display.isDisplayed());
+		LOGGER.info("Chat page displayed");
+	}
+	@FindBy(xpath = "//span[normalize-space()='Viewed']")
+	private WebElement viewedticket;
+	public void Viewed_ticket()throws Exception{
+		wait.until(ExpectedConditions.visibilityOf(group_update_button)).isDisplayed();
+		act.moveToElement(viewedticket).click().perform();
+	}
+	@FindBy(xpath = "//span[normalize-space()='Viewed']")
+	private WebElement viewedticket_display;
+	public void Viewed_ticket_Displayed()throws Exception{
+		wait.until(ExpectedConditions.visibilityOf(viewedticket_display)).isDisplayed();
+		AssertJUnit.assertTrue(viewedticket_display.isDisplayed());
+	}
+	@FindBy(xpath = "//span[normalize-space()='Overdue']")
+	private WebElement overdueticket;
+	public void Overdue_ticket()throws Exception{
+		wait.until(ExpectedConditions.visibilityOf(group_update_button)).isDisplayed();
+		act.moveToElement(overdueticket).click().perform();
+	}
+	@FindBy(xpath = "//span[normalize-space()='Overdue']")
+	private WebElement overdueticket_display;
+	public void Overdue_ticket_Displayed()throws Exception{
+		wait.until(ExpectedConditions.visibilityOf(overdueticket_display)).isDisplayed();
+		AssertJUnit.assertTrue(overdueticket_display.isDisplayed());
+	}
+	@FindBy(xpath = "//span[normalize-space()='Submitted']")
+	private WebElement submittedticket;
+	public void Submitted_ticket()throws Exception{
+		wait.until(ExpectedConditions.visibilityOf(submittedticket)).isDisplayed();
+		act.moveToElement(submittedticket).click().perform();
+	}
+	@FindBy(xpath = "//span[normalize-space()='Submitted']")
+	private WebElement submittedticket_display;
+	public void Submitted_ticket_Displayed()throws Exception{
+		wait.until(ExpectedConditions.visibilityOf(submittedticket_display)).isDisplayed();
+		AssertJUnit.assertTrue(submittedticket_display.isDisplayed());
+	}
+	@FindBy(xpath = "//span[normalize-space()='Verified']")
+	private WebElement verifiedticket;
+	public void Verified_ticket()throws Exception{
+		wait.until(ExpectedConditions.visibilityOf(verifiedticket)).isDisplayed();
+		act.moveToElement(verifiedticket).click().perform();
+	}
+	@FindBy(xpath = "//span[normalize-space()='Verified']")
+	private WebElement verifiedticket_display;
+	public void Verified_ticket_Displayed()throws Exception{
+		wait.until(ExpectedConditions.visibilityOf(verifiedticket_display)).isDisplayed();
+		AssertJUnit.assertTrue(verifiedticket_display.isDisplayed());
+	}
+	@FindBy(xpath = "//span[normalize-space()='Reassigned']")
+	private WebElement reassignedticket;
+	public void Reassigned_ticket()throws Exception{
+		wait.until(ExpectedConditions.visibilityOf(reassignedticket)).isDisplayed();
+		act.moveToElement(reassignedticket).click().perform();
+	}
+	@FindBy(xpath = "//span[normalize-space()='Reassigned']")
+	private WebElement reassignedticket_display;
+	public void Reassigned_ticket_Displayed()throws Exception{
+		wait.until(ExpectedConditions.visibilityOf(reassignedticket_display)).isDisplayed();
+		AssertJUnit.assertTrue(reassignedticket_display.isDisplayed());
+	}
+	@FindBy(xpath = "//span[normalize-space()='Closed']")
+	private WebElement closedticket;
+	public void Closed_ticket()throws Exception{
+		wait.until(ExpectedConditions.visibilityOf(closedticket)).isDisplayed();
+		act.moveToElement(closedticket).click().perform();
+	}
+	@FindBy(xpath = "//span[normalize-space()='Closed']")
+	private WebElement closedticket_display;
+	public void Closed_ticket_Displayed()throws Exception{
+		wait.until(ExpectedConditions.visibilityOf(closedticket_display)).isDisplayed();
+		AssertJUnit.assertTrue(closedticket_display.isDisplayed());
+	}
+	@FindBy(xpath = "//div[normalize-space()='2']")
+	private WebElement click_second_page;
+	public void Second_page() throws Exception {
+		act.scrollToElement(click_second_page).build().perform();
+		wait.until(ExpectedConditions.visibilityOf(click_second_page)).click();
+	}
+	@FindBy(xpath = "//div[contains(text(),'Showing')]")
+	private WebElement second_page_display;
+	public void Second_page_Display() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(second_page_display));
+		AssertJUnit.assertTrue(second_page_display.isDisplayed());
+	}
+	@FindBy(xpath = "(//div[contains(@class,'round-effect')][contains(text(),'›')])[1]")
+	private WebElement click_next_page;
+	public void next_page() throws Exception {
+		act.scrollToElement(click_next_page).build().perform();
+		wait.until(ExpectedConditions.visibilityOf(click_next_page)).click();
+	}
+	@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[2]/div[1]/div[4]/div[2]/div[1]")
+	private WebElement click_previous_page;
+	public void Previous_page() throws Exception {
+		act.scrollToElement(click_previous_page).build().perform();
+		wait.until(ExpectedConditions.visibilityOf(click_previous_page)).click();
+	}
+	@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[2]/div[1]/div[5]/div[2]/div[4]")
+	private WebElement click_last_page;
+	public void last_page() throws Exception {
+		act.scrollToElement(click_last_page).build().perform();
+		wait.until(ExpectedConditions.visibilityOf(click_last_page)).click();
+	}
+	@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[2]/div[1]/div[5]/div[2]/div[1]")
+	private WebElement click_first_page;
+	public void First_page() throws Exception {
+		act.scrollToElement(click_first_page).build().perform();
+		wait.until(ExpectedConditions.visibilityOf(click_first_page)).click();
 	}
 }	

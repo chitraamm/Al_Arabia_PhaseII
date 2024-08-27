@@ -150,7 +150,7 @@ And User filter the Start Date and End date
 Then Cleaning from Start date and End date list get displayed successfully
 
 @Cleaning @Cleaning19 @smoke @regression @all
-Scenario Outline: T018_To verify the Cleaning feature filter by Assignee
+Scenario Outline: T019_To verify the Cleaning feature filter by Assignee
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Cleaning module
@@ -158,7 +158,7 @@ And User filter the Assignee
 Then Assignee cleaning list get displayed successfully
 
 @Cleaning @Cleaning20 @smoke @regression @all
-Scenario Outline: T018_To verify the Cleaning feature filter by Assignee
+Scenario Outline: T020_To verify the Cleaning feature filter by Assignee
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Cleaning module
@@ -166,7 +166,7 @@ And User filter the Billboard Type cleaning
 Then Billboard Type cleaning list get displayed successfully
 
 @Cleaning @Cleaning21 @smoke @regression @all
-Scenario Outline: T018_To verify the Cleaning feature filter by Assignee
+Scenario Outline: T021_To verify the Cleaning feature Update the Group
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Cleaning module
@@ -177,21 +177,16 @@ Then Particular Group gets updated successfully as "<successMessage>"
   Examples:
       | successMessage         |
       | Success Group updated  |
-
-
-
-
-
 @Cleaning @Cleaning22 @smoke @regression @all
-Scenario Outline: T017_To verify the Cleaning feature Download button
+Scenario Outline: T022_To verify the Cleaning feature Download button
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Cleaning module
 And Admin or user clicks the Download button in Cleaning page
 Then Download popup get displayed successfully
 
-@Cleaning @Cleaning31 @smoke @regression @all
-Scenario Outline: T017_To verify the Cleaning feature Excel Download
+@Cleaning @Cleaning23 @smoke @regression @all
+Scenario Outline: T023_To verify the Cleaning feature Excel Download
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Cleaning module
@@ -199,8 +194,8 @@ And Admin or user clicks the Download button in Cleaning page
 And User click on Excel Download
 Then Excel file get downloaded successfully
 
-@Cleaning @Cleaning39 @smoke @regression @all
-Scenario Outline: T019_To verify the Cleaning feature PDF Download
+@Cleaning @Cleaning24 @smoke @regression @all
+Scenario Outline: T024_To verify the Cleaning feature PDF Download
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Cleaning module
@@ -208,11 +203,150 @@ And Admin or user clicks the Download button in Cleaning page
 And User click on PDF Download
 Then PDF file get downloaded successfully
 
-@Cleaning @Cleaning40 @smoke @regression @all
-Scenario Outline: T019_To verify the Cleaning feature Close Download popup
+@Cleaning @Cleaning25 @smoke @regression @all
+Scenario Outline: T025_To verify the Cleaning feature display view Ticket page
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Cleaning module
-And Admin or user clicks the Download button in Cleaning page
-And User click on close button
-Then download popup closed successfully
+And User click edit button
+And User click on View Ticket Tab
+Then View Ticket page will display successfully
+
+@Cleaning @Cleaning26 @smoke @regression @all
+Scenario Outline: T026_To verify the Cleaning feature upload photos videos and voice
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Cleaning module
+And User click edit button
+And User click on View Ticket Tab
+And User Click on Upload Photos videos and voice in View Ticket page
+And User Update the group and confirmed yes button 
+Then Particular Group gets updated successfully as "<successMessage>"
+  Examples:
+      | successMessage         |
+      | Success Group updated  |
+
+@Cleaning @Cleaning27 @smoke @regression @all
+Scenario Outline: T027_To verify the Cleaning feature clicks close button of uploaded photo in view ticket page  
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Cleaning module
+And User click edit button
+And User click on View Ticket Tab
+Then User Click on close button of uploaded photos and confirmed in view ticket page  
+
+@Cleaning @Cleaning28 @smoke @regression @all
+Scenario Outline: T028_To verify the Cleaning feature clicks close button of uploaded videos in view ticket page 
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Cleaning module
+And User click edit button
+And User click on View Ticket Tab
+Then User Click on close button of uploaded videos and confirmed in view ticket page 
+
+@Cleaning @Cleaning29 @smoke @regression @all
+Scenario Outline: T029_To verify the Tickets feature start conversation in view ticket page 
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Cleaning module
+And User click edit button
+And User click on View Ticket Tab
+And User clicks start conversation button in view ticket page 
+Then Chat page will be displayed successfully 
+
+@Cleaning @Cleaning30 @smoke @regression @all
+Scenario Outline: T030_To verify the Tickets feature click 'Viewed' Tab  in view ticket page 
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Cleaning module
+And User click edit button
+And User clicks Viewed Tab in Edit page
+Then Viewed ticket Tab will be displayed successfully  
+
+@Cleaning @Cleaning31 @smoke @regression @all
+Scenario Outline: T031_To verify the Tickets feature click 'Overdue' Tab  in view ticket page 
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Cleaning module
+And User click edit button
+And User clicks Overdue Tab in Edit page
+Then Overdue ticket Tab will be displayed successfully 
+
+@Cleaning @Cleaning32 @smoke @regression @all
+Scenario Outline: T032_To verify the Tickets feature click 'Submitted' Tab  in view ticket page 
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Cleaning module
+And User click edit button
+And User clicks Submitted Tab in Edit page
+Then Submitted ticket Tab will be displayed successfully 
+
+@Cleaning @Cleaning33 @smoke @regression @all
+Scenario Outline: T033_To verify the Tickets feature click 'Verified' Tab  in view ticket page 
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Cleaning module
+And User click edit button
+And User clicks Verified Tab in Edit page
+Then Verified ticket Tab will be displayed successfully 
+
+@Cleaning @Cleaning34 @smoke @regression @all
+Scenario Outline: T034_To verify the Tickets feature click 'Reassigned' Tab  in view ticket page 
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Cleaning module
+And User click edit button
+And User clicks Reassigned Tab in Edit page
+Then Reassigned ticket Tab will be displayed successfully 
+
+@Cleaning @Cleaning35 @smoke @regression @all
+Scenario Outline: T035_To verify the Tickets feature click 'Reassigned' Tab  in view ticket page 
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Cleaning module
+And User click edit button
+And User clicks Closed Tab in Edit page
+Then Closed ticket Tab will be displayed successfully
+
+@Cleaning @Cleaning36 @smoke @regression @all
+Scenario Outline: T036_To verify the Cleaning feature pagination 1st to 2nd page 
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Cleaning module
+And User click on second page button in the Cleaning module 
+Then Second page of Cleaning get displayed successfully 
+
+@Cleaning @Cleaning37 @smoke @regression @all
+Scenario Outline: T037_To verify the Cleaning feature pagination next page 
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Cleaning module 
+And Go to Next page of Cleaning page
+Then Next page Cleaning get displayed successfully  
+
+@Cleaning @Cleaning38 @smoke @regression @all
+Scenario Outline: T038_To verify the Cleaning feature pagination previous page 
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Cleaning module 
+And Go to Next page of Cleaning page 
+And Go to Previous page of Cleaning page
+Then Previous page Cleaning get displayed successfully 
+
+@Cleaning @Cleaning39 @smoke @regression @all
+Scenario Outline: T039_To verify the Cleaning feature pagination last page 
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Cleaning module
+And Go to Last page of Cleaning page
+Then Last page Cleaning get displayed successfully   
+
+@Cleaning @Cleaning40 @smoke @regression @all
+Scenario Outline: T040_To verify the Cleaning feature pagination last page to first page
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Cleaning module 
+And Go to Last page of Cleaning page
+And User click on first page button of Cleaning
+Then First page Cleaning get displayed successfully 
+

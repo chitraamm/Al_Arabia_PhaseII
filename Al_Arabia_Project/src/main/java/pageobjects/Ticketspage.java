@@ -180,7 +180,7 @@ public class Ticketspage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(TicketSearch)).sendKeys(ticket_search + Keys.ENTER);
 		System.out.println(">> User enter the Ticket number in search field: " + ticket_search);
 	}
-	@FindBy(xpath = "//tbody/tr[@class='table_white']/td[1]/div[1]")
+	@FindBy(id = "doc_searchQueryInput")
 	private WebElement ticketSearchedList, Ticketlist;
 
 	public void TicketSearchedList() {
@@ -196,7 +196,7 @@ public class Ticketspage extends Base {
 	}
 
 	public void Ticketlist() {
-		wait.until(ExpectedConditions.visibilityOf(ticketSearchedList));
+		wait.until(ExpectedConditions.visibilityOf(Ticketlist));
 
 		if (Ticketlist.isDisplayed()) {
 			System.out.println("Element is displayed");

@@ -255,7 +255,7 @@ And User clicks start conversation button in view ticket page
 Then Chat page will be displayed successfully 
 
 @Cleaning @Cleaning30 @smoke @regression @all
-Scenario Outline: T030_To verify the Tickets feature click 'Viewed' Tab  in view ticket page 
+Scenario Outline: T030_To verify the Tickets feature click 'Viewed' Tab  in Edit page 
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Cleaning module
@@ -264,7 +264,7 @@ And User clicks Viewed Tab in Edit page
 Then Viewed ticket Tab will be displayed successfully  
 
 @Cleaning @Cleaning31 @smoke @regression @all
-Scenario Outline: T031_To verify the Tickets feature click 'Overdue' Tab  in view ticket page 
+Scenario Outline: T031_To verify the Tickets feature click 'Overdue' Tab  in Edit page 
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Cleaning module
@@ -273,7 +273,7 @@ And User clicks Overdue Tab in Edit page
 Then Overdue ticket Tab will be displayed successfully 
 
 @Cleaning @Cleaning32 @smoke @regression @all
-Scenario Outline: T032_To verify the Tickets feature click 'Submitted' Tab  in view ticket page 
+Scenario Outline: T032_To verify the Tickets feature click 'Submitted' Tab  in Edit page 
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Cleaning module
@@ -282,7 +282,7 @@ And User clicks Submitted Tab in Edit page
 Then Submitted ticket Tab will be displayed successfully 
 
 @Cleaning @Cleaning33 @smoke @regression @all
-Scenario Outline: T033_To verify the Tickets feature click 'Verified' Tab  in view ticket page 
+Scenario Outline: T033_To verify the Tickets feature click 'Verified' Tab in Edit page 
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Cleaning module
@@ -291,7 +291,7 @@ And User clicks Verified Tab in Edit page
 Then Verified ticket Tab will be displayed successfully 
 
 @Cleaning @Cleaning34 @smoke @regression @all
-Scenario Outline: T034_To verify the Tickets feature click 'Reassigned' Tab  in view ticket page 
+Scenario Outline: T034_To verify the Tickets feature click 'Reassigned' Tab  in Edit page 
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Cleaning module
@@ -350,3 +350,11 @@ And Go to Last page of Cleaning page
 And User click on first page button of Cleaning
 Then First page Cleaning get displayed successfully 
 
+@Cleaning @Cleaning41 @smoke @regression @all
+Scenario Outline: T041_To verify the Tickets feature click Edit icon in 'Created' Tab  in Edit page 
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Cleaning module
+And User click edit button
+And User clicks Edit icon in Created Ticket page
+Then Cleaning edit page will redirect to the specified ticket page

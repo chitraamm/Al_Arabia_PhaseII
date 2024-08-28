@@ -180,7 +180,7 @@ When Al-Arabia overall dashboard should display
 And Admin or user clicks the Tickets module
 And User Clicks Cleaning Tickets
 And User Clicks Non Cleaning Tickets
-Then Cleaning Tickets list get displayed successfully 
+Then Non Cleaning Tickets list get displayed successfully 
 
 @Tickets @Tickets23 @smoke @regression @all
 Scenario Outline: T023_To verify the Tickets feature Download button

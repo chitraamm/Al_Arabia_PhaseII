@@ -14,6 +14,7 @@ import pageobjects.Signinpage;
 import resources.Base;
 
 public class Inventory extends Base {
+	//private static Logger LOGGER = LogManager.getLogger(Tickets.class);
 
 	private static Logger LOGGER = LogManager.getLogger(Inventory.class);
 	private WebDriver driver;
@@ -145,5 +146,29 @@ public class Inventory extends Base {
 	public void The_Download_pop_up_get_closed_successfully_and_display_the_Inventory_list() throws Exception {
 		inventorypage.Download_popupclosd_displayed_Purchases();
 	}
-	
+	@And("User click on edit icon in all purchase page")
+	public void User_click_on_edit_icon_in_all_purchase_page() throws Exception {
+		inventorypage.Click_Purchases_Edit();
+	}
+	@And("User edit the Project name")
+	public void User_edit_the_Project_name() throws Exception {
+		inventorypage.Edit_projectname();
+	}
+	@And("User Click on Update Purchase button")
+	public void User_Click_on_Update_Purchase_button() throws Exception {
+		inventorypage.Updatebutton_click();
+	}
+	@Then("^Particular Purchase gets updated successfully with either \"([^\"]*)\" or \"([^\"]*)\"$")
+	public void Particular_Purchase_gets_updated_successfully_with_either (String expectedMessage1,
+			String expectedMessage2) throws Exception {
+		String actualMessage = inventorypage.inventory_create_Success_display();
+		String normalizedActualMessage = normalizeWhitespace(actualMessage);
+		System.out.println(">> User or Admin got the purchase created success message successfully: " + actualMessage);
+
+		boolean matchesMessage1 = normalizedActualMessage.equals(normalizeWhitespace(expectedMessage1));
+		boolean matchesMessage2 = normalizedActualMessage.equals(normalizeWhitespace(expectedMessage2));
+
+		assertTrue("The actual message was neither of the expected success messages.",
+				matchesMessage1 || matchesMessage2);
+	}
 }

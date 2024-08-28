@@ -32,7 +32,7 @@ Then Searched Purchase details get displayed successfully
 @Inventory @Inventory04 @smoke @regression @all
 Scenario Outline: T004_To verify the Purchases feature sort recently updated
 Given Admin logged in with valid credentials
-When Al-Arabia overall dashboard should display
+When Al-Arabia overall dashboard should display 
 And Admin or user clicks the Inventory module
 And Admin or user sort the Purchases list recently updated
 Then Recently updated Purchases list get displayed successfully
@@ -99,4 +99,17 @@ And Admin or user clicks the Inventory module
 And User clicks the Download button in inventory page after that click on close button 
 Then The Download pop up get closed successfully and display the Inventory list
 
-    
+@Inventory @Inventory13 @regression @sanity @all
+Scenario Outline: T013_To verify Purchase edit of any field
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Inventory module  
+And User click on edit icon in all purchase page
+And User edit the Project name
+And User Click on Update Purchase button
+Then Particular Purchase gets updated successfully with either "<successMessage1>" or "<successMessage2>"
+  Examples:
+      | successMessage1       | successMessage2                |
+      | LOADING...            | Success Material info updated  |
+      
+      

@@ -219,8 +219,8 @@ public class Tickets extends Base {
 	public void User_Clicks_Cleaning_Tickets() throws Exception {
 		ticketsPage.Cleaning_Ticket();
 	}
-	@Then("Tickets Cleaning list get displayed successfully")
-	public void Tickets_Cleaning_list_get_displayed_successfully() throws Exception {
+	@Then("Cleaning Tickets list get displayed successfully")
+	public void Cleaning_Tickets_list_get_displayed_successfully() throws Exception {
 		ticketsPage.Tickets_filtered_result_display();
 	}
 	@And("User Clicks Non Cleaning Tickets")
@@ -457,8 +457,8 @@ public class Tickets extends Base {
 	public void User_click_on_first_page_button() throws Exception {
 		ticketsPage.First_page();
 }
-	@Then("First page Cleaning get displayed successfully")
-	public void First_page_Cleaning_get_displayed_successfully() throws Exception {
+	@Then("First page Tickets get displayed successfully")
+	public void First_page_Tickets_get_displayed_successfully() throws Exception {
 }
 	@And("User click on Reset button with confirm yes button")
 	public void User_click_on_Reset_button_with_confirm_yes_button() throws Exception {

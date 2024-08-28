@@ -673,4 +673,16 @@ public class Cleaningpage extends Base {
 		act.scrollToElement(click_first_page).build().perform();
 		wait.until(ExpectedConditions.visibilityOf(click_first_page)).click();
 	}
+	@FindBy(xpath = "//img[@class='pointer']")
+	private WebElement click_edit_ticket;
+	public void Click_edit_ticket() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(click_edit_ticket)).isDisplayed();
+		act.moveToElement(click_edit_ticket).click().perform();
+	}
+	@FindBy(xpath = "//span[@class='edit_link_routes active']")
+	private WebElement Click_edit_ticket_display;
+	public void click_edit_ticket_display()throws Exception{
+		wait.until(ExpectedConditions.visibilityOf(Click_edit_ticket_display)).isDisplayed();
+		AssertJUnit.assertTrue(Click_edit_ticket_display.isDisplayed());
+	}
 }	

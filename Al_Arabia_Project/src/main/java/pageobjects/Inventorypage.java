@@ -3,8 +3,8 @@ package pageobjects;
 import java.io.FileInputStream;
 import java.time.Duration;
 import java.util.Properties;
-//import java.util.Random;
 import java.util.Random;
+//import java.util.Random;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -19,7 +19,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.AssertJUnit;
 
-import net.bytebuddy.asm.Advice.Enter;
+//import net.bytebuddy.asm.Advice.Enter;
 import resources.Base;
 
 public class Inventorypage extends Base {
@@ -28,7 +28,7 @@ public class Inventorypage extends Base {
 	private Properties prop;
 	private Actions act;
 	private Logger LOGGER = LogManager.getLogger(Inventorypage.class);
-	private Signinpage signinpage;
+	//private Signinpage signinpage;
 
 
 	public Inventorypage(WebDriver driver) throws Exception {
@@ -40,7 +40,7 @@ public class Inventorypage extends Base {
 		FileInputStream fis = new FileInputStream(propPath);
 		prop.load(fis);
 		initializeWait();
-		this.signinpage = new Signinpage(driver);
+		//this.signinpage = new Signinpage(driver);
 		LOGGER = LogManager.getLogger(Inventorypage.class.getName());
 	}
 
@@ -310,5 +310,23 @@ public class Inventorypage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(purchaseCount)).isDisplayed();
 		AssertJUnit.assertTrue(purchaseCount.isDisplayed());
 		LOGGER.info(">> The Download Popup get closed and listed Purchases");
+	}
+	@FindBy(xpath = "//*[@id=\"dropdown-basicActions\"]/svg")
+	private WebElement click_Purchases_Edit;
+	public void Click_Purchases_Edit()throws Exception{
+		wait.until(ExpectedConditions.visibilityOf(click_Purchases_Edit)).click();
+	//	act.moveToElement(click_Purchases_Edit).click().perform();
+	}
+	@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[2]/div[2]/form/div[2]/div[4]/div[1]/div/input")
+	private WebElement edit_projectname;
+	public void Edit_projectname()throws Exception{
+		wait.until(ExpectedConditions.visibilityOf(project_name)).isDisplayed();
+		act.moveToElement(project_name).click().perform();
+	}
+	@FindBy(id = "Update Purchase")
+	private WebElement updatebutton_click;
+	public void Updatebutton_click()throws Exception{
+		wait.until(ExpectedConditions.visibilityOf(updatebutton_click)).isDisplayed();
+		act.moveToElement(updatebutton_click).click().perform();
 	}
 }

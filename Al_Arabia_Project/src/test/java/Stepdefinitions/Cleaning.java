@@ -381,4 +381,17 @@ public class Cleaning extends Base {
 	public void User_click_on_first_page_button_of_Cleaning() throws Exception {
 		cleaningpage.First_page();
 }
+	@Then("First page Cleaning get displayed successfully")
+	public void First_page_Cleaning_get_displayed_successfully() throws Exception {
+}
+	@And("User clicks Edit icon in Created Ticket page")
+	public void User_clicks_Edit_icon_in_Created_Ticket_page() throws Exception {
+		cleaningpage.Click_edit_ticket();
+}
+	@Then("Cleaning edit page will redirect to the specified ticket page")
+	public void Cleaning_edit_page_will_redirect_to_the_specified_ticket_page() throws Exception {
+		cleaningpage.click_edit_ticket_display();
+
+}
+	
 }

@@ -135,7 +135,7 @@ public class Ticketspage extends Base {
 		
 		String Departmnt = prop.getProperty("Departmnt");
 		wait.until(ExpectedConditions.visibilityOf(Department_select)).sendKeys(Departmnt);
-		Thread.sleep(1000);
+	 	Thread.sleep(1000);
 		act.moveToElement(Department_select).click().sendKeys(""+Keys.ENTER+Keys.ARROW_RIGHT).perform();
 		
 		act.moveToElement(Priority_select).click().sendKeys("" + Keys.ENTER).perform();
@@ -793,4 +793,5 @@ public class Ticketspage extends Base {
 	AssertJUnit.assertTrue(tickets_reassign_tickmark_display.isDisplayed());
 		System.out.println(">> Reassigned Tick mark displayed in Tickets view page");
 	}
+
 }

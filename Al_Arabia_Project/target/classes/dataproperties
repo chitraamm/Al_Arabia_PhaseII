@@ -84,6 +84,8 @@ consignmentnumber = 30
 projectname = testproject
 QTY = 5
 Invoiceid = 6545
+editedprojectname = Alarabaia
+Materialid = MR586
 
 <---------Cleaning--------->
 

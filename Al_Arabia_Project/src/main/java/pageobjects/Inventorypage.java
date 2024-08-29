@@ -244,7 +244,7 @@ public class Inventorypage extends Base {
 	@FindBy(xpath = "(//h6[contains(text(),'Name - A to Z')])[1]")
 	private WebElement purchase_Name_A_to_Z;
 
-	public void Purchases_sortZ_A() {
+	public void Purchases_sortA_Z() {
 		wait.until(ExpectedConditions.visibilityOf(purchase_sort)).click();
 		wait.until(ExpectedConditions.visibilityOf(purchase_Name_A_to_Z)).click();
 		System.out.println(">> User clicked recently updated in sort");
@@ -253,7 +253,7 @@ public class Inventorypage extends Base {
 	@FindBy(xpath = "(//h6[contains(text(),'Name - Z to A')])[1]")
 	private WebElement purchase_Name_Z_to_A;
 
-	public void Purchase_sortZ_A() {
+	public void Purchases_sortZ_A() {
 		wait.until(ExpectedConditions.visibilityOf(purchase_sort)).click();
 		wait.until(ExpectedConditions.visibilityOf(purchase_Name_Z_to_A)).click();
 		System.out.println(">> User clicked Z-A updated in sort");
@@ -311,22 +311,249 @@ public class Inventorypage extends Base {
 		AssertJUnit.assertTrue(purchaseCount.isDisplayed());
 		LOGGER.info(">> The Download Popup get closed and listed Purchases");
 	}
-	@FindBy(xpath = "//*[@id=\"dropdown-basicActions\"]/svg")
+	@FindBy(xpath = "(//*[name()='svg'][@stroke='currentColor'])[7]")
 	private WebElement click_Purchases_Edit;
+	@FindBy(xpath = "//a[normalize-space()='Edit']")
+	private WebElement click_Edit;
 	public void Click_Purchases_Edit()throws Exception{
+		wait.until(ExpectedConditions.visibilityOf(purchaseCount)).isDisplayed();
 		wait.until(ExpectedConditions.visibilityOf(click_Purchases_Edit)).click();
-	//	act.moveToElement(click_Purchases_Edit).click().perform();
+		wait.until(ExpectedConditions.visibilityOf(click_Edit)).click();
 	}
 	@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[2]/div[2]/form/div[2]/div[4]/div[1]/div/input")
 	private WebElement edit_projectname;
 	public void Edit_projectname()throws Exception{
-		wait.until(ExpectedConditions.visibilityOf(project_name)).isDisplayed();
-		act.moveToElement(project_name).click().perform();
+		String projectname = prop.getProperty("editedprojectname");
+		wait.until(ExpectedConditions.visibilityOf(edit_projectname)).sendKeys(projectname);
 	}
 	@FindBy(id = "Update Purchase")
 	private WebElement updatebutton_click;
 	public void Updatebutton_click()throws Exception{
 		wait.until(ExpectedConditions.visibilityOf(updatebutton_click)).isDisplayed();
 		act.moveToElement(updatebutton_click).click().perform();
+	}
+	@FindBy(xpath = "//a[normalize-space()='View']")
+	private WebElement click_view;
+	public void Viewclick_option()throws Exception{
+		wait.until(ExpectedConditions.visibilityOf(purchaseCount)).isDisplayed();
+		wait.until(ExpectedConditions.visibilityOf(click_Purchases_Edit)).click();
+		wait.until(ExpectedConditions.visibilityOf(click_view)).click();
+	}
+	@FindBy(xpath = "//h5[normalize-space()='View Purchase']")
+	private WebElement purchaseView_display;
+	public void PurchaseView_display()throws Exception{
+		wait.until(ExpectedConditions.visibilityOf(purchaseView_display)).isDisplayed();
+		AssertJUnit.assertTrue(purchaseView_display.isDisplayed());
+		//wait.until(ExpectedConditions.visibilityOf(click_view)).click();
+	}
+	@FindBy(xpath = "//a[normalize-space()='Delete']")
+	private WebElement click_delete;
+	public void Deleteclick_option()throws Exception{
+		wait.until(ExpectedConditions.visibilityOf(purchaseCount)).isDisplayed();
+		wait.until(ExpectedConditions.visibilityOf(click_Purchases_Edit)).click();
+		wait.until(ExpectedConditions.visibilityOf(click_delete)).click();
+	}
+	@FindBy(xpath = "//h4[@class=' fw-semibold text-center text-black']")
+	private WebElement popup_delete;
+	@FindBy(xpath = "//h6[normalize-space()='Yes, delete material received from supplier.']")
+	private WebElement confirm_delete;
+	public void Confirmed_Deleteclick_option()throws Exception{
+		wait.until(ExpectedConditions.visibilityOf(popup_delete)).isDisplayed();
+		act.moveToElement(confirm_delete).click().perform();
+		//wait.until(ExpectedConditions.visibilityOf(click_delete)).click();
+	}
+	@FindBy(xpath = "//div[normalize-space()='2']")
+	private WebElement click_second_page;
+	public void Second_page() throws Exception {
+		act.scrollToElement(click_second_page).build().perform();
+		wait.until(ExpectedConditions.visibilityOf(click_second_page)).click();
+	}
+	@FindBy(xpath = "//div[contains(text(),'Showing')]")
+	private WebElement second_page_display;
+	public void Second_page_Display() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(second_page_display));
+		AssertJUnit.assertTrue(second_page_display.isDisplayed());
+	}
+	@FindBy(xpath = "(//div[contains(@class,'round-effect')][contains(text(),'›')])[1]")
+	private WebElement click_next_page;
+	public void next_page() throws Exception {
+		act.scrollToElement(click_next_page).build().perform();
+		wait.until(ExpectedConditions.visibilityOf(click_next_page)).click();
+	}
+	@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[2]/div/div[2]/div[1]/div[4]/div[2]/div[1]")
+	private WebElement click_previous_page;
+	public void Previous_page() throws Exception {
+		act.scrollToElement(click_previous_page).build().perform();
+		wait.until(ExpectedConditions.visibilityOf(click_previous_page)).click();
+	}
+	@FindBy(xpath = "/html/body/div/div/div[2]/div/div[2]/div/div[2]/div[1]/div[4]/div[2]/div[5]")
+	private WebElement click_last_page;
+	public void last_page() throws Exception {
+		act.scrollToElement(click_last_page).build().perform();
+		wait.until(ExpectedConditions.visibilityOf(click_last_page)).click();
+	}
+	@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[2]/div/div[2]/div[1]/div[4]/div[2]/div[1]")
+	private WebElement click_first_page;
+	public void First_page() throws Exception {
+		act.scrollToElement(click_first_page).build().perform();
+		wait.until(ExpectedConditions.visibilityOf(click_first_page)).click();
+	}
+	@FindBy(xpath = "(//img[@class='mx-3 pointer'])[1]")
+	private WebElement click_start_conversation;
+
+	public void Start_conversation() throws Exception {
+		Thread.sleep(1000);
+		wait.until(ExpectedConditions.visibilityOf(purchaseCount)).isDisplayed();
+		act.moveToElement(click_start_conversation).click().perform();
+	}
+	@FindBy(xpath = "//span[@class='edit_link_routes active']")
+	private WebElement chat_page_display;
+
+	public void Chat_page_Displayed() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(chat_page_display));
+		AssertJUnit.assertTrue(chat_page_display.isDisplayed());
+		LOGGER.info("Chat page displayed");
+	}
+	@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[2]/div/div[1]/ul/li[2]/a/span")
+	private WebElement material_request;
+	public void Material_request_page() throws Exception{
+		wait.until(ExpectedConditions.visibilityOf(inventory_menu)).isDisplayed();
+		act.moveToElement(material_request).click().perform();
+	}
+	@FindBy(xpath = "//h5[normalize-space()='All Request(44)']")
+	private WebElement material_request_display;
+	public void Material_request_page_Displayed() throws Exception{
+		wait.until(ExpectedConditions.visibilityOf(material_request_display)).isDisplayed();
+		AssertJUnit.assertTrue(material_request_display.isDisplayed());
+	}
+	
+	
+
+	@FindBy(id = "doc_searchQueryInput")
+	private WebElement materialsearch;
+	
+	public void Material_search_enter_text() {
+		wait.until(ExpectedConditions.visibilityOf(materialsearch)).click();
+		String Material_Search = prop.getProperty("Materialid");
+		wait.until(ExpectedConditions.visibilityOf(materialsearch)).sendKeys(Material_Search + Keys.ENTER);
+		System.out.println(">> User enter the Purchase id in search field: " + Material_Search);
+	}
+	@FindBy(xpath = "(//input[@id='doc_searchQueryInput'])[1]")
+	private WebElement MaterialSearched, materialSearchlist;
+
+	public void MaterialSearchedList() {
+		wait.until(ExpectedConditions.visibilityOf(materialsearch));
+
+		if (MaterialSearched.isDisplayed()) {
+			System.out.println("Element is displayed");
+		} else {
+			System.out.println("Element is not displayed");
+		}
+		LOGGER.info(">> Admin/User searched purchases");
+		System.out.println(">> User got searched Material list: " + MaterialSearched.getText());
+	}
+
+	public void Material_list() {
+		wait.until(ExpectedConditions.visibilityOf(purchasesSearch));
+
+		if (materialSearchlist.isDisplayed()) {
+			System.out.println("Element is displayed");
+		} else {
+			System.out.println("Element is not displayed");
+		}
+		LOGGER.info(">> Admin/User clicked new purchase btn");
+		System.out.println(">> User got sorted Material list: " + materialSearchlist.getText());
+	}
+
+	@FindBy(xpath = "(//h6[contains(@class,'m-0 by fw-normal')][normalize-space()='Recently Added'])[1]")
+	private WebElement material_sort;
+
+	@FindBy(xpath = "(//h6[contains(text(),'Recently Updated')])[1]")
+	private WebElement material_sort_recentlyupdated;
+
+	@FindBy(xpath = "(//h6[contains(text(),'Recently Added')])[2]")
+	private WebElement material_sort_recentlyadded;
+
+	public void Material_sort_recentlyupdated() {
+		wait.until(ExpectedConditions.visibilityOf(material_sort)).click();
+		wait.until(ExpectedConditions.visibilityOf(material_sort_recentlyupdated)).click();
+		System.out.println(">> User clicked recently updated in sort");
+	}
+
+	public void Material_sort_recentlyadded() {
+		wait.until(ExpectedConditions.visibilityOf(material_sort)).click();
+		wait.until(ExpectedConditions.visibilityOf(material_sort_recentlyadded)).click();
+		System.out.println(">> User clicked recently added in sort");
+	}
+
+	@FindBy(xpath = "(//h6[contains(text(),'Name - A to Z')])[1]")
+	private WebElement material_Name_A_to_Z;
+
+	public void Material_sortA_Z() {
+		wait.until(ExpectedConditions.visibilityOf(material_sort)).click();
+		wait.until(ExpectedConditions.visibilityOf(material_Name_A_to_Z)).click();
+		System.out.println(">> User clicked recently updated in sort");
+	}
+
+	@FindBy(xpath = "(//h6[contains(text(),'Name - Z to A')])[1]")
+	private WebElement material_Name_Z_to_A;
+
+	public void Material_sortZ_A() {
+		wait.until(ExpectedConditions.visibilityOf(material_sort)).click();
+		wait.until(ExpectedConditions.visibilityOf(purchase_Name_Z_to_A)).click();
+		System.out.println(">> User clicked Z-A updated in sort");
+	}
+
+	@FindBy(xpath = "(//h6[contains(text(),'Decending - Date')])[1]")
+	private WebElement material_Name_decending;
+
+	public void Material_DecendingDate() {
+		wait.until(ExpectedConditions.visibilityOf(material_sort)).click();
+		wait.until(ExpectedConditions.visibilityOf(material_Name_decending)).click();
+		System.out.println(">> User clicked decending updated in sort");
+	}
+	@FindBy(xpath = "(//h6[contains(@class,'m-0 fw-normal')][normalize-space()='Download'])[1]")
+	private WebElement download_buttn_materialpage;
+
+	public void Download_button_Materialpage() {
+		act.moveToElement(download_buttn_materialpage).click().perform();
+		System.out.println(">> User clicked Download button");
+	}
+
+	@FindBy(xpath = "//div[contains(text(),'Download')]")
+	private WebElement material_Download_popup_display;
+
+	public void Material_Download_popup_display() {
+		wait.until(ExpectedConditions.visibilityOf(material_Download_popup_display)).isDisplayed();
+		AssertJUnit.assertTrue(purchases_Download_popup_display.isDisplayed());
+		LOGGER.info(">> The Download Popup got displayed");
+	}
+
+	@FindBy(xpath = "//div[normalize-space()='As Excel']")
+	private WebElement material_Download_excel;
+
+	public void Material_Download_Excel() {
+		wait.until(ExpectedConditions.visibilityOf(material_Download_excel)).click();
+	}
+
+	@FindBy(xpath = "//div[normalize-space()='As PDF']")
+	private WebElement material_Download_pdf;
+
+	public void Material_Download_PDF() {
+		wait.until(ExpectedConditions.visibilityOf(material_Download_pdf)).click();
+	}
+
+	@FindBy(xpath = "//span[@class='cursor-pointer']//*[name()='svg']")
+	private WebElement material_Download_popupclose;
+
+	public void Material_Download_popup_close() throws Exception {
+
+		wait.until(ExpectedConditions.visibilityOf(material_Download_popupclose)).click();
+	}
+
+	public void Download_popupclosd_displayed_Material() {
+		wait.until(ExpectedConditions.visibilityOf(material_request)).isDisplayed();
+		AssertJUnit.assertTrue(material_request.isDisplayed());
+		LOGGER.info(">> The Download Popup get closed and listed Material page");
 	}
 }

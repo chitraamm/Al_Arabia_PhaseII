@@ -10,7 +10,7 @@ import org.openqa.selenium.WebDriver;
 import Hooks.Testhooks;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
-import pageobjects.Signinpage;
+//import pageobjects.Signinpage;
 import pageobjects.Ticketspage;
 import resources.Base;
 
@@ -23,10 +23,10 @@ public class Tickets extends Base {
 	public Tickets(Testhooks testhooks) throws Exception {
 		this.driver = testhooks.getDriver();
 		this.ticketsPage = new Ticketspage(driver);
-		new Signinpage(driver);
+		//new Signinpage(driver);
 		LOGGER = LogManager.getLogger(Tickets.class.getName());
 	}
-	
+	 
 	@And("Admin or user clicks the Tickets module")
 	public void Admin_or_user_clicks_the_Tickets_module() throws Exception {
 		ticketsPage.Tickets_click();
@@ -453,8 +453,8 @@ public class Tickets extends Base {
 	@Then("Last page Tickets get displayed successfully")
 	public void Last_page_Tickets_get_displayed_successfully() throws Exception {
 }
-	@And("User click on first page button")
-	public void User_click_on_first_page_button() throws Exception {
+	@And("User click on first page button of Tickets")
+	public void User_click_on_first_page_button_of_Tickets() throws Exception {
 		ticketsPage.First_page();
 }
 	@Then("First page Tickets get displayed successfully")

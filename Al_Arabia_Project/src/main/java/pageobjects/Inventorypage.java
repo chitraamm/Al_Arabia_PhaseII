@@ -63,6 +63,8 @@ public class Inventorypage extends Base {
 		Random rand = new Random();
 		return baseboardNumber + rand.nextInt(1000);
 	}
+	@FindBy(xpath = "//h6[normalize-space()='Dashboard'][position()=1]")
+	private WebElement dashboardText;
 	@FindBy(xpath = "//span[normalize-space()='Inventory']")
 	private WebElement inventoryClick;
 
@@ -70,8 +72,9 @@ public class Inventorypage extends Base {
 	private WebElement inventory_menu;
 
 	public void Inventory_click() {
+		wait.until(ExpectedConditions.elementToBeClickable(dashboardText)).isDisplayed();
 		wait.until(ExpectedConditions.elementToBeClickable(inventoryClick)).click();
-		wait.until(ExpectedConditions.visibilityOf(inventory_menu)).isDisplayed();
+		//wait.until(ExpectedConditions.visibilityOf(inventory_menu)).isDisplayed();
 		LOGGER.info(">> Admin/User got navigated to inventory page");
 	}
 
@@ -414,9 +417,14 @@ public class Inventorypage extends Base {
 		AssertJUnit.assertTrue(chat_page_display.isDisplayed());
 		LOGGER.info("Chat page displayed");
 	}
+	
+	//<------------------------Material Request---------------------------------------------------->|
+	
 	@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[2]/div/div[1]/ul/li[2]/a/span")
 	private WebElement material_request;
+	
 	public void Material_request_page() throws Exception{
+		Thread.sleep(1000);
 		wait.until(ExpectedConditions.visibilityOf(inventory_menu)).isDisplayed();
 		act.moveToElement(material_request).click().perform();
 	}
@@ -426,8 +434,6 @@ public class Inventorypage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(material_request_display)).isDisplayed();
 		AssertJUnit.assertTrue(material_request_display.isDisplayed());
 	}
-	
-	
 
 	@FindBy(id = "doc_searchQueryInput")
 	private WebElement materialsearch;
@@ -556,4 +562,622 @@ public class Inventorypage extends Base {
 		AssertJUnit.assertTrue(material_request.isDisplayed());
 		LOGGER.info(">> The Download Popup get closed and listed Material page");
 	}
+	@FindBy(xpath = "//h5[normalize-space()='All Request(44)']")
+	private WebElement allrequestcount;
+	public void Allrequestcount()throws Exception{
+		wait.until(ExpectedConditions.visibilityOf(allrequestcount)).isDisplayed();
+		AssertJUnit.assertTrue(allrequestcount.isDisplayed());
+	}
+	@FindBy(id = "New Request")
+	private WebElement newrequest_button;
+	public void New_Request_Button()throws Exception{
+		Thread.sleep(1000);
+		wait.until(ExpectedConditions.visibilityOf(material_request)).isDisplayed();
+		wait.until(ExpectedConditions.visibilityOf(newrequest_button)).click();
+	}
+	@FindBy(xpath = "//h5[normalize-space()='New Request']")
+	private WebElement New_Request_heading;
+	@FindBy(id = "react-select-3-input")
+	private WebElement requestby;
+	
+	@FindBy(xpath = "(//h6[contains(@class,'m-0 fw-normal')][normalize-space()='New Request'])[1]")
+	private WebElement billboard_Id;
+	
+	@FindBy(xpath = "//input[@placeholder='Enter Location']")
+	private WebElement city;
+	
+	@FindBy(id = "react-select-4-input")
+	private WebElement request_stock_code;
+	
+	@FindBy(id = "Save")
+	private WebElement request_save;
+	
+	public void Enter_Mandatory_fieldsof_New_Request()throws Exception{
+		wait.until(ExpectedConditions.visibilityOf(New_Request_heading)).isDisplayed();
+		String RequestBy = prop.getProperty("requestbyuser");
+		wait.until(ExpectedConditions.visibilityOf(requestby)).sendKeys(RequestBy);
+		Thread.sleep(3000);
+        act.moveToElement(requestby).click().sendKeys(""+Keys.ENTER).perform(); 
+		
+        Thread.sleep(2000);
+		wait.until(ExpectedConditions.visibilityOf(requestby)).isDisplayed();
+        String Cityname = prop.getProperty("cityname");
+        Thread.sleep(3000);
+
+        wait.until(ExpectedConditions.visibilityOf(city)).sendKeys(Cityname+Keys.DOWN);
+        
+		Thread.sleep(1000);
+        wait.until(ExpectedConditions.visibilityOf(city)).isDisplayed();
+		Thread.sleep(2000);
+		act.moveToElement(stock_code).click().sendKeys(""+Keys.ENTER).perform();
+		
+		wait.until(ExpectedConditions.visibilityOf(stock_code)).isDisplayed();
+		wait.until(ExpectedConditions.visibilityOf(request_save)).click();
+	}
+	@FindBy(id = "Add Request")
+	private WebElement add_request;
+	public void Click_Add_Request_button()throws Exception{
+
+		wait.until(ExpectedConditions.visibilityOf(add_request)).isDisplayed();
+		wait.until(ExpectedConditions.visibilityOf(add_request)).click();
+	}
+	
+	//updatepenng
+	
+	
+
+	@FindBy(xpath = "(//*[name()='svg'][@stroke='currentColor'])[7]")
+	private WebElement click_material_Edit;
+	@FindBy(xpath = "//a[normalize-space()='View']")
+	private WebElement material_click_view;
+	public void Material_Viewclick_option()throws Exception{
+		wait.until(ExpectedConditions.visibilityOf(material_request)).isDisplayed();
+		wait.until(ExpectedConditions.visibilityOf(click_material_Edit)).click();
+		wait.until(ExpectedConditions.visibilityOf(click_view)).click();
+	}
+	@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[2]/div[1]/h5[2]")
+	private WebElement materialView_display;
+	public void material_View_display()throws Exception{
+		wait.until(ExpectedConditions.visibilityOf(materialView_display)).isDisplayed();
+		AssertJUnit.assertTrue(materialView_display.isDisplayed());
+		//wait.until(ExpectedConditions.visibilityOf(click_view)).click();
+	}
+	@FindBy(xpath = "//a[normalize-space()='Delete']")
+	private WebElement materialclick_delete;
+	public void Material_Deleteclick_option()throws Exception{
+		Thread.sleep(1000);
+		wait.until(ExpectedConditions.visibilityOf(material_request_display)).isDisplayed();
+		Thread.sleep(1000);
+
+		wait.until(ExpectedConditions.visibilityOf(click_material_Edit)).click();
+		wait.until(ExpectedConditions.visibilityOf(materialclick_delete)).click();
+	}
+	@FindBy(xpath = "//h4[@class=' fw-semibold text-center text-black']")
+	private WebElement materialpopup_delete;
+	@FindBy(xpath = "//h6[normalize-space()='Yes, delete material received from supplier.']")
+	private WebElement material_confirm_delete;
+	public void Material_Confirmed_Deleteclick_option()throws Exception{
+		wait.until(ExpectedConditions.visibilityOf(materialpopup_delete)).isDisplayed();
+		act.moveToElement(material_confirm_delete).click().perform();
+		//wait.until(ExpectedConditions.visibilityOf(click_delete)).click();
+	}
+	@FindBy(xpath = "//div[normalize-space()='2']")
+	private WebElement material_second_page;
+	public void Material_Second_page() throws Exception {
+		act.scrollToElement(material_second_page).build().perform();
+		wait.until(ExpectedConditions.visibilityOf(click_second_page)).click();
+	}
+	@FindBy(xpath = "//div[contains(text(),'Showing')]")
+	private WebElement material_second_page_display;
+	public void Second_page_Material_Display() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(material_second_page_display));
+		AssertJUnit.assertTrue(material_second_page_display.isDisplayed());
+	}
+	@FindBy(xpath = "(//div[contains(@class,'round-effect')][contains(text(),'›')])[1]")
+	private WebElement clickmaterial_next_page;
+	public void Material_next_page() throws Exception {
+		act.scrollToElement(clickmaterial_next_page).build().perform();
+		wait.until(ExpectedConditions.visibilityOf(clickmaterial_next_page)).click();
+	}
+	@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[2]/div/div[2]/div[1]/div[4]/div[2]/div[1]")
+	private WebElement clickmaterial_previous_page;
+	public void Material_Previous_page() throws Exception {
+		act.scrollToElement(clickmaterial_previous_page).build().perform();
+		wait.until(ExpectedConditions.visibilityOf(clickmaterial_previous_page)).click();
+	}
+	@FindBy(xpath = "/html/body/div/div/div[2]/div/div[2]/div/div[2]/div[1]/div[4]/div[2]/div[5]")
+	private WebElement click_material_last_page;
+	public void Material_last_page() throws Exception {
+		act.scrollToElement(click_material_last_page).build().perform();
+		wait.until(ExpectedConditions.visibilityOf(click_material_last_page)).click();
+	}
+	@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[2]/div/div[2]/div[1]/div[4]/div[2]/div[1]")
+	private WebElement click_material_first_page;
+	public void First_page_Material() throws Exception {
+		act.scrollToElement(click_material_first_page).build().perform();
+		wait.until(ExpectedConditions.visibilityOf(click_material_first_page)).click();
+	}
+	
+	//<---------------------------------------------Material Issued-------------------------------------------------------->
+
+	@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[2]/div/div[1]/ul/li[2]/a/span")
+	private WebElement material_issued_page;
+	
+	public void Material_Issued_page() throws Exception{
+		Thread.sleep(1000);
+		wait.until(ExpectedConditions.visibilityOf(inventory_menu)).isDisplayed();
+		act.moveToElement(material_issued_page).click().perform();
+	}
+	@FindBy(xpath = "")
+	private WebElement issued_material_display;
+	public void Material_Issued_page_Displayed() throws Exception{
+		wait.until(ExpectedConditions.visibilityOf(issued_material_display)).isDisplayed();
+		AssertJUnit.assertTrue(issued_material_display.isDisplayed());
+	}
+
+	@FindBy(id = "doc_searchQueryInput")
+	private WebElement issued_materialsearch;
+	
+	public void Issued_Material_search_enter_text() {
+		wait.until(ExpectedConditions.visibilityOf(issued_materialsearch)).click();
+		String Issued_Material_Search = prop.getProperty("Issued_Materialid");
+		wait.until(ExpectedConditions.visibilityOf(issued_materialsearch)).sendKeys(Issued_Material_Search + Keys.ENTER);
+		System.out.println(">> User enter the Purchase id in search field: " + Issued_Material_Search);
+	}
+	@FindBy(xpath = "(//input[@id='doc_searchQueryInput'])[1]")
+	private WebElement Issued_MaterialSearched, issued_materialSearchlist;
+
+	public void Issued_MaterialSearchedList() {
+		wait.until(ExpectedConditions.visibilityOf(issued_materialsearch));
+
+		if (Issued_MaterialSearched.isDisplayed()) {
+			System.out.println("Element is displayed");
+		} else {
+			System.out.println("Element is not displayed");
+		}
+		LOGGER.info(">> Admin/User searched purchases");
+		System.out.println(">> User got searched Issued_Material list: " + Issued_MaterialSearched.getText());
+	}
+
+	public void Issued_Material_list() {
+		wait.until(ExpectedConditions.visibilityOf(purchasesSearch));
+
+		if (issued_materialSearchlist.isDisplayed()) {
+			System.out.println("Element is displayed");
+		} else {
+			System.out.println("Element is not displayed");
+		}
+		LOGGER.info(">> Admin/User clicked new purchase btn");
+		System.out.println(">> User got sorted Issued_Material list: " + issued_materialSearchlist.getText());
+	}
+
+	@FindBy(xpath = "(//h6[contains(@class,'m-0 by fw-normal')][normalize-space()='Recently Added'])[1]")
+	private WebElement issued_material_sort;
+
+	@FindBy(xpath = "(//h6[contains(text(),'Recently Updated')])[1]")
+	private WebElement issued_material_sort_recentlyupdated;
+
+	@FindBy(xpath = "(//h6[contains(text(),'Recently Added')])[2]")
+	private WebElement issued_material_sort_recentlyadded;
+
+	public void Issued_Material_sort_recentlyupdated() {
+		wait.until(ExpectedConditions.visibilityOf(issued_material_sort)).click();
+		wait.until(ExpectedConditions.visibilityOf(issued_material_sort_recentlyupdated)).click();
+		System.out.println(">> User clicked recently updated in sort");
+	}
+
+	public void Issued_Material_sort_recentlyadded() {
+		wait.until(ExpectedConditions.visibilityOf(issued_material_sort)).click();
+		wait.until(ExpectedConditions.visibilityOf(issued_material_sort_recentlyadded)).click();
+		System.out.println(">> User clicked recently added in sort");
+	}
+
+	@FindBy(xpath = "(//h6[contains(text(),'Name - A to Z')])[1]")
+	private WebElement issued_material_Name_A_to_Z;
+
+	public void Issued_Material_sortA_Z() {
+		wait.until(ExpectedConditions.visibilityOf(issued_material_sort)).click();
+		wait.until(ExpectedConditions.visibilityOf(issued_material_Name_A_to_Z)).click();
+		System.out.println(">> User clicked recently updated in sort");
+	}
+
+	@FindBy(xpath = "(//h6[contains(text(),'Name - Z to A')])[1]")
+	private WebElement issued_material_Name_Z_to_A;
+
+	public void Issued_Material_sortZ_A() {
+		wait.until(ExpectedConditions.visibilityOf(issued_material_sort)).click();
+		wait.until(ExpectedConditions.visibilityOf(purchase_Name_Z_to_A)).click();
+		System.out.println(">> User clicked Z-A updated in sort");
+	}
+
+	@FindBy(xpath = "(//h6[contains(text(),'Decending - Date')])[1]")
+	private WebElement issued_material_Name_decending;
+
+	public void Issued_Material_DecendingDate() {
+		wait.until(ExpectedConditions.visibilityOf(issued_material_sort)).click();
+		wait.until(ExpectedConditions.visibilityOf(issued_material_Name_decending)).click();
+		System.out.println(">> User clicked decending updated in sort");
+	}
+	@FindBy(xpath = "(//h6[contains(@class,'m-0 fw-normal')][normalize-space()='Download'])[1]")
+	private WebElement download_buttn_issued_materialpage;
+
+	public void Download_button_Issued_Materialpage() {
+		act.moveToElement(download_buttn_issued_materialpage).click().perform();
+		System.out.println(">> User clicked Download button");
+	}
+
+	@FindBy(xpath = "//div[contains(text(),'Download')]")
+	private WebElement issued_material_Download_popup_display;
+
+	public void Issued_Material_Download_popup_display() {
+		wait.until(ExpectedConditions.visibilityOf(issued_material_Download_popup_display)).isDisplayed();
+		AssertJUnit.assertTrue(purchases_Download_popup_display.isDisplayed());
+		LOGGER.info(">> The Download Popup got displayed");
+	}
+
+	@FindBy(xpath = "//div[normalize-space()='As Excel']")
+	private WebElement issued_material_Download_excel;
+
+	public void Issued_Material_Download_Excel() {
+		wait.until(ExpectedConditions.visibilityOf(issued_material_Download_excel)).click();
+	}
+
+	@FindBy(xpath = "//div[normalize-space()='As PDF']")
+	private WebElement issued_material_Download_pdf;
+
+	public void Issued_Material_Download_PDF() {
+		wait.until(ExpectedConditions.visibilityOf(issued_material_Download_pdf)).click();
+	}
+
+	@FindBy(xpath = "//span[@class='cursor-pointer']//*[name()='svg']")
+	private WebElement issued_material_Download_popupclose;
+
+	public void Issued_Material_Download_popup_close() throws Exception {
+
+		wait.until(ExpectedConditions.visibilityOf(issued_material_Download_popupclose)).click();
+	}
+	public void Download_popupclosd_displayed_Issued_Material() {
+		wait.until(ExpectedConditions.visibilityOf(material_issued_page)).isDisplayed();
+		AssertJUnit.assertTrue(material_issued_page.isDisplayed());
+		LOGGER.info(">> The Download Popup get closed and listed Issued_Material page");
+	}
+	@FindBy(xpath = "//h5[normalize-space()='All Request(44)']")
+	private WebElement all_buyerscount;
+	public void All_Buyers_count()throws Exception{
+		wait.until(ExpectedConditions.visibilityOf(all_buyerscount)).isDisplayed();
+		AssertJUnit.assertTrue(all_buyerscount.isDisplayed());
+	}
+
+	@FindBy(xpath = "(//*[name()='svg'][@stroke='currentColor'])[7]")
+	private WebElement click_issuedmaterial_Edit_option;
+	@FindBy(xpath = "//a[normalize-space()='View']")
+	private WebElement issued_material_click_view;
+	public void Issued_Material_Viewclick_option()throws Exception{
+		wait.until(ExpectedConditions.visibilityOf(material_request)).isDisplayed();
+		wait.until(ExpectedConditions.visibilityOf(click_issuedmaterial_Edit_option)).click();
+		wait.until(ExpectedConditions.visibilityOf(issued_material_click_view)).click();
+	}
+	@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[2]/div[1]/h5[2]")
+	private WebElement issued_materialView_display;
+	public void Issued_Material_View_display()throws Exception{
+		wait.until(ExpectedConditions.visibilityOf(issued_materialView_display)).isDisplayed();
+		AssertJUnit.assertTrue(issued_materialView_display.isDisplayed());
+		//wait.until(ExpectedConditions.visibilityOf(click_view)).click();
+	}
+	@FindBy(xpath = "//div[normalize-space()='2']")
+	private WebElement issued_material_second_page;
+	public void Issued_Material_Second_page() throws Exception {
+		act.scrollToElement(issued_material_second_page).build().perform();
+		wait.until(ExpectedConditions.visibilityOf(click_second_page)).click();
+	}
+	@FindBy(xpath = "//div[contains(text(),'Showing')]")
+	private WebElement issued_material_second_page_display;
+	public void Second_page_Issued_Material_Display() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(issued_material_second_page_display));
+		AssertJUnit.assertTrue(issued_material_second_page_display.isDisplayed());
+	}
+	@FindBy(xpath = "(//div[contains(@class,'round-effect')][contains(text(),'›')])[1]")
+	private WebElement clickissued_material_next_page;
+	public void Issued_Material_next_page() throws Exception {
+		act.scrollToElement(clickissued_material_next_page).build().perform();
+		wait.until(ExpectedConditions.visibilityOf(clickissued_material_next_page)).click();
+	}
+	@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[2]/div/div[2]/div[1]/div[4]/div[2]/div[1]")
+	private WebElement clickissued_material_previous_page;
+	public void Issued_Material_Previous_page() throws Exception {
+		act.scrollToElement(clickissued_material_previous_page).build().perform();
+		wait.until(ExpectedConditions.visibilityOf(clickissued_material_previous_page)).click();
+	}
+	@FindBy(xpath = "/html/body/div/div/div[2]/div/div[2]/div/div[2]/div[1]/div[4]/div[2]/div[5]")
+	private WebElement click_issued_material_last_page;
+	public void Issued_Material_last_page() throws Exception {
+		act.scrollToElement(click_issued_material_last_page).build().perform();
+		wait.until(ExpectedConditions.visibilityOf(click_issued_material_last_page)).click();
+	}
+	@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[2]/div/div[2]/div[1]/div[4]/div[2]/div[1]")
+	private WebElement click_issued_material_first_page;
+	public void First_page_Issued_Material() throws Exception {
+		act.scrollToElement(click_issued_material_first_page).build().perform();
+		wait.until(ExpectedConditions.visibilityOf(click_issued_material_first_page)).click();
+	}
+
+	//<------------------------------------------Damage Received From Technician----------------------------------------------------->
+	@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[2]/div/div[1]/ul/li[2]/a/span")
+	private WebElement damage_rec_Technician_Return;
+	
+	public void DamageRecTechnician_page() throws Exception{
+		Thread.sleep(1000);
+		wait.until(ExpectedConditions.visibilityOf(inventory_menu)).isDisplayed();
+		act.moveToElement(damage_rec_Technician_Return).click().perform();
+	}
+	@FindBy(xpath = "//h5[normalize-space()='All Request(44)']")
+	private WebElement damage_rec_Technician_Return_display;
+	public void DamageRecTechnician_page_Displayed() throws Exception{
+		wait.until(ExpectedConditions.visibilityOf(damage_rec_Technician_Return_display)).isDisplayed();
+		AssertJUnit.assertTrue(damage_rec_Technician_Return_display.isDisplayed());
+	}
+
+	@FindBy(id = "doc_searchQueryInput")
+	private WebElement damage_rec_Techniciansearch;
+	
+	public void DamageRecTechnician_search_enter_text() {
+		wait.until(ExpectedConditions.visibilityOf(damage_rec_Techniciansearch)).click();
+		String DamageRecTechnician_Search = prop.getProperty("DamageRecTechnicianid");
+		wait.until(ExpectedConditions.visibilityOf(damage_rec_Techniciansearch)).sendKeys(DamageRecTechnician_Search + Keys.ENTER);
+		System.out.println(">> User enter the Purchase id in search field: " + DamageRecTechnician_Search);
+	}
+	@FindBy(xpath = "(//input[@id='doc_searchQueryInput'])[1]")
+	private WebElement DamageRecTechnicianSearched, damage_rec_TechnicianSearchlist;
+
+	public void DamageRecTechnicianSearchedList() {
+		wait.until(ExpectedConditions.visibilityOf(damage_rec_Techniciansearch));
+
+		if (DamageRecTechnicianSearched.isDisplayed()) {
+			System.out.println("Element is displayed");
+		} else {
+			System.out.println("Element is not displayed");
+		}
+		LOGGER.info(">> Admin/User searched purchases");
+		System.out.println(">> User got searched DamageRecTechnician list: " + DamageRecTechnicianSearched.getText());
+	}
+
+	public void DamageRecTechnician_list() {
+		wait.until(ExpectedConditions.visibilityOf(purchasesSearch));
+
+		if (damage_rec_TechnicianSearchlist.isDisplayed()) {
+			System.out.println("Element is displayed");
+		} else {
+			System.out.println("Element is not displayed");
+		}
+		LOGGER.info(">> Admin/User clicked new purchase btn");
+		System.out.println(">> User got sorted DamageRecTechnician list: " + damage_rec_TechnicianSearchlist.getText());
+	}
+
+	@FindBy(xpath = "(//h6[contains(@class,'m-0 by fw-normal')][normalize-space()='Recently Added'])[1]")
+	private WebElement damage_rec_Technician_sort;
+
+	@FindBy(xpath = "(//h6[contains(text(),'Recently Updated')])[1]")
+	private WebElement damage_rec_Technician_sort_recentlyupdated;
+
+	@FindBy(xpath = "(//h6[contains(text(),'Recently Added')])[2]")
+	private WebElement damage_rec_Technician_sort_recentlyadded;
+
+	public void DamageRecTechnician_sort_recentlyupdated() {
+		wait.until(ExpectedConditions.visibilityOf(damage_rec_Technician_sort)).click();
+		wait.until(ExpectedConditions.visibilityOf(damage_rec_Technician_sort_recentlyupdated)).click();
+		System.out.println(">> User clicked recently updated in sort");
+	}
+
+	public void DamageRecTechnician_sort_recentlyadded() {
+		wait.until(ExpectedConditions.visibilityOf(damage_rec_Technician_sort)).click();
+		wait.until(ExpectedConditions.visibilityOf(damage_rec_Technician_sort_recentlyadded)).click();
+		System.out.println(">> User clicked recently added in sort");
+	}
+
+	@FindBy(xpath = "(//h6[contains(text(),'Name - A to Z')])[1]")
+	private WebElement damage_rec_Technician_Name_A_to_Z;
+
+	public void DamageRecTechnician_sortA_Z() {
+		wait.until(ExpectedConditions.visibilityOf(damage_rec_Technician_sort)).click();
+		wait.until(ExpectedConditions.visibilityOf(damage_rec_Technician_Name_A_to_Z)).click();
+		System.out.println(">> User clicked recently updated in sort");
+	}
+
+	@FindBy(xpath = "(//h6[contains(text(),'Name - Z to A')])[1]")
+	private WebElement damage_rec_Technician_Name_Z_to_A;
+
+	public void DamageRecTechnician_sortZ_A() {
+		wait.until(ExpectedConditions.visibilityOf(damage_rec_Technician_sort)).click();
+		wait.until(ExpectedConditions.visibilityOf(purchase_Name_Z_to_A)).click();
+		System.out.println(">> User clicked Z-A updated in sort");
+	}
+
+	@FindBy(xpath = "(//h6[contains(text(),'Decending - Date')])[1]")
+	private WebElement damage_rec_Technician_Name_decending;
+
+	public void DamageRecTechnician_DecendingDate() {
+		wait.until(ExpectedConditions.visibilityOf(damage_rec_Technician_sort)).click();
+		wait.until(ExpectedConditions.visibilityOf(damage_rec_Technician_Name_decending)).click();
+		System.out.println(">> User clicked decending updated in sort");
+	}
+	@FindBy(xpath = "(//h6[contains(@class,'m-0 fw-normal')][normalize-space()='Download'])[1]")
+	private WebElement download_buttn_damage_rec_Technicianpage;
+
+	public void Download_button_DamageRecTechnicianpage() {
+		act.moveToElement(download_buttn_damage_rec_Technicianpage).click().perform();
+		System.out.println(">> User clicked Download button");
+	}
+
+	@FindBy(xpath = "//div[contains(text(),'Download')]")
+	private WebElement damage_rec_Technician_Download_popup_display;
+
+	public void DamageRecTechnician_Download_popup_display() {
+		wait.until(ExpectedConditions.visibilityOf(damage_rec_Technician_Download_popup_display)).isDisplayed();
+		AssertJUnit.assertTrue(purchases_Download_popup_display.isDisplayed());
+		LOGGER.info(">> The Download Popup got displayed");
+	}
+
+	@FindBy(xpath = "//div[normalize-space()='As Excel']")
+	private WebElement damage_rec_Technician_Download_excel;
+
+	public void DamageRecTechnician_Download_Excel() {
+		wait.until(ExpectedConditions.visibilityOf(damage_rec_Technician_Download_excel)).click();
+	}
+
+	@FindBy(xpath = "//div[normalize-space()='As PDF']")
+	private WebElement damage_rec_Technician_Download_pdf;
+
+	public void DamageRecTechnician_Download_PDF() {
+		wait.until(ExpectedConditions.visibilityOf(damage_rec_Technician_Download_pdf)).click();
+	}
+
+	@FindBy(xpath = "//span[@class='cursor-pointer']//*[name()='svg']")
+	private WebElement damage_rec_Technician_Download_popupclose;
+
+	public void DamageRecTechnician_Download_popup_close() throws Exception {
+
+		wait.until(ExpectedConditions.visibilityOf(damage_rec_Technician_Download_popupclose)).click();
+	}
+
+	public void Download_popupclosd_displayed_DamageRecTechnician() {
+		wait.until(ExpectedConditions.visibilityOf(damage_rec_Technician_Return)).isDisplayed();
+		AssertJUnit.assertTrue(damage_rec_Technician_Return.isDisplayed());
+		LOGGER.info(">> The Download Popup get closed and listed DamageRecTechnician page");
+	}
+	@FindBy(xpath = "//h5[normalize-space()='All Request(44)']")
+	private WebElement allReturncount;
+	public void AllReturncount()throws Exception{
+		wait.until(ExpectedConditions.visibilityOf(allReturncount)).isDisplayed();
+		AssertJUnit.assertTrue(allReturncount.isDisplayed());
+	}
+	@FindBy(id = "New Request")
+	private WebElement new_return_button;
+	public void New_Return_Button()throws Exception{
+		Thread.sleep(1000);
+		wait.until(ExpectedConditions.visibilityOf(damage_rec_Technician_Return)).isDisplayed();
+		wait.until(ExpectedConditions.visibilityOf(new_return_button)).click();
+	}
+	@FindBy(xpath = "//h5[normalize-space()='New Request']")
+	private WebElement New_Return_heading;
+	@FindBy(id = "react-select-3-input")
+	private WebElement Returnby;
+	
+	@FindBy(xpath = "(//h6[contains(@class,'m-0 fw-normal')][normalize-space()='New Request'])[1]")
+	private WebElement billboard_Id;
+	
+	@FindBy(xpath = "//input[@placeholder='Enter Location']")
+	private WebElement city;
+	
+	@FindBy(id = "react-select-4-input")
+	private WebElement Return_stock_code;
+	
+	@FindBy(id = "Save")
+	private WebElement Return_save;
+	
+	public void Enter_Mandatory_fieldsof_New_Return()throws Exception{
+		wait.until(ExpectedConditions.visibilityOf(New_Return_heading)).isDisplayed();
+		String RequestBy = prop.getProperty("Returnbyuser");
+		wait.until(ExpectedConditions.visibilityOf(Returnby)).sendKeys(RequestBy);
+		Thread.sleep(3000);
+        act.moveToElement(Returnby).click().sendKeys(""+Keys.ENTER).perform(); 
+		
+        Thread.sleep(2000);
+		wait.until(ExpectedConditions.visibilityOf(Returnby)).isDisplayed();
+        String Cityname = prop.getProperty("cityname");
+        Thread.sleep(3000);
+
+        wait.until(ExpectedConditions.visibilityOf(city)).sendKeys(Cityname+Keys.DOWN);
+        
+		Thread.sleep(1000);
+        wait.until(ExpectedConditions.visibilityOf(city)).isDisplayed();
+		Thread.sleep(2000);
+		act.moveToElement(stock_code).click().sendKeys(""+Keys.ENTER).perform();
+		
+		wait.until(ExpectedConditions.visibilityOf(stock_code)).isDisplayed();
+		wait.until(ExpectedConditions.visibilityOf(Return_save)).click();
+	}
+	@FindBy(id = "Add Request")
+	private WebElement add_Return;
+	public void Click_Add_Return_button()throws Exception{
+
+		wait.until(ExpectedConditions.visibilityOf(add_Return)).isDisplayed();
+		wait.until(ExpectedConditions.visibilityOf(add_Return)).click();
+	}
+	
+	//updatepenng
+	
+	
+
+	@FindBy(xpath = "(//*[name()='svg'][@stroke='currentColor'])[7]")
+	private WebElement click_damage_rec_Technician_Edit;
+	@FindBy(xpath = "//a[normalize-space()='View']")
+	private WebElement damage_rec_Technician_click_view;
+	public void DamageRecTechnician_Viewclick_option()throws Exception{
+		wait.until(ExpectedConditions.visibilityOf(damage_rec_Technician_Return)).isDisplayed();
+		wait.until(ExpectedConditions.visibilityOf(click_damage_rec_Technician_Edit)).click();
+		wait.until(ExpectedConditions.visibilityOf(click_view)).click();
+	}
+	@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[2]/div[1]/h5[2]")
+	private WebElement damage_rec_TechnicianView_display;
+	public void damage_rec_Technician_View_display()throws Exception{
+		wait.until(ExpectedConditions.visibilityOf(damage_rec_TechnicianView_display)).isDisplayed();
+		AssertJUnit.assertTrue(damage_rec_TechnicianView_display.isDisplayed());
+		//wait.until(ExpectedConditions.visibilityOf(click_view)).click();
+	}
+	@FindBy(xpath = "//a[normalize-space()='Delete']")
+	private WebElement damage_rec_Technicianclick_delete;
+	public void DamageRecTechnician_Deleteclick_option()throws Exception{
+		Thread.sleep(1000);
+		wait.until(ExpectedConditions.visibilityOf(damage_rec_Technician_Return_display)).isDisplayed();
+		Thread.sleep(1000);
+
+		wait.until(ExpectedConditions.visibilityOf(click_damage_rec_Technician_Edit)).click();
+		wait.until(ExpectedConditions.visibilityOf(damage_rec_Technicianclick_delete)).click();
+	}
+	@FindBy(xpath = "//h4[@class=' fw-semibold text-center text-black']")
+	private WebElement damage_rec_Technicianpopup_delete;
+	@FindBy(xpath = "//h6[normalize-space()='Yes, delete damage_rec_Technician received from supplier.']")
+	private WebElement damage_rec_Technician_confirm_delete;
+	public void DamageRecTechnician_Confirmed_Deleteclick_option()throws Exception{
+		wait.until(ExpectedConditions.visibilityOf(damage_rec_Technicianpopup_delete)).isDisplayed();
+		act.moveToElement(damage_rec_Technician_confirm_delete).click().perform();
+		//wait.until(ExpectedConditions.visibilityOf(click_delete)).click();
+	}
+	@FindBy(xpath = "//div[normalize-space()='2']")
+	private WebElement damage_rec_Technician_second_page;
+	public void DamageRecTechnician_Second_page() throws Exception {
+		act.scrollToElement(damage_rec_Technician_second_page).build().perform();
+		wait.until(ExpectedConditions.visibilityOf(click_second_page)).click();
+	}
+	@FindBy(xpath = "//div[contains(text(),'Showing')]")
+	private WebElement damage_rec_Technician_second_page_display;
+	public void Second_page_DamageRecTechnician_Display() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(damage_rec_Technician_second_page_display));
+		AssertJUnit.assertTrue(damage_rec_Technician_second_page_display.isDisplayed());
+	}
+	@FindBy(xpath = "(//div[contains(@class,'round-effect')][contains(text(),'›')])[1]")
+	private WebElement clickdamage_rec_Technician_next_page;
+	public void DamageRecTechnician_next_page() throws Exception {
+		act.scrollToElement(clickdamage_rec_Technician_next_page).build().perform();
+		wait.until(ExpectedConditions.visibilityOf(clickdamage_rec_Technician_next_page)).click();
+	}
+	@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[2]/div/div[2]/div[1]/div[4]/div[2]/div[1]")
+	private WebElement clickdamage_rec_Technician_previous_page;
+	public void DamageRecTechnician_Previous_page() throws Exception {
+		act.scrollToElement(clickdamage_rec_Technician_previous_page).build().perform();
+		wait.until(ExpectedConditions.visibilityOf(clickdamage_rec_Technician_previous_page)).click();
+	}
+	@FindBy(xpath = "/html/body/div/div/div[2]/div/div[2]/div/div[2]/div[1]/div[4]/div[2]/div[5]")
+	private WebElement click_damage_rec_Technician_last_page;
+	public void DamageRecTechnician_last_page() throws Exception {
+		act.scrollToElement(click_damage_rec_Technician_last_page).build().perform();
+		wait.until(ExpectedConditions.visibilityOf(click_damage_rec_Technician_last_page)).click();
+	}
+	@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[2]/div/div[2]/div[1]/div[4]/div[2]/div[1]")
+	private WebElement click_damage_rec_Technician_first_page;
+	public void First_page_DamageRecTechnician() throws Exception {
+		act.scrollToElement(click_damage_rec_Technician_first_page).build().perform();
+		wait.until(ExpectedConditions.visibilityOf(click_damage_rec_Technician_first_page)).click();
+	}
+
 }

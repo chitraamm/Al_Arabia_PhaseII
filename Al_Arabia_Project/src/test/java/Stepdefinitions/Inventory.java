@@ -237,6 +237,10 @@ public class Inventory extends Base {
 	public void The_chat_page_will_be_displayed_successfully() throws Exception {
 		inventorypage.Chat_page_Displayed();
 }
+	
+	//<----------------------------------Material Request-------------------------------->
+
+	
 	@And("Admin or user clicks the Material Request Tab")
 	public void Admin_or_user_clicks_the_Material_Request_Tab() throws Exception {
 		inventorypage.Material_request_page();
@@ -245,91 +249,542 @@ public class Inventory extends Base {
 	public void Material_Request_page_should_display_successfully() throws Exception {
 		inventorypage.Material_request_page_Displayed();
 }
-	
-	
-	@And("Admin or user search a Material")
-	public void Admin_or_user_search_a_Material() throws Exception {
+		@And("Admin or user search a Material Request")
+	public void Admin_or_user_search_a_Material_Request() throws Exception {
 		inventorypage.Material_search_enter_text();
 	}
 
-	@Then("Searched Material details get displayed successfully")
-	public void Searched_Material_details_get_displayed_successfully() {
+	@Then("Searched Material Request details get displayed successfully")
+	public void Searched_Material_Request_details_get_displayed_successfully() {
 		inventorypage.MaterialSearchedList();
 	}
-	@And("Admin or user sort the Material list recently updated")
-	public void Admin_or_user_sort_the_Material_list_recently_updated() throws Exception {
+	@And("Admin or user sort the Material Request list recently updated")
+	public void Admin_or_user_sort_the_Material_Request_list_recently_updated() throws Exception {
 		inventorypage.Material_sort_recentlyupdated();
 	}
 
-	@Then("Recently updated Material list get displayed successfully")
-	public void Recently_updated_Material_list_get_displayed_successfully() throws Exception {
+	@Then("Recently updated Material Request list get displayed successfully")
+	public void Recently_updated_Material_Request_list_get_displayed_successfully() throws Exception {
 		inventorypage.Material_list();
 	}
 
-	@And("User sort the Material list Name A to Z")
-	public void User_sort_the_Material_list_Name_A_to_Z() throws Exception {
+	@And("User sort the Material Request list Name A to Z")
+	public void User_sort_the_Material_Request_list_Name_A_to_Z() throws Exception {
 		inventorypage.Material_sortA_Z();
 	}
 
-	@Then("Material list get displayed successfully")
+	@Then("Material Request list get displayed successfully")
 	public void Material_list_get_displayed_successfully() throws Exception {
 		inventorypage.Material_list();
 	}
 
-	@And("User sort the Material list Name Z to A")
-	public void User_sort_the_Material_list_Name_Z_to_A() throws Exception {
+	@And("User sort the Material Request list Name Z to A")
+	public void User_sort_the_Material_Request_list_Name_Z_to_A() throws Exception {
 		inventorypage.Material_sortZ_A();
 	}
 
-	@Then("Material list Z to A get displayed successfully")
-	public void Material_list_Z_to_A_get_displayed_successfully() throws Exception {
+	@Then("Material Request list Z to A get displayed successfully")
+	public void Material_Request_list_Z_to_A_get_displayed_successfully() throws Exception {
 		inventorypage.Material_list();
 	}
 
-	@And("User sort the Material list Recently Added")
-	public void User_sort_the_Material_list_Recently_Added() throws Exception {
+	@And("User sort the Material Request list Recently Added")
+	public void User_sort_the_Material_Request_list_Recently_Added() throws Exception {
 		inventorypage.Material_sort_recentlyadded();
 	}
 
-	@Then("Recent Material list get displayed successfully")
-	public void Recent_Material_list_get_displayed_successfully() throws Exception {
+	@Then("Recent Material Request list get displayed successfully")
+	public void Recent_Material_Request_list_get_displayed_successfully() throws Exception {
 		inventorypage.Material_list();
 	}
-	@And("User sort the Material list decending")
-	public void User_sort_the_Material_list_Decending() throws Exception {
+	@And("User sort the Material Request list decending")
+	public void User_sort_the_Material_Request_list_Decending() throws Exception {
 		inventorypage.Material_DecendingDate();
 	}
 
-	@Then("Decending Material list get displayed successfully")
-	public void Decending_Material_list_get_displayed_successfully() throws Exception {
+	@Then("Decending Material Request list get displayed successfully")
+	public void Decending_Material_Request_list_get_displayed_successfully() throws Exception {
 		inventorypage.Material_list();
 	}
-	@And("User clicks the Download button in Material page")
-	public void User_clicks_the_Download_button_in_Material_page() throws Exception {
+	@And("User clicks the Download button in Material Request page")
+	public void User_clicks_the_Download_button_in_Material_Request_page() throws Exception {
 		inventorypage.Download_button_Materialpage();
 	}
-	@Then("Download pop up of Material will be displayed successfully")
-	public void Download_pop_up_of_Material_will_be_displayed_successfully() throws Exception {
+	@Then("Download pop up of Material Request will be displayed successfully")
+	public void Download_pop_up_of_Material_Request_will_be_displayed_successfully() throws Exception {
 		inventorypage.Material_Download_popup_display();
 	}
-	@And("User clicks the Download button with Download As Excel of Material list")
-	public void User_clicks_the_Download_button_with_Download_As_Excel_of_Material_list() throws Exception {
+	@And("User clicks the Download button with Download As Excel of Material Request list")
+	public void User_clicks_the_Download_button_with_Download_As_Excel_of_Material_Request_list() throws Exception {
 		inventorypage.Download_button_Materialpage();
 		inventorypage.Material_Download_Excel();
 	}
-	@And("User clicks the Download button with Download As PDF for Materials")
-	public void User_clicks_the_Download_button_with_Download_As_PDF_for_Materials() throws Exception {
+	@And("User clicks the Download button with Download As PDF for Material Request")
+	public void User_clicks_the_Download_button_with_Download_As_PDF_for_Material_Request() throws Exception {
 		inventorypage.Download_button_Materialpage();
 		inventorypage.Material_Download_PDF();
 	}
-	@And("User clicks the Download button in Material page after that click on close button")
-	public void User_clicks_the_Download_in_Material_page_after_that_click_on_close_button() throws Exception {
+	@And("User clicks the Download button in Material Request page after that click on close button")
+	public void User_clicks_the_Download_in_Material_Request_page_after_that_click_on_close_button() throws Exception {
 		inventorypage.Download_button_Materialpage();
 		inventorypage.Material_Download_popup_close();
 	}
-	@Then("The Download pop up get closed successfully and display the Material list")
-	public void The_Download_pop_up_get_closed_successfully_and_display_the_Material_list() throws Exception {
+	@Then("The Download pop up get closed successfully and display the Material Request list")
+	public void The_Download_pop_up_get_closed_successfully_and_display_the_Material_Request_list() throws Exception {
 		inventorypage.Download_popupclosd_displayed_Material();
 	}
+    @And("Admin or user clicks the New Request button")
+    public void Admin_or_user_clicks_the_New_Request_button() throws Exception{
+		inventorypage.New_Request_Button();
+    }
+    @And("Admin or user enters the all mandatory fields of Material Request")
+    public void Admin_or_user_enters_the_all_mandatory_fields_of_Material_Request() throws Exception{
+		inventorypage.Enter_Mandatory_fieldsof_New_Request();
+    }
+    @And("Admin or user clicks the Add Request button")
+    public void Admin_or_user_clicks_the_Add_Request_button() throws Exception{
+		inventorypage.Click_Add_Request_button();
+    }
+	@Then("^Particular Request gets created successfully with either \"([^\"]*)\" or \"([^\"]*)\"$")
+	public void Particular_Request_gets_updated_successfully_with_either (String expectedMessage1,
+			String expectedMessage2) throws Exception {
+		String actualMessage = inventorypage.inventory_create_Success_display();
+		String normalizedActualMessage = normalizeWhitespace(actualMessage);
+		System.out.println(">> User or Admin got the purchase created success message successfully: " + actualMessage);
 
+		boolean matchesMessage1 = normalizedActualMessage.equals(normalizeWhitespace(expectedMessage1));
+		boolean matchesMessage2 = normalizedActualMessage.equals(normalizeWhitespace(expectedMessage2));
+
+		assertTrue("The actual message was neither of the expected success messages.",
+				matchesMessage1 || matchesMessage2);
+	}
+	
+	
+//	@And("User click on edit icon in all Material page")
+//	public void User_click_on_edit_icon_in_all_Material_page() throws Exception {
+//		inventorypage.Click_Material_Edit();
+//	}
+//	@And("User edit the City name")
+//	public void User_edit_the_City_name() throws Exception {
+//		inventorypage.Edit_projectname();
+//	}
+//	@And("User Click on Update Material button")
+//	public void User_Click_on_Update_Material_button() throws Exception {
+//		inventorypage.Updatebutton_click();
+//	}
+	@Then("^Particular Material gets updated successfully with either \"([^\"]*)\" or \"([^\"]*)\"$")
+	public void Particular_Material_gets_updated_successfully_with_either (String expectedMessage1,
+			String expectedMessage2) throws Exception {
+		String actualMessage = inventorypage.inventory_create_Success_display();
+		String normalizedActualMessage = normalizeWhitespace(actualMessage);
+		System.out.println(">> User or Admin got the purchase created success message successfully: " + actualMessage);
+
+		boolean matchesMessage1 = normalizedActualMessage.equals(normalizeWhitespace(expectedMessage1));
+		boolean matchesMessage2 = normalizedActualMessage.equals(normalizeWhitespace(expectedMessage2));
+
+		assertTrue("The actual message was neither of the expected success messages.",
+				matchesMessage1 || matchesMessage2);
+	}
+	@And("User click on Material Request view option of kebab menu")
+	public void User_click_on_Material_Request_view_option_of_kebab_menu() throws Exception {
+		inventorypage.Material_Viewclick_option();
+	}
+	@Then("Particular Material Request viewed with details successfully")
+	public void Particular_Material_Request_viewed_with_details_successfully() throws Exception {
+		inventorypage.material_View_display();
+	}
+	@And("User click on Material Request Delete option in kebab menu and confirm Yes")
+	public void User_click_on_Material_Request_Delete_option_in_kebab_menu_and_confirm_Yes() throws Exception {
+		inventorypage.Material_Deleteclick_option();
+		inventorypage.Material_Confirmed_Deleteclick_option();
+	}
+	@Then("^Material Request deleted popup will be displayed successfully as \"([^\"]*)\"$")
+	public void Material_Request_deleted_popup_will_be_displayed_successfully_as(String expectedMessage) throws Exception {
+		  String actualMessage = inventorypage.inventory_create_Success_display();
+	      String normalizedExpectedMessage = normalizeWhitespace(expectedMessage);
+	      String normalizedActualMessage = normalizeWhitespace(actualMessage);
+	      System.out.println(">> User or Admin Deleted Material successfully"+actualMessage);
+	      assertEquals(normalizedExpectedMessage, normalizedActualMessage);
+	}
+	@And("User click on second page button of Material Request page")
+	public void User_click_on_second_page_button_of_Material_Request_page() throws Exception {
+		inventorypage.Material_Second_page();
+}
+	@Then("Second page Material Request get displayed successfully")
+	public void Second_page_Material_Request_get_displayed_successfully() throws Exception {
+		inventorypage.Second_page_Material_Display();
+}
+	@And("Go to Next page of Material Request page")
+	public void Go_to_Next_page_of_Material_Request_page() throws Exception {
+		inventorypage.Material_next_page();
+}
+	@Then("Next page Material Request get displayed successfully")
+	public void Next_page_Material_Request_get_displayed_successfully() throws Exception {
+}
+	@And("Go to Previous page of Material Request")
+	public void Go_to_Previous_page_of_Material_Request_page() throws Exception {
+		inventorypage.Material_Previous_page();
+}
+	@Then("Previous page Material Request get displayed successfully")
+	public void Previous_page_Material_Request_get_displayed_successfully() throws Exception {
+}
+	@And("Go to Last page of Material Request page")
+	public void Go_to_Last_page_of_Material_Request_page() throws Exception {
+		inventorypage.Material_last_page();
+}
+	@Then("Last page Material Request get displayed successfully")
+	public void Last_page_Material_Request_get_displayed_successfully() throws Exception {
+}
+	@And("User click on first page button of Material Request")
+	public void User_click_on_first_page_button_of_Material_Request() throws Exception {
+		inventorypage.First_page_Material();
+}
+	@Then("First page Material Request get displayed successfully")
+	public void First_page_Material_Request_get_displayed_successfully() throws Exception {
+}
+	//<--------------------------------------Material Issued---------------------------------------------------->
+
+
+	
+	@And("Admin or user clicks the Material Issued Tab")
+	public void Admin_or_user_clicks_the_Material_Issued_Tab() throws Exception {
+		inventorypage.Material_Issued_page();
+}
+	@Then("Material Issued page should display successfully")
+	public void Material_Issued_page_should_display_successfully() throws Exception {
+		inventorypage.Material_Issued_page_Displayed();
+}
+		@And("Admin or user search a Material Issued")
+	public void Admin_or_user_search_a_Material_Issued() throws Exception {
+		inventorypage.Issued_Material_search_enter_text();
+	}
+
+	@Then("Searched Material Issued details get displayed successfully")
+	public void Searched_Material_Issued_details_get_displayed_successfully() {
+		inventorypage.Issued_MaterialSearchedList();
+	}
+	@And("Admin or user sort the Material Issued list recently updated")
+	public void Admin_or_user_sort_the_Material_Issued_list_recently_updated() throws Exception {
+		inventorypage.Issued_Material_sort_recentlyupdated();
+	}
+
+	@Then("Recently updated Material Issued list get displayed successfully")
+	public void Recently_updated_Material_Issued_list_get_displayed_successfully() throws Exception {
+		inventorypage.Issued_Material_list();
+	}
+
+	@And("User sort the Material Issued list Name A to Z")
+	public void User_sort_the_Material_Issued_list_Name_A_to_Z() throws Exception {
+		inventorypage.Issued_Material_sortA_Z();
+	}
+
+	@Then("Material Issued list get displayed successfully")
+	public void Material_Issued_list_get_displayed_successfully() throws Exception {
+		inventorypage.Issued_Material_list();
+	}
+
+	@And("User sort the Material Issued list Name Z to A")
+	public void User_sort_the_Material_Issued_list_Name_Z_to_A() throws Exception {
+		inventorypage.Issued_Material_sortZ_A();
+	}
+
+	@Then("Material Issued list Z to A get displayed successfully")
+	public void Material_Issued_list_Z_to_A_get_displayed_successfully() throws Exception {
+		inventorypage.Issued_Material_list();
+	}
+
+	@And("User sort the Material Issued list Recently Added")
+	public void User_sort_the_Material_Issued_list_Recently_Added() throws Exception {
+		inventorypage.Issued_Material_sort_recentlyadded();
+	}
+
+	@Then("Recent Material Issued list get displayed successfully")
+	public void Recent_Material_Issued_list_get_displayed_successfully() throws Exception {
+		inventorypage.Issued_Material_list();
+	}
+	@And("User sort the Material Issued Request list decending")
+	public void User_sort_the_Material_Issued_list_Decending() throws Exception {
+		inventorypage.Issued_Material_DecendingDate();
+	}
+
+	@Then("Decending Material Issued list get displayed successfully")
+	public void Decending_Material_Issued_list_get_displayed_successfully() throws Exception {
+		inventorypage.Issued_Material_list();
+	}
+	@And("User clicks the Download button in Material Issued page")
+	public void User_clicks_the_Download_button_in_Material_Issued_page() throws Exception {
+		inventorypage.Download_button_Issued_Materialpage();
+	}
+	@Then("Download pop up of Material Issued will be displayed successfully")
+	public void Download_pop_up_of_Material_Issued_will_be_displayed_successfully() throws Exception {
+		inventorypage.Issued_Material_Download_popup_display();
+	}
+	@And("User clicks the Download button with Download As Excel of Material Issued list")
+	public void User_clicks_the_Download_button_with_Download_As_Excel_of_Material_Issued_list() throws Exception {
+		inventorypage.Download_button_Materialpage();
+		inventorypage.Issued_Material_Download_Excel();
+	}
+	@And("User clicks the Download button with Download As PDF for Material Issued")
+	public void User_clicks_the_Download_button_with_Download_As_PDF_for_Material_Issued() throws Exception {
+		inventorypage.Download_button_Materialpage();
+		inventorypage.Issued_Material_Download_PDF();
+	}
+	@And("User clicks the Download button in Material Issued page after that click on close button")
+	public void User_clicks_the_Download_in_Material_Issued_page_after_that_click_on_close_button() throws Exception {
+		inventorypage.Download_button_Issued_Materialpage();
+		inventorypage.Issued_Material_Download_popup_close();
+	}
+	@Then("The Download pop up get closed successfully and display the Material Issued list")
+	public void The_Download_pop_up_get_closed_successfully_and_display_the_Material_Issued_list() throws Exception {
+		inventorypage.Download_popupclosd_displayed_Material();
+	}
+	@And("User click on Material Issued view option of kebab menu")
+	public void User_click_on_Material_Issued_view_option_of_kebab_menu() throws Exception {
+		inventorypage.Issued_Material_Viewclick_option();
+	}
+	@Then("Particular Material Issued viewed with details successfully")
+	public void Particular_Material_Issued_viewed_with_details_successfully() throws Exception {
+		inventorypage.Issued_Material_View_display();
+	}
+	@And("User click on second page button of Material Issued page")
+	public void User_click_on_second_page_button_of_Material_Issued_page() throws Exception {
+		inventorypage.Issued_Material_Second_page();
+}
+	@Then("Second page Material Issued get displayed successfully")
+	public void Second_page_Material_Issued_get_displayed_successfully() throws Exception {
+		inventorypage.Second_page_Issued_Material_Display();
+}
+	@And("Go to Next page of Material Issued page")
+	public void Go_to_Next_page_of_Material_Issued_page() throws Exception {
+		inventorypage.Issued_Material_next_page();
+}
+	@Then("Next page Material Issued get displayed successfully")
+	public void Next_page_Material_Issued_get_displayed_successfully() throws Exception {
+}
+	@And("Go to Previous page of Material Issued")
+	public void Go_to_Previous_page_of_Material_Issued_page() throws Exception {
+		inventorypage.Issued_Material_Previous_page();
+}
+	@Then("Previous page Material Issued get displayed successfully")
+	public void Previous_page_Material_Issued_get_displayed_successfully() throws Exception {
+}
+	@And("Go to Last page of Material Issued page")
+	public void Go_to_Last_page_of_Material_Issued_page() throws Exception {
+		inventorypage.Issued_Material_last_page();
+}
+	@Then("Last page Material Issued get displayed successfully")
+	public void Last_page_Material_Issued_get_displayed_successfully() throws Exception {
+}
+	@And("User click on first page button of Material Issued")
+	public void User_click_on_first_page_button_of_Material_Issued() throws Exception {
+		inventorypage.First_page_Issued_Material();
+}
+	@Then("First page Material Issued get displayed successfully")
+	public void First_page_Material_Issued_get_displayed_successfully() throws Exception {
+}
+
+	//<-----------------------------------------Damage Received from Technician-------------------------------------------------->
+	
+	@And("Admin or user clicks the DamageRecTechnician Tab")
+	public void Admin_or_user_clicks_the_DamageRecTechnician_Tab() throws Exception {
+		inventorypage.DamageRecTechnician_page();
+}
+	@Then("DamageRecTechnician page should display successfully")
+	public void DamageRecTechnician_page_should_display_successfully() throws Exception {
+		inventorypage.DamageRecTechnician_page_Displayed();
+}
+		@And("Admin or user search a DamageRecTechnician")
+	public void Admin_or_user_search_a_DamageRecTechnician() throws Exception {
+		inventorypage.DamageRecTechnician_search_enter_text();
+	}
+
+	@Then("Searched DamageRecTechnician details get displayed successfully")
+	public void Searched_DamageRecTechnician_details_get_displayed_successfully() {
+		inventorypage.DamageRecTechnicianSearchedList();
+	}
+	@And("Admin or user sort the DamageRecTechnician list recently updated")
+	public void Admin_or_user_sort_the_DamageRecTechnician_list_recently_updated() throws Exception {
+		inventorypage.DamageRecTechnician_sort_recentlyupdated();
+	}
+
+	@Then("Recently updated DamageRecTechnician list get displayed successfully")
+	public void Recently_updated_DamageRecTechnician_list_get_displayed_successfully() throws Exception {
+		inventorypage.DamageRecTechnician_list();
+	}
+
+	@And("User sort the DamageRecTechnician list Name A to Z")
+	public void User_sort_the_DamageRecTechnician_list_Name_A_to_Z() throws Exception {
+		inventorypage.DamageRecTechnician_sortA_Z();
+	}
+
+	@Then("DamageRecTechnician list get displayed successfully")
+	public void DamageRecTechnician_list_get_displayed_successfully() throws Exception {
+		inventorypage.DamageRecTechnician_list();
+	}
+
+	@And("User sort the DamageRecTechnician list Name Z to A")
+	public void User_sort_the_DamageRecTechnician_list_Name_Z_to_A() throws Exception {
+		inventorypage.DamageRecTechnician_sortZ_A();
+	}
+
+	@Then("DamageRecTechnician list Z to A get displayed successfully")
+	public void DamageRecTechnician_list_Z_to_A_get_displayed_successfully() throws Exception {
+		inventorypage.DamageRecTechnician_list();
+	}
+
+	@And("User sort the DamageRecTechnician list Recently Added")
+	public void User_sort_the_DamageRecTechnician_list_Recently_Added() throws Exception {
+		inventorypage.DamageRecTechnician_sort_recentlyadded();
+	}
+
+	@Then("Recent DamageRecTechnician list get displayed successfully")
+	public void Recent_DamageRecTechnician_list_get_displayed_successfully() throws Exception {
+		inventorypage.DamageRecTechnician_list();
+	}
+	@And("User sort the DamageRecTechnician list decending")
+	public void User_sort_the_DamageRecTechnician_list_Decending() throws Exception {
+		inventorypage.DamageRecTechnician_DecendingDate();
+	}
+
+	@Then("Decending DamageRecTechnician list get displayed successfully")
+	public void Decending_DamageRecTechnician_list_get_displayed_successfully() throws Exception {
+		inventorypage.DamageRecTechnician_list();
+	}
+	@And("User clicks the Download button in DamageRecTechnician page")
+	public void User_clicks_the_Download_button_in_DamageRecTechnician_page() throws Exception {
+		inventorypage.Download_button_DamageRecTechnicianpage();
+	}
+	@Then("Download pop up of DamageRecTechnician will be displayed successfully")
+	public void Download_pop_up_of_DamageRecTechnician_will_be_displayed_successfully() throws Exception {
+		inventorypage.DamageRecTechnician_Download_popup_display();
+	}
+	@And("User clicks the Download button with Download As Excel of DamageRecTechnician list")
+	public void User_clicks_the_Download_button_with_Download_As_Excel_of_DamageRecTechnician_list() throws Exception {
+		inventorypage.Download_button_DamageRecTechnicianpage();
+		inventorypage.DamageRecTechnician_Download_Excel();
+	}
+	@And("User clicks the Download button with Download As PDF for DamageRecTechnician")
+	public void User_clicks_the_Download_button_with_Download_As_PDF_for_DamageRecTechnician() throws Exception {
+		inventorypage.Download_button_DamageRecTechnicianpage();
+		inventorypage.DamageRecTechnician_Download_PDF();
+	}
+	@And("User clicks the Download button in DamageRecTechnician page after that click on close button")
+	public void User_clicks_the_Download_in_DamageRecTechnician_page_after_that_click_on_close_button() throws Exception {
+		inventorypage.Download_button_DamageRecTechnicianpage();
+		inventorypage.DamageRecTechnician_Download_popup_close();
+	}
+	@Then("The Download pop up get closed successfully and display the DamageRecTechnician list")
+	public void The_Download_pop_up_get_closed_successfully_and_display_the_DamageRecTechnician_list() throws Exception {
+		inventorypage.Download_popupclosd_displayed_DamageRecTechnician();
+	}
+    @And("Admin or user clicks the New Return button")
+    public void Admin_or_user_clicks_the_New_Return_button() throws Exception{
+		inventorypage.New_Request_Button();
+    }
+    @And("Admin or user enters the all mandatory fields of DamageRecTechnician")
+    public void Admin_or_user_enters_the_all_mandatory_fields_of_DamageRecTechnician() throws Exception{
+		inventorypage.Enter_Mandatory_fieldsof_New_Return();
+    }
+    @And("Admin or user clicks the Add Return button")
+    public void Admin_or_user_clicks_the_Add_Return_button() throws Exception{
+		inventorypage.Click_Add_Return_button();
+    }
+	@Then("^Particular Return received from Technician gets created successfully with either \"([^\"]*)\" or \"([^\"]*)\"$")
+	public void Particular_Return_received_from_Technician_gets_created_successfully_with_either (String expectedMessage1,
+			String expectedMessage2) throws Exception {
+		String actualMessage = inventorypage.inventory_create_Success_display();
+		String normalizedActualMessage = normalizeWhitespace(actualMessage);
+		System.out.println(">> User or Admin got the purchase created success message successfully: " + actualMessage);
+
+		boolean matchesMessage1 = normalizedActualMessage.equals(normalizeWhitespace(expectedMessage1));
+		boolean matchesMessage2 = normalizedActualMessage.equals(normalizeWhitespace(expectedMessage2));
+
+		assertTrue("The actual message was neither of the expected success messages.",
+				matchesMessage1 || matchesMessage2);
+	}
+	
+	
+//	@And("User click on edit icon in all DamageRecTechnician page")
+//	public void User_click_on_edit_icon_in_all_DamageRecTechnician_page() throws Exception {
+//		inventorypage.Click_DamageRecTechnician_Edit();
+//	}
+//	@And("User edit the City name")
+//	public void User_edit_the_City_name() throws Exception {
+//		inventorypage.Edit_projectname();
+//	}
+//	@And("User Click on Update DamageRecTechnician button")
+//	public void User_Click_on_Update_DamageRecTechnician_button() throws Exception {
+//		inventorypage.Updatebutton_click();
+//	}
+	@Then("^Particular DamageRecTechnician gets updated successfully with either \"([^\"]*)\" or \"([^\"]*)\"$")
+	public void Particular_DamageRecTechnician_gets_updated_successfully_with_either (String expectedMessage1,
+			String expectedMessage2) throws Exception {
+		String actualMessage = inventorypage.inventory_create_Success_display();
+		String normalizedActualMessage = normalizeWhitespace(actualMessage);
+		System.out.println(">> User or Admin got the purchase created success message successfully: " + actualMessage);
+
+		boolean matchesMessage1 = normalizedActualMessage.equals(normalizeWhitespace(expectedMessage1));
+		boolean matchesMessage2 = normalizedActualMessage.equals(normalizeWhitespace(expectedMessage2));
+
+		assertTrue("The actual message was neither of the expected success messages.",
+				matchesMessage1 || matchesMessage2);
+	}
+	@And("User click on DamageRecTechnician view option of kebab menu")
+	public void User_click_on_DamageRecTechnician_view_option_of_kebab_menu() throws Exception {
+		inventorypage.DamageRecTechnician_Viewclick_option();
+	}
+	@Then("Particular DamageRecTechnician viewed with details successfully")
+	public void Particular_DamageRecTechnician_viewed_with_details_successfully() throws Exception {
+		inventorypage.material_View_display();
+	}
+	@And("User click on DamageRecTechnician Delete option in kebab menu and confirm Yes")
+	public void User_click_on_DamageRecTechnician_Delete_option_in_kebab_menu_and_confirm_Yes() throws Exception {
+		inventorypage.DamageRecTechnician_Deleteclick_option();
+		inventorypage.DamageRecTechnician_Confirmed_Deleteclick_option();
+	}
+	@Then("^DamageRecTechnician deleted popup will be displayed successfully as \"([^\"]*)\"$")
+	public void DamageRecTechnician_deleted_popup_will_be_displayed_successfully_as(String expectedMessage) throws Exception {
+		  String actualMessage = inventorypage.inventory_create_Success_display();
+	      String normalizedExpectedMessage = normalizeWhitespace(expectedMessage);
+	      String normalizedActualMessage = normalizeWhitespace(actualMessage);
+	      System.out.println(">> User or Admin Deleted DamageRecTechnician successfully"+actualMessage);
+	      assertEquals(normalizedExpectedMessage, normalizedActualMessage);
+	}
+	@And("User click on second page button of DamageRecTechnician page")
+	public void User_click_on_second_page_button_of_DamageRecTechnician_page() throws Exception {
+		inventorypage.DamageRecTechnician_Second_page();
+}
+	@Then("Second page DamageRecTechnician get displayed successfully")
+	public void Second_page_DamageRecTechnician_get_displayed_successfully() throws Exception {
+		inventorypage.Second_page_DamageRecTechnician_Display();
+}
+	@And("Go to Next page of DamageRecTechnician page")
+	public void Go_to_Next_page_of_DamageRecTechnician_page() throws Exception {
+		inventorypage.DamageRecTechnician_next_page();
+}
+	@Then("Next page DamageRecTechnician get displayed successfully")
+	public void Next_page_DamageRecTechnician_get_displayed_successfully() throws Exception {
+}
+	@And("Go to Previous page of DamageRecTechnician")
+	public void Go_to_Previous_page_of_DamageRecTechnician_page() throws Exception {
+		inventorypage.DamageRecTechnician_Previous_page();
+}
+	@Then("Previous page DamageRecTechnician get displayed successfully")
+	public void Previous_page_DamageRecTechnician_get_displayed_successfully() throws Exception {
+}
+	@And("Go to Last page of DamageRecTechnician page")
+	public void Go_to_Last_page_of_DamageRecTechnician_page() throws Exception {
+		inventorypage.DamageRecTechnician_last_page();
+}
+	@Then("Last page DamageRecTechnician get displayed successfully")
+	public void Last_page_DamageRecTechnician_get_displayed_successfully() throws Exception {
+}
+	@And("User click on first page button of DamageRecTechnician")
+	public void User_click_on_first_page_button_of_DamageRecTechnician() throws Exception {
+		inventorypage.First_page_DamageRecTechnician();
+}
+	@Then("First page DamageRecTechnician get displayed successfully")
+	public void First_page_DamageRecTechnician_get_displayed_successfully() throws Exception {
+}
+	
 }

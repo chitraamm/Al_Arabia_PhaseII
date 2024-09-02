@@ -88,6 +88,11 @@ editedprojectname = Alarabaia
 Materialid = MR586
 requestbyuser = tomgeorge
 cityname = chennai
+Issued_Materialid = MR582
+Billboardid = RTH52
+Usedinboard = ABB03
+RequestedBy = tomgeorge
+Defecttype = Test
 
 <---------Cleaning--------->
 

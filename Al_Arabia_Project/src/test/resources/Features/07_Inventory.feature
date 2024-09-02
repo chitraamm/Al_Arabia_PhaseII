@@ -182,16 +182,16 @@ And Admin or user clicks the Inventory module
 And User clicks start conversation button in Inventory page
 Then The chat page will be displayed successfully 
 
-@Inventory @Inventory22 @MaterialRequest @smoke @regression @all
-Scenario Outline: T022_Verify the Inventory feature Material Request page 
+@Inventory @MaterialRequest01 @smoke @regression @all
+Scenario Outline: T_MaterialRequest01_Verify the Inventory feature Material Request page 
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module
 And Admin or user clicks the Material Request Tab
 Then Material Request page should display successfully
 
-@Inventory @Inventory23 @MaterialRequest @regression @sanity @all
-Scenario Outline: T023_Create the New Material Request with valid inputs
+@Inventory @MaterialRequest02 @regression @sanity @all
+Scenario Outline: T_MaterialRequest02_Create the New Material Request with valid inputs
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module
@@ -204,8 +204,8 @@ Then Particular Request gets created successfully with either "<successMessage1>
       | successMessage1       | successMessage2                 |
       | LOADING...            | Success Material Request added  |
 
-@Inventory @Inventory24 @MaterialRequest @smoke @regression @all
-Scenario Outline: T024_ The Inventory feature search a Material Request by Material Id	
+@Inventory @MaterialRequest03 @smoke @regression @all
+Scenario Outline: T_MaterialRequest03_The Inventory feature search a Material Request by Material Id	
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module
@@ -213,8 +213,8 @@ And Admin or user clicks the Material Request Tab
 And Admin or user search a Material Request
 Then Searched Material Request details get displayed successfully
 
-@Inventory @Inventory25 @MaterialRequest @smoke @regression @all
-Scenario Outline: T025_To verify the Material Request feature sort recently updated
+@Inventory @MaterialRequest04 @smoke @regression @all
+Scenario Outline: T_MaterialRequest04_To verify the Material Request feature sort recently updated
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display 
 And Admin or user clicks the Inventory module
@@ -222,8 +222,8 @@ And Admin or user clicks the Material Request Tab
 And Admin or user sort the Material Request list recently updated
 Then Recently updated Material Request list get displayed successfully
 
-@Inventory @Inventory26 @MaterialRequest @smoke @regression @all
-Scenario Outline: T026_To verify the Material Request feature sort Name - A to Z
+@Inventory @MaterialRequest05 @smoke @regression @all
+Scenario Outline: T_MaterialRequest05_To verify the Material Request feature sort Name - A to Z
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module
@@ -231,8 +231,8 @@ And Admin or user clicks the Material Request Tab
 And User sort the Material Request list Name A to Z
 Then Material Request list get displayed successfully
 
-@Inventory @Inventory27 @MaterialRequest @smoke @regression @all
-Scenario Outline: T027_To verify the Material Request feature sort Name - Z to A
+@Inventory @MaterialRequest06 @smoke @regression @all
+Scenario Outline: T_MaterialRequest06_To verify the Material Request feature sort Name - Z to A
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module
@@ -240,8 +240,8 @@ And Admin or user clicks the Material Request Tab
 And User sort the Material Request list Name Z to A 
 Then Material Request list Z to A get displayed successfully
 
-@Inventory @Inventory28 @MaterialRequest @smoke @regression @all
-Scenario Outline: T028_To verify the Material Request feature sort Recently Added
+@Inventory @MaterialRequest07 @smoke @regression @all
+Scenario Outline: T_MaterialRequest07_To verify the Material Request feature sort Recently Added
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module
@@ -249,8 +249,8 @@ And Admin or user clicks the Material Request Tab
 And User sort the Material Request list Recently Added
 Then Recent Material Request list get displayed successfully
 
-@Inventory @Inventory29 @MaterialRequest @smoke @regression @all
-Scenario Outline: T029_To verify the Material Request feature sort decending
+@Inventory @MaterialRequest08 @smoke @regression @all
+Scenario Outline: T_MaterialRequest08_To verify the Material Request feature sort decending
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module
@@ -258,8 +258,8 @@ And Admin or user clicks the Material Request Tab
 And User sort the Material Request list decending 
 Then Decending Material Request list get displayed successfully  
 
-@Inventory @Inventory30 @MaterialRequest @smoke @regression @all
-Scenario Outline: T030_To verify the Material Request feature Download button
+@Inventory @MaterialRequest09 @smoke @regression @all
+Scenario Outline: T_MaterialRequest09_To verify the Material Request feature Download button
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module
@@ -267,24 +267,24 @@ And Admin or user clicks the Material Request Tab
 And User clicks the Download button in Material Request page 
 Then Download pop up of Material Request will be displayed successfully
 
-@Inventory @Inventory31 @MaterialRequest @smoke @regression @all
-Scenario Outline: T031_To verify the Material Request feature Download as Excel 
+@Inventory @MaterialRequest10 @smoke @regression @all
+Scenario Outline: T_MaterialRequest10_To verify the Material Request feature Download as Excel 
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module
 And Admin or user clicks the Material Request Tab
 And User clicks the Download button with Download As Excel of Material Request list
       
-@Inventory @Inventory32 @MaterialRequest @smoke @regression @all
-Scenario Outline: T032_To verify the Material Request feature Download as PDF
+@Inventory @MaterialRequest11 @smoke @regression @all
+Scenario Outline: T_MaterialRequest11_To verify the Material Request feature Download as PDF
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module
 And Admin or user clicks the Material Request Tab
 And User clicks the Download button with Download As PDF for Material Request
       
-@Inventory @Inventory33 @MaterialRequest @smoke @regression @all
-Scenario Outline: T033_To verify the Material Request feature Download popup close
+@Inventory @MaterialRequest12 @smoke @regression @all
+Scenario Outline: T_MaterialIssued12_To verify the Material Request feature Download popup close
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module
@@ -292,8 +292,8 @@ And Admin or user clicks the Material Request Tab
 And User clicks the Download button in Material Request page after that click on close button 
 Then The Download pop up get closed successfully and display the Material Request list
 
-#@Inventory @Inventory34 @MaterialRequest @regression @sanity @all
-#Scenario Outline: T034_To verify Purchase edit of any field
+#@Inventory @MaterialRequest13 @regression @sanity @all
+#Scenario Outline: T_MaterialRequest13_To verify Purchase edit of any field
 #Given Admin logged in with valid credentials
 #When Al-Arabia overall dashboard should display
 #And Admin or user clicks the Inventory module  
@@ -305,8 +305,8 @@ Then The Download pop up get closed successfully and display the Material Reques
       #| successMessage1       | successMessage2                |
       #| LOADING...            | Success Material info updated  |
       
-@Inventory @Inventory35 @MaterialRequest @regression @sanity @all
-Scenario Outline: T035_To verify Material Request edit of any field
+@Inventory @MaterialRequest14 @regression @sanity @all
+Scenario Outline: T_MaterialRequest14_To verify Material Request View
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module 
@@ -314,8 +314,8 @@ And Admin or user clicks the Material Request Tab
 And User click on Material Request view option of kebab menu 
 Then Particular Material Request viewed with details successfully
 
-@Inventory @Inventory36 @MaterialRequest @regression @sanity @all
-Scenario Outline: T036_To verify Material Request edit of any field
+@Inventory @MaterialRequest15 @regression @sanity @all
+Scenario Outline: T_MaterialRequest15_To verify Material Request Delete
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module 
@@ -326,8 +326,8 @@ Then Material Request deleted popup will be displayed successfully as "<successM
       | successMessage 			         	 |
       | Success Material info deleted  |   
       
-@Inventory @Inventory37 @MaterialRequest @smoke @regression @all
-Scenario Outline: T037_To verify the Material Request feature pagination 1st to 2nd page 
+@Inventory @MaterialRequest16 @smoke @regression @all
+Scenario Outline: T_MaterialRequest16_To verify the Material Request feature pagination 1st to 2nd page 
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module
@@ -335,8 +335,8 @@ And Admin or user clicks the Material Request Tab
 And User click on second page button of Material Request page
 Then Second page Material Request get displayed successfully    
 
-@Inventory @Inventory38 @MaterialRequest @smoke @regression @all
-Scenario Outline: T038_To verify the Material request feature pagination next page 
+@Inventory @MaterialRequest17 @smoke @regression @all
+Scenario Outline: T_MaterialRequest17_To verify the Material request feature pagination next page 
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module 
@@ -344,8 +344,8 @@ And Admin or user clicks the Material Request Tab
 And Go to Next page of Material Request page
 Then Next page Material Request get displayed successfully  
 
-@Inventory @Inventory39 @MaterialRequest @smoke @regression @all
-Scenario Outline: T039_To verify the Material Request feature pagination previous page 
+@Inventory @MaterialRequest18 @smoke @regression @all
+Scenario Outline: T_MaterialRequest18_To verify the Material Request feature pagination previous page 
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module 
@@ -354,8 +354,8 @@ And Go to Next page of Material Request page
 And Go to Previous page of Material Request
 Then Previous page Material Request get displayed successfully 
 
-@Inventory @Inventory40 @MaterialRequest @smoke @regression @all
-Scenario Outline: T040_To verify the Material Request feature pagination last page 
+@Inventory @MaterialRequest19 @smoke @regression @all
+Scenario Outline: T_MaterialRequest19_To verify the Material Request feature pagination last page 
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module
@@ -363,8 +363,8 @@ And Admin or user clicks the Material Request Tab
 And Go to Last page of Material Request page
 Then Last page Material Request get displayed successfully   
 
-@Inventory @Inventory41 @MaterialRequest @smoke @regression @all
-Scenario Outline: T041_To verify the Material Request feature pagination last page to first page
+@Inventory @MaterialRequest20 @smoke @regression @all
+Scenario Outline: T_MaterialRequest20_To verify the Material Request feature pagination last page to first page
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module 
@@ -373,16 +373,16 @@ And Go to Last page of Material Request page
 And User click on first page button of Material Request
 Then First page Material Request get displayed successfully  
 
-@Inventory @Inventory42 @MaterialIssued @smoke @regression @all
-Scenario Outline: T042_Verify the Inventory feature Material Issued page 
+@Inventory @MaterialIssued01 @smoke @regression @all
+Scenario Outline: T_MaterialIssued01_Verify the Inventory feature Material Issued page 
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module
 And Admin or user clicks the Material Issued Tab
 Then Material Issued page should display successfully
 
-@Inventory @Inventory43 @MaterialIssued @smoke @regression @all
-Scenario Outline: T043_ The Material Issued feature search a Purchase by Material Id	
+@Inventory @MaterialIssued02 @smoke @regression @all
+Scenario Outline: T_MaterialIssued02_The Material Issued feature search a Purchase by Material Id	
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module
@@ -390,8 +390,8 @@ And Admin or user clicks the Material Issued Tab
 And Admin or user search a Material Issued
 Then Searched Material Issued details get displayed successfully
 
-@Inventory @Inventory44 @MaterialIssued @smoke @regression @all
-Scenario Outline: T044_To verify the Material Issued feature sort recently updated
+@Inventory @MaterialIssued03 @smoke @regression @all
+Scenario Outline: T_MaterialIssued03_To verify the Material Issued feature sort recently updated
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display 
 And Admin or user clicks the Inventory module
@@ -399,8 +399,8 @@ And Admin or user clicks the Material Issued Tab
 And Admin or user sort the Material Issued list recently updated
 Then Recently updated Purchases list get displayed successfully
 
-@Inventory @Inventory45 @MaterialIssued @smoke @regression @all
-Scenario Outline: T045_To verify the Material Issued feature sort Name - A to Z
+@Inventory @MaterialIssued04 @smoke @regression @all
+Scenario Outline: T_MaterialIssued04_To verify the Material Issued feature sort Name - A to Z
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module
@@ -408,8 +408,8 @@ And Admin or user clicks the Material Issued Tab
 And User sort the Material Issued list Name A to Z
 Then Material Issued list get displayed successfully
 
-@Inventory @Inventory46 @MaterialIssued @smoke @regression @all
-Scenario Outline: T046_To verify the Material Issued feature sort Name - Z to A
+@Inventory @MaterialIssued05 @smoke @regression @all
+Scenario Outline: T_MaterialIssued05_To verify the Material Issued feature sort Name - Z to A
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module
@@ -417,8 +417,8 @@ And Admin or user clicks the Material Issued Tab
 And User sort the Material Issued list Name Z to A 
 Then Material Issued list Z to A get displayed successfully
 
-@Inventory @Inventory47 @MaterialIssued @smoke @regression @all
-Scenario Outline: T047_To verify the Material Issued feature sort Recently Added
+@Inventory @MaterialIssued06 @smoke @regression @all
+Scenario Outline: T_MaterialIssued06_To verify the Material Issued feature sort Recently Added
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module
@@ -426,8 +426,8 @@ And Admin or user clicks the Material Issued Tab
 And User sort the Material Issued list Recently Added
 Then Recent Material Issued list get displayed successfully
 
-@Inventory @Inventory48 @MaterialIssued @smoke @regression @all
-Scenario Outline: T048_To verify the Material Issued feature sort decending
+@Inventory @MaterialIssued07 @smoke @regression @all
+Scenario Outline: T_MaterialIssued07_To verify the Material Issued feature sort decending
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module
@@ -435,8 +435,8 @@ And Admin or user clicks the Material Issued Tab
 And User sort the Material Issued Request list decending 
 Then Decending Material Issued list get displayed successfully  
 
-@Inventory @Inventory49 @MaterialIssued @smoke @regression @all
-Scenario Outline: T049_To verify the Material Issued feature Download button
+@Inventory @MaterialIssued08 @smoke @regression @all
+Scenario Outline: T_MaterialIssued08_To verify the Material Issued feature Download button
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module
@@ -444,24 +444,24 @@ And Admin or user clicks the Material Issued Tab
 And User clicks the Download button in Material Issued page 
 Then Download pop up of Material Issued will be displayed successfully
 
-@Inventory @Inventory50 @MaterialIssued @smoke @regression @all
-Scenario Outline: T050_To verify the Material Issued feature Download as Excel 
+@Inventory @MaterialIssued09 @smoke @regression @all
+Scenario Outline: T_MaterialIssued09_To verify the Material Issued feature Download as Excel 
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module
 And Admin or user clicks the Material Issued Tab
 And User clicks the Download button with Download As Excel of Material Issued list
       
-@Inventory @Inventory51 @MaterialIssued @smoke @regression @all
-Scenario Outline: T051_To verify the Material Issued feature Download as PDF
+@Inventory @MaterialIssued10 @smoke @regression @all
+Scenario Outline: T_MaterialIssued10_To verify the Material Issued feature Download as PDF
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module
 And Admin or user clicks the Material Issued Tab
 And User clicks the Download button with Download As PDF for Material Issued
       
-@Inventory @Inventory52 @MaterialIssued @smoke @regression @all
-Scenario Outline: T052_To verify the Material Issued feature Download popup close
+@Inventory @MaterialIssued11 @smoke @regression @all
+Scenario Outline: T_MaterialIssued11_To verify the Material Issued feature Download popup close
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module
@@ -469,8 +469,8 @@ And Admin or user clicks the Material Issued Tab
 And User clicks the Download button in Material Issued page after that click on close button 
 Then The Download pop up get closed successfully and display the Material Issued list
     
-@Inventory @Inventory53 @MaterialIssued @regression @sanity @all
-Scenario Outline: T053_To verify Material Issued edit of any field
+@Inventory @MaterialIssued12 @regression @sanity @all
+Scenario Outline: T_MaterialIssued12_To verify Material Issued edit of any field
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module 
@@ -478,8 +478,8 @@ And Admin or user clicks the Material Issued Tab
 And User click on Material Issued view option of kebab menu 
 Then Particular Material Issued viewed with details successfully
    
-@Inventory @Inventory54 @MaterialIssued @smoke @regression @all
-Scenario Outline: T054_To verify the Material Issued feature pagination 1st to 2nd page 
+@Inventory @MaterialIssued13 @smoke @regression @all
+Scenario Outline: T_MaterialIssued13_To verify the Material Issued feature pagination 1st to 2nd page 
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module
@@ -487,8 +487,8 @@ And Admin or user clicks the Material Issued Tab
 And User click on second page button of Material Issued page
 Then Second page Material Issued get displayed successfully    
 
-@Inventory @Inventory55 @MaterialIssued @smoke @regression @all
-Scenario Outline: T055_To verify the Material Issued feature pagination next page 
+@Inventory @MaterialIssued14 @smoke @regression @all
+Scenario Outline: T_MaterialIssued14_To verify the Material Issued feature pagination next page 
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module 
@@ -496,8 +496,8 @@ And Admin or user clicks the Material Issued Tab
 And Go to Next page of Material Issued page
 Then Next page Material Issued get displayed successfully  
 
-@Inventory @Inventory57 @MaterialIssued @smoke @regression @all
-Scenario Outline: T057_To verify the Material Issued feature pagination previous page 
+@Inventory @MaterialIssued15 @smoke @regression @all
+Scenario Outline: T_MaterialIssued15_To verify the Material Issued feature pagination previous page 
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module 
@@ -506,8 +506,8 @@ And Go to Next page of Material Issued page
 And Go to Previous page of Material Issued
 Then Previous page Material Issued get displayed successfully 
 
-@Inventory @Inventory58 @MaterialIssued @smoke @regression @all
-Scenario Outline: T058_To verify the Material Issued feature pagination last page 
+@Inventory @MaterialIssued16 @smoke @regression @all
+Scenario Outline: T_MaterialIssued16_To verify the Material Issued feature pagination last page 
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module
@@ -515,8 +515,8 @@ And Admin or user clicks the Material Issued Tab
 And Go to Last page of Material Issued page
 Then Last page Material Issued get displayed successfully   
 
-@Inventory @Inventory59 @MaterialIssued @smoke @regression @all
-Scenario Outline: T059_To verify the Material Issued feature pagination last page to first page
+@Inventory @MaterialIssued17 @smoke @regression @all
+Scenario Outline: T_MaterialIssued17_To verify the Material Issued feature pagination last page to first page
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module 
@@ -525,118 +525,309 @@ And Go to Last page of Material Issued page
 And User click on first page button of Material Issued
 Then First page Material Issued get displayed successfully  
 
-@Inventory @Inventory60 @DamageRec.Technician01 @smoke @regression @all
-Scenario Outline: T060_Verify the Inventory01 feature Damage Rec.Technician page 
+@Inventory @DamageRec.Technician01 @smoke @regression @all
+Scenario Outline: T_DamageRec.Technician01_Verify the Inventory01 feature DamageRecTechnician page 
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module
-And Admin or user clicks the Damage Rec.Technician Tab
-Then Damage Rec.Technician page should display successfully
+And Admin or user clicks the DamageRecTechnician Tab
+Then DamageRecTechnician page should display successfully
 
-@Inventory @Inventory61 @DamageRec.Technician02 @regression @sanity @all
-Scenario Outline: T002_Create the New Damage Rec.Technician with valid inputs
+@Inventory @DamageRec.Technician02 @regression @sanity @all
+Scenario Outline: T_DamageRec.Technician02_Create the New Return with valid inputs
 Given Admin logged in with valid credentials
-When Al-Arabia overall dashboard should displa
+When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module
-And Admin or user clicks the Damage Rec.Technician Tab
-And Admin or user clicks the New Request button
-And Admin or user enters the all mandatory fields of Damage Rec.Technician
-And Admin or user clicks the Add Request button 
-Then Particular Request gets created successfully with either "<successMessage1>" or "<successMessage2>"
+And Admin or user clicks the DamageRecTechnician Tab
+And Admin or user clicks the New Return button in DamageRecTechnician
+And Admin or user enters the all mandatory fields of DamageRecTechnician
+And Admin or user clicks the Add Return button 
+Then Particular Return received from Technician gets created successfully with either "<successMessage1>" or "<successMessage2>"
   Examples:
       | successMessage1       | successMessage2                 |
-      | LOADING...            | Success Damage Rec.Technician added  |
+      | LOADING...            | Success DamageRecTechnician added  |
 
-@Inventory @Inventory62 @DamageRec.Technician03 @smoke @regression @all
-Scenario Outline: T062_ The Inventory feature search a Damage Rec.Technician by Material Id	
+@Inventory @DamageRec.Technician03 @smoke @regression @all
+Scenario Outline: T_DamageRec.Technician03_The Inventory feature search a DamageRecTechnician by Billboard Id	
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module
-And Admin or user clicks the Damage Rec.Technician Tab
-And Admin or user search a Damage Rec.Technician
-Then Searched Damage Rec.Technician details get displayed successfully
+And Admin or user clicks the DamageRecTechnician Tab
+And Admin or user search a DamageRecTechnician
+Then Searched DamageRecTechnician details get displayed successfully
 
-@Inventory @Inventory25 @DamageRec.Technician @smoke @regression @all
-Scenario Outline: T025_To verify the Damage Rec.Technician feature sort recently updated
+@Inventory @DamageRec.Technician04 @smoke @regression @all
+Scenario Outline: T_DamageRec.Technician04_To verify the DamageRecTechnician feature sort recently updated
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display 
 And Admin or user clicks the Inventory module
-And Admin or user clicks the Damage Rec.Technician Tab
-And Admin or user sort the Damage Rec.Technician list recently updated
-Then Recently updated Damage Rec.Technician list get displayed successfully
+And Admin or user clicks the DamageRecTechnician Tab
+And Admin or user sort the DamageRecTechnician list recently updated
+Then Recently updated DamageRecTechnician list get displayed successfully
 
-@Inventory @Inventory26 @DamageRec.Technician @smoke @regression @all
-Scenario Outline: T026_To verify the Damage Rec.Technician feature sort Name - A to Z
+@Inventory @DamageRec.Technician05 @smoke @regression @all
+Scenario Outline: T_DamageRec.Technician05_To verify the DamageRecTechnician feature sort Name - A to Z
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module
-And Admin or user clicks the Damage Rec.Technician Tab
-And User sort the Damage Rec.Technician list Name A to Z
-Then Damage Rec.Technician list get displayed successfully
+And Admin or user clicks the DamageRecTechnician Tab
+And User sort the DamageRecTechnician list Name A to Z
+Then DamageRecTechnician list get displayed successfully
 
-@Inventory @Inventory27 @DamageRec.Technician @smoke @regression @all
-Scenario Outline: T027_To verify the Damage Rec.Technician feature sort Name - Z to A
+@Inventory @DamageRec.Technician06 @smoke @regression @all
+Scenario Outline: T_DamageRec.Technician06_To verify the DamageRecTechnician feature sort Name - Z to A
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module
-And Admin or user clicks the Damage Rec.Technician Tab
-And User sort the Damage Rec.Technician list Name Z to A 
-Then Damage Rec.Technician list Z to A get displayed successfully
+And Admin or user clicks the DamageRecTechnician Tab
+And User sort the DamageRecTechnician list Name Z to A 
+Then DamageRecTechnician list Z to A get displayed successfully
 
-@Inventory @Inventory28 @DamageRec.Technician @smoke @regression @all
-Scenario Outline: T028_To verify the Damage Rec.Technician feature sort Recently Added
+@Inventory @DamageRec.Technician07 @smoke @regression @all
+Scenario Outline: T_DamageRec.Technician07_To verify the DamageRecTechnician feature sort Recently Added
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module
-And Admin or user clicks the Damage Rec.Technician Tab
-And User sort the Damage Rec.Technician list Recently Added
-Then Recent Damage Rec.Technician list get displayed successfully
+And Admin or user clicks the DamageRecTechnician Tab
+And User sort the DamageRecTechnician list Recently Added
+Then Recent DamageRecTechnician list get displayed successfully
 
-@Inventory @Inventory29 @DamageRec.Technician @smoke @regression @all
-Scenario Outline: T029_To verify the Damage Rec.Technician feature sort decending
+@Inventory @DamageRec.Technician08 @smoke @regression @all
+Scenario Outline: T_DamageRec.Technician08_To verify the DamageRecTechnician feature sort decending
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module
-And Admin or user clicks the Damage Rec.Technician Tab
-And User sort the Damage Rec.Technician list decending 
-Then Decending Damage Rec.Technician list get displayed successfully  
+And Admin or user clicks the DamageRecTechnician Tab
+And User sort the DamageRecTechnician list decending 
+Then Decending DamageRecTechnician list get displayed successfully  
 
-@Inventory @Inventory30 @DamageRec.Technician @smoke @regression @all
-Scenario Outline: T030_To verify the Damage Rec.Technician feature Download button
+@Inventory @DamageRec.Technician09 @smoke @regression @all
+Scenario Outline: T_DamageRec.Technician09_To verify the DamageRecTechnician feature Download button
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module
-And Admin or user clicks the Damage Rec.Technician Tab
-And User clicks the Download button in Damage Rec.Technician page 
-Then Download pop up of Damage Rec.Technician will be displayed successfully
+And Admin or user clicks the DamageRecTechnician Tab
+And User clicks the Download button in DamageRecTechnician page 
+Then Download pop up of DamageRecTechnician will be displayed successfully
 
-@Inventory @Inventory31 @DamageRec.Technician @smoke @regression @all
-Scenario Outline: T031_To verify the Damage Rec.Technician feature Download as Excel 
+@Inventory @DamageRec.Technician10 @smoke @regression @all
+Scenario Outline: T_DamageRec.Technician10_To verify the DamageRecTechnician feature Download as Excel 
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module
-And Admin or user clicks the Damage Rec.Technician Tab
-And User clicks the Download button with Download As Excel of Damage Rec.Technician list
+And Admin or user clicks the DamageRecTechnician Tab
+And User clicks the Download button with Download As Excel of DamageRecTechnician list
       
-@Inventory @Inventory32 @DamageRec.Technician @smoke @regression @all
-Scenario Outline: T032_To verify the Damage Rec.Technician feature Download as PDF
+@Inventory @DamageRec.Technician11 @smoke @regression @all
+Scenario Outline: T_DamageRec.Technician11_To verify the DamageRecTechnician feature Download as PDF
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module
-And Admin or user clicks the Damage Rec.Technician Tab
-And User clicks the Download button with Download As PDF for Damage Rec.Technician
+And Admin or user clicks the DamageRecTechnician Tab
+And User clicks the Download button with Download As PDF for DamageRecTechnician
       
-@Inventory @Inventory33 @DamageRec.Technician @smoke @regression @all
-Scenario Outline: T033_To verify the Damage Rec.Technician feature Download popup close
+@Inventory @DamageRec.Technician12 @smoke @regression @all
+Scenario Outline: T_DamageRec.Technician12_To verify the DamageRecTechnician feature Download popup close
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module
-And Admin or user clicks the Damage Rec.Technician Tab
-And User clicks the Download button in Damage Rec.Technician page after that click on close button 
-Then The Download pop up get closed successfully and display the Damage Rec.Technician list
+And Admin or user clicks the DamageRecTechnician Tab
+And User clicks the Download button in DamageRecTechnician page after that click on close button 
+Then The Download pop up get closed successfully and display the DamageRecTechnician list
 
-#@Inventory @Inventory34 @DamageRec.Technician @regression @sanity @all
-#Scenario Outline: T034_To verify Purchase edit of any field
+@Inventory @DamageRec.Technician13 @regression @sanity @all
+Scenario Outline: T_DamageRec.Technician13_To verify edit of any Return
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Inventory module  
+And User click on edit icon in all Material page
+And User edit the City name
+And User Click on Update Material button
+Then Particular Material gets updated successfully with either "<successMessage1>" or "<successMessage2>"
+  Examples:
+      | successMessage1       | successMessage2                |
+      | LOADING...            | Success Material info updated  |
+      
+@Inventory @DamageRec.Technician14 @regression @sanity @all
+Scenario Outline: T_DamageRec.Technician14_To verify DamageRecTechnician edit of any field
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Inventory module 
+And Admin or user clicks the DamageRecTechnician Tab   
+And User click on DamageRecTechnician view option of kebab menu 
+Then Particular DamageRecTechnician viewed with details successfully
+
+@Inventory @DamageRec.Technician15 @regression @sanity @all
+Scenario Outline: T_DamageRec.Technician15_To verify DamageRecTechnician edit of any field
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Inventory module 
+And Admin or user clicks the DamageRecTechnician Tab      
+And User click on DamageRecTechnician Delete option in kebab menu and confirm Yes
+Then DamageRecTechnician deleted popup will be displayed successfully as "<successMessage>"
+ Examples:
+      | successMessage 			         	 |
+      | Success Damage info deleted  |   
+      
+@Inventory @DamageRec.Technician16 @smoke @regression @all
+Scenario Outline: T_DamageRec.Technician16_To verify the DamageRecTechnician feature pagination 1st to 2nd page 
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Inventory module
+And Admin or user clicks the DamageRecTechnician Tab    
+And User click on second page button of DamageRecTechnician page
+Then Second page DamageRecTechnician get displayed successfully    
+
+@Inventory @DamageRec.Technician17 @smoke @regression @all
+Scenario Outline: T_DamageRec.Technician17_To verify the Material request feature pagination next page 
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Inventory module 
+And Admin or user clicks the DamageRecTechnician Tab   
+And Go to Next page of DamageRecTechnician page
+Then Next page DamageRecTechnician get displayed successfully  
+
+@Inventory @DamageRec.Technician18 @smoke @regression @all
+Scenario Outline: T_DamageRec.Technician18_To verify the DamageRecTechnician feature pagination previous page 
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Inventory module 
+And Admin or user clicks the DamageRecTechnician Tab   
+And Go to Next page of DamageRecTechnician page 
+And Go to Previous page of DamageRecTechnician
+Then Previous page DamageRecTechnician get displayed successfully 
+
+@Inventory @DamageRec.Technician19 @smoke @regression @all
+Scenario Outline: T_DamageRec.Technician19_To verify the DamageRecTechnician feature pagination last page 
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Inventory module
+And Admin or user clicks the DamageRecTechnician Tab   
+And Go to Last page of DamageRecTechnician page
+Then Last page DamageRecTechnician get displayed successfully   
+
+@Inventory @DamageRec.Technician20 @smoke @regression @all
+Scenario Outline: T_DamageRec.Technician20_To verify the DamageRecTechnician feature pagination last page to first page
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Inventory module 
+And Admin or user clicks the DamageRecTechnician Tab   
+And Go to Last page of DamageRecTechnician page
+And User click on first page button of DamageRecTechnician
+Then First page DamageRecTechnician get displayed successfully  
+
+@Inventory @DamageRet.supplier01 @smoke @regression @all
+Scenario Outline: T_DamageRet.supplier01_Verify the Inventory01 feature DamageRetSupplier page 
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Inventory module
+And Admin or user clicks the DamageRetSupplier Tab
+Then DamageRetSupplier page should display successfully
+
+@Inventory @DamageRet.supplier02 @regression @sanity @all
+Scenario Outline: T_DamageRet.supplier02_Create the New Return with valid inputs
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Inventory module
+And Admin or user clicks the DamageRetSupplier Tab
+And Admin or user clicks the New Return button in DamageRetSupplier
+And Admin or user enters the all mandatory fields of DamageRetSupplier
+And Admin or user clicks the Add Return button 
+Then Particular Return received from Technician gets created successfully with either "<successMessage1>" or "<successMessage2>"
+  Examples:
+      | successMessage1       | successMessage2                 |
+      | LOADING...            | Success DamageRetSupplier added  |
+
+@Inventory @DamageRet.supplier03 @smoke @regression @all
+Scenario Outline: T_DamageRet.supplier03_The Inventory feature search a DamageRetSupplier by Billboard Id	
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Inventory module
+And Admin or user clicks the DamageRetSupplier Tab
+And Admin or user search a DamageRetSupplier
+Then Searched DamageRetSupplier details get displayed successfully
+
+@Inventory @DamageRet.supplier04 @smoke @regression @all
+Scenario Outline: T_DamageRet.supplier04_To verify the DamageRetSupplier feature sort recently updated
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display 
+And Admin or user clicks the Inventory module
+And Admin or user clicks the DamageRetSupplier Tab
+And Admin or user sort the DamageRetSupplier list recently updated
+Then Recently updated DamageRetSupplier list get displayed successfully
+
+@Inventory @DamageRet.supplier05 @smoke @regression @all
+Scenario Outline: T_DamageRet.supplier05_To verify the DamageRetSupplier feature sort Name - A to Z
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Inventory module
+And Admin or user clicks the DamageRetSupplier Tab
+And User sort the DamageRetSupplier list Name A to Z
+Then DamageRetSupplier list get displayed successfully
+
+@Inventory @DamageRet.supplier06 @smoke @regression @all
+Scenario Outline: T_DamageRet.supplier06_To verify the DamageRetSupplier feature sort Name - Z to A
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Inventory module
+And Admin or user clicks the DamageRetSupplier Tab
+And User sort the DamageRetSupplier list Name Z to A 
+Then DamageRetSupplier list Z to A get displayed successfully
+
+@Inventory @DamageRet.supplier07 @smoke @regression @all
+Scenario Outline: T_DamageRet.supplier07_To verify the DamageRetSupplier feature sort Recently Added
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Inventory module
+And Admin or user clicks the DamageRetSupplier Tab
+And User sort the DamageRetSupplier list Recently Added
+Then Recent DamageRetSupplier list get displayed successfully
+
+@Inventory @DamageRet.supplier08 @smoke @regression @all
+Scenario Outline: T_DamageRet.supplier08_To verify the DamageRetSupplier feature sort decending
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Inventory module
+And Admin or user clicks the DamageRetSupplier Tab
+And User sort the DamageRetSupplier list decending 
+Then Decending DamageRetSupplier list get displayed successfully  
+
+@Inventory @DamageRet.supplier09 @smoke @regression @all
+Scenario Outline: T_DamageRet.supplier09_To verify the DamageRetSupplier feature Download button
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Inventory module
+And Admin or user clicks the DamageRetSupplier Tab
+And User clicks the Download button in DamageRetSupplier page 
+Then Download pop up of DamageRetSupplier will be displayed successfully
+
+@Inventory @DamageRet.supplier10 @smoke @regression @all
+Scenario Outline: T_DamageRet.supplier10_To verify the DamageRetSupplier feature Download as Excel 
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Inventory module
+And Admin or user clicks the DamageRetSupplier Tab
+And User clicks the Download button with Download As Excel of DamageRetSupplier list
+      
+@Inventory @DamageRet.supplier11 @smoke @regression @all
+Scenario Outline: T_DamageRet.supplier11_To verify the DamageRetSupplier feature Download as PDF
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Inventory module
+And Admin or user clicks the DamageRetSupplier Tab
+And User clicks the Download button with Download As PDF for DamageRetSupplier
+      
+@Inventory @DamageRet.supplier12 @smoke @regression @all
+Scenario Outline: T_DamageRet.supplier12_To verify the DamageRetSupplier feature Download popup close
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Inventory module
+And Admin or user clicks the DamageRetSupplier Tab
+And User clicks the Download button in DamageRetSupplier page after that click on close button 
+Then The Download pop up get closed successfully and display the DamageRetSupplier list
+
+#@Inventory @DamageRet.supplier13 @regression @sanity @all
+#Scenario Outline: T_DamageRet.supplier13_To verify edit of any Return
 #Given Admin logged in with valid credentials
 #When Al-Arabia overall dashboard should display
 #And Admin or user clicks the Inventory module  
@@ -647,72 +838,72 @@ Then The Download pop up get closed successfully and display the Damage Rec.Tech
   #Examples:
       #| successMessage1       | successMessage2                |
       #| LOADING...            | Success Material info updated  |
-      
-@Inventory @Inventory35 @DamageRec.Technician @regression @sanity @all
-Scenario Outline: T035_To verify Damage Rec.Technician edit of any field
+      #
+@Inventory @DamageRet.supplier14 @regression @sanity @all
+Scenario Outline: T_DamageRet.supplier14_To verify DamageRetSupplier edit of any field
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module 
-And Admin or user clicks the Damage Rec.Technician Tab   
-And User click on Damage Rec.Technician view option of kebab menu 
-Then Particular Damage Rec.Technician viewed with details successfully
+And Admin or user clicks the DamageRetSupplier Tab   
+And User click on DamageRetSupplier view option of kebab menu 
+Then Particular DamageRetSupplier viewed with details successfully
 
-@Inventory @Inventory36 @DamageRec.Technician @regression @sanity @all
-Scenario Outline: T036_To verify Damage Rec.Technician edit of any field
-Given Admin logged in with valid credentials
-When Al-Arabia overall dashboard should display
-And Admin or user clicks the Inventory module 
-And Admin or user clicks the Damage Rec.Technician Tab      
-And User click on Damage Rec.Technician Delete option in kebab menu and confirm Yes
-Then Damage Rec.Technician deleted popup will be displayed successfully as "<successMessage>"
- Examples:
-      | successMessage 			         	 |
-      | Success Material info deleted  |   
-      
-@Inventory @Inventory37 @DamageRec.Technician @smoke @regression @all
-Scenario Outline: T037_To verify the Damage Rec.Technician feature pagination 1st to 2nd page 
+#@Inventory @DamageRet.supplier15 @regression @sanity @all
+#Scenario Outline: T_DamageRet.supplier15_To verify DamageRetSupplier edit of any field
+#Given Admin logged in with valid credentials
+#When Al-Arabia overall dashboard should display
+#And Admin or user clicks the Inventory module 
+#And Admin or user clicks the DamageRetSupplier Tab      
+#And User click on DamageRetSupplier Delete option in kebab menu and confirm Yes
+#Then DamageRetSupplier deleted popup will be displayed successfully as "<successMessage>"
+ #Examples:
+      #| successMessage 			         	 |
+      #| Success Damage info deleted  |   
+      #
+@Inventory @DamageRet.supplier16 @smoke @regression @all
+Scenario Outline: T_DamageRet.supplier16_To verify the DamageRetSupplier feature pagination 1st to 2nd page 
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module
-And Admin or user clicks the Damage Rec.Technician Tab    
-And User click on second page button of Damage Rec.Technician page
-Then Second page Damage Rec.Technician get displayed successfully    
+And Admin or user clicks the DamageRetSupplier Tab    
+And User click on second page button of DamageRetSupplier page
+Then Second page DamageRetSupplier get displayed successfully    
 
-@Inventory @Inventory38 @DamageRec.Technician @smoke @regression @all
-Scenario Outline: T038_To verify the Material request feature pagination next page 
+@Inventory @DamageRet.supplier17 @smoke @regression @all
+Scenario Outline: T_DamageRet.supplier17_To verify the Material request feature pagination next page 
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module 
-And Admin or user clicks the Damage Rec.Technician Tab   
-And Go to Next page of Damage Rec.Technician page
-Then Next page Damage Rec.Technician get displayed successfully  
+And Admin or user clicks the DamageRetSupplier Tab   
+And Go to Next page of DamageRetSupplier page
+Then Next page DamageRetSupplier get displayed successfully  
 
-@Inventory @Inventory39 @DamageRec.Technician @smoke @regression @all
-Scenario Outline: T039_To verify the Damage Rec.Technician feature pagination previous page 
+@Inventory @DamageRet.supplier18 @smoke @regression @all
+Scenario Outline: T_DamageRet.supplier18_To verify the DamageRetSupplier feature pagination previous page 
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module 
-And Admin or user clicks the Damage Rec.Technician Tab   
-And Go to Next page of Damage Rec.Technician page 
-And Go to Previous page of Damage Rec.Technician
-Then Previous page Damage Rec.Technician get displayed successfully 
+And Admin or user clicks the DamageRetSupplier Tab   
+And Go to Next page of DamageRetSupplier page 
+And Go to Previous page of DamageRetSupplier
+Then Previous page DamageRetSupplier get displayed successfully 
 
-@Inventory @Inventory40 @DamageRec.Technician @smoke @regression @all
-Scenario Outline: T040_To verify the Damage Rec.Technician feature pagination last page 
+@Inventory @DamageRet.supplier19 @smoke @regression @all
+Scenario Outline: T_DamageRet.supplier19_To verify the DamageRetSupplier feature pagination last page 
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module
-And Admin or user clicks the Damage Rec.Technician Tab   
-And Go to Last page of Damage Rec.Technician page
-Then Last page Damage Rec.Technician get displayed successfully   
+And Admin or user clicks the DamageRetSupplier Tab   
+And Go to Last page of DamageRetSupplier page
+Then Last page DamageRetSupplier get displayed successfully   
 
-@Inventory @Inventory41 @DamageRec.Technician @smoke @regression @all
-Scenario Outline: T041_To verify the Damage Rec.Technician feature pagination last page to first page
+@Inventory @DamageRet.supplier20 @smoke @regression @all
+Scenario Outline: T_DamageRet.supplier20_To verify the DamageRetSupplier feature pagination last page to first page
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module 
-And Admin or user clicks the Damage Rec.Technician Tab   
-And Go to Last page of Damage Rec.Technician page
-And User click on first page button of Damage Rec.Technician
-Then First page Damage Rec.Technician get displayed successfully  
+And Admin or user clicks the DamageRetSupplier Tab   
+And Go to Last page of DamageRetSupplier page
+And User click on first page button of DamageRetSupplier
+Then First page DamageRetSupplier get displayed successfully  
     

@@ -1,4 +1,59 @@
-[INFO ] 2024-09-01 10:28:05.483 [main] Testhooks - Execution Started
-[INFO ] 2024-09-01 10:28:06.376 [main] Testhooks - Browser got launched
-[INFO ] 2024-09-01 10:28:07.444 [main] Testhooks - Navigated to url
-[INFO ] 2024-09-01 10:28:28.726 [main] Testhooks - Failed scenario screenshot got capturedT035_To verify Purchase edit of any field
+[INFO ] 2024-09-03 00:00:21.779 [main] Testhooks - Failed scenario screenshot got capturedT_DamageRet.supplier11_To verify the DamageRetSupplier feature Download as PDF
+[INFO ] 2024-09-03 00:03:20.744 [main] Testhooks - Execution Started
+[INFO ] 2024-09-03 00:03:21.579 [main] Testhooks - Browser got launched
+[INFO ] 2024-09-03 00:03:23.074 [main] Testhooks - Navigated to url
+[INFO ] 2024-09-03 00:03:24.263 [main] Signinpage - User enters valid email address
+[INFO ] 2024-09-03 00:03:24.388 [main] Signinpage - User enters valid password
+[INFO ] 2024-09-03 00:03:24.497 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-09-03 00:03:24.497 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-09-03 00:03:27.242 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-09-03 00:03:27.673 [main] Inventorypage - >> Admin/User got navigated to inventory page
+[INFO ] 2024-09-03 00:03:50.788 [main] Testhooks - Failed scenario screenshot got capturedT_DamageRet.supplier11_To verify the DamageRetSupplier feature Download as PDF
+[INFO ] 2024-09-03 00:09:01.067 [main] Testhooks - Execution Started
+[INFO ] 2024-09-03 00:09:02.024 [main] Testhooks - Browser got launched
+[INFO ] 2024-09-03 00:09:03.800 [main] Testhooks - Navigated to url
+[INFO ] 2024-09-03 00:09:05.004 [main] Signinpage - User enters valid email address
+[INFO ] 2024-09-03 00:09:05.137 [main] Signinpage - User enters valid password
+[INFO ] 2024-09-03 00:09:05.238 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-09-03 00:09:05.238 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-09-03 00:09:13.232 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-09-03 00:09:13.870 [main] Inventorypage - >> Admin/User got navigated to inventory page
+[INFO ] 2024-09-03 00:09:52.711 [main] Testhooks - Execution Started
+[INFO ] 2024-09-03 00:09:53.521 [main] Testhooks - Browser got launched
+[INFO ] 2024-09-03 00:09:54.951 [main] Testhooks - Navigated to url
+[INFO ] 2024-09-03 00:09:56.159 [main] Signinpage - User enters valid email address
+[INFO ] 2024-09-03 00:09:56.284 [main] Signinpage - User enters valid password
+[INFO ] 2024-09-03 00:09:56.395 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-09-03 00:09:56.395 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-09-03 00:09:59.080 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-09-03 00:09:59.568 [main] Inventorypage - >> Admin/User got navigated to inventory page
+[INFO ] 2024-09-03 00:10:02.823 [main] Inventorypage - >> The Download Popup get closed and listed DamageRetSupplier page
+[INFO ] 2024-09-03 00:18:59.742 [main] Testhooks - Execution Started
+[INFO ] 2024-09-03 00:19:00.555 [main] Testhooks - Browser got launched
+[INFO ] 2024-09-03 00:19:02.587 [main] Testhooks - Navigated to url
+[INFO ] 2024-09-03 00:19:03.811 [main] Signinpage - User enters valid email address
+[INFO ] 2024-09-03 00:19:03.936 [main] Signinpage - User enters valid password
+[INFO ] 2024-09-03 00:19:04.036 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-09-03 00:19:04.036 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-09-03 00:19:14.047 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-09-03 00:19:14.478 [main] Inventorypage - >> Admin/User got navigated to inventory page
+[INFO ] 2024-09-03 00:19:37.595 [main] Testhooks - Failed scenario screenshot got capturedT_DamageRet.supplier14_To verify DamageRetSupplier edit of any field
+[INFO ] 2024-09-03 00:21:57.939 [main] Testhooks - Execution Started
+[INFO ] 2024-09-03 00:21:58.730 [main] Testhooks - Browser got launched
+[INFO ] 2024-09-03 00:22:00.164 [main] Testhooks - Navigated to url
+[INFO ] 2024-09-03 00:22:01.371 [main] Signinpage - User enters valid email address
+[INFO ] 2024-09-03 00:22:01.497 [main] Signinpage - User enters valid password
+[INFO ] 2024-09-03 00:22:01.600 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-09-03 00:22:01.600 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-09-03 00:22:04.174 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-09-03 00:22:05.869 [main] Testhooks - Failed scenario screenshot got capturedT_DamageRet.supplier16_To verify the DamageRetSupplier feature pagination 1st to 2nd page
+[INFO ] 2024-09-03 00:23:55.107 [main] Testhooks - Execution Started
+[INFO ] 2024-09-03 00:23:55.854 [main] Testhooks - Browser got launched
+[INFO ] 2024-09-03 00:23:57.312 [main] Testhooks - Navigated to url
+[INFO ] 2024-09-03 00:23:58.502 [main] Signinpage - User enters valid email address
+[INFO ] 2024-09-03 00:23:58.625 [main] Signinpage - User enters valid password
+[INFO ] 2024-09-03 00:23:58.729 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-09-03 00:23:58.729 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-09-03 00:24:01.495 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-09-03 00:24:02.031 [main] Inventorypage - >> Admin/User got navigated to inventory page
+[INFO ] 2024-09-03 00:24:15.052 [main] Testhooks - Failed scenario screenshot got capturedT_DamageRet.supplier16_To verify the DamageRetSupplier feature pagination 1st to 2nd page

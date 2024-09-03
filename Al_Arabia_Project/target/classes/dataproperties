@@ -93,6 +93,8 @@ Billboardid = RTH52
 Usedinboard = ABB03
 RequestedBy = tomgeorge
 Defecttype = Test
+deprtmnt = Cleaning
+billboardid = BB_NO_01865942
 
 <---------Cleaning--------->
 

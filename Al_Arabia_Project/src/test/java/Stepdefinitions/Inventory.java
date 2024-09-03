@@ -975,4 +975,194 @@ public class Inventory extends Base {
 	@Then("First page DamageRetSupplier get displayed successfully")
 	public void First_page_DamageRetSupplier_get_displayed_successfully() throws Exception {
 }
+	//<-------------------------------------------------Damage Received From Supplier------------------------------------------------------------->
+
+	@And("Admin or user clicks the DamageRecSupplier Tab")
+	public void Admin_or_user_clicks_the_DamageRecSupplier_Tab() throws Exception {
+		inventorypage.DamageRecSupplier_page();
+}
+	@Then("DamageRecSupplier page should display successfully")
+	public void DamageRecSupplier_page_should_display_successfully() throws Exception {
+		inventorypage.DamageRecSupplier_page_Displayed();
+}
+		@And("Admin or user search a DamageRecSupplier")
+	public void Admin_or_user_search_a_DamageRecSupplier() throws Exception {
+		inventorypage.DamageRecSupplier_search_enter_text();
+	}
+
+	@Then("Searched DamageRecSupplier details get displayed successfully")
+	public void Searched_DamageRecSupplier_details_get_displayed_successfully() {
+		inventorypage.DamageRecSupplierSearchedList();
+	}
+	@And("Admin or user sort the DamageRecSupplier list recently updated")
+	public void Admin_or_user_sort_the_DamageRecSupplier_list_recently_updated() throws Exception {
+		inventorypage.DamageRecSupplier_sort_recentlyupdated();
+	}
+
+	@Then("Recently updated DamageRecSupplier list get displayed successfully")
+	public void Recently_updated_DamageRecSupplier_list_get_displayed_successfully() throws Exception {
+		inventorypage.DamageRecSupplier_list();
+	}
+
+	@And("User sort the DamageRecSupplier list Name A to Z")
+	public void User_sort_the_DamageRecSupplier_list_Name_A_to_Z() throws Exception {
+		inventorypage.DamageRecSupplier_sortA_Z();
+	}
+
+	@Then("DamageRecSupplier list get displayed successfully")
+	public void DamageRecSupplier_list_get_displayed_successfully() throws Exception {
+		inventorypage.DamageRecSupplier_list();
+	}
+
+	@And("User sort the DamageRecSupplier list Name Z to A")
+	public void User_sort_the_DamageRecSupplier_list_Name_Z_to_A() throws Exception {
+		inventorypage.DamageRecSupplier_sortZ_A();
+	}
+
+	@Then("DamageRecSupplier list Z to A get displayed successfully")
+	public void DamageRecSupplier_list_Z_to_A_get_displayed_successfully() throws Exception {
+		inventorypage.DamageRecSupplier_list();
+	}
+
+	@And("User sort the DamageRecSupplier list Recently Added")
+	public void User_sort_the_DamageRecSupplier_list_Recently_Added() throws Exception {
+		inventorypage.DamageRecSupplier_sort_recentlyadded();
+	}
+
+	@Then("Recent DamageRecSupplier list get displayed successfully")
+	public void Recent_DamageRecSupplier_list_get_displayed_successfully() throws Exception {
+		inventorypage.DamageRecSupplier_list();
+	}
+	@And("User sort the DamageRecSupplier list decending")
+	public void User_sort_the_DamageRecSupplier_list_Decending() throws Exception {
+		inventorypage.DamageRecSupplier_DecendingDate();
+	}
+
+	@Then("Decending DamageRecSupplier list get displayed successfully")
+	public void Decending_DamageRecSupplier_list_get_displayed_successfully() throws Exception {
+		inventorypage.DamageRecSupplier_list();
+	}
+	@And("User clicks the Download button in DamageRecSupplier page")
+	public void User_clicks_the_Download_button_in_DamageRecSupplier_page() throws Exception {
+		inventorypage.Download_button_DamageRecSupplierpage();
+	}
+	@Then("Download pop up of DamageRecSupplier will be displayed successfully")
+	public void Download_pop_up_of_DamageRecSupplier_will_be_displayed_successfully() throws Exception {
+		inventorypage.DamageRecSupplier_Download_popup_display();
+	}
+	@And("User clicks the Download button with Download As Excel of DamageRecSupplier list")
+	public void User_clicks_the_Download_button_with_Download_As_Excel_of_DamageRecSupplier_list() throws Exception {
+		inventorypage.Download_button_DamageRecSupplierpage();
+		inventorypage.DamageRecSupplier_Download_Excel();
+	}
+	@And("User clicks the Download button with Download As PDF for DamageRecSupplier")
+	public void User_clicks_the_Download_button_with_Download_As_PDF_for_DamageRecSupplier() throws Exception {
+		inventorypage.Download_button_DamageRecSupplierpage();
+		inventorypage.DamageRecSupplier_Download_PDF();
+	}
+	@And("User clicks the Download button in DamageRecSupplier page after that click on close button")
+	public void User_clicks_the_Download_in_DamageRecSupplier_page_after_that_click_on_close_button() throws Exception {
+		inventorypage.Download_button_DamageRecSupplierpage();
+		inventorypage.DamageRecSupplier_Download_popup_close();
+	}
+	@Then("The Download pop up get closed successfully and display the DamageRecSupplier list")
+	public void The_Download_pop_up_get_closed_successfully_and_display_the_DamageRecSupplier_list() throws Exception {
+		inventorypage.Download_popupclosd_displayed_DamageRecSupplier();
+	}
+    @And("Admin or user clicks the New Return button in DamageRecSupplier")
+    public void Admin_or_user_clicks_the_New_Return_button_in_DamageRecSupplier() throws Exception{
+		inventorypage.New_Replace_Button_damageRec_supplier();
+    }
+    @And("Admin or user enters the all mandatory fields of DamageRecSupplier")
+    public void Admin_or_user_enters_the_all_mandatory_fields_of_DamageRecSupplier() throws Exception{
+		inventorypage.Enter_Mandatory_fieldsof_New_Replace_DamageRecSupplier();
+    }
+    @And("Admin or user clicks the Add Replace button DamageRecSupplier")
+    public void Admin_or_user_clicks_the_Add_Replace_button_DamageRecSupplier() throws Exception{
+		inventorypage.Add_Return_button_DamageRecSupplier();
+    }
+	@Then("^Particular Damage Replace received from Supplier gets created successfully with either \"([^\"]*)\" or \"([^\"]*)\"$")
+	public void Particular_Damage_Replace_received_from_Supplier_gets_created_successfully_with_either (String expectedMessage1,
+			String expectedMessage2) throws Exception {
+		String actualMessage = inventorypage.inventory_create_Success_display();
+		String normalizedActualMessage = normalizeWhitespace(actualMessage);
+		System.out.println(">> User or Admin got the Damage Return received from Supplier gets created success message successfully: " + actualMessage);
+
+		boolean matchesMessage1 = normalizedActualMessage.equals(normalizeWhitespace(expectedMessage1));
+		boolean matchesMessage2 = normalizedActualMessage.equals(normalizeWhitespace(expectedMessage2));
+
+		assertTrue("The actual message was neither of the expected success messages.",
+				matchesMessage1 || matchesMessage2);
+	}
+	@Then("^Particular DamageRecSupplier gets updated successfully with either \"([^\"]*)\" or \"([^\"]*)\"$")
+	public void Particular_DamageRecSupplier_gets_updated_successfully_with_either (String expectedMessage1,
+			String expectedMessage2) throws Exception {
+		String actualMessage = inventorypage.inventory_create_Success_display();
+		String normalizedActualMessage = normalizeWhitespace(actualMessage);
+		System.out.println(">> User or Admin got the purchase created success message successfully: " + actualMessage);
+
+		boolean matchesMessage1 = normalizedActualMessage.equals(normalizeWhitespace(expectedMessage1));
+		boolean matchesMessage2 = normalizedActualMessage.equals(normalizeWhitespace(expectedMessage2));
+
+		assertTrue("The actual message was neither of the expected success messages.",
+				matchesMessage1 || matchesMessage2);
+	}
+	@And("User click on DamageRecSupplier view option of kebab menu")
+	public void User_click_on_DamageRecSupplier_view_option_of_kebab_menu() throws Exception {
+		inventorypage.DamageRecSupplier_Viewclick_option();
+	}
+	@Then("Particular DamageRecSupplier viewed with details successfully")
+	public void Particular_DamageRecSupplier_viewed_with_details_successfully() throws Exception {
+		inventorypage.DamageRecSupplierView_display();
+	}
+	@And("User click on DamageRecSupplier Delete option in kebab menu and confirm Yes")
+	public void User_click_on_DamageRecSupplier_Delete_option_in_kebab_menu_and_confirm_Yes() throws Exception {
+		inventorypage.DamageRecSupplier_Deleteclick_option();
+		inventorypage.DamageRecSupplier_Confirmed_Deleteclick_option();
+	}
+	@Then("^DamageRecSupplier deleted popup will be displayed successfully as \"([^\"]*)\"$")
+	public void DamageRecSupplier_deleted_popup_will_be_displayed_successfully_as(String expectedMessage) throws Exception {
+		  String actualMessage = inventorypage.inventory_create_Success_display();
+	      String normalizedExpectedMessage = normalizeWhitespace(expectedMessage);
+	      String normalizedActualMessage = normalizeWhitespace(actualMessage);
+	      System.out.println(">> User or Admin Deleted DamageRecSupplier successfully"+actualMessage);
+	      assertEquals(normalizedExpectedMessage, normalizedActualMessage);
+	}
+	@And("User click on second page button of DamageRecSupplier page")
+	public void User_click_on_second_page_button_of_DamageRecSupplier_page() throws Exception {
+		inventorypage.DamageRecSupplier_Second_page();
+}
+	@Then("Second page DamageRecSupplier get displayed successfully")
+	public void Second_page_DamageRecSupplier_get_displayed_successfully() throws Exception {
+		inventorypage.Second_page_DamageRecSupplier_Display();
+}
+	@And("Go to Next page of DamageRecSupplier page")
+	public void Go_to_Next_page_of_DamageRecSupplier_page() throws Exception {
+		inventorypage.DamageRecSupplier_next_page();
+}
+	@Then("Next page DamageRecSupplier get displayed successfully")
+	public void Next_page_DamageRecSupplier_get_displayed_successfully() throws Exception {
+}
+	@And("Go to Previous page of DamageRecSupplier")
+	public void Go_to_Previous_page_of_DamageRecSupplier_page() throws Exception {
+		inventorypage.DamageRecSupplier_Previous_page();
+}
+	@Then("Previous page DamageRecSupplier get displayed successfully")
+	public void Previous_page_DamageRecSupplier_get_displayed_successfully() throws Exception {
+}
+	@And("Go to Last page of DamageRecSupplier page")
+	public void Go_to_Last_page_of_DamageRecSupplier_page() throws Exception {
+		inventorypage.DamageRecSupplier_last_page();
+}
+	@Then("Last page DamageRecSupplier get displayed successfully")
+	public void Last_page_DamageRecSupplier_get_displayed_successfully() throws Exception {
+}
+	@And("User click on first page button of DamageRecSupplier")
+	public void User_click_on_first_page_button_of_DamageRecSupplier() throws Exception {
+		inventorypage.First_page_DamageRecSupplier();
+}
+	@Then("First page DamageRecSupplier get displayed successfully")
+	public void First_page_DamageRecSupplier_get_displayed_successfully() throws Exception {
+}
+
 }

@@ -905,5 +905,197 @@ And Admin or user clicks the Inventory module
 And Admin or user clicks the DamageRetSupplier Tab   
 And Go to Last page of DamageRetSupplier page
 And User click on first page button of DamageRetSupplier
-Then First page DamageRetSupplier get displayed successfully  
+Then First page DamageRetSupplier get displayed successfully 
+
+@Inventory @DamageRec.Supplier01 @smoke @regression @all
+Scenario Outline: T_DamageRec.supplier01_Verify the Inventory01 feature DamageRecSupplier page 
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Inventory module
+And Admin or user clicks the DamageRecSupplier Tab
+Then DamageRecSupplier page should display successfully
+
+@Inventory @DamageRec.Supplier02 @regression @sanity @all
+Scenario Outline: T_DamageRec.supplier02_Create the New Return with valid inputs
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Inventory module
+And Admin or user clicks the DamageRecSupplier Tab
+And Admin or user clicks the New Return button in DamageRecSupplier
+And Admin or user enters the all mandatory fields of DamageRecSupplier
+And Admin or user clicks the Add Return button 
+Then Particular Return received from Technician gets created successfully with either "<successMessage1>" or "<successMessage2>"
+  Examples:
+      | successMessage1       | successMessage2                 |
+      | LOADING...            | Success DamageRecSupplier added  |
+
+@Inventory @DamageRec.Supplier03 @smoke @regression @all
+Scenario Outline: T_DamageRec.supplier03_The Inventory feature search a DamageRecSupplier by Billboard Id	
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Inventory module
+And Admin or user clicks the DamageRecSupplier Tab
+And Admin or user search a DamageRecSupplier
+Then Searched DamageRecSupplier details get displayed successfully
+
+@Inventory @DamageRec.Supplier04 @smoke @regression @all
+Scenario Outline: T_DamageRec.supplier04_To verify the DamageRecSupplier feature sort recently updated
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display 
+And Admin or user clicks the Inventory module
+And Admin or user clicks the DamageRecSupplier Tab
+And Admin or user sort the DamageRecSupplier list recently updated
+Then Recently updated DamageRecSupplier list get displayed successfully
+
+@Inventory @DamageRec.Supplier05 @smoke @regression @all
+Scenario Outline: T_DamageRec.supplier05_To verify the DamageRecSupplier feature sort Name - A to Z
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Inventory module
+And Admin or user clicks the DamageRecSupplier Tab
+And User sort the DamageRecSupplier list Name A to Z
+Then DamageRecSupplier list get displayed successfully
+
+@Inventory @DamageRec.Supplier06 @smoke @regression @all
+Scenario Outline: T_DamageRec.supplier06_To verify the DamageRecSupplier feature sort Name - Z to A
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Inventory module
+And Admin or user clicks the DamageRecSupplier Tab
+And User sort the DamageRecSupplier list Name Z to A 
+Then DamageRecSupplier list Z to A get displayed successfully
+
+@Inventory @DamageRec.Supplier07 @smoke @regression @all
+Scenario Outline: T_DamageRec.supplier07_To verify the DamageRecSupplier feature sort Recently Added
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Inventory module
+And Admin or user clicks the DamageRecSupplier Tab
+And User sort the DamageRecSupplier list Recently Added
+Then Recent DamageRecSupplier list get displayed successfully
+
+@Inventory @DamageRec.Supplier08 @smoke @regression @all
+Scenario Outline: T_DamageRec.supplier08_To verify the DamageRecSupplier feature sort decending
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Inventory module
+And Admin or user clicks the DamageRecSupplier Tab
+And User sort the DamageRecSupplier list decending 
+Then Decending DamageRecSupplier list get displayed successfully  
+
+@Inventory @DamageRec.Supplier09 @smoke @regression @all
+Scenario Outline: T_DamageRec.supplier09_To verify the DamageRecSupplier feature Download button
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Inventory module
+And Admin or user clicks the DamageRecSupplier Tab
+And User clicks the Download button in DamageRecSupplier page 
+Then Download pop up of DamageRecSupplier will be displayed successfully
+
+@Inventory @DamageRec.Supplier10 @smoke @regression @all
+Scenario Outline: T_DamageRec.supplier10_To verify the DamageRecSupplier feature Download as Excel 
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Inventory module
+And Admin or user clicks the DamageRecSupplier Tab
+And User clicks the Download button with Download As Excel of DamageRecSupplier list
+      
+@Inventory @DamageRec.Supplier11 @smoke @regression @all
+Scenario Outline: T_DamageRec.supplier11_To verify the DamageRecSupplier feature Download as PDF
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Inventory module
+And Admin or user clicks the DamageRecSupplier Tab
+And User clicks the Download button with Download As PDF for DamageRecSupplier
+      
+@Inventory @DamageRec.Supplier12 @smoke @regression @all
+Scenario Outline: T_DamageRec.supplier12_To verify the DamageRecSupplier feature Download popup close
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Inventory module
+And Admin or user clicks the DamageRecSupplier Tab
+And User clicks the Download button in DamageRecSupplier page after that click on close button 
+Then The Download pop up get closed successfully and display the DamageRecSupplier list
+
+#@Inventory @DamageRec.Supplier13 @regression @sanity @all
+#Scenario Outline: T_DamageRec.supplier13_To verify edit of any Return
+#Given Admin logged in with valid credentials
+#When Al-Arabia overall dashboard should display
+#And Admin or user clicks the Inventory module  
+#And User click on edit icon in all Material page
+#And User edit the City name
+#And User Click on Update Material button
+#Then Particular Material gets updated successfully with either "<successMessage1>" or "<successMessage2>"
+  #Examples:
+      #| successMessage1       | successMessage2                |
+      #| LOADING...            | Success Material info updated  |
+      #
+@Inventory @DamageRec.Supplier14 @regression @sanity @all
+Scenario Outline: T_DamageRec.supplier14_To verify DamageRecSupplier edit of any field
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Inventory module 
+And Admin or user clicks the DamageRecSupplier Tab   
+And User click on DamageRecSupplier view option of kebab menu 
+Then Particular DamageRecSupplier viewed with details successfully
+
+#@Inventory @DamageRec.Supplier15 @regression @sanity @all
+#Scenario Outline: T_DamageRec.supplier15_To verify DamageRecSupplier edit of any field
+#Given Admin logged in with valid credentials
+#When Al-Arabia overall dashboard should display
+#And Admin or user clicks the Inventory module 
+#And Admin or user clicks the DamageRecSupplier Tab      
+#And User click on DamageRecSupplier Delete option in kebab menu and confirm Yes
+#Then DamageRecSupplier deleted popup will be displayed successfully as "<successMessage>"
+ #Examples:
+      #| successMessage 			         	 |
+      #| Success Damage info deleted  |   
+      #
+@Inventory @DamageRec.Supplier16 @smoke @regression @all
+Scenario Outline: T_DamageRec.supplier16_To verify the DamageRecSupplier feature pagination 1st to 2nd page 
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Inventory module
+And Admin or user clicks the DamageRecSupplier Tab    
+And User click on second page button of DamageRecSupplier page
+Then Second page DamageRecSupplier get displayed successfully    
+
+@Inventory @DamageRec.Supplier17 @smoke @regression @all
+Scenario Outline: T_DamageRec.supplier17_To verify the Material request feature pagination next page 
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Inventory module 
+And Admin or user clicks the DamageRecSupplier Tab   
+And Go to Next page of DamageRecSupplier page
+Then Next page DamageRecSupplier get displayed successfully  
+
+@Inventory @DamageRec.Supplier18 @smoke @regression @all
+Scenario Outline: T_DamageRec.supplier18_To verify the DamageRecSupplier feature pagination previous page 
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Inventory module 
+And Admin or user clicks the DamageRecSupplier Tab   
+And Go to Next page of DamageRecSupplier page 
+And Go to Previous page of DamageRecSupplier
+Then Previous page DamageRecSupplier get displayed successfully 
+
+@Inventory @DamageRec.Supplier19 @smoke @regression @all
+Scenario Outline: T_DamageRec.supplier19_To verify the DamageRecSupplier feature pagination last page 
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Inventory module
+And Admin or user clicks the DamageRecSupplier Tab   
+And Go to Last page of DamageRecSupplier page
+Then Last page DamageRecSupplier get displayed successfully   
+
+@Inventory @DamageRec.Supplier20 @smoke @regression @all
+Scenario Outline: T_DamageRec.supplier20_To verify the DamageRecSupplier feature pagination last page to first page
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Inventory module 
+And Admin or user clicks the DamageRecSupplier Tab   
+And Go to Last page of DamageRecSupplier page
+And User click on first page button of DamageRecSupplier
+Then First page DamageRecSupplier get displayed successfully  
+ 
     

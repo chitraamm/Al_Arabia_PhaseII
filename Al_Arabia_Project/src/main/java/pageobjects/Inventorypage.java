@@ -1054,7 +1054,7 @@ public class Inventorypage extends Base {
 	@FindBy(id = "New Return")
 	private WebElement new_return_button;
 	public void New_Return_Button()throws Exception{
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		wait.until(ExpectedConditions.visibilityOf(damage_rec_Technician_Return)).isDisplayed();
 		wait.until(ExpectedConditions.visibilityOf(new_return_button)).click();
 	}
@@ -1116,7 +1116,7 @@ public class Inventorypage extends Base {
 	    Thread.sleep(2000);
 	    act.moveToElement(reasonsfor_return).click().sendKeys(""+Keys.ENTER).perform();
 			
-		
+			
 //		
 //        act.moveToElement(save_stock).click().perform();
 //		
@@ -1222,7 +1222,7 @@ public class Inventorypage extends Base {
 	private WebElement damage_ret_supplier_Return;
 	
 	public void DamageRetSupplier_page() throws Exception{
-		Thread.sleep(2000);
+		Thread.sleep(5000);
 		wait.until(ExpectedConditions.visibilityOf(inventory_menu)).isDisplayed();
 		act.moveToElement(damage_ret_supplier_Return).click().perform();
 	}
@@ -1373,79 +1373,73 @@ public class Inventorypage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(damage_ret_supplier_Return)).isDisplayed();
 		wait.until(ExpectedConditions.visibilityOf(new_return_button)).click();
 	}
-//	@FindBy(id = "react-select-3-input")
-//	private WebElement Used_in_board;
-//	@FindBy(xpath = "//h5[normalize-space()='New Return']")
-//	private WebElement newreturn_page_display;
-//	
-//	@FindBy(id = "react-select-4-input")
-//	private WebElement Requested_By;
-//	
-//	@FindBy(xpath = "(//input[@value='0'])[1]")
-//	private WebElement quantitycount;
-//	
-//	@FindBy(xpath = "(//div[@class='select__value-container select__value-container--has-value css-hlgwow'])[4]")
-//	private WebElement defecttype;
-//	
-//	@FindBy(id = "react-select-6-input")
-//	private WebElement reasonsfor_return;
-//	
-//	@FindBy(id = "react-select-5-input")
-//	private WebElement Return_stock_code;
+	@FindBy(id = "react-select-3-input")
+	private WebElement supplier_name_select;
+	@FindBy(xpath = "//input[@name='delivery_no']")
+	private WebElement delivery_date;
+	
+	@FindBy(xpath = "//h5[normalize-space()='New Return']")
+	private WebElement newreturn_pagesupplr;
+	
+	@FindBy(xpath = "//span[normalize-space()='3']")
+	private WebElement date_selctd;
+	
+	@FindBy(id = "react-select-4-input")
+	private WebElement id_billboard;
+	
+	@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[2]/div[2]/form/div/div[3]/div[2]/div/table/tbody/tr/td[4]/form/div/div/input")
+	private WebElement qty;
+
+	@FindBy(xpath = "(//div[@class='select__value-container select__value-container--has-value css-hlgwow'])[4]")
+	private WebElement Defecttype;
 //	
 //	@FindBy(id = "Save")
-//	private WebElement Return_save;
+//	private WebElement supplierReturn_save;
 //	
 	public void Enter_Mandatory_fieldsof_New_Return_DamageRetSupplier()throws Exception{
-        Thread.sleep(3000);
-		wait.until(ExpectedConditions.visibilityOf(newreturn_page_display)).isDisplayed();
-		String Usedinboard = prop.getProperty("Usedinboard");
-		wait.until(ExpectedConditions.visibilityOf(Used_in_board)).sendKeys(Usedinboard);
-        Thread.sleep(7000);
-        act.moveToElement(Used_in_board).click().sendKeys(""+Keys.ENTER).perform(); 
+		
+		wait.until(ExpectedConditions.visibilityOf(newreturn_pagesupplr)).isDisplayed();
+		String suppliername = prop.getProperty("suppliername");
+		wait.until(ExpectedConditions.visibilityOf(supplier_name_select)).sendKeys(suppliername);
+	 	Thread.sleep(1000);
+		act.moveToElement(supplier_name_select).click().sendKeys(""+Keys.ENTER+Keys.ARROW_RIGHT).perform();
+		
+		wait.until(ExpectedConditions.visibilityOf(supplier_name)).isDisplayed();
+		wait.until(ExpectedConditions.visibilityOf(delivery_date)).click();
+		wait.until(ExpectedConditions.visibilityOf(date_selctd)).click();
 
-        Thread.sleep(2000);
-        wait.until(ExpectedConditions.visibilityOf(Used_in_board)).isDisplayed();
-		String RequestedBy = prop.getProperty("RequestedBy");
-		wait.until(ExpectedConditions.visibilityOf(Requested_By)).sendKeys(RequestedBy);
-        Thread.sleep(7000);
-        act.moveToElement(Requested_By).click().sendKeys(""+Keys.ENTER).perform(); 
-        
-        
-        wait.until(ExpectedConditions.visibilityOf(Return_stock_code)).isDisplayed();
-		Thread.sleep(2000);
-		act.moveToElement(Return_stock_code).click().sendKeys(""+Keys.ENTER).perform();
-		
-		wait.until(ExpectedConditions.visibilityOf(Return_stock_code));
-		String QTY =prop.getProperty("QTY");
-		Thread.sleep(2000);
-        act.moveToElement(quantity).click().sendKeys(""+(QTY)).perform();
-		
-        Thread.sleep(1000);
-        wait.until(ExpectedConditions.visibilityOf(quantitycount)).isDisplayed();
-        String defect_type = prop.getProperty("Defecttype");
-		Thread.sleep(2000);
-		wait.until(ExpectedConditions.visibilityOf(defecttype)).sendKeys(defect_type);
-		
-	    wait.until(ExpectedConditions.visibilityOf(defecttype)).isDisplayed();
-	    Thread.sleep(2000);
-	    act.moveToElement(reasonsfor_return).click().sendKeys(""+Keys.ENTER).perform();
-			
-		
-//		
-//        act.moveToElement(save_stock).click().perform();
-//		
-//		wait.until(ExpectedConditions.visibilityOf(stock_code)).isDisplayed();
-//		wait.until(ExpectedConditions.visibilityOf(Return_save)).click();
-//        
-//        Thread.sleep(2000);
-//		wait.until(ExpectedConditions.visibilityOf(Returnby)).isDisplayed();
-//        String Cityname = prop.getProperty("cityname");
-//        Thread.sleep(3000);
-//
-//        wait.until(ExpectedConditions.visibilityOf(city)).sendKeys(Cityname+Keys.DOWN);
-//        
+
+//		wait.until(ExpectedConditions.visibilityOf(delivery_date)).isDisplayed();
+//	 	Thread.sleep(4000);
+//		act.moveToElement(id_billboard).click().sendKeys(""+Keys.ENTER).perform();
+	 	Thread.sleep(4000);
+		wait.until(ExpectedConditions.visibilityOf(delivery_date)).isDisplayed();
+		String billboardid = prop.getProperty("billboardid");
+		wait.until(ExpectedConditions.visibilityOf(id_billboard)).sendKeys(billboardid);
+	 	Thread.sleep(5000);
+		act.moveToElement(id_billboard).click().sendKeys(""+Keys.ENTER+Keys.ARROW_RIGHT).perform();
 	
+		 wait.until(ExpectedConditions.visibilityOf(Return_stock_code)).isDisplayed();
+			Thread.sleep(2000);
+			act.moveToElement(Return_stock_code).click().sendKeys(""+Keys.ENTER).perform();
+			
+			Thread.sleep(3000);
+			wait.until(ExpectedConditions.visibilityOf(Return_stock_code)).isDisplayed();
+			String QTY =prop.getProperty("QTY");
+			Thread.sleep(7000);
+	        act.moveToElement(qty).click().sendKeys(""+(QTY)).perform();
+			
+	        Thread.sleep(4000);
+	        wait.until(ExpectedConditions.visibilityOf(qty)).isDisplayed();
+//	        String defect_type = prop.getProperty("Defecttype");
+//			Thread.sleep(5000);
+//			wait.until(ExpectedConditions.visibilityOf(Defecttype)).sendKeys(defect_type);
+			act.moveToElement(Defecttype).click().sendKeys(""+Keys.ENTER).perform();
+	        
+	        Thread.sleep(2000);
+//		act.moveToElement(Return_save).click().perform();
+//		
+//		act.moveToElement(add_Return).click().perform();
 	}
 	@FindBy(id = "Add Request")
 	private WebElement add_Return_DamageRetSupplier;
@@ -1530,6 +1524,313 @@ public class Inventorypage extends Base {
 		act.scrollToElement(click_damage_ret_supplier_first_page).build().perform();
 		wait.until(ExpectedConditions.visibilityOf(click_damage_ret_supplier_first_page)).click();
 	}
-
+//<--------------------------------------------Damage Received From Supplier---------------------------------------------------------->
 	
+	@FindBy(xpath = "//span[normalize-space()='Damage Ret. (To Supplier)']")
+	private WebElement damage_rec_supplier_Return;
+	
+	public void DamageRecSupplier_page() throws Exception{
+		Thread.sleep(5000);
+		wait.until(ExpectedConditions.visibilityOf(inventory_menu)).isDisplayed();
+		act.moveToElement(damage_rec_supplier_Return).click().perform();
+	}
+	@FindBy(xpath = "//span[normalize-space()='Damage Rec. (From Technician)']")
+	private WebElement damage_rec_supplier_display;
+	public void DamageRecSupplier_page_Displayed() throws Exception{
+		wait.until(ExpectedConditions.visibilityOf(damage_rec_supplier_display)).isDisplayed();
+		AssertJUnit.assertTrue(damage_rec_supplier_display.isDisplayed());
+	}
+
+	@FindBy(id = "doc_searchQueryInput")
+	private WebElement damage_rec_suppliersearch;
+	
+	public void DamageRecSupplier_search_enter_text() {
+		wait.until(ExpectedConditions.visibilityOf(damage_rec_suppliersearch)).click();
+		String DamageRecSupplier_Search = prop.getProperty("Billboardid");
+		wait.until(ExpectedConditions.visibilityOf(damage_rec_suppliersearch)).sendKeys(DamageRecSupplier_Search + Keys.ENTER);
+		System.out.println(">> User enter the supplier id in search field: " + DamageRecSupplier_Search);
+	}
+	@FindBy(xpath = "(//input[@id='doc_searchQueryInput'])[1]")
+	private WebElement DamageRecSupplierSearched, damage_rec_supplierSearchlist;
+
+	public void DamageRecSupplierSearchedList() {
+		wait.until(ExpectedConditions.visibilityOf(damage_rec_suppliersearch));
+
+		if (DamageRecSupplierSearched.isDisplayed()) {
+			System.out.println("Element is displayed");
+		} else {
+			System.out.println("Element is not displayed");
+		}
+		LOGGER.info(">> Admin/User searched Suppliers");
+		System.out.println(">> User got searched DamageRecSupplier list: " + DamageRecSupplierSearched.getText());
+	}
+
+	public void DamageRecSupplier_list() {
+		wait.until(ExpectedConditions.visibilityOf(purchasesSearch));
+
+		if (damage_rec_supplierSearchlist.isDisplayed()) {
+			System.out.println("Element is displayed");
+		} else {
+			System.out.println("Element is not displayed");
+		}
+		LOGGER.info(">> Admin/User clicked new Replace btn");
+		System.out.println(">> User got sorted DamageRecSupplier list: " + damage_rec_supplierSearchlist.getText());
+	}
+
+	@FindBy(xpath = "(//h6[contains(@class,'m-0 by fw-normal')][normalize-space()='Recently Added'])[1]")
+	private WebElement damage_rec_supplier_sort;
+
+	@FindBy(xpath = "(//h6[contains(text(),'Recently Updated')])[1]")
+	private WebElement damage_rec_supplier_sort_recentlyupdated;
+
+	@FindBy(xpath = "(//h6[contains(text(),'Recently Added')])[2]")
+	private WebElement damage_rec_supplier_sort_recentlyadded;
+
+	public void DamageRecSupplier_sort_recentlyupdated() {
+		wait.until(ExpectedConditions.visibilityOf(damage_rec_supplier_sort)).click();
+		wait.until(ExpectedConditions.visibilityOf(damage_rec_supplier_sort_recentlyupdated)).click();
+		System.out.println(">> User clicked recently updated in sort");
+	}
+
+	public void DamageRecSupplier_sort_recentlyadded() {
+		wait.until(ExpectedConditions.visibilityOf(damage_rec_supplier_sort)).click();
+		wait.until(ExpectedConditions.visibilityOf(damage_rec_supplier_sort_recentlyadded)).click();
+		System.out.println(">> User clicked recently added in sort");
+	}
+
+	@FindBy(xpath = "(//h6[contains(text(),'Name - A to Z')])[1]")
+	private WebElement damage_rec_supplier_Name_A_to_Z;
+
+	public void DamageRecSupplier_sortA_Z() {
+		wait.until(ExpectedConditions.visibilityOf(damage_rec_supplier_sort)).click();
+		wait.until(ExpectedConditions.visibilityOf(damage_rec_supplier_Name_A_to_Z)).click();
+		System.out.println(">> User clicked recently updated in sort");
+	}
+
+	@FindBy(xpath = "(//h6[contains(text(),'Name - Z to A')])[1]")
+	private WebElement damage_rec_supplier_Name_Z_to_A;
+
+	public void DamageRecSupplier_sortZ_A() {
+		wait.until(ExpectedConditions.visibilityOf(damage_rec_supplier_sort)).click();
+		wait.until(ExpectedConditions.visibilityOf(purchase_Name_Z_to_A)).click();
+		System.out.println(">> User clicked Z-A updated in sort");
+	}
+
+	@FindBy(xpath = "(//h6[contains(text(),'Decending - Date')])[1]")
+	private WebElement damage_rec_supplier_Name_decending;
+
+	public void DamageRecSupplier_DecendingDate() {
+		wait.until(ExpectedConditions.visibilityOf(damage_rec_supplier_sort)).click();
+		wait.until(ExpectedConditions.visibilityOf(damage_rec_supplier_Name_decending)).click();
+		System.out.println(">> User clicked decending updated in sort");
+	}
+	@FindBy(xpath = "(//h6[contains(@class,'m-0 fw-normal')][normalize-space()='Download'])[1]")
+	private WebElement download_buttn_damage_rec_supplierpage;
+
+	public void Download_button_DamageRecSupplierpage() {
+		act.moveToElement(download_buttn_damage_rec_supplierpage).click().perform();
+		System.out.println(">> User clicked Download button");
+	}
+
+	@FindBy(xpath = "(//div[contains(text(),'Download')])[1]")
+	private WebElement all_damage_rec_Download_popup_display;
+
+	public void DamageRecSupplier_Download_popup_display() {
+		wait.until(ExpectedConditions.visibilityOf(all_damage_returns_Download_popup_display)).isDisplayed();
+		AssertJUnit.assertTrue(all_damage_returns_Download_popup_display.isDisplayed());
+		LOGGER.info(">> The Download Popup got displayed");
+	}
+
+	@FindBy(xpath = "//div[normalize-space()='As Excel']")
+	private WebElement damage_rec_supplier_Download_excel;
+
+	public void DamageRecSupplier_Download_Excel() {
+		wait.until(ExpectedConditions.visibilityOf(damage_rec_supplier_Download_excel)).click();
+	}
+
+	@FindBy(xpath = "(//div[normalize-space()='As PDF'])[1]")
+	private WebElement damage_rec_supplier_Download_pdf;
+
+	public void DamageRecSupplier_Download_PDF() {
+		wait.until(ExpectedConditions.visibilityOf(damage_rec_supplier_Download_pdf)).click();
+	}
+
+	@FindBy(xpath = "//span[@class='cursor-pointer']//*[name()='svg']")
+	private WebElement damage_rec_supplier_Download_popupclose;
+
+	public void DamageRecSupplier_Download_popup_close() throws Exception {
+
+		wait.until(ExpectedConditions.visibilityOf(damage_rec_supplier_Download_popupclose)).click();
+	}
+
+	public void Download_popupclosd_displayed_DamageRecSupplier() {
+		wait.until(ExpectedConditions.visibilityOf(damage_rec_supplier_Return)).isDisplayed();
+		AssertJUnit.assertTrue(damage_rec_supplier_Return.isDisplayed());
+		LOGGER.info(">> The Download Popup get closed and listed DamageRecSupplier page");
+	}
+	@FindBy(xpath = "//h5[normalize-space()='All Request(44)']")
+	private WebElement all_damageReplacescount_supplier;
+	public void all_damageReplacescount_supplier()throws Exception{
+		wait.until(ExpectedConditions.visibilityOf(all_damageReplacescount_supplier)).isDisplayed();
+		AssertJUnit.assertTrue(all_damageReplacescount_supplier.isDisplayed());
+	}
+	@FindBy(id = "New Return")
+	private WebElement new_Replace_supplier;
+	public void New_Replace_Button_damageRec_supplier()throws Exception{
+		Thread.sleep(1000);
+		wait.until(ExpectedConditions.visibilityOf(damage_rec_supplier_Return)).isDisplayed();
+		wait.until(ExpectedConditions.visibilityOf(new_return_button)).click();
+	}
+//	@FindBy(id = "react-select-3-input")
+//	private WebElement supplier_name_select;
+//	@FindBy(xpath = "//input[@name='delivery_no']")
+//	private WebElement delivery_date;
+//	
+//	@FindBy(xpath = "//h5[normalize-space()='New Return']")
+//	private WebElement newreturn_pagesupplr;
+//	
+//	@FindBy(xpath = "//span[normalize-space()='3']")
+//	private WebElement date_selctd;
+//	
+//	@FindBy(id = "react-select-4-input")
+//	private WebElement id_billboard;
+//	
+//	@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[2]/div[2]/form/div/div[3]/div[2]/div/table/tbody/tr/td[4]/form/div/div/input")
+//	private WebElement qty;
+//
+//	@FindBy(xpath = "(//div[@class='select__value-container select__value-container--has-value css-hlgwow'])[4]")
+//	private WebElement Defecttype;
+//	
+//	@FindBy(id = "Save")
+//	private WebElement supplierReturn_save;
+//	
+	public void Enter_Mandatory_fieldsof_New_Replace_DamageRecSupplier()throws Exception{
+		
+		wait.until(ExpectedConditions.visibilityOf(newreturn_pagesupplr)).isDisplayed();
+		String suppliername = prop.getProperty("suppliername");
+		wait.until(ExpectedConditions.visibilityOf(supplier_name_select)).sendKeys(suppliername);
+	 	Thread.sleep(1000);
+		act.moveToElement(supplier_name_select).click().sendKeys(""+Keys.ENTER+Keys.ARROW_RIGHT).perform();
+		
+		wait.until(ExpectedConditions.visibilityOf(supplier_name)).isDisplayed();
+		wait.until(ExpectedConditions.visibilityOf(delivery_date)).click();
+		wait.until(ExpectedConditions.visibilityOf(date_selctd)).click();
+
+
+//		wait.until(ExpectedConditions.visibilityOf(delivery_date)).isDisplayed();
+//	 	Thread.sleep(4000);
+//		act.moveToElement(id_billboard).click().sendKeys(""+Keys.ENTER).perform();
+	 	Thread.sleep(4000);
+		wait.until(ExpectedConditions.visibilityOf(delivery_date)).isDisplayed();
+		String billboardid = prop.getProperty("billboardid");
+		wait.until(ExpectedConditions.visibilityOf(id_billboard)).sendKeys(billboardid);
+	 	Thread.sleep(5000);
+		act.moveToElement(id_billboard).click().sendKeys(""+Keys.ENTER+Keys.ARROW_RIGHT).perform();
+	
+		 wait.until(ExpectedConditions.visibilityOf(Return_stock_code)).isDisplayed();
+			Thread.sleep(2000);
+			act.moveToElement(Return_stock_code).click().sendKeys(""+Keys.ENTER).perform();
+			
+			Thread.sleep(3000);
+			wait.until(ExpectedConditions.visibilityOf(Return_stock_code)).isDisplayed();
+			String QTY =prop.getProperty("QTY");
+			Thread.sleep(7000);
+	        act.moveToElement(qty).click().sendKeys(""+(QTY)).perform();
+			
+	        Thread.sleep(4000);
+	        wait.until(ExpectedConditions.visibilityOf(qty)).isDisplayed();
+//	        String defect_type = prop.getProperty("Defecttype");
+//			Thread.sleep(5000);
+//			wait.until(ExpectedConditions.visibilityOf(Defecttype)).sendKeys(defect_type);
+			act.moveToElement(Defecttype).click().sendKeys(""+Keys.ENTER).perform();
+	        
+	        Thread.sleep(2000);
+//		act.moveToElement(Return_save).click().perform();
+//		
+//		act.moveToElement(add_Return).click().perform();
+	}
+	@FindBy(id = "Add Request")
+	private WebElement add_Return_DamageRecSupplier;
+	public void Add_Return_button_DamageRecSupplier()throws Exception{
+
+		wait.until(ExpectedConditions.visibilityOf(add_Return)).isDisplayed();
+		wait.until(ExpectedConditions.visibilityOf(add_Return)).click();
+	}
+	
+	//updatepenng
+	
+	
+
+	@FindBy(xpath = "(//*[name()='svg'][@stroke='currentColor'])[7]")
+	private WebElement click_damage_rec_supplier_Edit;
+	@FindBy(xpath = "//a[normalize-space()='View']")
+	private WebElement damage_rec_supplier_click_view;
+	public void DamageRecSupplier_Viewclick_option()throws Exception{
+		wait.until(ExpectedConditions.visibilityOf(damage_rec_supplier_Return)).isDisplayed();
+		wait.until(ExpectedConditions.visibilityOf(click_damage_rec_supplier_Edit)).click();
+		wait.until(ExpectedConditions.visibilityOf(click_view)).click();
+	}
+	@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[2]/div[1]/h5[2]")
+	private WebElement damage_rec_supplierView_display;
+	public void DamageRecSupplierView_display()throws Exception{
+		wait.until(ExpectedConditions.visibilityOf(damage_rec_supplierView_display)).isDisplayed();
+		AssertJUnit.assertTrue(damage_rec_supplierView_display.isDisplayed());
+		//wait.until(ExpectedConditions.visibilityOf(click_view)).click();
+	}
+	@FindBy(xpath = "//a[normalize-space()='Delete']")
+	private WebElement damage_rec_supplierclick_delete;
+	public void DamageRecSupplier_Deleteclick_option()throws Exception{
+		Thread.sleep(1000);
+		wait.until(ExpectedConditions.visibilityOf(damage_rec_supplier_display)).isDisplayed();
+		Thread.sleep(1000);
+
+		wait.until(ExpectedConditions.visibilityOf(click_damage_rec_supplier_Edit)).click();
+		wait.until(ExpectedConditions.visibilityOf(damage_rec_supplierclick_delete)).click();
+	}
+	@FindBy(xpath = "//h4[@class=' fw-semibold text-center text-black']")
+	private WebElement damage_rec_supplierpopup_delete;
+	@FindBy(xpath = "//h6[normalize-space()='Yes, delete damage received From technician.']")
+	private WebElement damage_rec_supplier_confirm_delete;
+	public void DamageRecSupplier_Confirmed_Deleteclick_option()throws Exception{
+		wait.until(ExpectedConditions.visibilityOf(damage_rec_supplierpopup_delete)).isDisplayed();
+		act.moveToElement(damage_rec_supplier_confirm_delete).click().perform();
+		//wait.until(ExpectedConditions.visibilityOf(click_delete)).click();
+	}
+	@FindBy(xpath = "//div[normalize-space()='2']")
+	private WebElement damage_rec_supplier_second_page;
+	public void DamageRecSupplier_Second_page() throws Exception {
+		act.scrollToElement(damage_rec_supplier_second_page).build().perform();
+		wait.until(ExpectedConditions.visibilityOf(click_second_page)).click();
+	}
+	@FindBy(xpath = "//div[contains(text(),'Showing')]")
+	private WebElement damage_rec_supplier_second_page_display;
+	public void Second_page_DamageRecSupplier_Display() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(damage_rec_supplier_second_page_display));
+		AssertJUnit.assertTrue(damage_rec_supplier_second_page_display.isDisplayed());
+	}
+	@FindBy(xpath = "(//div[contains(@class,'round-effect')][contains(text(),'›')])[1]")
+	private WebElement clickdamage_rec_supplier_next_page;
+	public void DamageRecSupplier_next_page() throws Exception {
+		act.scrollToElement(clickdamage_rec_supplier_next_page).build().perform();
+		wait.until(ExpectedConditions.visibilityOf(clickdamage_rec_supplier_next_page)).click();
+	}
+	@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[2]/div/div[2]/div[1]/div[4]/div[2]/div[1]")
+	private WebElement clickdamage_rec_supplier_previous_page;
+	public void DamageRecSupplier_Previous_page() throws Exception {
+		act.scrollToElement(clickdamage_rec_supplier_previous_page).build().perform();
+		wait.until(ExpectedConditions.visibilityOf(clickdamage_rec_supplier_previous_page)).click();
+	}
+	@FindBy(xpath = "/html/body/div/div/div[2]/div/div[2]/div/div[2]/div[1]/div[4]/div[2]/div[5]")
+	private WebElement click_damage_rec_supplier_last_page;
+	public void DamageRecSupplier_last_page() throws Exception {
+		act.scrollToElement(click_damage_rec_supplier_last_page).build().perform();
+		wait.until(ExpectedConditions.visibilityOf(click_damage_rec_supplier_last_page)).click();
+	}
+	@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[2]/div/div[2]/div[1]/div[4]/div[2]/div[1]")
+	private WebElement click_damage_rec_supplier_first_page;
+	public void First_page_DamageRecSupplier() throws Exception {
+		act.scrollToElement(click_damage_rec_supplier_first_page).build().perform();
+		wait.until(ExpectedConditions.visibilityOf(click_damage_rec_supplier_first_page)).click();
+	}
+
 }

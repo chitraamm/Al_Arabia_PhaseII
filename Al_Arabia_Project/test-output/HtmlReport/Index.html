@@ -50,7 +50,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Sep 3, 2024 12:23:54 am</span>
+			<span class='label blue darken-3 suite-start-time'>Sep 3, 2024 06:14:42 pm</span>
 			</a>
 		</ul>
 	</div>
@@ -77,11 +77,11 @@
 				<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@DamageRet.supplier16</a></li>
 					<li><a href='#'>@Inventory</a></li>
-					<li><a href='#'>@regression</a></li>
 					<li><a href='#'>@all</a></li>
-					<li><a href='#'>@smoke</a></li>
+					<li><a href='#'>@sanity</a></li>
+					<li><a href='#'>@DamageRet.supplier02</a></li>
+					<li><a href='#'>@regression</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -121,7 +121,7 @@
 				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Inventory</span>
-						<span class='test-time'>Sep 3, 2024 12:23:54 am</span>
+						<span class='test-time'>Sep 3, 2024 06:14:43 pm</span>
 						<span class='test-status right fail'>Fail</span>
 					</div>
 					<div class='test-content hide'>
@@ -133,252 +133,65 @@
 </div>
 	<div class='test-desc'>Admin, Manager and Supervisor can able to access the Inventory feature,only if they have roles access</div>
 
-<div class='scenario node' test-id='2' status='fail'>
+<div class='scenario outline node' test-id='2' status='fail'>
 
-	<span class='duration right label'>00 00 20.307</span>
+	<span class='duration right label'>00 00 50.902</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario: T_DamageRet.supplier16_To verify the DamageRetSupplier feature pagination 1st to 2nd page</div>
+		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario Outline: T_DamageRet.supplier02_Create the New Return with valid inputs</div>
 	</div>
 	
+		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>successMessage1</td><td>successMessage2</td></tr><tr><td>LOADING...</td><td>Success DamageRetSupplier added</td></tr></table></div>
 	
-		<div class='category-list'>
-				<span class='category label'>@all</span>
-				<span class='category label'>@DamageRet.supplier16</span>
-				<span class='category label'>@smoke</span>
-				<span class='category label'>@regression</span>
-				<span class='category label'>@Inventory</span>
-		</div>
 	
 	<ul class='steps'>
-		<li test-id='4' class='node given Pass' status='Pass'>
-			<div class="step-name" title="(Stepdefinitions.Members.Admin_logged_in_with_valid_credentials())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Admin logged in with valid credentials</div>
+		<li test-id='3' class='node scenario Fail' status='Fail'>
+			<div class="step-name" title="()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>T_DamageRet.supplier02_Create the New Return with valid inputs</div>
 
+				<div class='category-list'>
+						<span class='category label'>@all</span>
+						<span class='category label'>@regression</span>
+						<span class='category label'>@Inventory</span>
+						<span class='category label'>@DamageRet.supplier02</span>
+						<span class='category label'>@sanity</span>
+				</div>
 
-		</li>
-		<li test-id='6' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(Stepdefinitions.Members.Al_Arabia_overall_dashboard_should_display())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Al-Arabia overall dashboard should display</div>
+			<ul class='gc steps'>
+				<li test-id='5' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="Stepdefinitions.Members.Admin_logged_in_with_valid_credentials()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Admin logged in with valid credentials</h6>
 
+				</li>
+				<li test-id='7' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="Stepdefinitions.Members.Al_Arabia_overall_dashboard_should_display()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Al-Arabia overall dashboard should display</h6>
 
-		</li>
-		<li test-id='8' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(Stepdefinitions.Inventory.Admin_or_user_clicks_the_Inventory_module())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Admin or user clicks the Inventory module</div>
+				</li>
+				<li test-id='9' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="Stepdefinitions.Inventory.Admin_or_user_clicks_the_Inventory_module()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Admin or user clicks the Inventory module</h6>
 
+				</li>
+				<li test-id='11' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="Stepdefinitions.Inventory.Admin_or_user_clicks_the_DamageRetSupplier_Tab()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Admin or user clicks the DamageRetSupplier Tab</h6>
 
-		</li>
-		<li test-id='10' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(Stepdefinitions.Inventory.Admin_or_user_clicks_the_DamageRetSupplier_Tab())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Admin or user clicks the DamageRetSupplier Tab</div>
+				</li>
+				<li test-id='13' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="Stepdefinitions.Inventory.Admin_or_user_clicks_the_New_Return_button_in_DamageRetSupplier()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Admin or user clicks the New Return button in DamageRetSupplier</h6>
 
+				</li>
+				<li test-id='15' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="Stepdefinitions.Inventory.Admin_or_user_enters_the_all_mandatory_fields_of_DamageRetSupplier()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Admin or user enters the all mandatory fields of DamageRetSupplier</h6>
 
-		</li>
-		<li test-id='12' class='node and Fail' status='Fail'>
-			<div class="step-name" title="(Stepdefinitions.Inventory.User_click_on_second_page_button_of_DamageRetSupplier_page())"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>And User click on second page button of DamageRetSupplier page</div>
+				</li>
+				<li test-id='17' class='gc and Fail' status='Fail'>
+					<h6 class="step-name" title="Stepdefinitions.Inventory.Admin_or_user_clicks_the_Add_Return_button()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>And Admin or user clicks the Add Return button</h6>
 
-
-					<textarea disabled class="code-block">org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-119-generic', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [97b82d380dd1157a944b39ecd9580447, actions {actions=[org.openqa.selenium.interactions.Sequence@19e21f89]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.114, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:43833}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:43833/devtoo..., se:cdpVersion: 126.0.6478.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 97b82d380dd1157a944b39ecd9580447
-	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:520)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:182)
-	at org.openqa.selenium.json.JsonOutput.write0(JsonOutput.java:409)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:204)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
-	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
-	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
-	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$23(JsonOutput.java:204)
-	at org.openqa.selenium.json.JsonOutput.write0(JsonOutput.java:409)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:222)
-	at java.base/java.util.Map.forEach(Map.java:713)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$25(JsonOutput.java:217)
-	at org.openqa.selenium.json.JsonOutput.write0(JsonOutput.java:409)
-	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:400)
-	at org.openqa.selenium.json.Json.toJson(Json.java:133)
-	at org.openqa.selenium.json.Json.toJson(Json.java:119)
-	at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:245)
-	at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:111)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:178)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:604)
-	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:603)
-	at pageobjects.Inventorypage.DamageRetSupplier_Second_page(Inventorypage.java:1500)
-	at Stepdefinitions.Inventory.User_click_on_second_page_button_of_DamageRetSupplier_page(Inventory.java:944)
-	at ✽.User click on second page button of DamageRetSupplier page(file:///home/coducer/Al_Arabia_PhaseII/Al_Arabia_Project/src/test/resources/Features/07_Inventory.feature:869)
-	Suppressed: org.openqa.selenium.json.JsonException: Attempting to close incomplete json stream
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-119-generic', java.version: '17.0.12'
-Driver info: driver.version: RemoteWebDriver
-		at org.openqa.selenium.json.JsonOutput.close(JsonOutput.java:431)
-		at org.openqa.selenium.json.Json.toJson(Json.java:131)
-		at org.openqa.selenium.json.Json.toJson(Json.java:119)
-		at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:245)
-		at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:111)
-		at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:178)
-		at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-		at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-		at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-		at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:604)
-		at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:603)
-		at pageobjects.Inventorypage.DamageRetSupplier_Second_page(Inventorypage.java:1500)
-		at Stepdefinitions.Inventory.User_click_on_second_page_button_of_DamageRetSupplier_page(Inventory.java:944)
-		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-		at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-		at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
-		at io.cucumber.java.Invoker.invoke(Invoker.java:24)
-		at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-		at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
-		at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
-		at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
-		at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-		at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:81)
-		at io.cucumber.core.runner.TestStep.run(TestStep.java:53)
-		at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
-		at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
-		at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
-		at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
-		at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
-		at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-		at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
-		at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
-		at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
-		at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
-		at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-		at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-		at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-		at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-		at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-		at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-		at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-		at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
-		at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
-		at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
-		at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-		at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-		at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-		at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-		at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-		at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:147)
-		at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:162)
-		at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:145)
-		at io.cucumber.junit.Cucumber$StartAndFinishTestRun.evaluate(Cucumber.java:226)
-		at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-		at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-		at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)
-		at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
-		at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)
-		at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:757)
-		at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)
-		at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
-Caused by: java.lang.reflect.InvocationTargetException
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:516)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:182)
-	at org.openqa.selenium.json.JsonOutput.write0(JsonOutput.java:409)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:204)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
-	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
-	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
-	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$23(JsonOutput.java:204)
-	at org.openqa.selenium.json.JsonOutput.write0(JsonOutput.java:409)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:222)
-	at java.base/java.util.Map.forEach(Map.java:713)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$25(JsonOutput.java:217)
-	at org.openqa.selenium.json.JsonOutput.write0(JsonOutput.java:409)
-	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:400)
-	at org.openqa.selenium.json.Json.toJson(Json.java:133)
-	at org.openqa.selenium.json.Json.toJson(Json.java:119)
-	at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:245)
-	at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:111)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:178)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:604)
-	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:603)
-	at pageobjects.Inventorypage.DamageRetSupplier_Second_page(Inventorypage.java:1500)
-	at Stepdefinitions.Inventory.User_click_on_second_page_button_of_DamageRetSupplier_page(Inventory.java:944)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
-	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
-	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
-	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
-	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
-	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:81)
-	at io.cucumber.core.runner.TestStep.run(TestStep.java:53)
-	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
-	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
-	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:147)
-	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:162)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:145)
-	at io.cucumber.junit.Cucumber$StartAndFinishTestRun.evaluate(Cucumber.java:226)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)
-	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:757)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[normalize-space()='2']"}
+							<textarea disabled class="code-block">org.openqa.selenium.WebDriverException: target frame detached
+  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
   (Session info: chrome=126.0.6478.114)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.20.0', revision: '866c76ca80'
 System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-119-generic', java.version: '17.0.12'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [97b82d380dd1157a944b39ecd9580447, findElement {using=xpath, value=//div[normalize-space()='2']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.114, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:43833}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:43833/devtoo..., se:cdpVersion: 126.0.6478.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 97b82d380dd1157a944b39ecd9580447
+Command: [b4c8f97379e13bb995170b847f04d578, findElement {value=Add Request, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.114, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:38891}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:38891/devtoo..., se:cdpVersion: 126.0.6478.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b4c8f97379e13bb995170b847f04d578
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -397,28 +210,52 @@ Session ID: 97b82d380dd1157a944b39ecd9580447
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy38.getWrappedElement(Unknown Source)
-	at org.openqa.selenium.interactions.WheelInput$ScrollOrigin.asArg(WheelInput.java:125)
-	at org.openqa.selenium.interactions.WheelInput$ScrollInteraction.encode(WheelInput.java:111)
-	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:72)
-	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:81)
-	... 87 more
+	at jdk.proxy2/jdk.proxy2.$Proxy38.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at pageobjects.Inventorypage.Click_Add_Return_button(Inventorypage.java:1139)
+	at Stepdefinitions.Inventory.Admin_or_user_clicks_the_Add_Return_button(Inventory.java:690)
+	at ✽.Admin or user clicks the Add Return button(file:///home/coducer/Al_Arabia_PhaseII/Al_Arabia_Project/src/test/resources/Features/07_Inventory.feature:735)
 </textarea>
-		</li>
-		<li test-id='13' class='node * Pass' status='Pass'>
-			<div class="step-name" title="(AFTER_STEP)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Hooks.Testhooks.addScreenshot(io.cucumber.java.Scenario)</div>
+				</li>
+				<li test-id='18' class='gc * Fail' status='Fail'>
+					<h6 class="step-name" title="AFTER_STEP"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Hooks.Testhooks.addScreenshot(io.cucumber.java.Scenario)</h6>
 
+							<textarea disabled class="code-block">org.openqa.selenium.WebDriverException: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=126.0.6478.114)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-119-generic', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b4c8f97379e13bb995170b847f04d578, screenshot {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.114, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:38891}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:38891/devtoo..., se:cdpVersion: 126.0.6478.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b4c8f97379e13bb995170b847f04d578
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
+	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:321)
+	at Hooks.Testhooks.addScreenshot(Testhooks.java:96)
+</textarea>
+				</li>
+				<li test-id='19' class='gc then Skip' status='Skip'>
+					<h6 class="step-name" title="Stepdefinitions.Inventory.Particular_Return_received_from_Technician_gets_created_successfully_with_either(java.lang.String,java.lang.String)"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then Particular Return received from Technician gets created successfully with either "LOADING..." or "Success DamageRetSupplier added"</h6>
 
-					<div class="node-step">T_DamageRet.supplier16_To verify the DamageRetSupplier feature pagination 1st to 2nd page</div>
-					<div class='screenshots'>
-						<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../embedded1.png' src='../embedded1.png'>
-					</div>
-		</li>
-		<li test-id='14' class='node then Skip' status='Skip'>
-			<div class="step-name" title="(Stepdefinitions.Inventory.Second_page_DamageRetSupplier_get_displayed_successfully())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then Second page DamageRetSupplier get displayed successfully</div>
-
-
-					<div class="node-step">Step skipped</div>
+							<div class="node-step">Step skipped</div>
+				</li>
+			</ul>
 		</li>
 	</ul>
 </div>
@@ -492,13 +329,13 @@ Session ID: 97b82d380dd1157a944b39ecd9580447
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='71%'>
-                    <span class='strong'>5</span> steps passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='66%'>
+                    <span class='strong'>6</span> steps passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='14%'>
-                    1</span> steps failed, 
-                    <span class='strong tooltipped' data-position='top' data-tooltip='14%'>
+                    <span class='strong tooltipped' data-position='top' data-tooltip='22%'>
+                    2</span> steps failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='11%'>
                     1</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> others
@@ -537,39 +374,6 @@ Session ID: 97b82d380dd1157a944b39ecd9580447
 			<ul id='category-collection' class='category-collection'>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@DamageRet.supplier16</span>
-						<span class='category-status right'>
-						<span class='label fail'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							
-							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Sep 3, 2024 12:23:54 am</td>
-										<td class='linked' test-id='2'>T_DamageRet.supplier16_To verify the DamageRetSupplier feature pagination 1st to 2nd page</td>
-										<td><span class='test-status Fail'>Fail</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
 						<span class='category-name'>@Inventory</span>
 						<span class='category-status right'>
 						<span class='label fail'>1</span>
@@ -592,41 +396,8 @@ Session ID: 97b82d380dd1157a944b39ecd9580447
 								</thead>
 								<tbody>
 									<tr>
-										<td>Sep 3, 2024 12:23:54 am</td>
-										<td class='linked' test-id='2'>T_DamageRet.supplier16_To verify the DamageRetSupplier feature pagination 1st to 2nd page</td>
-										<td><span class='test-status Fail'>Fail</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@regression</span>
-						<span class='category-status right'>
-						<span class='label fail'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							
-							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Sep 3, 2024 12:23:54 am</td>
-										<td class='linked' test-id='2'>T_DamageRet.supplier16_To verify the DamageRetSupplier feature pagination 1st to 2nd page</td>
+										<td>Sep 3, 2024 06:14:43 pm</td>
+										<td class='linked' test-id='3'>T_DamageRet.supplier02_Create the New Return with valid inputs</td>
 										<td><span class='test-status Fail'>Fail</span></td>
 									</tr>
 								</tbody>
@@ -658,8 +429,8 @@ Session ID: 97b82d380dd1157a944b39ecd9580447
 								</thead>
 								<tbody>
 									<tr>
-										<td>Sep 3, 2024 12:23:54 am</td>
-										<td class='linked' test-id='2'>T_DamageRet.supplier16_To verify the DamageRetSupplier feature pagination 1st to 2nd page</td>
+										<td>Sep 3, 2024 06:14:43 pm</td>
+										<td class='linked' test-id='3'>T_DamageRet.supplier02_Create the New Return with valid inputs</td>
 										<td><span class='test-status Fail'>Fail</span></td>
 									</tr>
 								</tbody>
@@ -669,7 +440,7 @@ Session ID: 97b82d380dd1157a944b39ecd9580447
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@smoke</span>
+						<span class='category-name'>@sanity</span>
 						<span class='category-status right'>
 						<span class='label fail'>1</span>
 						</span>
@@ -691,8 +462,74 @@ Session ID: 97b82d380dd1157a944b39ecd9580447
 								</thead>
 								<tbody>
 									<tr>
-										<td>Sep 3, 2024 12:23:54 am</td>
-										<td class='linked' test-id='2'>T_DamageRet.supplier16_To verify the DamageRetSupplier feature pagination 1st to 2nd page</td>
+										<td>Sep 3, 2024 06:14:43 pm</td>
+										<td class='linked' test-id='3'>T_DamageRet.supplier02_Create the New Return with valid inputs</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@DamageRet.supplier02</span>
+						<span class='category-status right'>
+						<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Sep 3, 2024 06:14:43 pm</td>
+										<td class='linked' test-id='3'>T_DamageRet.supplier02_Create the New Return with valid inputs</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@regression</span>
+						<span class='category-status right'>
+						<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Sep 3, 2024 06:14:43 pm</td>
+										<td class='linked' test-id='3'>T_DamageRet.supplier02_Create the New Return with valid inputs</td>
 										<td><span class='test-status Fail'>Fail</span></td>
 									</tr>
 								</tbody>
@@ -729,8 +566,8 @@ Session ID: 97b82d380dd1157a944b39ecd9580447
 			<ul id='exception-collection' class='exception-collection'>
 				<li class='exception displayed active'>
 					<div class='exception-heading'>
-						<span class='exception-name'>org.openqa.selenium.json.JsonException</span>
-						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+						<span class='exception-name'>org.openqa.selenium.WebDriverException</span>
+						<span class='exception-count right'><span class='label red lighten-1 white-text'>2</span></span>
 					</div>
 					<div class='exception-content hide'>
 						<div class='exception-tests'>
@@ -744,214 +581,18 @@ Session ID: 97b82d380dd1157a944b39ecd9580447
 								</thead>
 								<tbody>
 									<tr>
-										<td>Sep 3, 2024 12:24:04 am</td>
-										<td class='linked' test-id='12'>And User click on second page button of DamageRetSupplier page</td>
+										<td>Sep 3, 2024 06:15:26 pm</td>
+										<td class='linked' test-id='17'>And Admin or user clicks the Add Return button</td>
 										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-119-generic', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [97b82d380dd1157a944b39ecd9580447, actions {actions=[org.openqa.selenium.interactions.Sequence@19e21f89]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.114, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:43833}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:43833/devtoo..., se:cdpVersion: 126.0.6478.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 97b82d380dd1157a944b39ecd9580447
-	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:520)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:182)
-	at org.openqa.selenium.json.JsonOutput.write0(JsonOutput.java:409)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:204)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
-	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
-	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
-	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$23(JsonOutput.java:204)
-	at org.openqa.selenium.json.JsonOutput.write0(JsonOutput.java:409)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:222)
-	at java.base/java.util.Map.forEach(Map.java:713)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$25(JsonOutput.java:217)
-	at org.openqa.selenium.json.JsonOutput.write0(JsonOutput.java:409)
-	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:400)
-	at org.openqa.selenium.json.Json.toJson(Json.java:133)
-	at org.openqa.selenium.json.Json.toJson(Json.java:119)
-	at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:245)
-	at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:111)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:178)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:604)
-	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:603)
-	at pageobjects.Inventorypage.DamageRetSupplier_Second_page(Inventorypage.java:1500)
-	at Stepdefinitions.Inventory.User_click_on_second_page_button_of_DamageRetSupplier_page(Inventory.java:944)
-	at ✽.User click on second page button of DamageRetSupplier page(file:///home/coducer/Al_Arabia_PhaseII/Al_Arabia_Project/src/test/resources/Features/07_Inventory.feature:869)
-	Suppressed: org.openqa.selenium.json.JsonException: Attempting to close incomplete json stream
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-119-generic', java.version: '17.0.12'
-Driver info: driver.version: RemoteWebDriver
-		at org.openqa.selenium.json.JsonOutput.close(JsonOutput.java:431)
-		at org.openqa.selenium.json.Json.toJson(Json.java:131)
-		at org.openqa.selenium.json.Json.toJson(Json.java:119)
-		at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:245)
-		at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:111)
-		at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:178)
-		at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-		at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-		at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-		at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:604)
-		at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:603)
-		at pageobjects.Inventorypage.DamageRetSupplier_Second_page(Inventorypage.java:1500)
-		at Stepdefinitions.Inventory.User_click_on_second_page_button_of_DamageRetSupplier_page(Inventory.java:944)
-		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-		at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-		at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-		at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-		at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
-		at io.cucumber.java.Invoker.invoke(Invoker.java:24)
-		at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-		at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
-		at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
-		at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
-		at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-		at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:81)
-		at io.cucumber.core.runner.TestStep.run(TestStep.java:53)
-		at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
-		at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
-		at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
-		at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
-		at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
-		at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-		at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
-		at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
-		at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
-		at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
-		at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-		at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-		at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-		at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-		at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-		at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-		at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-		at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
-		at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
-		at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
-		at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-		at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-		at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-		at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-		at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-		at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:147)
-		at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:162)
-		at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:145)
-		at io.cucumber.junit.Cucumber$StartAndFinishTestRun.evaluate(Cucumber.java:226)
-		at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-		at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-		at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)
-		at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
-		at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)
-		at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:757)
-		at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)
-		at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
-Caused by: java.lang.reflect.InvocationTargetException
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:516)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:182)
-	at org.openqa.selenium.json.JsonOutput.write0(JsonOutput.java:409)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:204)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
-	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
-	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
-	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
-	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$23(JsonOutput.java:204)
-	at org.openqa.selenium.json.JsonOutput.write0(JsonOutput.java:409)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:222)
-	at java.base/java.util.Map.forEach(Map.java:713)
-	at org.openqa.selenium.json.JsonOutput.lambda$new$25(JsonOutput.java:217)
-	at org.openqa.selenium.json.JsonOutput.write0(JsonOutput.java:409)
-	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:400)
-	at org.openqa.selenium.json.Json.toJson(Json.java:133)
-	at org.openqa.selenium.json.Json.toJson(Json.java:119)
-	at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:245)
-	at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:111)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:178)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:604)
-	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:603)
-	at pageobjects.Inventorypage.DamageRetSupplier_Second_page(Inventorypage.java:1500)
-	at Stepdefinitions.Inventory.User_click_on_second_page_button_of_DamageRetSupplier_page(Inventory.java:944)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
-	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
-	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
-	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
-	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
-	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:81)
-	at io.cucumber.core.runner.TestStep.run(TestStep.java:53)
-	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
-	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
-	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:147)
-	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:162)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:145)
-	at io.cucumber.junit.Cucumber$StartAndFinishTestRun.evaluate(Cucumber.java:226)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)
-	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:757)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[normalize-space()='2']"}
+											<textarea disabled class="code-block">org.openqa.selenium.WebDriverException: target frame detached
+  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
   (Session info: chrome=126.0.6478.114)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.20.0', revision: '866c76ca80'
 System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-119-generic', java.version: '17.0.12'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [97b82d380dd1157a944b39ecd9580447, findElement {using=xpath, value=//div[normalize-space()='2']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.114, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:43833}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:43833/devtoo..., se:cdpVersion: 126.0.6478.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 97b82d380dd1157a944b39ecd9580447
+Command: [b4c8f97379e13bb995170b847f04d578, findElement {value=Add Request, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.114, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:38891}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:38891/devtoo..., se:cdpVersion: 126.0.6478.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b4c8f97379e13bb995170b847f04d578
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -970,12 +611,56 @@ Session ID: 97b82d380dd1157a944b39ecd9580447
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy38.getWrappedElement(Unknown Source)
-	at org.openqa.selenium.interactions.WheelInput$ScrollOrigin.asArg(WheelInput.java:125)
-	at org.openqa.selenium.interactions.WheelInput$ScrollInteraction.encode(WheelInput.java:111)
-	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:72)
-	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:81)
-	... 87 more
+	at jdk.proxy2/jdk.proxy2.$Proxy38.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at pageobjects.Inventorypage.Click_Add_Return_button(Inventorypage.java:1139)
+	at Stepdefinitions.Inventory.Admin_or_user_clicks_the_Add_Return_button(Inventory.java:690)
+	at ✽.Admin or user clicks the Add Return button(file:///home/coducer/Al_Arabia_PhaseII/Al_Arabia_Project/src/test/resources/Features/07_Inventory.feature:735)
+</textarea>
+										</td>
+									</tr>
+									<tr>
+										<td>Sep 3, 2024 06:15:32 pm</td>
+										<td class='linked' test-id='18'>Hooks.Testhooks.addScreenshot(io.cucumber.java.Scenario)</td>
+										<td>
+											<textarea disabled class="code-block">org.openqa.selenium.WebDriverException: target frame detached
+  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
+  (Session info: chrome=126.0.6478.114)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-119-generic', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b4c8f97379e13bb995170b847f04d578, findElement {value=Add Request, using=id}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.114, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:38891}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:38891/devtoo..., se:cdpVersion: 126.0.6478.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b4c8f97379e13bb995170b847f04d578
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy38.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	at pageobjects.Inventorypage.Click_Add_Return_button(Inventorypage.java:1139)
+	at Stepdefinitions.Inventory.Admin_or_user_clicks_the_Add_Return_button(Inventory.java:690)
+	at ✽.Admin or user clicks the Add Return button(file:///home/coducer/Al_Arabia_PhaseII/Al_Arabia_Project/src/test/resources/Features/07_Inventory.feature:735)
 </textarea>
 										</td>
 									</tr>
@@ -1013,25 +698,25 @@ Session ID: 97b82d380dd1157a944b39ecd9580447
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>7</div>
+					<div class='panel-lead'>9</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Sep 3, 2024 12:23:54 am</div>
+					<div class='panel-lead'>Sep 3, 2024 06:14:42 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Sep 3, 2024 12:24:15 am</div>
+			 		<div class='panel-lead'>Sep 3, 2024 06:15:34 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>00 00 21.015</div>
+					<div class='panel-lead'>00 00 51.801</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -1047,25 +732,7 @@ Session ID: 97b82d380dd1157a944b39ecd9580447
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>@DamageRet.supplier16</td>
-							<td>0</td>
-							<td>1</td>
-							<td>0</td>
-							<td>
-									0%
-							</td>
-						</tr>
-						<tr>
 							<td>@Inventory</td>
-							<td>0</td>
-							<td>1</td>
-							<td>0</td>
-							<td>
-									0%
-							</td>
-						</tr>
-						<tr>
-							<td>@regression</td>
 							<td>0</td>
 							<td>1</td>
 							<td>0</td>
@@ -1083,7 +750,25 @@ Session ID: 97b82d380dd1157a944b39ecd9580447
 							</td>
 						</tr>
 						<tr>
-							<td>@smoke</td>
+							<td>@sanity</td>
+							<td>0</td>
+							<td>1</td>
+							<td>0</td>
+							<td>
+									0%
+							</td>
+						</tr>
+						<tr>
+							<td>@DamageRet.supplier02</td>
+							<td>0</td>
+							<td>1</td>
+							<td>0</td>
+							<td>
+									0%
+							</td>
+						</tr>
+						<tr>
+							<td>@regression</td>
 							<td>0</td>
 							<td>1</td>
 							<td>0</td>
@@ -1117,9 +802,9 @@ Session ID: 97b82d380dd1157a944b39ecd9580447
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				grandChildCount: 7,
-				passGrandChild: 5,
-				failGrandChild: 1,
+				grandChildCount: 9,
+				passGrandChild: 6,
+				failGrandChild: 2,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
@@ -1130,7 +815,7 @@ Session ID: 97b82d380dd1157a944b39ecd9580447
 		
 		<script>
 			var timeline = {
-			        "Inventory":20.309
+			        "Inventory":50.908
 			};
 		</script>
 		

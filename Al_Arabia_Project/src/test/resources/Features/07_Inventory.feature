@@ -921,7 +921,7 @@ Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module
 And Admin or user clicks the DamageRecSupplier Tab
-And Admin or user clicks the New Return button in DamageRecSupplier
+And Admin or user clicks the New Replace button in DamageRecSupplier
 And Admin or user enters the all mandatory fields of DamageRecSupplier
 And Admin or user clicks the Add Return button 
 Then Particular Return received from Technician gets created successfully with either "<successMessage1>" or "<successMessage2>"

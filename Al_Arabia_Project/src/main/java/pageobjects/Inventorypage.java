@@ -1526,7 +1526,7 @@ public class Inventorypage extends Base {
 	}
 //<--------------------------------------------Damage Received From Supplier---------------------------------------------------------->
 	
-	@FindBy(xpath = "//span[normalize-space()='Damage Ret. (To Supplier)']")
+	@FindBy(xpath = "//span[normalize-space()='Damage Rec. (From Supplier)']")
 	private WebElement damage_rec_supplier_Return;
 	
 	public void DamageRecSupplier_page() throws Exception{
@@ -1668,17 +1668,17 @@ public class Inventorypage extends Base {
 		AssertJUnit.assertTrue(damage_rec_supplier_Return.isDisplayed());
 		LOGGER.info(">> The Download Popup get closed and listed DamageRecSupplier page");
 	}
-	@FindBy(xpath = "//h5[normalize-space()='All Request(44)']")
+	@FindBy(xpath = "//h5[contains(@class,'mb-0')]")
 	private WebElement all_damageReplacescount_supplier;
 	public void all_damageReplacescount_supplier()throws Exception{
 		wait.until(ExpectedConditions.visibilityOf(all_damageReplacescount_supplier)).isDisplayed();
 		AssertJUnit.assertTrue(all_damageReplacescount_supplier.isDisplayed());
 	}
-	@FindBy(id = "New Return")
+	@FindBy(id = "New Replace")
 	private WebElement new_Replace_supplier;
 	public void New_Replace_Button_damageRec_supplier()throws Exception{
-		Thread.sleep(1000);
-		wait.until(ExpectedConditions.visibilityOf(damage_rec_supplier_Return)).isDisplayed();
+		Thread.sleep(3000);
+		wait.until(ExpectedConditions.visibilityOf(new_return_button)).isDisplayed();
 		wait.until(ExpectedConditions.visibilityOf(new_return_button)).click();
 	}
 //	@FindBy(id = "react-select-3-input")

@@ -1069,8 +1069,8 @@ public class Inventory extends Base {
 	public void The_Download_pop_up_get_closed_successfully_and_display_the_DamageRecSupplier_list() throws Exception {
 		inventorypage.Download_popupclosd_displayed_DamageRecSupplier();
 	}
-    @And("Admin or user clicks the New Return button in DamageRecSupplier")
-    public void Admin_or_user_clicks_the_New_Return_button_in_DamageRecSupplier() throws Exception{
+    @And("Admin or user clicks the New Replace button in DamageRecSupplier")
+    public void Admin_or_user_clicks_the_New_Replace_button_in_DamageRecSupplier() throws Exception{
 		inventorypage.New_Replace_Button_damageRec_supplier();
     }
     @And("Admin or user enters the all mandatory fields of DamageRecSupplier")

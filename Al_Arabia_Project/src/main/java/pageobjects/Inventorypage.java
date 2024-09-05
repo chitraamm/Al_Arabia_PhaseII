@@ -1678,16 +1678,16 @@ public class Inventorypage extends Base {
 	private WebElement new_Replace_supplier;
 	public void New_Replace_Button_damageRec_supplier()throws Exception{
 		Thread.sleep(3000);
-		wait.until(ExpectedConditions.visibilityOf(new_return_button)).isDisplayed();
-		wait.until(ExpectedConditions.visibilityOf(new_return_button)).click();
+		wait.until(ExpectedConditions.visibilityOf(new_Replace_supplier)).isDisplayed();
+		wait.until(ExpectedConditions.visibilityOf(new_Replace_supplier)).click();
 	}
 //	@FindBy(id = "react-select-3-input")
 //	private WebElement supplier_name_select;
 //	@FindBy(xpath = "//input[@name='delivery_no']")
 //	private WebElement delivery_date;
 //	
-//	@FindBy(xpath = "//h5[normalize-space()='New Return']")
-//	private WebElement newreturn_pagesupplr;
+	@FindBy(xpath = "//h5[normalize-space()='New Replace']")
+	private WebElement newreplace_pagesupplr;
 //	
 //	@FindBy(xpath = "//span[normalize-space()='3']")
 //	private WebElement date_selctd;
@@ -1698,20 +1698,21 @@ public class Inventorypage extends Base {
 //	@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[2]/div[2]/form/div/div[3]/div[2]/div/table/tbody/tr/td[4]/form/div/div/input")
 //	private WebElement qty;
 //
-//	@FindBy(xpath = "(//div[@class='select__value-container select__value-container--has-value css-hlgwow'])[4]")
-//	private WebElement Defecttype;
+	@FindBy(xpath = "(//input[@type='text'])[9]")
+	private WebElement Dttype;
 //	
 //	@FindBy(id = "Save")
 //	private WebElement supplierReturn_save;
 //	
 	public void Enter_Mandatory_fieldsof_New_Replace_DamageRecSupplier()throws Exception{
 		
-		wait.until(ExpectedConditions.visibilityOf(newreturn_pagesupplr)).isDisplayed();
+		wait.until(ExpectedConditions.visibilityOf(newreplace_pagesupplr)).isDisplayed();
 		String suppliername = prop.getProperty("suppliername");
 		wait.until(ExpectedConditions.visibilityOf(supplier_name_select)).sendKeys(suppliername);
 	 	Thread.sleep(1000);
 		act.moveToElement(supplier_name_select).click().sendKeys(""+Keys.ENTER+Keys.ARROW_RIGHT).perform();
 		
+	 	Thread.sleep(1000);
 		wait.until(ExpectedConditions.visibilityOf(supplier_name)).isDisplayed();
 		wait.until(ExpectedConditions.visibilityOf(delivery_date)).click();
 		wait.until(ExpectedConditions.visibilityOf(date_selctd)).click();
@@ -1737,6 +1738,14 @@ public class Inventorypage extends Base {
 			Thread.sleep(7000);
 	        act.moveToElement(qty).click().sendKeys(""+(QTY)).perform();
 			
+	        Thread.sleep(3000);
+			wait.until(ExpectedConditions.visibilityOf(qty)).isDisplayed();
+			String Dt =prop.getProperty("Dt");
+			Thread.sleep(7000);
+	        act.moveToElement(Dttype).click().sendKeys(""+(Dt)).perform();
+			
+	        
+	        
 	        Thread.sleep(4000);
 	        wait.until(ExpectedConditions.visibilityOf(qty)).isDisplayed();
 //	        String defect_type = prop.getProperty("Defecttype");
@@ -1832,5 +1841,312 @@ public class Inventorypage extends Base {
 		act.scrollToElement(click_damage_rec_supplier_first_page).build().perform();
 		wait.until(ExpectedConditions.visibilityOf(click_damage_rec_supplier_first_page)).click();
 	}
+//<-----------------------------------------Report Page---------------------------------------------------------->
+	
+	@FindBy(xpath = "//span[normalize-space()='Report']")
+	private WebElement Click_report_tab;
+	
+	public void Reportpage() throws Exception{
+		Thread.sleep(5000);
+		wait.until(ExpectedConditions.visibilityOf(inventory_menu)).isDisplayed();
+		act.moveToElement(Click_report_tab).click().perform();
+	}
+	@FindBy(xpath = "//h5[normalize-space()='Generate Report']")
+	private WebElement report_display;
+	public void Report_page_Displayed() throws Exception{
+		wait.until(ExpectedConditions.visibilityOf(report_display)).isDisplayed();
+		AssertJUnit.assertTrue(report_display.isDisplayed());
+	}
+	@FindBy(xpath ="//div[@class='select__input-container css-19bb58m']")
+	private WebElement stockcode;
+	
+	@FindBy(xpath ="//h6[normalize-space()='Generate Report']")
+	private WebElement generate_report_button;
+	public void Generate_Stock_Based_Report()throws Exception{
+		Thread.sleep(5000);
+		wait.until(ExpectedConditions.visibilityOf(report_display)).isDisplayed();
+		Thread.sleep(4000);
+		act.moveToElement(stockcode).click().sendKeys(""+Keys.ENTER).perform();
+		
+		Thread.sleep(2000);
+		wait.until(ExpectedConditions.visibilityOf(stockcode)).isDisplayed();
+		act.moveToElement(generate_report_button).click().perform();
+
+	}
+	
+	//<--------------------------------------------Stock Adjustments---------------------------------------------------------->
+	
+		@FindBy(xpath = "//span[normalize-space()='Stock Adjustment']")
+		private WebElement stock_adjustment;
+		
+		public void Stock_Adjustments_page() throws Exception{
+			Thread.sleep(5000);
+			wait.until(ExpectedConditions.visibilityOf(inventory_menu)).isDisplayed();
+			act.moveToElement(stock_adjustment).click().perform();
+		}
+		@FindBy(xpath = "//h5[contains(@class,'mb-0')]")
+		private WebElement stock_adjustment_display;
+		public void Stock_Adjustments_page_Displayed() throws Exception{
+			wait.until(ExpectedConditions.visibilityOf(stock_adjustment_display)).isDisplayed();
+			AssertJUnit.assertTrue(stock_adjustment_display.isDisplayed());
+		}
+
+		@FindBy(id = "doc_searchQueryInput")
+		private WebElement stock_adjustmentsearch;
+		
+		public void Stock_Adjustments_search_enter_text() {
+			wait.until(ExpectedConditions.visibilityOf(stock_adjustmentsearch)).click();
+			String Stock_Adjustments_Search = prop.getProperty("Billboardid");
+			wait.until(ExpectedConditions.visibilityOf(stock_adjustmentsearch)).sendKeys(Stock_Adjustments_Search + Keys.ENTER);
+			System.out.println(">> User enter the supplier id in search field: " + Stock_Adjustments_Search);
+		}
+		@FindBy(xpath = "(//input[@id='doc_searchQueryInput'])[1]")
+		private WebElement Stock_AdjustmentsSearched, stock_adjustmentSearchlist;
+
+		public void Stock_AdjustmentsSearchedList() {
+			wait.until(ExpectedConditions.visibilityOf(stock_adjustmentsearch));
+
+			if (Stock_AdjustmentsSearched.isDisplayed()) {
+				System.out.println("Element is displayed");
+			} else {
+				System.out.println("Element is not displayed");
+			}
+			LOGGER.info(">> Admin/User searched Suppliers");
+			System.out.println(">> User got searched Stock_Adjustments list: " + Stock_AdjustmentsSearched.getText());
+		}
+
+		public void Stock_Adjustments_list() {
+			wait.until(ExpectedConditions.visibilityOf(purchasesSearch));
+
+			if (stock_adjustmentSearchlist.isDisplayed()) {
+				System.out.println("Element is displayed");
+			} else {
+				System.out.println("Element is not displayed");
+			}
+			LOGGER.info(">> Admin/User clicked new Replace btn");
+			System.out.println(">> User got sorted Stock_Adjustments list: " + stock_adjustmentSearchlist.getText());
+		}
+
+		@FindBy(xpath = "(//h6[contains(@class,'m-0 by fw-normal')][normalize-space()='Recently Added'])[1]")
+		private WebElement stock_adjustment_sort;
+
+		@FindBy(xpath = "(//h6[contains(text(),'Recently Updated')])[1]")
+		private WebElement stock_adjustment_sort_recentlyupdated;
+
+		@FindBy(xpath = "(//h6[contains(text(),'Recently Added')])[2]")
+		private WebElement stock_adjustment_sort_recentlyadded;
+
+		public void Stock_Adjustments_sort_recentlyupdated() {
+			wait.until(ExpectedConditions.visibilityOf(stock_adjustment_sort)).click();
+			wait.until(ExpectedConditions.visibilityOf(stock_adjustment_sort_recentlyupdated)).click();
+			System.out.println(">> User clicked recently updated in sort");
+		}
+
+		public void Stock_Adjustments_sort_recentlyadded() {
+			wait.until(ExpectedConditions.visibilityOf(stock_adjustment_sort)).click();
+			wait.until(ExpectedConditions.visibilityOf(stock_adjustment_sort_recentlyadded)).click();
+			System.out.println(">> User clicked recently added in sort");
+		}
+
+		@FindBy(xpath = "(//h6[contains(text(),'Name - A to Z')])[1]")
+		private WebElement stock_adjustment_Name_A_to_Z;
+
+		public void Stock_Adjustments_sortA_Z() {
+			wait.until(ExpectedConditions.visibilityOf(stock_adjustment_sort)).click();
+			wait.until(ExpectedConditions.visibilityOf(stock_adjustment_Name_A_to_Z)).click();
+			System.out.println(">> User clicked recently updated in sort");
+		}
+
+		@FindBy(xpath = "(//h6[contains(text(),'Name - Z to A')])[1]")
+		private WebElement stock_adjustment_Name_Z_to_A;
+
+		public void Stock_Adjustments_sortZ_A() {
+			wait.until(ExpectedConditions.visibilityOf(stock_adjustment_sort)).click();
+			wait.until(ExpectedConditions.visibilityOf(purchase_Name_Z_to_A)).click();
+			System.out.println(">> User clicked Z-A updated in sort");
+		}
+
+		@FindBy(xpath = "(//h6[contains(text(),'Decending - Date')])[1]")
+		private WebElement stock_adjustment_Name_decending;
+
+		public void Stock_Adjustments_DecendingDate() {
+			wait.until(ExpectedConditions.visibilityOf(stock_adjustment_sort)).click();
+			wait.until(ExpectedConditions.visibilityOf(stock_adjustment_Name_decending)).click();
+			System.out.println(">> User clicked decending updated in sort");
+		}
+	
+		@FindBy(xpath = "//h5[contains(@class,'mb-0')]")
+		private WebElement all_stock_adjustmentcount;
+		public void All_Stock_Adjustmentcount()throws Exception{
+			wait.until(ExpectedConditions.visibilityOf(all_stock_adjustmentcount)).isDisplayed();
+			AssertJUnit.assertTrue(all_stock_adjustmentcount.isDisplayed());
+		}
+		@FindBy(id = "New Replace")
+		private WebElement new_stock_adjustmentbuttn;
+		public void New_Stock_Adjustment_Button()throws Exception{
+			Thread.sleep(3000);
+			wait.until(ExpectedConditions.visibilityOf(new_stock_adjustmentbuttn)).isDisplayed();
+			wait.until(ExpectedConditions.visibilityOf(new_stock_adjustmentbuttn)).click();
+		}
+//		@FindBy(id = "react-select-3-input")
+//		private WebElement supplier_name_select;
+//		@FindBy(xpath = "//input[@name='delivery_no']")
+//		private WebElement delivery_date;
+	//	
+//		@FindBy(xpath = "//h5[normalize-space()='New Replace']")
+//		private WebElement newreplace_pagesupplr;
+	//	
+//		@FindBy(xpath = "//span[normalize-space()='3']")
+//		private WebElement date_selctd;
+	//	
+//		@FindBy(id = "react-select-4-input")
+//		private WebElement id_billboard;
+	//	
+//		@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[2]/div[2]/form/div/div[3]/div[2]/div/table/tbody/tr/td[4]/form/div/div/input")
+//		private WebElement qty;
+	//
+//		@FindBy(xpath = "(//input[@type='text'])[9]")
+//		private WebElement Dttype;
+	//	
+//		@FindBy(id = "Save")
+//		private WebElement supplierReturn_save;
+	//	
+		public void Enter_Mandatory_fieldsof_Stock_Adjustments()throws Exception{
+			
+			wait.until(ExpectedConditions.visibilityOf(newreplace_pagesupplr)).isDisplayed();
+			String suppliername = prop.getProperty("suppliername");
+			wait.until(ExpectedConditions.visibilityOf(supplier_name_select)).sendKeys(suppliername);
+		 	Thread.sleep(1000);
+			act.moveToElement(supplier_name_select).click().sendKeys(""+Keys.ENTER+Keys.ARROW_RIGHT).perform();
+			
+		 	Thread.sleep(1000);
+			wait.until(ExpectedConditions.visibilityOf(supplier_name)).isDisplayed();
+			wait.until(ExpectedConditions.visibilityOf(delivery_date)).click();
+			wait.until(ExpectedConditions.visibilityOf(date_selctd)).click();
+
+
+//			wait.until(ExpectedConditions.visibilityOf(delivery_date)).isDisplayed();
+//		 	Thread.sleep(4000);
+//			act.moveToElement(id_billboard).click().sendKeys(""+Keys.ENTER).perform();
+		 	Thread.sleep(4000);
+			wait.until(ExpectedConditions.visibilityOf(delivery_date)).isDisplayed();
+			String billboardid = prop.getProperty("billboardid");
+			wait.until(ExpectedConditions.visibilityOf(id_billboard)).sendKeys(billboardid);
+		 	Thread.sleep(5000);
+			act.moveToElement(id_billboard).click().sendKeys(""+Keys.ENTER+Keys.ARROW_RIGHT).perform();
+		
+			 wait.until(ExpectedConditions.visibilityOf(Return_stock_code)).isDisplayed();
+				Thread.sleep(2000);
+				act.moveToElement(Return_stock_code).click().sendKeys(""+Keys.ENTER).perform();
+				
+				Thread.sleep(3000);
+				wait.until(ExpectedConditions.visibilityOf(Return_stock_code)).isDisplayed();
+				String QTY =prop.getProperty("QTY");
+				Thread.sleep(7000);
+		        act.moveToElement(qty).click().sendKeys(""+(QTY)).perform();
+				
+		        Thread.sleep(3000);
+				wait.until(ExpectedConditions.visibilityOf(qty)).isDisplayed();
+				String Dt =prop.getProperty("Dt");
+				Thread.sleep(7000);
+		        act.moveToElement(Dttype).click().sendKeys(""+(Dt)).perform();
+				
+		        
+		        
+		        Thread.sleep(4000);
+		        wait.until(ExpectedConditions.visibilityOf(qty)).isDisplayed();
+//		        String defect_type = prop.getProperty("Defecttype");
+//				Thread.sleep(5000);
+//				wait.until(ExpectedConditions.visibilityOf(Defecttype)).sendKeys(defect_type);
+				act.moveToElement(Defecttype).click().sendKeys(""+Keys.ENTER).perform();
+		        
+		        Thread.sleep(2000);
+//			act.moveToElement(Return_save).click().perform();
+//			
+//			act.moveToElement(add_Return).click().perform();
+		}
+		@FindBy(id = "Add Request")
+		private WebElement add_Stock_Adjustments;
+		public void Add_Stock_Adjustments_Button()throws Exception{
+
+			wait.until(ExpectedConditions.visibilityOf(add_Stock_Adjustments)).isDisplayed();
+			wait.until(ExpectedConditions.visibilityOf(add_Stock_Adjustments)).click();
+		}
+		
+		//updatepenng
+		
+		
+
+		@FindBy(xpath = "(//*[name()='svg'][@stroke='currentColor'])[7]")
+		private WebElement click_stock_adjustment_Edit;
+		@FindBy(xpath = "//a[normalize-space()='View']")
+		private WebElement stock_adjustment_click_view;
+		public void Stock_Adjustments_Viewclick_option()throws Exception{
+			wait.until(ExpectedConditions.visibilityOf(stock_adjustment)).isDisplayed();
+			wait.until(ExpectedConditions.visibilityOf(click_stock_adjustment_Edit)).click();
+			wait.until(ExpectedConditions.visibilityOf(click_view)).click();
+		}
+		@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[2]/div[1]/h5[2]")
+		private WebElement stock_adjustmentView_display;
+		public void Stock_AdjustmentsView_display()throws Exception{
+			wait.until(ExpectedConditions.visibilityOf(stock_adjustmentView_display)).isDisplayed();
+			AssertJUnit.assertTrue(stock_adjustmentView_display.isDisplayed());
+			//wait.until(ExpectedConditions.visibilityOf(click_view)).click();
+		}
+		@FindBy(xpath = "//a[normalize-space()='Delete']")
+		private WebElement stock_adjustmentclick_delete;
+		public void Stock_Adjustments_Deleteclick_option()throws Exception{
+			Thread.sleep(1000);
+			wait.until(ExpectedConditions.visibilityOf(stock_adjustment_display)).isDisplayed();
+			Thread.sleep(1000);
+
+			wait.until(ExpectedConditions.visibilityOf(click_stock_adjustment_Edit)).click();
+			wait.until(ExpectedConditions.visibilityOf(stock_adjustmentclick_delete)).click();
+		}
+		@FindBy(xpath = "//h4[@class=' fw-semibold text-center text-black']")
+		private WebElement stock_adjustmentpopup_delete;
+		@FindBy(xpath = "//h6[normalize-space()='Yes, delete damage received From technician.']")
+		private WebElement stock_adjustment_confirm_delete;
+		public void Stock_Adjustments_Confirmed_Deleteclick_option()throws Exception{
+			wait.until(ExpectedConditions.visibilityOf(stock_adjustmentpopup_delete)).isDisplayed();
+			act.moveToElement(stock_adjustment_confirm_delete).click().perform();
+			//wait.until(ExpectedConditions.visibilityOf(click_delete)).click();
+		}
+		@FindBy(xpath = "//div[normalize-space()='2']")
+		private WebElement stock_adjustment_second_page;
+		public void Stock_Adjustments_Second_page() throws Exception {
+			act.scrollToElement(stock_adjustment_second_page).build().perform();
+			wait.until(ExpectedConditions.visibilityOf(click_second_page)).click();
+		}
+		@FindBy(xpath = "//div[contains(text(),'Showing')]")
+		private WebElement stock_adjustment_second_page_display;
+		public void Second_page_Stock_Adjustments_Display() throws Exception {
+			wait.until(ExpectedConditions.visibilityOf(stock_adjustment_second_page_display));
+			AssertJUnit.assertTrue(stock_adjustment_second_page_display.isDisplayed());
+		}
+		@FindBy(xpath = "(//div[contains(@class,'round-effect')][contains(text(),'›')])[1]")
+		private WebElement clickstock_adjustment_next_page;
+		public void Stock_Adjustments_next_page() throws Exception {
+			act.scrollToElement(clickstock_adjustment_next_page).build().perform();
+			wait.until(ExpectedConditions.visibilityOf(clickstock_adjustment_next_page)).click();
+		}
+		@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[2]/div/div[2]/div[1]/div[4]/div[2]/div[1]")
+		private WebElement clickstock_adjustment_previous_page;
+		public void Stock_Adjustments_Previous_page() throws Exception {
+			act.scrollToElement(clickstock_adjustment_previous_page).build().perform();
+			wait.until(ExpectedConditions.visibilityOf(clickstock_adjustment_previous_page)).click();
+		}
+		@FindBy(xpath = "/html/body/div/div/div[2]/div/div[2]/div/div[2]/div[1]/div[4]/div[2]/div[5]")
+		private WebElement click_stock_adjustment_last_page;
+		public void Stock_Adjustments_last_page() throws Exception {
+			act.scrollToElement(click_stock_adjustment_last_page).build().perform();
+			wait.until(ExpectedConditions.visibilityOf(click_stock_adjustment_last_page)).click();
+		}
+		@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[2]/div/div[2]/div[1]/div[4]/div[2]/div[1]")
+		private WebElement click_stock_adjustment_first_page;
+		public void First_page_Stock_Adjustments() throws Exception {
+			act.scrollToElement(click_stock_adjustment_first_page).build().perform();
+			wait.until(ExpectedConditions.visibilityOf(click_stock_adjustment_first_page)).click();
+		}
 
 }

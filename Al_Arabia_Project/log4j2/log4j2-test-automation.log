@@ -1,84 +1,138 @@
-[INFO ] 2024-09-05 01:52:37.486 [main] Testhooks - Execution Started
-[INFO ] 2024-09-05 01:52:38.372 [main] Testhooks - Browser got launched
-[INFO ] 2024-09-05 01:52:40.792 [main] Testhooks - Navigated to url
-[INFO ] 2024-09-05 01:52:42.010 [main] Signinpage - User enters valid email address
-[INFO ] 2024-09-05 01:52:42.143 [main] Signinpage - User enters valid password
-[INFO ] 2024-09-05 01:52:42.291 [main] Signinpage - User clicks on signin button
-[INFO ] 2024-09-05 01:52:42.291 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-09-05 01:52:45.427 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-09-05 01:52:45.891 [main] Inventorypage - >> Admin/User got navigated to inventory page
-[INFO ] 2024-09-05 02:00:56.853 [main] Testhooks - Execution Started
-[INFO ] 2024-09-05 02:00:57.793 [main] Testhooks - Browser got launched
-[INFO ] 2024-09-05 02:00:59.561 [main] Testhooks - Navigated to url
-[INFO ] 2024-09-05 02:01:01.004 [main] Signinpage - User enters valid email address
-[INFO ] 2024-09-05 02:01:01.468 [main] Signinpage - User enters valid password
-[INFO ] 2024-09-05 02:01:01.684 [main] Signinpage - User clicks on signin button
-[INFO ] 2024-09-05 02:01:01.685 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-09-05 02:01:04.152 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-09-05 02:01:05.901 [main] Testhooks - Failed scenario screenshot got capturedT_DamageRec.supplier02_Create the New Return with valid inputs
-[INFO ] 2024-09-05 02:01:25.935 [main] Testhooks - Execution Started
-[INFO ] 2024-09-05 02:01:26.871 [main] Testhooks - Browser got launched
-[INFO ] 2024-09-05 02:01:28.615 [main] Testhooks - Navigated to url
-[INFO ] 2024-09-05 02:01:29.837 [main] Signinpage - User enters valid email address
-[INFO ] 2024-09-05 02:01:29.992 [main] Signinpage - User enters valid password
-[INFO ] 2024-09-05 02:01:30.106 [main] Signinpage - User clicks on signin button
-[INFO ] 2024-09-05 02:01:30.109 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-09-05 02:01:34.171 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-09-05 02:01:36.051 [main] Testhooks - Failed scenario screenshot got capturedT_DamageRec.supplier02_Create the New Return with valid inputs
-[INFO ] 2024-09-05 02:02:06.259 [main] Testhooks - Execution Started
-[INFO ] 2024-09-05 02:02:07.146 [main] Testhooks - Browser got launched
-[INFO ] 2024-09-05 02:02:08.872 [main] Testhooks - Navigated to url
-[INFO ] 2024-09-05 02:02:10.097 [main] Signinpage - User enters valid email address
-[INFO ] 2024-09-05 02:02:10.229 [main] Signinpage - User enters valid password
-[INFO ] 2024-09-05 02:02:10.342 [main] Signinpage - User clicks on signin button
-[INFO ] 2024-09-05 02:02:10.342 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-09-05 02:02:14.564 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-09-05 02:02:15.108 [main] Inventorypage - >> Admin/User got navigated to inventory page
-[INFO ] 2024-09-05 02:04:25.796 [main] Testhooks - Execution Started
-[INFO ] 2024-09-05 02:04:26.696 [main] Testhooks - Browser got launched
-[INFO ] 2024-09-05 02:04:28.977 [main] Testhooks - Navigated to url
-[INFO ] 2024-09-05 02:04:30.198 [main] Signinpage - User enters valid email address
-[INFO ] 2024-09-05 02:04:30.365 [main] Signinpage - User enters valid password
-[INFO ] 2024-09-05 02:04:30.558 [main] Signinpage - User clicks on signin button
-[INFO ] 2024-09-05 02:04:30.558 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-09-05 02:04:33.872 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-09-05 02:04:35.730 [main] Testhooks - Failed scenario screenshot got capturedT_DamageRec.supplier02_Create the New Return with valid inputs
-[INFO ] 2024-09-05 02:05:01.418 [main] Testhooks - Execution Started
-[INFO ] 2024-09-05 02:05:02.941 [main] Testhooks - Browser got launched
-[INFO ] 2024-09-05 02:05:04.692 [main] Testhooks - Navigated to url
-[INFO ] 2024-09-05 02:05:05.915 [main] Signinpage - User enters valid email address
-[INFO ] 2024-09-05 02:05:06.070 [main] Signinpage - User enters valid password
-[INFO ] 2024-09-05 02:05:06.177 [main] Signinpage - User clicks on signin button
-[INFO ] 2024-09-05 02:05:06.177 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-09-05 02:05:15.274 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-09-05 02:05:16.519 [main] Inventorypage - >> Admin/User got navigated to inventory page
-[INFO ] 2024-09-05 02:05:43.756 [main] Testhooks - Failed scenario screenshot got capturedT_DamageRec.supplier02_Create the New Return with valid inputs
-[INFO ] 2024-09-05 02:06:27.067 [main] Testhooks - Execution Started
-[INFO ] 2024-09-05 02:06:27.914 [main] Testhooks - Browser got launched
-[INFO ] 2024-09-05 02:06:29.694 [main] Testhooks - Navigated to url
-[INFO ] 2024-09-05 02:06:31.030 [main] Signinpage - User enters valid email address
-[INFO ] 2024-09-05 02:06:31.284 [main] Signinpage - User enters valid password
-[INFO ] 2024-09-05 02:06:31.528 [main] Signinpage - User clicks on signin button
-[INFO ] 2024-09-05 02:06:31.528 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-09-05 02:06:34.154 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-09-05 02:06:35.998 [main] Testhooks - Failed scenario screenshot got capturedT_DamageRec.supplier02_Create the New Return with valid inputs
-[INFO ] 2024-09-05 02:06:53.488 [main] Testhooks - Execution Started
-[INFO ] 2024-09-05 02:06:54.349 [main] Testhooks - Browser got launched
-[INFO ] 2024-09-05 02:06:56.030 [main] Testhooks - Navigated to url
-[INFO ] 2024-09-05 02:06:57.258 [main] Signinpage - User enters valid email address
-[INFO ] 2024-09-05 02:06:57.400 [main] Signinpage - User enters valid password
-[INFO ] 2024-09-05 02:06:57.513 [main] Signinpage - User clicks on signin button
-[INFO ] 2024-09-05 02:06:57.513 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-09-05 02:07:00.218 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-09-05 02:07:01.373 [main] Inventorypage - >> Admin/User got navigated to inventory page
-[INFO ] 2024-09-05 02:07:32.688 [main] Testhooks - Failed scenario screenshot got capturedT_DamageRec.supplier02_Create the New Return with valid inputs
-[INFO ] 2024-09-05 02:08:14.175 [main] Testhooks - Execution Started
-[INFO ] 2024-09-05 02:08:15.014 [main] Testhooks - Browser got launched
-[INFO ] 2024-09-05 02:08:16.854 [main] Testhooks - Navigated to url
-[INFO ] 2024-09-05 02:08:18.065 [main] Signinpage - User enters valid email address
-[INFO ] 2024-09-05 02:08:18.201 [main] Signinpage - User enters valid password
-[INFO ] 2024-09-05 02:08:18.311 [main] Signinpage - User clicks on signin button
-[INFO ] 2024-09-05 02:08:18.311 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-09-05 02:08:20.946 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-09-05 02:08:21.388 [main] Inventorypage - >> Admin/User got navigated to inventory page
-[INFO ] 2024-09-05 02:08:50.388 [main] Testhooks - Failed scenario screenshot got capturedT_DamageRec.supplier02_Create the New Return with valid inputs
+[INFO ] 2024-09-06 00:31:56.185 [main] Testhooks - Execution Started
+[INFO ] 2024-09-06 00:31:57.089 [main] Testhooks - Browser got launched
+[INFO ] 2024-09-06 00:31:58.618 [main] Testhooks - Navigated to url
+[INFO ] 2024-09-06 00:31:59.850 [main] Signinpage - User enters valid email address
+[INFO ] 2024-09-06 00:31:59.999 [main] Signinpage - User enters valid password
+[INFO ] 2024-09-06 00:32:00.107 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-09-06 00:32:00.107 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-09-06 00:32:04.711 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-09-06 00:32:06.525 [main] Testhooks - Failed scenario screenshot got capturedT_DamageRec.supplier20_To verify the DamageRecSupplier feature pagination last page to first page
+[INFO ] 2024-09-06 00:32:33.671 [main] Testhooks - Execution Started
+[INFO ] 2024-09-06 00:32:34.559 [main] Testhooks - Browser got launched
+[INFO ] 2024-09-06 00:32:36.547 [main] Testhooks - Navigated to url
+[INFO ] 2024-09-06 00:32:37.762 [main] Signinpage - User enters valid email address
+[INFO ] 2024-09-06 00:32:37.904 [main] Signinpage - User enters valid password
+[INFO ] 2024-09-06 00:32:38.015 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-09-06 00:32:38.015 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-09-06 00:32:45.608 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-09-06 00:32:46.188 [main] Inventorypage - >> Admin/User got navigated to inventory page
+[INFO ] 2024-09-06 00:33:12.190 [main] Testhooks - Failed scenario screenshot got capturedT_DamageRec.supplier20_To verify the DamageRecSupplier feature pagination last page to first page
+[INFO ] 2024-09-06 00:33:34.475 [main] Testhooks - Execution Started
+[INFO ] 2024-09-06 00:33:35.399 [main] Testhooks - Browser got launched
+[INFO ] 2024-09-06 00:33:37.482 [main] Testhooks - Navigated to url
+[INFO ] 2024-09-06 00:33:38.695 [main] Signinpage - User enters valid email address
+[INFO ] 2024-09-06 00:33:38.834 [main] Signinpage - User enters valid password
+[INFO ] 2024-09-06 00:33:38.948 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-09-06 00:33:38.948 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-09-06 00:33:46.157 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-09-06 00:33:46.869 [main] Inventorypage - >> Admin/User got navigated to inventory page
+[INFO ] 2024-09-06 00:34:12.997 [main] Testhooks - Failed scenario screenshot got capturedT_DamageRec.supplier20_To verify the DamageRecSupplier feature pagination last page to first page
+[INFO ] 2024-09-06 00:35:30.250 [main] Testhooks - Execution Started
+[INFO ] 2024-09-06 00:35:32.111 [main] Testhooks - Browser got launched
+[INFO ] 2024-09-06 00:35:33.778 [main] Testhooks - Navigated to url
+[INFO ] 2024-09-06 00:35:34.994 [main] Signinpage - User enters valid email address
+[INFO ] 2024-09-06 00:35:35.147 [main] Signinpage - User enters valid password
+[INFO ] 2024-09-06 00:35:35.256 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-09-06 00:35:35.256 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-09-06 00:35:39.767 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-09-06 00:35:41.391 [main] Testhooks - Failed scenario screenshot got capturedT_DamageRec.supplier20_To verify the DamageRecSupplier feature pagination last page to first page
+[INFO ] 2024-09-06 00:35:57.363 [main] Testhooks - Execution Started
+[INFO ] 2024-09-06 00:35:58.258 [main] Testhooks - Browser got launched
+[INFO ] 2024-09-06 00:36:03.173 [main] Testhooks - Navigated to url
+[INFO ] 2024-09-06 00:36:04.399 [main] Signinpage - User enters valid email address
+[INFO ] 2024-09-06 00:36:04.538 [main] Signinpage - User enters valid password
+[INFO ] 2024-09-06 00:36:04.649 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-09-06 00:36:04.650 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-09-06 00:36:09.429 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-09-06 00:36:11.295 [main] Testhooks - Failed scenario screenshot got capturedT_DamageRec.supplier20_To verify the DamageRecSupplier feature pagination last page to first page
+[INFO ] 2024-09-06 00:36:34.484 [main] Testhooks - Execution Started
+[INFO ] 2024-09-06 00:36:35.371 [main] Testhooks - Browser got launched
+[INFO ] 2024-09-06 00:36:37.611 [main] Testhooks - Navigated to url
+[INFO ] 2024-09-06 00:36:38.822 [main] Signinpage - User enters valid email address
+[INFO ] 2024-09-06 00:36:38.962 [main] Signinpage - User enters valid password
+[INFO ] 2024-09-06 00:36:39.076 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-09-06 00:36:39.076 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-09-06 00:36:48.417 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-09-06 00:36:49.161 [main] Inventorypage - >> Admin/User got navigated to inventory page
+[INFO ] 2024-09-06 01:01:26.272 [main] Testhooks - Execution Started
+[INFO ] 2024-09-06 01:01:27.216 [main] Testhooks - Browser got launched
+[INFO ] 2024-09-06 01:01:28.834 [main] Testhooks - Navigated to url
+[INFO ] 2024-09-06 01:01:30.041 [main] Signinpage - User enters valid email address
+[INFO ] 2024-09-06 01:01:30.182 [main] Signinpage - User enters valid password
+[INFO ] 2024-09-06 01:01:30.300 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-09-06 01:01:30.301 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-09-06 01:01:34.455 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-09-06 01:01:36.218 [main] Testhooks - Failed scenario screenshot got capturedT_DamageRec.supplier20_To verify the Report page
+[INFO ] 2024-09-06 01:01:36.300 [main] Testhooks - Execution Started
+[INFO ] 2024-09-06 01:01:36.949 [main] Testhooks - Browser got launched
+[INFO ] 2024-09-06 01:01:38.714 [main] Testhooks - Navigated to url
+[INFO ] 2024-09-06 01:01:40.293 [main] Signinpage - User enters valid email address
+[INFO ] 2024-09-06 01:01:40.470 [main] Signinpage - User enters valid password
+[INFO ] 2024-09-06 01:01:40.590 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-09-06 01:01:40.590 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-09-06 01:01:45.591 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-09-06 01:01:46.968 [main] Inventorypage - >> Admin/User got navigated to inventory page
+[INFO ] 2024-09-06 01:02:02.649 [main] Testhooks - Failed scenario screenshot got capturedT_DamageRec.supplier20_To verify the Stock based Report
+[INFO ] 2024-09-06 01:03:33.782 [main] Testhooks - Execution Started
+[INFO ] 2024-09-06 01:03:34.651 [main] Testhooks - Browser got launched
+[INFO ] 2024-09-06 01:03:36.478 [main] Testhooks - Navigated to url
+[INFO ] 2024-09-06 01:03:37.704 [main] Signinpage - User enters valid email address
+[INFO ] 2024-09-06 01:03:37.845 [main] Signinpage - User enters valid password
+[INFO ] 2024-09-06 01:03:37.955 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-09-06 01:03:37.956 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-09-06 01:03:44.394 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-09-06 01:03:45.756 [main] Inventorypage - >> Admin/User got navigated to inventory page
+[INFO ] 2024-09-06 01:03:51.844 [main] Testhooks - Execution Started
+[INFO ] 2024-09-06 01:03:52.399 [main] Testhooks - Browser got launched
+[INFO ] 2024-09-06 01:03:53.837 [main] Testhooks - Navigated to url
+[INFO ] 2024-09-06 01:03:55.068 [main] Signinpage - User enters valid email address
+[INFO ] 2024-09-06 01:03:55.204 [main] Signinpage - User enters valid password
+[INFO ] 2024-09-06 01:03:55.311 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-09-06 01:03:55.311 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-09-06 01:03:58.216 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-09-06 01:03:59.750 [main] Inventorypage - >> Admin/User got navigated to inventory page
+[INFO ] 2024-09-06 01:05:09.424 [main] Testhooks - Execution Started
+[INFO ] 2024-09-06 01:05:10.309 [main] Testhooks - Browser got launched
+[INFO ] 2024-09-06 01:05:12.444 [main] Testhooks - Navigated to url
+[INFO ] 2024-09-06 01:05:13.666 [main] Signinpage - User enters valid email address
+[INFO ] 2024-09-06 01:05:13.810 [main] Signinpage - User enters valid password
+[INFO ] 2024-09-06 01:05:13.919 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-09-06 01:05:13.920 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-09-06 01:05:16.815 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-09-06 01:05:17.392 [main] Inventorypage - >> Admin/User got navigated to inventory page
+[INFO ] 2024-09-06 01:05:23.322 [main] Testhooks - Execution Started
+[INFO ] 2024-09-06 01:05:23.901 [main] Testhooks - Browser got launched
+[INFO ] 2024-09-06 01:05:25.455 [main] Testhooks - Navigated to url
+[INFO ] 2024-09-06 01:05:26.685 [main] Signinpage - User enters valid email address
+[INFO ] 2024-09-06 01:05:26.824 [main] Signinpage - User enters valid password
+[INFO ] 2024-09-06 01:05:26.937 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-09-06 01:05:26.937 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-09-06 01:05:29.777 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-09-06 01:05:30.353 [main] Inventorypage - >> Admin/User got navigated to inventory page
+[INFO ] 2024-09-06 01:06:48.479 [main] Testhooks - Execution Started
+[INFO ] 2024-09-06 01:06:49.385 [main] Testhooks - Browser got launched
+[INFO ] 2024-09-06 01:06:50.997 [main] Testhooks - Navigated to url
+[INFO ] 2024-09-06 01:06:52.220 [main] Signinpage - User enters valid email address
+[INFO ] 2024-09-06 01:06:52.354 [main] Signinpage - User enters valid password
+[INFO ] 2024-09-06 01:06:52.465 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-09-06 01:06:52.465 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-09-06 01:06:55.247 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-09-06 01:06:55.746 [main] Inventorypage - >> Admin/User got navigated to inventory page
+[INFO ] 2024-09-06 01:07:02.271 [main] Testhooks - Execution Started
+[INFO ] 2024-09-06 01:07:03.090 [main] Testhooks - Browser got launched
+[INFO ] 2024-09-06 01:07:04.824 [main] Testhooks - Navigated to url
+[INFO ] 2024-09-06 01:07:06.044 [main] Signinpage - User enters valid email address
+[INFO ] 2024-09-06 01:07:06.195 [main] Signinpage - User enters valid password
+[INFO ] 2024-09-06 01:07:06.330 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-09-06 01:07:06.330 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-09-06 01:07:16.087 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-09-06 01:07:17.375 [main] Inventorypage - >> Admin/User got navigated to inventory page
+[INFO ] 2024-09-06 02:18:30.070 [main] Testhooks - Execution Started
+[INFO ] 2024-09-06 02:18:31.247 [main] Testhooks - Browser got launched
+[INFO ] 2024-09-06 02:18:32.780 [main] Testhooks - Navigated to url
+[INFO ] 2024-09-06 02:18:33.985 [main] Signinpage - User enters valid email address
+[INFO ] 2024-09-06 02:18:34.127 [main] Signinpage - User enters valid password
+[INFO ] 2024-09-06 02:18:34.235 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-09-06 02:18:34.235 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-09-06 02:18:44.032 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-09-06 02:18:44.677 [main] Inventorypage - >> Admin/User got navigated to inventory page

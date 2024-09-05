@@ -1098,4 +1098,210 @@ And Go to Last page of DamageRecSupplier page
 And User click on first page button of DamageRecSupplier
 Then First page DamageRecSupplier get displayed successfully  
  
-    
+@Inventory @Report01 @smoke @regression @all
+Scenario Outline: T_DamageRec.supplier20_To verify the Report page
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Inventory module  
+And User click on Report page
+Then Report page should display successfully
+
+@Inventory @Report02 @smoke @regression @all
+Scenario Outline: T_DamageRec.supplier20_To verify the Stock based Report
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Inventory module  
+And User click on Report page
+And User Generate Stock based Report
+Then Stock based Report should be download successfully  
+
+@Inventory @StockAdjustment01 @smoke @regression @all
+Scenario Outline: T_StockAdjustment01_Verify the Inventory01 feature Stock Adjustments page 
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Inventory module
+And Admin or user clicks the Stock Adjustments Tab
+Then Stock Adjustments page should display successfully
+
+@Inventory @StockAdjustment02 @regression @sanity @all
+Scenario Outline: T_StockAdjustment02_Create the New Return with valid inputs
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Inventory module
+And Admin or user clicks the Stock Adjustments Tab
+And Admin or user clicks the New Stock Adjustments button
+And Admin or user enters the all mandatory fields of Stock Adjustments
+And Admin or user clicks the Add Return button 
+Then Particular Return received from Technician gets created successfully with either "<successMessage1>" or "<successMessage2>"
+  Examples:
+      | successMessage1       | successMessage2                 |
+      | LOADING...            | Success Stock Adjustments added  |
+
+@Inventory @StockAdjustment03 @smoke @regression @all
+Scenario Outline: T_StockAdjustment03_The Inventory feature search a Stock Adjustments by Billboard Id	
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Inventory module
+And Admin or user clicks the Stock Adjustments Tab
+And Admin or user search a Stock Adjustments
+Then Searched Stock Adjustments details get displayed successfully
+
+@Inventory @StockAdjustment04 @smoke @regression @all
+Scenario Outline: T_StockAdjustment04_To verify the Stock Adjustments feature sort recently updated
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display 
+And Admin or user clicks the Inventory module
+And Admin or user clicks the Stock Adjustments Tab
+And Admin or user sort the Stock Adjustments list recently updated
+Then Recently updated Stock Adjustments list get displayed successfully
+
+@Inventory @StockAdjustment05 @smoke @regression @all
+Scenario Outline: T_StockAdjustment05_To verify the Stock Adjustments feature sort Name - A to Z
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Inventory module
+And Admin or user clicks the Stock Adjustments Tab
+And User sort the Stock Adjustments list Name A to Z
+Then Stock Adjustments list get displayed successfully
+
+@Inventory @StockAdjustment06 @smoke @regression @all
+Scenario Outline: T_StockAdjustment06_To verify the Stock Adjustments feature sort Name - Z to A
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Inventory module
+And Admin or user clicks the Stock Adjustments Tab
+And User sort the Stock Adjustments list Name Z to A 
+Then Stock Adjustments list Z to A get displayed successfully
+
+@Inventory @StockAdjustment07 @smoke @regression @all
+Scenario Outline: T_StockAdjustment07_To verify the Stock Adjustments feature sort Recently Added
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Inventory module
+And Admin or user clicks the Stock Adjustments Tab
+And User sort the Stock Adjustments list Recently Added
+Then Recent Stock Adjustments list get displayed successfully
+
+@Inventory @StockAdjustment08 @smoke @regression @all
+Scenario Outline: T_StockAdjustment08_To verify the Stock Adjustments feature sort decending
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Inventory module
+And Admin or user clicks the Stock Adjustments Tab
+And User sort the Stock Adjustments list decending 
+Then Decending Stock Adjustments list get displayed successfully  
+
+@Inventory @StockAdjustment09 @smoke @regression @all
+Scenario Outline: T_StockAdjustment09_To verify the Stock Adjustments feature Download button
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Inventory module
+And Admin or user clicks the Stock Adjustments Tab
+And User clicks the Download button in Stock Adjustments page 
+Then Download pop up of Stock Adjustments will be displayed successfully
+
+@Inventory @StockAdjustment10 @smoke @regression @all
+Scenario Outline: T_StockAdjustment10_To verify the Stock Adjustments feature Download as Excel 
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Inventory module
+And Admin or user clicks the Stock Adjustments Tab
+And User clicks the Download button with Download As Excel of Stock Adjustments list
+      
+@Inventory @StockAdjustment11 @smoke @regression @all
+Scenario Outline: T_StockAdjustment11_To verify the Stock Adjustments feature Download as PDF
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Inventory module
+And Admin or user clicks the Stock Adjustments Tab
+And User clicks the Download button with Download As PDF for Stock Adjustments
+      
+@Inventory @StockAdjustment12 @smoke @regression @all
+Scenario Outline: T_StockAdjustment12_To verify the Stock Adjustments feature Download popup close
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Inventory module
+And Admin or user clicks the Stock Adjustments Tab
+And User clicks the Download button in Stock Adjustments page after that click on close button 
+Then The Download pop up get closed successfully and display the Stock Adjustments list
+
+#@Inventory @StockAdjustment13 @regression @sanity @all
+#Scenario Outline: T_StockAdjustment13_To verify edit of any Return
+#Given Admin logged in with valid credentials
+#When Al-Arabia overall dashboard should display
+#And Admin or user clicks the Inventory module  
+#And User click on edit icon in all Material page
+#And User edit the City name
+#And User Click on Update Material button
+#Then Particular Material gets updated successfully with either "<successMessage1>" or "<successMessage2>"
+  #Examples:
+      #| successMessage1       | successMessage2                |
+      #| LOADING...            | Success Material info updated  |
+      #
+@Inventory @StockAdjustment14 @regression @sanity @all
+Scenario Outline: T_StockAdjustment14_To verify Stock Adjustments edit of any field
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Inventory module 
+And Admin or user clicks the Stock Adjustments Tab   
+And User click on Stock Adjustments view option of kebab menu 
+Then Particular Stock Adjustments viewed with details successfully
+
+#@Inventory @StockAdjustment15 @regression @sanity @all
+#Scenario Outline: T_StockAdjustment15_To verify Stock Adjustments edit of any field
+#Given Admin logged in with valid credentials
+#When Al-Arabia overall dashboard should display
+#And Admin or user clicks the Inventory module 
+#And Admin or user clicks the Stock Adjustments Tab      
+#And User click on Stock Adjustments Delete option in kebab menu and confirm Yes
+#Then Stock Adjustments deleted popup will be displayed successfully as "<successMessage>"
+ #Examples:
+      #| successMessage 			         	 |
+      #| Success Damage info deleted  |   
+      #
+@Inventory @StockAdjustment16 @smoke @regression @all
+Scenario Outline: T_StockAdjustment16_To verify the Stock Adjustments feature pagination 1st to 2nd page 
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Inventory module
+And Admin or user clicks the Stock Adjustments Tab    
+And User click on second page button of Stock Adjustments page
+Then Second page Stock Adjustments get displayed successfully    
+
+@Inventory @StockAdjustment17 @smoke @regression @all
+Scenario Outline: T_StockAdjustment17_To verify the Material request feature pagination next page 
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Inventory module 
+And Admin or user clicks the Stock Adjustments Tab   
+And Go to Next page of Stock Adjustments page
+Then Next page Stock Adjustments get displayed successfully  
+
+@Inventory @StockAdjustment18 @smoke @regression @all
+Scenario Outline: T_StockAdjustment18_To verify the Stock Adjustments feature pagination previous page 
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Inventory module 
+And Admin or user clicks the Stock Adjustments Tab   
+And Go to Next page of Stock Adjustments page 
+And Go to Previous page of Stock Adjustments
+Then Previous page Stock Adjustments get displayed successfully 
+
+@Inventory @StockAdjustment19 @smoke @regression @all
+Scenario Outline: T_StockAdjustment19_To verify the Stock Adjustments feature pagination last page 
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Inventory module
+And Admin or user clicks the Stock Adjustments Tab   
+And Go to Last page of Stock Adjustments page
+Then Last page Stock Adjustments get displayed successfully   
+
+@Inventory @StockAdjustment20 @smoke @regression @all
+Scenario Outline: T_StockAdjustment20_To verify the Stock Adjustments feature pagination last page to first page
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Inventory module 
+And Admin or user clicks the Stock Adjustments Tab   
+And Go to Last page of Stock Adjustments page
+And User click on first page button of Stock Adjustments
+Then First page Stock Adjustments get displayed successfully  

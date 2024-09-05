@@ -1164,5 +1164,183 @@ public class Inventory extends Base {
 	@Then("First page DamageRecSupplier get displayed successfully")
 	public void First_page_DamageRecSupplier_get_displayed_successfully() throws Exception {
 }
+	//<----------------------------------Report Page-------------------------------------------------->
+	@And("User click on Report page")
+	public void User_click_on_Report_page() throws Exception {
+		inventorypage.Reportpage();
+}
+	@Then("Report page should display successfully")
+	public void Report_page_should_display_successfully() throws Exception {
+		inventorypage.Report_page_Displayed();
+}
+	@And("User Generate Stock based Report")
+	public void User_Generate_Stock_based_Report() throws Exception {
+		inventorypage.Generate_Stock_Based_Report();
+}
+	@Then("Stock based Report should be download successfully")
+	public void Stock_based_Report_should_be_download_successfully() throws Exception {
+}
+	//<-------------------------------------------------Stock Adjustments------------------------------------------------------------->
 
+	@And("Admin or user clicks the Stock Adjustments Tab")
+	public void Admin_or_user_clicks_the_Stock_Adjustments_Tab() throws Exception {
+		inventorypage.Stock_Adjustments_page();
+}
+	@Then("Stock Adjustments page should display successfully")
+	public void Stock_Adjustments_page_should_display_successfully() throws Exception {
+		inventorypage.Stock_Adjustments_page_Displayed();
+}
+		@And("Admin or user search a Stock Adjustments")
+	public void Admin_or_user_search_a_Stock_Adjustments() throws Exception {
+		inventorypage.Stock_Adjustments_search_enter_text();
+	}
+
+	@Then("Searched Stock Adjustments details get displayed successfully")
+	public void Searched_Stock_Adjustments_details_get_displayed_successfully() {
+		inventorypage.Stock_AdjustmentsSearchedList();
+	}
+	@And("Admin or user sort the Stock Adjustments list recently updated")
+	public void Admin_or_user_sort_the_Stock_Adjustments_list_recently_updated() throws Exception {
+		inventorypage.Stock_Adjustments_sort_recentlyupdated();
+	}
+
+	@Then("Recently updated Stock Adjustments list get displayed successfully")
+	public void Recently_updated_Stock_Adjustments_list_get_displayed_successfully() throws Exception {
+		inventorypage.Stock_Adjustments_list();
+	}
+
+	@And("User sort the Stock Adjustments list Name A to Z")
+	public void User_sort_the_Stock_Adjustments_list_Name_A_to_Z() throws Exception {
+		inventorypage.Stock_Adjustments_sortA_Z();
+	}
+
+	@Then("Stock Adjustments list get displayed successfully")
+	public void Stock_Adjustments_list_get_displayed_successfully() throws Exception {
+		inventorypage.Stock_Adjustments_list();
+	}
+
+	@And("User sort the Stock Adjustments list Name Z to A")
+	public void User_sort_the_Stock_Adjustments_list_Name_Z_to_A() throws Exception {
+		inventorypage.Stock_Adjustments_sortZ_A();
+	}
+
+	@Then("Stock Adjustments list Z to A get displayed successfully")
+	public void Stock_Adjustments_list_Z_to_A_get_displayed_successfully() throws Exception {
+		inventorypage.Stock_Adjustments_list();
+	}
+
+	@And("User sort the Stock Adjustments list Recently Added")
+	public void User_sort_the_Stock_Adjustments_list_Recently_Added() throws Exception {
+		inventorypage.Stock_Adjustments_sort_recentlyadded();
+	}
+
+	@Then("Recent Stock Adjustments list get displayed successfully")
+	public void Recent_Stock_Adjustments_list_get_displayed_successfully() throws Exception {
+		inventorypage.Stock_Adjustments_list();
+	}
+	@And("User sort the Stock Adjustments list decending")
+	public void User_sort_the_Stock_Adjustments_list_Decending() throws Exception {
+		inventorypage.Stock_Adjustments_DecendingDate();
+	}
+
+	@Then("Decending Stock Adjustments list get displayed successfully")
+	public void Decending_Stock_Adjustments_list_get_displayed_successfully() throws Exception {
+		inventorypage.Stock_Adjustments_list();
+	}
+
+    @And("Admin or user clicks the New Stock Adjustments button")
+    public void Admin_or_user_clicks_the_New_Stock_Adjustments_button() throws Exception{
+		inventorypage.New_Stock_Adjustment_Button();
+    }
+    @And("Admin or user enters the all mandatory fields of Stock Adjustments")
+    public void Admin_or_user_enters_the_all_mandatory_fields_of_Stock_Adjustments() throws Exception{
+		inventorypage.Enter_Mandatory_fieldsof_Stock_Adjustments();
+    }
+    @And("Admin or user clicks the Add Stock Adjustments button")
+    public void Admin_or_user_clicks_the_Add_Stock_Adjustments_button() throws Exception{
+		inventorypage.Add_Stock_Adjustments_Button();
+    }
+	@Then("^Particular Stock Adjustment gets created successfully with either \"([^\"]*)\" or \"([^\"]*)\"$")
+	public void Particular_Stock_Adjustment_gets_created_successfully_with_either (String expectedMessage1,
+			String expectedMessage2) throws Exception {
+		String actualMessage = inventorypage.inventory_create_Success_display();
+		String normalizedActualMessage = normalizeWhitespace(actualMessage);
+		System.out.println(">> User or Admin got the Damage Return received from Supplier gets created success message successfully: " + actualMessage);
+
+		boolean matchesMessage1 = normalizedActualMessage.equals(normalizeWhitespace(expectedMessage1));
+		boolean matchesMessage2 = normalizedActualMessage.equals(normalizeWhitespace(expectedMessage2));
+
+		assertTrue("The actual message was neither of the expected success messages.",
+				matchesMessage1 || matchesMessage2);
+	}
+	@Then("^Particular Stock Adjustments gets updated successfully with either \"([^\"]*)\" or \"([^\"]*)\"$")
+	public void Particular_Stock_Adjustments_gets_updated_successfully_with_either (String expectedMessage1,
+			String expectedMessage2) throws Exception {
+		String actualMessage = inventorypage.inventory_create_Success_display();
+		String normalizedActualMessage = normalizeWhitespace(actualMessage);
+		System.out.println(">> User or Admin got the purchase created success message successfully: " + actualMessage);
+
+		boolean matchesMessage1 = normalizedActualMessage.equals(normalizeWhitespace(expectedMessage1));
+		boolean matchesMessage2 = normalizedActualMessage.equals(normalizeWhitespace(expectedMessage2));
+
+		assertTrue("The actual message was neither of the expected success messages.",
+				matchesMessage1 || matchesMessage2);
+	}
+	@And("User click on Stock Adjustments view option of kebab menu")
+	public void User_click_on_Stock_Adjustments_view_option_of_kebab_menu() throws Exception {
+		inventorypage.Stock_Adjustments_Viewclick_option();
+	}
+	@Then("Particular Stock Adjustments viewed with details successfully")
+	public void Particular_Stock_Adjustments_viewed_with_details_successfully() throws Exception {
+		inventorypage.Stock_AdjustmentsView_display();
+	}
+	@And("User click on Stock Adjustments Delete option in kebab menu and confirm Yes")
+	public void User_click_on_Stock_Adjustments_Delete_option_in_kebab_menu_and_confirm_Yes() throws Exception {
+		inventorypage.Stock_Adjustments_Deleteclick_option();
+		inventorypage.Stock_Adjustments_Confirmed_Deleteclick_option();
+	}
+	@Then("^Stock Adjustments deleted popup will be displayed successfully as \"([^\"]*)\"$")
+	public void Stock_Adjustments_deleted_popup_will_be_displayed_successfully_as(String expectedMessage) throws Exception {
+		  String actualMessage = inventorypage.inventory_create_Success_display();
+	      String normalizedExpectedMessage = normalizeWhitespace(expectedMessage);
+	      String normalizedActualMessage = normalizeWhitespace(actualMessage);
+	      System.out.println(">> User or Admin Deleted Stock Adjustments successfully"+actualMessage);
+	      assertEquals(normalizedExpectedMessage, normalizedActualMessage);
+	}
+	@And("User click on second page button of Stock Adjustments page")
+	public void User_click_on_second_page_button_of_Stock_Adjustments_page() throws Exception {
+		inventorypage.Stock_Adjustments_Second_page();
+}
+	@Then("Second page Stock Adjustments get displayed successfully")
+	public void Second_page_Stock_Adjustments_get_displayed_successfully() throws Exception {
+		inventorypage.Second_page_Stock_Adjustments_Display();
+}
+	@And("Go to Next page of Stock Adjustments page")
+	public void Go_to_Next_page_of_Stock_Adjustments_page() throws Exception {
+		inventorypage.Stock_Adjustments_next_page();
+}
+	@Then("Next page Stock Adjustments get displayed successfully")
+	public void Next_page_Stock_Adjustments_get_displayed_successfully() throws Exception {
+}
+	@And("Go to Previous page of Stock Adjustments")
+	public void Go_to_Previous_page_of_Stock_Adjustments_page() throws Exception {
+		inventorypage.Stock_Adjustments_Previous_page();
+}
+	@Then("Previous page Stock Adjustments get displayed successfully")
+	public void Previous_page_Stock_Adjustments_get_displayed_successfully() throws Exception {
+}
+	@And("Go to Last page of Stock Adjustments page")
+	public void Go_to_Last_page_of_Stock_Adjustments_page() throws Exception {
+		inventorypage.Stock_Adjustments_last_page();
+}
+	@Then("Last page Stock Adjustments get displayed successfully")
+	public void Last_page_Stock_Adjustments_get_displayed_successfully() throws Exception {
+}
+	@And("User click on first page button of Stock Adjustments")
+	public void User_click_on_first_page_button_of_Stock_Adjustments() throws Exception {
+		inventorypage.First_page_Stock_Adjustments();
+}
+	@Then("First page Stock Adjustments get displayed successfully")
+	public void First_page_Stock_Adjustments_get_displayed_successfully() throws Exception {
+}
 }

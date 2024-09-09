@@ -2,14 +2,14 @@ Feature: Inventory
 Admin, Manager and Supervisor can able to access the Inventory feature,only if they have roles access
 
 @Inventory @Inventory01 @smoke @regression @all
-Scenario Outline: T001_Verify Inventory page of Materials received from supplier
+Scenario Outline: T_StockAdjustment01_Verify Inventory page of Materials received from supplier
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module
 Then Al-Arabia Inventory page should display successfully
 
 @Inventory @Inventory02 @regression @sanity @all
-Scenario Outline: T002_Create the New Purchase with valid inputs
+Scenario Outline: T_StockAdjustment02_Create the New Purchase with valid inputs
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module
@@ -22,7 +22,7 @@ Then Particular Purchase gets created successfully with either "<successMessage1
       | LOADING...            | Success Material info added  |
 
 @Inventory @Inventory03 @smoke @regression @all
-Scenario Outline: T003_ the Purchases feature search a Purchase by using Invoice id
+Scenario Outline: T_StockAdjustment03_ the Purchases feature search a Purchase by using Invoice id
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module
@@ -30,7 +30,7 @@ And Admin or user search the Purchases
 Then Searched Purchase details get displayed successfully
 
 @Inventory @Inventory04 @smoke @regression @all
-Scenario Outline: T004_To verify the Purchases feature sort recently updated
+Scenario Outline: T_StockAdjustment04_To verify the Purchases feature sort recently updated
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display 
 And Admin or user clicks the Inventory module
@@ -38,7 +38,7 @@ And Admin or user sort the Purchases list recently updated
 Then Recently updated Purchases list get displayed successfully
 
 @Inventory @Inventory05 @smoke @regression @all
-Scenario Outline: T005_To verify the Purchases feature sort Name - A to Z
+Scenario Outline: T_StockAdjustment05_To verify the Purchases feature sort Name - A to Z
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module
@@ -46,7 +46,7 @@ And User sort the Purchases list Name A to Z
 Then Purchases list get displayed successfully
 
 @Inventory @Inventory06 @smoke @regression @all
-Scenario Outline: T006_To verify the Purchases feature sort Name - Z to A
+Scenario Outline: T_StockAdjustment06_To verify the Purchases feature sort Name - Z to A
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module
@@ -54,7 +54,7 @@ And User sort the Purchases list Name Z to A
 Then Purchases list Z to A get displayed successfully
 
 @Inventory @Inventory07 @smoke @regression @all
-Scenario Outline: T007_To verify the Purchases feature sort Recently Added
+Scenario Outline: T_StockAdjustment07_To verify the Purchases feature sort Recently Added
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module
@@ -62,7 +62,7 @@ And User sort the Purchases list Recently Added
 Then Recent Purchases list get displayed successfully
 
 @Inventory @Inventory08 @smoke @regression @all
-Scenario Outline: T008_To verify the Purchases feature sort decending
+Scenario Outline: T_StockAdjustment08_To verify the Purchases feature sort decending
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module
@@ -70,7 +70,7 @@ And User sort the Purchases list decending
 Then Decending Purchases list get displayed successfully  
 
 @Inventory @Inventory09 @smoke @regression @all
-Scenario Outline: T009_To verify the Inventory feature Download button in inventory page
+Scenario Outline: T_StockAdjustment09_To verify the Inventory feature Download button in inventory page
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module
@@ -78,21 +78,21 @@ And User clicks the Download button
 Then Purchase Download pop up will be displayed successfully
 
 @Inventory @Inventory10 @smoke @regression @all
-Scenario Outline: T010_To verify the Inventory feature Download as Excel Purchases
+Scenario Outline: T_StockAdjustment10_To verify the Inventory feature Download as Excel Purchases
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module
 And User clicks the Download button with Download As Excel of Purchase list
       
 @Inventory @Inventory11 @smoke @regression @all
-Scenario Outline: T011_To verify the Inventory feature Download as PDF
+Scenario Outline: T_StockAdjustment11_To verify the Inventory feature Download as PDF
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module
 And User clicks the Download button with Download As PDF for purchases
       
 @Inventory @Inventory12 @smoke @regression @all
-Scenario Outline: T012_To verify the Inventory feature Download popup close
+Scenario Outline: T_StockAdjustment12_To verify the Inventory feature Download popup close
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module
@@ -100,7 +100,7 @@ And User clicks the Download button in inventory page after that click on close 
 Then The Download pop up get closed successfully and display the Inventory list
 
 @Inventory @Inventory13 @regression @sanity @all
-Scenario Outline: T013_To verify Purchase edit of any field
+Scenario Outline: T_StockAdjustment13_To verify Purchase edit of any field
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module  
@@ -113,7 +113,7 @@ Then Particular Purchase gets updated successfully with either "<successMessage1
       | LOADING...            | Success Material info updated  |
       
 @Inventory @Inventory14 @regression @sanity @all
-Scenario Outline: T014_To verify Purchase edit of any field
+Scenario Outline: T_StockAdjustment14_To verify Purchase edit of any field
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module    
@@ -121,7 +121,7 @@ And User click on view option in kebab menu
 Then Particular parchase get displayed successfully
 
 @Inventory @Inventory15 @regression @sanity @all
-Scenario Outline: T015_To verify Purchase edit of any field
+Scenario Outline: T_StockAdjustment15_To verify Purchase edit of any field
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module    
@@ -132,7 +132,7 @@ Then Purchase deleted popup will be displayed successfully as "<successMessage>"
       | Success Material info deleted  |   
       
 @Inventory @Inventory16 @smoke @regression @all
-Scenario Outline: T016_To verify the Inventory feature pagination 1st to 2nd page 
+Scenario Outline: T_StockAdjustment16_To verify the Inventory feature pagination 1st to 2nd page 
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module 
@@ -140,7 +140,7 @@ And User click on second page button of Inventory page
 Then Second page Inventory get displayed successfully    
 
 @Inventory @Inventory17 @smoke @regression @all
-Scenario Outline: T017_To verify the Inventory feature pagination next page 
+Scenario Outline: T_StockAdjustment17_To verify the Inventory feature pagination next page 
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module 
@@ -148,7 +148,7 @@ And Go to Next page of Inventory page
 Then Next page Inventory get displayed successfully  
 
 @Inventory @Inventory18 @smoke @regression @all
-Scenario Outline: T018_To verify the Inventory feature pagination previous page 
+Scenario Outline: T_StockAdjustment18_To verify the Inventory feature pagination previous page 
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module 
@@ -157,7 +157,7 @@ And Go to Previous page of Inventory page
 Then Previous page Inventory get displayed successfully 
 
 @Inventory @Inventory19 @smoke @regression @all
-Scenario Outline: T019_To verify the Inventory feature pagination last page 
+Scenario Outline: T_StockAdjustment19_To verify the Inventory feature pagination last page 
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module
@@ -165,7 +165,7 @@ And Go to Last page of Inventory page
 Then Last page Inventory get displayed successfully   
 
 @Inventory @Inventory20 @smoke @regression @all
-Scenario Outline: T020_To verify the Inventory feature pagination last page to first page
+Scenario Outline: T_StockAdjustment20_To verify the Inventory feature pagination last page to first page
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module 
@@ -175,7 +175,7 @@ Then First page Inventory get displayed successfully
       
 
 @Inventory @Inventory21 @smoke @regression @all
-Scenario Outline: T021_To verify the Inventory feature start conversation in Inventory page
+Scenario Outline: T_StockAdjustment21_To verify the Inventory feature start conversation in Inventory page
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module 
@@ -1192,81 +1192,120 @@ And User sort the Stock Adjustments list decending
 Then Decending Stock Adjustments list get displayed successfully  
 
 @Inventory @StockAdjustment09 @smoke @regression @all
-Scenario Outline: T_StockAdjustment09_To verify the Stock Adjustments feature Download button
-Given Admin logged in with valid credentials
-When Al-Arabia overall dashboard should display
-And Admin or user clicks the Inventory module
-And Admin or user clicks the Stock Adjustments Tab
-And User clicks the Download button in Stock Adjustments page 
-Then Download pop up of Stock Adjustments will be displayed successfully
-
-@Inventory @StockAdjustment10 @smoke @regression @all
-Scenario Outline: T_StockAdjustment10_To verify the Stock Adjustments feature Download as Excel 
-Given Admin logged in with valid credentials
-When Al-Arabia overall dashboard should display
-And Admin or user clicks the Inventory module
-And Admin or user clicks the Stock Adjustments Tab
-And User clicks the Download button with Download As Excel of Stock Adjustments list
-      
-@Inventory @StockAdjustment11 @smoke @regression @all
-Scenario Outline: T_StockAdjustment11_To verify the Stock Adjustments feature Download as PDF
-Given Admin logged in with valid credentials
-When Al-Arabia overall dashboard should display
-And Admin or user clicks the Inventory module
-And Admin or user clicks the Stock Adjustments Tab
-And User clicks the Download button with Download As PDF for Stock Adjustments
-      
-@Inventory @StockAdjustment12 @smoke @regression @all
-Scenario Outline: T_StockAdjustment12_To verify the Stock Adjustments feature Download popup close
-Given Admin logged in with valid credentials
-When Al-Arabia overall dashboard should display
-And Admin or user clicks the Inventory module
-And Admin or user clicks the Stock Adjustments Tab
-And User clicks the Download button in Stock Adjustments page after that click on close button 
-Then The Download pop up get closed successfully and display the Stock Adjustments list
-
-#@Inventory @StockAdjustment13 @regression @sanity @all
-#Scenario Outline: T_StockAdjustment13_To verify edit of any Return
-#Given Admin logged in with valid credentials
-#When Al-Arabia overall dashboard should display
-#And Admin or user clicks the Inventory module  
-#And User click on edit icon in all Material page
-#And User edit the City name
-#And User Click on Update Material button
-#Then Particular Material gets updated successfully with either "<successMessage1>" or "<successMessage2>"
-  #Examples:
-      #| successMessage1       | successMessage2                |
-      #| LOADING...            | Success Material info updated  |
-      #
-@Inventory @StockAdjustment14 @regression @sanity @all
-Scenario Outline: T_StockAdjustment14_To verify Stock Adjustments edit of any field
-Given Admin logged in with valid credentials
-When Al-Arabia overall dashboard should display
-And Admin or user clicks the Inventory module 
-And Admin or user clicks the Stock Adjustments Tab   
-And User click on Stock Adjustments view option of kebab menu 
-Then Particular Stock Adjustments viewed with details successfully
-
-#@Inventory @StockAdjustment15 @regression @sanity @all
-#Scenario Outline: T_StockAdjustment15_To verify Stock Adjustments edit of any field
-#Given Admin logged in with valid credentials
-#When Al-Arabia overall dashboard should display
-#And Admin or user clicks the Inventory module 
-#And Admin or user clicks the Stock Adjustments Tab      
-#And User click on Stock Adjustments Delete option in kebab menu and confirm Yes
-#Then Stock Adjustments deleted popup will be displayed successfully as "<successMessage>"
- #Examples:
-      #| successMessage 			         	 |
-      #| Success Damage info deleted  |   
-      #
-@Inventory @StockAdjustment16 @smoke @regression @all
 Scenario Outline: T_StockAdjustment16_To verify the Stock Adjustments feature pagination 1st to 2nd page 
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module
 And Admin or user clicks the Stock Adjustments Tab    
 And User click on second page button of Stock Adjustments page
-Then Second page Stock Adjustments get displayed successfully    
+Then Second page Stock Adjustments get displayed successfully 
+
+@Inventory @StockAdjustment10 @smoke @regression @all
+Scenario Outline: T_StockAdjustment09_To verify the Stock adjustment filter stock code 
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Inventory module
+And Admin or user clicks the Stock Adjustments Tab 
+And User filter the Stock adjustment list stock code
+Then Filtered stock code list get displayed successfully
+
+@Inventory @StockAdjustment11 @smoke @regression @all
+Scenario Outline: T_StockAdjustment10_To verify the Stock Adjustment filter Credit Type PLUS
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Inventory module
+And Admin or user clicks the Stock Adjustments Tab 
+And User filter the Stock Adjustment list Credit Type PLUS
+Then Filtered Credit Type PLUS list get displayed successfully
+
+@Inventory @StockAdjustment12 @smoke @regression @all
+Scenario Outline: T_StockAdjustment12_To verify the Stock Adjustment Credit Type MINUS
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Inventory module
+And Admin or user clicks the Stock Adjustments Tab 
+And User filter the Stock Adjustment list Credit Type PLUS
+And User filter the Stock Adjustment list Credit Type MINUS
+Then Filtered Credit Type MINUS list get displayed successfully
+
+@Inventory @StockAdjustment13 @smoke @regression @all
+Scenario Outline: T_StockAdjustment13_To verify the Stock Adjustment filter Created By drop down
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Inventory module
+And Admin or user clicks the Stock Adjustments Tab 
+And User filter the Stock Adjustments list Created By
+Then Filtered Created By Stock Adjustments list get displayed successfully
+
+#@Inventory @StockAdjustment13 @smoke @regression @all
+#Scenario Outline: T_StockAdjustment13_To verify the Cleaning feature filter the priority High
+#Given Admin logged in with valid credentials
+#When Al-Arabia overall dashboard should display
+#And Admin or user clicks the Inventory module
+#And Admin or user clicks the Stock Adjustments Tab 
+#And User filter the Priority High status
+#Then Priority High Cleaning list get displayed successfully
+#
+#@Inventory @StockAdjustment14 @smoke @regression @all
+#Scenario Outline: T_StockAdjustment14_To verify the Cleaning feature filter the priority Medium
+#Given Admin logged in with valid credentials
+#When Al-Arabia overall dashboard should display
+#And Admin or user clicks the Cleaning module
+#And User filter the Priority Medium status
+#Then Priority Medium Cleaning list get displayed successfully
+#
+#@Inventory @StockAdjustment15 @smoke @regression @all
+#Scenario Outline: T_StockAdjustment15_To verify the Cleaning feature filter the priority Low
+#Given Admin logged in with valid credentials
+#When Al-Arabia overall dashboard should display
+#And Admin or user clicks the Cleaning module
+#And User filter the Priority Low status
+#Then Priority Low Cleaning list get displayed successfully
+#
+#@Inventory @StockAdjustment16 @smoke @regression @all
+#Scenario Outline: T_StockAdjustment16_To verify the Cleaning feature Multiple statuses filter
+#Given Admin logged in with valid credentials
+#When Al-Arabia overall dashboard should display
+#And Admin or user clicks the Cleaning module
+#And User filter the multiple statuses
+#Then Multiple status Cleaning list get displayed successfully
+#
+#@Inventory @StockAdjustment17 @smoke @regression @all
+#Scenario Outline: T_StockAdjustment17_To verify the Cleaning feature filter Start Date
+#Given Admin logged in with valid credentials
+#When Al-Arabia overall dashboard should display
+#And Admin or user clicks the Cleaning module
+#And User filter the Start Date
+#Then Cleaning from Start Date list get displayed successfully
+#
+#@Inventory @StockAdjustment18 @smoke @regression @all
+#Scenario Outline: T_StockAdjustment18_To verify the Cleaning feature filter Start Date and End date 
+#Given Admin logged in with valid credentials
+#When Al-Arabia overall dashboard should display
+#And Admin or user clicks the Cleaning module
+#And User filter the Start Date and End date
+#Then Cleaning from Start date and End date list get displayed successfully
+#
+#@Inventory @StockAdjustment19 @smoke @regression @all
+#Scenario Outline: T_StockAdjustment19_To verify the Cleaning feature filter by Assignee
+#Given Admin logged in with valid credentials
+#When Al-Arabia overall dashboard should display
+#And Admin or user clicks the Cleaning module
+#And User filter the Assignee
+#Then Assignee cleaning list get displayed successfully
+#
+#@Inventory @StockAdjustment20 @smoke @regression @all
+#Scenario Outline: T_StockAdjustment20_To verify the Cleaning feature filter by Assignee
+#Given Admin logged in with valid credentials
+#When Al-Arabia overall dashboard should display
+#And Admin or user clicks the Cleaning module
+#And User filter the Billboard Type cleaning
+#Then Billboard Type cleaning list get displayed successfully
+#
+#
+#
+
+   
 
 @Inventory @StockAdjustment17 @smoke @regression @all
 Scenario Outline: T_StockAdjustment17_To verify the Material request feature pagination next page 

@@ -1343,4 +1343,36 @@ public class Inventory extends Base {
 	@Then("First page Stock Adjustments get displayed successfully")
 	public void First_page_Stock_Adjustments_get_displayed_successfully() throws Exception {
 }
+	@And("User filter the Stock adjustment list stock code")
+	public void User_filter_the_Stock_adjustment_list_stock_code() throws Exception {
+		inventorypage.Stock_code_filter();
+}
+	@Then("Filtered stock code list get displayed successfully")
+	public void Filtered_stock_code_list_get_displayed_successfully() throws Exception {
+		inventorypage.Stockadjustment_filtered_result_display();
+}
+	@And("User filter the Stock Adjustment list Credit Type PLUS")
+	public void User_filter_the_Stock_adjustment_list_Credit_Type_PLUS() throws Exception {
+		inventorypage.Credit_Type_PLUS_filter();
+}
+	@Then("Filtered Credit Type PLUS list get displayed successfully")
+	public void Filtered_Credit_Type_PLUS_list_get_displayed_successfully() throws Exception {
+		inventorypage.Stockadjustment_filtered_result_display();
+}
+	@And("User filter the Stock Adjustment list Credit Type MINUS")
+	public void User_filter_the_Stock_adjustment_list_Credit_Type_MINUS() throws Exception {
+		inventorypage.Credit_Type_MINUS_filter();
+}
+	@Then("Filtered Credit Type MINUS list get displayed successfully")
+	public void Filtered_Credit_Type_MINUS_list_get_displayed_successfully() throws Exception {
+		inventorypage.Stockadjustment_filtered_result_display();
+}
+	@And("User filter the Stock Adjustments list Created By")
+	public void User_filter_the_Stock_adjustment_list_Created_By() throws Exception {
+		inventorypage.Created_BY_filter();
+}
+	@Then("Filtered Created By Stock Adjustments list get displayed successfully")
+	public void Filtered_Created_By_Stock_Adjustments_list_get_displayed_successfully() throws Exception {
+		inventorypage.Stockadjustment_filtered_result_display();
+}
 }

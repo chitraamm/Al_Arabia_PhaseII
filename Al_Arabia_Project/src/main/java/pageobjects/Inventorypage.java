@@ -1981,7 +1981,7 @@ public class Inventorypage extends Base {
 			wait.until(ExpectedConditions.visibilityOf(all_stock_adjustmentcount)).isDisplayed();
 			AssertJUnit.assertTrue(all_stock_adjustmentcount.isDisplayed());
 		}
-		@FindBy(id = "New Replace")
+		@FindBy(xpath = "(//button[contains(@type,'button')][normalize-space()='New Stock Adjustment'])[1]")
 		private WebElement new_stock_adjustmentbuttn;
 		public void New_Stock_Adjustment_Button()throws Exception{
 			Thread.sleep(3000);
@@ -2130,23 +2130,81 @@ public class Inventorypage extends Base {
 			act.scrollToElement(clickstock_adjustment_next_page).build().perform();
 			wait.until(ExpectedConditions.visibilityOf(clickstock_adjustment_next_page)).click();
 		}
-		@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[2]/div/div[2]/div[1]/div[4]/div[2]/div[1]")
+		@FindBy(xpath = "//div[contains(@class,'d-flex justify-content-between align-items-center')]//div[contains(@class,'d-flex')]//div[1]")
 		private WebElement clickstock_adjustment_previous_page;
 		public void Stock_Adjustments_Previous_page() throws Exception {
 			act.scrollToElement(clickstock_adjustment_previous_page).build().perform();
 			wait.until(ExpectedConditions.visibilityOf(clickstock_adjustment_previous_page)).click();
 		}
-		@FindBy(xpath = "/html/body/div/div/div[2]/div/div[2]/div/div[2]/div[1]/div[4]/div[2]/div[5]")
+		@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[2]/div/div[2]/div[4]/div[2]/div[5]")
 		private WebElement click_stock_adjustment_last_page;
 		public void Stock_Adjustments_last_page() throws Exception {
 			act.scrollToElement(click_stock_adjustment_last_page).build().perform();
 			wait.until(ExpectedConditions.visibilityOf(click_stock_adjustment_last_page)).click();
 		}
-		@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[2]/div/div[2]/div[1]/div[4]/div[2]/div[1]")
+		@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[2]/div/div[2]/div[4]/div[2]/div[1]")
 		private WebElement click_stock_adjustment_first_page;
 		public void First_page_Stock_Adjustments() throws Exception {
 			act.scrollToElement(click_stock_adjustment_first_page).build().perform();
 			wait.until(ExpectedConditions.visibilityOf(click_stock_adjustment_first_page)).click();
 		}
+		@FindBy(xpath = "(//div[contains(@class,'select__input-container css-19bb58m')])[1]")
+		private WebElement stock_code_dropdown;
+		
+		@FindBy(xpath = "(//h6[contains(@class,'m-0 by fw-normal')][normalize-space()='Filter By'])[1]")
+		private WebElement filterby_buttn;
+		
+		@FindBy(xpath = "(//button[contains(@type,'submit')][normalize-space()='Apply'])[1]")
+		private WebElement apply_buttn;
+		
+		public void Stock_code_filter() throws Exception{
+			wait.until(ExpectedConditions.visibilityOf(filterby_buttn)).click();
+			wait.until(ExpectedConditions.visibilityOf(stock_code_dropdown)).click();
+			Thread.sleep(5000);
+			act.moveToElement(stock_code_dropdown).click().sendKeys(""+Keys.ENTER).perform();
+			wait.until(ExpectedConditions.visibilityOf(apply_buttn)).click();
+		}
+		@FindBy(xpath = "//div[contains(@class,'d-flex justify-content-center align-items-center')]")
+		private WebElement No_Stock_Adjustment_Found;
 
+		public void Stockadjustment_filtered_result_display() {
+			try {
+				if (condition) {
+					wait.until(ExpectedConditions.visibilityOf(stock_adjustmentSearchlist));
+					AssertJUnit.assertTrue(stock_adjustmentSearchlist.isDisplayed());
+					System.out.println(">> User got the filtered Tickets list");
+				} else {
+					wait.until(ExpectedConditions.visibilityOf(No_Stock_Adjustment_Found));
+				}
+			} catch (Exception e) {
+				wait.until(ExpectedConditions.visibilityOf(No_Stock_Adjustment_Found));
+			}
+		}
+		@FindBy(xpath = "(//div[contains(@class,'ps-4 pe-1 fw-semibold off')][normalize-space()='MINUS'])[1]")
+		private WebElement credit_Type_PLUS_filter;
+		
+		public void Credit_Type_PLUS_filter() throws Exception{
+			wait.until(ExpectedConditions.visibilityOf(filterby_buttn)).click();
+			wait.until(ExpectedConditions.visibilityOf(credit_Type_PLUS_filter)).click();
+			wait.until(ExpectedConditions.visibilityOf(apply_buttn)).click();
+		}
+		@FindBy(xpath = "(//div[contains(@class,'pe-4 fw-semibold on')][normalize-space()='PLUS'])[1]")
+		private WebElement credit_Type_MINUS_filter;
+		
+		public void Credit_Type_MINUS_filter() throws Exception{
+			wait.until(ExpectedConditions.visibilityOf(filterby_buttn)).click();
+			wait.until(ExpectedConditions.visibilityOf(credit_Type_MINUS_filter)).click();
+			wait.until(ExpectedConditions.visibilityOf(apply_buttn)).click();
+		}
+		@FindBy(xpath = "(//div[contains(@class,'select__input-container css-19bb58m')])[2]")
+		private WebElement credit_by_filter;
+		
+		public void Created_BY_filter() throws Exception{
+			wait.until(ExpectedConditions.visibilityOf(filterby_buttn)).click();
+			String createdby = prop.getProperty("createdby");
+			wait.until(ExpectedConditions.visibilityOf(credit_by_filter)).click();
+			wait.until(ExpectedConditions.visibilityOf(credit_by_filter)).sendKeys(createdby + Keys.ENTER);
+			LOGGER.info(">> User selected the createdby:" + credit_by_filter.getText());
+			wait.until(ExpectedConditions.visibilityOf(apply_buttn)).click();
+		}
 }

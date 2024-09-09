@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Automation Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Sep 6, 2024 02:18:29 am</span></a>
+<a href="#"><span class="badge badge-primary">Sep 9, 2024 07:24:38 pm</span></a>
 </li>
 </ul>
 </div>
@@ -45,6 +45,11 @@
 <li class="nav-item dropdown" onclick="toggleView('test-view')">
 <a id="nav-test" class="dropdown-toggle" href="#">
 <span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
 </a>
 </li>
 <li class="nav-item dropdown" onclick="toggleView('category-view')">
@@ -71,7 +76,7 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -79,31 +84,31 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@smoke</a><a class="dropdown-item" href="#">@regression</a><a class="dropdown-item" href="#">@all</a><a class="dropdown-item" href="#">@Inventory</a><a class="dropdown-item" href="#">@StockAdjustment01</a>
+<a class="dropdown-item" href="#">@all</a><a class="dropdown-item" href="#">@regression</a><a class="dropdown-item" href="#">@Inventory</a><a class="dropdown-item" href="#">@StockAdjustment13</a><a class="dropdown-item" href="#">@smoke</a>
 </ul>
 </li>
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="pass" test-id="1"
+        <li class="test-item"  status="fail" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">Inventory</p>
             <p class="text-sm">
-              <span>2:18:29 am</span> / <span>00:00:20:882</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>7:24:39 pm</span> / <span>00:00:14:278</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Inventory</h5>
-<span class='badge badge-success'>09.06.2024 2:18:29 am</span>
-<span class='badge badge-danger'>09.06.2024 2:18:50 am</span>
-<span class='badge badge-default'>00:00:20:882</span>
+<h5 class="test-status text-fail">Inventory</h5>
+<span class='badge badge-success'>09.09.2024 7:24:39 pm</span>
+<span class='badge badge-danger'>09.09.2024 7:24:54 pm</span>
+<span class='badge badge-default'>00:00:14:278</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -116,10 +121,13 @@
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>T_StockAdjustment01_Verify the Inventory01 feature Stock Adjustments page</div>
+        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>T_StockAdjustment13_To verify the Stock Adjustment filter Created By drop down</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
       </div>
     </div>
-        <div class="collapse">
+        <div class="">
           <div class="card-body">
               <div class="step pass-bg" title="Stepdefinitions.Members.Admin_logged_in_with_valid_credentials()">
                 <span>Given Admin logged in with valid credentials</span>
@@ -141,9 +149,59 @@
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="Stepdefinitions.Inventory.Stock_Adjustments_page_should_display_successfully()">
-                <span>Then Stock Adjustments page should display successfully</span>
+              <div class="step fail-bg" title="Stepdefinitions.Inventory.User_filter_the_Stock_adjustment_list_Created_By()">
+                <span>And User filter the Stock Adjustments list Created By</span>
       <div>
+        <textarea disabled class="code-block">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=126.0.6478.114)
+Build info: version: '4.20.0', revision: '866c76ca80'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-119-generic', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4dbd0b72fac3d829199bcb73ea75b2b6, sendKeysToElement {value=[Ljava.lang.CharSequence;@4cc01c7f, id=f.CD98498F75C45905DAC0334D76CF3E44.d.096DC4C9091AE69D0BC0DC1AF6384FBF.e.116}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.114, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:46547}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:46547/devtoo..., se:cdpVersion: 126.0.6478.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on linux (4dbd0b72fac3d829199bcb73ea75b2b6)] -> xpath: (//div[contains(@class,'select__input-container css-19bb58m')])[2]]
+Session ID: 4dbd0b72fac3d829199bcb73ea75b2b6
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy38.sendKeys(Unknown Source)
+	at pageobjects.Inventorypage.Created_BY_filter(Inventorypage.java:2206)
+	at Stepdefinitions.Inventory.User_filter_the_Stock_adjustment_list_Created_By(Inventory.java:1372)
+	at ✽.User filter the Stock Adjustments list Created By(file:///home/coducer/Al_Arabia_PhaseII/Al_Arabia_Project/src/test/resources/Features/07_Inventory.feature:1237)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER_STEP">
+                <span>Hooks.Testhooks.addScreenshot(io.cucumber.java.Scenario)</span>
+      <div>T_StockAdjustment13_To verify the Stock Adjustment filter Created By drop down
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../embedded1.png' src="../embedded1.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step skip-bg" title="Stepdefinitions.Inventory.Filtered_Created_By_Stock_Adjustments_list_get_displayed_successfully()">
+                <span>Then Filtered Created By Stock Adjustments list get displayed successfully</span>
+      <div>Step skipped
       </div>
               </div>
           </div>
@@ -161,7 +219,59 @@
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-<div class="test-wrapper row view category-view attributes-view">
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">org.openqa.selenium.ElementNotInteractableException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.ElementNotInteractableException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:24:53 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='12'>And User filter the Stock Adjustments list Created By</a>
+<div class="">
+<span class="badge badge-default">Inventory.T_StockAdjustment13_To verify the Stock Adjustment filter Created By drop down.And User filter the Stock Adjustments list Created By</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view category-view attributes-view">
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
@@ -172,79 +282,7 @@
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@smoke</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@smoke</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:18:29 am</td>
-<td>
-<a href="#" class="linked" test-id='1' id='2'>T_StockAdjustment01_Verify the Inventory01 feature Stock Adjustments page</a>
-<div class="">
-<span class="badge badge-default">Inventory.T_StockAdjustment01_Verify the Inventory01 feature Stock Adjustments page</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@regression</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@regression</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:18:29 am</td>
-<td>
-<a href="#" class="linked" test-id='1' id='2'>T_StockAdjustment01_Verify the Inventory01 feature Stock Adjustments page</a>
-<div class="">
-<span class="badge badge-default">Inventory.T_StockAdjustment01_Verify the Inventory01 feature Stock Adjustments page</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
+<span class='badge log badge-danger'>1</span>
 </span>
 <p class="name">@all</p>
 <p class="duration text-sm">1 tests</p>
@@ -252,7 +290,7 @@
 <div class="test-contents d-none">
 <div class="info">
 <h4>@all</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -263,13 +301,13 @@
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:18:29 am</td>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:24:39 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>T_StockAdjustment01_Verify the Inventory01 feature Stock Adjustments page</a>
+<a href="#" class="linked" test-id='1' id='2'>T_StockAdjustment13_To verify the Stock Adjustment filter Created By drop down</a>
 <div class="">
-<span class="badge badge-default">Inventory.T_StockAdjustment01_Verify the Inventory01 feature Stock Adjustments page</span>
+<span class="badge badge-default">Inventory.T_StockAdjustment13_To verify the Stock Adjustment filter Created By drop down</span>
 </div>
 </td>
 </tr>
@@ -280,7 +318,43 @@
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>1</span>
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@regression</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@regression</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:24:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>T_StockAdjustment13_To verify the Stock Adjustment filter Created By drop down</a>
+<div class="">
+<span class="badge badge-default">Inventory.T_StockAdjustment13_To verify the Stock Adjustment filter Created By drop down</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
 </span>
 <p class="name">@Inventory</p>
 <p class="duration text-sm">1 tests</p>
@@ -288,7 +362,7 @@
 <div class="test-contents d-none">
 <div class="info">
 <h4>@Inventory</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -299,13 +373,13 @@
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:18:29 am</td>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:24:39 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>T_StockAdjustment01_Verify the Inventory01 feature Stock Adjustments page</a>
+<a href="#" class="linked" test-id='1' id='2'>T_StockAdjustment13_To verify the Stock Adjustment filter Created By drop down</a>
 <div class="">
-<span class="badge badge-default">Inventory.T_StockAdjustment01_Verify the Inventory01 feature Stock Adjustments page</span>
+<span class="badge badge-default">Inventory.T_StockAdjustment13_To verify the Stock Adjustment filter Created By drop down</span>
 </div>
 </td>
 </tr>
@@ -316,15 +390,15 @@
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log pass-bg'>1</span>
+<span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">@StockAdjustment01</p>
+<p class="name">@StockAdjustment13</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@StockAdjustment01</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
+<h4>@StockAdjustment13</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -335,13 +409,49 @@
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>02:18:29 am</td>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:24:39 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>T_StockAdjustment01_Verify the Inventory01 feature Stock Adjustments page</a>
+<a href="#" class="linked" test-id='1' id='2'>T_StockAdjustment13_To verify the Stock Adjustment filter Created By drop down</a>
 <div class="">
-<span class="badge badge-default">Inventory.T_StockAdjustment01_Verify the Inventory01 feature Stock Adjustments page</span>
+<span class="badge badge-default">Inventory.T_StockAdjustment13_To verify the Stock Adjustment filter Created By drop down</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@smoke</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@smoke</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>19:24:39 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>T_StockAdjustment13_To verify the Stock Adjustment filter Created By drop down</a>
+<div class="">
+<span class="badge badge-default">Inventory.T_StockAdjustment13_To verify the Stock Adjustment filter Created By drop down</span>
 </div>
 </td>
 </tr>
@@ -362,25 +472,25 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Sep 6, 2024 02:18:29 am</h3>
+<h3>Sep 9, 2024 07:24:38 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Sep 6, 2024 02:18:50 am</h3>
+<h3>Sep 9, 2024 07:24:54 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Features Passed</p>
-<h3>1</h3>
+<h3>0</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Features Failed</p>
-<h3>0</h3>
+<h3>1</h3>
 </div></div>
 </div>
 </div>
@@ -396,12 +506,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'>
-<b>1</b> features passed
+<div><small data-tooltip='0%'>
+<b>0</b> features passed
 </small>
 </div>
 <div>
-<small data-tooltip='0%'><b>0</b> features failed,
+<small data-tooltip='100%'><b>1</b> features failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -419,9 +529,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>1</b> scenarios passed</small></div>
+<div><small data-tooltip='0%'><b>0</b> scenarios passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> scenarios failed,
+<small data-tooltip='100%'><b>1</b> scenarios failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -439,10 +549,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>5</b> steps passed</small></div>
+<div><small data-tooltip='71%'><b>5</b> steps passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> steps failed,
-<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+<small data-tooltip='14%'><b>1</b> steps failed,
+<b>1</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -458,7 +568,7 @@
 </div></div>
 <script>
 var timeline = {
-"Inventory":20.882
+"Inventory":14.278
 };
 </script>
 <div class="row">
@@ -468,44 +578,44 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@smoke</td>
+<td>@all</td>
+<td>0</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
-<td>100%</td>
+<td>0%</td>
 </tr>
 <tr>
 <td>@regression</td>
+<td>0</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@all</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
+<td>0%</td>
 </tr>
 <tr>
 <td>@Inventory</td>
+<td>0</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
-<td>0</td>
-<td>100%</td>
+<td>0%</td>
 </tr>
 <tr>
-<td>@StockAdjustment01</td>
+<td>@StockAdjustment13</td>
+<td>0</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@smoke</td>
 <td>0</td>
-<td>100%</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
 </tr>
 </tbody>
 </table></div>
@@ -516,21 +626,21 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 1,
-failParent: 0,
+passParent: 0,
+failParent: 1,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
-passChild: 1,
-failChild: 0,
+passChild: 0,
+failChild: 1,
 warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
 passGrandChild: 5,
-failGrandChild: 0,
+failGrandChild: 1,
 warningGrandChild: 0,
-skipGrandChild: 0,
+skipGrandChild: 1,
 infoGrandChild: 0,
 eventsCount: 5,
 };

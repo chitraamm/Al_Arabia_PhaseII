@@ -40,7 +40,6 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 			<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
-			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
 		</ul>
 		<!-- report name -->
@@ -50,7 +49,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Sep 9, 2024 07:24:38 pm</span>
+			<span class='label blue darken-3 suite-start-time'>Sep 10, 2024 02:53:42 pm</span>
 			</a>
 		</ul>
 	</div>
@@ -65,7 +64,7 @@
 				<i class='material-icons'>warning</i> Status
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
-										<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -77,11 +76,12 @@
 				<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@all</a></li>
 					<li><a href='#'>@regression</a></li>
+					<li><a href='#'>@MaterialRequest</a></li>
 					<li><a href='#'>@Inventory</a></li>
-					<li><a href='#'>@StockAdjustment13</a></li>
-					<li><a href='#'>@smoke</a></li>
+					<li><a href='#'>@MaterialRequest02</a></li>
+					<li><a href='#'>@all</a></li>
+					<li><a href='#'>@sanity</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -118,11 +118,11 @@
 	<div class='subview-left left'>
 		<div class='view-summary'>
 			<ul id='test-collection' class='test-collection'>
-				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
 						<span class='test-name'>Inventory</span>
-						<span class='test-time'>Sep 9, 2024 07:24:39 pm</span>
-						<span class='test-status right fail'>Fail</span>
+						<span class='test-time'>Sep 10, 2024 02:53:43 pm</span>
+						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class="sr-filters bdd-filters">
@@ -133,95 +133,63 @@
 </div>
 	<div class='test-desc'>Admin, Manager and Supervisor can able to access the Inventory feature,only if they have roles access</div>
 
-<div class='scenario node' test-id='2' status='fail'>
+<div class='scenario outline node' test-id='2' status='pass'>
 
-	<span class='duration right label'>00 00 14.275</span>
+	<span class='duration right label'>00 00 24.304</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario: T_StockAdjustment13_To verify the Stock Adjustment filter Created By drop down</div>
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: T_MaterialRequest02_Create the New Material Request with valid inputs</div>
 	</div>
 	
+		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>successMessage1</td><td>successMessage2</td></tr><tr><td>LOADING...</td><td>Success Material Request added</td></tr></table></div>
 	
-		<div class='category-list'>
-				<span class='category label'>@all</span>
-				<span class='category label'>@smoke</span>
-				<span class='category label'>@regression</span>
-				<span class='category label'>@Inventory</span>
-				<span class='category label'>@StockAdjustment13</span>
-		</div>
 	
 	<ul class='steps'>
-		<li test-id='4' class='node given Pass' status='Pass'>
-			<div class="step-name" title="(Stepdefinitions.Members.Admin_logged_in_with_valid_credentials())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Admin logged in with valid credentials</div>
+		<li test-id='3' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>T_MaterialRequest02_Create the New Material Request with valid inputs</div>
 
+				<div class='category-list'>
+						<span class='category label'>@all</span>
+						<span class='category label'>@MaterialRequest</span>
+						<span class='category label'>@regression</span>
+						<span class='category label'>@Inventory</span>
+						<span class='category label'>@MaterialRequest02</span>
+						<span class='category label'>@sanity</span>
+				</div>
 
-		</li>
-		<li test-id='6' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(Stepdefinitions.Members.Al_Arabia_overall_dashboard_should_display())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Al-Arabia overall dashboard should display</div>
+			<ul class='gc steps'>
+				<li test-id='5' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="Stepdefinitions.Members.Admin_logged_in_with_valid_credentials()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Admin logged in with valid credentials</h6>
 
+				</li>
+				<li test-id='7' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="Stepdefinitions.Members.Al_Arabia_overall_dashboard_should_display()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Al-Arabia overall dashboard should display</h6>
 
-		</li>
-		<li test-id='8' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(Stepdefinitions.Inventory.Admin_or_user_clicks_the_Inventory_module())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Admin or user clicks the Inventory module</div>
+				</li>
+				<li test-id='9' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="Stepdefinitions.Inventory.Admin_or_user_clicks_the_Inventory_module()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Admin or user clicks the Inventory module</h6>
 
+				</li>
+				<li test-id='11' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="Stepdefinitions.Inventory.Admin_or_user_clicks_the_Material_Request_Tab()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Admin or user clicks the Material Request Tab</h6>
 
-		</li>
-		<li test-id='10' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(Stepdefinitions.Inventory.Admin_or_user_clicks_the_Stock_Adjustments_Tab())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Admin or user clicks the Stock Adjustments Tab</div>
+				</li>
+				<li test-id='13' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="Stepdefinitions.Inventory.Admin_or_user_clicks_the_New_Request_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Admin or user clicks the New Request button</h6>
 
+				</li>
+				<li test-id='15' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="Stepdefinitions.Inventory.Admin_or_user_enters_the_all_mandatory_fields_of_Material_Request()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Admin or user enters the all mandatory fields of Material Request</h6>
 
-		</li>
-		<li test-id='12' class='node and Fail' status='Fail'>
-			<div class="step-name" title="(Stepdefinitions.Inventory.User_filter_the_Stock_adjustment_list_Created_By())"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>And User filter the Stock Adjustments list Created By</div>
+				</li>
+				<li test-id='17' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="Stepdefinitions.Inventory.Admin_or_user_clicks_the_Add_Request_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Admin or user clicks the Add Request button</h6>
 
+				</li>
+				<li test-id='19' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="Stepdefinitions.Inventory.Particular_Request_gets_updated_successfully_with_either(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Particular Request gets created successfully with either "LOADING..." or "Success Material Request added"</h6>
 
-					<textarea disabled class="code-block">org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=126.0.6478.114)
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-119-generic', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4dbd0b72fac3d829199bcb73ea75b2b6, sendKeysToElement {value=[Ljava.lang.CharSequence;@4cc01c7f, id=f.CD98498F75C45905DAC0334D76CF3E44.d.096DC4C9091AE69D0BC0DC1AF6384FBF.e.116}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.114, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:46547}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:46547/devtoo..., se:cdpVersion: 126.0.6478.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on linux (4dbd0b72fac3d829199bcb73ea75b2b6)] -> xpath: (//div[contains(@class,'select__input-container css-19bb58m')])[2]]
-Session ID: 4dbd0b72fac3d829199bcb73ea75b2b6
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy38.sendKeys(Unknown Source)
-	at pageobjects.Inventorypage.Created_BY_filter(Inventorypage.java:2206)
-	at Stepdefinitions.Inventory.User_filter_the_Stock_adjustment_list_Created_By(Inventory.java:1372)
-	at ✽.User filter the Stock Adjustments list Created By(file:///home/coducer/Al_Arabia_PhaseII/Al_Arabia_Project/src/test/resources/Features/07_Inventory.feature:1237)
-</textarea>
-		</li>
-		<li test-id='13' class='node * Pass' status='Pass'>
-			<div class="step-name" title="(AFTER_STEP)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Hooks.Testhooks.addScreenshot(io.cucumber.java.Scenario)</div>
-
-
-					<div class="node-step">T_StockAdjustment13_To verify the Stock Adjustment filter Created By drop down</div>
-					<div class='screenshots'>
-						<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../embedded1.png' src='../embedded1.png'>
-					</div>
-		</li>
-		<li test-id='14' class='node then Skip' status='Skip'>
-			<div class="step-name" title="(Stepdefinitions.Inventory.Filtered_Created_By_Stock_Adjustments_list_get_displayed_successfully())"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then Filtered Created By Stock Adjustments list get displayed successfully</div>
-
-
-					<div class="node-step">Step skipped</div>
+				</li>
+			</ul>
 		</li>
 	</ul>
 </div>
@@ -257,12 +225,12 @@ Session ID: 4dbd0b72fac3d829199bcb73ea75b2b6
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='$0%'>
-                    <span class='strong'>0</span> features passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='$100%'>
+                    <span class='strong'>1</span> features passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>
-                    1</span> features failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> features failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped
                 </div>
@@ -275,12 +243,12 @@ Session ID: 4dbd0b72fac3d829199bcb73ea75b2b6
                     <canvas id='child-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='0%'>
-                    <span class='strong'>0</span> scenarios passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'>
+                    <span class='strong'>1</span> scenarios passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>
-                    1</span> scenarios failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> scenarios failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -295,14 +263,14 @@ Session ID: 4dbd0b72fac3d829199bcb73ea75b2b6
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='71%'>
-                    <span class='strong'>5</span> steps passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'>
+                    <span class='strong'>8</span> steps passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='14%'>
-                    1</span> steps failed, 
-                    <span class='strong tooltipped' data-position='top' data-tooltip='14%'>
-                    1</span> skipped, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> steps failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> others
                 </div>
@@ -340,15 +308,15 @@ Session ID: 4dbd0b72fac3d829199bcb73ea75b2b6
 			<ul id='category-collection' class='category-collection'>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@all</span>
+						<span class='category-name'>@regression</span>
 						<span class='category-status right'>
-						<span class='label fail'>1</span>
+						<span class='label pass'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
 							
-							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 						<div class='category-tests'>
@@ -362,9 +330,9 @@ Session ID: 4dbd0b72fac3d829199bcb73ea75b2b6
 								</thead>
 								<tbody>
 									<tr>
-										<td>Sep 9, 2024 07:24:39 pm</td>
-										<td class='linked' test-id='2'>T_StockAdjustment13_To verify the Stock Adjustment filter Created By drop down</td>
-										<td><span class='test-status Fail'>Fail</span></td>
+										<td>Sep 10, 2024 02:53:43 pm</td>
+										<td class='linked' test-id='3'>T_MaterialRequest02_Create the New Material Request with valid inputs</td>
+										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -373,15 +341,15 @@ Session ID: 4dbd0b72fac3d829199bcb73ea75b2b6
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@regression</span>
+						<span class='category-name'>@MaterialRequest</span>
 						<span class='category-status right'>
-						<span class='label fail'>1</span>
+						<span class='label pass'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
 							
-							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 						<div class='category-tests'>
@@ -395,9 +363,9 @@ Session ID: 4dbd0b72fac3d829199bcb73ea75b2b6
 								</thead>
 								<tbody>
 									<tr>
-										<td>Sep 9, 2024 07:24:39 pm</td>
-										<td class='linked' test-id='2'>T_StockAdjustment13_To verify the Stock Adjustment filter Created By drop down</td>
-										<td><span class='test-status Fail'>Fail</span></td>
+										<td>Sep 10, 2024 02:53:43 pm</td>
+										<td class='linked' test-id='3'>T_MaterialRequest02_Create the New Material Request with valid inputs</td>
+										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -408,13 +376,13 @@ Session ID: 4dbd0b72fac3d829199bcb73ea75b2b6
 					<div class='category-heading'>
 						<span class='category-name'>@Inventory</span>
 						<span class='category-status right'>
-						<span class='label fail'>1</span>
+						<span class='label pass'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
 							
-							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 						<div class='category-tests'>
@@ -428,9 +396,9 @@ Session ID: 4dbd0b72fac3d829199bcb73ea75b2b6
 								</thead>
 								<tbody>
 									<tr>
-										<td>Sep 9, 2024 07:24:39 pm</td>
-										<td class='linked' test-id='2'>T_StockAdjustment13_To verify the Stock Adjustment filter Created By drop down</td>
-										<td><span class='test-status Fail'>Fail</span></td>
+										<td>Sep 10, 2024 02:53:43 pm</td>
+										<td class='linked' test-id='3'>T_MaterialRequest02_Create the New Material Request with valid inputs</td>
+										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -439,15 +407,15 @@ Session ID: 4dbd0b72fac3d829199bcb73ea75b2b6
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@StockAdjustment13</span>
+						<span class='category-name'>@MaterialRequest02</span>
 						<span class='category-status right'>
-						<span class='label fail'>1</span>
+						<span class='label pass'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
 							
-							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 						<div class='category-tests'>
@@ -461,9 +429,9 @@ Session ID: 4dbd0b72fac3d829199bcb73ea75b2b6
 								</thead>
 								<tbody>
 									<tr>
-										<td>Sep 9, 2024 07:24:39 pm</td>
-										<td class='linked' test-id='2'>T_StockAdjustment13_To verify the Stock Adjustment filter Created By drop down</td>
-										<td><span class='test-status Fail'>Fail</span></td>
+										<td>Sep 10, 2024 02:53:43 pm</td>
+										<td class='linked' test-id='3'>T_MaterialRequest02_Create the New Material Request with valid inputs</td>
+										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -472,15 +440,15 @@ Session ID: 4dbd0b72fac3d829199bcb73ea75b2b6
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@smoke</span>
+						<span class='category-name'>@all</span>
 						<span class='category-status right'>
-						<span class='label fail'>1</span>
+						<span class='label pass'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
 							
-							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 						<div class='category-tests'>
@@ -494,9 +462,42 @@ Session ID: 4dbd0b72fac3d829199bcb73ea75b2b6
 								</thead>
 								<tbody>
 									<tr>
-										<td>Sep 9, 2024 07:24:39 pm</td>
-										<td class='linked' test-id='2'>T_StockAdjustment13_To verify the Stock Adjustment filter Created By drop down</td>
-										<td><span class='test-status Fail'>Fail</span></td>
+										<td>Sep 10, 2024 02:53:43 pm</td>
+										<td class='linked' test-id='3'>T_MaterialRequest02_Create the New Material Request with valid inputs</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@sanity</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Sep 10, 2024 02:53:43 pm</td>
+										<td class='linked' test-id='3'>T_MaterialRequest02_Create the New Material Request with valid inputs</td>
+										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -512,94 +513,7 @@ Session ID: 4dbd0b72fac3d829199bcb73ea75b2b6
 		</div>
 	</div>
 </div>
-<!-- category view --><div id='exception-view' class='view hide'>
-	<section id='controls'>
-		<div class='controls grey lighten-4'>
-			<!-- search -->
-			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
-				<a href="#" class='search-div'>
-				<i class='material-icons'>search</i> Search
-				</a>
-				<div class='input-field left hide'>
-					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
-				</div>
-			</div>
-			<!-- search -->
-		</div>
-	</section>
-	<div class='subview-left left'>
-		<div class='view-summary'>
-			<ul id='exception-collection' class='exception-collection'>
-				<li class='exception displayed active'>
-					<div class='exception-heading'>
-						<span class='exception-name'>org.openqa.selenium.ElementNotInteractableException</span>
-						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
-					</div>
-					<div class='exception-content hide'>
-						<div class='exception-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>StackTrace</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Sep 9, 2024 07:24:53 pm</td>
-										<td class='linked' test-id='12'>And User filter the Stock Adjustments list Created By</td>
-										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=126.0.6478.114)
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-119-generic', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [4dbd0b72fac3d829199bcb73ea75b2b6, sendKeysToElement {value=[Ljava.lang.CharSequence;@4cc01c7f, id=f.CD98498F75C45905DAC0334D76CF3E44.d.096DC4C9091AE69D0BC0DC1AF6384FBF.e.116}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.114, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:46547}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:46547/devtoo..., se:cdpVersion: 126.0.6478.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on linux (4dbd0b72fac3d829199bcb73ea75b2b6)] -> xpath: (//div[contains(@class,'select__input-container css-19bb58m')])[2]]
-Session ID: 4dbd0b72fac3d829199bcb73ea75b2b6
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy38.sendKeys(Unknown Source)
-	at pageobjects.Inventorypage.Created_BY_filter(Inventorypage.java:2206)
-	at Stepdefinitions.Inventory.User_filter_the_Stock_adjustment_list_Created_By(Inventory.java:1372)
-	at ✽.User filter the Stock Adjustments list Created By(file:///home/coducer/Al_Arabia_PhaseII/Al_Arabia_Project/src/test/resources/Features/07_Inventory.feature:1237)
-</textarea>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<div class='subview-right left'>
-		<div class='view-summary'>
-			<h5 class='exception-name'></h5>
-		</div>
-	</div>
-</div>
-<!-- exception view --><div id='dashboard-view' class='view hide'>
+<!-- category view --><div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
 		<h5>Dashboard</h5>
 
@@ -619,25 +533,25 @@ Session ID: 4dbd0b72fac3d829199bcb73ea75b2b6
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>7</div>
+					<div class='panel-lead'>8</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Sep 9, 2024 07:24:38 pm</div>
+					<div class='panel-lead'>Sep 10, 2024 02:53:42 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Sep 9, 2024 07:24:54 pm</div>
+			 		<div class='panel-lead'>Sep 10, 2024 02:54:07 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>00 00 15.139</div>
+					<div class='panel-lead'>00 00 25.157</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -653,48 +567,57 @@ Session ID: 4dbd0b72fac3d829199bcb73ea75b2b6
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>@all</td>
-							<td>0</td>
+							<td>@regression</td>
 							<td>1</td>
 							<td>0</td>
+							<td>0</td>
 							<td>
-									0%
+									100%
 							</td>
 						</tr>
 						<tr>
-							<td>@regression</td>
-							<td>0</td>
+							<td>@MaterialRequest</td>
 							<td>1</td>
 							<td>0</td>
+							<td>0</td>
 							<td>
-									0%
+									100%
 							</td>
 						</tr>
 						<tr>
 							<td>@Inventory</td>
-							<td>0</td>
 							<td>1</td>
 							<td>0</td>
+							<td>0</td>
 							<td>
-									0%
+									100%
 							</td>
 						</tr>
 						<tr>
-							<td>@StockAdjustment13</td>
-							<td>0</td>
+							<td>@MaterialRequest02</td>
 							<td>1</td>
 							<td>0</td>
+							<td>0</td>
 							<td>
-									0%
+									100%
 							</td>
 						</tr>
 						<tr>
-							<td>@smoke</td>
-							<td>0</td>
+							<td>@all</td>
 							<td>1</td>
 							<td>0</td>
+							<td>0</td>
 							<td>
-									0%
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@sanity</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
 							</td>
 						</tr>
 					</table>
@@ -709,34 +632,34 @@ Session ID: 4dbd0b72fac3d829199bcb73ea75b2b6
 		<script>
 			var statusGroup = {
                 parentCount: 1,
-				passParent: 0,
-				failParent: 1,
+				passParent: 1,
+				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
 				childCount: 1,
-				passChild: 0,
-				failChild: 1,
+				passChild: 1,
+				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				grandChildCount: 7,
-				passGrandChild: 5,
-				failGrandChild: 1,
+				grandChildCount: 8,
+				passGrandChild: 8,
+				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 1,
+				skipGrandChild: 0,
 				infoGrandChild: 0,
 			};
 			</script>
 		
 		<script>
 			var timeline = {
-			        "Inventory":14.278
+			        "Inventory":24.308
 			};
 		</script>
 		

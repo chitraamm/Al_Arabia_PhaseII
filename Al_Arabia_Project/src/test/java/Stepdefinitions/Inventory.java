@@ -337,10 +337,10 @@ public class Inventory extends Base {
     public void Admin_or_user_clicks_the_New_Request_button() throws Exception{
 		inventorypage.New_Request_Button();
     }
-//    @And("Admin or user enters the all mandatory fields of Material Request")
-//    public void Admin_or_user_enters_the_all_mandatory_fields_of_Material_Request() throws Exception{
-//		inventorypage.Enter_Mandatory_fieldsof_New_Request();
-//    }
+    @And("Admin or user enters the all mandatory fields of Material Request")
+    public void Admin_or_user_enters_the_all_mandatory_fields_of_Material_Request() throws Exception{
+		inventorypage.Enter_Mandatory_fieldsof_New_Request();
+    }
     @And("Admin or user clicks the Add Request button")
     public void Admin_or_user_clicks_the_Add_Request_button() throws Exception{
 		inventorypage.Click_Add_Request_button();
@@ -1256,8 +1256,8 @@ public class Inventory extends Base {
     public void Admin_or_user_enters_the_all_mandatory_fields_of_Stock_Adjustments() throws Exception{
 		inventorypage.Enter_Mandatory_fieldsof_Stock_Adjustments();
     }
-    @And("Admin or user clicks the Add Stock Adjustments button")
-    public void Admin_or_user_clicks_the_Add_Stock_Adjustments_button() throws Exception{
+    @And("Admin or user clicks the Add Stock Adjustment button")
+    public void Admin_or_user_clicks_the_Add_Stock_Adjustment_button() throws Exception{
 		inventorypage.Add_Stock_Adjustments_Button();
     }
 	@Then("^Particular Stock Adjustment gets created successfully with either \"([^\"]*)\" or \"([^\"]*)\"$")
@@ -1265,7 +1265,7 @@ public class Inventory extends Base {
 			String expectedMessage2) throws Exception {
 		String actualMessage = inventorypage.inventory_create_Success_display();
 		String normalizedActualMessage = normalizeWhitespace(actualMessage);
-		System.out.println(">> User or Admin got the Damage Return received from Supplier gets created success message successfully: " + actualMessage);
+		System.out.println(">> User or Admin Stock Adjustment gets created success message successfully: " + actualMessage);
 
 		boolean matchesMessage1 = normalizedActualMessage.equals(normalizeWhitespace(expectedMessage1));
 		boolean matchesMessage2 = normalizedActualMessage.equals(normalizeWhitespace(expectedMessage2));
@@ -1373,6 +1373,14 @@ public class Inventory extends Base {
 }
 	@Then("Filtered Created By Stock Adjustments list get displayed successfully")
 	public void Filtered_Created_By_Stock_Adjustments_list_get_displayed_successfully() throws Exception {
+		inventorypage.Stockadjustment_filtered_result_display();
+}
+	@And("User clicks reset button of filter")
+	public void User_clicks_reset_button_of_filter() throws Exception {
+		inventorypage.Reset_button();
+}
+	@Then("Filters should be got Reset and Stock Adjustment list get displayed successfully")
+	public void Filters_should_be_got_Reset_and_Stock_Adjustment_list_get_displayed_successfully() throws Exception {
 		inventorypage.Stockadjustment_filtered_result_display();
 }
 }

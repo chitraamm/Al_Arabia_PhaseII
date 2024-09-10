@@ -575,45 +575,45 @@ public class Inventorypage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(material_request)).isDisplayed();
 		wait.until(ExpectedConditions.visibilityOf(newrequest_button)).click();
 	}
-////	@FindBy(xpath = "//h5[normalize-space()='New Request']")
-////	private WebElement New_Request_heading;
-////	@FindBy(id = "react-select-3-input")
-////	private WebElement requestby;
-////	
-////	@FindBy(xpath = "(//h6[contains(@class,'m-0 fw-normal')][normalize-space()='New Request'])[1]")
-////	private WebElement billboard_Id;
-////	
-////	@FindBy(xpath = "//input[@placeholder='Enter Location']")
-////	private WebElement city;
-////	
-////	@FindBy(id = "react-select-4-input")
-////	private WebElement request_stock_code;
-////	
-////	@FindBy(id = "Save")
-////	private WebElement request_save;
-//	
-//	public void Enter_Mandatory_fieldsof_New_Request()throws Exception{
-//		wait.until(ExpectedConditions.visibilityOf(New_Request_heading)).isDisplayed();
-//		String RequestBy = prop.getProperty("requestbyuser");
-//		wait.until(ExpectedConditions.visibilityOf(requestby)).sendKeys(RequestBy);
-//		Thread.sleep(3000);
-//        act.moveToElement(requestby).click().sendKeys(""+Keys.ENTER).perform(); 
-//		
-//        Thread.sleep(2000);
-//		wait.until(ExpectedConditions.visibilityOf(requestby)).isDisplayed();
-//        String Cityname = prop.getProperty("cityname");
-//        Thread.sleep(3000);
-//
-//        wait.until(ExpectedConditions.visibilityOf(city)).sendKeys(Cityname+Keys.DOWN);
-//        
-//		Thread.sleep(1000);
-//        wait.until(ExpectedConditions.visibilityOf(city)).isDisplayed();
-//		Thread.sleep(2000);
-//		act.moveToElement(stock_code).click().sendKeys(""+Keys.ENTER).perform();
-//		
-//		wait.until(ExpectedConditions.visibilityOf(stock_code)).isDisplayed();
-//		wait.until(ExpectedConditions.visibilityOf(request_save)).click();
-//	}
+	@FindBy(xpath = "//h5[normalize-space()='New Request']")
+	private WebElement New_Request_heading;
+	@FindBy(id = "react-select-3-input")
+	private WebElement requestby;
+	
+	@FindBy(xpath = "(//h6[contains(@class,'m-0 fw-normal')][normalize-space()='New Request'])[1]")
+	private WebElement billboard_Id;
+	
+	@FindBy(xpath = "//input[@placeholder='Enter Location']")
+	private WebElement city;
+	
+	@FindBy(id = "react-select-4-input")
+	private WebElement request_stock_code;
+	
+	@FindBy(id = "Save")
+	private WebElement request_save;
+	
+	public void Enter_Mandatory_fieldsof_New_Request()throws Exception{
+		wait.until(ExpectedConditions.visibilityOf(New_Request_heading)).isDisplayed();
+		String RequestBy = prop.getProperty("requestbyuser");
+		wait.until(ExpectedConditions.visibilityOf(requestby)).sendKeys(RequestBy);
+		Thread.sleep(3000);
+        act.moveToElement(requestby).click().sendKeys(""+Keys.ENTER).perform(); 
+		
+        Thread.sleep(2000);
+		wait.until(ExpectedConditions.visibilityOf(requestby)).isDisplayed();
+        String Cityname = prop.getProperty("cityname");
+        Thread.sleep(3000);
+
+        wait.until(ExpectedConditions.visibilityOf(city)).sendKeys(Cityname+Keys.DOWN);
+        
+		Thread.sleep(1000);
+        wait.until(ExpectedConditions.visibilityOf(city)).isDisplayed();
+		Thread.sleep(2000);
+		act.moveToElement(stock_code).click().sendKeys(""+Keys.ENTER).perform();
+		
+		wait.until(ExpectedConditions.visibilityOf(stock_code)).isDisplayed();
+		wait.until(ExpectedConditions.visibilityOf(request_save)).click();
+	}
 	@FindBy(id = "Add Request")
 	private WebElement add_request;
 	public void Click_Add_Request_button()throws Exception{
@@ -1988,16 +1988,16 @@ public class Inventorypage extends Base {
 			wait.until(ExpectedConditions.visibilityOf(new_stock_adjustmentbuttn)).isDisplayed();
 			wait.until(ExpectedConditions.visibilityOf(new_stock_adjustmentbuttn)).click();
 		}
-//		@FindBy(id = "react-select-3-input")
-//		private WebElement supplier_name_select;
-//		@FindBy(xpath = "//input[@name='delivery_no']")
-//		private WebElement delivery_date;
-	//	
-//		@FindBy(xpath = "//h5[normalize-space()='New Replace']")
-//		private WebElement newreplace_pagesupplr;
-	//	
-//		@FindBy(xpath = "//span[normalize-space()='3']")
-//		private WebElement date_selctd;
+		@FindBy(xpath = "//h5[normalize-space()='Stock Adjustment']")
+		private WebElement stockadjmnt_page;
+		@FindBy(xpath = "//div[@class='select__input-container css-19bb58m']")
+		private WebElement stockcodedropdown;
+		
+		@FindBy(xpath = "//input[@name='quantity']")
+		private WebElement quantitystockadjstmnt;
+		
+		@FindBy(xpath = "//textarea[@name='description']")
+		private WebElement Descriptions;
 	//	
 //		@FindBy(id = "react-select-4-input")
 //		private WebElement id_billboard;
@@ -2012,64 +2012,69 @@ public class Inventorypage extends Base {
 //		private WebElement supplierReturn_save;
 	//	
 		public void Enter_Mandatory_fieldsof_Stock_Adjustments()throws Exception{
-			
-			wait.until(ExpectedConditions.visibilityOf(newreplace_pagesupplr)).isDisplayed();
-			String suppliername = prop.getProperty("suppliername");
-			wait.until(ExpectedConditions.visibilityOf(supplier_name_select)).sendKeys(suppliername);
-		 	Thread.sleep(1000);
-			act.moveToElement(supplier_name_select).click().sendKeys(""+Keys.ENTER+Keys.ARROW_RIGHT).perform();
-			
-		 	Thread.sleep(1000);
-			wait.until(ExpectedConditions.visibilityOf(supplier_name)).isDisplayed();
-			wait.until(ExpectedConditions.visibilityOf(delivery_date)).click();
-			wait.until(ExpectedConditions.visibilityOf(date_selctd)).click();
-
-
-//			wait.until(ExpectedConditions.visibilityOf(delivery_date)).isDisplayed();
-//		 	Thread.sleep(4000);
-//			act.moveToElement(id_billboard).click().sendKeys(""+Keys.ENTER).perform();
 		 	Thread.sleep(4000);
-			wait.until(ExpectedConditions.visibilityOf(delivery_date)).isDisplayed();
-			String billboardid = prop.getProperty("billboardid");
-			wait.until(ExpectedConditions.visibilityOf(id_billboard)).sendKeys(billboardid);
-		 	Thread.sleep(5000);
-			act.moveToElement(id_billboard).click().sendKeys(""+Keys.ENTER+Keys.ARROW_RIGHT).perform();
-		
-			 wait.until(ExpectedConditions.visibilityOf(Return_stock_code)).isDisplayed();
-				Thread.sleep(2000);
-				act.moveToElement(Return_stock_code).click().sendKeys(""+Keys.ENTER).perform();
-				
-				Thread.sleep(3000);
-				wait.until(ExpectedConditions.visibilityOf(Return_stock_code)).isDisplayed();
-				String QTY =prop.getProperty("QTY");
-				Thread.sleep(7000);
-		        act.moveToElement(qty).click().sendKeys(""+(QTY)).perform();
-				
-		        Thread.sleep(3000);
-				wait.until(ExpectedConditions.visibilityOf(qty)).isDisplayed();
-				String Dt =prop.getProperty("Dt");
-				Thread.sleep(7000);
-		        act.moveToElement(Dttype).click().sendKeys(""+(Dt)).perform();
-				
-		        
-		        
-		        Thread.sleep(4000);
-		        wait.until(ExpectedConditions.visibilityOf(qty)).isDisplayed();
-//		        String defect_type = prop.getProperty("Defecttype");
-//				Thread.sleep(5000);
-//				wait.until(ExpectedConditions.visibilityOf(Defecttype)).sendKeys(defect_type);
-				act.moveToElement(Defecttype).click().sendKeys(""+Keys.ENTER).perform();
-		        
-		        Thread.sleep(2000);
-//			act.moveToElement(Return_save).click().perform();
-//			
-//			act.moveToElement(add_Return).click().perform();
+			wait.until(ExpectedConditions.visibilityOf(stockadjmnt_page)).isDisplayed();
+			act.moveToElement(stockcodedropdown).click().sendKeys(""+Keys.ENTER).perform();
+			
+		 	Thread.sleep(1000);
+			wait.until(ExpectedConditions.visibilityOf(stockcodedropdown)).isDisplayed();
+			String quantityofstockadjstmnt = prop.getProperty("quantityofstockadjstmnt");
+			wait.until(ExpectedConditions.visibilityOf(quantitystockadjstmnt)).isDisplayed();
+		 	Thread.sleep(3000);
+            act.moveToElement(quantitystockadjstmnt).click().sendKeys(""+(quantityofstockadjstmnt)).perform();
+            
+            Thread.sleep(1000);
+			wait.until(ExpectedConditions.visibilityOf(quantitystockadjstmnt)).isDisplayed();
+			String descrptns = prop.getProperty("descrptns");
+			wait.until(ExpectedConditions.visibilityOf(Descriptions)).isDisplayed();
+		 	Thread.sleep(3000);
+            act.moveToElement(Descriptions).click().sendKeys(""+(descrptns)).perform();
+//
+////			wait.until(ExpectedConditions.visibilityOf(delivery_date)).isDisplayed();
+////		 	Thread.sleep(4000);
+////			act.moveToElement(id_billboard).click().sendKeys(""+Keys.ENTER).perform();
+//		 	Thread.sleep(4000);
+//			wait.until(ExpectedConditions.visibilityOf(delivery_date)).isDisplayed();
+//			String billboardid = prop.getProperty("billboardid");
+//			wait.until(ExpectedConditions.visibilityOf(id_billboard)).sendKeys(billboardid);
+//		 	Thread.sleep(5000);
+//			act.moveToElement(id_billboard).click().sendKeys(""+Keys.ENTER+Keys.ARROW_RIGHT).perform();
+//		
+//			 wait.until(ExpectedConditions.visibilityOf(Return_stock_code)).isDisplayed();
+//				Thread.sleep(2000);
+//				act.moveToElement(Return_stock_code).click().sendKeys(""+Keys.ENTER).perform();
+//				
+//				Thread.sleep(3000);
+//				wait.until(ExpectedConditions.visibilityOf(Return_stock_code)).isDisplayed();
+//				String QTY =prop.getProperty("QTY");
+//				Thread.sleep(7000);
+//		        act.moveToElement(qty).click().sendKeys(""+(QTY)).perform();
+//				
+//		        Thread.sleep(3000);
+//				wait.until(ExpectedConditions.visibilityOf(qty)).isDisplayed();
+//				String Dt =prop.getProperty("Dt");
+//				Thread.sleep(7000);
+//		        act.moveToElement(Dttype).click().sendKeys(""+(Dt)).perform();
+//				
+//		        
+//		        
+//		        Thread.sleep(4000);
+//		        wait.until(ExpectedConditions.visibilityOf(qty)).isDisplayed();
+////		        String defect_type = prop.getProperty("Defecttype");
+////				Thread.sleep(5000);
+////				wait.until(ExpectedConditions.visibilityOf(Defecttype)).sendKeys(defect_type);
+//				act.moveToElement(Defecttype).click().sendKeys(""+Keys.ENTER).perform();
+//		        
+//		        Thread.sleep(2000);
+////			act.moveToElement(Return_save).click().perform();
+////			
+////			act.moveToElement(add_Return).click().perform();
 		}
-		@FindBy(id = "Add Request")
+		@FindBy(xpath = "//span[normalize-space()='Add Stock Adjustment']")
 		private WebElement add_Stock_Adjustments;
 		public void Add_Stock_Adjustments_Button()throws Exception{
 
-			wait.until(ExpectedConditions.visibilityOf(add_Stock_Adjustments)).isDisplayed();
+			wait.until(ExpectedConditions.visibilityOf(Descriptions)).isDisplayed();
 			wait.until(ExpectedConditions.visibilityOf(add_Stock_Adjustments)).click();
 		}
 		
@@ -2154,7 +2159,7 @@ public class Inventorypage extends Base {
 		@FindBy(xpath = "(//h6[contains(@class,'m-0 by fw-normal')][normalize-space()='Filter By'])[1]")
 		private WebElement filterby_buttn;
 		
-		@FindBy(xpath = "(//button[contains(@type,'submit')][normalize-space()='Apply'])[1]")
+		@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[2]/div/div[2]/div[1]/div[3]/div/div[2]/div/div[2]/div/div[5]/button[2]")
 		private WebElement apply_buttn;
 		
 		public void Stock_code_filter() throws Exception{
@@ -2202,9 +2207,21 @@ public class Inventorypage extends Base {
 		public void Created_BY_filter() throws Exception{
 			wait.until(ExpectedConditions.visibilityOf(filterby_buttn)).click();
 			String createdby = prop.getProperty("createdby");
-			wait.until(ExpectedConditions.visibilityOf(credit_by_filter)).click();
-			wait.until(ExpectedConditions.visibilityOf(credit_by_filter)).sendKeys(createdby + Keys.ENTER);
+			wait.until(ExpectedConditions.visibilityOf(credit_by_filter)).isDisplayed();
+			Thread.sleep(5000);
+			act.moveToElement(credit_by_filter).click().sendKeys(""+createdby);
+			Thread.sleep(2000);
+			act.moveToElement(credit_by_filter).sendKeys(Keys.ENTER).perform();
 			LOGGER.info(">> User selected the createdby:" + credit_by_filter.getText());
 			wait.until(ExpectedConditions.visibilityOf(apply_buttn)).click();
 		}
+		@FindBy(xpath = "(//img[contains(@class,'pointer')])[1]")
+		private WebElement reset;
+		public void Reset_button() throws Exception{
+			Thread.sleep(2000);
+			wait.until(ExpectedConditions.visibilityOf(filterby_buttn)).click();
+			wait.until(ExpectedConditions.visibilityOf(reset)).isDisplayed();
+		}
+		
+		
 }

@@ -296,10 +296,11 @@ Then The Download pop up get closed successfully and display the Material Reques
 #Scenario Outline: T_MaterialRequest13_To verify Purchase edit of any field
 #Given Admin logged in with valid credentials
 #When Al-Arabia overall dashboard should display
-#And Admin or user clicks the Inventory module  
-#And User click on edit icon in all Material page
-#And User edit the City name
-#And User Click on Update Material button
+#And Admin or user clicks the Inventory module 
+#And Admin or user clicks the Material Request Tab 
+#And User click on edit icon in Material Request page
+#And User edit the Requested Quantity
+#And User Click on Update Request button
 #Then Particular Material gets updated successfully with either "<successMessage1>" or "<successMessage2>"
   #Examples:
       #| successMessage1       | successMessage2                |

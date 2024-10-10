@@ -101,7 +101,7 @@ public class Ticketspage extends Base {
 		} else {
 			System.out.println("Element is not displayed");
 		}
-		LOGGER.info(">> Admin/User clicked new billboard btn");
+		LOGGER.info(">> Admin/User clicked new ticket btn");
 	}
 
 	@FindBy(id = "react-select-15-input")

@@ -2,20 +2,19 @@ Feature: Master
 Admin, Manager and Supervisor can able to access the Master feature,only if they have roles access
 
 @Master @Master01 @smoke @regression @all
-Scenario Outline: T001_Verify Master page
+Scenario Outline: T001_Verify Master page display
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master module
-Then Al-Arabia Master page should display successfully
+Then Al Arabia Master page should display successfully
 
 @Master @Master02 @regression @sanity @all
 Scenario Outline: T002_Create the Ticket with valid inputs
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master module
-And Admin or user clicks the new Ticket button
-And Admin or user enters the all mandatory fields
-And Admin or user clicks the create Ticket
+And User click on New Department button
+And User Enter department name and clicks Add Department button
 Then Particular Ticket gets created successfully with either "<successMessage1>" or "<successMessage2>"
   Examples:
       | successMessage1       | successMessage2           |

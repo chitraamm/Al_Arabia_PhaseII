@@ -2077,11 +2077,6 @@ public class Inventorypage extends Base {
 			wait.until(ExpectedConditions.visibilityOf(Descriptions)).isDisplayed();
 			wait.until(ExpectedConditions.visibilityOf(add_Stock_Adjustments)).click();
 		}
-		
-		//updatepenng
-		
-		
-
 		@FindBy(xpath = "(//*[name()='svg'][@stroke='currentColor'])[7]")
 		private WebElement click_stock_adjustment_Edit;
 		@FindBy(xpath = "//a[normalize-space()='View']")

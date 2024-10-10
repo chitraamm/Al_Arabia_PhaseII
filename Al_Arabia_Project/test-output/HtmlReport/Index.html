@@ -40,7 +40,6 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 			<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
-			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
 		</ul>
 		<!-- report name -->
@@ -50,7 +49,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Oct 9, 2024 08:00:00 pm</span>
+			<span class='label blue darken-3 suite-start-time'>Oct 11, 2024 12:25:28 am</span>
 			</a>
 		</ul>
 	</div>
@@ -77,11 +76,11 @@
 				<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@all</a></li>
-					<li><a href='#'>@billboards</a></li>
-					<li><a href='#'>@sanity</a></li>
+					<li><a href='#'>@Master</a></li>
 					<li><a href='#'>@regression</a></li>
-					<li><a href='#'>@billboards02</a></li>
+					<li><a href='#'>@all</a></li>
+					<li><a href='#'>@sanity</a></li>
+					<li><a href='#'>@Master02</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -120,8 +119,8 @@
 			<ul id='test-collection' class='test-collection'>
 				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>billboards</span>
-						<span class='test-time'>Oct 9, 2024 08:00:01 pm</span>
+						<span class='test-name'>Master</span>
+						<span class='test-time'>Oct 11, 2024 12:25:29 am</span>
 						<span class='test-status right fail'>Fail</span>
 					</div>
 					<div class='test-content hide'>
@@ -131,27 +130,27 @@
 	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
 	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
 </div>
-	<div class='test-desc'>Admin, Manager and Supervisor can able to access the billboards feature, if they are get the roles access only</div>
+	<div class='test-desc'>Admin, Manager and Supervisor can able to access the Master feature,only if they have roles access</div>
 
 <div class='scenario outline node' test-id='2' status='fail'>
 
-	<span class='duration right label'>00 00 35.268</span>
+	<span class='duration right label'>00 00 15.129</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario Outline: T002_Create new Billboard with valid inputs</div>
+		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario Outline: T002_Create the Ticket with valid inputs</div>
 	</div>
 	
-		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>successMessage1</td><td>successMessage2</td></tr><tr><td>LOADING...</td><td>Success Billboard created</td></tr></table></div>
+		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>successMessage1</td><td>successMessage2</td></tr><tr><td>LOADING...</td><td>Success Ticket created</td></tr></table></div>
 	
 	
 	<ul class='steps'>
 		<li test-id='3' class='node scenario Fail' status='Fail'>
-			<div class="step-name" title="()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>T002_Create new Billboard with valid inputs</div>
+			<div class="step-name" title="()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>T002_Create the Ticket with valid inputs</div>
 
 				<div class='category-list'>
 						<span class='category label'>@all</span>
 						<span class='category label'>@regression</span>
-						<span class='category label'>@billboards02</span>
-						<span class='category label'>@billboards</span>
+						<span class='category label'>@Master</span>
+						<span class='category label'>@Master02</span>
 						<span class='category label'>@sanity</span>
 				</div>
 
@@ -165,126 +164,20 @@
 
 				</li>
 				<li test-id='9' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="Stepdefinitions.Billboards.Admin_or_user_clicks_the_billboards_module()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Admin or user clicks the billboards module</h6>
+					<h6 class="step-name" title="Stepdefinitions.Master.Admin_or_user_clicks_the_Master_module()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Admin or user clicks the Master module</h6>
 
 				</li>
 				<li test-id='11' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="Stepdefinitions.Billboards.Admin_or_user_clicks_the_new_billboard_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Admin or user clicks the new billboard button</h6>
+					<h6 class="step-name" title="Stepdefinitions.Master.User_click_on_New_Department_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User click on New Department button</h6>
 
 				</li>
-				<li test-id='13' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="Stepdefinitions.Billboards.Admin_or_user_enters_the_all_new_billboard_mandatory_fields()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Admin or user enters the all new billboard mandatory fields</h6>
+				<li test-id='13' class='gc and Fail' status='Fail'>
+					<h6 class="step-name" title=""><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>And User Enter department name and clicks Add Department button</h6>
 
+							<div class="node-step">Step undefined</div>
 				</li>
-				<li test-id='15' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="Stepdefinitions.Billboards.Admin_or_user_clicks_the_create_billboard()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Admin or user clicks the create billboard</h6>
-
-				</li>
-				<li test-id='17' class='gc and Fail' status='Fail'>
-					<h6 class="step-name" title="Stepdefinitions.Billboards.Particular_billboard_gets_created_successfully_with_either(java.lang.String,java.lang.String)"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>And Particular billboard gets created successfully with either "LOADING..." or "Success Billboard created"</h6>
-
-							<textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //div[contains(@class, 'toastpop') and contains(@class, 'position-relative')]' (tried for 10 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at pageobjects.Billboardspage.billboard_created_Success_display(Billboardspage.java:191)
-	at Stepdefinitions.Billboards.Particular_billboard_gets_created_successfully_with_either(Billboards.java:82)
-	at ✽.Particular billboard gets created successfully with either "LOADING..." or "Success Billboard created"(file:///home/coducer/Al_Arabia_PhaseII/Al_Arabia_Project/src/test/resources/Features/04_Billboard.feature:19)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class, 'toastpop') and contains(@class, 'position-relative')]"}
-  (Session info: chrome=126.0.6478.114)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-122-generic', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0a5629737baae154767367579ac0289e, findElement {value=//div[contains(@class, 'toastpop') and contains(@class, 'position-relative')], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.114, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:37549}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:37549/devtoo..., se:cdpVersion: 126.0.6478.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0a5629737baae154767367579ac0289e
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy39.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	at pageobjects.Billboardspage.billboard_created_Success_display(Billboardspage.java:191)
-	at Stepdefinitions.Billboards.Particular_billboard_gets_created_successfully_with_either(Billboards.java:82)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
-	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
-	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
-	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
-	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
-	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:81)
-	at io.cucumber.core.runner.TestStep.run(TestStep.java:53)
-	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
-	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
-	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:147)
-	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:162)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:145)
-	at io.cucumber.junit.Cucumber$StartAndFinishTestRun.evaluate(Cucumber.java:226)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)
-	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:757)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
-</textarea>
-				</li>
-				<li test-id='18' class='gc * Pass' status='Pass'>
-					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Hooks.Testhooks.addScreenshot(io.cucumber.java.Scenario)</h6>
-
-							<div class="node-step">T002_Create new Billboard with valid inputs</div>
-							<div class='screenshots'>
-								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../embedded1.png' src='../embedded1.png'>
-							</div>
-				</li>
-				<li test-id='19' class='gc then Skip' status='Skip'>
-					<h6 class="step-name" title="Stepdefinitions.Billboards.The_billboard_should_created_and_displayed_in_billboard_dashboard_successfully()"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then The billboard should created and displayed in billboard dashboard successfully</h6>
+				<li test-id='15' class='gc then Skip' status='Skip'>
+					<h6 class="step-name" title="Stepdefinitions.Tickets.Particular_Ticket_gets_created_successfully_with_either(java.lang.String,java.lang.String)"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then Particular Ticket gets created successfully with either "LOADING..." or "Success Ticket created"</h6>
 
 							<div class="node-step">Step skipped</div>
 				</li>
@@ -362,13 +255,13 @@ Session ID: 0a5629737baae154767367579ac0289e
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='77%'>
-                    <span class='strong'>7</span> steps passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='66%'>
+                    <span class='strong'>4</span> steps passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='11%'>
+                    <span class='strong tooltipped' data-position='top' data-tooltip='16%'>
                     1</span> steps failed, 
-                    <span class='strong tooltipped' data-position='top' data-tooltip='11%'>
+                    <span class='strong tooltipped' data-position='top' data-tooltip='16%'>
                     1</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> others
@@ -407,7 +300,7 @@ Session ID: 0a5629737baae154767367579ac0289e
 			<ul id='category-collection' class='category-collection'>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@all</span>
+						<span class='category-name'>@Master</span>
 						<span class='category-status right'>
 						<span class='label fail'>1</span>
 						</span>
@@ -429,74 +322,8 @@ Session ID: 0a5629737baae154767367579ac0289e
 								</thead>
 								<tbody>
 									<tr>
-										<td>Oct 9, 2024 08:00:01 pm</td>
-										<td class='linked' test-id='3'>T002_Create new Billboard with valid inputs</td>
-										<td><span class='test-status Fail'>Fail</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@billboards</span>
-						<span class='category-status right'>
-						<span class='label fail'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							
-							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Oct 9, 2024 08:00:01 pm</td>
-										<td class='linked' test-id='3'>T002_Create new Billboard with valid inputs</td>
-										<td><span class='test-status Fail'>Fail</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@sanity</span>
-						<span class='category-status right'>
-						<span class='label fail'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							
-							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Oct 9, 2024 08:00:01 pm</td>
-										<td class='linked' test-id='3'>T002_Create new Billboard with valid inputs</td>
+										<td>Oct 11, 2024 12:25:29 am</td>
+										<td class='linked' test-id='3'>T002_Create the Ticket with valid inputs</td>
 										<td><span class='test-status Fail'>Fail</span></td>
 									</tr>
 								</tbody>
@@ -528,8 +355,8 @@ Session ID: 0a5629737baae154767367579ac0289e
 								</thead>
 								<tbody>
 									<tr>
-										<td>Oct 9, 2024 08:00:01 pm</td>
-										<td class='linked' test-id='3'>T002_Create new Billboard with valid inputs</td>
+										<td>Oct 11, 2024 12:25:29 am</td>
+										<td class='linked' test-id='3'>T002_Create the Ticket with valid inputs</td>
 										<td><span class='test-status Fail'>Fail</span></td>
 									</tr>
 								</tbody>
@@ -539,7 +366,7 @@ Session ID: 0a5629737baae154767367579ac0289e
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@billboards02</span>
+						<span class='category-name'>@all</span>
 						<span class='category-status right'>
 						<span class='label fail'>1</span>
 						</span>
@@ -561,8 +388,74 @@ Session ID: 0a5629737baae154767367579ac0289e
 								</thead>
 								<tbody>
 									<tr>
-										<td>Oct 9, 2024 08:00:01 pm</td>
-										<td class='linked' test-id='3'>T002_Create new Billboard with valid inputs</td>
+										<td>Oct 11, 2024 12:25:29 am</td>
+										<td class='linked' test-id='3'>T002_Create the Ticket with valid inputs</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@sanity</span>
+						<span class='category-status right'>
+						<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Oct 11, 2024 12:25:29 am</td>
+										<td class='linked' test-id='3'>T002_Create the Ticket with valid inputs</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@Master02</span>
+						<span class='category-status right'>
+						<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Oct 11, 2024 12:25:29 am</td>
+										<td class='linked' test-id='3'>T002_Create the Ticket with valid inputs</td>
 										<td><span class='test-status Fail'>Fail</span></td>
 									</tr>
 								</tbody>
@@ -579,152 +472,7 @@ Session ID: 0a5629737baae154767367579ac0289e
 		</div>
 	</div>
 </div>
-<!-- category view --><div id='exception-view' class='view hide'>
-	<section id='controls'>
-		<div class='controls grey lighten-4'>
-			<!-- search -->
-			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
-				<a href="#" class='search-div'>
-				<i class='material-icons'>search</i> Search
-				</a>
-				<div class='input-field left hide'>
-					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
-				</div>
-			</div>
-			<!-- search -->
-		</div>
-	</section>
-	<div class='subview-left left'>
-		<div class='view-summary'>
-			<ul id='exception-collection' class='exception-collection'>
-				<li class='exception displayed active'>
-					<div class='exception-heading'>
-						<span class='exception-name'>org.openqa.selenium.TimeoutException</span>
-						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
-					</div>
-					<div class='exception-content hide'>
-						<div class='exception-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>StackTrace</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Oct 9, 2024 08:00:15 pm</td>
-										<td class='linked' test-id='17'>And Particular billboard gets created successfully with either "LOADING..." or "Success Billboard created"</td>
-										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //div[contains(@class, 'toastpop') and contains(@class, 'position-relative')]' (tried for 10 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at pageobjects.Billboardspage.billboard_created_Success_display(Billboardspage.java:191)
-	at Stepdefinitions.Billboards.Particular_billboard_gets_created_successfully_with_either(Billboards.java:82)
-	at ✽.Particular billboard gets created successfully with either "LOADING..." or "Success Billboard created"(file:///home/coducer/Al_Arabia_PhaseII/Al_Arabia_Project/src/test/resources/Features/04_Billboard.feature:19)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(@class, 'toastpop') and contains(@class, 'position-relative')]"}
-  (Session info: chrome=126.0.6478.114)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-122-generic', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0a5629737baae154767367579ac0289e, findElement {value=//div[contains(@class, 'toastpop') and contains(@class, 'position-relative')], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.114, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:37549}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:37549/devtoo..., se:cdpVersion: 126.0.6478.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0a5629737baae154767367579ac0289e
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy39.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	at pageobjects.Billboardspage.billboard_created_Success_display(Billboardspage.java:191)
-	at Stepdefinitions.Billboards.Particular_billboard_gets_created_successfully_with_either(Billboards.java:82)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
-	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
-	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
-	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
-	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
-	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:81)
-	at io.cucumber.core.runner.TestStep.run(TestStep.java:53)
-	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
-	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:136)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:136)
-	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:147)
-	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:162)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:145)
-	at io.cucumber.junit.Cucumber$StartAndFinishTestRun.evaluate(Cucumber.java:226)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:93)
-	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:757)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
-</textarea>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<div class='subview-right left'>
-		<div class='view-summary'>
-			<h5 class='exception-name'></h5>
-		</div>
-	</div>
-</div>
-<!-- exception view --><div id='dashboard-view' class='view hide'>
+<!-- category view --><div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
 		<h5>Dashboard</h5>
 
@@ -744,25 +492,25 @@ Session ID: 0a5629737baae154767367579ac0289e
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>9</div>
+					<div class='panel-lead'>6</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Oct 9, 2024 08:00:00 pm</div>
+					<div class='panel-lead'>Oct 11, 2024 12:25:28 am</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Oct 9, 2024 08:00:36 pm</div>
+			 		<div class='panel-lead'>Oct 11, 2024 12:25:44 am</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>00 00 36.013</div>
+					<div class='panel-lead'>00 00 16.095</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -778,25 +526,7 @@ Session ID: 0a5629737baae154767367579ac0289e
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>@all</td>
-							<td>0</td>
-							<td>1</td>
-							<td>0</td>
-							<td>
-									0%
-							</td>
-						</tr>
-						<tr>
-							<td>@billboards</td>
-							<td>0</td>
-							<td>1</td>
-							<td>0</td>
-							<td>
-									0%
-							</td>
-						</tr>
-						<tr>
-							<td>@sanity</td>
+							<td>@Master</td>
 							<td>0</td>
 							<td>1</td>
 							<td>0</td>
@@ -814,7 +544,25 @@ Session ID: 0a5629737baae154767367579ac0289e
 							</td>
 						</tr>
 						<tr>
-							<td>@billboards02</td>
+							<td>@all</td>
+							<td>0</td>
+							<td>1</td>
+							<td>0</td>
+							<td>
+									0%
+							</td>
+						</tr>
+						<tr>
+							<td>@sanity</td>
+							<td>0</td>
+							<td>1</td>
+							<td>0</td>
+							<td>
+									0%
+							</td>
+						</tr>
+						<tr>
+							<td>@Master02</td>
 							<td>0</td>
 							<td>1</td>
 							<td>0</td>
@@ -848,8 +596,8 @@ Session ID: 0a5629737baae154767367579ac0289e
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				grandChildCount: 9,
-				passGrandChild: 7,
+				grandChildCount: 6,
+				passGrandChild: 4,
 				failGrandChild: 1,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
@@ -861,7 +609,7 @@ Session ID: 0a5629737baae154767367579ac0289e
 		
 		<script>
 			var timeline = {
-			        "billboards":35.27
+			        "Master":15.132
 			};
 		</script>
 		

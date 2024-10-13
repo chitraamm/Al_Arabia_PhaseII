@@ -7,6 +7,7 @@ import java.util.Random;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -80,5 +81,26 @@ public class Masterpage extends Base {
 	public void New_Department_button_click() throws Exception {
 		Thread.sleep(5000);
 		wait.until(ExpectedConditions.visibilityOf(click_new_departmentbutton)).click();
+	}
+	@FindBy(id = "title")
+	private WebElement enter_department;
+	
+	@FindBy(xpath = "(//h6[normalize-space()='Add Department'])[1]")
+	private WebElement click_adddepartment;
+
+	public void Add_Department() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(enter_department));
+		String departmentname = prop.getProperty("departmentname");
+		wait.until(ExpectedConditions.visibilityOf(enter_department)).sendKeys(departmentname);
+		Thread.sleep(2000);
+		act.moveToElement(click_adddepartment).click().perform();
+	}
+	@FindBy(xpath = "//div[contains(@class, 'toastpop') and contains(@class, 'position-relative')]")
+	private WebElement department_created_Success_display;
+
+	public String department_created_Success_display() throws Exception {
+		WebElement successMessageElement = wait
+				.until(ExpectedConditions.visibilityOf(department_created_Success_display));
+		return successMessageElement.getText().trim();
 	}
 }

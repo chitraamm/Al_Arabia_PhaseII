@@ -15,11 +15,10 @@ When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master module
 And User click on New Department button
 And User Enter department name and clicks Add Department button
-Then Particular Ticket gets created successfully with either "<successMessage1>" or "<successMessage2>"
+Then Particular department gets created successfully with either "<successMessage1>" or "<successMessage2>"
   Examples:
-      | successMessage1       | successMessage2           |
-      | LOADING...            | Success Ticket created    | 
-      
+      | successMessage1       | successMessage2                       |
+      | LOADING...            | Success Added Department successfully |      
 @Master @Master03 @smoke @regression @all
 Scenario Outline: T003_ the Master feature search
 Given Admin logged in with valid credentials

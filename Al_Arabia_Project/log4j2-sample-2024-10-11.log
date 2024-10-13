@@ -1,0 +1,8 @@
+[INFO ] 2024-10-14 00:23:50.060 [main] Testhooks - Execution Started
+[INFO ] 2024-10-14 00:23:51.225 [main] Testhooks - Browser got launched
+[INFO ] 2024-10-14 00:23:53.492 [main] Testhooks - Navigated to url
+[INFO ] 2024-10-14 00:23:54.689 [main] Signinpage - User enters valid email address
+[INFO ] 2024-10-14 00:23:54.847 [main] Signinpage - User enters valid password
+[INFO ] 2024-10-14 00:23:54.966 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-10-14 00:23:54.966 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-10-14 00:23:57.934 [main] Memberspage - >> Admin/User got navigated to dashboard page

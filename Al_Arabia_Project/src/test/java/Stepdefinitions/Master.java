@@ -26,12 +26,12 @@ public class Master extends Base {
 		new Signinpage(driver);
 		LOGGER = LogManager.getLogger(Cleaning.class.getName());
 	}
-	@And("Admin or user clicks the Master module")
-	public void Admin_or_user_clicks_the_Master_module() throws Exception {
+	@And("Admin or user clicks the Master")
+	public void Admin_or_user_clicks_the_Master() throws Exception {
 		masterpage.Master_click();
 	}
-	@Then("Al Arabia Master page should display successfully")
-	public void Al_Arabia_Master_page_should_display_successfully() throws Exception {
+	@Then("Al Arabia Department page should display successfully")
+	public void Al_Arabia_Department_page_should_display_successfully() throws Exception {
 		masterpage.alldepartmentCount();
 	}
 	@And("User click on New Department button")
@@ -57,5 +57,66 @@ public class Master extends Base {
 	}
 	private String normalizeWhitespace(String input) {
 		return input.replaceAll("\\s+", " ").trim();
+	}
+	@And("Admin or user search the Department")
+	public void Admin_or_user_search_the_Department() throws Exception {
+		masterpage.Department_search_enter_text();
+	}
+	@Then("Searched Department details get displayed successfully")
+	public void Searched_Department_details_get_displayed_successfully() {
+		masterpage.DepartmentSearchedList();
+	}
+	@And("Admin or user sort the Department list recently updated")
+	public void Admin_or_user_sort_the_Department_list_recently_updated() throws Exception {
+		masterpage.Department_sort_recentlyupdated();
+	}
+	@Then("Recently updated Department list get displayed successfully")
+	public void Recently_updated_Department_list_get_displayed_successfully() throws Exception {
+		masterpage.Departmentlist();
+	}
+	@And("User sort the Department list Name A to Z")
+	public void User_sort_the_Department_list_Name_A_to_Z() throws Exception {
+		masterpage.Department_sortA_Z();
+	}
+	@Then("Department list get displayed successfully")
+	public void Department_list_get_displayed_successfully() throws Exception {
+		masterpage.Departmentlist();
+	}
+	@And("User sort the Department list Name Z to A")
+	public void User_sort_the_Department_list_Name_Z_to_A() throws Exception {
+		masterpage.Department_sortZ_A();
+	}
+	@Then("Department list Z to A get displayed successfully")
+	public void Department_list_Z_to_A_get_displayed_successfully() throws Exception {
+		masterpage.Departmentlist();
+	}
+	@And("User sort the Department list Recently Added")
+	public void User_sort_the_Department_list_Recently_Added() throws Exception {
+		masterpage.Department_sort_recentlyadded();
+	}
+	@Then("Recent Department list get displayed successfully")
+	public void Recent_Department_list_get_displayed_successfully() throws Exception {
+		masterpage.Departmentlist();
+	}
+	@And("User sort the Department list decending")
+	public void User_sort_the_Department_list_Decending() throws Exception {
+		masterpage.Department_DecendingDate();
+	}
+	@Then("Decending Department list get displayed successfully")
+	public void Decending_Department_list_get_displayed_successfully() throws Exception {
+		masterpage.Departmentlist();
+	}
+	@And("User click on kebab menu")
+	public void User_click_on_kebab_menu() throws Exception {
+		masterpage.kebabmenu();
+	}
+	@And("User selects Edit option")
+	public void User_selects_Edit_option() throws Exception {
+		masterpage.kebabmenu();
+		masterpage.selects_edit_department();
+	}
+	@And("User Updated Department")
+	public void User_Updated_Department () throws Exception {
+		masterpage.Updated_department();
 	}
 }

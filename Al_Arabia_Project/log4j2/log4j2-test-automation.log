@@ -1,302 +1,308 @@
-[INFO ] 2024-10-14 00:23:50.064 [main] Testhooks - Execution Started
-[INFO ] 2024-10-14 00:23:51.297 [main] Testhooks - Browser got launched
-[INFO ] 2024-10-14 00:23:53.424 [main] Testhooks - Navigated to url
-[INFO ] 2024-10-14 00:23:54.642 [main] Signinpage - User enters valid email address
-[INFO ] 2024-10-14 00:23:54.794 [main] Signinpage - User enters valid password
-[INFO ] 2024-10-14 00:23:54.913 [main] Signinpage - User clicks on signin button
-[INFO ] 2024-10-14 00:23:54.913 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-10-14 00:23:57.673 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-10-14 00:26:25.526 [main] Testhooks - Execution Started
-[INFO ] 2024-10-14 00:26:26.361 [main] Testhooks - Browser got launched
-[INFO ] 2024-10-14 00:26:27.788 [main] Testhooks - Navigated to url
-[INFO ] 2024-10-14 00:26:28.971 [main] Signinpage - User enters valid email address
-[INFO ] 2024-10-14 00:26:29.102 [main] Signinpage - User enters valid password
-[INFO ] 2024-10-14 00:26:29.206 [main] Signinpage - User clicks on signin button
-[INFO ] 2024-10-14 00:26:29.206 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-10-14 00:26:31.848 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-10-14 00:26:33.405 [main] Testhooks - Failed scenario screenshot got capturedT002_Create the Ticket with valid inputs
-[INFO ] 2024-10-14 00:28:08.184 [main] Testhooks - Execution Started
-[INFO ] 2024-10-14 00:28:09.011 [main] Testhooks - Browser got launched
-[INFO ] 2024-10-14 00:28:10.363 [main] Testhooks - Navigated to url
-[INFO ] 2024-10-14 00:28:11.557 [main] Signinpage - User enters valid email address
-[INFO ] 2024-10-14 00:28:11.686 [main] Signinpage - User enters valid password
-[INFO ] 2024-10-14 00:28:11.788 [main] Signinpage - User clicks on signin button
-[INFO ] 2024-10-14 00:28:11.788 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-10-14 00:28:14.504 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-10-14 00:52:00.163 [main] Testhooks - Execution Started
-[INFO ] 2024-10-14 00:52:01.388 [main] Testhooks - Browser got launched
-[INFO ] 2024-10-14 00:52:03.142 [main] Testhooks - Navigated to url
-[INFO ] 2024-10-14 00:52:04.364 [main] Signinpage - User enters valid email address
-[INFO ] 2024-10-14 00:52:04.503 [main] Signinpage - User enters valid password
-[INFO ] 2024-10-14 00:52:04.616 [main] Signinpage - User clicks on signin button
-[INFO ] 2024-10-14 00:52:04.617 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-10-14 00:52:08.062 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-10-14 00:55:59.434 [main] Testhooks - Execution Started
-[INFO ] 2024-10-14 00:56:00.374 [main] Testhooks - Browser got launched
-[INFO ] 2024-10-14 00:56:07.216 [main] Testhooks - Navigated to url
-[INFO ] 2024-10-14 00:56:08.439 [main] Signinpage - User enters valid email address
-[INFO ] 2024-10-14 00:56:08.582 [main] Signinpage - User enters valid password
-[INFO ] 2024-10-14 00:56:08.701 [main] Signinpage - User clicks on signin button
-[INFO ] 2024-10-14 00:56:08.702 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-10-14 00:56:14.926 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-10-14 00:58:08.701 [main] Testhooks - Execution Started
-[INFO ] 2024-10-14 00:58:09.581 [main] Testhooks - Browser got launched
-[INFO ] 2024-10-14 00:58:11.329 [main] Testhooks - Navigated to url
-[INFO ] 2024-10-14 00:58:12.543 [main] Signinpage - User enters valid email address
-[INFO ] 2024-10-14 00:58:12.685 [main] Signinpage - User enters valid password
-[INFO ] 2024-10-14 00:58:12.796 [main] Signinpage - User clicks on signin button
-[INFO ] 2024-10-14 00:58:12.796 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-10-14 00:58:15.587 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-10-14 01:01:10.702 [main] Testhooks - Execution Started
-[INFO ] 2024-10-14 01:01:11.752 [main] Testhooks - Browser got launched
-[INFO ] 2024-10-14 01:01:14.069 [main] Testhooks - Navigated to url
-[INFO ] 2024-10-14 01:01:15.286 [main] Signinpage - User enters valid email address
-[INFO ] 2024-10-14 01:01:15.425 [main] Signinpage - User enters valid password
-[INFO ] 2024-10-14 01:01:15.534 [main] Signinpage - User clicks on signin button
-[INFO ] 2024-10-14 01:01:15.534 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-10-14 01:01:18.091 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-10-14 01:03:35.477 [main] Testhooks - Execution Started
-[INFO ] 2024-10-14 01:03:36.375 [main] Testhooks - Browser got launched
-[INFO ] 2024-10-14 01:03:37.860 [main] Testhooks - Navigated to url
-[INFO ] 2024-10-14 01:03:39.082 [main] Signinpage - User enters valid email address
-[INFO ] 2024-10-14 01:03:39.223 [main] Signinpage - User enters valid password
-[INFO ] 2024-10-14 01:03:39.336 [main] Signinpage - User clicks on signin button
-[INFO ] 2024-10-14 01:03:39.337 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-10-14 01:03:42.145 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-10-14 01:04:19.916 [main] Testhooks - Execution Started
-[INFO ] 2024-10-14 01:04:20.898 [main] Testhooks - Browser got launched
-[INFO ] 2024-10-14 01:04:27.552 [main] Testhooks - Navigated to url
-[INFO ] 2024-10-14 01:04:28.773 [main] Signinpage - User enters valid email address
-[INFO ] 2024-10-14 01:04:28.906 [main] Signinpage - User enters valid password
-[INFO ] 2024-10-14 01:04:29.018 [main] Signinpage - User clicks on signin button
-[INFO ] 2024-10-14 01:04:29.019 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-10-14 01:04:31.688 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-10-14 01:04:33.435 [main] Testhooks - Failed scenario screenshot got capturedT002_Create the Ticket with valid inputs
-[INFO ] 2024-10-14 01:04:51.410 [main] Testhooks - Execution Started
-[INFO ] 2024-10-14 01:04:52.329 [main] Testhooks - Browser got launched
-[INFO ] 2024-10-14 01:04:53.857 [main] Testhooks - Navigated to url
-[INFO ] 2024-10-14 01:04:55.074 [main] Signinpage - User enters valid email address
-[INFO ] 2024-10-14 01:04:55.204 [main] Signinpage - User enters valid password
-[INFO ] 2024-10-14 01:04:55.315 [main] Signinpage - User clicks on signin button
-[INFO ] 2024-10-14 01:04:55.315 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-10-14 01:04:58.051 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-10-14 01:05:06.989 [main] Testhooks - Failed scenario screenshot got capturedT002_Create the Ticket with valid inputs
-[INFO ] 2024-10-14 01:30:44.247 [main] Testhooks - Execution Started
-[INFO ] 2024-10-14 01:30:45.118 [main] Testhooks - Browser got launched
-[INFO ] 2024-10-14 01:30:47.777 [main] Testhooks - Navigated to url
-[INFO ] 2024-10-14 01:30:48.994 [main] Signinpage - User enters valid email address
-[INFO ] 2024-10-14 01:30:49.130 [main] Signinpage - User enters valid password
-[INFO ] 2024-10-14 01:30:49.242 [main] Signinpage - User clicks on signin button
-[INFO ] 2024-10-14 01:30:49.242 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-10-14 01:30:51.819 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-10-14 01:31:00.672 [main] Testhooks - Failed scenario screenshot got capturedT002_Create the Ticket with valid inputs
-[INFO ] 2024-10-14 01:31:21.685 [main] Testhooks - Execution Started
-[INFO ] 2024-10-14 01:31:22.584 [main] Testhooks - Browser got launched
-[INFO ] 2024-10-14 01:31:24.835 [main] Testhooks - Navigated to url
-[INFO ] 2024-10-14 01:31:26.067 [main] Signinpage - User enters valid email address
-[INFO ] 2024-10-14 01:31:26.200 [main] Signinpage - User enters valid password
-[INFO ] 2024-10-14 01:31:26.320 [main] Signinpage - User clicks on signin button
-[INFO ] 2024-10-14 01:31:26.320 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-10-14 01:31:28.859 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-10-14 01:31:37.816 [main] Testhooks - Failed scenario screenshot got capturedT002_Create the Ticket with valid inputs
-[INFO ] 2024-10-14 01:34:29.258 [main] Testhooks - Execution Started
-[INFO ] 2024-10-14 01:34:30.108 [main] Testhooks - Browser got launched
-[INFO ] 2024-10-14 01:34:32.638 [main] Testhooks - Navigated to url
-[INFO ] 2024-10-14 01:34:33.860 [main] Signinpage - User enters valid email address
-[INFO ] 2024-10-14 01:34:34.000 [main] Signinpage - User enters valid password
-[INFO ] 2024-10-14 01:34:34.111 [main] Signinpage - User clicks on signin button
-[INFO ] 2024-10-14 01:34:34.111 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-10-14 01:34:38.713 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-10-14 01:34:47.599 [main] Testhooks - Failed scenario screenshot got capturedT002_Create the Ticket with valid inputs
-[INFO ] 2024-10-14 01:44:54.469 [main] Testhooks - Execution Started
-[INFO ] 2024-10-14 01:44:55.341 [main] Testhooks - Browser got launched
-[INFO ] 2024-10-14 01:44:57.252 [main] Testhooks - Navigated to url
-[INFO ] 2024-10-14 01:44:58.474 [main] Signinpage - User enters valid email address
-[INFO ] 2024-10-14 01:44:58.610 [main] Signinpage - User enters valid password
-[INFO ] 2024-10-14 01:44:58.723 [main] Signinpage - User clicks on signin button
-[INFO ] 2024-10-14 01:44:58.723 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-10-14 01:45:01.731 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-10-14 01:45:10.513 [main] Testhooks - Failed scenario screenshot got capturedT002_Create the Ticket with valid inputs
-[INFO ] 2024-10-14 01:45:30.036 [main] Testhooks - Execution Started
-[INFO ] 2024-10-14 01:45:31.027 [main] Testhooks - Browser got launched
-[INFO ] 2024-10-14 01:45:34.884 [main] Testhooks - Navigated to url
-[INFO ] 2024-10-14 01:45:36.109 [main] Signinpage - User enters valid email address
-[INFO ] 2024-10-14 01:45:36.266 [main] Signinpage - User enters valid password
-[INFO ] 2024-10-14 01:45:36.381 [main] Signinpage - User clicks on signin button
-[INFO ] 2024-10-14 01:45:36.382 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-10-14 01:45:39.003 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-10-14 15:48:14.873 [main] Testhooks - Execution Started
-[INFO ] 2024-10-14 15:48:15.843 [main] Testhooks - Browser got launched
-[INFO ] 2024-10-14 15:49:01.073 [main] Testhooks - Navigated to url
-[INFO ] 2024-10-14 15:49:22.901 [main] Testhooks - Execution Started
-[INFO ] 2024-10-14 15:49:23.808 [main] Testhooks - Browser got launched
-[INFO ] 2024-10-14 15:49:54.650 [main] Testhooks - Navigated to url
-[INFO ] 2024-10-14 15:50:05.728 [main] Testhooks - Execution Started
-[INFO ] 2024-10-14 15:50:06.858 [main] Testhooks - Browser got launched
-[INFO ] 2024-10-14 15:50:13.332 [main] Testhooks - Navigated to url
-[INFO ] 2024-10-14 15:50:14.558 [main] Signinpage - User enters valid email address
-[INFO ] 2024-10-14 15:50:14.707 [main] Signinpage - User enters valid password
-[INFO ] 2024-10-14 15:50:14.831 [main] Signinpage - User clicks on signin button
-[INFO ] 2024-10-14 15:50:14.831 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-10-14 15:50:17.372 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-10-14 15:50:37.655 [main] Testhooks - Execution Started
-[INFO ] 2024-10-14 15:50:38.528 [main] Testhooks - Browser got launched
-[INFO ] 2024-10-14 15:50:55.502 [main] Testhooks - Navigated to url
-[INFO ] 2024-10-14 15:52:46.830 [main] Testhooks - Execution Started
-[INFO ] 2024-10-14 15:52:47.726 [main] Testhooks - Browser got launched
-[INFO ] 2024-10-14 15:52:50.853 [main] Testhooks - Navigated to url
-[INFO ] 2024-10-14 15:52:52.077 [main] Signinpage - User enters valid email address
-[INFO ] 2024-10-14 15:52:52.211 [main] Signinpage - User enters valid password
-[INFO ] 2024-10-14 15:52:52.331 [main] Signinpage - User clicks on signin button
-[INFO ] 2024-10-14 15:52:52.332 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-10-14 15:52:55.305 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-10-14 15:52:57.252 [main] Ticketspage - >> Admin/User clicked new ticket btn
-[INFO ] 2024-10-14 15:55:08.899 [main] Testhooks - Execution Started
-[INFO ] 2024-10-14 15:55:09.798 [main] Testhooks - Browser got launched
-[INFO ] 2024-10-14 15:55:26.004 [main] Testhooks - Navigated to url
-[INFO ] 2024-10-14 15:55:27.219 [main] Signinpage - User enters valid email address
-[INFO ] 2024-10-14 15:55:27.356 [main] Signinpage - User enters valid password
-[INFO ] 2024-10-14 15:55:27.471 [main] Signinpage - User clicks on signin button
-[INFO ] 2024-10-14 15:55:27.471 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-10-14 15:55:39.221 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-10-14 15:55:40.449 [main] Ticketspage - >> Admin/User clicked new ticket btn
-[INFO ] 2024-10-14 15:56:38.097 [main] Testhooks - Execution Started
-[INFO ] 2024-10-14 15:56:39.030 [main] Testhooks - Browser got launched
-[INFO ] 2024-10-14 15:56:40.929 [main] Testhooks - Navigated to url
-[INFO ] 2024-10-14 15:57:06.278 [main] Testhooks - Execution Started
-[INFO ] 2024-10-14 15:57:07.177 [main] Testhooks - Browser got launched
-[INFO ] 2024-10-14 15:57:10.384 [main] Testhooks - Navigated to url
-[INFO ] 2024-10-14 15:57:11.594 [main] Signinpage - User enters valid email address
-[INFO ] 2024-10-14 15:57:11.731 [main] Signinpage - User enters valid password
-[INFO ] 2024-10-14 15:57:11.877 [main] Signinpage - User clicks on signin button
-[INFO ] 2024-10-14 15:57:11.878 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-10-14 15:57:14.672 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-10-14 15:57:16.052 [main] Ticketspage - >> Admin/User clicked new ticket btn
-[INFO ] 2024-10-14 15:58:57.912 [main] Testhooks - Execution Started
-[INFO ] 2024-10-14 15:58:58.760 [main] Testhooks - Browser got launched
-[INFO ] 2024-10-14 15:59:14.500 [main] Testhooks - Navigated to url
-[INFO ] 2024-10-14 16:58:59.607 [main] Testhooks - Execution Started
-[INFO ] 2024-10-14 16:59:00.512 [main] Testhooks - Browser got launched
-[INFO ] 2024-10-14 16:59:04.660 [main] Testhooks - Navigated to url
-[INFO ] 2024-10-14 16:59:05.888 [main] Signinpage - User enters valid email address
-[INFO ] 2024-10-14 16:59:06.042 [main] Signinpage - User enters valid password
-[INFO ] 2024-10-14 16:59:06.162 [main] Signinpage - User clicks on signin button
-[INFO ] 2024-10-14 16:59:06.163 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-10-14 16:59:09.581 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-10-14 16:59:36.126 [main] Testhooks - Execution Started
-[INFO ] 2024-10-14 16:59:36.965 [main] Testhooks - Browser got launched
-[INFO ] 2024-10-14 16:59:39.102 [main] Testhooks - Navigated to url
-[INFO ] 2024-10-14 16:59:40.313 [main] Signinpage - User enters valid email address
-[INFO ] 2024-10-14 16:59:40.447 [main] Signinpage - User enters valid password
-[INFO ] 2024-10-14 16:59:40.558 [main] Signinpage - User clicks on signin button
-[INFO ] 2024-10-14 16:59:40.558 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-10-14 16:59:43.366 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-10-14 16:59:44.713 [main] Masterpage - >> Admin/User clicked new department btn
-[INFO ] 2024-10-14 16:59:58.259 [main] Testhooks - Execution Started
-[INFO ] 2024-10-14 16:59:59.242 [main] Testhooks - Browser got launched
-[INFO ] 2024-10-14 17:00:05.900 [main] Testhooks - Navigated to url
-[INFO ] 2024-10-14 17:00:07.146 [main] Signinpage - User enters valid email address
-[INFO ] 2024-10-14 17:00:07.289 [main] Signinpage - User enters valid password
-[INFO ] 2024-10-14 17:00:07.419 [main] Signinpage - User clicks on signin button
-[INFO ] 2024-10-14 17:00:07.419 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-10-14 17:00:10.148 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-10-14 17:00:11.492 [main] Masterpage - >> Admin/User clicked new department btn
-[INFO ] 2024-10-14 17:00:21.880 [main] Testhooks - Execution Started
-[INFO ] 2024-10-14 17:00:22.846 [main] Testhooks - Browser got launched
-[INFO ] 2024-10-14 17:00:25.704 [main] Testhooks - Navigated to url
-[INFO ] 2024-10-14 17:00:26.922 [main] Signinpage - User enters valid email address
-[INFO ] 2024-10-14 17:00:27.068 [main] Signinpage - User enters valid password
-[INFO ] 2024-10-14 17:00:27.189 [main] Signinpage - User clicks on signin button
-[INFO ] 2024-10-14 17:00:27.189 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-10-14 17:00:30.171 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-10-14 17:00:32.235 [main] Testhooks - Failed scenario screenshot got capturedT006_To verify the Department feature sort Name - Z to A
-[INFO ] 2024-10-14 17:01:22.379 [main] Testhooks - Execution Started
-[INFO ] 2024-10-14 17:01:23.267 [main] Testhooks - Browser got launched
-[INFO ] 2024-10-14 17:01:25.931 [main] Testhooks - Navigated to url
-[INFO ] 2024-10-14 17:01:27.157 [main] Signinpage - User enters valid email address
-[INFO ] 2024-10-14 17:01:27.293 [main] Signinpage - User enters valid password
-[INFO ] 2024-10-14 17:01:27.415 [main] Signinpage - User clicks on signin button
-[INFO ] 2024-10-14 17:01:27.415 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-10-14 17:01:30.182 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-10-14 17:01:32.256 [main] Testhooks - Failed scenario screenshot got capturedT006_To verify the Department feature sort Name - Z to A
-[INFO ] 2024-10-14 17:04:36.976 [main] Testhooks - Execution Started
-[INFO ] 2024-10-14 17:04:37.848 [main] Testhooks - Browser got launched
-[INFO ] 2024-10-14 17:04:58.361 [main] Testhooks - Navigated to url
-[INFO ] 2024-10-14 17:04:59.599 [main] Signinpage - User enters valid email address
-[INFO ] 2024-10-14 17:04:59.743 [main] Signinpage - User enters valid password
-[INFO ] 2024-10-14 17:04:59.870 [main] Signinpage - User clicks on signin button
-[INFO ] 2024-10-14 17:04:59.870 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-10-14 17:05:03.679 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-10-14 17:05:05.246 [main] Testhooks - Failed scenario screenshot got capturedT005_To verify the Department feature sort Name - A to Z
-[INFO ] 2024-10-14 17:05:18.523 [main] Testhooks - Execution Started
-[INFO ] 2024-10-14 17:05:19.425 [main] Testhooks - Browser got launched
-[INFO ] 2024-10-14 17:05:21.694 [main] Testhooks - Navigated to url
-[INFO ] 2024-10-14 17:05:22.901 [main] Signinpage - User enters valid email address
-[INFO ] 2024-10-14 17:05:23.040 [main] Signinpage - User enters valid password
-[INFO ] 2024-10-14 17:05:23.154 [main] Signinpage - User clicks on signin button
-[INFO ] 2024-10-14 17:05:23.154 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-10-14 17:05:25.938 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-10-14 17:05:27.187 [main] Masterpage - >> Admin/User clicked new department btn
-[INFO ] 2024-10-14 17:05:43.936 [main] Testhooks - Execution Started
-[INFO ] 2024-10-14 17:05:45.021 [main] Testhooks - Browser got launched
-[INFO ] 2024-10-14 17:05:47.216 [main] Testhooks - Navigated to url
-[INFO ] 2024-10-14 17:05:48.440 [main] Signinpage - User enters valid email address
-[INFO ] 2024-10-14 17:05:48.569 [main] Signinpage - User enters valid password
-[INFO ] 2024-10-14 17:05:48.694 [main] Signinpage - User clicks on signin button
-[INFO ] 2024-10-14 17:05:48.695 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-10-14 17:05:51.536 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-10-14 17:05:52.798 [main] Masterpage - >> Admin/User clicked new department btn
-[INFO ] 2024-10-14 17:06:02.434 [main] Testhooks - Execution Started
-[INFO ] 2024-10-14 17:06:03.526 [main] Testhooks - Browser got launched
-[INFO ] 2024-10-14 17:06:06.456 [main] Testhooks - Navigated to url
-[INFO ] 2024-10-14 17:06:07.703 [main] Signinpage - User enters valid email address
-[INFO ] 2024-10-14 17:06:07.850 [main] Signinpage - User enters valid password
-[INFO ] 2024-10-14 17:06:07.969 [main] Signinpage - User clicks on signin button
-[INFO ] 2024-10-14 17:06:07.969 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-10-14 17:06:10.585 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-10-14 17:06:11.991 [main] Masterpage - >> Admin/User clicked new department btn
-[INFO ] 2024-10-14 17:06:58.910 [main] Testhooks - Execution Started
-[INFO ] 2024-10-14 17:06:59.820 [main] Testhooks - Browser got launched
-[INFO ] 2024-10-14 17:07:05.234 [main] Testhooks - Navigated to url
-[INFO ] 2024-10-14 17:07:06.535 [main] Signinpage - User enters valid email address
-[INFO ] 2024-10-14 17:07:06.686 [main] Signinpage - User enters valid password
-[INFO ] 2024-10-14 17:07:06.805 [main] Signinpage - User clicks on signin button
-[INFO ] 2024-10-14 17:07:06.805 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-10-14 17:07:09.893 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-10-14 17:07:11.724 [main] Masterpage - >> Admin/User clicked new department btn
-[INFO ] 2024-10-14 18:01:01.108 [main] Testhooks - Execution Started
-[INFO ] 2024-10-14 18:01:02.153 [main] Testhooks - Browser got launched
-[INFO ] 2024-10-14 18:01:50.028 [main] Testhooks - Navigated to url
-[INFO ] 2024-10-14 18:01:51.233 [main] Signinpage - User enters valid email address
-[INFO ] 2024-10-14 18:01:51.354 [main] Signinpage - User enters valid password
-[INFO ] 2024-10-14 18:01:51.484 [main] Signinpage - User clicks on signin button
-[INFO ] 2024-10-14 18:01:51.485 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-10-14 18:01:54.241 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-10-14 18:02:17.397 [main] Testhooks - Failed scenario screenshot got capturedT008_To verify the Department Edit
-[INFO ] 2024-10-14 19:08:07.031 [main] Testhooks - Execution Started
-[INFO ] 2024-10-14 19:08:07.806 [main] Testhooks - Browser got launched
-[INFO ] 2024-10-14 19:08:10.424 [main] Testhooks - Navigated to url
-[INFO ] 2024-10-14 19:08:11.629 [main] Signinpage - User enters valid email address
-[INFO ] 2024-10-14 19:08:11.750 [main] Signinpage - User enters valid password
-[INFO ] 2024-10-14 19:08:11.856 [main] Signinpage - User clicks on signin button
-[INFO ] 2024-10-14 19:08:11.856 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-10-14 19:08:14.543 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-10-14 19:08:37.751 [main] Testhooks - Failed scenario screenshot got capturedT008_To verify the Department Edit
-[INFO ] 2024-10-14 19:16:29.936 [main] Testhooks - Execution Started
-[INFO ] 2024-10-14 19:16:30.727 [main] Testhooks - Browser got launched
-[INFO ] 2024-10-14 19:16:34.064 [main] Testhooks - Navigated to url
-[INFO ] 2024-10-14 19:16:35.272 [main] Signinpage - User enters valid email address
-[INFO ] 2024-10-14 19:16:35.404 [main] Signinpage - User enters valid password
-[INFO ] 2024-10-14 19:16:35.513 [main] Signinpage - User clicks on signin button
-[INFO ] 2024-10-14 19:16:35.513 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-10-14 19:16:39.084 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-10-14 19:16:45.253 [main] Testhooks - Failed scenario screenshot got capturedT008_To verify the Department Edit
-[INFO ] 2024-10-14 19:17:52.148 [main] Testhooks - Execution Started
-[INFO ] 2024-10-14 19:17:53.040 [main] Testhooks - Browser got launched
-[INFO ] 2024-10-14 19:17:55.165 [main] Testhooks - Navigated to url
-[INFO ] 2024-10-14 19:17:56.369 [main] Signinpage - User enters valid email address
-[INFO ] 2024-10-14 19:17:56.506 [main] Signinpage - User enters valid password
-[INFO ] 2024-10-14 19:17:56.625 [main] Signinpage - User clicks on signin button
-[INFO ] 2024-10-14 19:17:56.625 [main] Members - >> Admin/User got logged in >>
-[INFO ] 2024-10-14 19:18:00.008 [main] Memberspage - >> Admin/User got navigated to dashboard page
-[INFO ] 2024-10-14 19:18:06.478 [main] Testhooks - Failed scenario screenshot got capturedT008_To verify the Department Edit
+[INFO ] 2024-10-17 19:13:37.838 [main] Testhooks - Execution Started
+[INFO ] 2024-10-17 19:13:38.706 [main] Testhooks - Browser got launched
+[INFO ] 2024-10-17 19:13:40.291 [main] Testhooks - Navigated to url
+[INFO ] 2024-10-17 19:13:41.505 [main] Signinpage - User enters valid email address
+[INFO ] 2024-10-17 19:13:41.634 [main] Signinpage - User enters valid password
+[INFO ] 2024-10-17 19:13:41.743 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-10-17 19:13:41.743 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-10-17 19:13:44.571 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-10-17 19:13:45.840 [main] Ticketspage - >> Admin/User got navigated to Tickets page
+[INFO ] 2024-10-17 19:13:46.039 [main] Ticketspage - >> The Tickets page got displayed
+[INFO ] 2024-10-17 19:13:46.039 [main] Tickets - >> Admin/user got the Tickets page >>
+[INFO ] 2024-10-17 19:13:46.271 [main] Testhooks - Browser got closed
+[INFO ] 2024-10-17 19:13:46.373 [main] Testhooks - Execution Started
+[INFO ] 2024-10-17 19:13:46.972 [main] Testhooks - Browser got launched
+[INFO ] 2024-10-17 19:13:48.315 [main] Testhooks - Navigated to url
+[INFO ] 2024-10-17 19:13:49.496 [main] Signinpage - User enters valid email address
+[INFO ] 2024-10-17 19:13:49.626 [main] Signinpage - User enters valid password
+[INFO ] 2024-10-17 19:13:49.730 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-10-17 19:13:49.730 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-10-17 19:13:52.517 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-10-17 19:13:53.658 [main] Ticketspage - >> Admin/User got navigated to Tickets page
+[INFO ] 2024-10-17 19:13:54.010 [main] Ticketspage - >> Admin/User clicked New Ticket btn
+[INFO ] 2024-10-17 19:14:07.096 [main] Testhooks - Browser got closed
+[INFO ] 2024-10-17 19:14:07.135 [main] Testhooks - Execution Started
+[INFO ] 2024-10-17 19:14:07.655 [main] Testhooks - Browser got launched
+[INFO ] 2024-10-17 19:14:08.919 [main] Testhooks - Navigated to url
+[INFO ] 2024-10-17 19:14:10.183 [main] Signinpage - User enters valid email address
+[INFO ] 2024-10-17 19:14:10.307 [main] Signinpage - User enters valid password
+[INFO ] 2024-10-17 19:14:10.406 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-10-17 19:14:10.406 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-10-17 19:14:13.300 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-10-17 19:14:14.472 [main] Ticketspage - >> Admin/User got navigated to Tickets page
+[INFO ] 2024-10-17 19:14:15.102 [main] Ticketspage - >> Admin/User clicked new ticket btn
+[INFO ] 2024-10-17 19:14:15.366 [main] Testhooks - Browser got closed
+[INFO ] 2024-10-17 19:14:15.409 [main] Testhooks - Execution Started
+[INFO ] 2024-10-17 19:14:15.954 [main] Testhooks - Browser got launched
+[INFO ] 2024-10-17 19:14:17.383 [main] Testhooks - Navigated to url
+[INFO ] 2024-10-17 19:14:18.569 [main] Signinpage - User enters valid email address
+[INFO ] 2024-10-17 19:14:18.700 [main] Signinpage - User enters valid password
+[INFO ] 2024-10-17 19:14:18.799 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-10-17 19:14:18.799 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-10-17 19:14:21.865 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-10-17 19:14:22.941 [main] Ticketspage - >> Admin/User got navigated to Tickets page
+[INFO ] 2024-10-17 19:14:23.645 [main] Ticketspage - >> Admin/User searched a Ticket
+[INFO ] 2024-10-17 19:14:23.912 [main] Testhooks - Browser got closed
+[INFO ] 2024-10-17 19:14:23.958 [main] Testhooks - Execution Started
+[INFO ] 2024-10-17 19:14:24.505 [main] Testhooks - Browser got launched
+[INFO ] 2024-10-17 19:14:25.824 [main] Testhooks - Navigated to url
+[INFO ] 2024-10-17 19:14:27.011 [main] Signinpage - User enters valid email address
+[INFO ] 2024-10-17 19:14:27.136 [main] Signinpage - User enters valid password
+[INFO ] 2024-10-17 19:14:27.240 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-10-17 19:14:27.240 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-10-17 19:14:29.993 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-10-17 19:14:31.731 [main] Ticketspage - >> Admin/User got navigated to Tickets page
+[INFO ] 2024-10-17 19:14:32.330 [main] Ticketspage - >> Admin/User searched a Ticket
+[INFO ] 2024-10-17 19:14:32.572 [main] Testhooks - Browser got closed
+[INFO ] 2024-10-17 19:14:32.607 [main] Testhooks - Execution Started
+[INFO ] 2024-10-17 19:14:33.085 [main] Testhooks - Browser got launched
+[INFO ] 2024-10-17 19:14:34.364 [main] Testhooks - Navigated to url
+[INFO ] 2024-10-17 19:14:35.558 [main] Signinpage - User enters valid email address
+[INFO ] 2024-10-17 19:14:35.688 [main] Signinpage - User enters valid password
+[INFO ] 2024-10-17 19:14:35.785 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-10-17 19:14:35.785 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-10-17 19:14:40.547 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-10-17 19:14:41.695 [main] Ticketspage - >> Admin/User got navigated to Tickets page
+[INFO ] 2024-10-17 19:14:42.301 [main] Ticketspage - >> Admin/User searched a Ticket
+[INFO ] 2024-10-17 19:14:42.590 [main] Testhooks - Browser got closed
+[INFO ] 2024-10-17 19:14:42.617 [main] Testhooks - Execution Started
+[INFO ] 2024-10-17 19:14:43.137 [main] Testhooks - Browser got launched
+[INFO ] 2024-10-17 19:14:44.502 [main] Testhooks - Navigated to url
+[INFO ] 2024-10-17 19:14:45.693 [main] Signinpage - User enters valid email address
+[INFO ] 2024-10-17 19:14:45.820 [main] Signinpage - User enters valid password
+[INFO ] 2024-10-17 19:14:45.921 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-10-17 19:14:45.921 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-10-17 19:14:48.736 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-10-17 19:14:49.805 [main] Ticketspage - >> Admin/User got navigated to Tickets page
+[INFO ] 2024-10-17 19:14:50.355 [main] Ticketspage - >> Admin/User searched a Ticket
+[INFO ] 2024-10-17 19:14:50.571 [main] Testhooks - Browser got closed
+[INFO ] 2024-10-17 19:14:50.606 [main] Testhooks - Execution Started
+[INFO ] 2024-10-17 19:14:51.088 [main] Testhooks - Browser got launched
+[INFO ] 2024-10-17 19:14:52.331 [main] Testhooks - Navigated to url
+[INFO ] 2024-10-17 19:14:53.590 [main] Signinpage - User enters valid email address
+[INFO ] 2024-10-17 19:14:53.712 [main] Signinpage - User enters valid password
+[INFO ] 2024-10-17 19:14:53.807 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-10-17 19:14:53.807 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-10-17 19:14:56.674 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-10-17 19:14:57.735 [main] Ticketspage - >> Admin/User got navigated to Tickets page
+[INFO ] 2024-10-17 19:14:58.396 [main] Ticketspage - >> Admin/User searched a Ticket
+[INFO ] 2024-10-17 19:14:58.658 [main] Testhooks - Browser got closed
+[INFO ] 2024-10-17 19:14:58.697 [main] Testhooks - Execution Started
+[INFO ] 2024-10-17 19:14:59.212 [main] Testhooks - Browser got launched
+[INFO ] 2024-10-17 19:15:00.443 [main] Testhooks - Navigated to url
+[INFO ] 2024-10-17 19:15:01.715 [main] Signinpage - User enters valid email address
+[INFO ] 2024-10-17 19:15:01.836 [main] Signinpage - User enters valid password
+[INFO ] 2024-10-17 19:15:01.934 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-10-17 19:15:01.934 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-10-17 19:15:09.532 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-10-17 19:15:10.743 [main] Ticketspage - >> Admin/User got navigated to Tickets page
+[INFO ] 2024-10-17 19:15:11.988 [main] Testhooks - Browser got closed
+[INFO ] 2024-10-17 19:15:12.014 [main] Testhooks - Execution Started
+[INFO ] 2024-10-17 19:15:12.533 [main] Testhooks - Browser got launched
+[INFO ] 2024-10-17 19:15:13.845 [main] Testhooks - Navigated to url
+[INFO ] 2024-10-17 19:15:15.157 [main] Signinpage - User enters valid email address
+[INFO ] 2024-10-17 19:15:15.282 [main] Signinpage - User enters valid password
+[INFO ] 2024-10-17 19:15:15.380 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-10-17 19:15:15.381 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-10-17 19:15:18.287 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-10-17 19:15:19.243 [main] Ticketspage - >> Admin/User got navigated to Tickets page
+[INFO ] 2024-10-17 19:15:20.576 [main] Testhooks - Browser got closed
+[INFO ] 2024-10-17 19:15:20.603 [main] Testhooks - Execution Started
+[INFO ] 2024-10-17 19:15:21.150 [main] Testhooks - Browser got launched
+[INFO ] 2024-10-17 19:15:22.389 [main] Testhooks - Navigated to url
+[INFO ] 2024-10-17 19:15:23.668 [main] Signinpage - User enters valid email address
+[INFO ] 2024-10-17 19:15:23.795 [main] Signinpage - User enters valid password
+[INFO ] 2024-10-17 19:15:23.893 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-10-17 19:15:23.893 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-10-17 19:15:26.696 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-10-17 19:15:27.799 [main] Ticketspage - >> Admin/User got navigated to Tickets page
+[INFO ] 2024-10-17 19:15:29.002 [main] Testhooks - Browser got closed
+[INFO ] 2024-10-17 19:15:29.034 [main] Testhooks - Execution Started
+[INFO ] 2024-10-17 19:15:29.541 [main] Testhooks - Browser got launched
+[INFO ] 2024-10-17 19:15:30.910 [main] Testhooks - Navigated to url
+[INFO ] 2024-10-17 19:15:32.156 [main] Signinpage - User enters valid email address
+[INFO ] 2024-10-17 19:15:32.278 [main] Signinpage - User enters valid password
+[INFO ] 2024-10-17 19:15:32.371 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-10-17 19:15:32.371 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-10-17 19:15:39.373 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-10-17 19:15:40.701 [main] Ticketspage - >> Admin/User got navigated to Tickets page
+[INFO ] 2024-10-17 19:15:41.800 [main] Testhooks - Browser got closed
+[INFO ] 2024-10-17 19:15:41.818 [main] Testhooks - Execution Started
+[INFO ] 2024-10-17 19:15:42.334 [main] Testhooks - Browser got launched
+[INFO ] 2024-10-17 19:15:43.627 [main] Testhooks - Navigated to url
+[INFO ] 2024-10-17 19:15:44.898 [main] Signinpage - User enters valid email address
+[INFO ] 2024-10-17 19:15:45.022 [main] Signinpage - User enters valid password
+[INFO ] 2024-10-17 19:15:45.118 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-10-17 19:15:45.118 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-10-17 19:15:47.842 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-10-17 19:15:49.208 [main] Ticketspage - >> Admin/User got navigated to Tickets page
+[INFO ] 2024-10-17 19:15:50.331 [main] Testhooks - Browser got closed
+[INFO ] 2024-10-17 19:15:50.354 [main] Testhooks - Execution Started
+[INFO ] 2024-10-17 19:15:50.857 [main] Testhooks - Browser got launched
+[INFO ] 2024-10-17 19:15:52.124 [main] Testhooks - Navigated to url
+[INFO ] 2024-10-17 19:15:53.498 [main] Signinpage - User enters valid email address
+[INFO ] 2024-10-17 19:15:53.620 [main] Signinpage - User enters valid password
+[INFO ] 2024-10-17 19:15:53.718 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-10-17 19:15:53.718 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-10-17 19:15:56.619 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-10-17 19:15:57.615 [main] Ticketspage - >> Admin/User got navigated to Tickets page
+[INFO ] 2024-10-17 19:15:58.768 [main] Testhooks - Browser got closed
+[INFO ] 2024-10-17 19:15:58.795 [main] Testhooks - Execution Started
+[INFO ] 2024-10-17 19:15:59.280 [main] Testhooks - Browser got launched
+[INFO ] 2024-10-17 19:16:00.727 [main] Testhooks - Navigated to url
+[INFO ] 2024-10-17 19:16:02.034 [main] Signinpage - User enters valid email address
+[INFO ] 2024-10-17 19:16:02.161 [main] Signinpage - User enters valid password
+[INFO ] 2024-10-17 19:16:02.260 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-10-17 19:16:02.261 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-10-17 19:16:09.510 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-10-17 19:16:10.905 [main] Ticketspage - >> Admin/User got navigated to Tickets page
+[INFO ] 2024-10-17 19:16:12.190 [main] Testhooks - Browser got closed
+[INFO ] 2024-10-17 19:16:12.210 [main] Testhooks - Execution Started
+[INFO ] 2024-10-17 19:16:12.763 [main] Testhooks - Browser got launched
+[INFO ] 2024-10-17 19:16:14.052 [main] Testhooks - Navigated to url
+[INFO ] 2024-10-17 19:16:15.368 [main] Signinpage - User enters valid email address
+[INFO ] 2024-10-17 19:16:15.487 [main] Signinpage - User enters valid password
+[INFO ] 2024-10-17 19:16:15.580 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-10-17 19:16:15.580 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-10-17 19:16:18.482 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-10-17 19:16:19.414 [main] Ticketspage - >> Admin/User got navigated to Tickets page
+[INFO ] 2024-10-17 19:16:21.748 [main] Testhooks - Browser got closed
+[INFO ] 2024-10-17 19:16:21.765 [main] Testhooks - Execution Started
+[INFO ] 2024-10-17 19:16:22.238 [main] Testhooks - Browser got launched
+[INFO ] 2024-10-17 19:16:23.501 [main] Testhooks - Navigated to url
+[INFO ] 2024-10-17 19:16:24.779 [main] Signinpage - User enters valid email address
+[INFO ] 2024-10-17 19:16:24.902 [main] Signinpage - User enters valid password
+[INFO ] 2024-10-17 19:16:25.002 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-10-17 19:16:25.002 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-10-17 19:16:27.907 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-10-17 19:16:28.884 [main] Ticketspage - >> Admin/User got navigated to Tickets page
+[INFO ] 2024-10-17 19:16:29.495 [main] Ticketspage - >> User selected the Billboard number:
+[INFO ] 2024-10-17 19:16:30.295 [main] Testhooks - Browser got closed
+[INFO ] 2024-10-17 19:16:30.315 [main] Testhooks - Execution Started
+[INFO ] 2024-10-17 19:16:30.885 [main] Testhooks - Browser got launched
+[INFO ] 2024-10-17 19:16:32.203 [main] Testhooks - Navigated to url
+[INFO ] 2024-10-17 19:16:33.438 [main] Signinpage - User enters valid email address
+[INFO ] 2024-10-17 19:16:33.564 [main] Signinpage - User enters valid password
+[INFO ] 2024-10-17 19:16:33.661 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-10-17 19:16:33.661 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-10-17 19:16:39.590 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-10-17 19:16:41.037 [main] Ticketspage - >> Admin/User got navigated to Tickets page
+[INFO ] 2024-10-17 19:16:41.755 [main] Ticketspage - >> User selected the assignee:
+[INFO ] 2024-10-17 19:16:42.431 [main] Testhooks - Browser got closed
+[INFO ] 2024-10-17 19:16:42.448 [main] Testhooks - Execution Started
+[INFO ] 2024-10-17 19:16:42.967 [main] Testhooks - Browser got launched
+[INFO ] 2024-10-17 19:16:44.269 [main] Testhooks - Navigated to url
+[INFO ] 2024-10-17 19:16:45.503 [main] Signinpage - User enters valid email address
+[INFO ] 2024-10-17 19:16:45.630 [main] Signinpage - User enters valid password
+[INFO ] 2024-10-17 19:16:45.725 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-10-17 19:16:45.725 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-10-17 19:16:48.328 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-10-17 19:16:49.764 [main] Ticketspage - >> Admin/User got navigated to Tickets page
+[INFO ] 2024-10-17 19:16:50.335 [main] Ticketspage - >> User selected the city:
+[INFO ] 2024-10-17 19:16:51.176 [main] Testhooks - Browser got closed
+[INFO ] 2024-10-17 19:16:51.201 [main] Testhooks - Execution Started
+[INFO ] 2024-10-17 19:16:51.685 [main] Testhooks - Browser got launched
+[INFO ] 2024-10-17 19:16:52.952 [main] Testhooks - Navigated to url
+[INFO ] 2024-10-17 19:16:54.243 [main] Signinpage - User enters valid email address
+[INFO ] 2024-10-17 19:16:54.365 [main] Signinpage - User enters valid password
+[INFO ] 2024-10-17 19:16:54.461 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-10-17 19:16:54.461 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-10-17 19:16:57.136 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-10-17 19:16:58.599 [main] Ticketspage - >> Admin/User got navigated to Tickets page
+[INFO ] 2024-10-17 19:17:00.329 [main] Testhooks - Failed scenario screenshot got capturedT020_To verify the Tickets feature filter select Department
+[INFO ] 2024-10-17 19:17:00.416 [main] Testhooks - Browser got closed
+[INFO ] 2024-10-17 19:17:00.440 [main] Testhooks - Execution Started
+[INFO ] 2024-10-17 19:17:01.016 [main] Testhooks - Browser got launched
+[INFO ] 2024-10-17 19:17:02.357 [main] Testhooks - Navigated to url
+[INFO ] 2024-10-17 19:17:03.650 [main] Signinpage - User enters valid email address
+[INFO ] 2024-10-17 19:17:03.772 [main] Signinpage - User enters valid password
+[INFO ] 2024-10-17 19:17:03.865 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-10-17 19:17:03.865 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-10-17 19:17:09.756 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-10-17 19:17:11.194 [main] Ticketspage - >> Admin/User got navigated to Tickets page
+[INFO ] 2024-10-17 19:17:12.861 [main] Testhooks - Failed scenario screenshot got capturedT021_To verify the Tickets feature filter Cleaning
+[INFO ] 2024-10-17 19:17:12.940 [main] Testhooks - Browser got closed
+[INFO ] 2024-10-17 19:17:12.964 [main] Testhooks - Execution Started
+[INFO ] 2024-10-17 19:17:13.443 [main] Testhooks - Browser got launched
+[INFO ] 2024-10-17 19:17:14.702 [main] Testhooks - Navigated to url
+[INFO ] 2024-10-17 19:17:15.910 [main] Signinpage - User enters valid email address
+[INFO ] 2024-10-17 19:17:16.033 [main] Signinpage - User enters valid password
+[INFO ] 2024-10-17 19:17:16.132 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-10-17 19:17:16.132 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-10-17 19:17:18.730 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-10-17 19:17:20.350 [main] Ticketspage - >> Admin/User got navigated to Tickets page
+[INFO ] 2024-10-17 19:17:21.998 [main] Testhooks - Failed scenario screenshot got capturedT022_To verify the Tickets feature filter Non Cleaning
+[INFO ] 2024-10-17 19:17:22.075 [main] Testhooks - Browser got closed
+[INFO ] 2024-10-17 19:17:22.093 [main] Testhooks - Execution Started
+[INFO ] 2024-10-17 19:17:22.609 [main] Testhooks - Browser got launched
+[INFO ] 2024-10-17 19:17:23.882 [main] Testhooks - Navigated to url
+[INFO ] 2024-10-17 19:17:25.123 [main] Signinpage - User enters valid email address
+[INFO ] 2024-10-17 19:17:25.249 [main] Signinpage - User enters valid password
+[INFO ] 2024-10-17 19:17:25.342 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-10-17 19:17:25.342 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-10-17 19:17:28.236 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-10-17 19:17:29.265 [main] Ticketspage - >> Admin/User got navigated to Tickets page
+[INFO ] 2024-10-17 19:17:29.899 [main] Inventorypage - >> The Download Popup got displayed
+[INFO ] 2024-10-17 19:17:30.159 [main] Testhooks - Browser got closed
+[INFO ] 2024-10-17 19:17:30.176 [main] Testhooks - Execution Started
+[INFO ] 2024-10-17 19:17:30.762 [main] Testhooks - Browser got launched
+[INFO ] 2024-10-17 19:17:32.016 [main] Testhooks - Navigated to url
+[INFO ] 2024-10-17 19:17:33.206 [main] Signinpage - User enters valid email address
+[INFO ] 2024-10-17 19:17:33.324 [main] Signinpage - User enters valid password
+[INFO ] 2024-10-17 19:17:33.421 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-10-17 19:17:33.421 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-10-17 19:17:39.539 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-10-17 19:17:40.580 [main] Ticketspage - >> Admin/User got navigated to Tickets page
+[INFO ] 2024-10-17 19:17:41.354 [main] Testhooks - Browser got closed
+[INFO ] 2024-10-17 19:17:41.373 [main] Testhooks - Execution Started
+[INFO ] 2024-10-17 19:17:41.853 [main] Testhooks - Browser got launched
+[INFO ] 2024-10-17 19:17:43.139 [main] Testhooks - Navigated to url
+[INFO ] 2024-10-17 19:17:44.388 [main] Signinpage - User enters valid email address
+[INFO ] 2024-10-17 19:17:44.509 [main] Signinpage - User enters valid password
+[INFO ] 2024-10-17 19:17:44.606 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-10-17 19:17:44.606 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-10-17 19:17:47.299 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-10-17 19:17:48.517 [main] Ticketspage - >> Admin/User got navigated to Tickets page
+[INFO ] 2024-10-17 19:17:49.211 [main] Testhooks - Browser got closed
+[INFO ] 2024-10-17 19:17:49.236 [main] Testhooks - Execution Started
+[INFO ] 2024-10-17 19:17:49.763 [main] Testhooks - Browser got launched
+[INFO ] 2024-10-17 19:17:51.072 [main] Testhooks - Navigated to url
+[INFO ] 2024-10-17 19:17:52.265 [main] Signinpage - User enters valid email address
+[INFO ] 2024-10-17 19:17:52.387 [main] Signinpage - User enters valid password
+[INFO ] 2024-10-17 19:17:52.479 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-10-17 19:17:52.480 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-10-17 19:17:55.243 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-10-17 19:17:56.538 [main] Ticketspage - >> Admin/User got navigated to Tickets page
+[INFO ] 2024-10-17 19:17:57.210 [main] Ticketspage - >> The Download Popup get closed and listed Tickets
+[INFO ] 2024-10-17 19:17:57.432 [main] Testhooks - Browser got closed
+[INFO ] 2024-10-17 19:17:57.451 [main] Testhooks - Execution Started
+[INFO ] 2024-10-17 19:17:57.929 [main] Testhooks - Browser got launched
+[INFO ] 2024-10-17 19:17:59.209 [main] Testhooks - Navigated to url
+[INFO ] 2024-10-17 19:18:00.454 [main] Signinpage - User enters valid email address
+[INFO ] 2024-10-17 19:18:00.663 [main] Signinpage - User enters valid password
+[INFO ] 2024-10-17 19:18:00.827 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-10-17 19:18:00.827 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-10-17 19:18:03.409 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-10-17 19:18:04.984 [main] Testhooks - Failed scenario screenshot got capturedT027_To verify the Tickets feature Edit button in Tickets page
+[INFO ] 2024-10-17 19:18:05.061 [main] Testhooks - Browser got closed
+[INFO ] 2024-10-17 19:18:05.083 [main] Testhooks - Execution Started
+[INFO ] 2024-10-17 19:18:05.605 [main] Testhooks - Browser got launched
+[INFO ] 2024-10-17 19:18:06.910 [main] Testhooks - Navigated to url
+[INFO ] 2024-10-17 19:18:08.229 [main] Signinpage - User enters valid email address
+[INFO ] 2024-10-17 19:18:08.353 [main] Signinpage - User enters valid password
+[INFO ] 2024-10-17 19:18:08.448 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-10-17 19:18:08.448 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-10-17 19:18:11.327 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-10-17 19:18:12.363 [main] Ticketspage - >> Admin/User got navigated to Tickets page
+[INFO ] 2024-10-17 19:18:12.633 [main] Ticketspage - >> Admin/User clicked New Ticket btn
+[INFO ] 2024-10-17 19:18:56.197 [main] Testhooks - Failed scenario screenshot got capturedT028_To verify the Tickets feature Delete button in Tickets page
+[INFO ] 2024-10-17 19:18:56.277 [main] Testhooks - Browser got closed
+[INFO ] 2024-10-17 19:18:56.299 [main] Testhooks - Execution Started
+[INFO ] 2024-10-17 19:18:56.738 [main] Testhooks - Browser got launched
+[INFO ] 2024-10-17 19:18:58.018 [main] Testhooks - Navigated to url
+[INFO ] 2024-10-17 19:18:59.276 [main] Signinpage - User enters valid email address
+[INFO ] 2024-10-17 19:18:59.401 [main] Signinpage - User enters valid password
+[INFO ] 2024-10-17 19:18:59.492 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-10-17 19:18:59.492 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-10-17 19:19:01.962 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-10-17 19:19:09.709 [main] Ticketspage - >> Admin/User got navigated to Tickets page

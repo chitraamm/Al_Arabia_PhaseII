@@ -13,6 +13,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.AssertJUnit;
@@ -103,20 +104,23 @@ public class Masterpage extends Base {
 				.until(ExpectedConditions.visibilityOf(department_created_Success_display));
 		return successMessageElement.getText().trim();
 	}
+	@FindBy(xpath = "//div[@class='list_members p-3 ']")
+	private WebElement departmentlist;
+	
 	@FindBy(xpath = "(//input[@id='doc_searchQueryInput'])[1]")
-	private WebElement DepartmentSearch;
+	private WebElement Department_Search;
 	
 	public void Department_search_enter_text() {
-		wait.until(ExpectedConditions.visibilityOf(DepartmentSearch)).click();
+		wait.until(ExpectedConditions.visibilityOf(departmentlist)).click();
 		String Department_Search = prop.getProperty("departmentname");
-		wait.until(ExpectedConditions.visibilityOf(DepartmentSearch)).sendKeys(Department_Search + Keys.ENTER);
+		wait.until(ExpectedConditions.visibilityOf(departmentlist)).sendKeys(Department_Search + Keys.ENTER);
 		System.out.println(">> User enter the department id in search field: " + Department_Search);
 	}
 	@FindBy(xpath = "(//td[normalize-space()='ADMIN'])[1]")
 	private WebElement DepartmentSearched, departmentSearch;
 
 	public void DepartmentSearchedList() {
-		wait.until(ExpectedConditions.visibilityOf(DepartmentSearch));
+		wait.until(ExpectedConditions.visibilityOf(departmentlist));
 
 		if (DepartmentSearched.isDisplayed()) {
 			System.out.println("Element is displayed");
@@ -128,15 +132,15 @@ public class Masterpage extends Base {
 	}
 
 	public void Departmentlist() {
-		wait.until(ExpectedConditions.visibilityOf(DepartmentSearch));
+		wait.until(ExpectedConditions.visibilityOf(departmentlist));
 
-		if (DepartmentSearch.isDisplayed()) {
+		if (departmentlist.isDisplayed()) {
 			System.out.println("Element is displayed");
 		} else {
 			System.out.println("Element is not displayed");
 		}
 		LOGGER.info(">> Admin/User clicked new department btn");
-		System.out.println(">> User got sorted department list: " + DepartmentSearch.getText());
+		System.out.println(">> User got sorted department list: " + departmentlist.getText());
 	}
 
 	@FindBy(xpath = "(//h6[contains(@class,'m-0 by fw-normal')][normalize-space()='Recently Added'])[1]")
@@ -253,15 +257,70 @@ public class Masterpage extends Base {
 	@FindBy(id = "name")
 	private WebElement Supplier_name;
 	
+	@FindBy(id = "supplier_id")
+	private WebElement Supplier_id;
+	
+	@FindBy(xpath = "//input[@id='contact_person']")
+	private WebElement contact_person;
+	
 	@FindBy(xpath = "(//h6[normalize-space()='Add Supplier'])[1]")
 	private WebElement click_addSupplier;
+	
+	@FindBy(xpath = "//input[@placeholder='Enter phone number']")
+	private WebElement contact_number;
+	
+	@FindBy(id = "email")
+	private WebElement enter_email;
+	
+	@FindBy(xpath = "(//input[@placeholder='Enter Location'])[1]")
+	private WebElement cityname;
+	
+	@FindBy(id = "country")
+	private WebElement country_name;
 
 	public void Enter_Mandatory_fields_Supplier () throws Exception {
-		Thread.sleep(4000);
+		Thread.sleep(3000);
 		wait.until(ExpectedConditions.visibilityOf(NewSupplier_page_padding)).isDisplayed();
 		String suppliername = prop.getProperty("suppliername");
 		wait.until(ExpectedConditions.visibilityOf(Supplier_name)).sendKeys(suppliername);
-		Thread.sleep(2000);
+		Thread.sleep(1000);
+		
+		wait.until(ExpectedConditions.visibilityOf(Supplier_name)).isDisplayed();
+		String supplierid = prop.getProperty("supplierid");
+		wait.until(ExpectedConditions.visibilityOf(Supplier_id)).sendKeys(supplierid);
+		Thread.sleep(1000);
+		
+		wait.until(ExpectedConditions.visibilityOf(Supplier_id)).isDisplayed();
+		String Contactperson = prop.getProperty("Contactperson");
+		wait.until(ExpectedConditions.visibilityOf(contact_person)).sendKeys(Contactperson);
+		Thread.sleep(1000);
+
+		wait.until(ExpectedConditions.visibilityOf(contact_person)).isDisplayed();
+		String contactnumber = prop.getProperty("Phone_number");
+		wait.until(ExpectedConditions.visibilityOf(contact_number)).sendKeys(contactnumber);
+	
+		wait.until(ExpectedConditions.visibilityOf(contact_number)).isDisplayed();
+	    String emailfield = prop.getProperty("emailfield");
+	    wait.until(ExpectedConditions.visibilityOf(enter_email)).sendKeys(emailfield);
+	    
+	    wait.until(ExpectedConditions.visibilityOf(enter_email)).isDisplayed();
+	    wait.until(ExpectedConditions.visibilityOf(cityname)).sendKeys("Riyadh Saudi Arabia");
+		Thread.sleep(3000);
+	    wait.until(ExpectedConditions.visibilityOf(cityname)).sendKeys(""+Keys.DOWN+Keys.ENTER);
+	   
+	    wait.until(ExpectedConditions.visibilityOf(cityname)).isDisplayed();
+	    String countryname = prop.getProperty("countryname");
+	    wait.until(ExpectedConditions.visibilityOf(country_name)).sendKeys(countryname);
+
+	}
+	@FindBy(id = "Add Supplier")
+	private WebElement click_addsupplier;
+	
+	public void Add_Supplier() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(country_name)).isDisplayed();
+
+		wait.until(ExpectedConditions.visibilityOf(click_addSupplier)).click();
+		
 	}
 	@FindBy(xpath = "//div[contains(@class, 'toastpop') and contains(@class, 'position-relative')]")
 	private WebElement Supplier_created_Success_display;
@@ -276,13 +335,16 @@ public class Masterpage extends Base {
 	
 	public void Supplier_search_enter_text() {
 		wait.until(ExpectedConditions.visibilityOf(SupplierSearch)).click();
-		String Supplier_Search = prop.getProperty("Suppliername");
+		String Supplier_Search = prop.getProperty("Suppliernames");
 		wait.until(ExpectedConditions.visibilityOf(supplierSearch)).sendKeys(Supplier_Search + Keys.ENTER);
 		System.out.println(">> User enter the Supplier id in search field: " + Supplier_Search);
 	}
-	@FindBy(xpath = "(//td[normalize-space()='ADMIN'])[1]")
+	@FindBy(xpath = "//td[normalize-space()='prajwal']")
 	private WebElement SupplierSearched, SupplierSearch;
 
+	@FindBy(xpath = "//table[@class='table']")
+	private WebElement supplierlist;
+	
 	public void SupplierSearchedList() {
 		wait.until(ExpectedConditions.visibilityOf(SupplierSearch));
 
@@ -296,15 +358,15 @@ public class Masterpage extends Base {
 	}
 
 	public void Supplierlist() {
-		wait.until(ExpectedConditions.visibilityOf(SupplierSearch));
+	//	wait.until(ExpectedConditions.visibilityOf(SupplierSearch));
 
-		if (SupplierSearch.isDisplayed()) {
+		if (supplierlist.isDisplayed()) {
 			System.out.println("Element is displayed");
 		} else {
 			System.out.println("Element is not displayed");
 		}
 		LOGGER.info(">> Admin/User clicked new Supplier btn");
-		System.out.println(">> User got sorted Supplier list: " + SupplierSearch.getText());
+		System.out.println(">> User got sorted Supplier list: " + supplierlist.getText());
 	}
 
 	@FindBy(xpath = "(//h6[contains(@class,'m-0 by fw-normal')][normalize-space()='Recently Added'])[1]")
@@ -329,11 +391,11 @@ public class Masterpage extends Base {
 	}
 
 	@FindBy(xpath = "(//h6[contains(text(),'Name - A to Z')])[1]")
-	private WebElement Supplier_Name_A_to_Z;
+	private WebElement A_to_Z_Supplier_Name;
 
-	public void Supplier_sortA_Z() {
+	public void A_Z_Supplier_sort() {
 		wait.until(ExpectedConditions.visibilityOf(Supplier_sort)).click();
-		wait.until(ExpectedConditions.visibilityOf(Supplier_Name_A_to_Z)).click();
+		wait.until(ExpectedConditions.visibilityOf(A_to_Z_Supplier_Name)).click();
 		System.out.println(">> User clicked recently updated in sort");
 	}
 

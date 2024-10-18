@@ -167,8 +167,12 @@ public class Master extends Base {
 	public void User_Enter_Mandatory_fields_of_New_Supplier_page() throws Exception {
 		masterpage.Enter_Mandatory_fields_Supplier();
 	}
+	@And("User click on Add Supplier button")
+	public void User_click_on_Add_Supplier_button() throws Exception {
+		masterpage.Add_Supplier();
+	}
 	@Then("^Particular Supplier gets created successfully with either \"([^\"]*)\" or \"([^\"]*)\"$")
-	public void Particular_Supplier_gets_created_successfully_as (String expectedMessage1,
+	public void Particular_Supplier_gets_created_successfully_with_either (String expectedMessage1,
 			String expectedMessage2) throws Exception {
 		String actualMessage = masterpage.Supplier_created_Success_display();
 		String normalizedActualMessage = normalizeWhitespace(actualMessage);
@@ -201,7 +205,7 @@ public class Master extends Base {
 	}
 	@And("User sort the Supplier list Name A to Z")
 	public void User_sort_the_Supplier_list_Name_A_to_Z() throws Exception {
-		masterpage.Supplier_sortA_Z();
+		masterpage.A_Z_Supplier_sort();
 	}
 	@Then("Supplier list get displayed successfully")
 	public void Supplier_list_get_displayed_successfully() throws Exception {

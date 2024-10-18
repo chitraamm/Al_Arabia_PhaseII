@@ -47,7 +47,7 @@ Screen_height = 5
 reason = test
 <-------Profile------>
 personalinfo = coducer
-Phone_number = 9341152902
+Phone_number = +91 80863 28118
 App_Phone_number = 9341152902
 Iqma = 87654321
 
@@ -114,3 +114,9 @@ descrptns = Automation Test
 departmentname = Admin
 newdepartmentname =  service
 suppliername = Rahul
+supplierid = 1301
+Contactperson = Nishanth
+emailfield = tomgeorge@coducer.com
+cityfield = sharjah
+countryname = saudi arabia
+Suppliernames = prajwal

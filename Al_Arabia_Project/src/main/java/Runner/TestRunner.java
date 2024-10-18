@@ -9,12 +9,12 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/test/resources/Features", glue = {"Hooks",
-		"Stepdefinitions"}, tags = "@Tickets", plugin = {"pretty",
+		"Stepdefinitions"}, tags = "@Master03", plugin = {"pretty",
 				"html:target/CucumberReports/CucumberReport.html",
 				"json:target/CucumberReports/CucumberReport.json",
 				"junit:target/CucumberReports/CucumberReport.xml",
 				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}, publish = true, dryRun = false, monochrome = true)
-
+ 
 public class TestRunner {
 	 public static void main(String[] args) {
 	        String html = "<html><body><div id='content'>Hello World!</div></body></html>";

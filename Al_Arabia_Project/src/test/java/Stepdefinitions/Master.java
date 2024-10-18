@@ -246,7 +246,7 @@ public class Master extends Base {
 	}
 	@And("User Updated Supplier")
 	public void User_Updated_Supplier () throws Exception {
-	//	masterpage.Updated_Supplier();
+		masterpage.Updated_Supplier();
 	}
 	@Then("^Particular Supplier gets Edited successfully with either \"([^\"]*)\" or \"([^\"]*)\"$")
 	public void Particular_Supplier_gets_Edited_successfully_as (String expectedMessage1,
@@ -263,7 +263,9 @@ public class Master extends Base {
 	}
 	@And("User clicked Delete Supplier option")
 	public void User_clicked_Delete_Supplier_option  () throws Exception {
-		//masterpage.selects_delete_Supplier();
+		masterpage.selects_delete_Supplier();
+		masterpage.Supplier_delete_confirm();
+
 	}
 	@Then("^Particular Supplier gets Deleted successfully with either \"([^\"]*)\" or \"([^\"]*)\"$")
 	public void Particular_Supplier_gets_Deleted_successfully_as (String expectedMessage1,
@@ -277,5 +279,13 @@ public class Master extends Base {
 
 		assertTrue("The actual message was neither of the expected success messages.",
 				matchesMessage1 || matchesMessage2);
+	}
+	@And("User clicked View Supplier option")
+	public void User_clicked_View_Supplier_option() throws Exception {
+		masterpage.selects_view_Supplier();
+	}
+	@And("Supplier page will be displayed to the user")
+	public void Supplier_page_will_be_displayed_to_the_user() throws Exception {
+		masterpage.Supplier_viewpagedisplay();
 	}
 }

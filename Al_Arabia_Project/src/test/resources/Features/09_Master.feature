@@ -175,10 +175,19 @@ And User selects Edit option of Supplier
 And User Updated Supplier 
 Then Particular Supplier gets Edited successfully with either "<successMessage1>" or "<successMessage2>"
   Examples:
-      | successMessage1       | successMessage2                        |
-      | LOADING...            | Success Edited Supplier successfully | 
-      
+      | successMessage1       | successMessage2          |
+      | LOADING...            | Success Supplier updated | 
+     
 @Master @Supplier10 @smoke @regression @all
+Scenario Outline: T010_To verify the Supplier Delete
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Supplier
+And User click on kebab menu
+And User clicked View Supplier option
+Then Supplier page will be displayed to the user      
+      
+@Master @Supplier11 @smoke @regression @all
 Scenario Outline: T010_To verify the Supplier Delete
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
@@ -187,7 +196,7 @@ And User click on kebab menu
 And User clicked Delete Supplier option 
 Then Particular Supplier gets Deleted successfully with either "<successMessage1>" or "<successMessage2>"
   Examples:
-      | successMessage1       | successMessage2              |
-      | LOADING...            | Success Deleted successfully |  
+      | successMessage1       | successMessage2          |
+      | LOADING...            | Success Supplier deleted |  
       
           

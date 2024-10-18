@@ -432,22 +432,53 @@ public class Masterpage extends Base {
 		Thread.sleep(1000);
 		wait.until(ExpectedConditions.visibilityOf(click_edit_Supplier)).click();
 	}
-//	@FindBy(xpath = "(//h6[normalize-space()='Edit Supplier'])[1]")
-//	private WebElement click_Edit_Supplierbuttn;
-//
-//	public void Updated_Supplier() throws Exception {
-//		wait.until(ExpectedConditions.visibilityOf(enter_Supplier));
-//		String edited_Suppliername = prop.getProperty("newSuppliername");
-//		wait.until(ExpectedConditions.visibilityOf(enter_Supplier)).sendKeys(edited_Suppliername);
-//		Thread.sleep(2000);
-//		wait.until(ExpectedConditions.visibilityOf(click_Edit_Supplierbuttn)).click();
-//	}
-//	@FindBy(xpath = "//a[normalize-space()='Delete']")
-//	private WebElement click_delete_Supplier;
-//
-//	public void selects_delete_Supplier() throws Exception {
-//		wait.until(ExpectedConditions.visibilityOf(kebabmenu_click));
-//		Thread.sleep(1000);
-//		wait.until(ExpectedConditions.visibilityOf(click_delete_Supplier)).click();
-//	}
+	@FindBy(xpath = "(//h5[normalize-space()='Edit Supplier'])[1]")
+	private WebElement editpage_pading;
+	
+	@FindBy(id = "Update Supplier")
+	private WebElement click_updatebuttn;
+
+	public void Updated_Supplier() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(editpage_pading));
+		String edited_contctpersn = prop.getProperty("edited_contctpersn");
+		wait.until(ExpectedConditions.visibilityOf(contact_person)).sendKeys(edited_contctpersn);
+		Thread.sleep(2000);
+		wait.until(ExpectedConditions.visibilityOf(click_updatebuttn)).click();
+	}
+	@FindBy(xpath = "(//a[normalize-space()='Delete'])[1]")
+	private WebElement click_delete_Supplier;
+
+	public void selects_delete_Supplier() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(kebabmenu_click));
+		Thread.sleep(1000);
+		wait.until(ExpectedConditions.visibilityOf(click_delete_Supplier)).click();
+	}
+	@FindBy(xpath = "//a[normalize-space()='View']")
+	private WebElement click_view_Supplier;
+
+	public void selects_view_Supplier() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(kebabmenu_click));
+		Thread.sleep(1000);
+		wait.until(ExpectedConditions.visibilityOf(click_view_Supplier)).click();
+	}
+	@FindBy(xpath = "//h5[normalize-space()='View Supplier']")
+	private WebElement display_supplierviewpage;
+
+	public void Supplier_viewpagedisplay() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(display_supplierviewpage)).isDisplayed();
+		AssertJUnit.assertTrue(display_supplierviewpage.isDisplayed());
+		LOGGER.info("Supplier view page displayed");
+	}
+	
+	@FindBy(xpath = "//h4[normalize-space()='Are you sure, you want to delete this supplier?']")
+	private WebElement delete_confirmpopup;
+	
+	@FindBy(xpath = "//h6[normalize-space()='Yes, delete this supplier.']")
+	private WebElement delete_Supplier_confirmbuttn;
+	
+	public void Supplier_delete_confirm() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(delete_confirmpopup));
+		Thread.sleep(1000);
+		wait.until(ExpectedConditions.visibilityOf(delete_Supplier_confirmbuttn)).click();
+	}
 }

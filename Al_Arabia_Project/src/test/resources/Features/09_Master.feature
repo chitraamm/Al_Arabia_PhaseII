@@ -92,7 +92,7 @@ Then Particular department gets Deleted successfully with either "<successMessag
       | successMessage1       | successMessage2              |
       | LOADING...            | Success Deleted successfully |  
       
- @Master @Supplier01 @smoke @regression @all
+ @Master @Supplier @Supplier01 @smoke @regression @all
 Scenario Outline: T001_Verify Supplier page display
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
@@ -100,7 +100,7 @@ And Admin or user clicks the Master
 And Admin or user clicks the Supplier
 Then Al Arabia Supplier page should display successfully
 
-@Master @Supplier02 @regression @sanity @all
+@Master @Supplier @Supplier02 @regression @sanity @all
 Scenario Outline: T002_Create the New Supplier with valid inputs
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
@@ -113,7 +113,7 @@ Then Particular Supplier gets created successfully with either "<successMessage1
   Examples:
       | successMessage1       | successMessage2        |
       | LOADING...            | Success Supplier Added |      
-@Master @Supplier03 @smoke @regression @all
+@Master @Supplier @Supplier03 @smoke @regression @all
 Scenario Outline: T003_ the Supplier feature search
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
@@ -122,7 +122,7 @@ And Admin or user clicks the Supplier
 And Admin or user search the Supplier
 Then Searched Ticket details get displayed successfully
 
-@Master @Supplier04 @smoke @regression @all
+@Master @Supplier @Supplier04 @smoke @regression @all
 Scenario Outline: T004_To verify the Supplier feature sort recently updated
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
@@ -131,7 +131,7 @@ And Admin or user clicks the Supplier
 And Admin or user sort the Supplier list recently updated
 Then Recently updated Supplier list get displayed successfully
 
-@Master @Supplier05 @smoke @regression @all
+@Master @Supplier @Supplier05 @smoke @regression @all
 Scenario Outline: T005_To verify the Supplier feature sort Name - A to Z
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
@@ -140,7 +140,7 @@ And Admin or user clicks the Supplier
 And User sort the Supplier list Name A to Z
 Then Supplier list get displayed successfully
 
-@Master @Supplier06 @smoke @regression @all 
+@Master @Supplier @Supplier06 @smoke @regression @all 
 Scenario Outline: T006_To verify the Supplier feature sort Name - Z to A
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
@@ -149,7 +149,7 @@ And Admin or user clicks the Supplier
 And User sort the Supplier list Name Z to A 
 Then Supplier list Z to A get displayed successfully
 
-@Master @Supplier07 @smoke @regression @all
+@Master @Supplier @Supplier07 @smoke @regression @all
 Scenario Outline: T007_To verify the Supplier feature sort Recently Added
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
@@ -157,7 +157,7 @@ And Admin or user clicks the Supplier
 And User sort the Supplier list Recently Added
 Then Recent Supplier list get displayed successfully
 
-@Master @Supplier08 @smoke @regression @all
+@Master @Supplier @Supplier08 @smoke @regression @all
 Scenario Outline: T008_To verify the Supplier feature sort decending
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
@@ -165,7 +165,7 @@ And Admin or user clicks the Supplier
 And User sort the Supplier list decending
 Then Decending Supplier list get displayed successfully
 
-@Master @Supplier09 @smoke @regression @all
+@Master @Supplier @Supplier09 @smoke @regression @all
 Scenario Outline: T009_To verify the Supplier Edit
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
@@ -178,7 +178,7 @@ Then Particular Supplier gets Edited successfully with either "<successMessage1>
       | successMessage1       | successMessage2          |
       | LOADING...            | Success Supplier updated | 
      
-@Master @Supplier10 @smoke @regression @all
+@Master @Supplier @Supplier10 @smoke @regression @all
 Scenario Outline: T010_To verify the Supplier Delete
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
@@ -187,7 +187,7 @@ And User click on kebab menu
 And User clicked View Supplier option
 Then Supplier page will be displayed to the user      
       
-@Master @Supplier11 @smoke @regression @all
+@Master @Supplier @Supplier11 @smoke @regression @all
 Scenario Outline: T010_To verify the Supplier Delete
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display

@@ -330,7 +330,7 @@ public class Masterpage extends Base {
 				.until(ExpectedConditions.visibilityOf(Supplier_created_Success_display));
 		return successMessageElement.getText().trim();
 	}
-	@FindBy(xpath = "(//input[@id='doc_searchQueryInput'])[1]")
+	@FindBy(id = "doc_searchQueryInput")
 	private WebElement supplierSearch;
 	
 	public void Supplier_search_enter_text() {
@@ -339,7 +339,7 @@ public class Masterpage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(supplierSearch)).sendKeys(Supplier_Search + Keys.ENTER);
 		System.out.println(">> User enter the Supplier id in search field: " + Supplier_Search);
 	}
-	@FindBy(xpath = "//td[normalize-space()='prajwal']")
+	@FindBy(id = "doc_searchQueryInput")
 	private WebElement SupplierSearched, SupplierSearch;
 
 	@FindBy(xpath = "//table[@class='table']")

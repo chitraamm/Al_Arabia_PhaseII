@@ -213,7 +213,7 @@ public class Master extends Base {
 	}
 	@And("User sort the Supplier list Name Z to A")
 	public void User_sort_the_Supplier_list_Name_Z_to_A() throws Exception {
-		masterpage.Supplier_sortZ_A();
+		masterpage.recent_sortZ_A();
 	}
 	@Then("Supplier list Z to A get displayed successfully")
 	public void Supplier_list_Z_to_A_get_displayed_successfully() throws Exception {
@@ -287,5 +287,125 @@ public class Master extends Base {
 	@And("Supplier page will be displayed to the user")
 	public void Supplier_page_will_be_displayed_to_the_user() throws Exception {
 		masterpage.Supplier_viewpagedisplay();
+	}
+	//<------------------------------------Stock---------------------------------------->
+	
+	@And("Admin or user clicks the Stock")
+	public void Admin_or_user_clicks_the_Stock() throws Exception {
+		masterpage.Stock_click();
+	}
+	@Then("Al Arabia Stock page should display successfully")
+	public void Al_Arabia_Stock_page_should_display_successfully() throws Exception {
+		masterpage.allStockCount();
+	}
+	@And("User click on New Stock button")
+	public void User_click_on_New_Stock_button() throws Exception {
+		masterpage.New_Stock_button_click();
+	}
+//	@And("User Enter Mandatory fields of New Stock page")
+//	public void User_Enter_Mandatory_fields_of_New_Stock_page() throws Exception {
+//		masterpage.Enter_Mandatory_fields_Stock();
+//	}
+//	@And("User click on Add Stock button")
+//	public void User_click_on_Add_Stock_button() throws Exception {
+//		masterpage.Add_Stock();
+//	}
+	@Then("^Particular Stock gets created successfully with either \"([^\"]*)\" or \"([^\"]*)\"$")
+	public void Particular_Stock_gets_created_successfully_with_either (String expectedMessage1,
+			String expectedMessage2) throws Exception {
+		String actualMessage = masterpage.Stock_created_Success_display();
+		String normalizedActualMessage = normalizeWhitespace(actualMessage);
+		System.out.println(">> User or Admin Created Stock successfully: " + actualMessage);
+
+		boolean matchesMessage1 = normalizedActualMessage.equals(normalizeWhitespace(expectedMessage1));
+		boolean matchesMessage2 = normalizedActualMessage.equals(normalizeWhitespace(expectedMessage2));
+
+		assertTrue("The actual message was neither of the expected success messages.",
+				matchesMessage1 || matchesMessage2);
+	}
+//	private String normalizeWhitespace(String input) {
+//		return input.replaceAll("\\s+", " ").trim();
+//	}
+	@And("Admin or user search the Stock")
+	public void Admin_or_user_search_the_Stock() throws Exception {
+		masterpage.Stock_search_enter_text();
+	}
+	@Then("Searched Stock details get displayed successfully")
+	public void Searched_Stock_details_get_displayed_successfully() {
+		masterpage.StockSearchedList();
+	}
+	@And("Admin or user sort the Stock list recently updated")
+	public void Admin_or_user_sort_the_Stock_list_recently_updated() throws Exception {
+		masterpage.Stock_sort_recentlyupdated();
+	}
+	@Then("Recently updated Stock list get displayed successfully")
+	public void Recently_updated_Stock_list_get_displayed_successfully() throws Exception {
+		masterpage.Stocklist();
+	}
+	@And("User sort the Stock list Name A to Z")
+	public void User_sort_the_Stock_list_Name_A_to_Z() throws Exception {
+		masterpage.A_Z_Stock_sort();
+	}
+	@Then("Stock list get displayed successfully")
+	public void Stock_list_get_displayed_successfully() throws Exception {
+		masterpage.Stocklist();
+	}
+	@And("User sort the Stock list Name Z to A")
+	public void User_sort_the_Stock_list_Name_Z_to_A() throws Exception {
+		masterpage.Stock_recent_sortZ_A();
+	}
+	@Then("Stock list Z to A get displayed successfully")
+	public void Stock_list_Z_to_A_get_displayed_successfully() throws Exception {
+		masterpage.Stocklist();
+	}
+	@And("User sort the Stock list Recently Added")
+	public void User_sort_the_Stock_list_Recently_Added() throws Exception {
+		masterpage.Stock_sort_recentlyadded();
+	}
+	@Then("Recent Stock list get displayed successfully")
+	public void Recent_Stock_list_get_displayed_successfully() throws Exception {
+		masterpage.Stocklist();
+	}
+	@And("User sort the Stock list decending")
+	public void User_sort_the_Stock_list_Decending() throws Exception {
+		masterpage.Stock_DecendingDate();
+	}
+	@Then("Decending Stock list get displayed successfully")
+	public void Decending_Stock_list_get_displayed_successfully() throws Exception {
+		masterpage.Stocklist();
+	}
+	@And("User click on kebab menu of Stock")
+	public void User_click_on_kebab_menu_of_Stock() throws Exception {
+		masterpage.kebabmenu_stock();
+	}
+	@And("User selects Edit option of Stock")
+	public void User_selects_Edit_option_of_Stock() throws Exception {
+		//masterpage.kebabmenu();
+		masterpage.selects_edit_Stock();
+	}
+	@And("User Updated Stock")
+	public void User_Updated_Stock () throws Exception {
+		masterpage.Updated_Stock();
+	}
+	@Then("^Particular Stock gets Edited successfully with either \"([^\"]*)\" or \"([^\"]*)\"$")
+	public void Particular_Stock_gets_Edited_successfully_as (String expectedMessage1,
+			String expectedMessage2) throws Exception {
+		String actualMessage = masterpage.Stock_created_Success_display();
+		String normalizedActualMessage = normalizeWhitespace(actualMessage);
+		System.out.println(">> User or Admin Edited Stock successfully: " + actualMessage);
+
+		boolean matchesMessage1 = normalizedActualMessage.equals(normalizeWhitespace(expectedMessage1));
+		boolean matchesMessage2 = normalizedActualMessage.equals(normalizeWhitespace(expectedMessage2));
+
+		assertTrue("The actual message was neither of the expected success messages.",
+				matchesMessage1 || matchesMessage2);
+	}
+	@And("User clicked View Stock option")
+	public void User_clicked_View_Stock_option() throws Exception {
+		masterpage.selects_view_Stock();
+	}
+	@And("Stock page will be displayed to the user")
+	public void Stock_page_will_be_displayed_to_the_user() throws Exception {
+		masterpage.Stock_viewpagedisplay();
 	}
 }

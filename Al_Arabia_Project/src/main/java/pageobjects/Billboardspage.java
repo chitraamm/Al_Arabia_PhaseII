@@ -202,7 +202,7 @@ public class Billboardspage extends Base {
 		System.out.println(">> User enter the BB name in search field: " + billboard_search);
 	}
 
-	@FindBy(xpath = "//table[@class='table']")
+	@FindBy(id = "doc_searchQueryInput")
 	private WebElement BBSearchedList, BBlist;
 
 	public void BBSearchedList() {

@@ -354,7 +354,7 @@ public class Masterpage extends Base {
 			System.out.println("Element is not displayed");
 		}
 		LOGGER.info(">> Admin/User searched Supplier");
-		System.out.println(">> User got searched Supplier list: " + SupplierSearch.getText());
+		System.out.println(">> User got searched Supplier list: " + SupplierSearched.getText());
 	}
 
 	public void Supplierlist() {
@@ -400,11 +400,11 @@ public class Masterpage extends Base {
 	}
 
 	@FindBy(xpath = "(//h6[contains(text(),'Name - Z to A')])[1]")
-	private WebElement Supplier_Name_Z_to_A;
+	private WebElement sortingName_Z_to_A;
 
-	public void Supplier_sortZ_A() {
+	public void recent_sortZ_A() {
 		wait.until(ExpectedConditions.visibilityOf(Supplier_sort)).click();
-		wait.until(ExpectedConditions.visibilityOf(Supplier_Name_Z_to_A)).click();
+		wait.until(ExpectedConditions.visibilityOf(sortingName_Z_to_A)).click();
 		System.out.println(">> User clicked Z-A updated in sort");
 	}
 
@@ -457,7 +457,7 @@ public class Masterpage extends Base {
 	private WebElement click_view_Supplier;
 
 	public void selects_view_Supplier() throws Exception {
-		wait.until(ExpectedConditions.visibilityOf(kebabmenu_click));
+		wait.until(ExpectedConditions.visibilityOf(kebabmenu_click)).isDisplayed();
 		Thread.sleep(1000);
 		wait.until(ExpectedConditions.visibilityOf(click_view_Supplier)).click();
 	}
@@ -480,5 +480,253 @@ public class Masterpage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(delete_confirmpopup));
 		Thread.sleep(1000);
 		wait.until(ExpectedConditions.visibilityOf(delete_Supplier_confirmbuttn)).click();
+	}
+	//<------------------------------------Stock---------------------------------------->
+	@FindBy(xpath = "//span[normalize-space()='Stock']")
+	private WebElement click_Stock;
+
+	public void Stock_click() throws Exception {
+		Thread.sleep(4000);
+		wait.until(ExpectedConditions.visibilityOf(click_master_module)).click();
+		wait.until(ExpectedConditions.visibilityOf(click_Stock)).click();
+	}
+	@FindBy(xpath = "//h5[contains(@class,'mb-0')]")
+	private WebElement StockCount;
+
+	public void allStockCount() {
+		wait.until(ExpectedConditions.visibilityOf(StockCount)).isDisplayed();
+		AssertJUnit.assertTrue(StockCount.isDisplayed());
+		LOGGER.info(">> The Stock page got displayed");
+	}
+	
+	@FindBy(xpath = "(//h6[contains(@class,'m-0 fw-normal')][normalize-space()='New Stock'])[1]")
+	private WebElement click_new_Stockbutton;
+
+	public void New_Stock_button_click() throws Exception {
+		Thread.sleep(5000);
+		wait.until(ExpectedConditions.visibilityOf(click_new_Stockbutton)).click();
+	}
+//	@FindBy(xpath = "//h5[normalize-space()='New Stock']")
+//	private WebElement NewStock_page_padding;
+//	
+//	@FindBy(id = "name")
+//	private WebElement Stock_name;
+//	
+//	@FindBy(id = "Stock_id")
+//	private WebElement Stock_id;
+//	
+//	@FindBy(xpath = "//input[@id='contact_person']")
+//	private WebElement contact_person;
+//	
+//	@FindBy(xpath = "(//h6[normalize-space()='Add Stock'])[1]")
+//	private WebElement click_addStock;
+//	
+//	@FindBy(xpath = "//input[@placeholder='Enter phone number']")
+//	private WebElement contact_number;
+//	
+//	@FindBy(id = "email")
+//	private WebElement enter_email;
+//	
+//	@FindBy(xpath = "(//input[@placeholder='Enter Location'])[1]")
+//	private WebElement cityname;
+//	
+//	@FindBy(id = "country")
+//	private WebElement country_name;
+//
+//	public void Enter_Mandatory_fields_Stock () throws Exception {
+//		Thread.sleep(3000);
+//		wait.until(ExpectedConditions.visibilityOf(NewStock_page_padding)).isDisplayed();
+//		String Stockname = prop.getProperty("Stockname");
+//		wait.until(ExpectedConditions.visibilityOf(Stock_name)).sendKeys(Stockname);
+//		Thread.sleep(1000);
+//		
+//		wait.until(ExpectedConditions.visibilityOf(Stock_name)).isDisplayed();
+//		String Stockid = prop.getProperty("Stockid");
+//		wait.until(ExpectedConditions.visibilityOf(Stock_id)).sendKeys(Stockid);
+//		Thread.sleep(1000);
+//		
+//		wait.until(ExpectedConditions.visibilityOf(Stock_id)).isDisplayed();
+//		String Contactperson = prop.getProperty("Contactperson");
+//		wait.until(ExpectedConditions.visibilityOf(contact_person)).sendKeys(Contactperson);
+//		Thread.sleep(1000);
+//
+//		wait.until(ExpectedConditions.visibilityOf(contact_person)).isDisplayed();
+//		String contactnumber = prop.getProperty("Phone_number");
+//		wait.until(ExpectedConditions.visibilityOf(contact_number)).sendKeys(contactnumber);
+//	
+//		wait.until(ExpectedConditions.visibilityOf(contact_number)).isDisplayed();
+//	    String emailfield = prop.getProperty("emailfield");
+//	    wait.until(ExpectedConditions.visibilityOf(enter_email)).sendKeys(emailfield);
+//	    
+//	    wait.until(ExpectedConditions.visibilityOf(enter_email)).isDisplayed();
+//	    wait.until(ExpectedConditions.visibilityOf(cityname)).sendKeys("Riyadh Saudi Arabia");
+//		Thread.sleep(3000);
+//	    wait.until(ExpectedConditions.visibilityOf(cityname)).sendKeys(""+Keys.DOWN+Keys.ENTER);
+//	   
+//	    wait.until(ExpectedConditions.visibilityOf(cityname)).isDisplayed();
+//	    String countryname = prop.getProperty("countryname");
+//	    wait.until(ExpectedConditions.visibilityOf(country_name)).sendKeys(countryname);
+
+//	}
+//	@FindBy(id = "Add Stock")
+//	private WebElement click_add_Stock;
+//	
+//	public void Add_Stock() throws Exception {
+//		wait.until(ExpectedConditions.visibilityOf(country_name)).isDisplayed();
+//
+//		wait.until(ExpectedConditions.visibilityOf(click_addStock)).click();
+//		
+//	}
+	@FindBy(xpath = "//div[contains(@class, 'toastpop') and contains(@class, 'position-relative')]")
+	private WebElement Stock_created_Success_display;
+
+	public String Stock_created_Success_display() throws Exception {
+		WebElement successMessageElement = wait
+				.until(ExpectedConditions.visibilityOf(Stock_created_Success_display));
+		return successMessageElement.getText().trim();
+	}
+	@FindBy(xpath = "(//input[@id='doc_searchQueryInput'])[1]")
+	private WebElement StocksSearch;
+	
+	public void Stock_search_enter_text() {
+		wait.until(ExpectedConditions.visibilityOf(StockSearch)).click();
+		String Stock_Search = prop.getProperty("Stocknames");
+		wait.until(ExpectedConditions.visibilityOf(StocksSearch)).sendKeys(Stock_Search + Keys.ENTER);
+		System.out.println(">> User enter the Stock id in search field: " + Stock_Search);
+	}
+	@FindBy(xpath = "(//input[@id='doc_searchQueryInput'])[1]")
+	private WebElement StockSearched, StockSearch;
+
+	@FindBy(xpath = "//div[@class='container p-3 ']")
+	private WebElement Stocklist;
+	
+	public void StockSearchedList() {
+		wait.until(ExpectedConditions.visibilityOf(StockSearch));
+
+		if (StockSearched.isDisplayed()) {
+			System.out.println("Element is displayed");
+		} else {
+			System.out.println("Element is not displayed");
+		}
+		LOGGER.info(">> Admin/User searched Stock");
+		System.out.println(">> User got searched Stock list: " + StockSearched.getText());
+	}
+
+	public void Stocklist() {
+	//	wait.until(ExpectedConditions.visibilityOf(StockSearch));
+
+		if (Stocklist.isDisplayed()) {
+			System.out.println("Element is displayed");
+		} else {
+			System.out.println("Element is not displayed");
+		}
+		LOGGER.info(">> Admin/User clicked new Stock btn");
+		System.out.println(">> User got sorted Stock list: " + Stocklist.getText());
+	}
+
+	@FindBy(xpath = "(//h6[contains(@class,'m-0 by fw-normal')][normalize-space()='Recently Added'])[1]")
+	private WebElement Stock_sort;
+
+	@FindBy(xpath = "(//h6[contains(text(),'Recently Updated')])[1]")
+	private WebElement Stock_sort_recentlyupdated;
+
+	@FindBy(xpath = "(//h6[contains(text(),'Recently Added')])[2]")
+	private WebElement Stock_sort_recentlyadded;
+
+	public void Stock_sort_recentlyupdated()throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(Stock_sort)).click();
+		Thread.sleep(2000);
+		wait.until(ExpectedConditions.visibilityOf(Stock_sort_recentlyupdated)).click();
+		System.out.println(">> User clicked recently updated in sort");
+	}
+
+	public void Stock_sort_recentlyadded() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(Stock_sort)).click();
+		Thread.sleep(2000);
+		wait.until(ExpectedConditions.visibilityOf(Stock_sort_recentlyadded)).click();
+		System.out.println(">> User clicked recently added in sort");
+	}
+
+	@FindBy(xpath = "(//h6[contains(text(),'Name - A to Z')])[1]")
+	private WebElement A_to_Z_Stock_Name;
+
+	public void A_Z_Stock_sort() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(Stock_sort)).click();
+		Thread.sleep(2000);
+		wait.until(ExpectedConditions.visibilityOf(A_to_Z_Stock_Name)).click();
+		System.out.println(">> User clicked recently updated in sort");
+	}
+
+	@FindBy(xpath = "(//h6[contains(text(),'Name - Z to A')])[1]")
+	private WebElement stock_sortingName_Z_to_A;
+
+	public void Stock_recent_sortZ_A() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(Stock_sort)).click();
+		Thread.sleep(2000);
+		wait.until(ExpectedConditions.visibilityOf(stock_sortingName_Z_to_A)).click();
+		System.out.println(">> User clicked Z-A updated in sort");
+	}
+
+	@FindBy(xpath = "(//h6[contains(text(),'Decending - Date')])[1]")
+	private WebElement Stock_Name_decending;
+
+	public void Stock_DecendingDate() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(Stock_sort)).click();
+		Thread.sleep(2000);
+		wait.until(ExpectedConditions.visibilityOf(Stock_Name_decending)).click();
+		System.out.println(">> User clicked decending updated in sort");
+	}
+
+	@FindBy(xpath = "(//*[name()='svg'][@stroke='currentColor'])[7]")
+	private WebElement Stock_kebabmenu_click;
+	
+	public void kebabmenu_stock() throws Exception {
+		Thread.sleep(2000);
+		wait.until(ExpectedConditions.visibilityOf(Stock_kebabmenu_click)).click();
+	}
+	@FindBy(xpath = "//a[normalize-space()='Edit']")
+	private WebElement click_edit_Stock;
+
+	public void selects_edit_Stock() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(kebabmenu_click));
+		Thread.sleep(1000);
+		wait.until(ExpectedConditions.visibilityOf(click_edit_Stock)).click();
+	}
+	@FindBy(xpath = "//h5[normalize-space()='Edit Stock']")
+	private WebElement stock_editpage_pading;
+	
+	@FindBy(id = "Update Stock")
+	private WebElement stock_click_updatebuttn;
+
+	public void Updated_Stock() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(stock_editpage_pading));
+		String edited_contctpersn = prop.getProperty("edited_contctpersn");
+		wait.until(ExpectedConditions.visibilityOf(contact_person)).sendKeys(edited_contctpersn);
+		Thread.sleep(2000);
+		wait.until(ExpectedConditions.visibilityOf(stock_click_updatebuttn)).click();
+	}
+	@FindBy(xpath = "(//a[normalize-space()='Delete'])[1]")
+	private WebElement click_delete_Stock;
+
+	public void selects_delete_Stock() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(kebabmenu_click));
+		Thread.sleep(1000);
+		wait.until(ExpectedConditions.visibilityOf(click_delete_Stock)).click();
+	}
+	@FindBy(xpath = "//a[normalize-space()='View']")
+	private WebElement click_view_Stock;
+
+	public void selects_view_Stock() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(kebabmenu_click)).isDisplayed();
+		Thread.sleep(1000);
+		wait.until(ExpectedConditions.visibilityOf(click_view_Stock)).click();
+	}
+	@FindBy(xpath = "//h5[normalize-space()='View Stock']")
+	private WebElement display_Stockviewpage;
+
+	public void Stock_viewpagedisplay() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(display_Stockviewpage)).isDisplayed();
+		AssertJUnit.assertTrue(display_Stockviewpage.isDisplayed());
+		LOGGER.info("Stock view page displayed");
 	}
 }

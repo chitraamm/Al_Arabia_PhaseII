@@ -125,3 +125,8 @@ edited_contctpersn = l selvan
 <-----------Stock--------------->
 
 Stocknames = PLIER
+Stockcode = 2345
+Materialname = closer
+SupplierName = nishu
+Availablequantity = 5
+QuantityUsed = 10

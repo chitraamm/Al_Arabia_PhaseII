@@ -506,77 +506,81 @@ public class Masterpage extends Base {
 		Thread.sleep(5000);
 		wait.until(ExpectedConditions.visibilityOf(click_new_Stockbutton)).click();
 	}
-//	@FindBy(xpath = "//h5[normalize-space()='New Stock']")
-//	private WebElement NewStock_page_padding;
-//	
-//	@FindBy(id = "name")
-//	private WebElement Stock_name;
-//	
-//	@FindBy(id = "Stock_id")
-//	private WebElement Stock_id;
-//	
-//	@FindBy(xpath = "//input[@id='contact_person']")
-//	private WebElement contact_person;
-//	
-//	@FindBy(xpath = "(//h6[normalize-space()='Add Stock'])[1]")
-//	private WebElement click_addStock;
-//	
-//	@FindBy(xpath = "//input[@placeholder='Enter phone number']")
-//	private WebElement contact_number;
-//	
-//	@FindBy(id = "email")
-//	private WebElement enter_email;
-//	
-//	@FindBy(xpath = "(//input[@placeholder='Enter Location'])[1]")
-//	private WebElement cityname;
-//	
-//	@FindBy(id = "country")
-//	private WebElement country_name;
-//
-//	public void Enter_Mandatory_fields_Stock () throws Exception {
-//		Thread.sleep(3000);
-//		wait.until(ExpectedConditions.visibilityOf(NewStock_page_padding)).isDisplayed();
-//		String Stockname = prop.getProperty("Stockname");
-//		wait.until(ExpectedConditions.visibilityOf(Stock_name)).sendKeys(Stockname);
-//		Thread.sleep(1000);
-//		
-//		wait.until(ExpectedConditions.visibilityOf(Stock_name)).isDisplayed();
-//		String Stockid = prop.getProperty("Stockid");
-//		wait.until(ExpectedConditions.visibilityOf(Stock_id)).sendKeys(Stockid);
-//		Thread.sleep(1000);
-//		
-//		wait.until(ExpectedConditions.visibilityOf(Stock_id)).isDisplayed();
-//		String Contactperson = prop.getProperty("Contactperson");
-//		wait.until(ExpectedConditions.visibilityOf(contact_person)).sendKeys(Contactperson);
-//		Thread.sleep(1000);
-//
-//		wait.until(ExpectedConditions.visibilityOf(contact_person)).isDisplayed();
-//		String contactnumber = prop.getProperty("Phone_number");
-//		wait.until(ExpectedConditions.visibilityOf(contact_number)).sendKeys(contactnumber);
-//	
-//		wait.until(ExpectedConditions.visibilityOf(contact_number)).isDisplayed();
-//	    String emailfield = prop.getProperty("emailfield");
-//	    wait.until(ExpectedConditions.visibilityOf(enter_email)).sendKeys(emailfield);
-//	    
-//	    wait.until(ExpectedConditions.visibilityOf(enter_email)).isDisplayed();
-//	    wait.until(ExpectedConditions.visibilityOf(cityname)).sendKeys("Riyadh Saudi Arabia");
-//		Thread.sleep(3000);
-//	    wait.until(ExpectedConditions.visibilityOf(cityname)).sendKeys(""+Keys.DOWN+Keys.ENTER);
-//	   
-//	    wait.until(ExpectedConditions.visibilityOf(cityname)).isDisplayed();
-//	    String countryname = prop.getProperty("countryname");
-//	    wait.until(ExpectedConditions.visibilityOf(country_name)).sendKeys(countryname);
+	@FindBy(xpath = "//h5[normalize-space()='New Stock']")
+	private WebElement New_Stock_page_padding;
+	
+	@FindBy(id = "stock_code")
+	private WebElement Stock_Code;
+	
+	@FindBy(xpath = "(//div[@class='select__input-container css-19bb58m'])[1]")
+	private WebElement ID_supplier;
+	
+	@FindBy(id = "material_name")
+	private WebElement Material_Name;
+	
+	@FindBy(id = "supplier_part_no")
+	private WebElement Supplier_Name;
+	
+	@FindBy(id = "available_qty_in_store")
+	private WebElement Available_quantity_in_store;
+	
+	@FindBy(id = "qty_used_on_site")
+	private WebElement Quantity_Used_on_site;
+	
+	@FindBy(id = "minimum_quantity")
+	private WebElement Minimum_Quantity;
+	
+	@FindBy(id = "maximum_quantity")
+	private WebElement Maximum_Quantity;
+	
+	@FindBy(id = "react-select-4-placeholder")
+	private WebElement Lead_Time_To_Order;
+	
+	@FindBy(id = "//input[@id='formikDateField_warranty_period']")
+	private WebElement Warranty_Period;
 
-//	}
-//	@FindBy(id = "Add Stock")
-//	private WebElement click_add_Stock;
-//	
-//	public void Add_Stock() throws Exception {
-//		wait.until(ExpectedConditions.visibilityOf(country_name)).isDisplayed();
-//
-//		wait.until(ExpectedConditions.visibilityOf(click_addStock)).click();
-//		
-//	}
+	public void Enter_Mandatory_fields_Stock () throws Exception {
+		Thread.sleep(3000);
+		wait.until(ExpectedConditions.visibilityOf(New_Stock_page_padding)).isDisplayed();
+		String Stockcode = prop.getProperty("Stockcode");
+		wait.until(ExpectedConditions.visibilityOf(Stock_Code)).sendKeys(Stockcode);
+		Thread.sleep(3000);
+		
+		wait.until(ExpectedConditions.visibilityOf(Stock_Code)).isDisplayed();
+		//String SupplierID = prop.getProperty("SupplierID");
+		wait.until(ExpectedConditions.visibilityOf(ID_supplier)).click();
+       // act.moveToElement(Supplier_id).click().perform();
+		Thread.sleep(3000);
+        wait.until(ExpectedConditions.visibilityOf(ID_supplier)).sendKeys(""+Keys.ENTER);
+		Thread.sleep(1000);
+
+		wait.until(ExpectedConditions.visibilityOf(Supplier_id)).isDisplayed();
+		String Materialname = prop.getProperty("Materialname");
+		wait.until(ExpectedConditions.visibilityOf(Material_Name)).sendKeys(Materialname);
+		Thread.sleep(1000);
+
+		wait.until(ExpectedConditions.visibilityOf(Material_Name)).isDisplayed();
+		String SupplierName = prop.getProperty("SupplierName");
+		wait.until(ExpectedConditions.visibilityOf(Supplier_name)).sendKeys(SupplierName);
+		Thread.sleep(1000);
+
+		wait.until(ExpectedConditions.visibilityOf(Supplier_name)).isDisplayed();
+		String Availablequantity = prop.getProperty("Availablequantity");
+		wait.until(ExpectedConditions.visibilityOf(Available_quantity_in_store)).sendKeys(Availablequantity);
+		Thread.sleep(1000);
+
+		wait.until(ExpectedConditions.visibilityOf(Available_quantity_in_store)).isDisplayed();
+        String QuantityUsed = prop.getProperty("QuantityUsed");
+		wait.until(ExpectedConditions.visibilityOf(Quantity_Used_on_site)).sendKeys(QuantityUsed);
+		Thread.sleep(1000);
+	}
+
+	@FindBy(xpath = "//div[@data-testid='Add Stock']")
+	private WebElement add_stock_button_click;
+	
+	public void Add_Stock() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(add_stock_button_click)).click();
+	}
 	@FindBy(xpath = "//div[contains(@class, 'toastpop') and contains(@class, 'position-relative')]")
 	private WebElement Stock_created_Success_display;
 
@@ -729,4 +733,1093 @@ public class Masterpage extends Base {
 		AssertJUnit.assertTrue(display_Stockviewpage.isDisplayed());
 		LOGGER.info("Stock view page displayed");
 	}
+
+
+//<-----------------------------------------TicketTitle---------------------------------------------->
+
+@FindBy(xpath = "//*[@id=\"root\"]/div[2]/div[1]/div[2]/div/div[1]/div[2]/div/a[6]/span")
+private WebElement click_TicketTile;
+
+public void TicketTitle_click() throws Exception {
+	wait.until(ExpectedConditions.visibilityOf(click_TicketTile)).click();
+}
+@FindBy(xpath = "//h5[normalize-space()='TicketTitle(8)']")
+private WebElement TicketTitleCount;
+
+public void allTicketTitleCount() {
+	wait.until(ExpectedConditions.visibilityOf(TicketTitleCount)).isDisplayed();
+	AssertJUnit.assertTrue(TicketTitleCount.isDisplayed());
+	LOGGER.info(">> The TicketTitle page got displayed");
+}
+
+@FindBy(xpath = "(//h6[contains(@class,'m-0 fw-normal')][normalize-space()='New TicketTitle'])[1]")
+private WebElement click_new_TicketTitlebutton;
+
+public void New_TicketTitle_button_click() throws Exception {
+	Thread.sleep(5000);
+	wait.until(ExpectedConditions.visibilityOf(click_new_TicketTitlebutton)).click();
+}
+@FindBy(id = "title")
+private WebElement enter_TicketTitle;
+
+@FindBy(xpath = "(//h6[normalize-space()='Add TicketTitle'])[1]")
+private WebElement click_addTicketTitle;
+
+public void Add_TicketTitle() throws Exception {
+	wait.until(ExpectedConditions.visibilityOf(enter_TicketTitle));
+	String TicketTitlename = prop.getProperty("TicketTitlename");
+	wait.until(ExpectedConditions.visibilityOf(enter_TicketTitle)).sendKeys(TicketTitlename);
+	Thread.sleep(2000);
+	act.moveToElement(click_addTicketTitle).click().perform();
+}
+@FindBy(xpath = "//div[contains(@class, 'toastpop') and contains(@class, 'position-relative')]")
+private WebElement TicketTitle_created_Success_display;
+
+public String TicketTitle_created_Success_display() throws Exception {
+	WebElement successMessageElement = wait
+			.until(ExpectedConditions.visibilityOf(TicketTitle_created_Success_display));
+	return successMessageElement.getText().trim();
+}
+@FindBy(xpath = "//div[@class='list_members p-3 ']")
+private WebElement TicketTitlelist;
+
+@FindBy(xpath = "(//input[@id='doc_searchQueryInput'])[1]")
+private WebElement TicketTitle_Search;
+
+public void TicketTitle_search_enter_text() {
+	wait.until(ExpectedConditions.visibilityOf(TicketTitlelist)).click();
+	String TicketTitle_Search = prop.getProperty("TicketTitlename");
+	wait.until(ExpectedConditions.visibilityOf(TicketTitlelist)).sendKeys(TicketTitle_Search + Keys.ENTER);
+	System.out.println(">> User enter the TicketTitle id in search field: " + TicketTitle_Search);
+}
+@FindBy(xpath = "(//td[normalize-space()='ADMIN'])[1]")
+private WebElement TicketTitleSearched, TicketTitleSearch;
+
+public void TicketTitleSearchedList() {
+	wait.until(ExpectedConditions.visibilityOf(TicketTitlelist));
+
+	if (TicketTitleSearched.isDisplayed()) {
+		System.out.println("Element is displayed");
+	} else {
+		System.out.println("Element is not displayed");
+	}
+	LOGGER.info(">> Admin/User searched TicketTitle");
+	System.out.println(">> User got searched TicketTitle list: " + TicketTitleSearch.getText());
+}
+
+public void TicketTitlelist() {
+	wait.until(ExpectedConditions.visibilityOf(TicketTitlelist));
+
+	if (TicketTitlelist.isDisplayed()) {
+		System.out.println("Element is displayed");
+	} else {
+		System.out.println("Element is not displayed");
+	}
+	LOGGER.info(">> Admin/User clicked new TicketTitle btn");
+	System.out.println(">> User got sorted TicketTitle list: " + TicketTitlelist.getText());
+}
+
+@FindBy(xpath = "(//h6[contains(@class,'m-0 by fw-normal')][normalize-space()='Recently Added'])[1]")
+private WebElement TicketTitle_sort;
+
+@FindBy(xpath = "(//h6[contains(text(),'Recently Updated')])[1]")
+private WebElement TicketTitle_sort_recentlyupdated;
+
+@FindBy(xpath = "(//h6[contains(text(),'Recently Added')])[2]")
+private WebElement TicketTitle_sort_recentlyadded;
+
+public void TicketTitle_sort_recentlyupdated() {
+	wait.until(ExpectedConditions.visibilityOf(TicketTitle_sort)).click();
+	wait.until(ExpectedConditions.visibilityOf(TicketTitle_sort_recentlyupdated)).click();
+	System.out.println(">> User clicked recently updated in sort");
+}
+
+public void TicketTitle_sort_recentlyadded() {
+	wait.until(ExpectedConditions.visibilityOf(TicketTitle_sort)).click();
+	wait.until(ExpectedConditions.visibilityOf(TicketTitle_sort_recentlyadded)).click();
+	System.out.println(">> User clicked recently added in sort");
+}
+
+@FindBy(xpath = "(//h6[contains(text(),'Name - A to Z')])[1]")
+private WebElement TicketTitle_Name_A_to_Z;
+
+public void TicketTitle_sortA_Z() {
+	wait.until(ExpectedConditions.visibilityOf(TicketTitle_sort)).click();
+	wait.until(ExpectedConditions.visibilityOf(TicketTitle_Name_A_to_Z)).click();
+	System.out.println(">> User clicked recently updated in sort");
+}
+
+@FindBy(xpath = "(//h6[contains(text(),'Name - Z to A')])[1]")
+private WebElement TicketTitle_Name_Z_to_A;
+
+public void TicketTitle_sortZ_A() {
+	wait.until(ExpectedConditions.visibilityOf(TicketTitle_sort)).click();
+	wait.until(ExpectedConditions.visibilityOf(TicketTitle_Name_Z_to_A)).click();
+	System.out.println(">> User clicked Z-A updated in sort");
+}
+
+@FindBy(xpath = "(//h6[contains(text(),'Decending - Date')])[1]")
+private WebElement TicketTitle_Name_decending;
+
+public void TicketTitle_DecendingDate() {
+	wait.until(ExpectedConditions.visibilityOf(TicketTitle_sort)).click();
+	wait.until(ExpectedConditions.visibilityOf(TicketTitle_Name_decending)).click();
+	System.out.println(">> User clicked decending updated in sort");
+}
+
+@FindBy(xpath = "(//*[name()='svg'][@stroke='currentColor'])[7]")
+private WebElement TicketTitle_kebabmenu_click;
+
+public void kebabmenu_TicketTitle() throws Exception {
+	Thread.sleep(2000);
+	wait.until(ExpectedConditions.visibilityOf(TicketTitle_kebabmenu_click)).click();
+}
+@FindBy(xpath = "(//a[@role='button'][normalize-space()='Edit'])[1]")
+private WebElement click_edit_TicketTitle;
+
+public void selects_edit_TicketTitle() throws Exception {
+	wait.until(ExpectedConditions.visibilityOf(kebabmenu_click));
+	Thread.sleep(1000);
+	wait.until(ExpectedConditions.visibilityOf(click_edit_TicketTitle)).click();
+}
+@FindBy(xpath = "(//h6[normalize-space()='Edit TicketTitle'])[1]")
+private WebElement click_Edit_TicketTitlebuttn;
+
+public void Updated_TicketTitle() throws Exception {
+	wait.until(ExpectedConditions.visibilityOf(enter_TicketTitle));
+	String edited_TicketTitlename = prop.getProperty("newTicketTitlename");
+	wait.until(ExpectedConditions.visibilityOf(enter_TicketTitle)).sendKeys(edited_TicketTitlename);
+	Thread.sleep(2000);
+	wait.until(ExpectedConditions.visibilityOf(click_Edit_TicketTitlebuttn)).click();
+}
+@FindBy(xpath = "//a[normalize-space()='Delete']")
+private WebElement click_delete_TicketTitle;
+
+public void selects_delete_TicketTitle() throws Exception {
+	wait.until(ExpectedConditions.visibilityOf(kebabmenu_click));
+	Thread.sleep(1000);
+	wait.until(ExpectedConditions.visibilityOf(click_delete_TicketTitle)).click();
+}
+//<-----------------------------------------ScreenResolution---------------------------------------------->
+
+@FindBy(xpath = "//*[@id=\"root\"]/div[2]/div[1]/div[2]/div/div[1]/div[2]/div/a[6]/span")
+private WebElement click_ScreenResolution;
+
+public void ScreenResolution_click() throws Exception {
+	wait.until(ExpectedConditions.visibilityOf(click_ScreenResolution)).click();
+}
+@FindBy(xpath = "//h5[normalize-space()='ScreenResolution(8)']")
+private WebElement ScreenResolutionCount;
+
+public void allScreenResolutionCount() {
+	wait.until(ExpectedConditions.visibilityOf(ScreenResolutionCount)).isDisplayed();
+	AssertJUnit.assertTrue(ScreenResolutionCount.isDisplayed());
+	LOGGER.info(">> The ScreenResolution page got displayed");
+}
+
+@FindBy(xpath = "(//h6[contains(@class,'m-0 fw-normal')][normalize-space()='New ScreenResolution'])[1]")
+private WebElement click_new_ScreenResolutionbutton;
+
+public void New_ScreenResolution_button_click() throws Exception {
+	Thread.sleep(5000);
+	wait.until(ExpectedConditions.visibilityOf(click_new_ScreenResolutionbutton)).click();
+}
+@FindBy(id = "title")
+private WebElement enter_ScreenResolution;
+
+@FindBy(xpath = "(//h6[normalize-space()='Add ScreenResolution'])[1]")
+private WebElement click_addScreenResolution;
+
+public void Add_ScreenResolution() throws Exception {
+	wait.until(ExpectedConditions.visibilityOf(enter_ScreenResolution));
+	String ScreenResolutionname = prop.getProperty("ScreenResolutionname");
+	wait.until(ExpectedConditions.visibilityOf(enter_ScreenResolution)).sendKeys(ScreenResolutionname);
+	Thread.sleep(2000);
+	act.moveToElement(click_addScreenResolution).click().perform();
+}
+@FindBy(xpath = "//div[contains(@class, 'toastpop') and contains(@class, 'position-relative')]")
+private WebElement ScreenResolution_created_Success_display;
+
+public String ScreenResolution_created_Success_display() throws Exception {
+	WebElement successMessageElement = wait
+			.until(ExpectedConditions.visibilityOf(ScreenResolution_created_Success_display));
+	return successMessageElement.getText().trim();
+}
+@FindBy(xpath = "//div[@class='list_members p-3 ']")
+private WebElement ScreenResolutionlist;
+
+@FindBy(xpath = "(//input[@id='doc_searchQueryInput'])[1]")
+private WebElement ScreenResolution_Search;
+
+public void ScreenResolution_search_enter_text() {
+	wait.until(ExpectedConditions.visibilityOf(ScreenResolutionlist)).click();
+	String ScreenResolution_Search = prop.getProperty("ScreenResolutionname");
+	wait.until(ExpectedConditions.visibilityOf(ScreenResolutionlist)).sendKeys(ScreenResolution_Search + Keys.ENTER);
+	System.out.println(">> User enter the ScreenResolution id in search field: " + ScreenResolution_Search);
+}
+@FindBy(xpath = "(//td[normalize-space()='ADMIN'])[1]")
+private WebElement ScreenResolutionSearched, ScreenResolutionSearch;
+
+public void ScreenResolutionSearchedList() {
+	wait.until(ExpectedConditions.visibilityOf(ScreenResolutionlist));
+
+	if (ScreenResolutionSearched.isDisplayed()) {
+		System.out.println("Element is displayed");
+	} else {
+		System.out.println("Element is not displayed");
+	}
+	LOGGER.info(">> Admin/User searched ScreenResolution");
+	System.out.println(">> User got searched ScreenResolution list: " + ScreenResolutionSearch.getText());
+}
+
+public void ScreenResolutionlist() {
+	wait.until(ExpectedConditions.visibilityOf(ScreenResolutionlist));
+
+	if (ScreenResolutionlist.isDisplayed()) {
+		System.out.println("Element is displayed");
+	} else {
+		System.out.println("Element is not displayed");
+	}
+	LOGGER.info(">> Admin/User clicked new ScreenResolution btn");
+	System.out.println(">> User got sorted ScreenResolution list: " + ScreenResolutionlist.getText());
+}
+
+@FindBy(xpath = "(//h6[contains(@class,'m-0 by fw-normal')][normalize-space()='Recently Added'])[1]")
+private WebElement ScreenResolution_sort;
+
+@FindBy(xpath = "(//h6[contains(text(),'Recently Updated')])[1]")
+private WebElement ScreenResolution_sort_recentlyupdated;
+
+@FindBy(xpath = "(//h6[contains(text(),'Recently Added')])[2]")
+private WebElement ScreenResolution_sort_recentlyadded;
+
+public void ScreenResolution_sort_recentlyupdated() {
+	wait.until(ExpectedConditions.visibilityOf(ScreenResolution_sort)).click();
+	wait.until(ExpectedConditions.visibilityOf(ScreenResolution_sort_recentlyupdated)).click();
+	System.out.println(">> User clicked recently updated in sort");
+}
+
+public void ScreenResolution_sort_recentlyadded() {
+	wait.until(ExpectedConditions.visibilityOf(ScreenResolution_sort)).click();
+	wait.until(ExpectedConditions.visibilityOf(ScreenResolution_sort_recentlyadded)).click();
+	System.out.println(">> User clicked recently added in sort");
+}
+
+@FindBy(xpath = "(//h6[contains(text(),'Name - A to Z')])[1]")
+private WebElement ScreenResolution_Name_A_to_Z;
+
+public void ScreenResolution_sortA_Z() {
+	wait.until(ExpectedConditions.visibilityOf(ScreenResolution_sort)).click();
+	wait.until(ExpectedConditions.visibilityOf(ScreenResolution_Name_A_to_Z)).click();
+	System.out.println(">> User clicked recently updated in sort");
+}
+
+@FindBy(xpath = "(//h6[contains(text(),'Name - Z to A')])[1]")
+private WebElement ScreenResolution_Name_Z_to_A;
+
+public void ScreenResolution_sortZ_A() {
+	wait.until(ExpectedConditions.visibilityOf(ScreenResolution_sort)).click();
+	wait.until(ExpectedConditions.visibilityOf(ScreenResolution_Name_Z_to_A)).click();
+	System.out.println(">> User clicked Z-A updated in sort");
+}
+
+@FindBy(xpath = "(//h6[contains(text(),'Decending - Date')])[1]")
+private WebElement ScreenResolution_Name_decending;
+
+public void ScreenResolution_DecendingDate() {
+	wait.until(ExpectedConditions.visibilityOf(ScreenResolution_sort)).click();
+	wait.until(ExpectedConditions.visibilityOf(ScreenResolution_Name_decending)).click();
+	System.out.println(">> User clicked decending updated in sort");
+}
+
+@FindBy(xpath = "(//*[name()='svg'][@stroke='currentColor'])[7]")
+private WebElement ScreenResolution_kebabmenu_click;
+
+public void kebabmenu_ScreenResolution() throws Exception {
+	Thread.sleep(2000);
+	wait.until(ExpectedConditions.visibilityOf(ScreenResolution_kebabmenu_click)).click();
+}
+@FindBy(xpath = "(//a[@role='button'][normalize-space()='Edit'])[1]")
+private WebElement click_edit_ScreenResolution;
+
+public void selects_edit_ScreenResolution() throws Exception {
+	wait.until(ExpectedConditions.visibilityOf(kebabmenu_click));
+	Thread.sleep(1000);
+	wait.until(ExpectedConditions.visibilityOf(click_edit_ScreenResolution)).click();
+}
+@FindBy(xpath = "(//h6[normalize-space()='Edit ScreenResolution'])[1]")
+private WebElement click_Edit_ScreenResolutionbuttn;
+
+public void Updated_ScreenResolution() throws Exception {
+	wait.until(ExpectedConditions.visibilityOf(enter_ScreenResolution));
+	String edited_ScreenResolutionname = prop.getProperty("newScreenResolutionname");
+	wait.until(ExpectedConditions.visibilityOf(enter_ScreenResolution)).sendKeys(edited_ScreenResolutionname);
+	Thread.sleep(2000);
+	wait.until(ExpectedConditions.visibilityOf(click_Edit_ScreenResolutionbuttn)).click();
+}
+@FindBy(xpath = "//a[normalize-space()='Delete']")
+private WebElement click_delete_ScreenResolution;
+
+public void selects_delete_ScreenResolution() throws Exception {
+	wait.until(ExpectedConditions.visibilityOf(kebabmenu_click));
+	Thread.sleep(1000);
+	wait.until(ExpectedConditions.visibilityOf(click_delete_ScreenResolution)).click();
+}
+
+//<-----------------------------------------ScreenPixel------------------------------------------------>
+
+@FindBy(xpath = "//*[@id=\"root\"]/div[2]/div[1]/div[2]/div/div[1]/div[2]/div/a[6]/span")
+private WebElement click_ScreenPixel;
+
+public void ScreenPixel_click() throws Exception {
+	wait.until(ExpectedConditions.visibilityOf(click_ScreenPixel)).click();
+}
+@FindBy(xpath = "//h5[normalize-space()='ScreenPixel(8)']")
+private WebElement ScreenPixelCount;
+
+public void allScreenPixelCount() {
+	wait.until(ExpectedConditions.visibilityOf(ScreenPixelCount)).isDisplayed();
+	AssertJUnit.assertTrue(ScreenPixelCount.isDisplayed());
+	LOGGER.info(">> The ScreenPixel page got displayed");
+}
+
+@FindBy(xpath = "(//h6[contains(@class,'m-0 fw-normal')][normalize-space()='New ScreenPixel'])[1]")
+private WebElement click_new_ScreenPixelbutton;
+
+public void New_ScreenPixel_button_click() throws Exception {
+	Thread.sleep(5000);
+	wait.until(ExpectedConditions.visibilityOf(click_new_ScreenPixelbutton)).click();
+}
+@FindBy(id = "title")
+private WebElement enter_ScreenPixel;
+
+@FindBy(xpath = "(//h6[normalize-space()='Add ScreenPixel'])[1]")
+private WebElement click_addScreenPixel;
+
+public void Add_ScreenPixel() throws Exception {
+	wait.until(ExpectedConditions.visibilityOf(enter_ScreenPixel));
+	String ScreenPixelname = prop.getProperty("ScreenPixelname");
+	wait.until(ExpectedConditions.visibilityOf(enter_ScreenPixel)).sendKeys(ScreenPixelname);
+	Thread.sleep(2000);
+	act.moveToElement(click_addScreenPixel).click().perform();
+}
+@FindBy(xpath = "//div[contains(@class, 'toastpop') and contains(@class, 'position-relative')]")
+private WebElement ScreenPixel_created_Success_display;
+
+public String ScreenPixel_created_Success_display() throws Exception {
+	WebElement successMessageElement = wait
+			.until(ExpectedConditions.visibilityOf(ScreenPixel_created_Success_display));
+	return successMessageElement.getText().trim();
+}
+@FindBy(xpath = "//div[@class='list_members p-3 ']")
+private WebElement ScreenPixellist;
+
+@FindBy(xpath = "(//input[@id='doc_searchQueryInput'])[1]")
+private WebElement ScreenPixel_Search;
+
+public void ScreenPixel_search_enter_text() {
+	wait.until(ExpectedConditions.visibilityOf(ScreenPixellist)).click();
+	String ScreenPixel_Search = prop.getProperty("ScreenPixelname");
+	wait.until(ExpectedConditions.visibilityOf(ScreenPixellist)).sendKeys(ScreenPixel_Search + Keys.ENTER);
+	System.out.println(">> User enter the ScreenPixel id in search field: " + ScreenPixel_Search);
+}
+@FindBy(xpath = "(//td[normalize-space()='ADMIN'])[1]")
+private WebElement ScreenPixelSearched, ScreenPixelSearch;
+
+public void ScreenPixelSearchedList() {
+	wait.until(ExpectedConditions.visibilityOf(ScreenPixellist));
+
+	if (ScreenPixelSearched.isDisplayed()) {
+		System.out.println("Element is displayed");
+	} else {
+		System.out.println("Element is not displayed");
+	}
+	LOGGER.info(">> Admin/User searched ScreenPixel");
+	System.out.println(">> User got searched ScreenPixel list: " + ScreenPixelSearch.getText());
+}
+
+public void ScreenPixellist() {
+	wait.until(ExpectedConditions.visibilityOf(ScreenPixellist));
+
+	if (ScreenPixellist.isDisplayed()) {
+		System.out.println("Element is displayed");
+	} else {
+		System.out.println("Element is not displayed");
+	}
+	LOGGER.info(">> Admin/User clicked new ScreenPixel btn");
+	System.out.println(">> User got sorted ScreenPixel list: " + ScreenPixellist.getText());
+}
+
+@FindBy(xpath = "(//h6[contains(@class,'m-0 by fw-normal')][normalize-space()='Recently Added'])[1]")
+private WebElement ScreenPixel_sort;
+
+@FindBy(xpath = "(//h6[contains(text(),'Recently Updated')])[1]")
+private WebElement ScreenPixel_sort_recentlyupdated;
+
+@FindBy(xpath = "(//h6[contains(text(),'Recently Added')])[2]")
+private WebElement ScreenPixel_sort_recentlyadded;
+
+public void ScreenPixel_sort_recentlyupdated() {
+	wait.until(ExpectedConditions.visibilityOf(ScreenPixel_sort)).click();
+	wait.until(ExpectedConditions.visibilityOf(ScreenPixel_sort_recentlyupdated)).click();
+	System.out.println(">> User clicked recently updated in sort");
+}
+
+public void ScreenPixel_sort_recentlyadded() {
+	wait.until(ExpectedConditions.visibilityOf(ScreenPixel_sort)).click();
+	wait.until(ExpectedConditions.visibilityOf(ScreenPixel_sort_recentlyadded)).click();
+	System.out.println(">> User clicked recently added in sort");
+}
+
+@FindBy(xpath = "(//h6[contains(text(),'Name - A to Z')])[1]")
+private WebElement ScreenPixel_Name_A_to_Z;
+
+public void ScreenPixel_sortA_Z() {
+	wait.until(ExpectedConditions.visibilityOf(ScreenPixel_sort)).click();
+	wait.until(ExpectedConditions.visibilityOf(ScreenPixel_Name_A_to_Z)).click();
+	System.out.println(">> User clicked recently updated in sort");
+}
+
+@FindBy(xpath = "(//h6[contains(text(),'Name - Z to A')])[1]")
+private WebElement ScreenPixel_Name_Z_to_A;
+
+public void ScreenPixel_sortZ_A() {
+	wait.until(ExpectedConditions.visibilityOf(ScreenPixel_sort)).click();
+	wait.until(ExpectedConditions.visibilityOf(ScreenPixel_Name_Z_to_A)).click();
+	System.out.println(">> User clicked Z-A updated in sort");
+}
+
+@FindBy(xpath = "(//h6[contains(text(),'Decending - Date')])[1]")
+private WebElement ScreenPixel_Name_decending;
+
+public void ScreenPixel_DecendingDate() {
+	wait.until(ExpectedConditions.visibilityOf(ScreenPixel_sort)).click();
+	wait.until(ExpectedConditions.visibilityOf(ScreenPixel_Name_decending)).click();
+	System.out.println(">> User clicked decending updated in sort");
+}
+
+@FindBy(xpath = "(//*[name()='svg'][@stroke='currentColor'])[7]")
+private WebElement ScreenPixel_kebabmenu_click;
+
+public void kebabmenu_ScreenPixel() throws Exception {
+	Thread.sleep(2000);
+	wait.until(ExpectedConditions.visibilityOf(ScreenPixel_kebabmenu_click)).click();
+}
+@FindBy(xpath = "(//a[@role='button'][normalize-space()='Edit'])[1]")
+private WebElement click_edit_ScreenPixel;
+
+public void selects_edit_ScreenPixel() throws Exception {
+	wait.until(ExpectedConditions.visibilityOf(kebabmenu_click));
+	Thread.sleep(1000);
+	wait.until(ExpectedConditions.visibilityOf(click_edit_ScreenPixel)).click();
+}
+@FindBy(xpath = "(//h6[normalize-space()='Edit ScreenPixel'])[1]")
+private WebElement click_Edit_ScreenPixelbuttn;
+
+public void Updated_ScreenPixel() throws Exception {
+	wait.until(ExpectedConditions.visibilityOf(enter_ScreenPixel));
+	String edited_ScreenPixelname = prop.getProperty("newScreenPixelname");
+	wait.until(ExpectedConditions.visibilityOf(enter_ScreenPixel)).sendKeys(edited_ScreenPixelname);
+	Thread.sleep(2000);
+	wait.until(ExpectedConditions.visibilityOf(click_Edit_ScreenPixelbuttn)).click();
+}
+@FindBy(xpath = "//a[normalize-space()='Delete']")
+private WebElement click_delete_ScreenPixel;
+
+public void selects_delete_ScreenPixel() throws Exception {
+	wait.until(ExpectedConditions.visibilityOf(kebabmenu_click));
+	Thread.sleep(1000);
+	wait.until(ExpectedConditions.visibilityOf(click_delete_ScreenPixel)).click();
+}
+
+
+//<-----------------------------------------BillBoardType------------------------------------------------>
+
+@FindBy(xpath = "//*[@id=\"root\"]/div[2]/div[1]/div[2]/div/div[1]/div[2]/div/a[6]/span")
+private WebElement click_BillBoardType;
+
+public void BillBoardType_click() throws Exception {
+	wait.until(ExpectedConditions.visibilityOf(click_BillBoardType)).click();
+}
+@FindBy(xpath = "//h5[normalize-space()='BillBoardType(8)']")
+private WebElement BillBoardTypeCount;
+
+public void allBillBoardTypeCount() {
+	wait.until(ExpectedConditions.visibilityOf(BillBoardTypeCount)).isDisplayed();
+	AssertJUnit.assertTrue(BillBoardTypeCount.isDisplayed());
+	LOGGER.info(">> The BillBoardType page got displayed");
+}
+
+@FindBy(xpath = "(//h6[contains(@class,'m-0 fw-normal')][normalize-space()='New BillBoardType'])[1]")
+private WebElement click_new_BillBoardTypebutton;
+
+public void New_BillBoardType_button_click() throws Exception {
+	Thread.sleep(5000);
+	wait.until(ExpectedConditions.visibilityOf(click_new_BillBoardTypebutton)).click();
+}
+@FindBy(id = "title")
+private WebElement enter_BillBoardType;
+
+@FindBy(xpath = "(//h6[normalize-space()='Add BillBoardType'])[1]")
+private WebElement click_addBillBoardType;
+
+public void Add_BillBoardType() throws Exception {
+	wait.until(ExpectedConditions.visibilityOf(enter_BillBoardType));
+	String BillBoardTypename = prop.getProperty("BillBoardTypename");
+	wait.until(ExpectedConditions.visibilityOf(enter_BillBoardType)).sendKeys(BillBoardTypename);
+	Thread.sleep(2000);
+	act.moveToElement(click_addBillBoardType).click().perform();
+}
+@FindBy(xpath = "//div[contains(@class, 'toastpop') and contains(@class, 'position-relative')]")
+private WebElement BillBoardType_created_Success_display;
+
+public String BillBoardType_created_Success_display() throws Exception {
+	WebElement successMessageElement = wait
+			.until(ExpectedConditions.visibilityOf(BillBoardType_created_Success_display));
+	return successMessageElement.getText().trim();
+}
+@FindBy(xpath = "//div[@class='list_members p-3 ']")
+private WebElement BillBoardTypelist;
+
+@FindBy(xpath = "(//input[@id='doc_searchQueryInput'])[1]")
+private WebElement BillBoardType_Search;
+
+public void BillBoardType_search_enter_text() {
+	wait.until(ExpectedConditions.visibilityOf(BillBoardTypelist)).click();
+	String BillBoardType_Search = prop.getProperty("BillBoardTypename");
+	wait.until(ExpectedConditions.visibilityOf(BillBoardTypelist)).sendKeys(BillBoardType_Search + Keys.ENTER);
+	System.out.println(">> User enter the BillBoardType id in search field: " + BillBoardType_Search);
+}
+@FindBy(xpath = "(//td[normalize-space()='ADMIN'])[1]")
+private WebElement BillBoardTypeSearched, BillBoardTypeSearch;
+
+public void BillBoardTypeSearchedList() {
+	wait.until(ExpectedConditions.visibilityOf(BillBoardTypelist));
+
+	if (BillBoardTypeSearched.isDisplayed()) {
+		System.out.println("Element is displayed");
+	} else {
+		System.out.println("Element is not displayed");
+	}
+	LOGGER.info(">> Admin/User searched BillBoardType");
+	System.out.println(">> User got searched BillBoardType list: " + BillBoardTypeSearch.getText());
+}
+
+public void BillBoardTypelist() {
+	wait.until(ExpectedConditions.visibilityOf(BillBoardTypelist));
+
+	if (BillBoardTypelist.isDisplayed()) {
+		System.out.println("Element is displayed");
+	} else {
+		System.out.println("Element is not displayed");
+	}
+	LOGGER.info(">> Admin/User clicked new BillBoardType btn");
+	System.out.println(">> User got sorted BillBoardType list: " + BillBoardTypelist.getText());
+}
+
+@FindBy(xpath = "(//h6[contains(@class,'m-0 by fw-normal')][normalize-space()='Recently Added'])[1]")
+private WebElement BillBoardType_sort;
+
+@FindBy(xpath = "(//h6[contains(text(),'Recently Updated')])[1]")
+private WebElement BillBoardType_sort_recentlyupdated;
+
+@FindBy(xpath = "(//h6[contains(text(),'Recently Added')])[2]")
+private WebElement BillBoardType_sort_recentlyadded;
+
+public void BillBoardType_sort_recentlyupdated() {
+	wait.until(ExpectedConditions.visibilityOf(BillBoardType_sort)).click();
+	wait.until(ExpectedConditions.visibilityOf(BillBoardType_sort_recentlyupdated)).click();
+	System.out.println(">> User clicked recently updated in sort");
+}
+
+public void BillBoardType_sort_recentlyadded() {
+	wait.until(ExpectedConditions.visibilityOf(BillBoardType_sort)).click();
+	wait.until(ExpectedConditions.visibilityOf(BillBoardType_sort_recentlyadded)).click();
+	System.out.println(">> User clicked recently added in sort");
+}
+
+@FindBy(xpath = "(//h6[contains(text(),'Name - A to Z')])[1]")
+private WebElement BillBoardType_Name_A_to_Z;
+
+public void BillBoardType_sortA_Z() {
+	wait.until(ExpectedConditions.visibilityOf(BillBoardType_sort)).click();
+	wait.until(ExpectedConditions.visibilityOf(BillBoardType_Name_A_to_Z)).click();
+	System.out.println(">> User clicked recently updated in sort");
+}
+
+@FindBy(xpath = "(//h6[contains(text(),'Name - Z to A')])[1]")
+private WebElement BillBoardType_Name_Z_to_A;
+
+public void BillBoardType_sortZ_A() {
+	wait.until(ExpectedConditions.visibilityOf(BillBoardType_sort)).click();
+	wait.until(ExpectedConditions.visibilityOf(BillBoardType_Name_Z_to_A)).click();
+	System.out.println(">> User clicked Z-A updated in sort");
+}
+
+@FindBy(xpath = "(//h6[contains(text(),'Decending - Date')])[1]")
+private WebElement BillBoardType_Name_decending;
+
+public void BillBoardType_DecendingDate() {
+	wait.until(ExpectedConditions.visibilityOf(BillBoardType_sort)).click();
+	wait.until(ExpectedConditions.visibilityOf(BillBoardType_Name_decending)).click();
+	System.out.println(">> User clicked decending updated in sort");
+}
+
+@FindBy(xpath = "(//*[name()='svg'][@stroke='currentColor'])[7]")
+private WebElement BillBoardType_kebabmenu_click;
+
+public void kebabmenu_BillBoardType() throws Exception {
+	Thread.sleep(2000);
+	wait.until(ExpectedConditions.visibilityOf(BillBoardType_kebabmenu_click)).click();
+}
+@FindBy(xpath = "(//a[@role='button'][normalize-space()='Edit'])[1]")
+private WebElement click_edit_BillBoardType;
+
+public void selects_edit_BillBoardType() throws Exception {
+	wait.until(ExpectedConditions.visibilityOf(kebabmenu_click));
+	Thread.sleep(1000);
+	wait.until(ExpectedConditions.visibilityOf(click_edit_BillBoardType)).click();
+}
+@FindBy(xpath = "(//h6[normalize-space()='Edit BillBoardType'])[1]")
+private WebElement click_Edit_BillBoardTypebuttn;
+
+public void Updated_BillBoardType() throws Exception {
+	wait.until(ExpectedConditions.visibilityOf(enter_BillBoardType));
+	String edited_BillBoardTypename = prop.getProperty("newBillBoardTypename");
+	wait.until(ExpectedConditions.visibilityOf(enter_BillBoardType)).sendKeys(edited_BillBoardTypename);
+	Thread.sleep(2000);
+	wait.until(ExpectedConditions.visibilityOf(click_Edit_BillBoardTypebuttn)).click();
+}
+@FindBy(xpath = "//a[normalize-space()='Delete']")
+private WebElement click_delete_BillBoardType;
+
+public void selects_delete_BillBoardType() throws Exception {
+	wait.until(ExpectedConditions.visibilityOf(kebabmenu_click));
+	Thread.sleep(1000);
+	wait.until(ExpectedConditions.visibilityOf(click_delete_BillBoardType)).click();
+}
+
+//<-----------------------------------------BOMUnit------------------------------------------------>
+
+@FindBy(xpath = "//*[@id=\"root\"]/div[2]/div[1]/div[2]/div/div[1]/div[2]/div/a[6]/span")
+private WebElement click_BOMUnit;
+
+public void BOMUnit_click() throws Exception {
+	wait.until(ExpectedConditions.visibilityOf(click_BOMUnit)).click();
+}
+@FindBy(xpath = "//h5[normalize-space()='BOMUnit(8)']")
+private WebElement BOMUnitCount;
+
+public void allBOMUnitCount() {
+	wait.until(ExpectedConditions.visibilityOf(BOMUnitCount)).isDisplayed();
+	AssertJUnit.assertTrue(BOMUnitCount.isDisplayed());
+	LOGGER.info(">> The BOMUnit page got displayed");
+}
+
+@FindBy(xpath = "(//h6[contains(@class,'m-0 fw-normal')][normalize-space()='New BOMUnit'])[1]")
+private WebElement click_new_BOMUnitbutton;
+
+public void New_BOMUnit_button_click() throws Exception {
+	Thread.sleep(5000);
+	wait.until(ExpectedConditions.visibilityOf(click_new_BOMUnitbutton)).click();
+}
+@FindBy(id = "title")
+private WebElement enter_BOMUnit;
+
+@FindBy(xpath = "(//h6[normalize-space()='Add BOMUnit'])[1]")
+private WebElement click_addBOMUnit;
+
+public void Add_BOMUnit() throws Exception {
+	wait.until(ExpectedConditions.visibilityOf(enter_BOMUnit));
+	String BOMUnitname = prop.getProperty("BOMUnitname");
+	wait.until(ExpectedConditions.visibilityOf(enter_BOMUnit)).sendKeys(BOMUnitname);
+	Thread.sleep(2000);
+	act.moveToElement(click_addBOMUnit).click().perform();
+}
+@FindBy(xpath = "//div[contains(@class, 'toastpop') and contains(@class, 'position-relative')]")
+private WebElement BOMUnit_created_Success_display;
+
+public String BOMUnit_created_Success_display() throws Exception {
+	WebElement successMessageElement = wait
+			.until(ExpectedConditions.visibilityOf(BOMUnit_created_Success_display));
+	return successMessageElement.getText().trim();
+}
+@FindBy(xpath = "//div[@class='list_members p-3 ']")
+private WebElement BOMUnitlist;
+
+@FindBy(xpath = "(//input[@id='doc_searchQueryInput'])[1]")
+private WebElement BOMUnit_Search;
+
+public void BOMUnit_search_enter_text() {
+	wait.until(ExpectedConditions.visibilityOf(BOMUnitlist)).click();
+	String BOMUnit_Search = prop.getProperty("BOMUnitname");
+	wait.until(ExpectedConditions.visibilityOf(BOMUnitlist)).sendKeys(BOMUnit_Search + Keys.ENTER);
+	System.out.println(">> User enter the BOMUnit id in search field: " + BOMUnit_Search);
+}
+@FindBy(xpath = "(//td[normalize-space()='ADMIN'])[1]")
+private WebElement BOMUnitSearched, BOMUnitSearch;
+
+public void BOMUnitSearchedList() {
+	wait.until(ExpectedConditions.visibilityOf(BOMUnitlist));
+
+	if (BOMUnitSearched.isDisplayed()) {
+		System.out.println("Element is displayed");
+	} else {
+		System.out.println("Element is not displayed");
+	}
+	LOGGER.info(">> Admin/User searched BOMUnit");
+	System.out.println(">> User got searched BOMUnit list: " + BOMUnitSearch.getText());
+}
+
+public void BOMUnitlist() {
+	wait.until(ExpectedConditions.visibilityOf(BOMUnitlist));
+
+	if (BOMUnitlist.isDisplayed()) {
+		System.out.println("Element is displayed");
+	} else {
+		System.out.println("Element is not displayed");
+	}
+	LOGGER.info(">> Admin/User clicked new BOMUnit btn");
+	System.out.println(">> User got sorted BOMUnit list: " + BOMUnitlist.getText());
+}
+
+@FindBy(xpath = "(//h6[contains(@class,'m-0 by fw-normal')][normalize-space()='Recently Added'])[1]")
+private WebElement BOMUnit_sort;
+
+@FindBy(xpath = "(//h6[contains(text(),'Recently Updated')])[1]")
+private WebElement BOMUnit_sort_recentlyupdated;
+
+@FindBy(xpath = "(//h6[contains(text(),'Recently Added')])[2]")
+private WebElement BOMUnit_sort_recentlyadded;
+
+public void BOMUnit_sort_recentlyupdated() {
+	wait.until(ExpectedConditions.visibilityOf(BOMUnit_sort)).click();
+	wait.until(ExpectedConditions.visibilityOf(BOMUnit_sort_recentlyupdated)).click();
+	System.out.println(">> User clicked recently updated in sort");
+}
+
+public void BOMUnit_sort_recentlyadded() {
+	wait.until(ExpectedConditions.visibilityOf(BOMUnit_sort)).click();
+	wait.until(ExpectedConditions.visibilityOf(BOMUnit_sort_recentlyadded)).click();
+	System.out.println(">> User clicked recently added in sort");
+}
+
+@FindBy(xpath = "(//h6[contains(text(),'Name - A to Z')])[1]")
+private WebElement BOMUnit_Name_A_to_Z;
+
+public void BOMUnit_sortA_Z() {
+	wait.until(ExpectedConditions.visibilityOf(BOMUnit_sort)).click();
+	wait.until(ExpectedConditions.visibilityOf(BOMUnit_Name_A_to_Z)).click();
+	System.out.println(">> User clicked recently updated in sort");
+}
+
+@FindBy(xpath = "(//h6[contains(text(),'Name - Z to A')])[1]")
+private WebElement BOMUnit_Name_Z_to_A;
+
+public void BOMUnit_sortZ_A() {
+	wait.until(ExpectedConditions.visibilityOf(BOMUnit_sort)).click();
+	wait.until(ExpectedConditions.visibilityOf(BOMUnit_Name_Z_to_A)).click();
+	System.out.println(">> User clicked Z-A updated in sort");
+}
+
+@FindBy(xpath = "(//h6[contains(text(),'Decending - Date')])[1]")
+private WebElement BOMUnit_Name_decending;
+
+public void BOMUnit_DecendingDate() {
+	wait.until(ExpectedConditions.visibilityOf(BOMUnit_sort)).click();
+	wait.until(ExpectedConditions.visibilityOf(BOMUnit_Name_decending)).click();
+	System.out.println(">> User clicked decending updated in sort");
+}
+
+@FindBy(xpath = "(//*[name()='svg'][@stroke='currentColor'])[7]")
+private WebElement BOMUnit_kebabmenu_click;
+
+public void kebabmenu_BOMUnit() throws Exception {
+	Thread.sleep(2000);
+	wait.until(ExpectedConditions.visibilityOf(BOMUnit_kebabmenu_click)).click();
+}
+@FindBy(xpath = "(//a[@role='button'][normalize-space()='Edit'])[1]")
+private WebElement click_edit_BOMUnit;
+
+public void selects_edit_BOMUnit() throws Exception {
+	wait.until(ExpectedConditions.visibilityOf(kebabmenu_click));
+	Thread.sleep(1000);
+	wait.until(ExpectedConditions.visibilityOf(click_edit_BOMUnit)).click();
+}
+@FindBy(xpath = "(//h6[normalize-space()='Edit BOMUnit'])[1]")
+private WebElement click_Edit_BOMUnitbuttn;
+
+public void Updated_BOMUnit() throws Exception {
+	wait.until(ExpectedConditions.visibilityOf(enter_BOMUnit));
+	String edited_BOMUnitname = prop.getProperty("newBOMUnitname");
+	wait.until(ExpectedConditions.visibilityOf(enter_BOMUnit)).sendKeys(edited_BOMUnitname);
+	Thread.sleep(2000);
+	wait.until(ExpectedConditions.visibilityOf(click_Edit_BOMUnitbuttn)).click();
+}
+@FindBy(xpath = "//a[normalize-space()='Delete']")
+private WebElement click_delete_BOMUnit;
+
+public void selects_delete_BOMUnit() throws Exception {
+	wait.until(ExpectedConditions.visibilityOf(kebabmenu_click));
+	Thread.sleep(1000);
+	wait.until(ExpectedConditions.visibilityOf(click_delete_BOMUnit)).click();
+}
+
+//<------------------------------------BOM---------------------------------------->
+
+	@FindBy(xpath = "//span[@class='edit_link_routes false']")
+	private WebElement click_BOM;
+
+	public void BOM_click() throws Exception {
+		Thread.sleep(4000);
+		wait.until(ExpectedConditions.visibilityOf(click_master_module)).click();
+		wait.until(ExpectedConditions.visibilityOf(click_BOM)).click();
+	}
+	@FindBy(xpath = "//h5[contains(@class,'mb-0')]")
+	private WebElement BOMCount;
+
+	public void allBOMCount() {
+		wait.until(ExpectedConditions.visibilityOf(BOMCount)).isDisplayed();
+		AssertJUnit.assertTrue(BOMCount.isDisplayed());
+		LOGGER.info(">> The BOM page got displayed");
+	}
+	
+	@FindBy(xpath = "(//h6[contains(@class,'m-0 fw-normal')][normalize-space()='New BOM'])[1]")
+	private WebElement click_new_BOMbutton;
+
+	public void New_BOM_button_click() throws Exception {
+		Thread.sleep(5000);
+		wait.until(ExpectedConditions.visibilityOf(click_new_BOMbutton)).click();
+	}
+//	@FindBy(xpath = "//h5[normalize-space()='New BOM']")
+//	private WebElement NewBOM_page_padding;
+//	
+//	@FindBy(id = "name")
+//	private WebElement BOM_name;
+//	
+//	@FindBy(id = "BOM_id")
+//	private WebElement BOM_id;
+//	
+//	@FindBy(xpath = "//input[@id='contact_person']")
+//	private WebElement contact_person;
+//	
+//	@FindBy(xpath = "(//h6[normalize-space()='Add BOM'])[1]")
+//	private WebElement click_addBOM;
+//	
+//	@FindBy(xpath = "//input[@placeholder='Enter phone number']")
+//	private WebElement contact_number;
+//	
+//	@FindBy(id = "email")
+//	private WebElement enter_email;
+//	
+//	@FindBy(xpath = "(//input[@placeholder='Enter Location'])[1]")
+//	private WebElement cityname;
+//	
+//	@FindBy(id = "country")
+//	private WebElement country_name;
+//
+//	public void Enter_Mandatory_fields_BOM () throws Exception {
+//		Thread.sleep(3000);
+//		wait.until(ExpectedConditions.visibilityOf(NewBOM_page_padding)).isDisplayed();
+//		String BOMname = prop.getProperty("BOMname");
+//		wait.until(ExpectedConditions.visibilityOf(BOM_name)).sendKeys(BOMname);
+//		Thread.sleep(1000);
+//		
+//		wait.until(ExpectedConditions.visibilityOf(BOM_name)).isDisplayed();
+//		String BOMid = prop.getProperty("BOMid");
+//		wait.until(ExpectedConditions.visibilityOf(BOM_id)).sendKeys(BOMid);
+//		Thread.sleep(1000);
+//		
+//		wait.until(ExpectedConditions.visibilityOf(BOM_id)).isDisplayed();
+//		String Contactperson = prop.getProperty("Contactperson");
+//		wait.until(ExpectedConditions.visibilityOf(contact_person)).sendKeys(Contactperson);
+//		Thread.sleep(1000);
+//
+//		wait.until(ExpectedConditions.visibilityOf(contact_person)).isDisplayed();
+//		String contactnumber = prop.getProperty("Phone_number");
+//		wait.until(ExpectedConditions.visibilityOf(contact_number)).sendKeys(contactnumber);
+//	
+//		wait.until(ExpectedConditions.visibilityOf(contact_number)).isDisplayed();
+//	    String emailfield = prop.getProperty("emailfield");
+//	    wait.until(ExpectedConditions.visibilityOf(enter_email)).sendKeys(emailfield);
+//	    
+//	    wait.until(ExpectedConditions.visibilityOf(enter_email)).isDisplayed();
+//	    wait.until(ExpectedConditions.visibilityOf(cityname)).sendKeys("Riyadh Saudi Arabia");
+//		Thread.sleep(3000);
+//	    wait.until(ExpectedConditions.visibilityOf(cityname)).sendKeys(""+Keys.DOWN+Keys.ENTER);
+//	   
+//	    wait.until(ExpectedConditions.visibilityOf(cityname)).isDisplayed();
+//	    String countryname = prop.getProperty("countryname");
+//	    wait.until(ExpectedConditions.visibilityOf(country_name)).sendKeys(countryname);
+//
+//	}
+	@FindBy(id = "Add BOM")
+	private WebElement click_addBOM_Button;
+	
+	public void Add_BOM() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(country_name)).isDisplayed();
+
+		wait.until(ExpectedConditions.visibilityOf(click_addBOM_Button)).click();
+		
+	}
+	@FindBy(xpath = "//div[contains(@class, 'toastpop') and contains(@class, 'position-relative')]")
+	private WebElement BOM_created_Success_display;
+
+	public String BOM_created_Success_display() throws Exception {
+		WebElement successMessageElement = wait
+				.until(ExpectedConditions.visibilityOf(BOM_created_Success_display));
+		return successMessageElement.getText().trim();
+	}
+	@FindBy(id = "doc_searchQueryInput")
+	private WebElement BOMSearch;
+	
+	public void BOM_search_enter_text() {
+		wait.until(ExpectedConditions.visibilityOf(BOMSearch)).click();
+		String BOM_Search = prop.getProperty("BOMnames");
+		wait.until(ExpectedConditions.visibilityOf(BOMSearch)).sendKeys(BOM_Search + Keys.ENTER);
+		System.out.println(">> User enter the BOM id in search field: " + BOM_Search);
+	}
+	@FindBy(id = "doc_searchQueryInput")
+	private WebElement BOMSearched, BOM_Search;
+
+	@FindBy(xpath = "//table[@class='table']")
+	private WebElement BOMlist;
+	
+	public void BOMSearchedList() {
+		wait.until(ExpectedConditions.visibilityOf(BOM_Search));
+
+		if (BOMSearched.isDisplayed()) {
+			System.out.println("Element is displayed");
+		} else {
+			System.out.println("Element is not displayed");
+		}
+		LOGGER.info(">> Admin/User searched BOM");
+		System.out.println(">> User got searched BOM list: " + BOMSearched.getText());
+	}
+
+	public void BOMlist() {
+	//	wait.until(ExpectedConditions.visibilityOf(BOMSearch));
+
+		if (BOMlist.isDisplayed()) {
+			System.out.println("Element is displayed");
+		} else {
+			System.out.println("Element is not displayed");
+		}
+		LOGGER.info(">> Admin/User clicked new BOM btn");
+		System.out.println(">> User got sorted BOM list: " + BOMlist.getText());
+	}
+
+	@FindBy(xpath = "(//h6[contains(@class,'m-0 by fw-normal')][normalize-space()='Recently Added'])[1]")
+	private WebElement BOM_sort;
+
+	@FindBy(xpath = "(//h6[contains(text(),'Recently Updated')])[1]")
+	private WebElement BOM_sort_recentlyupdated;
+
+	@FindBy(xpath = "(//h6[contains(text(),'Recently Added')])[2]")
+	private WebElement BOM_sort_recentlyadded;
+
+	public void BOM_sort_recentlyupdated() {
+		wait.until(ExpectedConditions.visibilityOf(BOM_sort)).click();
+		wait.until(ExpectedConditions.visibilityOf(BOM_sort_recentlyupdated)).click();
+		System.out.println(">> User clicked recently updated in sort");
+	}
+
+	public void BOM_sort_recentlyadded() {
+		wait.until(ExpectedConditions.visibilityOf(BOM_sort)).click();
+		wait.until(ExpectedConditions.visibilityOf(BOM_sort_recentlyadded)).click();
+		System.out.println(">> User clicked recently added in sort");
+	}
+
+	@FindBy(xpath = "(//h6[contains(text(),'Name - A to Z')])[1]")
+	private WebElement A_to_Z_BOM_Name;
+
+	public void A_Z_BOM_sort() {
+		wait.until(ExpectedConditions.visibilityOf(BOM_sort)).click();
+		wait.until(ExpectedConditions.visibilityOf(A_to_Z_BOM_Name)).click();
+		System.out.println(">> User clicked recently updated in sort");
+	}
+
+	@FindBy(xpath = "(//h6[contains(text(),'Name - Z to A')])[1]")
+	private WebElement BOM_sortingName_Z_to_A;
+
+	public void BOM_recent_sortZ_A() {
+		wait.until(ExpectedConditions.visibilityOf(BOM_sort)).click();
+		wait.until(ExpectedConditions.visibilityOf(BOM_sortingName_Z_to_A)).click();
+		System.out.println(">> User clicked Z-A updated in sort");
+	}
+
+	@FindBy(xpath = "(//h6[contains(text(),'Decending - Date')])[1]")
+	private WebElement BOM_Name_decending;
+
+	public void BOM_DecendingDate() {
+		wait.until(ExpectedConditions.visibilityOf(BOM_sort)).click();
+		wait.until(ExpectedConditions.visibilityOf(BOM_Name_decending)).click();
+		System.out.println(">> User clicked decending updated in sort");
+	}
+
+	@FindBy(xpath = "(//*[name()='svg'][@stroke='currentColor'])[7]")
+	private WebElement BOM_kebabmenu_click;
+	
+	public void BOM_kebabmenu() throws Exception {
+		Thread.sleep(2000);
+		wait.until(ExpectedConditions.visibilityOf(BOM_kebabmenu_click)).click();
+	}
+	@FindBy(xpath = "(//a[@role='button'][normalize-space()='Edit'])[1]")
+	private WebElement click_edit_BOM;
+
+	public void selects_edit_BOM() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(kebabmenu_click));
+		Thread.sleep(1000);
+		wait.until(ExpectedConditions.visibilityOf(click_edit_BOM)).click();
+	}
+	@FindBy(xpath = "(//h5[normalize-space()='Edit BOM'])[1]")
+	private WebElement BOM_editpage_pading;
+	
+	@FindBy(id = "Update BOM")
+	private WebElement click_BOM_updatebuttn;
+
+	public void Updated_BOM() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(BOM_editpage_pading));
+		String edited_contctpersn = prop.getProperty("edited_contctpersn");
+		wait.until(ExpectedConditions.visibilityOf(contact_person)).sendKeys(edited_contctpersn);
+		Thread.sleep(2000);
+		wait.until(ExpectedConditions.visibilityOf(click_BOM_updatebuttn)).click();
+	}
+	@FindBy(xpath = "(//a[normalize-space()='Delete'])[1]")
+	private WebElement click_delete_BOM;
+
+	public void selects_delete_BOM() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(kebabmenu_click));
+		Thread.sleep(1000);
+		wait.until(ExpectedConditions.visibilityOf(click_delete_BOM)).click();
+	}
+	@FindBy(xpath = "//a[normalize-space()='View']")
+	private WebElement click_view_BOM;
+
+	public void selects_view_BOM() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(kebabmenu_click)).isDisplayed();
+		Thread.sleep(1000);
+		wait.until(ExpectedConditions.visibilityOf(click_view_BOM)).click();
+	}
+	@FindBy(xpath = "//h5[normalize-space()='View BOM']")
+	private WebElement display_BOMviewpage;
+
+	public void BOM_viewpagedisplay() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(display_BOMviewpage)).isDisplayed();
+		AssertJUnit.assertTrue(display_BOMviewpage.isDisplayed());
+		LOGGER.info("BOM view page displayed");
+	}
+	
+	@FindBy(xpath = "//h4[normalize-space()='Are you sure, you want to delete this BOM?']")
+	private WebElement delete_confirmpopup_BOM;
+	
+	@FindBy(xpath = "//h6[normalize-space()='Yes, delete this BOM.']")
+	private WebElement delete_BOM_confirmbuttn;
+	
+	public void BOM_delete_confirm() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(delete_confirmpopup_BOM));
+		Thread.sleep(1000);
+		wait.until(ExpectedConditions.visibilityOf(delete_BOM_confirmbuttn)).click();
+	}
+
 }

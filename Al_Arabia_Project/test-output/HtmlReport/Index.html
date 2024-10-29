@@ -50,7 +50,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Oct 27, 2024 11:41:46 pm</span>
+			<span class='label blue darken-3 suite-start-time'>Oct 28, 2024 04:37:02 pm</span>
 			</a>
 		</ul>
 	</div>
@@ -77,12 +77,11 @@
 				<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@sanity</a></li>
-					<li><a href='#'>@Stock</a></li>
-					<li><a href='#'>@Master</a></li>
 					<li><a href='#'>@all</a></li>
-					<li><a href='#'>@Stock02</a></li>
+					<li><a href='#'>@Tickets</a></li>
+					<li><a href='#'>@smoke</a></li>
 					<li><a href='#'>@regression</a></li>
+					<li><a href='#'>@Tickets28</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -121,8 +120,8 @@
 			<ul id='test-collection' class='test-collection'>
 				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>Master</span>
-						<span class='test-time'>Oct 27, 2024 11:41:47 pm</span>
+						<span class='test-name'>Tickets</span>
+						<span class='test-time'>Oct 28, 2024 04:37:03 pm</span>
 						<span class='test-status right fail'>Fail</span>
 					</div>
 					<div class='test-content hide'>
@@ -132,97 +131,78 @@
 	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
 	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
 </div>
-	<div class='test-desc'>Admin, Manager and Supervisor can able to access the Master features,only if they have roles access</div>
+	<div class='test-desc'>Admin, Manager and Supervisor can able to access the Tickets feature,only if they have roles access</div>
 
-<div class='scenario node' test-id='2' status='fail'>
+<div class='scenario outline node' test-id='2' status='fail'>
 
-	<span class='duration right label'>00 00 27.687</span>
+	<span class='duration right label'>00 00 26.321</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario: T002_Create the New Stock with valid inputs</div>
+		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario Outline: T028_To verify the Tickets feature Delete button in Tickets page</div>
 	</div>
 	
+		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>successMessage</td></tr><tr><td>Success Ticket Deleted successfull</td></tr></table></div>
 	
-		<div class='category-list'>
-				<span class='category label'>@all</span>
-				<span class='category label'>@regression</span>
-				<span class='category label'>@Master</span>
-				<span class='category label'>@Stock02</span>
-				<span class='category label'>@Stock</span>
-				<span class='category label'>@sanity</span>
-		</div>
 	
 	<ul class='steps'>
-		<li test-id='4' class='node given Pass' status='Pass'>
-			<div class="step-name" title="(Stepdefinitions.Members.Admin_logged_in_with_valid_credentials())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Admin logged in with valid credentials</div>
+		<li test-id='3' class='node scenario Fail' status='Fail'>
+			<div class="step-name" title="()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>T028_To verify the Tickets feature Delete button in Tickets page</div>
 
+				<div class='category-list'>
+						<span class='category label'>@all</span>
+						<span class='category label'>@smoke</span>
+						<span class='category label'>@regression</span>
+						<span class='category label'>@Tickets28</span>
+						<span class='category label'>@Tickets</span>
+				</div>
 
-		</li>
-		<li test-id='6' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(Stepdefinitions.Members.Al_Arabia_overall_dashboard_should_display())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Al-Arabia overall dashboard should display</div>
+			<ul class='gc steps'>
+				<li test-id='5' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="Stepdefinitions.Members.Admin_logged_in_with_valid_credentials()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Admin logged in with valid credentials</h6>
 
+				</li>
+				<li test-id='7' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="Stepdefinitions.Members.Al_Arabia_overall_dashboard_should_display()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Al-Arabia overall dashboard should display</h6>
 
-		</li>
-		<li test-id='8' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(Stepdefinitions.Master.Admin_or_user_clicks_the_Master())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Admin or user clicks the Master</div>
+				</li>
+				<li test-id='9' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="Stepdefinitions.Tickets.Admin_or_user_clicks_the_Tickets_module()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Admin or user clicks the Tickets module</h6>
 
+				</li>
+				<li test-id='11' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="Stepdefinitions.Tickets.Admin_or_user_clicks_the_new_Ticket_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Admin or user clicks the new Ticket button</h6>
 
-		</li>
-		<li test-id='10' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(Stepdefinitions.Master.Admin_or_user_clicks_the_Stock())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Admin or user clicks the Stock</div>
+				</li>
+				<li test-id='13' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="Stepdefinitions.Tickets.Admin_or_user_enters_the_all_mandatory_fields()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Admin or user enters the all mandatory fields</h6>
 
+				</li>
+				<li test-id='15' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="Stepdefinitions.Tickets.Admin_or_user_clicks_the_create_Ticket()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Admin or user clicks the create Ticket</h6>
 
-		</li>
-		<li test-id='12' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(Stepdefinitions.Master.User_click_on_New_Stock_button())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User click on New Stock button</div>
+				</li>
+				<li test-id='17' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="Stepdefinitions.Tickets.The_User_clicks_on_the_Delete_button_with_clicks_confirm_yes_button()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And The User clicks on the Delete button with clicks confirm yes button</h6>
 
+				</li>
+				<li test-id='19' class='gc then Fail' status='Fail'>
+					<h6 class="step-name" title="Stepdefinitions.Tickets.BillBoard_delete_popup_will_be_displayed_successfully(java.lang.String)"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Then Tickets delete popup will be displayed successfully with either "Success Ticket Deleted successfull"</h6>
 
-		</li>
-		<li test-id='14' class='node and Fail' status='Fail'>
-			<div class="step-name" title="(Stepdefinitions.Master.User_Enter_Mandatory_fields_of_New_Stock_page())"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>And User Enter Mandatory fields of New Stock page</div>
-
-
-					<textarea disabled class="code-block">org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=126.0.6478.114)
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-124-generic', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f1e7cb89794abf55943b457e9a297ef1, sendKeysToElement {value=[Ljava.lang.CharSequence;@2443135, id=f.BD931B4E3204378B610ED327D4780585.d.4DFF9C58821AB9B7CD4DC948BC71DBFB.e.146}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.114, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:39555}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:39555/devtoo..., se:cdpVersion: 126.0.6478.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on linux (f1e7cb89794abf55943b457e9a297ef1)] -> xpath: (//div[@class='select__input-container css-19bb58m'])[1]]
-Session ID: f1e7cb89794abf55943b457e9a297ef1
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy39.sendKeys(Unknown Source)
-	at pageobjects.Masterpage.Enter_Mandatory_fields_Stock(Masterpage.java:554)
-	at Stepdefinitions.Master.User_Enter_Mandatory_fields_of_New_Stock_page(Master.java:307)
-	at ✽.User Enter Mandatory fields of New Stock page(file:///home/coducer/Al_Arabia_PhaseII/Al_Arabia_Project/src/test/resources/Features/09_Master.feature:221)
+							<textarea disabled class="code-block">org.junit.ComparisonFailure: expected:<...ccess Ticket Deleted[ successfull]> but was:<...ccess Ticket Deleted[]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at Stepdefinitions.Tickets.BillBoard_delete_popup_will_be_displayed_successfully(Tickets.java:288)
+	at ✽.Tickets delete popup will be displayed successfully with either "Success Ticket Deleted successfull"(file:///home/coducer/Al_Arabia_PhaseII/Al_Arabia_Project/src/test/resources/Features/06_Tickets.feature:232)
 </textarea>
-		</li>
-		<li test-id='15' class='node * Pass' status='Pass'>
-			<div class="step-name" title="(AFTER_STEP)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Hooks.Testhooks.addScreenshot(io.cucumber.java.Scenario)</div>
+				</li>
+				<li test-id='20' class='gc * Pass' status='Pass'>
+					<h6 class="step-name" title="AFTER_STEP"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Hooks.Testhooks.addScreenshot(io.cucumber.java.Scenario)</h6>
 
-
-					<div class="node-step">T002_Create the New Stock with valid inputs</div>
-					<div class='screenshots'>
-						<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../embedded1.png' src='../embedded1.png'>
-					</div>
+							<div class="node-step">T028_To verify the Tickets feature Delete button in Tickets page</div>
+							<div class='screenshots'>
+								<img width='80' height='40' onerror='this.style.display="none"' data-featherlight='../embedded1.png' src='../embedded1.png'>
+							</div>
+				</li>
+			</ul>
 		</li>
 	</ul>
 </div>
@@ -296,11 +276,11 @@ Session ID: f1e7cb89794abf55943b457e9a297ef1
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='85%'>
-                    <span class='strong'>6</span> steps passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='88%'>
+                    <span class='strong'>8</span> steps passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='14%'>
+                    <span class='strong tooltipped' data-position='top' data-tooltip='11%'>
                     1</span> steps failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped, 
@@ -341,105 +321,6 @@ Session ID: f1e7cb89794abf55943b457e9a297ef1
 			<ul id='category-collection' class='category-collection'>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@sanity</span>
-						<span class='category-status right'>
-						<span class='label fail'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							
-							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Oct 27, 2024 11:41:47 pm</td>
-										<td class='linked' test-id='2'>T002_Create the New Stock with valid inputs</td>
-										<td><span class='test-status Fail'>Fail</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@Stock</span>
-						<span class='category-status right'>
-						<span class='label fail'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							
-							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Oct 27, 2024 11:41:47 pm</td>
-										<td class='linked' test-id='2'>T002_Create the New Stock with valid inputs</td>
-										<td><span class='test-status Fail'>Fail</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@Master</span>
-						<span class='category-status right'>
-						<span class='label fail'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							
-							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Oct 27, 2024 11:41:47 pm</td>
-										<td class='linked' test-id='2'>T002_Create the New Stock with valid inputs</td>
-										<td><span class='test-status Fail'>Fail</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
 						<span class='category-name'>@all</span>
 						<span class='category-status right'>
 						<span class='label fail'>1</span>
@@ -462,8 +343,8 @@ Session ID: f1e7cb89794abf55943b457e9a297ef1
 								</thead>
 								<tbody>
 									<tr>
-										<td>Oct 27, 2024 11:41:47 pm</td>
-										<td class='linked' test-id='2'>T002_Create the New Stock with valid inputs</td>
+										<td>Oct 28, 2024 04:37:03 pm</td>
+										<td class='linked' test-id='3'>T028_To verify the Tickets feature Delete button in Tickets page</td>
 										<td><span class='test-status Fail'>Fail</span></td>
 									</tr>
 								</tbody>
@@ -473,7 +354,7 @@ Session ID: f1e7cb89794abf55943b457e9a297ef1
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@Stock02</span>
+						<span class='category-name'>@Tickets</span>
 						<span class='category-status right'>
 						<span class='label fail'>1</span>
 						</span>
@@ -495,8 +376,41 @@ Session ID: f1e7cb89794abf55943b457e9a297ef1
 								</thead>
 								<tbody>
 									<tr>
-										<td>Oct 27, 2024 11:41:47 pm</td>
-										<td class='linked' test-id='2'>T002_Create the New Stock with valid inputs</td>
+										<td>Oct 28, 2024 04:37:03 pm</td>
+										<td class='linked' test-id='3'>T028_To verify the Tickets feature Delete button in Tickets page</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@smoke</span>
+						<span class='category-status right'>
+						<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Oct 28, 2024 04:37:03 pm</td>
+										<td class='linked' test-id='3'>T028_To verify the Tickets feature Delete button in Tickets page</td>
 										<td><span class='test-status Fail'>Fail</span></td>
 									</tr>
 								</tbody>
@@ -528,8 +442,41 @@ Session ID: f1e7cb89794abf55943b457e9a297ef1
 								</thead>
 								<tbody>
 									<tr>
-										<td>Oct 27, 2024 11:41:47 pm</td>
-										<td class='linked' test-id='2'>T002_Create the New Stock with valid inputs</td>
+										<td>Oct 28, 2024 04:37:03 pm</td>
+										<td class='linked' test-id='3'>T028_To verify the Tickets feature Delete button in Tickets page</td>
+										<td><span class='test-status Fail'>Fail</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@Tickets28</span>
+						<span class='category-status right'>
+						<span class='label fail'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							
+							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Oct 28, 2024 04:37:03 pm</td>
+										<td class='linked' test-id='3'>T028_To verify the Tickets feature Delete button in Tickets page</td>
 										<td><span class='test-status Fail'>Fail</span></td>
 									</tr>
 								</tbody>
@@ -566,7 +513,7 @@ Session ID: f1e7cb89794abf55943b457e9a297ef1
 			<ul id='exception-collection' class='exception-collection'>
 				<li class='exception displayed active'>
 					<div class='exception-heading'>
-						<span class='exception-name'>org.openqa.selenium.ElementNotInteractableException</span>
+						<span class='exception-name'>org.junit.ComparisonFailure</span>
 						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
 					</div>
 					<div class='exception-content hide'>
@@ -581,41 +528,14 @@ Session ID: f1e7cb89794abf55943b457e9a297ef1
 								</thead>
 								<tbody>
 									<tr>
-										<td>Oct 27, 2024 11:42:05 pm</td>
-										<td class='linked' test-id='14'>And User Enter Mandatory fields of New Stock page</td>
+										<td>Oct 28, 2024 04:37:29 pm</td>
+										<td class='linked' test-id='19'>Then Tickets delete popup will be displayed successfully with either "Success Ticket Deleted successfull"</td>
 										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=126.0.6478.114)
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-124-generic', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f1e7cb89794abf55943b457e9a297ef1, sendKeysToElement {value=[Ljava.lang.CharSequence;@2443135, id=f.BD931B4E3204378B610ED327D4780585.d.4DFF9C58821AB9B7CD4DC948BC71DBFB.e.146}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.114, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:39555}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:39555/devtoo..., se:cdpVersion: 126.0.6478.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on linux (f1e7cb89794abf55943b457e9a297ef1)] -> xpath: (//div[@class='select__input-container css-19bb58m'])[1]]
-Session ID: f1e7cb89794abf55943b457e9a297ef1
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy39.sendKeys(Unknown Source)
-	at pageobjects.Masterpage.Enter_Mandatory_fields_Stock(Masterpage.java:554)
-	at Stepdefinitions.Master.User_Enter_Mandatory_fields_of_New_Stock_page(Master.java:307)
-	at ✽.User Enter Mandatory fields of New Stock page(file:///home/coducer/Al_Arabia_PhaseII/Al_Arabia_Project/src/test/resources/Features/09_Master.feature:221)
+											<textarea disabled class="code-block">org.junit.ComparisonFailure: expected:<...ccess Ticket Deleted[ successfull]> but was:<...ccess Ticket Deleted[]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at Stepdefinitions.Tickets.BillBoard_delete_popup_will_be_displayed_successfully(Tickets.java:288)
+	at ✽.Tickets delete popup will be displayed successfully with either "Success Ticket Deleted successfull"(file:///home/coducer/Al_Arabia_PhaseII/Al_Arabia_Project/src/test/resources/Features/06_Tickets.feature:232)
 </textarea>
 										</td>
 									</tr>
@@ -653,25 +573,25 @@ Session ID: f1e7cb89794abf55943b457e9a297ef1
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>7</div>
+					<div class='panel-lead'>9</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Oct 27, 2024 11:41:46 pm</div>
+					<div class='panel-lead'>Oct 28, 2024 04:37:02 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Oct 27, 2024 11:42:15 pm</div>
+			 		<div class='panel-lead'>Oct 28, 2024 04:37:29 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>00 00 28.496</div>
+					<div class='panel-lead'>00 00 27.345</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -687,33 +607,6 @@ Session ID: f1e7cb89794abf55943b457e9a297ef1
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>@sanity</td>
-							<td>0</td>
-							<td>1</td>
-							<td>0</td>
-							<td>
-									0%
-							</td>
-						</tr>
-						<tr>
-							<td>@Stock</td>
-							<td>0</td>
-							<td>1</td>
-							<td>0</td>
-							<td>
-									0%
-							</td>
-						</tr>
-						<tr>
-							<td>@Master</td>
-							<td>0</td>
-							<td>1</td>
-							<td>0</td>
-							<td>
-									0%
-							</td>
-						</tr>
-						<tr>
 							<td>@all</td>
 							<td>0</td>
 							<td>1</td>
@@ -723,7 +616,16 @@ Session ID: f1e7cb89794abf55943b457e9a297ef1
 							</td>
 						</tr>
 						<tr>
-							<td>@Stock02</td>
+							<td>@Tickets</td>
+							<td>0</td>
+							<td>1</td>
+							<td>0</td>
+							<td>
+									0%
+							</td>
+						</tr>
+						<tr>
+							<td>@smoke</td>
 							<td>0</td>
 							<td>1</td>
 							<td>0</td>
@@ -733,6 +635,15 @@ Session ID: f1e7cb89794abf55943b457e9a297ef1
 						</tr>
 						<tr>
 							<td>@regression</td>
+							<td>0</td>
+							<td>1</td>
+							<td>0</td>
+							<td>
+									0%
+							</td>
+						</tr>
+						<tr>
+							<td>@Tickets28</td>
 							<td>0</td>
 							<td>1</td>
 							<td>0</td>
@@ -766,8 +677,8 @@ Session ID: f1e7cb89794abf55943b457e9a297ef1
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				grandChildCount: 7,
-				passGrandChild: 6,
+				grandChildCount: 9,
+				passGrandChild: 8,
 				failGrandChild: 1,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
@@ -779,7 +690,7 @@ Session ID: f1e7cb89794abf55943b457e9a297ef1
 		
 		<script>
 			var timeline = {
-			        "Master":27.691
+			        "Tickets":26.325
 			};
 		</script>
 		

@@ -512,7 +512,7 @@ public class Masterpage extends Base {
 	@FindBy(id = "stock_code")
 	private WebElement Stock_Code;
 	
-	@FindBy(xpath = "(//div[@class='select__input-container css-19bb58m'])[1]")
+	@FindBy(xpath = "(//div[@class='select__input-container css-19bb58m'])[1]	")
 	private WebElement ID_supplier;
 	
 	@FindBy(id = "material_name")
@@ -554,7 +554,7 @@ public class Masterpage extends Base {
         wait.until(ExpectedConditions.visibilityOf(ID_supplier)).sendKeys(""+Keys.ENTER);
 		Thread.sleep(1000);
 
-		wait.until(ExpectedConditions.visibilityOf(Supplier_id)).isDisplayed();
+		wait.until(ExpectedConditions.visibilityOf(ID_supplier)).isDisplayed();
 		String Materialname = prop.getProperty("Materialname");
 		wait.until(ExpectedConditions.visibilityOf(Material_Name)).sendKeys(Materialname);
 		Thread.sleep(1000);

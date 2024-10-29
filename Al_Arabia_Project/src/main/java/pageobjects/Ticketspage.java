@@ -216,32 +216,36 @@ public class Ticketspage extends Base {
 	@FindBy(xpath = "(//h6[contains(text(),'Recently Added')])[2]")
 	private WebElement tickets_sort_recentlyadded;
 
-	public void Tickets_sort_recentlyupdated() {
+	public void Tickets_sort_recentlyupdated() throws Exception {
 		wait.until(ExpectedConditions.visibilityOf(ticket_sort)).click();
+		Thread.sleep(2000);
 		wait.until(ExpectedConditions.visibilityOf(tickets_sort_recentlyupdated)).click();
 		System.out.println(">> User clicked recently updated in sort");
 	}
 
-	public void Tickets_sort_recentlyadded() {
+	public void Tickets_sort_recentlyadded() throws Exception  {
 		wait.until(ExpectedConditions.visibilityOf(ticket_sort)).click();
+		Thread.sleep(2000);
 		wait.until(ExpectedConditions.visibilityOf(tickets_sort_recentlyadded)).click();
 		System.out.println(">> User clicked recently added in sort");
 	}
 
 	@FindBy(xpath = "(//h6[contains(text(),'Recently Updated')])[1]")
-	private WebElement ticket_Name_A_to_Z;
+	private WebElement A_to_Z_ticket_Name_;
 
-	public void Ticket_A_to_Z() {
+	public void Ticket_A_to_Z() throws Exception {
 		wait.until(ExpectedConditions.visibilityOf(ticket_sort)).click();
-		wait.until(ExpectedConditions.visibilityOf(ticket_Name_A_to_Z)).click();
+		Thread.sleep(2000);
+		wait.until(ExpectedConditions.visibilityOf(A_to_Z_ticket_Name_)).click();
 		System.out.println(">> User clicked recently updated in sort");
 	}
 
 	@FindBy(xpath = "(//h6[contains(text(),'Name - Z to A')])[1]")
 	private WebElement ticket_Name_Z_to_A;
 
-	public void Ticket_sortZ_A() {
+	public void Ticket_sortZ_A() throws Exception{
 		wait.until(ExpectedConditions.visibilityOf(ticket_sort)).click();
+		Thread.sleep(2000);
 		wait.until(ExpectedConditions.visibilityOf(ticket_Name_Z_to_A)).click();
 		System.out.println(">> User clicked Z-A updated in sort");
 	}
@@ -249,8 +253,9 @@ public class Ticketspage extends Base {
 	@FindBy(xpath = "(//h6[contains(text(),'Decending - Date')])[1]")
 	private WebElement Ticket_Name_decending;
 
-	public void Ticket_DecendingDate() {
+	public void Ticket_DecendingDate() throws Exception {
 		wait.until(ExpectedConditions.visibilityOf(ticket_sort)).click();
+		Thread.sleep(2000);
 		wait.until(ExpectedConditions.visibilityOf(Ticket_Name_decending)).click();
 		System.out.println(">> User clicked decending updated in sort");
 	}
@@ -400,7 +405,7 @@ public class Ticketspage extends Base {
 		System.out.println(">> User selected the city in filter");
 	}
 
-	@FindBy(id = "react-select-6-input")
+	@FindBy(id = "react-select-5-input")
 	private WebElement department_select;
 
 	public void select_Department() {
@@ -412,12 +417,15 @@ public class Ticketspage extends Base {
 		System.out.println(">> User selected the department in filter");
 	}
 
-	@FindBy(xpath = "(//div[contains(@class,'ps-4 pe-1 fw-semibold off')][normalize-space()='Non-Cleaning'])[1]")
+	@FindBy(xpath = "//*[@id=\"filterDropDown\"]/div[2]/div[6]/div/div/label/div/div[2]")
 	private WebElement Click_Cleaning_Ticket;
 
-	public void Cleaning_Ticket() {
+	public void Cleaning_Ticket() throws Exception {
 		wait.until(ExpectedConditions.visibilityOf(Tickets_filter)).click();
-		wait.until(ExpectedConditions.visibilityOf(Click_Cleaning_Ticket)).click();
+		Thread.sleep(3000);
+		act.moveToElement(Click_Cleaning_Ticket).click().perform();
+		//wait.until(ExpectedConditions.visibilityOf(Click_Cleaning_Ticket)).click();
+		Thread.sleep(3000);
 		act.moveToElement(Tickets_filter_apply_btn).click().perform();
 		System.out.println(">> User clicked Cleaning Ticket in filter");
 	}
@@ -477,7 +485,7 @@ public class Ticketspage extends Base {
 		LOGGER.info(">> The Download Popup get closed and listed Tickets");
 	}
 
-	@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[2]/div[1]/div[3]/div/table/tbody/tr[1]/td[6]/div[1]/div/img")
+	@FindBy(xpath = "(//img[contains(@class,'pointer')])[3]")
 	private WebElement tickets_Edit_Buttonclick;
 
 	public void Tickets_Edit_icon() throws Exception {
@@ -501,11 +509,11 @@ public class Ticketspage extends Base {
 
 	}
 
-	@FindBy(xpath = "//tbody/tr[1]/td[6]/div[2]/div[1]/img[1]")
-	private WebElement ticket_delete_click;
+	@FindBy(xpath = "//*[@id=\"root\"]/div[2]/div[1]/div[2]/div/div[2]/div[1]/div[4]/div/table/tbody/tr[1]/td[8]/div[2]/div/img")
+	private WebElement delete_click_ticket_;
 
 	public void Ticket_delete_icon() throws Exception {
-		wait.until(ExpectedConditions.visibilityOf(ticket_delete_click)).click();
+		wait.until(ExpectedConditions.visibilityOf(delete_click_ticket_)).click();
 	}
 
 	@FindBy(xpath = "//h6[normalize-space()='Yes, delete it.']")

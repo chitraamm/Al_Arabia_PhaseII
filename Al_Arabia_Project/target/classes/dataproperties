@@ -130,3 +130,5 @@ Materialname = closer
 SupplierName = nishu
 Availablequantity = 5
 QuantityUsed = 10
+Materialname = lcd
+supplier_id = 1301

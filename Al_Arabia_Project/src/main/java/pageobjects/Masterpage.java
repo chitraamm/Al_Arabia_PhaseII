@@ -512,7 +512,7 @@ public class Masterpage extends Base {
 	@FindBy(id = "stock_code")
 	private WebElement Stock_Code;
 	
-	@FindBy(xpath = "(//div[@class='select__input-container css-19bb58m'])[1]	")
+	@FindBy(id = "react-select-3-input")
 	private WebElement ID_supplier;
 	
 	@FindBy(id = "material_name")
@@ -547,13 +547,10 @@ public class Masterpage extends Base {
 		Thread.sleep(3000);
 		
 		wait.until(ExpectedConditions.visibilityOf(Stock_Code)).isDisplayed();
-		//String SupplierID = prop.getProperty("SupplierID");
-		wait.until(ExpectedConditions.visibilityOf(ID_supplier)).click();
-       // act.moveToElement(Supplier_id).click().perform();
 		Thread.sleep(3000);
-        wait.until(ExpectedConditions.visibilityOf(ID_supplier)).sendKeys(""+Keys.ENTER);
+		act.moveToElement(ID_supplier).click().sendKeys("" + Keys.ARROW_DOWN + Keys.ENTER).perform();
 		Thread.sleep(1000);
-
+		
 		wait.until(ExpectedConditions.visibilityOf(ID_supplier)).isDisplayed();
 		String Materialname = prop.getProperty("Materialname");
 		wait.until(ExpectedConditions.visibilityOf(Material_Name)).sendKeys(Materialname);
@@ -561,7 +558,7 @@ public class Masterpage extends Base {
 
 		wait.until(ExpectedConditions.visibilityOf(Material_Name)).isDisplayed();
 		String SupplierName = prop.getProperty("SupplierName");
-		wait.until(ExpectedConditions.visibilityOf(Supplier_name)).sendKeys(SupplierName);
+		wait.until(ExpectedConditions.visibilityOf(Supplier_Name)).sendKeys(SupplierName);
 		Thread.sleep(1000);
 
 		wait.until(ExpectedConditions.visibilityOf(Supplier_name)).isDisplayed();

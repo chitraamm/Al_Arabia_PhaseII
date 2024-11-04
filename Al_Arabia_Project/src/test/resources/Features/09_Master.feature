@@ -219,7 +219,7 @@ And Admin or user clicks the Master
 And Admin or user clicks the Stock
 And User click on New Stock button
 And User Enter Mandatory fields of New Stock page
-#And User click on Add Stock button
+#And User click on Add Stock button  
 #Then Particular Stock gets created successfully with either "<successMessage1>" or "<successMessage2>"
   #Examples:
       #| successMessage1       | successMessage2     |

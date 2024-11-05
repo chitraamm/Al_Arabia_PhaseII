@@ -281,7 +281,7 @@ public class Masterpage extends Base {
 	public void Enter_Mandatory_fields_Supplier () throws Exception {
 		Thread.sleep(3000);
 		wait.until(ExpectedConditions.visibilityOf(NewSupplier_page_padding)).isDisplayed();
-		String suppliername = prop.getProperty("suppliername");
+		String suppliername = generateUniqueboardNumber(prop.getProperty("suppliername"));
 		wait.until(ExpectedConditions.visibilityOf(Supplier_name)).sendKeys(suppliername);
 		Thread.sleep(1000);
 		
@@ -512,7 +512,7 @@ public class Masterpage extends Base {
 	@FindBy(id = "stock_code")
 	private WebElement Stock_Code;
 	
-	@FindBy(id = "react-select-3-input")
+	@FindBy(xpath = "//div[@class='select__input-container css-19bb58m']")
 	private WebElement ID_supplier;
 	
 	@FindBy(id = "material_name")
@@ -521,7 +521,7 @@ public class Masterpage extends Base {
 	@FindBy(id = "supplier_part_no")
 	private WebElement Supplier_Name;
 	
-	@FindBy(id = "available_qty_in_store")
+	@FindBy(xpath = "//input[@id='available_qty_in_store']")
 	private WebElement Available_quantity_in_store;
 	
 	@FindBy(id = "qty_used_on_site")
@@ -536,19 +536,25 @@ public class Masterpage extends Base {
 	@FindBy(id = "react-select-4-placeholder")
 	private WebElement Lead_Time_To_Order;
 	
-	@FindBy(id = "//input[@id='formikDateField_warranty_period']")
-	private WebElement Warranty_Period;
+	@FindBy(id = "formikDateField_warranty_period")
+	private WebElement dateof_warranty;
+	
+	@FindBy(xpath = "//span[normalize-space()='12']")
+	private WebElement dateselect_warrantyperiod;
+	
+	@FindBy(xpath = "//textarea[@id='part_description']")
+	private WebElement descriptionstocks;
 
 	public void Enter_Mandatory_fields_Stock () throws Exception {
 		Thread.sleep(3000);
 		wait.until(ExpectedConditions.visibilityOf(New_Stock_page_padding)).isDisplayed();
-		String Stockcode = prop.getProperty("Stockcode");
+		String Stockcode = generateUniqueboardNumber(prop.getProperty("Stockcode"));
 		wait.until(ExpectedConditions.visibilityOf(Stock_Code)).sendKeys(Stockcode);
 		Thread.sleep(3000);
 		
 		wait.until(ExpectedConditions.visibilityOf(Stock_Code)).isDisplayed();
 		Thread.sleep(3000);
-		act.moveToElement(ID_supplier).click().sendKeys("" + Keys.ARROW_DOWN + Keys.ENTER).perform();
+		act.moveToElement(ID_supplier).click().sendKeys(""+ Keys.ARROW_DOWN + Keys.ENTER).perform();
 		Thread.sleep(1000);
 		
 		wait.until(ExpectedConditions.visibilityOf(ID_supplier)).isDisplayed();
@@ -559,9 +565,9 @@ public class Masterpage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(Material_Name)).isDisplayed();
 		String SupplierName = prop.getProperty("SupplierName");
 		wait.until(ExpectedConditions.visibilityOf(Supplier_Name)).sendKeys(SupplierName);
-		Thread.sleep(1000);
+		Thread.sleep(3000);
 
-		wait.until(ExpectedConditions.visibilityOf(Supplier_name)).isDisplayed();
+		wait.until(ExpectedConditions.visibilityOf(Supplier_Name)).isDisplayed();
 		String Availablequantity = prop.getProperty("Availablequantity");
 		wait.until(ExpectedConditions.visibilityOf(Available_quantity_in_store)).sendKeys(Availablequantity);
 		Thread.sleep(1000);
@@ -570,6 +576,34 @@ public class Masterpage extends Base {
         String QuantityUsed = prop.getProperty("QuantityUsed");
 		wait.until(ExpectedConditions.visibilityOf(Quantity_Used_on_site)).sendKeys(QuantityUsed);
 		Thread.sleep(1000);
+		
+		wait.until(ExpectedConditions.visibilityOf(Quantity_Used_on_site)).isDisplayed();
+		String minimQty = prop.getProperty("minimQty");
+		wait.until(ExpectedConditions.visibilityOf(Minimum_Quantity)).sendKeys(minimQty);
+		Thread.sleep(1000);
+
+		wait.until(ExpectedConditions.visibilityOf(Quantity_Used_on_site)).isDisplayed();
+		String maximQty = prop.getProperty("maximQty");
+		wait.until(ExpectedConditions.visibilityOf(Maximum_Quantity)).sendKeys(maximQty);
+		Thread.sleep(1000);
+		
+		wait.until(ExpectedConditions.visibilityOf(Maximum_Quantity)).isDisplayed();
+		act.moveToElement(Lead_Time_To_Order).click().sendKeys(""+Keys.ARROW_DOWN+Keys.ENTER+Keys.TAB).perform();
+		Thread.sleep(4000);
+
+		//wait.until(ExpectedConditions.visibilityOf(Lead_Time_To_Order)).isDisplayed();
+		//wait.until(ExpectedConditions.visibilityOf(dateof_warranty));
+		//act.moveToElement(dateof_warranty).sendKeys("" + Keys.TAB).perform();
+	  //  act.moveToElement(dateof_warranty).click().perform();
+
+		Thread.sleep(3000);
+//		act.moveToElement(dateselect_warrantyperiod).click().perform();
+//		Thread.sleep(1000);
+
+		wait.until(ExpectedConditions.visibilityOf(dateof_warranty)).isDisplayed();
+		String Descriptionstocks = prop.getProperty("Descriptionstocks");
+		wait.until(ExpectedConditions.visibilityOf(descriptionstocks)).sendKeys(Descriptionstocks);
+		
 	}
 
 	@FindBy(xpath = "//div[@data-testid='Add Stock']")
@@ -734,13 +768,13 @@ public class Masterpage extends Base {
 
 //<-----------------------------------------TicketTitle---------------------------------------------->
 
-@FindBy(xpath = "//*[@id=\"root\"]/div[2]/div[1]/div[2]/div/div[1]/div[2]/div/a[6]/span")
+@FindBy(xpath = "//span[normalize-space()='Ticket Title']")
 private WebElement click_TicketTile;
 
 public void TicketTitle_click() throws Exception {
 	wait.until(ExpectedConditions.visibilityOf(click_TicketTile)).click();
 }
-@FindBy(xpath = "//h5[normalize-space()='TicketTitle(8)']")
+@FindBy(xpath = "//h5[normalize-space()='Ticket Title(89)']")
 private WebElement TicketTitleCount;
 
 public void allTicketTitleCount() {
@@ -749,7 +783,7 @@ public void allTicketTitleCount() {
 	LOGGER.info(">> The TicketTitle page got displayed");
 }
 
-@FindBy(xpath = "(//h6[contains(@class,'m-0 fw-normal')][normalize-space()='New TicketTitle'])[1]")
+@FindBy(xpath = "(//h6[contains(@class,'m-0 fw-normal')][normalize-space()='New Ticket Title'])[1]")
 private WebElement click_new_TicketTitlebutton;
 
 public void New_TicketTitle_button_click() throws Exception {
@@ -759,7 +793,7 @@ public void New_TicketTitle_button_click() throws Exception {
 @FindBy(id = "title")
 private WebElement enter_TicketTitle;
 
-@FindBy(xpath = "(//h6[normalize-space()='Add TicketTitle'])[1]")
+@FindBy(xpath = "//h6[normalize-space()='Add Ticket Title']")
 private WebElement click_addTicketTitle;
 
 public void Add_TicketTitle() throws Exception {
@@ -785,11 +819,11 @@ private WebElement TicketTitle_Search;
 
 public void TicketTitle_search_enter_text() {
 	wait.until(ExpectedConditions.visibilityOf(TicketTitlelist)).click();
-	String TicketTitle_Search = prop.getProperty("TicketTitlename");
+	String TicketTitle_Search = prop.getProperty("TicketTitle_name");
 	wait.until(ExpectedConditions.visibilityOf(TicketTitlelist)).sendKeys(TicketTitle_Search + Keys.ENTER);
 	System.out.println(">> User enter the TicketTitle id in search field: " + TicketTitle_Search);
 }
-@FindBy(xpath = "(//td[normalize-space()='ADMIN'])[1]")
+@FindBy(xpath = "(//input[@id='doc_searchQueryInput'])[1]")
 private WebElement TicketTitleSearched, TicketTitleSearch;
 
 public void TicketTitleSearchedList() {
@@ -801,7 +835,7 @@ public void TicketTitleSearchedList() {
 		System.out.println("Element is not displayed");
 	}
 	LOGGER.info(">> Admin/User searched TicketTitle");
-	System.out.println(">> User got searched TicketTitle list: " + TicketTitleSearch.getText());
+	System.out.println(">> User got searched TicketTitle list: " + TicketTitleSearched.getText());
 }
 
 public void TicketTitlelist() {

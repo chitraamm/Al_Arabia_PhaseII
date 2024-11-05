@@ -219,11 +219,12 @@ And Admin or user clicks the Master
 And Admin or user clicks the Stock
 And User click on New Stock button
 And User Enter Mandatory fields of New Stock page
-#And User click on Add Stock button  
+And User click on Add Stock button  
 #Then Particular Stock gets created successfully with either "<successMessage1>" or "<successMessage2>"
   #Examples:
       #| successMessage1       | successMessage2     |
-      #| LOADING...            | Success Stock Added |      
+      #| LOADING...            | Success Stock Added |  
+          #
 @Master @Stock @Stock03 @smoke @regression @all
 Scenario Outline: T003_ the Stock feature search
 Given Admin logged in with valid credentials
@@ -307,6 +308,7 @@ Scenario Outline: T001_Verify TicketTitle page display
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
+And User clicks TicketTitle
 Then Al Arabia TicketTitle page should display successfully
 
 @Master @TicketTitle @TicketTitle02 @regression @sanity @all
@@ -314,6 +316,7 @@ Scenario Outline: T002_Create the Ticket with valid inputs
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
+And User clicks TicketTitle
 And User click on New TicketTitle button
 And User Enter TicketTitle name and clicks Add TicketTitle button
 Then Particular TicketTitle gets created successfully with either "<successMessage1>" or "<successMessage2>"
@@ -325,6 +328,7 @@ Scenario Outline: T003_ the TicketTitle feature search
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
+And User clicks TicketTitle
 And Admin or user search the TicketTitle
 Then Searched Ticket details get displayed successfully
 
@@ -333,6 +337,7 @@ Scenario Outline: T004_To verify the TicketTitle feature sort recently updated
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
+And User clicks TicketTitle
 And Admin or user sort the TicketTitle list recently updated
 Then Recently updated TicketTitle list get displayed successfully
 
@@ -341,6 +346,7 @@ Scenario Outline: T005_To verify the TicketTitle feature sort Name - A to Z
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
+And User clicks TicketTitle
 And User sort the TicketTitle list Name A to Z
 Then TicketTitle list get displayed successfully
 
@@ -349,6 +355,7 @@ Scenario Outline: T006_To verify the TicketTitle feature sort Name - Z to A
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
+And User clicks TicketTitle
 And User sort the TicketTitle list Name Z to A 
 Then TicketTitle list Z to A get displayed successfully
 
@@ -357,6 +364,7 @@ Scenario Outline: T007_To verify the TicketTitle feature sort Recently Added
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
+And User clicks TicketTitle
 And User sort the TicketTitle list Recently Added
 Then Recent TicketTitle list get displayed successfully
 
@@ -365,6 +373,7 @@ Scenario Outline: T008_To verify the TicketTitle feature sort decending
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
+And User clicks TicketTitle
 And User sort the TicketTitle list decending
 Then Decending TicketTitle list get displayed successfully
 
@@ -373,6 +382,7 @@ Scenario Outline: T009_To verify the TicketTitle Edit
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
+And User clicks TicketTitle
 And User click on kebab menu
 And User selects Edit option 
 And User Updated TicketTitle 
@@ -386,6 +396,7 @@ Scenario Outline: T010_To verify the TicketTitle Delete
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
+And User clicks TicketTitle
 And User click on kebab menu
 And User clicked Delete TicketTitle option 
 Then Particular TicketTitle gets Deleted successfully with either "<successMessage1>" or "<successMessage2>"

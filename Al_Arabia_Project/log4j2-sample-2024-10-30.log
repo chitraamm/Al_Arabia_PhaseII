@@ -1,0 +1,134 @@
+[INFO ] 2024-10-30 11:13:25.260 [main] Testhooks - Execution Started
+[INFO ] 2024-10-30 11:13:26.196 [main] Testhooks - Browser got launched
+[INFO ] 2024-10-30 11:13:27.625 [main] Testhooks - Navigated to url
+[INFO ] 2024-10-30 11:13:28.821 [main] Signinpage - User enters valid email address
+[INFO ] 2024-10-30 11:13:28.943 [main] Signinpage - User enters valid password
+[INFO ] 2024-10-30 11:13:29.051 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-10-30 11:13:29.051 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-10-30 11:13:31.827 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-10-30 11:13:37.979 [main] Testhooks - Failed scenario screenshot got capturedT002_Create the New Stock with valid inputs
+[INFO ] 2024-10-30 11:14:32.571 [main] Testhooks - Execution Started
+[INFO ] 2024-10-30 11:14:33.418 [main] Testhooks - Browser got launched
+[INFO ] 2024-10-30 11:14:34.721 [main] Testhooks - Navigated to url
+[INFO ] 2024-10-30 11:14:35.925 [main] Signinpage - User enters valid email address
+[INFO ] 2024-10-30 11:14:36.048 [main] Signinpage - User enters valid password
+[INFO ] 2024-10-30 11:14:36.152 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-10-30 11:14:36.152 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-10-30 11:14:39.578 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-10-30 11:15:06.718 [main] Testhooks - Failed scenario screenshot got capturedT002_Create the New Stock with valid inputs
+[INFO ] 2024-10-30 11:23:41.578 [main] Testhooks - Execution Started
+[INFO ] 2024-10-30 11:23:42.396 [main] Testhooks - Browser got launched
+[INFO ] 2024-10-30 11:23:44.145 [main] Testhooks - Navigated to url
+[INFO ] 2024-10-30 11:23:45.346 [main] Signinpage - User enters valid email address
+[INFO ] 2024-10-30 11:23:45.463 [main] Signinpage - User enters valid password
+[INFO ] 2024-10-30 11:23:45.567 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-10-30 11:23:45.568 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-10-30 11:23:48.328 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-10-30 11:24:27.284 [main] Testhooks - Failed scenario screenshot got capturedT002_Create the New Stock with valid inputs
+[INFO ] 2024-10-30 11:27:47.647 [main] Testhooks - Execution Started
+[INFO ] 2024-10-30 11:27:48.488 [main] Testhooks - Browser got launched
+[INFO ] 2024-10-30 11:27:49.782 [main] Testhooks - Navigated to url
+[INFO ] 2024-10-30 11:27:50.989 [main] Signinpage - User enters valid email address
+[INFO ] 2024-10-30 11:27:51.109 [main] Signinpage - User enters valid password
+[INFO ] 2024-10-30 11:27:51.212 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-10-30 11:27:51.212 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-10-30 11:27:53.988 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-10-30 11:28:37.864 [main] Testhooks - Failed scenario screenshot got capturedT002_Create the New Stock with valid inputs
+[INFO ] 2024-10-30 11:29:08.413 [main] Testhooks - Execution Started
+[INFO ] 2024-10-30 11:29:09.194 [main] Testhooks - Browser got launched
+[INFO ] 2024-10-30 11:29:10.555 [main] Testhooks - Navigated to url
+[INFO ] 2024-10-30 11:29:11.754 [main] Signinpage - User enters valid email address
+[INFO ] 2024-10-30 11:29:11.874 [main] Signinpage - User enters valid password
+[INFO ] 2024-10-30 11:29:11.972 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-10-30 11:29:11.972 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-10-30 11:29:14.657 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-10-30 11:29:59.709 [main] Testhooks - Failed scenario screenshot got capturedT002_Create the New Stock with valid inputs
+[INFO ] 2024-10-30 11:33:25.697 [main] Testhooks - Execution Started
+[INFO ] 2024-10-30 11:33:26.526 [main] Testhooks - Browser got launched
+[INFO ] 2024-10-30 11:33:27.949 [main] Testhooks - Navigated to url
+[INFO ] 2024-10-30 11:33:29.154 [main] Signinpage - User enters valid email address
+[INFO ] 2024-10-30 11:33:29.272 [main] Signinpage - User enters valid password
+[INFO ] 2024-10-30 11:33:29.378 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-10-30 11:33:29.378 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-10-30 11:33:31.983 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-10-30 11:33:33.622 [main] Testhooks - Failed scenario screenshot got capturedT002_Create the New Stock with valid inputs
+[INFO ] 2024-10-30 11:33:53.048 [main] Testhooks - Execution Started
+[INFO ] 2024-10-30 11:33:53.912 [main] Testhooks - Browser got launched
+[INFO ] 2024-10-30 11:33:55.370 [main] Testhooks - Navigated to url
+[INFO ] 2024-10-30 11:33:56.560 [main] Signinpage - User enters valid email address
+[INFO ] 2024-10-30 11:33:56.674 [main] Signinpage - User enters valid password
+[INFO ] 2024-10-30 11:33:56.777 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-10-30 11:33:56.778 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-10-30 11:33:59.598 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-10-30 11:34:44.288 [main] Testhooks - Failed scenario screenshot got capturedT002_Create the New Stock with valid inputs
+[INFO ] 2024-10-30 11:46:53.274 [main] Testhooks - Execution Started
+[INFO ] 2024-10-30 11:46:54.126 [main] Testhooks - Browser got launched
+[INFO ] 2024-10-30 11:46:55.578 [main] Testhooks - Navigated to url
+[INFO ] 2024-10-30 11:46:56.776 [main] Signinpage - User enters valid email address
+[INFO ] 2024-10-30 11:46:56.904 [main] Signinpage - User enters valid password
+[INFO ] 2024-10-30 11:46:57.010 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-10-30 11:46:57.010 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-10-30 11:46:59.759 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-10-30 11:47:44.505 [main] Testhooks - Failed scenario screenshot got capturedT002_Create the New Stock with valid inputs
+[INFO ] 2024-10-30 11:50:03.301 [main] Testhooks - Execution Started
+[INFO ] 2024-10-30 11:50:04.260 [main] Testhooks - Browser got launched
+[INFO ] 2024-10-30 11:50:05.684 [main] Testhooks - Navigated to url
+[INFO ] 2024-10-30 11:50:06.889 [main] Signinpage - User enters valid email address
+[INFO ] 2024-10-30 11:50:07.021 [main] Signinpage - User enters valid password
+[INFO ] 2024-10-30 11:50:07.133 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-10-30 11:50:07.133 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-10-30 11:50:10.443 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-10-30 11:50:55.265 [main] Testhooks - Failed scenario screenshot got capturedT002_Create the New Stock with valid inputs
+[INFO ] 2024-10-30 11:59:33.928 [main] Testhooks - Execution Started
+[INFO ] 2024-10-30 11:59:34.777 [main] Testhooks - Browser got launched
+[INFO ] 2024-10-30 11:59:36.226 [main] Testhooks - Navigated to url
+[INFO ] 2024-10-30 11:59:37.439 [main] Signinpage - User enters valid email address
+[INFO ] 2024-10-30 11:59:37.563 [main] Signinpage - User enters valid password
+[INFO ] 2024-10-30 11:59:37.675 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-10-30 11:59:37.675 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-10-30 11:59:40.493 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-10-30 12:00:23.827 [main] Testhooks - Failed scenario screenshot got capturedT002_Create the New Stock with valid inputs
+[INFO ] 2024-10-30 12:01:16.829 [main] Testhooks - Execution Started
+[INFO ] 2024-10-30 12:01:17.740 [main] Testhooks - Browser got launched
+[INFO ] 2024-10-30 12:01:19.154 [main] Testhooks - Navigated to url
+[INFO ] 2024-10-30 12:01:20.364 [main] Signinpage - User enters valid email address
+[INFO ] 2024-10-30 12:01:20.494 [main] Signinpage - User enters valid password
+[INFO ] 2024-10-30 12:01:20.607 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-10-30 12:01:20.607 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-10-30 12:01:23.304 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-10-30 12:07:26.903 [main] Testhooks - Execution Started
+[INFO ] 2024-10-30 12:07:27.814 [main] Testhooks - Browser got launched
+[INFO ] 2024-10-30 12:07:29.256 [main] Testhooks - Navigated to url
+[INFO ] 2024-10-30 12:07:30.535 [main] Signinpage - User enters valid email address
+[INFO ] 2024-10-30 12:07:30.854 [main] Signinpage - User enters valid password
+[INFO ] 2024-10-30 12:07:31.027 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-10-30 12:07:31.027 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-10-30 12:07:33.626 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-10-30 12:07:35.144 [main] Testhooks - Failed scenario screenshot got capturedT002_Create the New Stock with valid inputs
+[INFO ] 2024-10-30 12:11:04.561 [main] Testhooks - Execution Started
+[INFO ] 2024-10-30 12:11:05.481 [main] Testhooks - Browser got launched
+[INFO ] 2024-10-30 12:11:06.932 [main] Testhooks - Navigated to url
+[INFO ] 2024-10-30 12:11:08.145 [main] Signinpage - User enters valid email address
+[INFO ] 2024-10-30 12:11:08.273 [main] Signinpage - User enters valid password
+[INFO ] 2024-10-30 12:11:08.384 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-10-30 12:11:08.384 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-10-30 12:11:11.159 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-10-30 12:11:53.939 [main] Testhooks - Failed scenario screenshot got capturedT002_Create the New Stock with valid inputs
+[INFO ] 2024-10-30 12:15:06.219 [main] Testhooks - Execution Started
+[INFO ] 2024-10-30 12:15:07.092 [main] Testhooks - Browser got launched
+[INFO ] 2024-10-30 12:15:08.492 [main] Testhooks - Navigated to url
+[INFO ] 2024-10-30 12:15:09.703 [main] Signinpage - User enters valid email address
+[INFO ] 2024-10-30 12:15:09.831 [main] Signinpage - User enters valid password
+[INFO ] 2024-10-30 12:15:09.943 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-10-30 12:15:09.944 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-10-30 12:15:12.738 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-10-30 12:15:55.867 [main] Testhooks - Failed scenario screenshot got capturedT002_Create the New Stock with valid inputs
+[INFO ] 2024-10-30 12:19:22.129 [main] Testhooks - Execution Started
+[INFO ] 2024-10-30 12:19:23.020 [main] Testhooks - Browser got launched
+[INFO ] 2024-10-30 12:19:24.439 [main] Testhooks - Navigated to url
+[INFO ] 2024-10-30 12:19:25.653 [main] Signinpage - User enters valid email address
+[INFO ] 2024-10-30 12:19:25.778 [main] Signinpage - User enters valid password
+[INFO ] 2024-10-30 12:19:25.888 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-10-30 12:19:25.888 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-10-30 12:19:28.640 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-10-30 12:20:11.620 [main] Testhooks - Failed scenario screenshot got capturedT002_Create the New Stock with valid inputs

@@ -128,7 +128,15 @@ Stocknames = PLIER
 Stockcode = 2345
 Materialname = closer
 SupplierName = nishu
-Availablequantity = 5
+Availablequantity = 325
 QuantityUsed = 10
 Materialname = lcd
 supplier_id = 1301
+minimQty = 20
+maximQty = 1200
+Descriptionstocks = testing
+
+<-------------TicketTitle---------------->
+
+TicketTitlename = Screw loose
+TicketTitle_name = SCREW LOOSE	

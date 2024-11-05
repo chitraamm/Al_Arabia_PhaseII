@@ -410,8 +410,8 @@ public class Master extends Base {
 	}
 	//<----------------------------------------TicketTitle------------------------------------------->
 	
-	@And("Admin or user clicks the TicketTitle")
-	public void Admin_or_user_clicks_the_TicketTitle() throws Exception {
+	@And("User clicks TicketTitle")
+	public void User_clicks_the_TicketTitle() throws Exception {
 		masterpage.TicketTitle_click();
 	}
 	@Then("Al Arabia TicketTitle page should display successfully")

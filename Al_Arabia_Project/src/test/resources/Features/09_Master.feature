@@ -397,6 +397,8 @@ Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
 And User clicks TicketTitle
+And User click on New TicketTitle button
+And User Enter TicketTitle name and clicks Add TicketTitle button
 And User click on kebab menu
 And User clicked Delete TicketTitle option 
 Then Particular TicketTitle gets Deleted successfully with either "<successMessage1>" or "<successMessage2>"
@@ -408,6 +410,7 @@ Scenario Outline: T001_Verify ScreenResolution page display
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
+And User clicks ScreenResolution
 Then Al Arabia ScreenResolution page should display successfully
 
 @Master @ScreenResolution @ScreenResolution02 @regression @sanity @all
@@ -415,17 +418,19 @@ Scenario Outline: T002_Create the Ticket with valid inputs
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
+And User clicks ScreenResolution
 And User click on New ScreenResolution button
 And User Enter ScreenResolution name and clicks Add ScreenResolution button
 Then Particular ScreenResolution gets created successfully with either "<successMessage1>" or "<successMessage2>"
   Examples:
-      | successMessage1       | successMessage2                       |
+      | successMessage1       | successMessage2                             |
       | LOADING...            | Success Added ScreenResolution successfully |      
 @Master @ScreenResolution @ScreenResolution03 @smoke @regression @all
 Scenario Outline: T003_ the ScreenResolution feature search
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
+And User clicks ScreenResolution
 And Admin or user search the ScreenResolution
 Then Searched Ticket details get displayed successfully
 
@@ -434,6 +439,7 @@ Scenario Outline: T004_To verify the ScreenResolution feature sort recently upda
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
+And User clicks ScreenResolution
 And Admin or user sort the ScreenResolution list recently updated
 Then Recently updated ScreenResolution list get displayed successfully
 
@@ -442,6 +448,7 @@ Scenario Outline: T005_To verify the ScreenResolution feature sort Name - A to Z
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
+And User clicks ScreenResolution
 And User sort the ScreenResolution list Name A to Z
 Then ScreenResolution list get displayed successfully
 
@@ -450,6 +457,7 @@ Scenario Outline: T006_To verify the ScreenResolution feature sort Name - Z to A
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
+And User clicks ScreenResolution
 And User sort the ScreenResolution list Name Z to A 
 Then ScreenResolution list Z to A get displayed successfully
 
@@ -458,6 +466,7 @@ Scenario Outline: T007_To verify the ScreenResolution feature sort Recently Adde
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
+And User clicks ScreenResolution
 And User sort the ScreenResolution list Recently Added
 Then Recent ScreenResolution list get displayed successfully
 
@@ -466,6 +475,7 @@ Scenario Outline: T008_To verify the ScreenResolution feature sort decending
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
+And User clicks ScreenResolution
 And User sort the ScreenResolution list decending
 Then Decending ScreenResolution list get displayed successfully
 
@@ -474,12 +484,13 @@ Scenario Outline: T009_To verify the ScreenResolution Edit
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
+And User clicks ScreenResolution
 And User click on kebab menu
 And User selects Edit option 
 And User Updated ScreenResolution 
 Then Particular ScreenResolution gets Edited successfully with either "<successMessage1>" or "<successMessage2>"
   Examples:
-      | successMessage1       | successMessage2                        |
+      | successMessage1       | successMessage2                              |
       | LOADING...            | Success Edited ScreenResolution successfully | 
       
 @Master @ScreenResolution @ScreenResolution10 @smoke @regression @all
@@ -487,6 +498,9 @@ Scenario Outline: T010_To verify the ScreenResolution Delete
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
+And User clicks ScreenResolution
+And User click on New ScreenResolution button
+And User Enter ScreenResolution name and clicks Add ScreenResolution button
 And User click on kebab menu
 And User clicked Delete ScreenResolution option 
 Then Particular ScreenResolution gets Deleted successfully with either "<successMessage1>" or "<successMessage2>"
@@ -499,6 +513,7 @@ Scenario Outline: T001_Verify ScreenPixel page display
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
+And User clicks ScreenPixel
 Then Al Arabia ScreenPixel page should display successfully
 
 @Master @ScreenPixel @ScreenPixel02 @regression @sanity @all
@@ -506,17 +521,19 @@ Scenario Outline: T002_Create the Ticket with valid inputs
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
+And User clicks ScreenPixel
 And User click on New ScreenPixel button
 And User Enter ScreenPixel name and clicks Add ScreenPixel button
 Then Particular ScreenPixel gets created successfully with either "<successMessage1>" or "<successMessage2>"
   Examples:
-      | successMessage1       | successMessage2                       |
+      | successMessage1       | successMessage2                        |
       | LOADING...            | Success Added ScreenPixel successfully |      
 @Master @ScreenPixel @ScreenPixel03 @smoke @regression @all
 Scenario Outline: T003_ the ScreenPixel feature search
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
+And User clicks ScreenPixel
 And Admin or user search the ScreenPixel
 Then Searched Ticket details get displayed successfully
 
@@ -525,6 +542,7 @@ Scenario Outline: T004_To verify the ScreenPixel feature sort recently updated
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
+And User clicks ScreenPixel
 And Admin or user sort the ScreenPixel list recently updated
 Then Recently updated ScreenPixel list get displayed successfully
 
@@ -541,6 +559,7 @@ Scenario Outline: T006_To verify the ScreenPixel feature sort Name - Z to A
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
+And User clicks ScreenPixel
 And User sort the ScreenPixel list Name Z to A 
 Then ScreenPixel list Z to A get displayed successfully
 
@@ -549,6 +568,7 @@ Scenario Outline: T007_To verify the ScreenPixel feature sort Recently Added
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
+And User clicks ScreenPixel
 And User sort the ScreenPixel list Recently Added
 Then Recent ScreenPixel list get displayed successfully
 
@@ -557,6 +577,7 @@ Scenario Outline: T008_To verify the ScreenPixel feature sort decending
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
+And User clicks ScreenPixel
 And User sort the ScreenPixel list decending
 Then Decending ScreenPixel list get displayed successfully
 
@@ -565,12 +586,13 @@ Scenario Outline: T009_To verify the ScreenPixel Edit
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
+And User clicks ScreenPixel
 And User click on kebab menu
 And User selects Edit option 
 And User Updated ScreenPixel 
 Then Particular ScreenPixel gets Edited successfully with either "<successMessage1>" or "<successMessage2>"
   Examples:
-      | successMessage1       | successMessage2                        |
+      | successMessage1       | successMessage2                         |
       | LOADING...            | Success Edited ScreenPixel successfully | 
       
 @Master @ScreenPixel @ScreenPixel10 @smoke @regression @all
@@ -578,6 +600,9 @@ Scenario Outline: T010_To verify the ScreenPixel Delete
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
+And User clicks ScreenPixel
+And User click on New ScreenPixel button
+And User Enter ScreenPixel name and clicks Add ScreenPixel button
 And User click on kebab menu
 And User clicked Delete ScreenPixel option 
 Then Particular ScreenPixel gets Deleted successfully with either "<successMessage1>" or "<successMessage2>"
@@ -590,6 +615,7 @@ Scenario Outline: T001_Verify BillBoardType page display
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
+And User clicks BillBoardType
 Then Al Arabia BillBoardType page should display successfully
 
 @Master @BillBoardType @BillBoardType02 @regression @sanity @all
@@ -597,6 +623,7 @@ Scenario Outline: T002_Create the Ticket with valid inputs
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
+And User clicks BillBoardType
 And User click on New BillBoardType button
 And User Enter BillBoardType name and clicks Add BillBoardType button
 Then Particular BillBoardType gets created successfully with either "<successMessage1>" or "<successMessage2>"
@@ -608,6 +635,7 @@ Scenario Outline: T003_ the BillBoardType feature search
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
+And User clicks BillBoardType
 And Admin or user search the BillBoardType
 Then Searched Ticket details get displayed successfully
 
@@ -616,6 +644,7 @@ Scenario Outline: T004_To verify the BillBoardType feature sort recently updated
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
+And User clicks BillBoardType
 And Admin or user sort the BillBoardType list recently updated
 Then Recently updated BillBoardType list get displayed successfully
 
@@ -624,6 +653,7 @@ Scenario Outline: T005_To verify the BillBoardType feature sort Name - A to Z
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
+And User clicks ScreenPixel
 And User sort the BillBoardType list Name A to Z
 Then BillBoardType list get displayed successfully
 
@@ -632,6 +662,7 @@ Scenario Outline: T006_To verify the BillBoardType feature sort Name - Z to A
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
+And User clicks BillBoardTypeBillBoardType
 And User sort the BillBoardType list Name Z to A 
 Then BillBoardType list Z to A get displayed successfully
 
@@ -640,6 +671,7 @@ Scenario Outline: T007_To verify the BillBoardType feature sort Recently Added
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
+And User clicks BillBoardType
 And User sort the BillBoardType list Recently Added
 Then Recent BillBoardType list get displayed successfully
 
@@ -648,6 +680,7 @@ Scenario Outline: T008_To verify the BillBoardType feature sort decending
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
+And User clicks BillBoardType
 And User sort the BillBoardType list decending
 Then Decending BillBoardType list get displayed successfully
 
@@ -656,6 +689,7 @@ Scenario Outline: T009_To verify the BillBoardType Edit
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
+And User clicks BillBoardType
 And User click on kebab menu
 And User selects Edit option 
 And User Updated BillBoardType 
@@ -669,6 +703,7 @@ Scenario Outline: T010_To verify the BillBoardType Delete
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
+And User clicks BillBoardType
 And User click on kebab menu
 And User clicked Delete BillBoardType option 
 Then Particular BillBoardType gets Deleted successfully with either "<successMessage1>" or "<successMessage2>"
@@ -681,6 +716,7 @@ Scenario Outline: T001_Verify BOMUnit page display
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
+And User clicks ScreenPixel
 Then Al Arabia BOMUnit page should display successfully
 
 @Master @BOMUnit @BOMUnit02 @regression @sanity @all
@@ -699,6 +735,7 @@ Scenario Outline: T003_ the BOMUnit feature search
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
+And User clicks ScreenPixel
 And Admin or user search the BOMUnit
 Then Searched Ticket details get displayed successfully
 
@@ -707,6 +744,7 @@ Scenario Outline: T004_To verify the BOMUnit feature sort recently updated
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
+And User clicks ScreenPixel
 And Admin or user sort the BOMUnit list recently updated
 Then Recently updated BOMUnit list get displayed successfully
 

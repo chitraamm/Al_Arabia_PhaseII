@@ -25,7 +25,7 @@ public class Masterpage extends Base {
 	private WebDriverWait wait;
 	private Properties prop;
 	private Actions act;
-	private Logger LOGGER = LogManager.getLogger(Cleaningpage.class);
+	private Logger LOGGER = LogManager.getLogger(Cleaningpage.class); 
 	//private Signinpage signinpage;
 
 
@@ -784,11 +784,11 @@ public void allTicketTitleCount() {
 }
 
 @FindBy(xpath = "(//h6[contains(@class,'m-0 fw-normal')][normalize-space()='New Ticket Title'])[1]")
-private WebElement click_new_TicketTitlebutton;
+private WebElement click_new_TTbutton;
 
 public void New_TicketTitle_button_click() throws Exception {
 	Thread.sleep(5000);
-	wait.until(ExpectedConditions.visibilityOf(click_new_TicketTitlebutton)).click();
+	wait.until(ExpectedConditions.visibilityOf(click_new_TTbutton)).click();
 }
 @FindBy(id = "title")
 private WebElement enter_TicketTitle;
@@ -811,19 +811,21 @@ public String TicketTitle_created_Success_display() throws Exception {
 			.until(ExpectedConditions.visibilityOf(TicketTitle_created_Success_display));
 	return successMessageElement.getText().trim();
 }
-@FindBy(xpath = "//div[@class='list_members p-3 ']")
+@FindBy(xpath = "//div[@class='container p-3 ']")
 private WebElement TicketTitlelist;
 
-@FindBy(xpath = "(//input[@id='doc_searchQueryInput'])[1]")
-private WebElement TicketTitle_Search;
+@FindBy(id = "doc_searchQueryInput")
+private WebElement TicketTitle_search;
 
-public void TicketTitle_search_enter_text() {
-	wait.until(ExpectedConditions.visibilityOf(TicketTitlelist)).click();
-	String TicketTitle_Search = prop.getProperty("TicketTitle_name");
-	wait.until(ExpectedConditions.visibilityOf(TicketTitlelist)).sendKeys(TicketTitle_Search + Keys.ENTER);
-	System.out.println(">> User enter the TicketTitle id in search field: " + TicketTitle_Search);
+public void TicketTitle_search_enter_text() throws Exception {
+	wait.until(ExpectedConditions.visibilityOf(TicketTitle_search)).click();
+	String TicketTitleSearch = prop.getProperty("TicketTitleSearch");
+	Thread.sleep(2000);
+	wait.until(ExpectedConditions.visibilityOf(TicketTitle_search)).sendKeys(""+TicketTitleSearch + Keys.SHIFT);
+	wait.until(ExpectedConditions.visibilityOf(TicketTitle_search)).sendKeys(""+Keys.ENTER);
+	System.out.println(">> User enter the TicketTitle id in search field: " + TicketTitle_search);
 }
-@FindBy(xpath = "(//input[@id='doc_searchQueryInput'])[1]")
+@FindBy(id = "doc_searchQueryInput")
 private WebElement TicketTitleSearched, TicketTitleSearch;
 
 public void TicketTitleSearchedList() {
@@ -913,7 +915,7 @@ public void selects_edit_TicketTitle() throws Exception {
 	Thread.sleep(1000);
 	wait.until(ExpectedConditions.visibilityOf(click_edit_TicketTitle)).click();
 }
-@FindBy(xpath = "(//h6[normalize-space()='Edit TicketTitle'])[1]")
+@FindBy(xpath = "//h6[normalize-space()='Edit Ticket Title']")
 private WebElement click_Edit_TicketTitlebuttn;
 
 public void Updated_TicketTitle() throws Exception {
@@ -933,13 +935,13 @@ public void selects_delete_TicketTitle() throws Exception {
 }
 //<-----------------------------------------ScreenResolution---------------------------------------------->
 
-@FindBy(xpath = "//*[@id=\"root\"]/div[2]/div[1]/div[2]/div/div[1]/div[2]/div/a[6]/span")
+@FindBy(xpath = "//span[normalize-space()='Screen Resolution']")
 private WebElement click_ScreenResolution;
 
 public void ScreenResolution_click() throws Exception {
 	wait.until(ExpectedConditions.visibilityOf(click_ScreenResolution)).click();
 }
-@FindBy(xpath = "//h5[normalize-space()='ScreenResolution(8)']")
+@FindBy(xpath = "//h5[normalize-space()='Screen Resolution(12)']")
 private WebElement ScreenResolutionCount;
 
 public void allScreenResolutionCount() {
@@ -948,7 +950,7 @@ public void allScreenResolutionCount() {
 	LOGGER.info(">> The ScreenResolution page got displayed");
 }
 
-@FindBy(xpath = "(//h6[contains(@class,'m-0 fw-normal')][normalize-space()='New ScreenResolution'])[1]")
+@FindBy(xpath = "(//h6[contains(@class,'m-0 fw-normal')][normalize-space()='New Screen Resolution'])[1]")
 private WebElement click_new_ScreenResolutionbutton;
 
 public void New_ScreenResolution_button_click() throws Exception {
@@ -958,12 +960,12 @@ public void New_ScreenResolution_button_click() throws Exception {
 @FindBy(id = "title")
 private WebElement enter_ScreenResolution;
 
-@FindBy(xpath = "(//h6[normalize-space()='Add ScreenResolution'])[1]")
+@FindBy(xpath = "//h6[normalize-space()='Add Screen Resolution']")
 private WebElement click_addScreenResolution;
 
 public void Add_ScreenResolution() throws Exception {
 	wait.until(ExpectedConditions.visibilityOf(enter_ScreenResolution));
-	String ScreenResolutionname = prop.getProperty("ScreenResolutionname");
+	String ScreenResolutionname = prop.getProperty("Screen_Resolutionname");
 	wait.until(ExpectedConditions.visibilityOf(enter_ScreenResolution)).sendKeys(ScreenResolutionname);
 	Thread.sleep(2000);
 	act.moveToElement(click_addScreenResolution).click().perform();
@@ -983,12 +985,12 @@ private WebElement ScreenResolutionlist;
 private WebElement ScreenResolution_Search;
 
 public void ScreenResolution_search_enter_text() {
-	wait.until(ExpectedConditions.visibilityOf(ScreenResolutionlist)).click();
-	String ScreenResolution_Search = prop.getProperty("ScreenResolutionname");
-	wait.until(ExpectedConditions.visibilityOf(ScreenResolutionlist)).sendKeys(ScreenResolution_Search + Keys.ENTER);
+	wait.until(ExpectedConditions.visibilityOf(ScreenResolution_Search)).click();
+	String ScreenResolutionSearch = prop.getProperty("ScreenResolutionSearch");
+	wait.until(ExpectedConditions.visibilityOf(ScreenResolution_Search)).sendKeys(ScreenResolutionSearch + Keys.ENTER);
 	System.out.println(">> User enter the ScreenResolution id in search field: " + ScreenResolution_Search);
 }
-@FindBy(xpath = "(//td[normalize-space()='ADMIN'])[1]")
+@FindBy(xpath = "(//input[@id='doc_searchQueryInput'])[1]")
 private WebElement ScreenResolutionSearched, ScreenResolutionSearch;
 
 public void ScreenResolutionSearchedList() {
@@ -1000,7 +1002,7 @@ public void ScreenResolutionSearchedList() {
 		System.out.println("Element is not displayed");
 	}
 	LOGGER.info(">> Admin/User searched ScreenResolution");
-	System.out.println(">> User got searched ScreenResolution list: " + ScreenResolutionSearch.getText());
+	System.out.println(">> User got searched ScreenResolution list: " + ScreenResolutionSearched.getText());
 }
 
 public void ScreenResolutionlist() {
@@ -1024,14 +1026,16 @@ private WebElement ScreenResolution_sort_recentlyupdated;
 @FindBy(xpath = "(//h6[contains(text(),'Recently Added')])[2]")
 private WebElement ScreenResolution_sort_recentlyadded;
 
-public void ScreenResolution_sort_recentlyupdated() {
+public void ScreenResolution_sort_recentlyupdated() throws  Exception {
 	wait.until(ExpectedConditions.visibilityOf(ScreenResolution_sort)).click();
+	Thread.sleep(3000);
 	wait.until(ExpectedConditions.visibilityOf(ScreenResolution_sort_recentlyupdated)).click();
 	System.out.println(">> User clicked recently updated in sort");
 }
 
-public void ScreenResolution_sort_recentlyadded() {
+public void ScreenResolution_sort_recentlyadded() throws Exception {
 	wait.until(ExpectedConditions.visibilityOf(ScreenResolution_sort)).click();
+	Thread.sleep(2000);
 	wait.until(ExpectedConditions.visibilityOf(ScreenResolution_sort_recentlyadded)).click();
 	System.out.println(">> User clicked recently added in sort");
 }
@@ -1039,8 +1043,9 @@ public void ScreenResolution_sort_recentlyadded() {
 @FindBy(xpath = "(//h6[contains(text(),'Name - A to Z')])[1]")
 private WebElement ScreenResolution_Name_A_to_Z;
 
-public void ScreenResolution_sortA_Z() {
+public void ScreenResolution_sortA_Z() throws Exception {
 	wait.until(ExpectedConditions.visibilityOf(ScreenResolution_sort)).click();
+	Thread.sleep(2000);
 	wait.until(ExpectedConditions.visibilityOf(ScreenResolution_Name_A_to_Z)).click();
 	System.out.println(">> User clicked recently updated in sort");
 }
@@ -1048,8 +1053,9 @@ public void ScreenResolution_sortA_Z() {
 @FindBy(xpath = "(//h6[contains(text(),'Name - Z to A')])[1]")
 private WebElement ScreenResolution_Name_Z_to_A;
 
-public void ScreenResolution_sortZ_A() {
+public void ScreenResolution_sortZ_A() throws Exception {
 	wait.until(ExpectedConditions.visibilityOf(ScreenResolution_sort)).click();
+	Thread.sleep(2000);
 	wait.until(ExpectedConditions.visibilityOf(ScreenResolution_Name_Z_to_A)).click();
 	System.out.println(">> User clicked Z-A updated in sort");
 }
@@ -1057,8 +1063,9 @@ public void ScreenResolution_sortZ_A() {
 @FindBy(xpath = "(//h6[contains(text(),'Decending - Date')])[1]")
 private WebElement ScreenResolution_Name_decending;
 
-public void ScreenResolution_DecendingDate() {
+public void ScreenResolution_DecendingDate() throws Exception {
 	wait.until(ExpectedConditions.visibilityOf(ScreenResolution_sort)).click();
+	Thread.sleep(2000);
 	wait.until(ExpectedConditions.visibilityOf(ScreenResolution_Name_decending)).click();
 	System.out.println(">> User clicked decending updated in sort");
 }
@@ -1078,7 +1085,7 @@ public void selects_edit_ScreenResolution() throws Exception {
 	Thread.sleep(1000);
 	wait.until(ExpectedConditions.visibilityOf(click_edit_ScreenResolution)).click();
 }
-@FindBy(xpath = "(//h6[normalize-space()='Edit ScreenResolution'])[1]")
+@FindBy(xpath = "//h6[normalize-space()='Edit Screen Resolution']")
 private WebElement click_Edit_ScreenResolutionbuttn;
 
 public void Updated_ScreenResolution() throws Exception {
@@ -1099,13 +1106,13 @@ public void selects_delete_ScreenResolution() throws Exception {
 
 //<-----------------------------------------ScreenPixel------------------------------------------------>
 
-@FindBy(xpath = "//*[@id=\"root\"]/div[2]/div[1]/div[2]/div/div[1]/div[2]/div/a[6]/span")
+@FindBy(xpath = "//span[normalize-space()='Screen Pixel']")
 private WebElement click_ScreenPixel;
 
 public void ScreenPixel_click() throws Exception {
 	wait.until(ExpectedConditions.visibilityOf(click_ScreenPixel)).click();
 }
-@FindBy(xpath = "//h5[normalize-space()='ScreenPixel(8)']")
+@FindBy(xpath = "//h5[normalize-space()='Screen Pixel(6)']")
 private WebElement ScreenPixelCount;
 
 public void allScreenPixelCount() {
@@ -1114,7 +1121,7 @@ public void allScreenPixelCount() {
 	LOGGER.info(">> The ScreenPixel page got displayed");
 }
 
-@FindBy(xpath = "(//h6[contains(@class,'m-0 fw-normal')][normalize-space()='New ScreenPixel'])[1]")
+@FindBy(xpath = "(//h6[contains(@class,'m-0 fw-normal')][normalize-space()='New Screen Pixel'])[1]")
 private WebElement click_new_ScreenPixelbutton;
 
 public void New_ScreenPixel_button_click() throws Exception {
@@ -1124,7 +1131,7 @@ public void New_ScreenPixel_button_click() throws Exception {
 @FindBy(id = "title")
 private WebElement enter_ScreenPixel;
 
-@FindBy(xpath = "(//h6[normalize-space()='Add ScreenPixel'])[1]")
+@FindBy(xpath = "//h6[normalize-space()='Add Screen Pixel']")
 private WebElement click_addScreenPixel;
 
 public void Add_ScreenPixel() throws Exception {
@@ -1146,15 +1153,15 @@ public String ScreenPixel_created_Success_display() throws Exception {
 private WebElement ScreenPixellist;
 
 @FindBy(xpath = "(//input[@id='doc_searchQueryInput'])[1]")
-private WebElement ScreenPixel_Search;
+private WebElement screenPixelSearch;
 
 public void ScreenPixel_search_enter_text() {
 	wait.until(ExpectedConditions.visibilityOf(ScreenPixellist)).click();
-	String ScreenPixel_Search = prop.getProperty("ScreenPixelname");
-	wait.until(ExpectedConditions.visibilityOf(ScreenPixellist)).sendKeys(ScreenPixel_Search + Keys.ENTER);
-	System.out.println(">> User enter the ScreenPixel id in search field: " + ScreenPixel_Search);
+	String ScreenPixel_Search = prop.getProperty("ScreenPixel_Search");
+	wait.until(ExpectedConditions.visibilityOf(screenPixelSearch)).sendKeys(ScreenPixel_Search + Keys.ENTER);
+	System.out.println(">> User enter the ScreenPixel id in search field: " + screenPixelSearch);
 }
-@FindBy(xpath = "(//td[normalize-space()='ADMIN'])[1]")
+@FindBy(xpath = "(//input[@id='doc_searchQueryInput'])[1]")
 private WebElement ScreenPixelSearched, ScreenPixelSearch;
 
 public void ScreenPixelSearchedList() {
@@ -1166,7 +1173,7 @@ public void ScreenPixelSearchedList() {
 		System.out.println("Element is not displayed");
 	}
 	LOGGER.info(">> Admin/User searched ScreenPixel");
-	System.out.println(">> User got searched ScreenPixel list: " + ScreenPixelSearch.getText());
+	System.out.println(">> User got searched ScreenPixel list: " + ScreenPixelSearched.getText());
 }
 
 public void ScreenPixellist() {
@@ -1244,7 +1251,7 @@ public void selects_edit_ScreenPixel() throws Exception {
 	Thread.sleep(1000);
 	wait.until(ExpectedConditions.visibilityOf(click_edit_ScreenPixel)).click();
 }
-@FindBy(xpath = "(//h6[normalize-space()='Edit ScreenPixel'])[1]")
+@FindBy(xpath = "//button[@id='Edit Screen Pixel']")
 private WebElement click_Edit_ScreenPixelbuttn;
 
 public void Updated_ScreenPixel() throws Exception {
@@ -1266,13 +1273,13 @@ public void selects_delete_ScreenPixel() throws Exception {
 
 //<-----------------------------------------BillBoardType------------------------------------------------>
 
-@FindBy(xpath = "//*[@id=\"root\"]/div[2]/div[1]/div[2]/div/div[1]/div[2]/div/a[6]/span")
+@FindBy(xpath = "//span[normalize-space()='BillBoard Type']")
 private WebElement click_BillBoardType;
 
 public void BillBoardType_click() throws Exception {
 	wait.until(ExpectedConditions.visibilityOf(click_BillBoardType)).click();
 }
-@FindBy(xpath = "//h5[normalize-space()='BillBoardType(8)']")
+@FindBy(xpath = "//h5[normalize-space()='BillBoard Type(19)']")
 private WebElement BillBoardTypeCount;
 
 public void allBillBoardTypeCount() {
@@ -1281,23 +1288,39 @@ public void allBillBoardTypeCount() {
 	LOGGER.info(">> The BillBoardType page got displayed");
 }
 
-@FindBy(xpath = "(//h6[contains(@class,'m-0 fw-normal')][normalize-space()='New BillBoardType'])[1]")
+@FindBy(xpath = "(//h6[contains(@class,'m-0 fw-normal')][normalize-space()='New BillBoard Type'])[1]")
 private WebElement click_new_BillBoardTypebutton;
 
 public void New_BillBoardType_button_click() throws Exception {
 	Thread.sleep(5000);
 	wait.until(ExpectedConditions.visibilityOf(click_new_BillBoardTypebutton)).click();
 }
-@FindBy(id = "title")
+@FindBy(xpath = "//input[@id='billboard_type']")
 private WebElement enter_BillBoardType;
 
-@FindBy(xpath = "(//h6[normalize-space()='Add BillBoardType'])[1]")
+@FindBy(xpath = "//input[@id='dry_clean']")
+private WebElement drycleaning;
+
+@FindBy(xpath = "//input[@id='wet_clean']")
+private WebElement WetClean;
+
+@FindBy(xpath = "//h6[normalize-space()='Add BillBoard Type']")
 private WebElement click_addBillBoardType;
 
 public void Add_BillBoardType() throws Exception {
 	wait.until(ExpectedConditions.visibilityOf(enter_BillBoardType));
 	String BillBoardTypename = prop.getProperty("BillBoardTypename");
 	wait.until(ExpectedConditions.visibilityOf(enter_BillBoardType)).sendKeys(BillBoardTypename);
+	Thread.sleep(2000);
+	
+	wait.until(ExpectedConditions.visibilityOf(enter_BillBoardType)).isDisplayed();
+	String Drycleaning = prop.getProperty("Drycleaning");
+	wait.until(ExpectedConditions.visibilityOf(drycleaning)).sendKeys(Drycleaning);
+	Thread.sleep(2000);
+
+	wait.until(ExpectedConditions.visibilityOf(drycleaning)).isDisplayed();
+	String Wetcleaning = prop.getProperty("Wetcleaning");
+	wait.until(ExpectedConditions.visibilityOf(WetClean)).sendKeys(Wetcleaning);
 	Thread.sleep(2000);
 	act.moveToElement(click_addBillBoardType).click().perform();
 }
@@ -1313,15 +1336,15 @@ public String BillBoardType_created_Success_display() throws Exception {
 private WebElement BillBoardTypelist;
 
 @FindBy(xpath = "(//input[@id='doc_searchQueryInput'])[1]")
-private WebElement BillBoardType_Search;
+private WebElement BillBoardTypesearch;
 
 public void BillBoardType_search_enter_text() {
 	wait.until(ExpectedConditions.visibilityOf(BillBoardTypelist)).click();
-	String BillBoardType_Search = prop.getProperty("BillBoardTypename");
-	wait.until(ExpectedConditions.visibilityOf(BillBoardTypelist)).sendKeys(BillBoardType_Search + Keys.ENTER);
-	System.out.println(">> User enter the BillBoardType id in search field: " + BillBoardType_Search);
+	String BillBoardType_Search = prop.getProperty("BillBoardtypename");
+	wait.until(ExpectedConditions.visibilityOf(BillBoardTypesearch)).sendKeys(BillBoardType_Search + Keys.ENTER);
+	System.out.println(">> User enter the BillBoardType id in search field: " + BillBoardTypesearch);
 }
-@FindBy(xpath = "(//td[normalize-space()='ADMIN'])[1]")
+@FindBy(xpath = "(//input[@id='doc_searchQueryInput'])[1]")
 private WebElement BillBoardTypeSearched, BillBoardTypeSearch;
 
 public void BillBoardTypeSearchedList() {
@@ -1333,7 +1356,7 @@ public void BillBoardTypeSearchedList() {
 		System.out.println("Element is not displayed");
 	}
 	LOGGER.info(">> Admin/User searched BillBoardType");
-	System.out.println(">> User got searched BillBoardType list: " + BillBoardTypeSearch.getText());
+	System.out.println(">> User got searched BillBoardType list: " + BillBoardTypeSearched.getText());
 }
 
 public void BillBoardTypelist() {

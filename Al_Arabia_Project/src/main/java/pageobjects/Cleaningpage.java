@@ -30,7 +30,7 @@ public class Cleaningpage extends Base {
 	//private Signinpage signinpage;
 
 
-	public Cleaningpage(WebDriver driver) throws Exception {
+	public Cleaningpage(WebDriver driver) throws Exception { 
 		this.driver = driver;
 		prop = new Properties();
 		act = new Actions(driver);

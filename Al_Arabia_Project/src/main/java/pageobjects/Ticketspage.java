@@ -25,7 +25,7 @@ import resources.Base;
 public class Ticketspage extends Base {
 	private WebDriver driver;
 	private WebDriverWait wait;
-	private Properties prop;
+	private Properties prop; 
 	private Actions act;
 	private Logger LOGGER = LogManager.getLogger(Ticketspage.class);
 	private Signinpage signinpage;

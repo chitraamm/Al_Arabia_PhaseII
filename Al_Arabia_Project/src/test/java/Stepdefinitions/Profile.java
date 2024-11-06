@@ -17,7 +17,7 @@ import resources.Base;
 
 public class Profile extends Base {
 
-	private Logger LOGGER = LogManager.getLogger(Profile.class);
+	private Logger LOGGER = LogManager.getLogger(Profile.class); 
 	private WebDriver driver;
 	private Signinpage signinpage;
 	private Profilepage profilepage;

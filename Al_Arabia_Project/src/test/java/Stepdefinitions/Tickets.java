@@ -21,7 +21,7 @@ public class Tickets extends Base {
 	private Ticketspage ticketsPage;
 
 	public Tickets(Testhooks testhooks) throws Exception {
-		this.driver = testhooks.getDriver();
+		this.driver = testhooks.getDriver(); 
 		this.ticketsPage = new Ticketspage(driver);
 		//new Signinpage(driver);
 		LOGGER = LogManager.getLogger(Tickets.class.getName());

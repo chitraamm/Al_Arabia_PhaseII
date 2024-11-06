@@ -20,7 +20,7 @@ public class Cleaning extends Base {
 	private WebDriver driver;
 	private Cleaningpage cleaningpage;
 	public Cleaning(Testhooks testhooks) throws Exception {
-		this.driver = testhooks.getDriver();
+		this.driver = testhooks.getDriver(); 
 		this.cleaningpage = new Cleaningpage(driver);
 		new Signinpage(driver);
 		LOGGER = LogManager.getLogger(Master.class.getName());

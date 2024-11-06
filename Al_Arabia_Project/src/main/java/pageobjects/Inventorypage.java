@@ -31,7 +31,7 @@ public class Inventorypage extends Base {
 	//private Signinpage signinpage;
 
 
-	public Inventorypage(WebDriver driver) throws Exception {
+	public Inventorypage(WebDriver driver) throws Exception { 
 		this.driver = driver;
 		prop = new Properties();
 		act = new Actions(driver);

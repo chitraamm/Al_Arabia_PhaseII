@@ -20,7 +20,7 @@ public class Signinpage extends Base {
 
     private Logger LOGGER = LogManager.getLogger(Signinpage.class);
     private WebDriver driver;
-    private WebDriverWait wait;
+    private WebDriverWait wait; 
     private Properties prop;
 
     public Signinpage(WebDriver driver) throws Exception {

@@ -22,7 +22,7 @@ public class Profilepage extends Base {
 	private WebDriver driver;
 	private WebDriverWait wait;
 	private Properties prop;
-	private Actions act;
+	private Actions act; 
 	private Logger LOGGER = LogManager.getLogger(Profilepage.class);
 	private Signinpage signinpage;
 

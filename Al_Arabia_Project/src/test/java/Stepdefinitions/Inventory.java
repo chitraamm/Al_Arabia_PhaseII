@@ -20,7 +20,7 @@ public class Inventory extends Base {
 	private static Logger LOGGER = LogManager.getLogger(Inventory.class);
 	private WebDriver driver;
 	private Inventorypage inventorypage;
-	public Inventory(Testhooks testhooks) throws Exception {
+	public Inventory(Testhooks testhooks) throws Exception { 
 		this.driver = testhooks.getDriver();
 		this.inventorypage = new Inventorypage(driver);
 		new Signinpage(driver);

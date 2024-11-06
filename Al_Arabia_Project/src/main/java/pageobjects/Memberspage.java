@@ -24,7 +24,7 @@ public class Memberspage extends Base {
 	private WebDriverWait wait;
 	private Properties prop;
 	private Actions act;
-	private Logger LOGGER = LogManager.getLogger(Memberspage.class);
+	private Logger LOGGER = LogManager.getLogger(Memberspage.class); 
 	private Signinpage signinpage;
 
 	public Memberspage(WebDriver driver) throws Exception {

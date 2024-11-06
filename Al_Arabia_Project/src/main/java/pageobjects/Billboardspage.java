@@ -30,7 +30,7 @@ public class Billboardspage extends Base {
 	private Signinpage signinpage;
 
 ////
-	public Billboardspage(WebDriver driver) throws Exception {
+	public Billboardspage(WebDriver driver) throws Exception { 
 		this.driver = driver;
 		prop = new Properties();
 		act = new Actions(driver);

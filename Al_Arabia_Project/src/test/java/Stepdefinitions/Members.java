@@ -17,7 +17,7 @@ import resources.Base;
 
 public class Members extends Base {
 
-    private static Logger LOGGER = LogManager.getLogger(Members.class);
+    private static Logger LOGGER = LogManager.getLogger(Members.class); 
     private WebDriver driver;
     private Memberspage membersPage;
     private Signinpage signinpage;

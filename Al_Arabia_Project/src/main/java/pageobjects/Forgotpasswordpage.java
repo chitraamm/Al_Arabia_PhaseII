@@ -21,7 +21,7 @@ public class Forgotpasswordpage extends Base {
 
 	public Forgotpasswordpage(WebDriver driver) {
 		this.driver = driver;
-		this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		this.wait = new WebDriverWait(driver, Duration.ofSeconds(10)); 
 		this.prop = new Properties();
 		initializeWait();
 

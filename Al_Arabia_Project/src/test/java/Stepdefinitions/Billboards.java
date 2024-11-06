@@ -22,7 +22,7 @@ public class Billboards extends Base {
 	private Billboardspage billboardsPage;
 
 	public Billboards(Testhooks testhooks) throws Exception {
-		this.driver = testhooks.getDriver();
+		this.driver = testhooks.getDriver(); 
 		this.billboardsPage = new Billboardspage(driver);
 		new Signinpage(driver);
 		LOGGER = LogManager.getLogger(Billboards.class.getName());

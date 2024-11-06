@@ -9,7 +9,7 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/test/resources/Features", glue = {"Hooks",
-		"Stepdefinitions"}, tags = "@TicketTitle03", plugin = {"pretty",
+		"Stepdefinitions"}, tags = "@BillBoardType04", plugin = {"pretty",
 				"html:target/CucumberReports/CucumberReport.html",
 				"json:target/CucumberReports/CucumberReport.json",
 				"junit:target/CucumberReports/CucumberReport.xml",
@@ -20,7 +20,7 @@ public class TestRunner {
 	        String html = "<html><body><div id='content'>Hello World!</div></body></html>";
 	       
 	        // Parse the HTML string into a Jsoup Document
-	        Document document = Jsoup.parse(html);
+	        Document document = Jsoup.parse(html); 
 	        
 	        // Use selectFirst to find the first element matching a CSS selector
 	        Element element = document.selectFirst("#content");

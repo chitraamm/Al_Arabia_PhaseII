@@ -20,7 +20,7 @@ public class Master extends Base {
 	private static Logger LOGGER = LogManager.getLogger(Cleaning.class);
 	private WebDriver driver;
 	private Masterpage masterpage;
-	public Master(Testhooks testhooks) throws Exception {
+	public Master(Testhooks testhooks) throws Exception { 
 		this.driver = testhooks.getDriver();
 		this.masterpage = new Masterpage(driver);
 		new Signinpage(driver);
@@ -533,8 +533,8 @@ public class Master extends Base {
 	
 	//<----------------------------------------ScreenResolution------------------------------------------->
 	
-	@And("Admin or user clicks the ScreenResolution")
-	public void Admin_or_user_clicks_the_ScreenResolution() throws Exception {
+	@And("User clicks ScreenResolution")
+	public void User_clicks_ScreenResolution() throws Exception {
 		masterpage.ScreenResolution_click();
 	}
 	@Then("Al Arabia ScreenResolution page should display successfully")
@@ -655,8 +655,8 @@ public class Master extends Base {
 	}
 	//<----------------------------------------ScreenPixel------------------------------------------->
 	
-	@And("Admin or user clicks the ScreenPixel")
-	public void Admin_or_user_clicks_the_ScreenPixel() throws Exception {
+	@And("User clicks ScreenPixel")
+	public void User_clicks_ScreenPixel() throws Exception {
 		masterpage.ScreenPixel_click();
 	}
 	@Then("Al Arabia ScreenPixel page should display successfully")
@@ -778,8 +778,8 @@ public class Master extends Base {
 	
 	//<----------------------------------------BillBoardType------------------------------------------->
 	
-	@And("Admin or user clicks the BillBoardType")
-	public void Admin_or_user_clicks_the_BillBoardType() throws Exception {
+	@And("User clicks BillBoardType")
+	public void User_clicks_the_BillBoardType() throws Exception {
 		masterpage.BillBoardType_click();
 	}
 	@Then("Al Arabia BillBoardType page should display successfully")

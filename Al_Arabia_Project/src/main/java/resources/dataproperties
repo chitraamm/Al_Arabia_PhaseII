@@ -139,4 +139,17 @@ Descriptionstocks = testing
 <-------------TicketTitle---------------->
 
 TicketTitlename = Screw loose
-TicketTitle_name = SCREW LOOSE	
+TicketTitleSearch = SCREW LOOSE	
+newTicketTitlename =  ISSUE 
+<--------------Screen Resolution-------------------------->
+ScreenResolutionSearch = 10x12
+Screen_Resolutionname = 10x10
+<--------------Screenpixel-------------------------------->
+ScreenPixelname = D5
+ScreenPixel_Search = ads
+newScreenPixelname = 3
+<-----------------------BillboardType--------------------->
+BillBoardTypename = ZVX
+Drycleaning = 5
+Wetcleaning = 2
+BillBoardtypename = TV

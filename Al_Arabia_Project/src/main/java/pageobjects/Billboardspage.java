@@ -62,7 +62,10 @@ public class Billboardspage extends Base {
 		Random rand = new Random();
 		return baseboardNumber + rand.nextInt(1000);
 	}
-
+	private static String generateUniqueboardName(String baseboardName) {
+		Random rand = new Random();
+		return baseboardName + rand.toString();
+	}
 //<-------------------BillBoards------------------------------------------>
 	@FindBy(xpath = "//span[normalize-space()='BillBoards']")
 	private WebElement billboardClick;

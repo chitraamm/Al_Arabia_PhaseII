@@ -153,3 +153,10 @@ BillBoardTypename = ZVX
 Drycleaning = 5
 Wetcleaning = 2
 BillBoardtypename = TV
+newBillBoardTypename = RDX
+<-----------------------BOMUnit----------------------------->
+BOMUnitname = Connector
+newBOMUnitname = CASE
+<-----------------------BOM--------------------------------->
+BOMname = RFS
+Boardsize = 1

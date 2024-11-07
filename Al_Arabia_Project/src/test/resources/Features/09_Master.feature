@@ -220,11 +220,11 @@ And Admin or user clicks the Stock
 And User click on New Stock button
 And User Enter Mandatory fields of New Stock page
 And User click on Add Stock button  
-#Then Particular Stock gets created successfully with either "<successMessage1>" or "<successMessage2>"
-  #Examples:
-      #| successMessage1       | successMessage2     |
-      #| LOADING...            | Success Stock Added |  
-          #
+Then Particular Stock gets created successfully with either "<successMessage1>" or "<successMessage2>"
+  Examples:
+      | successMessage1       | successMessage2     |
+      | LOADING...            | Success Stock added |  
+          
 @Master @Stock @Stock03 @smoke @regression @all
 Scenario Outline: T003_ the Stock feature search
 Given Admin logged in with valid credentials
@@ -653,7 +653,7 @@ Scenario Outline: T005_To verify the BillBoardType feature sort Name - A to Z
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
-And User clicks ScreenPixel
+And User clicks BillBoardType
 And User sort the BillBoardType list Name A to Z
 Then BillBoardType list get displayed successfully
 
@@ -662,7 +662,7 @@ Scenario Outline: T006_To verify the BillBoardType feature sort Name - Z to A
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
-And User clicks BillBoardTypeBillBoardType
+And User clicks BillBoardType
 And User sort the BillBoardType list Name Z to A 
 Then BillBoardType list Z to A get displayed successfully
 
@@ -704,6 +704,8 @@ Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
 And User clicks BillBoardType
+And User click on New BillBoardType button
+And User Enter BillBoardType name and clicks Add BillBoardType button
 And User click on kebab menu
 And User clicked Delete BillBoardType option 
 Then Particular BillBoardType gets Deleted successfully with either "<successMessage1>" or "<successMessage2>"
@@ -716,7 +718,7 @@ Scenario Outline: T001_Verify BOMUnit page display
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
-And User clicks ScreenPixel
+And User clicks BOMUnit
 Then Al Arabia BOMUnit page should display successfully
 
 @Master @BOMUnit @BOMUnit02 @regression @sanity @all
@@ -724,6 +726,7 @@ Scenario Outline: T002_Create the Ticket with valid inputs
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
+And User clicks BOMUnit
 And User click on New BOMUnit button
 And User Enter BOMUnit name and clicks Add BOMUnit button
 Then Particular BOMUnit gets created successfully with either "<successMessage1>" or "<successMessage2>"
@@ -735,7 +738,7 @@ Scenario Outline: T003_ the BOMUnit feature search
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
-And User clicks ScreenPixel
+And User clicks BOMUnit
 And Admin or user search the BOMUnit
 Then Searched Ticket details get displayed successfully
 
@@ -744,7 +747,7 @@ Scenario Outline: T004_To verify the BOMUnit feature sort recently updated
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
-And User clicks ScreenPixel
+And User clicks BOMUnit
 And Admin or user sort the BOMUnit list recently updated
 Then Recently updated BOMUnit list get displayed successfully
 
@@ -753,6 +756,7 @@ Scenario Outline: T005_To verify the BOMUnit feature sort Name - A to Z
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
+And User clicks BOMUnit
 And User sort the BOMUnit list Name A to Z
 Then BOMUnit list get displayed successfully
 
@@ -761,6 +765,7 @@ Scenario Outline: T006_To verify the BOMUnit feature sort Name - Z to A
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
+And User clicks BOMUnit
 And User sort the BOMUnit list Name Z to A 
 Then BOMUnit list Z to A get displayed successfully
 
@@ -769,6 +774,7 @@ Scenario Outline: T007_To verify the BOMUnit feature sort Recently Added
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
+And User clicks BOMUnit
 And User sort the BOMUnit list Recently Added
 Then Recent BOMUnit list get displayed successfully
 
@@ -777,6 +783,7 @@ Scenario Outline: T008_To verify the BOMUnit feature sort decending
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
+And User clicks BOMUnit
 And User sort the BOMUnit list decending
 Then Decending BOMUnit list get displayed successfully
 
@@ -785,6 +792,7 @@ Scenario Outline: T009_To verify the BOMUnit Edit
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
+And User clicks BOMUnit
 And User click on kebab menu
 And User selects Edit option 
 And User Updated BOMUnit 
@@ -798,6 +806,7 @@ Scenario Outline: T010_To verify the BOMUnit Delete
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
+And User clicks BOMUnit
 And User click on kebab menu
 And User clicked Delete BOMUnit option 
 Then Particular BOMUnit gets Deleted successfully with either "<successMessage1>" or "<successMessage2>"
@@ -810,7 +819,7 @@ Scenario Outline: T001_Verify BOM page display
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
-And Admin or user clicks the BOM
+And User clicks the BOM
 Then Al Arabia BOM page should display successfully
 
 @Master @BOM @BOM02 @regression @sanity @all
@@ -818,7 +827,7 @@ Scenario Outline: T002_Create the New BOM with valid inputs
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
-And Admin or user clicks the BOM
+And User clicks the BOM
 And User click on New BOM button
 And User Enter Mandatory fields of New BOM page
 And User click on Add BOM button
@@ -831,8 +840,7 @@ Scenario Outline: T003_ the BOM feature search
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
-And Admin or user clicks the BOM
-And Admin or user search the BOM
+And User clicks the BOM
 Then Searched Ticket details get displayed successfully
 
 @Master @BOM @BOM04 @smoke @regression @all
@@ -840,7 +848,7 @@ Scenario Outline: T004_To verify the BOM feature sort recently updated
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
-And Admin or user clicks the BOM
+And User clicks the BOM
 And Admin or user sort the BOM list recently updated
 Then Recently updated BOM list get displayed successfully
 
@@ -849,7 +857,7 @@ Scenario Outline: T005_To verify the BOM feature sort Name - A to Z
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
-And Admin or user clicks the BOM
+And User clicks the BOM
 And User sort the BOM list Name A to Z
 Then BOM list get displayed successfully
 
@@ -858,7 +866,7 @@ Scenario Outline: T006_To verify the BOM feature sort Name - Z to A
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
-And Admin or user clicks the BOM
+And User clicks the BOM
 And User sort the BOM list Name Z to A 
 Then BOM list Z to A get displayed successfully
 
@@ -867,7 +875,7 @@ Scenario Outline: T007_To verify the BOM feature sort Recently Added
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
-And Admin or user clicks the BOM
+And User clicks the BOM
 And User sort the BOM list Recently Added
 Then Recent BOM list get displayed successfully
 
@@ -876,7 +884,7 @@ Scenario Outline: T008_To verify the BOM feature sort decending
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
-And Admin or user clicks the BOM
+And User clicks the BOM
 And User sort the BOM list decending
 Then Decending BOM list get displayed successfully
 
@@ -885,7 +893,7 @@ Scenario Outline: T009_To verify the BOM Edit
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
-And Admin or user clicks the BOM
+And User clicks the BOM
 And User click on kebab menu of BOM
 And User selects Edit option of BOM
 And User Updated BOM 
@@ -899,7 +907,7 @@ Scenario Outline: T010_To verify the BOM View
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
-And Admin or user clicks the BOM
+And User clicks the BOM
 And User click on kebab menu
 And User clicked View BOM option
 Then BOM page will be displayed to the user      
@@ -909,7 +917,7 @@ Scenario Outline: T011_To verify the BOM Delete
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
-And Admin or user clicks the BOM
+And User clicks the BOM
 And User click on kebab menu
 And User clicked Delete BOM option 
 Then Particular BOM gets Deleted successfully with either "<successMessage1>" or "<successMessage2>"

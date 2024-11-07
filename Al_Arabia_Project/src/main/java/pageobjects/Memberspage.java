@@ -68,7 +68,7 @@ public class Memberspage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(membersMenu)).isDisplayed();
 		LOGGER.info(">> Admin/User got navigated to members page");
 	}
-
+ 
 	@FindBy(xpath = "//h6[normalize-space()='Dashboard'][position()=1]")
 	private WebElement dashboardText;
 

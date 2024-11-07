@@ -21,6 +21,7 @@ import org.testng.AssertJUnit;
 import resources.Base;
 
 public class Masterpage extends Base {
+	private static final String Automationtest = null;
 	private WebDriver driver;
 	private WebDriverWait wait;
 	private Properties prop;
@@ -61,10 +62,20 @@ public class Masterpage extends Base {
 		Random rand = new Random();
 		return baseboardNumber + rand.nextInt(1000);
 	}
+	private static String generateUniqueboardName(String baseboardName) {
+	    Random rand = new Random();
+	    int uniqueNumber = rand.nextInt(10000);  // Generates a random number between 0 and 9999
+	    return baseboardName + "_" + uniqueNumber;
+	}
+	@FindBy(xpath = "//h6[normalize-space()='Dashboard']")
+	private WebElement dashboardpage;
+	
 	@FindBy(xpath = "//*[@id=\"root\"]/div[2]/div[1]/div[2]/div/div[1]/div[2]/div/a[6]/span")
 	private WebElement click_master_module;
 
 	public void Master_click() throws Exception {
+		Thread.sleep(3000);
+		wait.until(ExpectedConditions.visibilityOf(dashboardpage)).isDisplayed();
 		wait.until(ExpectedConditions.visibilityOf(click_master_module)).click();
 	}
 	@FindBy(xpath = "//h5[normalize-space()='Department(8)']")
@@ -590,15 +601,6 @@ public class Masterpage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(Maximum_Quantity)).isDisplayed();
 		act.moveToElement(Lead_Time_To_Order).click().sendKeys(""+Keys.ARROW_DOWN+Keys.ENTER+Keys.TAB).perform();
 		Thread.sleep(4000);
-
-		//wait.until(ExpectedConditions.visibilityOf(Lead_Time_To_Order)).isDisplayed();
-		//wait.until(ExpectedConditions.visibilityOf(dateof_warranty));
-		//act.moveToElement(dateof_warranty).sendKeys("" + Keys.TAB).perform();
-	  //  act.moveToElement(dateof_warranty).click().perform();
-
-		Thread.sleep(3000);
-//		act.moveToElement(dateselect_warrantyperiod).click().perform();
-//		Thread.sleep(1000);
 
 		wait.until(ExpectedConditions.visibilityOf(dateof_warranty)).isDisplayed();
 		String Descriptionstocks = prop.getProperty("Descriptionstocks");
@@ -1380,14 +1382,16 @@ private WebElement BillBoardType_sort_recentlyupdated;
 @FindBy(xpath = "(//h6[contains(text(),'Recently Added')])[2]")
 private WebElement BillBoardType_sort_recentlyadded;
 
-public void BillBoardType_sort_recentlyupdated() {
+public void BillBoardType_sort_recentlyupdated() throws Exception{
 	wait.until(ExpectedConditions.visibilityOf(BillBoardType_sort)).click();
+	Thread.sleep(2000);
 	wait.until(ExpectedConditions.visibilityOf(BillBoardType_sort_recentlyupdated)).click();
 	System.out.println(">> User clicked recently updated in sort");
 }
 
-public void BillBoardType_sort_recentlyadded() {
+public void BillBoardType_sort_recentlyadded()throws Exception {
 	wait.until(ExpectedConditions.visibilityOf(BillBoardType_sort)).click();
+	Thread.sleep(2000);
 	wait.until(ExpectedConditions.visibilityOf(BillBoardType_sort_recentlyadded)).click();
 	System.out.println(">> User clicked recently added in sort");
 }
@@ -1395,8 +1399,9 @@ public void BillBoardType_sort_recentlyadded() {
 @FindBy(xpath = "(//h6[contains(text(),'Name - A to Z')])[1]")
 private WebElement BillBoardType_Name_A_to_Z;
 
-public void BillBoardType_sortA_Z() {
+public void BillBoardType_sortA_Z() throws Exception{
 	wait.until(ExpectedConditions.visibilityOf(BillBoardType_sort)).click();
+	Thread.sleep(2000);
 	wait.until(ExpectedConditions.visibilityOf(BillBoardType_Name_A_to_Z)).click();
 	System.out.println(">> User clicked recently updated in sort");
 }
@@ -1404,8 +1409,9 @@ public void BillBoardType_sortA_Z() {
 @FindBy(xpath = "(//h6[contains(text(),'Name - Z to A')])[1]")
 private WebElement BillBoardType_Name_Z_to_A;
 
-public void BillBoardType_sortZ_A() {
+public void BillBoardType_sortZ_A()throws Exception {
 	wait.until(ExpectedConditions.visibilityOf(BillBoardType_sort)).click();
+	Thread.sleep(2000);
 	wait.until(ExpectedConditions.visibilityOf(BillBoardType_Name_Z_to_A)).click();
 	System.out.println(">> User clicked Z-A updated in sort");
 }
@@ -1413,8 +1419,9 @@ public void BillBoardType_sortZ_A() {
 @FindBy(xpath = "(//h6[contains(text(),'Decending - Date')])[1]")
 private WebElement BillBoardType_Name_decending;
 
-public void BillBoardType_DecendingDate() {
+public void BillBoardType_DecendingDate()throws Exception {
 	wait.until(ExpectedConditions.visibilityOf(BillBoardType_sort)).click();
+	Thread.sleep(2000);
 	wait.until(ExpectedConditions.visibilityOf(BillBoardType_Name_decending)).click();
 	System.out.println(">> User clicked decending updated in sort");
 }
@@ -1434,7 +1441,7 @@ public void selects_edit_BillBoardType() throws Exception {
 	Thread.sleep(1000);
 	wait.until(ExpectedConditions.visibilityOf(click_edit_BillBoardType)).click();
 }
-@FindBy(xpath = "(//h6[normalize-space()='Edit BillBoardType'])[1]")
+@FindBy(xpath = "//h6[normalize-space()='Edit BillBoard Type']")
 private WebElement click_Edit_BillBoardTypebuttn;
 
 public void Updated_BillBoardType() throws Exception {
@@ -1455,13 +1462,14 @@ public void selects_delete_BillBoardType() throws Exception {
 
 //<-----------------------------------------BOMUnit------------------------------------------------>
 
-@FindBy(xpath = "//*[@id=\"root\"]/div[2]/div[1]/div[2]/div/div[1]/div[2]/div/a[6]/span")
+@FindBy(xpath = "//span[normalize-space()='BOM Unit']")
 private WebElement click_BOMUnit;
 
 public void BOMUnit_click() throws Exception {
+	Thread.sleep(2000);
 	wait.until(ExpectedConditions.visibilityOf(click_BOMUnit)).click();
 }
-@FindBy(xpath = "//h5[normalize-space()='BOMUnit(8)']")
+@FindBy(xpath = "//h5[normalize-space()='BOM Unit(3)']")
 private WebElement BOMUnitCount;
 
 public void allBOMUnitCount() {
@@ -1470,22 +1478,22 @@ public void allBOMUnitCount() {
 	LOGGER.info(">> The BOMUnit page got displayed");
 }
 
-@FindBy(xpath = "(//h6[contains(@class,'m-0 fw-normal')][normalize-space()='New BOMUnit'])[1]")
+@FindBy(xpath = "(//h6[contains(@class,'m-0 fw-normal')][normalize-space()='New BOM Unit'])[1]")
 private WebElement click_new_BOMUnitbutton;
 
 public void New_BOMUnit_button_click() throws Exception {
 	Thread.sleep(5000);
 	wait.until(ExpectedConditions.visibilityOf(click_new_BOMUnitbutton)).click();
 }
-@FindBy(id = "title")
+@FindBy(xpath = "//input[@id='title']")
 private WebElement enter_BOMUnit;
 
-@FindBy(xpath = "(//h6[normalize-space()='Add BOMUnit'])[1]")
+@FindBy(xpath = "//h6[normalize-space()='Add BOM Unit']")
 private WebElement click_addBOMUnit;
 
 public void Add_BOMUnit() throws Exception {
 	wait.until(ExpectedConditions.visibilityOf(enter_BOMUnit));
-	String BOMUnitname = prop.getProperty("BOMUnitname");
+	String BOMUnitname = generateUniqueboardName(prop.getProperty("BOMUnitname"));
 	wait.until(ExpectedConditions.visibilityOf(enter_BOMUnit)).sendKeys(BOMUnitname);
 	Thread.sleep(2000);
 	act.moveToElement(click_addBOMUnit).click().perform();
@@ -1502,15 +1510,15 @@ public String BOMUnit_created_Success_display() throws Exception {
 private WebElement BOMUnitlist;
 
 @FindBy(xpath = "(//input[@id='doc_searchQueryInput'])[1]")
-private WebElement BOMUnit_Search;
+private WebElement BOMUnitsearch;
 
 public void BOMUnit_search_enter_text() {
 	wait.until(ExpectedConditions.visibilityOf(BOMUnitlist)).click();
-	String BOMUnit_Search = prop.getProperty("BOMUnitname");
-	wait.until(ExpectedConditions.visibilityOf(BOMUnitlist)).sendKeys(BOMUnit_Search + Keys.ENTER);
-	System.out.println(">> User enter the BOMUnit id in search field: " + BOMUnit_Search);
+	String BOMUnitname = prop.getProperty("BOMUnitname");
+	wait.until(ExpectedConditions.visibilityOf(BOMUnitsearch)).sendKeys(BOMUnitname + Keys.ENTER);
+	System.out.println(">> User enter the BOMUnit id in search field: " + BOMUnitsearch);
 }
-@FindBy(xpath = "(//td[normalize-space()='ADMIN'])[1]")
+@FindBy(xpath = "(//input[@id='doc_searchQueryInput'])[1]")
 private WebElement BOMUnitSearched, BOMUnitSearch;
 
 public void BOMUnitSearchedList() {
@@ -1546,14 +1554,16 @@ private WebElement BOMUnit_sort_recentlyupdated;
 @FindBy(xpath = "(//h6[contains(text(),'Recently Added')])[2]")
 private WebElement BOMUnit_sort_recentlyadded;
 
-public void BOMUnit_sort_recentlyupdated() {
+public void BOMUnit_sort_recentlyupdated() throws Exception{
 	wait.until(ExpectedConditions.visibilityOf(BOMUnit_sort)).click();
+	Thread.sleep(4000);
 	wait.until(ExpectedConditions.visibilityOf(BOMUnit_sort_recentlyupdated)).click();
 	System.out.println(">> User clicked recently updated in sort");
 }
 
-public void BOMUnit_sort_recentlyadded() {
+public void BOMUnit_sort_recentlyadded()throws Exception {
 	wait.until(ExpectedConditions.visibilityOf(BOMUnit_sort)).click();
+	Thread.sleep(2000);
 	wait.until(ExpectedConditions.visibilityOf(BOMUnit_sort_recentlyadded)).click();
 	System.out.println(">> User clicked recently added in sort");
 }
@@ -1561,8 +1571,9 @@ public void BOMUnit_sort_recentlyadded() {
 @FindBy(xpath = "(//h6[contains(text(),'Name - A to Z')])[1]")
 private WebElement BOMUnit_Name_A_to_Z;
 
-public void BOMUnit_sortA_Z() {
+public void BOMUnit_sortA_Z()throws Exception {
 	wait.until(ExpectedConditions.visibilityOf(BOMUnit_sort)).click();
+	Thread.sleep(2000);
 	wait.until(ExpectedConditions.visibilityOf(BOMUnit_Name_A_to_Z)).click();
 	System.out.println(">> User clicked recently updated in sort");
 }
@@ -1570,8 +1581,9 @@ public void BOMUnit_sortA_Z() {
 @FindBy(xpath = "(//h6[contains(text(),'Name - Z to A')])[1]")
 private WebElement BOMUnit_Name_Z_to_A;
 
-public void BOMUnit_sortZ_A() {
+public void BOMUnit_sortZ_A()throws Exception {
 	wait.until(ExpectedConditions.visibilityOf(BOMUnit_sort)).click();
+	Thread.sleep(2000);
 	wait.until(ExpectedConditions.visibilityOf(BOMUnit_Name_Z_to_A)).click();
 	System.out.println(">> User clicked Z-A updated in sort");
 }
@@ -1579,8 +1591,9 @@ public void BOMUnit_sortZ_A() {
 @FindBy(xpath = "(//h6[contains(text(),'Decending - Date')])[1]")
 private WebElement BOMUnit_Name_decending;
 
-public void BOMUnit_DecendingDate() {
+public void BOMUnit_DecendingDate()throws Exception {
 	wait.until(ExpectedConditions.visibilityOf(BOMUnit_sort)).click();
+	Thread.sleep(2000);
 	wait.until(ExpectedConditions.visibilityOf(BOMUnit_Name_decending)).click();
 	System.out.println(">> User clicked decending updated in sort");
 }
@@ -1600,12 +1613,12 @@ public void selects_edit_BOMUnit() throws Exception {
 	Thread.sleep(1000);
 	wait.until(ExpectedConditions.visibilityOf(click_edit_BOMUnit)).click();
 }
-@FindBy(xpath = "(//h6[normalize-space()='Edit BOMUnit'])[1]")
+@FindBy(xpath = "//button[@id='Edit BOM Unit']")
 private WebElement click_Edit_BOMUnitbuttn;
 
 public void Updated_BOMUnit() throws Exception {
 	wait.until(ExpectedConditions.visibilityOf(enter_BOMUnit));
-	String edited_BOMUnitname = prop.getProperty("newBOMUnitname");
+	String edited_BOMUnitname = generateUniqueboardNumber(prop.getProperty("newBOMUnitname"));
 	wait.until(ExpectedConditions.visibilityOf(enter_BOMUnit)).sendKeys(edited_BOMUnitname);
 	Thread.sleep(2000);
 	wait.until(ExpectedConditions.visibilityOf(click_Edit_BOMUnitbuttn)).click();
@@ -1621,15 +1634,15 @@ public void selects_delete_BOMUnit() throws Exception {
 
 //<------------------------------------BOM---------------------------------------->
 
-	@FindBy(xpath = "//span[@class='edit_link_routes false']")
+	@FindBy(xpath = "//span[normalize-space()='BOM']")
 	private WebElement click_BOM;
 
 	public void BOM_click() throws Exception {
 		Thread.sleep(4000);
-		wait.until(ExpectedConditions.visibilityOf(click_master_module)).click();
+		wait.until(ExpectedConditions.visibilityOf(click_master_module)).isDisplayed();
 		wait.until(ExpectedConditions.visibilityOf(click_BOM)).click();
 	}
-	@FindBy(xpath = "//h5[contains(@class,'mb-0')]")
+	@FindBy(xpath = "//h5[normalize-space()='BOM Masters(51)']")
 	private WebElement BOMCount;
 
 	public void allBOMCount() {
@@ -1638,75 +1651,80 @@ public void selects_delete_BOMUnit() throws Exception {
 		LOGGER.info(">> The BOM page got displayed");
 	}
 	
-	@FindBy(xpath = "(//h6[contains(@class,'m-0 fw-normal')][normalize-space()='New BOM'])[1]")
+	@FindBy(xpath = "(//button[@id=' New BOM Masters '])[1]")
 	private WebElement click_new_BOMbutton;
 
 	public void New_BOM_button_click() throws Exception {
 		Thread.sleep(5000);
 		wait.until(ExpectedConditions.visibilityOf(click_new_BOMbutton)).click();
 	}
-//	@FindBy(xpath = "//h5[normalize-space()='New BOM']")
-//	private WebElement NewBOM_page_padding;
-//	
-//	@FindBy(id = "name")
-//	private WebElement BOM_name;
-//	
-//	@FindBy(id = "BOM_id")
-//	private WebElement BOM_id;
-//	
-//	@FindBy(xpath = "//input[@id='contact_person']")
-//	private WebElement contact_person;
-//	
-//	@FindBy(xpath = "(//h6[normalize-space()='Add BOM'])[1]")
-//	private WebElement click_addBOM;
-//	
-//	@FindBy(xpath = "//input[@placeholder='Enter phone number']")
-//	private WebElement contact_number;
-//	
-//	@FindBy(id = "email")
-//	private WebElement enter_email;
-//	
-//	@FindBy(xpath = "(//input[@placeholder='Enter Location'])[1]")
-//	private WebElement cityname;
-//	
-//	@FindBy(id = "country")
-//	private WebElement country_name;
-//
-//	public void Enter_Mandatory_fields_BOM () throws Exception {
-//		Thread.sleep(3000);
-//		wait.until(ExpectedConditions.visibilityOf(NewBOM_page_padding)).isDisplayed();
-//		String BOMname = prop.getProperty("BOMname");
-//		wait.until(ExpectedConditions.visibilityOf(BOM_name)).sendKeys(BOMname);
-//		Thread.sleep(1000);
-//		
-//		wait.until(ExpectedConditions.visibilityOf(BOM_name)).isDisplayed();
-//		String BOMid = prop.getProperty("BOMid");
-//		wait.until(ExpectedConditions.visibilityOf(BOM_id)).sendKeys(BOMid);
-//		Thread.sleep(1000);
-//		
-//		wait.until(ExpectedConditions.visibilityOf(BOM_id)).isDisplayed();
-//		String Contactperson = prop.getProperty("Contactperson");
-//		wait.until(ExpectedConditions.visibilityOf(contact_person)).sendKeys(Contactperson);
-//		Thread.sleep(1000);
-//
-//		wait.until(ExpectedConditions.visibilityOf(contact_person)).isDisplayed();
-//		String contactnumber = prop.getProperty("Phone_number");
-//		wait.until(ExpectedConditions.visibilityOf(contact_number)).sendKeys(contactnumber);
-//	
-//		wait.until(ExpectedConditions.visibilityOf(contact_number)).isDisplayed();
-//	    String emailfield = prop.getProperty("emailfield");
-//	    wait.until(ExpectedConditions.visibilityOf(enter_email)).sendKeys(emailfield);
-//	    
-//	    wait.until(ExpectedConditions.visibilityOf(enter_email)).isDisplayed();
-//	    wait.until(ExpectedConditions.visibilityOf(cityname)).sendKeys("Riyadh Saudi Arabia");
-//		Thread.sleep(3000);
-//	    wait.until(ExpectedConditions.visibilityOf(cityname)).sendKeys(""+Keys.DOWN+Keys.ENTER);
-//	   
-//	    wait.until(ExpectedConditions.visibilityOf(cityname)).isDisplayed();
-//	    String countryname = prop.getProperty("countryname");
-//	    wait.until(ExpectedConditions.visibilityOf(country_name)).sendKeys(countryname);
-//
-//	}
+	@FindBy(xpath = "//h5[normalize-space()='New BOM']")
+	private WebElement NewBOM_page_padding;
+	
+	@FindBy(id = "bom_name")
+	private WebElement BOM_name;
+	
+	@FindBy(id = "BOM_id")
+	private WebElement BOM_id;
+ 
+	@FindBy(id = "react-select-3-input")
+	private WebElement billboardtype_BOM;
+	
+	@FindBy(id = "board_size")
+	private WebElement 	boardsize;
+	
+	@FindBy(id = "react-select-4-input")
+	private WebElement stockcode;
+	
+	@FindBy(xpath = "(//input[@value='0'])[1]")	
+	private WebElement QTY;
+
+	@FindBy(id = "react-select-4-input")
+	private WebElement unit;
+		
+	@FindBy(id = "")
+	private WebElement country;
+	
+	@FindBy(id = "")
+	private WebElement save;
+	
+	public void Enter_Mandatory_fields_BOM () throws Exception {
+		Thread.sleep(3000);
+		wait.until(ExpectedConditions.visibilityOf(NewBOM_page_padding)).isDisplayed();
+		String BOMname = generateUniqueboardNumber(prop.getProperty("BOMname"));
+		wait.until(ExpectedConditions.visibilityOf(BOM_name)).sendKeys(BOMname);
+		Thread.sleep(1000);
+		
+		wait.until(ExpectedConditions.visibilityOf(BOM_name)).isDisplayed();
+		act.moveToElement(billboardtype_BOM).click().sendKeys(""+Keys.ENTER).perform();
+		Thread.sleep(1000);
+
+		wait.until(ExpectedConditions.visibilityOf(billboardtype_BOM)).isDisplayed();
+		String Boardsize = generateUniqueboardNumber(prop.getProperty("Boardsize"));
+		wait.until(ExpectedConditions.visibilityOf(boardsize)).sendKeys(Boardsize);
+		Thread.sleep(3000);
+		
+		wait.until(ExpectedConditions.visibilityOf(billboardtype_BOM)).isDisplayed();
+		act.moveToElement(stockcode).click().sendKeys(""+Keys.ENTER).perform();
+		Thread.sleep(2000);
+
+		wait.until(ExpectedConditions.visibilityOf(stockcode)).isDisplayed();
+		String number_of_qty = generateUniqueboardNumber(prop.getProperty("qty"));
+		wait.until(ExpectedConditions.visibilityOf(QTY)).sendKeys(number_of_qty);
+		Thread.sleep(2000);
+
+		wait.until(ExpectedConditions.visibilityOf(QTY)).isDisplayed();
+		act.moveToElement(unit).click().sendKeys(""+Keys.ENTER).perform();
+		Thread.sleep(2000);
+		
+		wait.until(ExpectedConditions.visibilityOf(unit)).isDisplayed();
+		String countryname = prop.getProperty("countryname");
+		wait.until(ExpectedConditions.visibilityOf(country)).sendKeys(countryname);
+		Thread.sleep(2000);
+
+		wait.until(ExpectedConditions.visibilityOf(country)).isDisplayed();
+        act.moveToElement(save).click().perform();
+	}
 	@FindBy(id = "Add BOM")
 	private WebElement click_addBOM_Button;
 	

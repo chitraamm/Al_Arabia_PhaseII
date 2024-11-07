@@ -901,8 +901,8 @@ public class Master extends Base {
 	
 	//<----------------------------------------BOMUnit------------------------------------------->
 	
-		@And("Admin or user clicks the BOMUnit")
-		public void Admin_or_user_clicks_the_BOMUnit() throws Exception {
+		@And("User clicks BOMUnit")
+		public void User_clicks_BOMUnit() throws Exception {
 			masterpage.BOMUnit_click();
 		}
 		@Then("Al Arabia BOMUnit page should display successfully")
@@ -1024,8 +1024,8 @@ public class Master extends Base {
 		
 		//<----------------------------------------BOM----------------------------------------->
 		
-		@And("Admin or user clicks the BOM")
-		public void Admin_or_user_clicks_the_BOM() throws Exception {
+		@And("User clicks the BOM")
+		public void User_clicks_the_BOM() throws Exception {
 			masterpage.BOM_click();
 		}
 		@Then("Al Arabia BOM page should display successfully")
@@ -1036,10 +1036,10 @@ public class Master extends Base {
 		public void User_click_on_New_BOM_button() throws Exception {
 			masterpage.New_BOM_button_click();
 		}
-//		@And("User Enter Mandatory fields of New BOM page")
-//		public void User_Enter_Mandatory_fields_of_New_BOM_page() throws Exception {
-//			masterpage.Enter_Mandatory_fields_BOM();
-//		}
+		@And("User Enter Mandatory fields of New BOM page")
+		public void User_Enter_Mandatory_fields_of_New_BOM_page() throws Exception {
+			masterpage.Enter_Mandatory_fields_BOM();
+		}
 		@And("User click on Add BOM button")
 		public void User_click_on_Add_BOM_button() throws Exception {
 			masterpage.Add_BOM();

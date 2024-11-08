@@ -160,3 +160,6 @@ newBOMUnitname = CASE
 <-----------------------BOM--------------------------------->
 BOMname = RFS
 Boardsize = 1
+countryname = india
+BOMnames = DSA
+<-------------------------------------------------------->

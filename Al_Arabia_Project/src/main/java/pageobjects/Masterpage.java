@@ -1678,16 +1678,16 @@ public void selects_delete_BOMUnit() throws Exception {
 	
 	@FindBy(xpath = "(//input[@value='0'])[1]")	
 	private WebElement QTY;
-
-	@FindBy(id = "react-select-4-input")
-	private WebElement unit;
 		
-	@FindBy(id = "")
-	private WebElement country;
+//	@FindBy(xpath = "(//input[@type='text'])[7]")
+//	private WebElement country;
 	
-	@FindBy(id = "")
-	private WebElement save;
-	
+	@FindBy(id = "Save")
+	private WebElement button_save;
+//	
+//	@FindBy(xpath = "(//button[@id='Add BOM'])[1]")
+//	private WebElement click_addBOM_Button;
+//	
 	public void Enter_Mandatory_fields_BOM () throws Exception {
 		Thread.sleep(3000);
 		wait.until(ExpectedConditions.visibilityOf(NewBOM_page_padding)).isDisplayed();
@@ -1710,29 +1710,27 @@ public void selects_delete_BOMUnit() throws Exception {
 
 		wait.until(ExpectedConditions.visibilityOf(stockcode)).isDisplayed();
 		String number_of_qty = generateUniqueboardNumber(prop.getProperty("qty"));
-		wait.until(ExpectedConditions.visibilityOf(QTY)).sendKeys(number_of_qty);
-		Thread.sleep(2000);
-
-		wait.until(ExpectedConditions.visibilityOf(QTY)).isDisplayed();
-		act.moveToElement(unit).click().sendKeys(""+Keys.ENTER).perform();
-		Thread.sleep(2000);
-		
-		wait.until(ExpectedConditions.visibilityOf(unit)).isDisplayed();
 		String countryname = prop.getProperty("countryname");
-		wait.until(ExpectedConditions.visibilityOf(country)).sendKeys(countryname);
-		Thread.sleep(2000);
 
-		wait.until(ExpectedConditions.visibilityOf(country)).isDisplayed();
-        act.moveToElement(save).click().perform();
+		wait.until(ExpectedConditions.visibilityOf(QTY)).sendKeys(number_of_qty+Keys.TAB+Keys.ARROW_DOWN+Keys.ENTER+Keys.TAB+countryname);
+		//Thread.sleep(3000);
+     //   act.moveToElement(button_save).click().sendKeys(""+Keys.TAB+Keys.ENTER).perform();
+        
+				act.moveToElement(button_save).click().perform();
+//        Thread.sleep(5000);
+//		wait.until(ExpectedConditions.visibilityOf(button_save)).isDisplayed();
+//        act.moveToElement(click_addBOM_Button).click().perform();
+
 	}
 	@FindBy(id = "Add BOM")
 	private WebElement click_addBOM_Button;
 	
-	public void Add_BOM() throws Exception {
-		wait.until(ExpectedConditions.visibilityOf(country_name)).isDisplayed();
+	public void Click_Add_BOM() throws Exception {
+		//Thread.sleep(6000);
+		//wait.until(ExpectedConditions.visibilityOf(button_save)).isDisplayed();
+       // act.moveToElement(click_addBOM_Button).click().perform();
+		wait.until(ExpectedConditions.visibilityOf(click_addBOM_Button)).click();      
 
-		wait.until(ExpectedConditions.visibilityOf(click_addBOM_Button)).click();
-		
 	}
 	@FindBy(xpath = "//div[contains(@class, 'toastpop') and contains(@class, 'position-relative')]")
 	private WebElement BOM_created_Success_display;
@@ -1747,9 +1745,9 @@ public void selects_delete_BOMUnit() throws Exception {
 	
 	public void BOM_search_enter_text() {
 		wait.until(ExpectedConditions.visibilityOf(BOMSearch)).click();
-		String BOM_Search = prop.getProperty("BOMnames");
-		wait.until(ExpectedConditions.visibilityOf(BOMSearch)).sendKeys(BOM_Search + Keys.ENTER);
-		System.out.println(">> User enter the BOM id in search field: " + BOM_Search);
+		String BOMnames = prop.getProperty("BOMnames");
+		wait.until(ExpectedConditions.visibilityOf(BOMSearch)).sendKeys(BOMnames + Keys.ENTER);
+		System.out.println(">> User enter the BOM id in search field: " + BOMSearch);
 	}
 	@FindBy(id = "doc_searchQueryInput")
 	private WebElement BOMSearched, BOM_Search;
@@ -1790,14 +1788,16 @@ public void selects_delete_BOMUnit() throws Exception {
 	@FindBy(xpath = "(//h6[contains(text(),'Recently Added')])[2]")
 	private WebElement BOM_sort_recentlyadded;
 
-	public void BOM_sort_recentlyupdated() {
+	public void BOM_sort_recentlyupdated() throws Exception {
 		wait.until(ExpectedConditions.visibilityOf(BOM_sort)).click();
+		Thread.sleep(2000);
 		wait.until(ExpectedConditions.visibilityOf(BOM_sort_recentlyupdated)).click();
 		System.out.println(">> User clicked recently updated in sort");
 	}
 
-	public void BOM_sort_recentlyadded() {
+	public void BOM_sort_recentlyadded() throws Exception{
 		wait.until(ExpectedConditions.visibilityOf(BOM_sort)).click();
+		Thread.sleep(2000);
 		wait.until(ExpectedConditions.visibilityOf(BOM_sort_recentlyadded)).click();
 		System.out.println(">> User clicked recently added in sort");
 	}
@@ -1805,8 +1805,9 @@ public void selects_delete_BOMUnit() throws Exception {
 	@FindBy(xpath = "(//h6[contains(text(),'Name - A to Z')])[1]")
 	private WebElement A_to_Z_BOM_Name;
 
-	public void A_Z_BOM_sort() {
+	public void A_Z_BOM_sort() throws Exception{
 		wait.until(ExpectedConditions.visibilityOf(BOM_sort)).click();
+		Thread.sleep(2000);
 		wait.until(ExpectedConditions.visibilityOf(A_to_Z_BOM_Name)).click();
 		System.out.println(">> User clicked recently updated in sort");
 	}
@@ -1814,8 +1815,9 @@ public void selects_delete_BOMUnit() throws Exception {
 	@FindBy(xpath = "(//h6[contains(text(),'Name - Z to A')])[1]")
 	private WebElement BOM_sortingName_Z_to_A;
 
-	public void BOM_recent_sortZ_A() {
+	public void BOM_recent_sortZ_A()throws Exception {
 		wait.until(ExpectedConditions.visibilityOf(BOM_sort)).click();
+		Thread.sleep(2000);
 		wait.until(ExpectedConditions.visibilityOf(BOM_sortingName_Z_to_A)).click();
 		System.out.println(">> User clicked Z-A updated in sort");
 	}
@@ -1823,8 +1825,9 @@ public void selects_delete_BOMUnit() throws Exception {
 	@FindBy(xpath = "(//h6[contains(text(),'Decending - Date')])[1]")
 	private WebElement BOM_Name_decending;
 
-	public void BOM_DecendingDate() {
+	public void BOM_DecendingDate() throws Exception{
 		wait.until(ExpectedConditions.visibilityOf(BOM_sort)).click();
+		Thread.sleep(2000);
 		wait.until(ExpectedConditions.visibilityOf(BOM_Name_decending)).click();
 		System.out.println(">> User clicked decending updated in sort");
 	}

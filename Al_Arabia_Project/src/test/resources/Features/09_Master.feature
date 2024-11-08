@@ -834,13 +834,14 @@ And User click on Add BOM button
 Then Particular BOM gets created successfully with either "<successMessage1>" or "<successMessage2>"
   Examples:
       | successMessage1       | successMessage2        |
-      | LOADING...            | Success BOM Added |      
+      | LOADING...            | Success Supplier Added |      
 @Master @BOM @BOM03 @smoke @regression @all
 Scenario Outline: T003_ the BOM feature search
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
 And User clicks the BOM
+And Admin or user search the Tickets
 Then Searched Ticket details get displayed successfully
 
 @Master @BOM @BOM04 @smoke @regression @all

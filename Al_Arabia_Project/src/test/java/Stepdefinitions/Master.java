@@ -1042,7 +1042,7 @@ public class Master extends Base {
 		}
 		@And("User click on Add BOM button")
 		public void User_click_on_Add_BOM_button() throws Exception {
-			masterpage.Add_BOM();
+			masterpage.Click_Add_BOM();
 		}
 		@Then("^Particular BOM gets created successfully with either \"([^\"]*)\" or \"([^\"]*)\"$")
 		public void Particular_BOM_gets_created_successfully_with_either (String expectedMessage1,

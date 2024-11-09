@@ -919,6 +919,8 @@ Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
 And User clicks the BOM
+And User click on New BOM button
+And User Enter Mandatory fields of New BOM page
 And User click on kebab menu
 And User clicked Delete BOM option 
 Then Particular BOM gets Deleted successfully with either "<successMessage1>" or "<successMessage2>"

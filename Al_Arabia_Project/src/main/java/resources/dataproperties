@@ -162,4 +162,5 @@ BOMname = RFS
 Boardsize = 1
 countryname = india
 BOMnames = DSA
+edited_BOM = RFS
 <-------------------------------------------------------->

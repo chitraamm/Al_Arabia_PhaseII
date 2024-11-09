@@ -1850,15 +1850,22 @@ public void selects_delete_BOMUnit() throws Exception {
 	@FindBy(xpath = "(//h5[normalize-space()='Edit BOM'])[1]")
 	private WebElement BOM_editpage_pading;
 	
-	@FindBy(id = "Update BOM")
+	@FindBy(id = "bom_name")
+	private WebElement Edited_BOM;
+	
+	@FindBy(xpath = "//h6[normalize-space()='Edit BOM']")
 	private WebElement click_BOM_updatebuttn;
-
+	
 	public void Updated_BOM() throws Exception {
 		wait.until(ExpectedConditions.visibilityOf(BOM_editpage_pading));
-		String edited_contctpersn = prop.getProperty("edited_contctpersn");
-		wait.until(ExpectedConditions.visibilityOf(contact_person)).sendKeys(edited_contctpersn);
+		String edited_BOM = generateUniqueboardNumber(prop.getProperty("edited_BOM"));
+		wait.until(ExpectedConditions.visibilityOf(Edited_BOM)).sendKeys(edited_BOM);
 		Thread.sleep(2000);
+		//wait.until(ExpectedConditions.visibilityOf(Edited_BOM)).isDisplayed();
 		wait.until(ExpectedConditions.visibilityOf(click_BOM_updatebuttn)).click();
+
+		//act.moveToElement(click_BOM_updatebuttn).click().perform();
+
 	}
 	@FindBy(xpath = "(//a[normalize-space()='Delete'])[1]")
 	private WebElement click_delete_BOM;
@@ -1876,7 +1883,7 @@ public void selects_delete_BOMUnit() throws Exception {
 		Thread.sleep(1000);
 		wait.until(ExpectedConditions.visibilityOf(click_view_BOM)).click();
 	}
-	@FindBy(xpath = "//h5[normalize-space()='View BOM']")
+	@FindBy(xpath = "//h5[normalize-space()='masters.View BOM']")
 	private WebElement display_BOMviewpage;
 
 	public void BOM_viewpagedisplay() throws Exception {

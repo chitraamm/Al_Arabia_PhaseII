@@ -86,7 +86,7 @@ public class Memberspage extends Base {
 		LOGGER.info(">> The members dashboard list page got displayed");
 	}
 
-	@FindBy(id = "   Invite Member")
+	@FindBy(id = "Invite Member")
 	private WebElement inviteMemberBtn, inviteMemberBtn1;
 	
 	public void inviteMemberBtn() {

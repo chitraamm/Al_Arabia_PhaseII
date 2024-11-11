@@ -51,7 +51,7 @@ public class Profilepage extends Base {
 
 	private static String generateUniqueIQMANumber(String baseIQMANumber) {
 		Random rand = new Random();
-		return baseIQMANumber + rand.nextInt(10000); // Append random number
+		return baseIQMANumber + rand.nextInt(100); // Append random number
 	}
 
 	private static String generateUniqueLicenceNumber(String baseLicenceNumber) {
@@ -59,7 +59,7 @@ public class Profilepage extends Base {
 		return baseLicenceNumber + rand.nextInt(1000); // Append random number
 	}
 
-	@FindBy(xpath = "//div[@class='avatar pointer']")
+	@FindBy(xpath = "(//span[contains(text(),'C')])[2]")
 	private WebElement Profile;
 
 	public void Profile() {
@@ -74,42 +74,84 @@ public class Profilepage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(Personalprofile)).click();
 	}
 
-	@FindBy(name = "name")
+	
+	@FindBy(id = "name")
 	private WebElement personalinfo_name;
+	
+	@FindBy(xpath = "//input[@name='contact_number']")
+	private WebElement contact_number; 
+	
+	@FindBy(name = "alternate_number")
+	private WebElement alternate_number; 
+	
+	@FindBy(name = "whatsapp_number")
+	private WebElement whtsap_number; 
 
-	@FindBy(xpath = "//div[@class='toastpop position-relative']")
-	private WebElement profile_success_display;
-	
-	public void personalinfo_name() {
-		wait.until(ExpectedConditions.visibilityOf(personalinfo_name)).isDisplayed();
-	}
-	
-	
-
-	@FindBy(name = "iqama_no")
+	@FindBy(xpath = "//input[@placeholder='Enter Location']")
+	private WebElement Location; 
+//	
+//	@FindBy(name = "whatsapp_number")
+//	private WebElement whtsap_number; 
+	@FindBy(id = "iqama_no")
 	private WebElement personalinfo_iqma, iqmaerror;
 
-	public void personalinfo_iqma() {
+//	
+	//@FindBy(xpath = "//div[@class='toastpop position-relative']")
+	@FindBy(xpath = "//div[contains(@class, 'toastpop') and contains(@class, 'position-relative')]")
+
+	private WebElement profile_success_display;
+	
+	public void Personalinfo_details() throws Exception {
+		
+		Thread.sleep(3000);
+		wait.until(ExpectedConditions.visibilityOf(personalinfo_name)).isDisplayed();
+		
+		contact_number.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
+		String Phone_number = prop.getProperty("Phone_number");
+		wait.until(ExpectedConditions.visibilityOf(contact_number)).sendKeys(Phone_number);
+        Thread.sleep(2000);
+		
+        alternate_number.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
+		String Alt_Phone_number = prop.getProperty("Alt_Phone_number");
+		wait.until(ExpectedConditions.visibilityOf(alternate_number)).sendKeys(Alt_Phone_number);
+        Thread.sleep(2000);
+
+        whtsap_number.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
+		String Whatsapp_Phone_number = prop.getProperty("Whatsapp_Phone_number");
+		wait.until(ExpectedConditions.visibilityOf(whtsap_number)).sendKeys(Whatsapp_Phone_number);
+        Thread.sleep(2000);
+
+		String location = prop.getProperty("location");
+		wait.until(ExpectedConditions.visibilityOf(Location)).sendKeys(location);
+        Thread.sleep(5000);
+		wait.until(ExpectedConditions.visibilityOf(Location)).sendKeys(""+Keys.ARROW_DOWN+Keys.ENTER);
+        Thread.sleep(2000);
+
 		wait.until(ExpectedConditions.visibilityOf(personalinfo_iqma)).click();
 		personalinfo_iqma.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
 		String uniqueIQMANumber = generateUniqueIQMANumber(prop.getProperty("Iqma"));
-		wait.until(ExpectedConditions.visibilityOf(personalinfo_iqma)).sendKeys(uniqueIQMANumber+Keys.ENTER);
-		wait.until(ExpectedConditions.visibilityOf(members_personalprofile_update_btn_Yes)).click();
+		wait.until(ExpectedConditions.visibilityOf(personalinfo_iqma)).sendKeys(uniqueIQMANumber);
+      //  Thread.sleep(2000);
+
+		//wait.until(ExpectedConditions.visibilityOf(members_personalprofile_update_btn_Yes)).click();
+	//	act.moveToElement(members_personalprofile_update_btn_Yes).click().perform();
+	}
+	
+	public void personalinfo_Updatebutton_text_enter() throws Exception {
+		Thread.sleep(2000);
+	    act.moveToElement(members_personalprofile_update_btn_Yes).click().perform();
 	}
 
-	@FindBy(xpath = "//button[contains(@type,'submit')]")
-	private WebElement personalinfo_Updatebutton_text_enter;
-
-	public void personalinfo_Updatebutton_text_enter() {
-		wait.until(ExpectedConditions.visibilityOf(personalinfo_Updatebutton_text_enter)).click();
-
-	}
-
+	@FindBy(xpath = "(//h4[@class=' fw-semibold text-center text-black'])[1]")
+	private WebElement confirmpopup;
+	
 	@FindBy(xpath = "//h6[normalize-space()='Yes, update.']")
 	private WebElement Yesbutton;
 
-	public void Yesbutton() {
-		wait.until(ExpectedConditions.visibilityOf(Yesbutton)).click();
+	public void Yesbutton() throws Exception{
+		Thread.sleep(2000);
+		wait.until(ExpectedConditions.visibilityOf(confirmpopup)).isDisplayed();
+       act.moveToElement(Yesbutton).click().perform();
 	}
 	
 	public String profile_success_display() {
@@ -158,21 +200,26 @@ public class Profilepage extends Base {
 
 	}
 
-	@FindBy(xpath = "//span[normalize-space()='Reset from']")
+	@FindBy(xpath = "//h6[normalize-space()='Reset form']")
 	private WebElement Resetform;
 
-	public void Resetform() {
-		wait.until(ExpectedConditions.visibilityOf(Resetform)).click();
+	public void Resetform() throws Exception{
+		Thread.sleep(2000);
+	    wait.until(ExpectedConditions.visibilityOf(personalinfo_iqma)).isDisplayed();
+		act.moveToElement(Resetform).click().perform();
+		//wait.until(ExpectedConditions.visibilityOf(Resetform)).click();
 	}
 
 	@FindBy(xpath = "//h6[normalize-space()='Yes, reset it.']")
 	private WebElement YesResetform;
 
 	public void YesResetform() {
-		wait.until(ExpectedConditions.visibilityOf(YesResetform)).click();
+		
+		act.moveToElement(YesResetform).click().perform();
+		//wait.until(ExpectedConditions.visibilityOf(YesResetform)).click();
 	}
 
-	@FindBy(xpath = "//div[contains(@class,'popup')]//h6[1]")
+	@FindBy(xpath = "(//h6[normalize-space()=\"No, don't reset it!\"])[1]")
 	private WebElement NoResetform;
 
 	public void NoResetform() {
@@ -192,7 +239,7 @@ public class Profilepage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(personalinfo_name)).click();
 	}
 	
-	@FindBy(xpath = "//h6[normalize-space()='Yes, update.']")
+	@FindBy(id = "Update Personal Profile")
 	private WebElement members_personalprofile_update_btn_Yes;
 
 }

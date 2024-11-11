@@ -925,6 +925,6 @@ And User click on kebab menu
 And User clicked Delete BOM option 
 Then Particular BOM gets Deleted successfully with either "<successMessage1>" or "<successMessage2>"
   Examples:
-      | successMessage1       | successMessage2          |
+      | successMessage1       | successMessage2     |
       | LOADING...            | Success BOM deleted |  
           

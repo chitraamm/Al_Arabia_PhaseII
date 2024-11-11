@@ -40,7 +40,6 @@
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
 			<li class='waves-effect'><a href='#!' view='category-view' onclick="configureView(1)"><i class='material-icons'>label_outline</i></a></li>
-			<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
 			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
 		</ul>
 		<!-- report name -->
@@ -50,7 +49,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Nov 10, 2024 01:35:09 am</span>
+			<span class='label blue darken-3 suite-start-time'>Nov 11, 2024 07:24:34 pm</span>
 			</a>
 		</ul>
 	</div>
@@ -65,7 +64,7 @@
 				<i class='material-icons'>warning</i> Status
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
-										<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -77,12 +76,12 @@
 				<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@Master</a></li>
 					<li><a href='#'>@all</a></li>
-					<li><a href='#'>@smoke</a></li>
+					<li><a href='#'>@profile05</a></li>
 					<li><a href='#'>@regression</a></li>
-					<li><a href='#'>@BOM</a></li>
-					<li><a href='#'>@BOM11</a></li>
+					<li><a href='#'>@validcredentials</a></li>
+					<li><a href='#'>@sanity</a></li>
+					<li><a href='#'>@profile</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -119,11 +118,11 @@
 	<div class='subview-left left'>
 		<div class='view-summary'>
 			<ul id='test-collection' class='test-collection'>
-				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='1'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>Master</span>
-						<span class='test-time'>Nov 10, 2024 01:35:10 am</span>
-						<span class='test-status right fail'>Fail</span>
+						<span class='test-name'>Profile</span>
+						<span class='test-time'>Nov 11, 2024 07:24:35 pm</span>
+						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class="sr-filters bdd-filters">
@@ -132,128 +131,55 @@
 	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
 	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
 </div>
-	<div class='test-desc'>Admin, Manager and Supervisor can able to access the Master features,only if they have roles access</div>
+	<div class='test-desc'>User should be able to complete the personal profile</div>
 
-<div class='scenario outline node' test-id='2' status='fail'>
+<div class='scenario node' test-id='2' status='pass'>
 
-	<span class='duration right label'>00 00 29.111</span>
+	<span class='duration right label'>00 00 26.499</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span> Scenario Outline: T011_To verify the BOM Delete</div>
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: T05_User must be able to provide personal profile information</div>
 	</div>
 	
-		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>successMessage1</td><td>successMessage2</td></tr><tr><td>LOADING...</td><td>Success BOM deleted</td></tr></table></div>
 	
+		<div class='category-list'>
+				<span class='category label'>@all</span>
+				<span class='category label'>@profile05</span>
+				<span class='category label'>@validcredentials</span>
+				<span class='category label'>@regression</span>
+				<span class='category label'>@profile</span>
+				<span class='category label'>@sanity</span>
+		</div>
 	
 	<ul class='steps'>
-		<li test-id='3' class='node scenario Fail' status='Fail'>
-			<div class="step-name" title="()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>T011_To verify the BOM Delete</div>
+		<li test-id='4' class='node given Pass' status='Pass'>
+			<div class="step-name" title="(Stepdefinitions.Members.Admin_logged_in_with_valid_credentials())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Admin logged in with valid credentials</div>
 
-				<div class='category-list'>
-						<span class='category label'>@all</span>
-						<span class='category label'>@BOM</span>
-						<span class='category label'>@BOM11</span>
-						<span class='category label'>@smoke</span>
-						<span class='category label'>@regression</span>
-						<span class='category label'>@Master</span>
-				</div>
 
-			<ul class='gc steps'>
-				<li test-id='5' class='gc given Pass' status='Pass'>
-					<h6 class="step-name" title="Stepdefinitions.Members.Admin_logged_in_with_valid_credentials()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Admin logged in with valid credentials</h6>
+		</li>
+		<li test-id='6' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(Stepdefinitions.Members.Al_Arabia_overall_dashboard_should_display())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Al-Arabia overall dashboard should display</div>
 
-				</li>
-				<li test-id='7' class='gc when Pass' status='Pass'>
-					<h6 class="step-name" title="Stepdefinitions.Members.Al_Arabia_overall_dashboard_should_display()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Al-Arabia overall dashboard should display</h6>
 
-				</li>
-				<li test-id='9' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="Stepdefinitions.Master.Admin_or_user_clicks_the_Master()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Admin or user clicks the Master</h6>
+		</li>
+		<li test-id='8' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(Stepdefinitions.Profile.user_able_to_click_on_profile())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User able to click on profile</div>
 
-				</li>
-				<li test-id='11' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="Stepdefinitions.Master.User_clicks_the_BOM()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User clicks the BOM</h6>
 
-				</li>
-				<li test-id='13' class='gc and Pass' status='Pass'>
-					<h6 class="step-name" title="Stepdefinitions.Master.User_click_on_kebab_menu()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User click on kebab menu</h6>
+		</li>
+		<li test-id='10' class='node and Pass' status='Pass'>
+			<div class="step-name" title="(Stepdefinitions.Profile.user_able_to_click_on_personal_profile())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User able to click on personal profile</div>
 
-				</li>
-				<li test-id='15' class='gc and Fail' status='Fail'>
-					<h6 class="step-name" title="Stepdefinitions.Master.User_clicked_Delete_BOM_option()"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>And User clicked Delete BOM option</h6>
 
-							<textarea disabled class="code-block">org.openqa.selenium.WebDriverException: target frame detached
-  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
-  (Session info: chrome=126.0.6478.114)
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-124-generic', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cc626621d3bd99bc33fc09abb8ec2584, findElement {using=xpath, value=//h4[normalize-space()='Are you sure, you want to delete this BOM?']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.114, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:36959}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:36959/devtoo..., se:cdpVersion: 126.0.6478.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cc626621d3bd99bc33fc09abb8ec2584
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy38.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	at pageobjects.Masterpage.BOM_delete_confirm(Masterpage.java:1902)
-	at Stepdefinitions.Master.User_clicked_Delete_BOM_option(Master.java:1140)
-	at ✽.User clicked Delete BOM option(file:///home/coducer/Al_Arabia_PhaseII/Al_Arabia_Project/src/test/resources/Features/09_Master.feature:923)
-</textarea>
-				</li>
-				<li test-id='16' class='gc * Fail' status='Fail'>
-					<h6 class="step-name" title="AFTER_STEP"><span class='status fail' title='Fail'><i class='material-icons'>cancel</i></span>Hooks.Testhooks.addScreenshot(io.cucumber.java.Scenario)</h6>
+		</li>
+		<li test-id='12' class='node when Pass' status='Pass'>
+			<div class="step-name" title="(Stepdefinitions.Profile.user_able_to_give_personal_profile_information())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User able to give personal profile information</div>
 
-							<textarea disabled class="code-block">org.openqa.selenium.WebDriverException: disconnected: not connected to DevTools
-  (failed to check if window was closed: disconnected: not connected to DevTools)
-  (Session info: chrome=126.0.6478.114)
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-124-generic', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cc626621d3bd99bc33fc09abb8ec2584, screenshot {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.114, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:36959}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:36959/devtoo..., se:cdpVersion: 126.0.6478.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cc626621d3bd99bc33fc09abb8ec2584
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:321)
-	at Hooks.Testhooks.addScreenshot(Testhooks.java:96)
-</textarea>
-				</li>
-				<li test-id='17' class='gc then Skip' status='Skip'>
-					<h6 class="step-name" title="Stepdefinitions.Master.Particular_BOM_gets_Deleted_successfully_as(java.lang.String,java.lang.String)"><span class='status skip' title='Skip'><i class='material-icons'>redo</i></span>Then Particular BOM gets Deleted successfully with either "LOADING..." or "Success BOM deleted"</h6>
 
-							<div class="node-step">Step skipped</div>
-				</li>
-			</ul>
+		</li>
+		<li test-id='14' class='node then Pass' status='Pass'>
+			<div class="step-name" title="(Stepdefinitions.Profile.name_is_required_error_message_get_displayed_successfully())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then IQAMA is required error message get displayed successfully</div>
+
+
 		</li>
 	</ul>
 </div>
@@ -289,12 +215,12 @@ Session ID: cc626621d3bd99bc33fc09abb8ec2584
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='$0%'>
-                    <span class='strong'>0</span> features passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='$100%'>
+                    <span class='strong'>1</span> features passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>
-                    1</span> features failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> features failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped
                 </div>
@@ -307,12 +233,12 @@ Session ID: cc626621d3bd99bc33fc09abb8ec2584
                     <canvas id='child-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='0%'>
-                    <span class='strong'>0</span> scenarios passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'>
+                    <span class='strong'>1</span> scenarios passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>
-                    1</span> scenarios failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> scenarios failed, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -327,14 +253,14 @@ Session ID: cc626621d3bd99bc33fc09abb8ec2584
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='62%'>
-                    <span class='strong'>5</span> steps passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='100%'>
+                    <span class='strong'>6</span> steps passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='25%'>
-                    2</span> steps failed, 
-                    <span class='strong tooltipped' data-position='top' data-tooltip='12%'>
-                    1</span> skipped, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> steps failed, 
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
+                    0</span> skipped, 
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
                     0</span> others
                 </div>
@@ -372,48 +298,15 @@ Session ID: cc626621d3bd99bc33fc09abb8ec2584
 			<ul id='category-collection' class='category-collection'>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@Master</span>
-						<span class='category-status right'>
-						<span class='label fail'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							
-							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Nov 10, 2024 01:35:10 am</td>
-										<td class='linked' test-id='3'>T011_To verify the BOM Delete</td>
-										<td><span class='test-status Fail'>Fail</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
 						<span class='category-name'>@all</span>
 						<span class='category-status right'>
-						<span class='label fail'>1</span>
+						<span class='label pass'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
 							
-							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 						<div class='category-tests'>
@@ -427,9 +320,9 @@ Session ID: cc626621d3bd99bc33fc09abb8ec2584
 								</thead>
 								<tbody>
 									<tr>
-										<td>Nov 10, 2024 01:35:10 am</td>
-										<td class='linked' test-id='3'>T011_To verify the BOM Delete</td>
-										<td><span class='test-status Fail'>Fail</span></td>
+										<td>Nov 11, 2024 07:24:35 pm</td>
+										<td class='linked' test-id='2'>T05_User must be able to provide personal profile information</td>
+										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -438,15 +331,15 @@ Session ID: cc626621d3bd99bc33fc09abb8ec2584
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@smoke</span>
+						<span class='category-name'>@profile05</span>
 						<span class='category-status right'>
-						<span class='label fail'>1</span>
+						<span class='label pass'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
 							
-							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 						<div class='category-tests'>
@@ -460,9 +353,9 @@ Session ID: cc626621d3bd99bc33fc09abb8ec2584
 								</thead>
 								<tbody>
 									<tr>
-										<td>Nov 10, 2024 01:35:10 am</td>
-										<td class='linked' test-id='3'>T011_To verify the BOM Delete</td>
-										<td><span class='test-status Fail'>Fail</span></td>
+										<td>Nov 11, 2024 07:24:35 pm</td>
+										<td class='linked' test-id='2'>T05_User must be able to provide personal profile information</td>
+										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -473,13 +366,13 @@ Session ID: cc626621d3bd99bc33fc09abb8ec2584
 					<div class='category-heading'>
 						<span class='category-name'>@regression</span>
 						<span class='category-status right'>
-						<span class='label fail'>1</span>
+						<span class='label pass'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
 							
-							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 						<div class='category-tests'>
@@ -493,9 +386,9 @@ Session ID: cc626621d3bd99bc33fc09abb8ec2584
 								</thead>
 								<tbody>
 									<tr>
-										<td>Nov 10, 2024 01:35:10 am</td>
-										<td class='linked' test-id='3'>T011_To verify the BOM Delete</td>
-										<td><span class='test-status Fail'>Fail</span></td>
+										<td>Nov 11, 2024 07:24:35 pm</td>
+										<td class='linked' test-id='2'>T05_User must be able to provide personal profile information</td>
+										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -504,15 +397,15 @@ Session ID: cc626621d3bd99bc33fc09abb8ec2584
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@BOM</span>
+						<span class='category-name'>@validcredentials</span>
 						<span class='category-status right'>
-						<span class='label fail'>1</span>
+						<span class='label pass'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
 							
-							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 						<div class='category-tests'>
@@ -526,9 +419,9 @@ Session ID: cc626621d3bd99bc33fc09abb8ec2584
 								</thead>
 								<tbody>
 									<tr>
-										<td>Nov 10, 2024 01:35:10 am</td>
-										<td class='linked' test-id='3'>T011_To verify the BOM Delete</td>
-										<td><span class='test-status Fail'>Fail</span></td>
+										<td>Nov 11, 2024 07:24:35 pm</td>
+										<td class='linked' test-id='2'>T05_User must be able to provide personal profile information</td>
+										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -537,15 +430,15 @@ Session ID: cc626621d3bd99bc33fc09abb8ec2584
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@BOM11</span>
+						<span class='category-name'>@sanity</span>
 						<span class='category-status right'>
-						<span class='label fail'>1</span>
+						<span class='label pass'>1</span>
 						</span>
 					</div>
 					<div class='category-content hide'>
 						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
 							
-							<span status="fail" class='label red lighten-1 white-text'>Failed: 1</span>
 							
 						</div>
 						<div class='category-tests'>
@@ -559,9 +452,42 @@ Session ID: cc626621d3bd99bc33fc09abb8ec2584
 								</thead>
 								<tbody>
 									<tr>
-										<td>Nov 10, 2024 01:35:10 am</td>
-										<td class='linked' test-id='3'>T011_To verify the BOM Delete</td>
-										<td><span class='test-status Fail'>Fail</span></td>
+										<td>Nov 11, 2024 07:24:35 pm</td>
+										<td class='linked' test-id='2'>T05_User must be able to provide personal profile information</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@profile</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Nov 11, 2024 07:24:35 pm</td>
+										<td class='linked' test-id='2'>T05_User must be able to provide personal profile information</td>
+										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
 							</table>
@@ -577,139 +503,7 @@ Session ID: cc626621d3bd99bc33fc09abb8ec2584
 		</div>
 	</div>
 </div>
-<!-- category view --><div id='exception-view' class='view hide'>
-	<section id='controls'>
-		<div class='controls grey lighten-4'>
-			<!-- search -->
-			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
-				<a href="#" class='search-div'>
-				<i class='material-icons'>search</i> Search
-				</a>
-				<div class='input-field left hide'>
-					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
-				</div>
-			</div>
-			<!-- search -->
-		</div>
-	</section>
-	<div class='subview-left left'>
-		<div class='view-summary'>
-			<ul id='exception-collection' class='exception-collection'>
-				<li class='exception displayed active'>
-					<div class='exception-heading'>
-						<span class='exception-name'>org.openqa.selenium.WebDriverException</span>
-						<span class='exception-count right'><span class='label red lighten-1 white-text'>2</span></span>
-					</div>
-					<div class='exception-content hide'>
-						<div class='exception-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>StackTrace</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Nov 10, 2024 01:35:28 am</td>
-										<td class='linked' test-id='15'>And User clicked Delete BOM option</td>
-										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.WebDriverException: target frame detached
-  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
-  (Session info: chrome=126.0.6478.114)
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-124-generic', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cc626621d3bd99bc33fc09abb8ec2584, findElement {using=xpath, value=//h4[normalize-space()='Are you sure, you want to delete this BOM?']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.114, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:36959}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:36959/devtoo..., se:cdpVersion: 126.0.6478.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cc626621d3bd99bc33fc09abb8ec2584
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy38.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	at pageobjects.Masterpage.BOM_delete_confirm(Masterpage.java:1902)
-	at Stepdefinitions.Master.User_clicked_Delete_BOM_option(Master.java:1140)
-	at ✽.User clicked Delete BOM option(file:///home/coducer/Al_Arabia_PhaseII/Al_Arabia_Project/src/test/resources/Features/09_Master.feature:923)
-</textarea>
-										</td>
-									</tr>
-									<tr>
-										<td>Nov 10, 2024 01:35:37 am</td>
-										<td class='linked' test-id='16'>Hooks.Testhooks.addScreenshot(io.cucumber.java.Scenario)</td>
-										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.WebDriverException: target frame detached
-  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
-  (Session info: chrome=126.0.6478.114)
-Build info: version: '4.20.0', revision: '866c76ca80'
-System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-124-generic', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [cc626621d3bd99bc33fc09abb8ec2584, findElement {using=xpath, value=//h4[normalize-space()='Are you sure, you want to delete this BOM?']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.114, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:36959}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:36959/devtoo..., se:cdpVersion: 126.0.6478.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: cc626621d3bd99bc33fc09abb8ec2584
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy38.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
-	at pageobjects.Masterpage.BOM_delete_confirm(Masterpage.java:1902)
-	at Stepdefinitions.Master.User_clicked_Delete_BOM_option(Master.java:1140)
-	at ✽.User clicked Delete BOM option(file:///home/coducer/Al_Arabia_PhaseII/Al_Arabia_Project/src/test/resources/Features/09_Master.feature:923)
-</textarea>
-										</td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<div class='subview-right left'>
-		<div class='view-summary'>
-			<h5 class='exception-name'></h5>
-		</div>
-	</div>
-</div>
-<!-- exception view --><div id='dashboard-view' class='view hide'>
+<!-- category view --><div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
 		<h5>Dashboard</h5>
 
@@ -729,25 +523,25 @@ Session ID: cc626621d3bd99bc33fc09abb8ec2584
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>8</div>
+					<div class='panel-lead'>6</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Nov 10, 2024 01:35:09 am</div>
+					<div class='panel-lead'>Nov 11, 2024 07:24:34 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Nov 10, 2024 01:35:39 am</div>
+			 		<div class='panel-lead'>Nov 11, 2024 07:25:01 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>00 00 30.011</div>
+					<div class='panel-lead'>00 00 27.191</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -763,57 +557,57 @@ Session ID: cc626621d3bd99bc33fc09abb8ec2584
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>@Master</td>
-							<td>0</td>
-							<td>1</td>
-							<td>0</td>
-							<td>
-									0%
-							</td>
-						</tr>
-						<tr>
 							<td>@all</td>
-							<td>0</td>
 							<td>1</td>
 							<td>0</td>
+							<td>0</td>
 							<td>
-									0%
+									100%
 							</td>
 						</tr>
 						<tr>
-							<td>@smoke</td>
-							<td>0</td>
+							<td>@profile05</td>
 							<td>1</td>
 							<td>0</td>
+							<td>0</td>
 							<td>
-									0%
+									100%
 							</td>
 						</tr>
 						<tr>
 							<td>@regression</td>
-							<td>0</td>
 							<td>1</td>
 							<td>0</td>
+							<td>0</td>
 							<td>
-									0%
+									100%
 							</td>
 						</tr>
 						<tr>
-							<td>@BOM</td>
-							<td>0</td>
+							<td>@validcredentials</td>
 							<td>1</td>
 							<td>0</td>
+							<td>0</td>
 							<td>
-									0%
+									100%
 							</td>
 						</tr>
 						<tr>
-							<td>@BOM11</td>
-							<td>0</td>
+							<td>@sanity</td>
 							<td>1</td>
 							<td>0</td>
+							<td>0</td>
 							<td>
-									0%
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@profile</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
 							</td>
 						</tr>
 					</table>
@@ -828,34 +622,34 @@ Session ID: cc626621d3bd99bc33fc09abb8ec2584
 		<script>
 			var statusGroup = {
                 parentCount: 1,
-				passParent: 0,
-				failParent: 1,
+				passParent: 1,
+				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
 				childCount: 1,
-				passChild: 0,
-				failChild: 1,
+				passChild: 1,
+				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				grandChildCount: 8,
-				passGrandChild: 5,
-				failGrandChild: 2,
+				grandChildCount: 6,
+				passGrandChild: 6,
+				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
-				skipGrandChild: 1,
+				skipGrandChild: 0,
 				infoGrandChild: 0,
 			};
 			</script>
 		
 		<script>
 			var timeline = {
-			        "Master":29.114
+			        "Profile":26.502
 			};
 		</script>
 		

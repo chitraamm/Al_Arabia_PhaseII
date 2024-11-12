@@ -292,19 +292,19 @@ And Admin or user clicks the Material Request Tab
 And User clicks the Download button in Material Request page after that click on close button 
 Then The Download pop up get closed successfully and display the Material Request list
 
-#@Inventory @MaterialRequest @MaterialRequest13 @regression @sanity @all
-#Scenario Outline: T_MaterialRequest13_To verify Purchase edit of any field
-#Given Admin logged in with valid credentials
-#When Al-Arabia overall dashboard should display
-#And Admin or user clicks the Inventory module 
-#And Admin or user clicks the Material Request Tab 
-#And User click on edit icon in Material Request page
-#And User edit the Requested Quantity
-#And User Click on Update Request button
-#Then Particular Material gets updated successfully with either "<successMessage1>" or "<successMessage2>"
-  #Examples:
-      #| successMessage1       | successMessage2                |
-      #| LOADING...            | Success Material info updated  |
+@Inventory @MaterialRequest @MaterialRequest13 @regression @sanity @all
+Scenario Outline: T_MaterialRequest13_To verify Purchase edit of any field
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Inventory module 
+And Admin or user clicks the Material Request Tab 
+And User click on edit icon in Material Request page
+And User edit the Requested Quantity
+And User Click on Update Request button
+Then Particular Material gets updated successfully with either "<successMessage1>" or "<successMessage2>"
+  Examples:
+      | successMessage1       | successMessage2                |
+      | LOADING...            | Success Material info updated  |
       
 @Inventory @MaterialRequest @MaterialRequest14 @regression @sanity @all
 Scenario Outline: T_MaterialRequest14_To verify Material Request View
@@ -640,14 +640,14 @@ Then The Download pop up get closed successfully and display the DamageRecTechni
 Scenario Outline: T_DamageRec.Technician13_To verify edit of any Return
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
-And Admin or user clicks the Inventory module  
-And User click on edit icon in all Material page
-And User edit the City name
-And User Click on Update Material button
-Then Particular Material gets updated successfully with either "<successMessage1>" or "<successMessage2>"
+And Admin or user clicks the Inventory module 
+And Admin or user clicks the DamageRecTechnician Tab 
+And User click on edit icon in all return page
+And User edit the Requestedby and Click on Update return button of DamageRecTechnician
+Then Particular Return gets updated successfully for DamageRecTechnician with either "<successMessage1>" or "<successMessage2>"
   Examples:
       | successMessage1       | successMessage2                |
-      | LOADING...            | Success Material info updated  |
+      | LOADING...            | Success Damage info updated  |
       
 @Inventory @DamageRec.Technician @DamageRec.Technician14 @regression @sanity @all
 Scenario Outline: T_DamageRec.Technician14_To verify DamageRecTechnician edit of any field
@@ -667,7 +667,7 @@ And Admin or user clicks the DamageRecTechnician Tab
 And User click on DamageRecTechnician Delete option in kebab menu and confirm Yes
 Then DamageRecTechnician deleted popup will be displayed successfully as "<successMessage>"
  Examples:
-      | successMessage 			         	 |
+      | successMessage 			       	 |
       | Success Damage info deleted  |   
       
 @Inventory @DamageRec.Technician @DamageRec.Technician16 @smoke @regression @all

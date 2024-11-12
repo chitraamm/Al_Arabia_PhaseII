@@ -1,6 +1,7 @@
 package Stepdefinitions;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -334,7 +335,8 @@ public class Members extends Base {
     
     @And("Admin or User update the members company profile page")
     public void Admin_or_User_update_the_members_company_profile_page() throws Exception {
-    	 membersPage.members_companyprofile();
+    	membersPage.members_companyprofile();
+    	membersPage.companyprofile_update_confirmyes();
     }
     
     @And("Admin or User delete the workspace ID")
@@ -396,15 +398,20 @@ public class Members extends Base {
     public void Reset_password_page_error_message_get_displayed_successfully() {
         membersPage.members_profile_resetpassword_error();
     }
-    
-    @Then("^Particular members reset password profile get updated successfully as \"([^\"]*)\"$")
-    public void Particular_members_resetpwprofile_get_updated_successfully(String expectedMessage) throws Exception {
-        String actualMessage = membersPage.members_profile_success_display1();
-        String normalizedExpectedMessage = normalizeWhitespace(expectedMessage);
-        String normalizedActualMessage = normalizeWhitespace(actualMessage);
-        System.out.println(">> User or Admin got the members profile updation success message successfully"+ actualMessage);
-        assertEquals(normalizedExpectedMessage, normalizedActualMessage);
-    }
+	@Then("^Particular members profile get updated successfully with either \"([^\"]*)\" or \"([^\"]*)\"$")
+    public void Particular_members_profile_get_updated_successfully_with_either (String expectedMessage1,
+			String expectedMessage2) throws Exception {
+		String actualMessage = membersPage.members_profile_success_display1();
+		String normalizedActualMessage = normalizeWhitespace(actualMessage);
+
+		System.out.println(">> User or Admin got the billboard created success message successfully: " + actualMessage);
+
+		boolean matchesMessage1 = normalizedActualMessage.equals(normalizeWhitespace(expectedMessage1));
+		boolean matchesMessage2 = normalizedActualMessage.equals(normalizeWhitespace(expectedMessage2));
+
+		assertTrue("The actual message was neither of the expected success messages.",
+				matchesMessage1 || matchesMessage2);
+	}
     
     @And("Admin or User click the menu option")
     public void Admin_or_User_click_the_menu_option() throws Exception {

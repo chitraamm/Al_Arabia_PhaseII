@@ -238,6 +238,27 @@ public class Profilepage extends Base {
 		iqmaerror.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
 		wait.until(ExpectedConditions.visibilityOf(personalinfo_name)).click();
 	}
+	@FindBy(xpath = "//small[@class='form-text text-danger form_error']")
+	private WebElement IQMA_error_display;
+	
+	public void IQMAerror_display() {
+		wait.until(ExpectedConditions.visibilityOf(IQMA_error_display)).isDisplayed();
+		AssertJUnit.assertTrue(IQMA_error_display.isDisplayed());
+	}
+	
+	public void locationerror() {
+		
+		wait.until(ExpectedConditions.visibilityOf(Location)).isDisplayed();
+		Location.sendKeys(Keys.CONTROL,"a",Keys.DELETE);
+		wait.until(ExpectedConditions.visibilityOf(personalinfo_name)).click();
+	}
+	@FindBy(xpath = "//small[@class='form-text text-danger form_error']")
+	private WebElement locationserror;
+	public void locationerror_display() {
+		
+		wait.until(ExpectedConditions.visibilityOf(locationserror)).isDisplayed();
+		AssertJUnit.assertTrue(locationserror.isDisplayed());
+	}
 	
 	@FindBy(id = "Update Personal Profile")
 	private WebElement members_personalprofile_update_btn_Yes;

@@ -57,7 +57,6 @@ public class Profile extends Base {
 	public void user_able_to_click_on_update_personal_profile()throws Exception {
 		profilepage.personalinfo_Updatebutton_text_enter();
 	}
-
 	@When("User able to select yes option for saving deatils")
 	public void user_able_to_select_yes_option_for_saving_deatils() throws Exception{
 		profilepage.Yesbutton();
@@ -91,8 +90,14 @@ public class Profile extends Base {
 		profilepage.Noupdate();
 	}
 	@Then("IQAMA is required error message get displayed successfully")
-	public void name_is_required_error_message_get_displayed_successfully() {
+	public void IQAMA_is_required_error_message_get_displayed_successfully() {
 		profilepage.nameerror();
+		profilepage.IQMAerror_display();
+	}
+	@Then("Location is required error message get displayed successfully")
+	public void Location_is_required_errror_message_get_displayed_successfully() {
+		profilepage.locationerror();
+		profilepage.locationerror_display();
 	}
 	@Then("^User Updated the profile details successfully as\"([^\"]*)\"$")
 	public void User_Updated_the_profile_details_successfully_as(String expectedMessage) {

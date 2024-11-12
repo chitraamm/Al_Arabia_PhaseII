@@ -1139,11 +1139,43 @@ public class Inventorypage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(add_Return)).isDisplayed();
 		wait.until(ExpectedConditions.visibilityOf(add_Return)).click();
 	}
+	@FindBy(xpath = "//h5[normalize-space()='Edit Return']")
+	private WebElement edit_returnpage_display;
 	
-	//updatepenng
+	@FindBy(id = "react-select-4-input")
+	private WebElement requestby_edit;
+	@FindBy(id = "Update Return")
+	private WebElement updatereurndamagerec;
 	
-	
+	public void Edit_requestby()throws Exception{
+		Thread.sleep(2000);
+		wait.until(ExpectedConditions.visibilityOf(edit_returnpage_display)).isDisplayed();
+		wait.until(ExpectedConditions.visibilityOf(requestby_edit)).click();
+		Thread.sleep(5000);
+        act.moveToElement(requestby_edit).sendKeys(""+Keys.ARROW_DOWN+Keys.ENTER).perform();
+		//Thread.sleep(2000);
 
+//		wait.until(ExpectedConditions.visibilityOf(requestby_edit)).isDisplayed();
+//		wait.until(ExpectedConditions.visibilityOf(updatereurndamagerec)).isDisplayed();
+ 		act.moveToElement(updatereurndamagerec).click().perform();
+
+        //act.moveToElement(updatereurndamagerec).click();
+	}	
+	@FindBy(xpath = "//h5[contains(@class,'mb-0')]")
+	private WebElement all_Returns;
+	@FindBy(xpath = "//a[normalize-space()='Edit']")
+	private WebElement edit_damagerec_Return;
+	public void Click_DamageRec_return_Edit()throws Exception{
+
+		wait.until(ExpectedConditions.visibilityOf(all_Returns)).isDisplayed();
+		wait.until(ExpectedConditions.visibilityOf(click_damage_rec_Technician_Edit)).click();
+		wait.until(ExpectedConditions.visibilityOf(edit_damagerec_Return)).click();
+
+       // act.moveToElement(edit_damagerec_Return).click();
+//		wait.until(ExpectedConditions.visibilityOf(click_damage_rec_Technician_Edit)).click();
+//
+//		wait.until(ExpectedConditions.visibilityOf(edit_damagerec_Return)).click();
+	}
 	@FindBy(xpath = "(//*[name()='svg'][@stroke='currentColor'])[7]")
 	private WebElement click_damage_rec_Technician_Edit;
 	@FindBy(xpath = "//a[normalize-space()='View']")

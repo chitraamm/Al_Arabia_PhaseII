@@ -63,7 +63,8 @@ public class Memberspage extends Base {
 	@FindBy(xpath = "//span[normalize-space()='Members']")
 	private WebElement membersClick;
 
-	public void membersClick() {
+	public void membersClick() throws Exception{
+		Thread.sleep(5000);
 		wait.until(ExpectedConditions.visibilityOf(membersClick)).click();
 		wait.until(ExpectedConditions.visibilityOf(membersMenu)).isDisplayed();
 		LOGGER.info(">> Admin/User got navigated to members page");
@@ -86,7 +87,7 @@ public class Memberspage extends Base {
 		LOGGER.info(">> The members dashboard list page got displayed");
 	}
 
-	@FindBy(id = "Invite Member")
+	@FindBy(xpath = "(//h6[contains(@class,'m-0 fw-normal')][normalize-space()='Invite Member'])[1]")
 	private WebElement inviteMemberBtn, inviteMemberBtn1;
 	
 	public void inviteMemberBtn() {
@@ -652,11 +653,14 @@ public class Memberspage extends Base {
 	@FindBy(id = "biography")
 	private WebElement members_personalprofile_Bio_text_enter;
 
-	@FindBy(xpath = "//button[@type='submit']")
-	private WebElement members_personalprofile_update_btn;
-
-	@FindBy(xpath = "//h6[normalize-space()='Yes, update.']")
-	private WebElement members_personalprofile_update_btn_Yes;
+	@FindBy(xpath = "//h6[normalize-space()='Update Company Profile']")
+	private WebElement profile_update_btn;
+	
+//	@FindBy(xpath = "//h4[@class=' fw-semibold text-center text-black']")
+//	private WebElement confirmpopup;
+//
+//	@FindBy(xpath = "//div[@data-testid='Update Company Profile']")
+//	private WebElement members_personalprofile_update_btn_Yes;
 
 	public void members_personalprofile_text_enter() throws Exception {
 		wait.until(ExpectedConditions.visibilityOf(members_profile_personal_name));
@@ -683,9 +687,23 @@ public class Memberspage extends Base {
 		members_personalprofile_location_text_enter.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
 		wait.until(ExpectedConditions.visibilityOf(members_personalprofile_location_text_enter))
 				.sendKeys("Saudi Arabia" + Keys.ARROW_DOWN + Keys.ENTER);
-		wait.until(ExpectedConditions.visibilityOf(members_personalprofile_update_btn_Yes)).click();
+		Thread.sleep(2000);
+	    act.moveToElement(profile_update_btn).click().perform();
 	}
 
+	@FindBy(xpath = "//h4[@class=' fw-semibold text-center text-black']")
+	private WebElement confirmpopup;
+
+	@FindBy(xpath = "//*[@id=\"root\"]/div[2]/div[1]/div[2]/div/div/div[2]/h6[2]")
+	private WebElement members_personalprofile_update_btn_Yes;
+	
+   public void companyprofile_update_confirmyes() throws Exception {
+		Thread.sleep(2000);
+		wait.until(ExpectedConditions.visibilityOf(confirmpopup)).isDisplayed();
+        act.moveToElement(members_personalprofile_update_btn_Yes).click().perform();
+	   
+   }
+	
 	@FindBy(xpath = "//div[contains(@class, 'toastpop') and contains(@class, 'position-relative')]")
 	private WebElement members_profile_Success_display, members_profile_Success_display1;
 
@@ -744,7 +762,9 @@ public class Memberspage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(members_companyprofile_responsible_area))
 				.sendKeys("Saudi Arabia" + Keys.ARROW_DOWN + Keys.ENTER);
 
-		wait.until(ExpectedConditions.visibilityOf(members_personalprofile_update_btn_Yes)).click();
+		//wait.until(ExpectedConditions.visibilityOf(members_personalprofile_update_btn_Yes)).click();
+		Thread.sleep(2000);
+	    act.moveToElement(profile_update_btn).click().perform();
 	}
 
 	public void members_profile_personal_workspace_ID_delete() {
@@ -776,7 +796,7 @@ public class Memberspage extends Base {
 	@FindBy(name = "model")
 	private WebElement members_vehicleinfo_model;
 
-	public void members_vehicleinfo_profile() {
+	public void members_vehicleinfo_profile() throws Exception {
 		wait.until(ExpectedConditions.visibilityOf(members_vehicleinfoprofile)).click();
 		wait.until(ExpectedConditions.visibilityOf(members_vehicleinfo_vehicletype)).click();
 		wait.until(ExpectedConditions.visibilityOf(members_vehicleinfo_vehicletype_select)).click();
@@ -789,6 +809,7 @@ public class Memberspage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(members_vehicleinfo_model)).sendKeys("2024" + Keys.ENTER);
 
 		wait.until(ExpectedConditions.visibilityOf(members_personalprofile_update_btn_Yes)).click();
+		
 	}
 
 	public void members_profile_vehicleinfo_licenceNo_delete() {
@@ -954,7 +975,7 @@ public class Memberspage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(members_avatar_icon_roles)).click();
 	}
 
-	@FindBy(xpath = "//body[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[1]/li[1]/input[1]")
+	@FindBy(xpath = "(//input[contains(@value,'[object Object]')])[11]")
 	private WebElement members_roles_user_supervisor_read;
 
 	public void members_roles_user_supervisor_read() throws Exception {
@@ -984,7 +1005,7 @@ public class Memberspage extends Base {
 		members_profile_personal_name();
 	}
 
-	@FindBy(xpath = "//body[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[2]/li[1]/input[1]")
+	@FindBy(xpath = "(//input[contains(@value,'[object Object]')])[12]")
 	private WebElement members_roles_user_supervisor_write;
 
 	public void members_roles_user_supervisor_write() throws Exception {
@@ -995,6 +1016,7 @@ public class Memberspage extends Base {
 	}
 
 	public void members_supervisor_inviteBtn() throws Exception {
+		Thread.sleep(4000);
 		wait.until(ExpectedConditions.visibilityOf(inviteMemberBtn1)).isDisplayed();
 		System.out.println(">> Invite button get displayed successfully");
 	}
@@ -1012,7 +1034,7 @@ public class Memberspage extends Base {
 		System.out.println(">> Supervisor get the write access successfully");
 	}
 	
-	@FindBy(xpath = "//body[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[3]/li[1]/input[1]")
+	@FindBy(xpath = "(//input[contains(@value,'[object Object]')])[13]")
 	private WebElement members_roles_user_supervisor_update;
 
 	public void members_roles_user_supervisor_update() throws Exception {
@@ -1046,7 +1068,7 @@ public class Memberspage extends Base {
 		System.out.println(">> Supervisor get the update access successfully");
 	}
 	
-	@FindBy(xpath = "//body[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[4]/li[1]/input[1]")
+	@FindBy(xpath = "(//input[contains(@value,'[object Object]')])[14]")
 	private WebElement members_roles_user_supervisor_blockunblock;
 
 	public void members_roles_user_supervisor_blockunblock() throws Exception {

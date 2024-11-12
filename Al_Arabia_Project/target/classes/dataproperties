@@ -9,7 +9,7 @@ Admin_email_address = help@coducer.com
 Admin_password = Password@123
 
 <---- Supervisor Login Valid Credentials ---->
-Supervisor_email_address = panneerselvam@coducer.com
+Supervisor_email_address = tomgeorge+7@coducer.com
 
 <---- Login Invalid Credentials ---->
 INV_email_address = help@coducer
@@ -20,19 +20,19 @@ INVpassword_withoutupper_character = password@123
 INVpassword_short_character = Pass
 
 <---- Forgot password Credentials ---->
-Forgot_email_address = panneerselvam@coducer.com
+Forgot_email_address = tomgeorge+7@coducer.com
 
 <---- Invite member random email ---->
-Invite_email = panneerselvam1@coducer.com
+Invite_email = tomgeorge+7@coducer.com
 Role_manager = Manager
 Dept_electrical = Electrical
 
 <---- Members page ---->
-members_search_text = panneer
+members_search_text = Askar
 Invite_Department = Electrical
 
-Alt_Phone_number = +919677775555
-Whatsapp_Phone_number = +919677775556
+Alt_Phone_number = +918086328118
+Whatsapp_Phone_number = +918086328119
 IQMA_number = 123456
 Licence_number = KA0134442E2
 location = bengaluru
@@ -49,7 +49,7 @@ reason = test
 <-------Profile------>
 personalinfo = coducer
 Phone_number = +91 80863 28118
-App_Phone_number = 9341152902
+App_Phone_number = 9341152909
 Iqma = 87654321
 
 <--------Tickets------>

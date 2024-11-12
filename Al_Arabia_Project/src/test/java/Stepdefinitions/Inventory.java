@@ -362,11 +362,11 @@ public class Inventory extends Base {
 	
 //	@And("User click on edit icon in all Material page")
 //	public void User_click_on_edit_icon_in_all_Material_page() throws Exception {
-//		inventorypage.Click_Material_Edit();
+//		inventorypage.Click_DamageRec_return_Edit();
 //	}
-//	@And("User edit the City name")
-//	public void User_edit_the_City_name() throws Exception {
-//		inventorypage.Edit_projectname();
+//	@And("User edit the Requestedby and Click on Update return button of DamageRecTechnician")
+//	public void User_edit_the_Requestedby_and_Click_on_Update_return_button_of_DamageRecTechnician() throws Exception {
+//		inventorypage.Edit_requestby();	
 //	}
 //	@And("User Click on Update Material button")
 //	public void User_Click_on_Update_Material_button() throws Exception {
@@ -703,21 +703,16 @@ public class Inventory extends Base {
 				matchesMessage1 || matchesMessage2);
 	}
 	
-	
-//	@And("User click on edit icon in all DamageRecTechnician page")
-//	public void User_click_on_edit_icon_in_all_DamageRecTechnician_page() throws Exception {
-//		inventorypage.Click_DamageRecTechnician_Edit();
-//	}
-//	@And("User edit the City name")
-//	public void User_edit_the_City_name() throws Exception {
-//		inventorypage.Edit_projectname();
-//	}
-//	@And("User Click on Update DamageRecTechnician button")
-//	public void User_Click_on_Update_DamageRecTechnician_button() throws Exception {
-//		inventorypage.Updatebutton_click();
-//	}
-	@Then("^Particular DamageRecTechnician gets updated successfully with either \"([^\"]*)\" or \"([^\"]*)\"$")
-	public void Particular_DamageRecTechnician_gets_updated_successfully_with_either (String expectedMessage1,
+	@And("User click on edit icon in all return page")
+	public void User_click_on_edit_icon_in_all_return_page() throws Exception {
+		inventorypage.Click_DamageRec_return_Edit();
+	}
+	@And("User edit the Requestedby and Click on Update return button of DamageRecTechnician")
+	public void User_edit_the_Requestedby_and_Click_on_Update_return_button_of_DamageRecTechnician() throws Exception {
+		inventorypage.Edit_requestby();	
+	}
+	@Then("^Particular Return gets updated successfully for DamageRecTechnician with either \"([^\"]*)\" or \"([^\"]*)\"$")
+	public void Particular_Return_gets_updated_successfully_for_DamageRecTechnician_with_either (String expectedMessage1,
 			String expectedMessage2) throws Exception {
 		String actualMessage = inventorypage.inventory_create_Success_display();
 		String normalizedActualMessage = normalizeWhitespace(actualMessage);

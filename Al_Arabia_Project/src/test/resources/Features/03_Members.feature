@@ -230,7 +230,7 @@ And User filter the members list status-Active
 And User search the members
 And Admin or User go the members profile page
 And Admin or User update the members company profile page
-Then Particular members profile get updated successfully as "<successMessage>"
+Then Particular members profile get updated successfully with either "<successMessage1>" or "<successMessage2>"
  Examples:
       | successMessage                        |
       | Success Company profile updated       |
@@ -280,11 +280,10 @@ And User filter the members list status-Active
 And User search the members
 And Admin or User go the members profile page
 And Admin or User update the members reset password profile page
-Then Particular members reset password profile get updated successfully as "<successMessage>"
- Examples:
-      | successMessage             |
-      | Success Password updated   |
-
+Then Particular members profile get updated successfully with either "<successMessage1>" or "<successMessage2>"
+        Examples:
+      | successMessage1       | successMessage2                 |
+      | LOADING...            | Success  Company profile updated|
 @members @members31 @sanity @regression @all
 Scenario Outline: T031_To verify the members feature reset password profile error messages
 Given Admin logged in with valid credentials

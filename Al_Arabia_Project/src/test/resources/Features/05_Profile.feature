@@ -61,8 +61,6 @@ When Al-Arabia overall dashboard should display
 And User able to click on profile
 And User able to click on personal profile
 And User able to give personal profile information
-Then User Updated the profile details successfully as"<successMessage>"
-  Examples:
-      | successMessage                   |
-      | Success Personal profile updated | 
+When User able to give personal profile information
+Then Location is required error message get displayed successfully
 

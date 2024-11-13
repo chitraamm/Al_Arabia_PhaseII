@@ -323,9 +323,6 @@ public class Master extends Base {
 		assertTrue("The actual message was neither of the expected success messages.",
 				matchesMessage1 || matchesMessage2);
 	}
-//	private String normalizeWhitespace(String input) {
-//		return input.replaceAll("\\s+", " ").trim();
-//	}
 	@And("Admin or user search the Stock")
 	public void Admin_or_user_search_the_Stock() throws Exception {
 		masterpage.Stock_search_enter_text();

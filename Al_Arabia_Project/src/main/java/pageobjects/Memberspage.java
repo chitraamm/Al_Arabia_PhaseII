@@ -614,11 +614,12 @@ public class Memberspage extends Base {
 		System.out.println(">> User got the 2nd page successfully");
 	}
 
-	@FindBy(xpath = "(//a[normalize-space()='Edit'])[1]")
+	@FindBy(xpath = "//a[normalize-space()='Edit']")
 	private WebElement members_action_icon_edit_click;
 
 	public void members_action_icon_click() throws Exception {
-
+        Thread.sleep(3000); 
+        wait.until(ExpectedConditions.visibilityOf(allMembersCount)).isDisplayed();
 		wait.until(ExpectedConditions.visibilityOf(membersMenu_click)).click();
 		wait.until(ExpectedConditions.visibilityOf(members_action_icon_edit_click)).click();
 	}
@@ -1096,15 +1097,5 @@ public class Memberspage extends Base {
 		Logout();
 		System.out.println(">> Supervisor got the block unblock access successfully");
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 
 }

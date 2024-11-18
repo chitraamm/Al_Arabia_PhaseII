@@ -360,18 +360,23 @@ public class Inventory extends Base {
 	}
 	
 	
-//	@And("User click on edit icon in all Material page")
-//	public void User_click_on_edit_icon_in_all_Material_page() throws Exception {
-//		inventorypage.Click_DamageRec_return_Edit();
-//	}
-//	@And("User edit the Requestedby and Click on Update return button of DamageRecTechnician")
-//	public void User_edit_the_Requestedby_and_Click_on_Update_return_button_of_DamageRecTechnician() throws Exception {
+	@And("User click on edit icon in Material Request page")
+	public void User_click_on_edit_icon_in_Material_Request_page() throws Exception {
+		inventorypage.Click_Material_Edit();
+	}
+//	@And("User select the issued to drop down")
+//	public void User_select_the_issued_to_drop_down() throws Exception {
 //		inventorypage.Edit_requestby();	
 //	}
-//	@And("User Click on Update Material button")
-//	public void User_Click_on_Update_Material_button() throws Exception {
-//		inventorypage.Updatebutton_click();
-//	}
+	@And("User select the issued to drop down and User enter the ID Number")
+	public void User_select_the_issued_to_drop_down_and_User_enter_the_ID_Number() throws Exception {
+		inventorypage.enter_material_edit_mandatory();	
+
+	}
+	@And("User Click on Update Request button")
+	public void User_Click_on_Update_Request_button() throws Exception {
+		inventorypage.Update_Materialbutton_click();
+	}
 	@Then("^Particular Material gets updated successfully with either \"([^\"]*)\" or \"([^\"]*)\"$")
 	public void Particular_Material_gets_updated_successfully_with_either (String expectedMessage1,
 			String expectedMessage2) throws Exception {
@@ -900,6 +905,15 @@ public class Inventory extends Base {
 		assertTrue("The actual message was neither of the expected success messages.",
 				matchesMessage1 || matchesMessage2);
 	}
+	  @And("User click on edit icon in DamageRetSupplier Material page")
+	    public void User_click_on_edit_icon_in_DamageRetSupplier_Material_page() throws Exception{
+			inventorypage.Click_edit_DamageRetSupplier();
+	    }
+	    @And("User edit the Remarks and click update")
+	    public void User_edit_the_Remarks_and_click_update() throws Exception{
+			inventorypage.edits_remarks();
+	    }
+	
 	@Then("^Particular DamageRetSupplier gets updated successfully with either \"([^\"]*)\" or \"([^\"]*)\"$")
 	public void Particular_DamageRetSupplier_gets_updated_successfully_with_either (String expectedMessage1,
 			String expectedMessage2) throws Exception {
@@ -1089,6 +1103,14 @@ public class Inventory extends Base {
 		assertTrue("The actual message was neither of the expected success messages.",
 				matchesMessage1 || matchesMessage2);
 	}
+	  @And("User click on edit icon in DamageRecSupplier Material page")
+	    public void User_click_on_edit_icon_in_DamageRecSupplier_Material_page() throws Exception{
+			inventorypage.Click_edit_DamageRecSupplier();
+	    }
+	    @And("User edit the Remarks and click update DamageRecSupplier")
+	    public void User_edit_the_Remarks_and_click_update_DamageRecSupplier() throws Exception{
+			inventorypage.edits_remarks_DamageRecSupplier();
+	    }
 	@Then("^Particular DamageRecSupplier gets updated successfully with either \"([^\"]*)\" or \"([^\"]*)\"$")
 	public void Particular_DamageRecSupplier_gets_updated_successfully_with_either (String expectedMessage1,
 			String expectedMessage2) throws Exception {

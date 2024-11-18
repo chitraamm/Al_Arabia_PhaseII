@@ -49,7 +49,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Nov 13, 2024 07:23:45 pm</span>
+			<span class='label blue darken-3 suite-start-time'>Nov 18, 2024 06:09:43 pm</span>
 			</a>
 		</ul>
 	</div>
@@ -76,12 +76,12 @@
 				<i class='material-icons'>local_offer</i> Category
 				</a>
 				<ul id='category-toggle' class='dropdown-content'>
-					<li><a href='#'>@invalidemailandpassword</a></li>
-					<li><a href='#'>@signin02</a></li>
 					<li><a href='#'>@regression</a></li>
-					<li><a href='#'>@signin</a></li>
-					<li><a href='#'>@smoke</a></li>
+					<li><a href='#'>@Inventory</a></li>
+					<li><a href='#'>@DamageRec.Supplier13</a></li>
 					<li><a href='#'>@all</a></li>
+					<li><a href='#'>@DamageRec.Supplier</a></li>
+					<li><a href='#'>@sanity</a></li>
 					<li class='divider'></li>
 					<li class='clear'><a href='#!' clear='true'>Clear Filters</a></li>
 				</ul>
@@ -120,8 +120,8 @@
 			<ul id='test-collection' class='test-collection'>
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>User Login</span>
-						<span class='test-time'>Nov 13, 2024 07:23:46 pm</span>
+						<span class='test-name'>Inventory</span>
+						<span class='test-time'>Nov 18, 2024 06:09:44 pm</span>
 						<span class='test-status right pass'>Pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -131,45 +131,61 @@
 	<a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
 	<a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
 </div>
-	<div class='test-desc'>Registered user should be able to login to access the al-arabia features</div>
+	<div class='test-desc'>Admin, Manager and Supervisor can able to access the Inventory feature,only if they have roles access</div>
 
-<div class='scenario node' test-id='2' status='pass'>
+<div class='scenario outline node' test-id='2' status='pass'>
 
-	<span class='duration right label'>00 00 05.238</span>
+	<span class='duration right label'>00 00 20.035</span>
 	<div class="bdd-test">
-		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario: Login with invalid credentials</div>
+		<div class="scenario-name"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span> Scenario Outline: T_DamageRec.supplier13_To verify edit of any Return</div>
 	</div>
 	
+		<div class='node-desc'><br><br><table class='markup-table table '><tr><td>successMessage1</td><td>successMessage2</td></tr><tr><td>LOADING...</td><td>Success Damage info updated</td></tr></table></div>
 	
-		<div class='category-list'>
-				<span class='category label'>@all</span>
-				<span class='category label'>@smoke</span>
-				<span class='category label'>@regression</span>
-				<span class='category label'>@signin</span>
-				<span class='category label'>@invalidemailandpassword</span>
-				<span class='category label'>@signin02</span>
-		</div>
 	
 	<ul class='steps'>
-		<li test-id='4' class='node when Pass' status='Pass'>
-			<div class="step-name" title="(Stepdefinitions.Signin.user_enters_invalid_email_address())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When User enters invalid email address</div>
+		<li test-id='3' class='node scenario Pass' status='Pass'>
+			<div class="step-name" title="()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>T_DamageRec.supplier13_To verify edit of any Return</div>
 
+				<div class='category-list'>
+						<span class='category label'>@all</span>
+						<span class='category label'>@DamageRec.Supplier13</span>
+						<span class='category label'>@DamageRec.Supplier</span>
+						<span class='category label'>@regression</span>
+						<span class='category label'>@Inventory</span>
+						<span class='category label'>@sanity</span>
+				</div>
 
-		</li>
-		<li test-id='6' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(Stepdefinitions.Signin.enter_invalid_password())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Enter invalid password</div>
+			<ul class='gc steps'>
+				<li test-id='5' class='gc given Pass' status='Pass'>
+					<h6 class="step-name" title="Stepdefinitions.Members.Admin_logged_in_with_valid_credentials()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Given Admin logged in with valid credentials</h6>
 
+				</li>
+				<li test-id='7' class='gc when Pass' status='Pass'>
+					<h6 class="step-name" title="Stepdefinitions.Members.Al_Arabia_overall_dashboard_should_display()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>When Al-Arabia overall dashboard should display</h6>
 
-		</li>
-		<li test-id='8' class='node and Pass' status='Pass'>
-			<div class="step-name" title="(Stepdefinitions.Signin.click_password_field_eye_icon())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Click password field eye icon</div>
+				</li>
+				<li test-id='9' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="Stepdefinitions.Inventory.Admin_or_user_clicks_the_Inventory_module()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Admin or user clicks the Inventory module</h6>
 
+				</li>
+				<li test-id='11' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="Stepdefinitions.Inventory.Admin_or_user_clicks_the_DamageRecSupplier_Tab()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And Admin or user clicks the DamageRecSupplier Tab</h6>
 
-		</li>
-		<li test-id='10' class='node then Pass' status='Pass'>
-			<div class="step-name" title="(Stepdefinitions.Signin.user_should_get_a_invalid_email_and_password_error_message())"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then User should get a invalid email and password error message</div>
+				</li>
+				<li test-id='13' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="Stepdefinitions.Inventory.User_click_on_edit_icon_in_DamageRecSupplier_Material_page()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User click on edit icon in DamageRecSupplier Material page</h6>
 
+				</li>
+				<li test-id='15' class='gc and Pass' status='Pass'>
+					<h6 class="step-name" title="Stepdefinitions.Inventory.User_edit_the_Remarks_and_click_update_DamageRecSupplier()"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>And User edit the Remarks and click update DamageRecSupplier</h6>
 
+				</li>
+				<li test-id='17' class='gc then Pass' status='Pass'>
+					<h6 class="step-name" title="Stepdefinitions.Inventory.Particular_Material_gets_updated_successfully_with_either(java.lang.String,java.lang.String)"><span class='status pass' title='Pass'><i class='material-icons'>check_circle</i></span>Then Particular Material gets updated successfully with either "LOADING..." or "Success Damage info updated"</h6>
+
+				</li>
+			</ul>
 		</li>
 	</ul>
 </div>
@@ -244,7 +260,7 @@
                 </div>
                 <div class='block text-small'>
                     <span class='tooltipped' data-position='top' data-tooltip='100%'>
-                    <span class='strong'>4</span> steps passed</span>
+                    <span class='strong'>7</span> steps passed</span>
                 </div>
                 <div class='block text-small'>
                     <span class='strong tooltipped' data-position='top' data-tooltip='0%'>
@@ -288,72 +304,6 @@
 			<ul id='category-collection' class='category-collection'>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@invalidemailandpassword</span>
-						<span class='category-status right'>
-						<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Nov 13, 2024 07:23:46 pm</td>
-										<td class='linked' test-id='2'>Login with invalid credentials</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
-						<span class='category-name'>@signin02</span>
-						<span class='category-status right'>
-						<span class='label pass'>1</span>
-						</span>
-					</div>
-					<div class='category-content hide'>
-						<div class='category-status-counts'>
-							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
-							
-							
-						</div>
-						<div class='category-tests'>
-							<table class='bordered table-results'>
-								<thead>
-									<tr>
-										<th>Timestamp</th>
-										<th>TestName</th>
-										<th>Status</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>Nov 13, 2024 07:23:46 pm</td>
-										<td class='linked' test-id='2'>Login with invalid credentials</td>
-										<td><span class='test-status Pass'>Pass</span></td>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-					</div>
-				</li>
-				<li class='category displayed active'>
-					<div class='category-heading'>
 						<span class='category-name'>@regression</span>
 						<span class='category-status right'>
 						<span class='label pass'>1</span>
@@ -376,8 +326,8 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Nov 13, 2024 07:23:46 pm</td>
-										<td class='linked' test-id='2'>Login with invalid credentials</td>
+										<td>Nov 18, 2024 06:09:44 pm</td>
+										<td class='linked' test-id='3'>T_DamageRec.supplier13_To verify edit of any Return</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
@@ -387,7 +337,7 @@
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@signin</span>
+						<span class='category-name'>@Inventory</span>
 						<span class='category-status right'>
 						<span class='label pass'>1</span>
 						</span>
@@ -409,8 +359,8 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Nov 13, 2024 07:23:46 pm</td>
-										<td class='linked' test-id='2'>Login with invalid credentials</td>
+										<td>Nov 18, 2024 06:09:44 pm</td>
+										<td class='linked' test-id='3'>T_DamageRec.supplier13_To verify edit of any Return</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
@@ -420,7 +370,7 @@
 				</li>
 				<li class='category displayed active'>
 					<div class='category-heading'>
-						<span class='category-name'>@smoke</span>
+						<span class='category-name'>@DamageRec.Supplier13</span>
 						<span class='category-status right'>
 						<span class='label pass'>1</span>
 						</span>
@@ -442,8 +392,8 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Nov 13, 2024 07:23:46 pm</td>
-										<td class='linked' test-id='2'>Login with invalid credentials</td>
+										<td>Nov 18, 2024 06:09:44 pm</td>
+										<td class='linked' test-id='3'>T_DamageRec.supplier13_To verify edit of any Return</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
@@ -475,8 +425,74 @@
 								</thead>
 								<tbody>
 									<tr>
-										<td>Nov 13, 2024 07:23:46 pm</td>
-										<td class='linked' test-id='2'>Login with invalid credentials</td>
+										<td>Nov 18, 2024 06:09:44 pm</td>
+										<td class='linked' test-id='3'>T_DamageRec.supplier13_To verify edit of any Return</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@DamageRec.Supplier</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Nov 18, 2024 06:09:44 pm</td>
+										<td class='linked' test-id='3'>T_DamageRec.supplier13_To verify edit of any Return</td>
+										<td><span class='test-status Pass'>Pass</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+				<li class='category displayed active'>
+					<div class='category-heading'>
+						<span class='category-name'>@sanity</span>
+						<span class='category-status right'>
+						<span class='label pass'>1</span>
+						</span>
+					</div>
+					<div class='category-content hide'>
+						<div class='category-status-counts'>
+							<span status="pass" class='label green accent-4 white-text'>Passed: 1</span>
+							
+							
+						</div>
+						<div class='category-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Nov 18, 2024 06:09:44 pm</td>
+										<td class='linked' test-id='3'>T_DamageRec.supplier13_To verify edit of any Return</td>
 										<td><span class='test-status Pass'>Pass</span></td>
 									</tr>
 								</tbody>
@@ -513,25 +529,25 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>4</div>
+					<div class='panel-lead'>7</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Nov 13, 2024 07:23:45 pm</div>
+					<div class='panel-lead'>Nov 18, 2024 06:09:43 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Nov 13, 2024 07:23:51 pm</div>
+			 		<div class='panel-lead'>Nov 18, 2024 06:10:04 pm</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>00 00 06.032</div>
+					<div class='panel-lead'>00 00 21.121</div>
 				</div>
 			</div>
 			<div class='col s6'>
@@ -547,24 +563,6 @@
 							<th>Passed %</th>
 						</tr>
 						<tr>
-							<td>@invalidemailandpassword</td>
-							<td>1</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
-							<td>@signin02</td>
-							<td>1</td>
-							<td>0</td>
-							<td>0</td>
-							<td>
-									100%
-							</td>
-						</tr>
-						<tr>
 							<td>@regression</td>
 							<td>1</td>
 							<td>0</td>
@@ -574,7 +572,7 @@
 							</td>
 						</tr>
 						<tr>
-							<td>@signin</td>
+							<td>@Inventory</td>
 							<td>1</td>
 							<td>0</td>
 							<td>0</td>
@@ -583,7 +581,7 @@
 							</td>
 						</tr>
 						<tr>
-							<td>@smoke</td>
+							<td>@DamageRec.Supplier13</td>
 							<td>1</td>
 							<td>0</td>
 							<td>0</td>
@@ -593,6 +591,24 @@
 						</tr>
 						<tr>
 							<td>@all</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@DamageRec.Supplier</td>
+							<td>1</td>
+							<td>0</td>
+							<td>0</td>
+							<td>
+									100%
+							</td>
+						</tr>
+						<tr>
+							<td>@sanity</td>
 							<td>1</td>
 							<td>0</td>
 							<td>0</td>
@@ -626,8 +642,8 @@
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				grandChildCount: 4,
-				passGrandChild: 4,
+				grandChildCount: 7,
+				passGrandChild: 7,
 				failGrandChild: 0,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
@@ -639,7 +655,7 @@
 		
 		<script>
 			var timeline = {
-			        "User Login":5.241
+			        "Inventory":20.039
 			};
 		</script>
 		

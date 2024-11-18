@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Automation Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Nov 13, 2024 07:23:45 pm</span></a>
+<a href="#"><span class="badge badge-primary">Nov 18, 2024 06:09:43 pm</span></a>
 </li>
 </ul>
 </div>
@@ -79,7 +79,7 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@invalidemailandpassword</a><a class="dropdown-item" href="#">@signin02</a><a class="dropdown-item" href="#">@regression</a><a class="dropdown-item" href="#">@signin</a><a class="dropdown-item" href="#">@smoke</a><a class="dropdown-item" href="#">@all</a>
+<a class="dropdown-item" href="#">@regression</a><a class="dropdown-item" href="#">@Inventory</a><a class="dropdown-item" href="#">@DamageRec.Supplier13</a><a class="dropdown-item" href="#">@all</a><a class="dropdown-item" href="#">@DamageRec.Supplier</a><a class="dropdown-item" href="#">@sanity</a>
 </ul>
 </li>
 </ul>
@@ -90,9 +90,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">User Login</p>
+            <p class="name">Inventory</p>
             <p class="text-sm">
-              <span>7:23:46 pm</span> / <span>00:00:05:241</span>
+              <span>6:09:44 pm</span> / <span>00:00:20:039</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -100,48 +100,70 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">User Login</h5>
-<span class='badge badge-success'>11.13.2024 7:23:46 pm</span>
-<span class='badge badge-danger'>11.13.2024 7:23:51 pm</span>
-<span class='badge badge-default'>00:00:05:241</span>
+<h5 class="test-status text-pass">Inventory</h5>
+<span class='badge badge-success'>11.18.2024 6:09:44 pm</span>
+<span class='badge badge-danger'>11.18.2024 6:10:04 pm</span>
+<span class='badge badge-default'>00:00:20:039</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
 </div>
-<div class="m-t-10 m-l-5">Registered user should be able to login to access the al-arabia features</div>
+<div class="m-t-10 m-l-5">Admin, Manager and Supervisor can able to access the Inventory feature,only if they have roles access</div>
 </div>
 </div>
 <div class="accordion mt-4">
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Login with invalid credentials</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>T_DamageRec.supplier13_To verify edit of any Return</div>
       </div>
     </div>
-        <div class="collapse">
-          <div class="card-body">
-              <div class="step pass-bg" title="Stepdefinitions.Signin.user_enters_invalid_email_address()">
-                <span>When User enters invalid email address</span>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="3"><span class="badge log pass-bg mr-2">Pass</span>T_DamageRec.supplier13_To verify edit of any Return</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given Admin logged in with valid credentials</span>
       <div>
       </div>
-              </div>
-              <div class="step pass-bg" title="Stepdefinitions.Signin.enter_invalid_password()">
-                <span>And Enter invalid password</span>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When Al-Arabia overall dashboard should display</span>
       <div>
       </div>
-              </div>
-              <div class="step pass-bg" title="Stepdefinitions.Signin.click_password_field_eye_icon()">
-                <span>And Click password field eye icon</span>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Admin or user clicks the Inventory module</span>
       <div>
       </div>
-              </div>
-              <div class="step pass-bg" title="Stepdefinitions.Signin.user_should_get_a_invalid_email_and_password_error_message()">
-                <span>Then User should get a invalid email and password error message</span>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And Admin or user clicks the DamageRecSupplier Tab</span>
       <div>
       </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User click on edit icon in DamageRecSupplier Material page</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>And User edit the Remarks and click update DamageRecSupplier</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Particular Material gets updated successfully with either "LOADING..." or "Success Damage info updated"</span>
+      <div>
+      </div>
+                  </div>
               </div>
-          </div>
+            </div>
         </div>
   </div>
 </div>
@@ -169,78 +191,6 @@
 <span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@invalidemailandpassword</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@invalidemailandpassword</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>19:23:46 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='2'>Login with invalid credentials</a>
-<div class="">
-<span class="badge badge-default">User Login.Login with invalid credentials</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
-<p class="name">@signin02</p>
-<p class="duration text-sm">1 tests</p>
-</div>
-<div class="test-contents d-none">
-<div class="info">
-<h4>@signin02</h4>
-<span status="pass" class='badge log pass-bg'>1 passed</span>
-</div>
-<table class='table table-sm mt-4'>
-<thead>
-<tr>
-<th class="status-col">Status</th>
-<th class="timestamp-col">Timestamp</th>
-<th>TestName</th>
-</tr>
-</thead>
-<tbody>
-<tr class="tag-test-status" status="pass">
-<td><span class="badge log pass-bg">Pass</span></td>
-<td>19:23:46 pm</td>
-<td>
-<a href="#" class="linked" test-id='1' id='2'>Login with invalid credentials</a>
-<div class="">
-<span class="badge badge-default">User Login.Login with invalid credentials</span>
-</div>
-</td>
-</tr>
-</tbody>
-</table>
-</div>
-</li>
-<li class="test-item">
-<div class="test-detail">
-<span class="meta">
-<span class='badge log pass-bg'>1</span>
-</span>
 <p class="name">@regression</p>
 <p class="duration text-sm">1 tests</p>
 </div>
@@ -260,11 +210,11 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>19:23:46 pm</td>
+<td>18:09:44 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>Login with invalid credentials</a>
+<a href="#" class="linked" test-id='1' id='3'>T_DamageRec.supplier13_To verify edit of any Return</a>
 <div class="">
-<span class="badge badge-default">User Login.Login with invalid credentials</span>
+<span class="badge badge-default">Inventory.T_DamageRec.supplier13_To verify edit of any Return</span>
 </div>
 </td>
 </tr>
@@ -277,12 +227,12 @@
 <span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@signin</p>
+<p class="name">@Inventory</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@signin</h4>
+<h4>@Inventory</h4>
 <span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -296,11 +246,11 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>19:23:46 pm</td>
+<td>18:09:44 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>Login with invalid credentials</a>
+<a href="#" class="linked" test-id='1' id='3'>T_DamageRec.supplier13_To verify edit of any Return</a>
 <div class="">
-<span class="badge badge-default">User Login.Login with invalid credentials</span>
+<span class="badge badge-default">Inventory.T_DamageRec.supplier13_To verify edit of any Return</span>
 </div>
 </td>
 </tr>
@@ -313,12 +263,12 @@
 <span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@smoke</p>
+<p class="name">@DamageRec.Supplier13</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@smoke</h4>
+<h4>@DamageRec.Supplier13</h4>
 <span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -332,11 +282,11 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>19:23:46 pm</td>
+<td>18:09:44 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>Login with invalid credentials</a>
+<a href="#" class="linked" test-id='1' id='3'>T_DamageRec.supplier13_To verify edit of any Return</a>
 <div class="">
-<span class="badge badge-default">User Login.Login with invalid credentials</span>
+<span class="badge badge-default">Inventory.T_DamageRec.supplier13_To verify edit of any Return</span>
 </div>
 </td>
 </tr>
@@ -368,11 +318,83 @@
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>19:23:46 pm</td>
+<td>18:09:44 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>Login with invalid credentials</a>
+<a href="#" class="linked" test-id='1' id='3'>T_DamageRec.supplier13_To verify edit of any Return</a>
 <div class="">
-<span class="badge badge-default">User Login.Login with invalid credentials</span>
+<span class="badge badge-default">Inventory.T_DamageRec.supplier13_To verify edit of any Return</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@DamageRec.Supplier</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@DamageRec.Supplier</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:09:44 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='3'>T_DamageRec.supplier13_To verify edit of any Return</a>
+<div class="">
+<span class="badge badge-default">Inventory.T_DamageRec.supplier13_To verify edit of any Return</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@sanity</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@sanity</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>18:09:44 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='3'>T_DamageRec.supplier13_To verify edit of any Return</a>
+<div class="">
+<span class="badge badge-default">Inventory.T_DamageRec.supplier13_To verify edit of any Return</span>
 </div>
 </td>
 </tr>
@@ -393,13 +415,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Nov 13, 2024 07:23:45 pm</h3>
+<h3>Nov 18, 2024 06:09:43 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Nov 13, 2024 07:23:51 pm</h3>
+<h3>Nov 18, 2024 06:10:04 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -470,7 +492,7 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'><b>4</b> steps passed</small></div>
+<div><small data-tooltip='100%'><b>7</b> steps passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> steps failed,
 <b>0</b> skipped, <b data-tooltip='%'>0</b> others
@@ -489,7 +511,7 @@
 </div></div>
 <script>
 var timeline = {
-"User Login":5.241
+"Inventory":20.039
 };
 </script>
 <div class="row">
@@ -499,22 +521,6 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@invalidemailandpassword</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
-<td>@signin02</td>
-<td>1</td>
-<td>0</td>
-<td>0</td>
-<td>0</td>
-<td>100%</td>
-</tr>
-<tr>
 <td>@regression</td>
 <td>1</td>
 <td>0</td>
@@ -523,7 +529,7 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@signin</td>
+<td>@Inventory</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -531,7 +537,7 @@ var timeline = {
 <td>100%</td>
 </tr>
 <tr>
-<td>@smoke</td>
+<td>@DamageRec.Supplier13</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -540,6 +546,22 @@ var timeline = {
 </tr>
 <tr>
 <td>@all</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@DamageRec.Supplier</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@sanity</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -566,7 +588,7 @@ warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 4,
+passGrandChild: 7,
 failGrandChild: 0,
 warningGrandChild: 0,
 skipGrandChild: 0,

@@ -1,0 +1,133 @@
+[INFO ] 2024-11-13 10:44:20.109 [main] Testhooks - Execution Started
+[INFO ] 2024-11-13 10:44:21.013 [main] Testhooks - Browser got launched
+[INFO ] 2024-11-13 10:44:22.425 [main] Testhooks - Navigated to url
+[INFO ] 2024-11-13 10:44:23.638 [main] Signinpage - User enters valid email address
+[INFO ] 2024-11-13 10:44:23.756 [main] Signinpage - User enters valid password
+[INFO ] 2024-11-13 10:44:23.866 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-11-13 10:44:23.866 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-11-13 10:44:26.548 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-11-13 10:46:25.209 [main] Testhooks - Execution Started
+[INFO ] 2024-11-13 10:46:26.026 [main] Testhooks - Browser got launched
+[INFO ] 2024-11-13 10:46:27.432 [main] Testhooks - Navigated to url
+[INFO ] 2024-11-13 10:46:28.624 [main] Signinpage - User enters valid email address
+[INFO ] 2024-11-13 10:46:28.747 [main] Signinpage - User enters valid password
+[INFO ] 2024-11-13 10:46:28.852 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-11-13 10:46:28.852 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-11-13 10:46:31.480 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-11-13 10:46:39.224 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-11-13 10:46:43.849 [main] Signinpage - Supervisor enters valid email address
+[INFO ] 2024-11-13 10:46:43.968 [main] Signinpage - User enters valid password
+[INFO ] 2024-11-13 10:46:44.062 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-11-13 10:46:44.062 [main] Members - >> Supervisor got logged in >>
+[INFO ] 2024-11-13 10:46:50.195 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-11-13 10:47:20.868 [main] Testhooks - Execution Started
+[INFO ] 2024-11-13 10:47:21.718 [main] Testhooks - Browser got launched
+[INFO ] 2024-11-13 10:47:23.433 [main] Testhooks - Navigated to url
+[INFO ] 2024-11-13 10:47:24.613 [main] Signinpage - User enters valid email address
+[INFO ] 2024-11-13 10:47:24.729 [main] Signinpage - User enters valid password
+[INFO ] 2024-11-13 10:47:24.829 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-11-13 10:47:24.829 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-11-13 10:47:27.591 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-11-13 10:47:38.294 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-11-13 10:47:42.849 [main] Signinpage - Supervisor enters valid email address
+[INFO ] 2024-11-13 10:47:42.968 [main] Signinpage - User enters valid password
+[INFO ] 2024-11-13 10:47:43.065 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-11-13 10:47:43.065 [main] Members - >> Supervisor got logged in >>
+[INFO ] 2024-11-13 10:47:49.051 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-11-13 10:48:21.476 [main] Testhooks - Failed scenario screenshot got capturedT038_To verify the members feature roles wise (Read access for supervisor)
+[INFO ] 2024-11-13 10:58:29.267 [main] Testhooks - Execution Started
+[INFO ] 2024-11-13 10:58:30.077 [main] Testhooks - Browser got launched
+[INFO ] 2024-11-13 10:58:31.432 [main] Testhooks - Navigated to url
+[INFO ] 2024-11-13 10:58:32.624 [main] Signinpage - User enters valid email address
+[INFO ] 2024-11-13 10:58:32.747 [main] Signinpage - User enters valid password
+[INFO ] 2024-11-13 10:58:32.846 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-11-13 10:58:32.846 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-11-13 10:58:39.894 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-11-13 10:58:45.852 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-11-13 10:58:50.290 [main] Signinpage - Supervisor enters valid email address
+[INFO ] 2024-11-13 10:58:50.403 [main] Signinpage - User enters valid password
+[INFO ] 2024-11-13 10:58:50.498 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-11-13 10:58:50.498 [main] Members - >> Supervisor got logged in >>
+[INFO ] 2024-11-13 10:58:56.486 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-11-13 10:59:28.778 [main] Testhooks - Failed scenario screenshot got capturedT038_To verify the members feature roles wise (Read access for supervisor)
+[INFO ] 2024-11-13 12:54:58.494 [main] Testhooks - Execution Started
+[INFO ] 2024-11-13 12:54:59.305 [main] Testhooks - Browser got launched
+[INFO ] 2024-11-13 12:55:00.875 [main] Testhooks - Navigated to url
+[INFO ] 2024-11-13 12:55:02.124 [main] Signinpage - User enters valid email address
+[INFO ] 2024-11-13 12:55:02.242 [main] Signinpage - User enters valid password
+[INFO ] 2024-11-13 12:55:02.343 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-11-13 12:55:02.343 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2024-11-13 12:55:09.979 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2024-11-13 12:55:15.818 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-11-13 12:55:20.506 [main] Signinpage - Supervisor enters valid email address
+[INFO ] 2024-11-13 12:55:20.625 [main] Signinpage - User enters valid password
+[INFO ] 2024-11-13 12:55:20.723 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-11-13 12:55:20.724 [main] Members - >> Supervisor got logged in >>
+[INFO ] 2024-11-13 12:55:26.627 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2024-11-13 15:44:33.355 [main] Testhooks - Execution Started
+[INFO ] 2024-11-13 15:44:34.191 [main] Testhooks - Browser got launched
+[INFO ] 2024-11-13 15:44:36.590 [main] Testhooks - Navigated to url
+[INFO ] 2024-11-13 15:44:37.790 [main] Signinpage - User enters valid email address
+[INFO ] 2024-11-13 15:44:38.193 [main] Signinpage - User enters valid password
+[INFO ] 2024-11-13 15:44:38.539 [main] Signinpage - User clicked password_field_eyeicon
+[INFO ] 2024-11-13 15:44:38.904 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-11-13 15:44:41.517 [main] Signinpage - Al-Arabia user got signed in successfully
+[INFO ] 2024-11-13 15:44:42.037 [main] Signinpage - Al-Arabia user got signed in successfully
+[INFO ] 2024-11-13 16:05:57.195 [main] Testhooks - Execution Started
+[INFO ] 2024-11-13 16:05:58.085 [main] Testhooks - Browser got launched
+[INFO ] 2024-11-13 16:05:59.516 [main] Testhooks - Navigated to url
+[INFO ] 2024-11-13 16:06:00.753 [main] Signinpage - User enters valid email address
+[INFO ] 2024-11-13 16:06:01.323 [main] Signinpage - User enters valid password
+[INFO ] 2024-11-13 16:06:01.762 [main] Signinpage - User clicked password_field_eyeicon
+[INFO ] 2024-11-13 16:06:02.191 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-11-13 16:06:10.063 [main] Signinpage - Al-Arabia user got signed in successfully
+[INFO ] 2024-11-13 16:06:10.555 [main] Signinpage - Al-Arabia user got signed in successfully
+[INFO ] 2024-11-13 16:25:00.614 [main] Testhooks - Execution Started
+[INFO ] 2024-11-13 16:25:01.779 [main] Testhooks - Browser got launched
+[INFO ] 2024-11-13 16:25:04.247 [main] Testhooks - Navigated to url
+[INFO ] 2024-11-13 16:25:05.447 [main] Signinpage - User enters valid email address
+[INFO ] 2024-11-13 16:25:05.837 [main] Signinpage - User enters valid password
+[INFO ] 2024-11-13 16:25:06.156 [main] Signinpage - User clicked password_field_eyeicon
+[INFO ] 2024-11-13 16:25:06.530 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-11-13 16:25:10.079 [main] Signinpage - Al-Arabia user got signed in successfully
+[INFO ] 2024-11-13 16:25:10.505 [main] Signinpage - Al-Arabia user got signed in successfully
+[INFO ] 2024-11-13 16:25:34.632 [main] Testhooks - Execution Started
+[INFO ] 2024-11-13 16:25:35.548 [main] Testhooks - Browser got launched
+[INFO ] 2024-11-13 16:25:37.068 [main] Testhooks - Navigated to url
+[INFO ] 2024-11-13 16:25:38.259 [main] Signinpage - User enters valid email address
+[INFO ] 2024-11-13 16:25:38.701 [main] Signinpage - User enters valid password
+[INFO ] 2024-11-13 16:25:39.031 [main] Signinpage - User clicked password_field_eyeicon
+[INFO ] 2024-11-13 16:25:39.390 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-11-13 16:25:42.037 [main] Signinpage - Al-Arabia user got signed in successfully
+[INFO ] 2024-11-13 16:25:42.359 [main] Signinpage - Al-Arabia user got signed in successfully
+[INFO ] 2024-11-13 16:29:24.632 [main] Testhooks - Execution Started
+[INFO ] 2024-11-13 16:29:25.490 [main] Testhooks - Browser got launched
+[INFO ] 2024-11-13 16:29:26.938 [main] Testhooks - Navigated to url
+[INFO ] 2024-11-13 16:29:28.124 [main] Signinpage - User enters valid email address
+[INFO ] 2024-11-13 16:29:28.528 [main] Signinpage - User enters valid password
+[INFO ] 2024-11-13 16:29:28.892 [main] Signinpage - User clicked password_field_eyeicon
+[INFO ] 2024-11-13 16:29:29.248 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-11-13 16:29:31.883 [main] Signinpage - Al-Arabia user got signed in successfully
+[INFO ] 2024-11-13 16:29:32.201 [main] Signinpage - Al-Arabia user got signed in successfully
+[INFO ] 2024-11-13 19:13:57.785 [main] Testhooks - Execution Started
+[INFO ] 2024-11-13 19:13:58.596 [main] Testhooks - Browser got launched
+[INFO ] 2024-11-13 19:14:00.198 [main] Testhooks - Navigated to url
+[INFO ] 2024-11-13 19:14:02.128 [main] Signinpage - User clicked password_field_eyeicon
+[INFO ] 2024-11-13 19:14:02.418 [main] Signinpage - User got an invalid username and password error message
+[INFO ] 2024-11-13 19:21:29.704 [main] Testhooks - Execution Started
+[INFO ] 2024-11-13 19:21:30.604 [main] Testhooks - Browser got launched
+[INFO ] 2024-11-13 19:21:30.758 [main] Testhooks - Navigated to url
+[INFO ] 2024-11-13 19:21:32.385 [main] Signinpage - User enters valid email address
+[INFO ] 2024-11-13 19:21:33.084 [main] Signinpage - User clicked password_field_eyeicon
+[INFO ] 2024-11-13 19:21:53.880 [main] Testhooks - Failed scenario screenshot got capturedLogin with valid email address and invalid password
+[INFO ] 2024-11-13 19:22:39.484 [main] Testhooks - Execution Started
+[INFO ] 2024-11-13 19:22:40.286 [main] Testhooks - Browser got launched
+[INFO ] 2024-11-13 19:22:41.759 [main] Testhooks - Navigated to url
+[INFO ] 2024-11-13 19:22:42.938 [main] Signinpage - User enters valid email address
+[INFO ] 2024-11-13 19:22:43.670 [main] Signinpage - User clicked password_field_eyeicon
+[INFO ] 2024-11-13 19:23:04.355 [main] Testhooks - Failed scenario screenshot got capturedLogin with valid email address and invalid password
+[INFO ] 2024-11-13 19:23:46.663 [main] Testhooks - Execution Started
+[INFO ] 2024-11-13 19:23:47.561 [main] Testhooks - Browser got launched
+[INFO ] 2024-11-13 19:23:48.998 [main] Testhooks - Navigated to url
+[INFO ] 2024-11-13 19:23:50.974 [main] Signinpage - User clicked password_field_eyeicon
+[INFO ] 2024-11-13 19:23:51.303 [main] Signinpage - User got an invalid username and password error message

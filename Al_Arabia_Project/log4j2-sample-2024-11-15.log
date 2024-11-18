@@ -1,0 +1,5 @@
+[INFO ] 2024-11-15 16:40:58.604 [main] Testhooks - Execution Started
+[INFO ] 2024-11-15 16:40:59.485 [main] Testhooks - Browser got launched
+[INFO ] 2024-11-15 16:41:00.905 [main] Testhooks - Navigated to url
+[INFO ] 2024-11-15 16:41:02.773 [main] Signinpage - User clicked password_field_eyeicon
+[INFO ] 2024-11-15 16:41:03.108 [main] Signinpage - User got an invalid username and password error message

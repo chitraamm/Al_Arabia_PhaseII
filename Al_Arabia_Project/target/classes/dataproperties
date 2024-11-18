@@ -82,6 +82,7 @@ suppliername = FABULUX
 invoiceid = 6545
 purchasenumber = 57
 consignmentnumber = 30
+
 projectname = testproject
 QTY = 5
 Invoiceid = 6545
@@ -97,7 +98,8 @@ Defecttype = Test
 deprtmnt = Cleaning
 billboardid = BB_NO_01865942
 Dt = service
-
+IDnumber = 234
+D_remarks = Returned stock ID_
 <---------Cleaning--------->
 
 groupname = cleanings3

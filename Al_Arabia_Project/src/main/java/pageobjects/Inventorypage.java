@@ -420,11 +420,11 @@ public class Inventorypage extends Base {
 	
 	//<------------------------Material Request---------------------------------------------------->|
 	
-	@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[2]/div/div[1]/ul/li[2]/a/span")
+	@FindBy(xpath = "//*[@id=\"root\"]/div[2]/div[1]/div[2]/div/div[2]/div/div[1]/ul/li[2]/a/span")
 	private WebElement material_request;
 	
 	public void Material_request_page() throws Exception{
-		Thread.sleep(1000);
+		Thread.sleep(5000);
 		wait.until(ExpectedConditions.visibilityOf(inventory_menu)).isDisplayed();
 		act.moveToElement(material_request).click().perform();
 	}
@@ -641,6 +641,42 @@ public class Inventorypage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(materialView_display)).isDisplayed();
 		AssertJUnit.assertTrue(materialView_display.isDisplayed());
 		//wait.until(ExpectedConditions.visibilityOf(click_view)).click();
+	}
+	@FindBy(xpath = "//a[normalize-space()='Edit']")
+	private WebElement select_materialedit;
+	
+	public void Click_Material_Edit() throws Exception {
+		Thread.sleep(3000);
+		wait.until(ExpectedConditions.visibilityOf(material_request)).isDisplayed();
+		wait.until(ExpectedConditions.visibilityOf(click_material_Edit)).click();
+		wait.until(ExpectedConditions.visibilityOf(select_materialedit)).click();
+
+	}
+	@FindBy(xpath = "//h5[normalize-space()='Edit Request']")
+	private WebElement materia_edit_padding;
+	
+	@FindBy(xpath = "(//div[contains(@class,'select__input-container css-19bb58m')])[2]")
+	private WebElement issued_to;
+	
+	@FindBy(xpath = "(//input[@name='id_no'])[1]")
+	private WebElement ID_Number;
+	
+	public void enter_material_edit_mandatory() throws Exception{
+		wait.until(ExpectedConditions.visibilityOf(materia_edit_padding)).isDisplayed();
+		act.moveToElement(issued_to).click().sendKeys(""+Keys.ENTER+Keys.TAB).perform();
+		Thread.sleep(2000);
+		
+		wait.until(ExpectedConditions.visibilityOf(issued_to)).isDisplayed();
+		String IDnumber = generateUniqueboardNumber(prop.getProperty("IDnumber"));
+		wait.until(ExpectedConditions.visibilityOf(ID_Number)).sendKeys(IDnumber);
+	}
+	
+	@FindBy(xpath = "//h6[normalize-space()='Update Request']")
+	private WebElement update_request;
+	
+	public void Update_Materialbutton_click() throws Exception{
+		wait.until(ExpectedConditions.visibilityOf(update_request)).isDisplayed();
+		act.moveToElement(update_request).click().perform();
 	}
 	@FindBy(xpath = "//a[normalize-space()='Delete']")
 	private WebElement materialclick_delete;
@@ -1501,6 +1537,36 @@ public class Inventorypage extends Base {
 		AssertJUnit.assertTrue(damage_ret_supplierView_display.isDisplayed());
 		//wait.until(ExpectedConditions.visibilityOf(click_view)).click();
 	}
+	@FindBy(xpath = "//a[normalize-space()='Edit']")
+	private WebElement select_damagereturnedit;
+	
+	public void edits_remarks() throws Exception {
+		Thread.sleep(3000);
+		wait.until(ExpectedConditions.visibilityOf(damage_ret_supplier_Return)).isDisplayed();
+		wait.until(ExpectedConditions.visibilityOf(click_material_Edit)).click();
+		wait.until(ExpectedConditions.visibilityOf(select_damagereturnedit)).click();
+
+	}
+	@FindBy(xpath = "//h5[normalize-space()='Edit Return']")
+	private WebElement damage_return_edit_padding;
+	
+	@FindBy(xpath = "//input[@name='remarks']")
+	private WebElement damagereturn_remarks;
+	
+	@FindBy(xpath = "//h6[normalize-space()='Update Return']")
+    private WebElement update_damagereturn;
+
+	public void Click_edit_DamageRetSupplier() throws Exception{
+		wait.until(ExpectedConditions.visibilityOf(damage_return_edit_padding)).isDisplayed();
+		//wait.until(ExpectedConditions.visibilityOf(issued_to)).isDisplayed();
+		damagereturn_remarks.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
+
+		String D_remarks = generateUniqueboardNumber(prop.getProperty("D_remarks"));
+		wait.until(ExpectedConditions.visibilityOf(damagereturn_remarks)).sendKeys(D_remarks);
+		Thread.sleep(2000);
+		act.moveToElement(update_damagereturn).click().perform();
+	}
+	
 	@FindBy(xpath = "//a[normalize-space()='Delete']")
 	private WebElement damage_ret_supplierclick_delete;
 	public void DamageRetSupplier_Deleteclick_option()throws Exception{
@@ -1817,6 +1883,35 @@ public class Inventorypage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(damage_rec_supplierView_display)).isDisplayed();
 		AssertJUnit.assertTrue(damage_rec_supplierView_display.isDisplayed());
 		//wait.until(ExpectedConditions.visibilityOf(click_view)).click();
+	}
+	@FindBy(xpath = "//a[normalize-space()='Edit']")
+	private WebElement select_damagereceivededit;
+	
+	public void Click_edit_DamageRecSupplier() throws Exception {
+		Thread.sleep(3000);
+		wait.until(ExpectedConditions.visibilityOf(damage_rec_supplier_Return)).isDisplayed();
+		wait.until(ExpectedConditions.visibilityOf(click_material_Edit)).click();
+		wait.until(ExpectedConditions.visibilityOf(select_damagereceivededit)).click();
+
+	}
+	@FindBy(xpath = "//h5[normalize-space()='Edit Replace']")
+	private WebElement damage_received_edit_padding;
+	
+	@FindBy(xpath = "//input[@name='remarks']")
+	private WebElement damagereceived_remarks;
+	
+	@FindBy(xpath = "//div[@data-testid='Update Replace']")
+    private WebElement update_damagere;
+
+	public void edits_remarks_DamageRecSupplier() throws Exception{
+		wait.until(ExpectedConditions.visibilityOf(damage_received_edit_padding)).isDisplayed();
+		//wait.until(ExpectedConditions.visibilityOf(issued_to)).isDisplayed();
+		damagereturn_remarks.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
+
+		String D_remarks = generateUniqueboardNumber(prop.getProperty("D_remarks"));
+		wait.until(ExpectedConditions.visibilityOf(damagereceived_remarks)).sendKeys(D_remarks);
+		Thread.sleep(2000);
+		act.moveToElement(update_damagere).click().perform();
 	}
 	@FindBy(xpath = "//a[normalize-space()='Delete']")
 	private WebElement damage_rec_supplierclick_delete;

@@ -299,12 +299,12 @@ When Al-Arabia overall dashboard should display
 And Admin or user clicks the Inventory module 
 And Admin or user clicks the Material Request Tab 
 And User click on edit icon in Material Request page
-And User edit the Requested Quantity
+And User select the issued to drop down and User enter the ID Number
 And User Click on Update Request button
 Then Particular Material gets updated successfully with either "<successMessage1>" or "<successMessage2>"
   Examples:
-      | successMessage1       | successMessage2                |
-      | LOADING...            | Success Material info updated  |
+      | successMessage1       | successMessage2                   |
+      | LOADING...            | Success Material Request updated  |
       
 @Inventory @MaterialRequest @MaterialRequest14 @regression @sanity @all
 Scenario Outline: T_MaterialRequest14_To verify Material Request View
@@ -827,19 +827,19 @@ And Admin or user clicks the DamageRetSupplier Tab
 And User clicks the Download button in DamageRetSupplier page after that click on close button 
 Then The Download pop up get closed successfully and display the DamageRetSupplier list
 
-#@Inventory @DamageRet.supplier @DamageRet.supplier13 @regression @sanity @all
-#Scenario Outline: T_DamageRet.supplier13_To verify edit of any Return
-#Given Admin logged in with valid credentials
-#When Al-Arabia overall dashboard should display
-#And Admin or user clicks the Inventory module  
-#And User click on edit icon in all Material page
-#And User edit the City name
-#And User Click on Update Material button
-#Then Particular Material gets updated successfully with either "<successMessage1>" or "<successMessage2>"
-  #Examples:
-      #| successMessage1       | successMessage2                |
-      #| LOADING...            | Success Material info updated  |
-      #
+@Inventory @DamageRet.supplier @DamageRet.supplier13 @regression @sanity @all
+Scenario Outline: T_DamageRet.supplier13_To verify edit of any Return
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Inventory module 
+And Admin or user clicks the DamageRetSupplier Tab 
+And User click on edit icon in DamageRetSupplier Material page
+And User edit the Remarks and click update
+Then Particular Material gets updated successfully with either "<successMessage1>" or "<successMessage2>"
+  Examples:
+      | successMessage1       | successMessage2                |
+      | LOADING...            | Success Damage info updated  |
+      
 @Inventory @DamageRet.supplier @DamageRet.supplier14 @regression @sanity @all
 Scenario Outline: T_DamageRet.supplier14_To verify DamageRetSupplier edit of any field
 Given Admin logged in with valid credentials
@@ -849,18 +849,18 @@ And Admin or user clicks the DamageRetSupplier Tab
 And User click on DamageRetSupplier view option of kebab menu 
 Then Particular DamageRetSupplier viewed with details successfully
 
-#@Inventory @DamageRet.supplier @DamageRet.supplier15 @regression @sanity @all
-#Scenario Outline: T_DamageRet.supplier15_To verify DamageRetSupplier edit of any field
-#Given Admin logged in with valid credentials
-#When Al-Arabia overall dashboard should display
-#And Admin or user clicks the Inventory module 
-#And Admin or user clicks the DamageRetSupplier Tab      
-#And User click on DamageRetSupplier Delete option in kebab menu and confirm Yes
-#Then DamageRetSupplier deleted popup will be displayed successfully as "<successMessage>"
- #Examples:
-      #| successMessage 			         	 |
-      #| Success Damage info deleted  |   
-      #
+@Inventory @DamageRet.supplier @DamageRet.supplier15 @regression @sanity @all
+Scenario Outline: T_DamageRet.supplier15_To verify DamageRetSupplier edit of any field
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Inventory module 
+And Admin or user clicks the DamageRetSupplier Tab      
+And User click on DamageRetSupplier Delete option in kebab menu and confirm Yes
+Then DamageRetSupplier deleted popup will be displayed successfully as "<successMessage>"
+ Examples:
+      | successMessage 			       	 |
+      | Success Damage info deleted  |   
+      
 @Inventory @DamageRet.supplier @DamageRet.supplier16 @smoke @regression @all
 Scenario Outline: T_DamageRet.supplier16_To verify the DamageRetSupplier feature pagination 1st to 2nd page 
 Given Admin logged in with valid credentials
@@ -1018,19 +1018,19 @@ And Admin or user clicks the DamageRecSupplier Tab
 And User clicks the Download button in DamageRecSupplier page after that click on close button 
 Then The Download pop up get closed successfully and display the DamageRecSupplier list
 
-#@Inventory @DamageRec.Supplier @DamageRec.Supplier13 @regression @sanity @all
-#Scenario Outline: T_DamageRec.supplier13_To verify edit of any Return
-#Given Admin logged in with valid credentials
-#When Al-Arabia overall dashboard should display
-#And Admin or user clicks the Inventory module  
-#And User click on edit icon in all Material page
-#And User edit the City name
-#And User Click on Update Material button
-#Then Particular Material gets updated successfully with either "<successMessage1>" or "<successMessage2>"
-  #Examples:
-      #| successMessage1       | successMessage2                |
-      #| LOADING...            | Success Material info updated  |
-      #
+@Inventory @DamageRec.Supplier @DamageRec.Supplier13 @regression @sanity @all
+Scenario Outline: T_DamageRec.supplier13_To verify edit of any Return
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Inventory module  
+And Admin or user clicks the DamageRecSupplier Tab 
+And User click on edit icon in DamageRecSupplier Material page
+And User edit the Remarks and click update DamageRecSupplier
+Then Particular Material gets updated successfully with either "<successMessage1>" or "<successMessage2>"
+  Examples:
+      | successMessage1       | successMessage2                |
+      | LOADING...            | Success Damage info updated  |
+      
 @Inventory @DamageRec.Supplier @DamageRec.Supplier14 @regression @sanity @all
 Scenario Outline: T_DamageRec.supplier14_To verify DamageRecSupplier edit of any field
 Given Admin logged in with valid credentials
@@ -1040,18 +1040,18 @@ And Admin or user clicks the DamageRecSupplier Tab
 And User click on DamageRecSupplier view option of kebab menu 
 Then Particular DamageRecSupplier viewed with details successfully
 
-#@Inventory @DamageRec.Supplier @DamageRec.Supplier15 @regression @sanity @all
-#Scenario Outline: T_DamageRec.supplier15_To verify DamageRecSupplier edit of any field
-#Given Admin logged in with valid credentials
-#When Al-Arabia overall dashboard should display
-#And Admin or user clicks the Inventory module 
-#And Admin or user clicks the DamageRecSupplier Tab      
-#And User click on DamageRecSupplier Delete option in kebab menu and confirm Yes
-#Then DamageRecSupplier deleted popup will be displayed successfully as "<successMessage>"
- #Examples:
-      #| successMessage 			         	 |
-      #| Success Damage info deleted  |   
-      #
+@Inventory @DamageRec.Supplier @DamageRec.Supplier15 @regression @sanity @all
+Scenario Outline: T_DamageRec.supplier15_To verify DamageRecSupplier Delete
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Inventory module 
+And Admin or user clicks the DamageRecSupplier Tab      
+And User click on DamageRecSupplier Delete option in kebab menu and confirm Yes
+Then DamageRecSupplier deleted popup will be displayed successfully as "<successMessage>"
+ Examples:
+      | successMessage 			         |
+      | Success Damage info deleted  |   
+      
 @Inventory @DamageRec.Supplier @DamageRec.Supplier16 @smoke @regression @all
 Scenario Outline: T_DamageRec.supplier16_To verify the DamageRecSupplier feature pagination 1st to 2nd page 
 Given Admin logged in with valid credentials

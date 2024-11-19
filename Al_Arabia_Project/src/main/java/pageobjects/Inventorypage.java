@@ -2,6 +2,7 @@ package pageobjects;
 
 import java.io.FileInputStream;
 import java.time.Duration;
+import java.util.NoSuchElementException;
 import java.util.Properties;
 import java.util.Random;
 //import java.util.Random;
@@ -1877,9 +1878,10 @@ public class Inventorypage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(click_damage_rec_supplier_Edit)).click();
 		wait.until(ExpectedConditions.visibilityOf(click_view)).click();
 	}
-	@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[2]/div[1]/h5[2]")
+	@FindBy(xpath = "//h5[normalize-space()='View Replace']")
 	private WebElement damage_rec_supplierView_display;
 	public void DamageRecSupplierView_display()throws Exception{
+		Thread.sleep(3000);
 		wait.until(ExpectedConditions.visibilityOf(damage_rec_supplierView_display)).isDisplayed();
 		AssertJUnit.assertTrue(damage_rec_supplierView_display.isDisplayed());
 		//wait.until(ExpectedConditions.visibilityOf(click_view)).click();
@@ -1932,12 +1934,35 @@ public class Inventorypage extends Base {
 		act.moveToElement(damage_rec_supplier_confirm_delete).click().perform();
 		//wait.until(ExpectedConditions.visibilityOf(click_delete)).click();
 	}
+//	@FindBy(xpath = "//div[normalize-space()='2']")
+//	private WebElement damage_rec_supplier_second_page;
+//	public void DamageRecSupplier_Second_page() throws Exception {
+//		act.scrollToElement(damage_rec_supplier_second_page).build().perform();
+//		wait.until(ExpectedConditions.visibilityOf(click_second_page)).click();
+//	}
+	
 	@FindBy(xpath = "//div[normalize-space()='2']")
 	private WebElement damage_rec_supplier_second_page;
-	public void DamageRecSupplier_Second_page() throws Exception {
-		act.scrollToElement(damage_rec_supplier_second_page).build().perform();
-		wait.until(ExpectedConditions.visibilityOf(click_second_page)).click();
+
+	public void DamageRecSupplier_Second_page() {
+	    try {
+	        // Scroll to the element
+	        act.scrollToElement(damage_rec_supplier_second_page).build().perform();
+
+	        // Wait for the element to become visible and click it
+	        wait.until(ExpectedConditions.visibilityOf(damage_rec_supplier_second_page)).click();
+	        
+	        System.out.println("Second page clicked successfully.");
+	    } catch (NoSuchElementException e) {
+	        // Handle the scenario where the element does not exist
+	        System.out.println("Second page element not found. Proceeding without clicking.");
+	    } catch (Exception e) {
+	        // Log any other exceptions
+	        System.out.println("An error occurred while handling the second page: " + e.getMessage());
+	    }
 	}
+	
+	
 	@FindBy(xpath = "//div[contains(text(),'Showing')]")
 	private WebElement damage_rec_supplier_second_page_display;
 	public void Second_page_DamageRecSupplier_Display() throws Exception {

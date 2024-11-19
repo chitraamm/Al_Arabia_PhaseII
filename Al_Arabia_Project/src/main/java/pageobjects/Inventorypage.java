@@ -1190,13 +1190,6 @@ public class Inventorypage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(requestby_edit)).click();
 		Thread.sleep(5000);
         act.moveToElement(requestby_edit).sendKeys(""+Keys.ARROW_DOWN+Keys.ENTER).perform();
-		//Thread.sleep(2000);
-
-//		wait.until(ExpectedConditions.visibilityOf(requestby_edit)).isDisplayed();
-//		wait.until(ExpectedConditions.visibilityOf(updatereurndamagerec)).isDisplayed();
- 		act.moveToElement(updatereurndamagerec).click().perform();
-
-        //act.moveToElement(updatereurndamagerec).click();
 	}	
 	@FindBy(xpath = "//h5[contains(@class,'mb-0')]")
 	private WebElement all_Returns;
@@ -1207,11 +1200,6 @@ public class Inventorypage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(all_Returns)).isDisplayed();
 		wait.until(ExpectedConditions.visibilityOf(click_damage_rec_Technician_Edit)).click();
 		wait.until(ExpectedConditions.visibilityOf(edit_damagerec_Return)).click();
-
-       // act.moveToElement(edit_damagerec_Return).click();
-//		wait.until(ExpectedConditions.visibilityOf(click_damage_rec_Technician_Edit)).click();
-//
-//		wait.until(ExpectedConditions.visibilityOf(edit_damagerec_Return)).click();
 	}
 	@FindBy(xpath = "(//*[name()='svg'][@stroke='currentColor'])[7]")
 	private WebElement click_damage_rec_Technician_Edit;
@@ -1461,10 +1449,7 @@ public class Inventorypage extends Base {
 
 	@FindBy(xpath = "(//div[@class='select__value-container select__value-container--has-value css-hlgwow'])[4]")
 	private WebElement Defecttype;
-//	
-//	@FindBy(id = "Save")
-//	private WebElement supplierReturn_save;
-//	
+
 	public void Enter_Mandatory_fieldsof_New_Return_DamageRetSupplier()throws Exception{
 		
 		wait.until(ExpectedConditions.visibilityOf(newreturn_pagesupplr)).isDisplayed();
@@ -1476,11 +1461,7 @@ public class Inventorypage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(supplier_name)).isDisplayed();
 		wait.until(ExpectedConditions.visibilityOf(delivery_date)).click();
 		wait.until(ExpectedConditions.visibilityOf(date_selctd)).click();
-
-
-//		wait.until(ExpectedConditions.visibilityOf(delivery_date)).isDisplayed();
-//	 	Thread.sleep(4000);
-//		act.moveToElement(id_billboard).click().sendKeys(""+Keys.ENTER).perform();
+		
 	 	Thread.sleep(4000);
 		wait.until(ExpectedConditions.visibilityOf(delivery_date)).isDisplayed();
 		String billboardid = prop.getProperty("billboardid");
@@ -1500,15 +1481,8 @@ public class Inventorypage extends Base {
 			
 	        Thread.sleep(4000);
 	        wait.until(ExpectedConditions.visibilityOf(qty)).isDisplayed();
-//	        String defect_type = prop.getProperty("Defecttype");
-//			Thread.sleep(5000);
-//			wait.until(ExpectedConditions.visibilityOf(Defecttype)).sendKeys(defect_type);
 			act.moveToElement(Defecttype).click().sendKeys(""+Keys.ENTER).perform();
 	        
-	        Thread.sleep(2000);
-//		act.moveToElement(Return_save).click().perform();
-//		
-//		act.moveToElement(add_Return).click().perform();
 	}
 	@FindBy(id = "Add Request")
 	private WebElement add_Return_DamageRetSupplier;
@@ -1517,11 +1491,6 @@ public class Inventorypage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(add_Return)).isDisplayed();
 		wait.until(ExpectedConditions.visibilityOf(add_Return)).click();
 	}
-	
-	//updatepenng
-	
-	
-
 	@FindBy(xpath = "(//*[name()='svg'][@stroke='currentColor'])[7]")
 	private WebElement click_damage_ret_supplier_Edit;
 	@FindBy(xpath = "//a[normalize-space()='View']")
@@ -1780,29 +1749,13 @@ public class Inventorypage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(new_Replace_supplier)).isDisplayed();
 		wait.until(ExpectedConditions.visibilityOf(new_Replace_supplier)).click();
 	}
-//	@FindBy(id = "react-select-3-input")
-//	private WebElement supplier_name_select;
-//	@FindBy(xpath = "//input[@name='delivery_no']")
-//	private WebElement delivery_date;
-//	
+
 	@FindBy(xpath = "//h5[normalize-space()='New Replace']")
 	private WebElement newreplace_pagesupplr;
-//	
-//	@FindBy(xpath = "//span[normalize-space()='3']")
-//	private WebElement date_selctd;
-//	
-//	@FindBy(id = "react-select-4-input")
-//	private WebElement id_billboard;
-//	
-//	@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[2]/div[2]/form/div/div[3]/div[2]/div/table/tbody/tr/td[4]/form/div/div/input")
-//	private WebElement qty;
-//
+
 	@FindBy(xpath = "(//input[@type='text'])[9]")
 	private WebElement Dttype;
-//	
-//	@FindBy(id = "Save")
-//	private WebElement supplierReturn_save;
-//	
+
 	public void Enter_Mandatory_fieldsof_New_Replace_DamageRecSupplier()throws Exception{
 		
 		wait.until(ExpectedConditions.visibilityOf(newreplace_pagesupplr)).isDisplayed();
@@ -1816,10 +1769,6 @@ public class Inventorypage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(delivery_date)).click();
 		wait.until(ExpectedConditions.visibilityOf(date_selctd)).click();
 
-
-//		wait.until(ExpectedConditions.visibilityOf(delivery_date)).isDisplayed();
-//	 	Thread.sleep(4000);
-//		act.moveToElement(id_billboard).click().sendKeys(""+Keys.ENTER).perform();
 	 	Thread.sleep(4000);
 		wait.until(ExpectedConditions.visibilityOf(delivery_date)).isDisplayed();
 		String billboardid = prop.getProperty("billboardid");
@@ -1841,21 +1790,11 @@ public class Inventorypage extends Base {
 			wait.until(ExpectedConditions.visibilityOf(qty)).isDisplayed();
 			String Dt =prop.getProperty("Dt");
 			Thread.sleep(7000);
-	        act.moveToElement(Dttype).click().sendKeys(""+(Dt)).perform();
-			
-	        
-	        
+	        act.moveToElement(Dttype).click().sendKeys(""+(Dt)).perform();        
 	        Thread.sleep(4000);
 	        wait.until(ExpectedConditions.visibilityOf(qty)).isDisplayed();
-//	        String defect_type = prop.getProperty("Defecttype");
-//			Thread.sleep(5000);
-//			wait.until(ExpectedConditions.visibilityOf(Defecttype)).sendKeys(defect_type);
 			act.moveToElement(Defecttype).click().sendKeys(""+Keys.ENTER).perform();
 	        
-	        Thread.sleep(2000);
-//		act.moveToElement(Return_save).click().perform();
-//		
-//		act.moveToElement(add_Return).click().perform();
 	}
 	@FindBy(id = "Add Request")
 	private WebElement add_Return_DamageRecSupplier;
@@ -1864,10 +1803,6 @@ public class Inventorypage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(add_Return)).isDisplayed();
 		wait.until(ExpectedConditions.visibilityOf(add_Return)).click();
 	}
-	
-	//updatepenng
-	
-	
 
 	@FindBy(xpath = "(//*[name()='svg'][@stroke='currentColor'])[7]")
 	private WebElement click_damage_rec_supplier_Edit;
@@ -1934,13 +1869,7 @@ public class Inventorypage extends Base {
 		act.moveToElement(damage_rec_supplier_confirm_delete).click().perform();
 		//wait.until(ExpectedConditions.visibilityOf(click_delete)).click();
 	}
-//	@FindBy(xpath = "//div[normalize-space()='2']")
-//	private WebElement damage_rec_supplier_second_page;
-//	public void DamageRecSupplier_Second_page() throws Exception {
-//		act.scrollToElement(damage_rec_supplier_second_page).build().perform();
-//		wait.until(ExpectedConditions.visibilityOf(click_second_page)).click();
-//	}
-	
+
 	@FindBy(xpath = "//div[normalize-space()='2']")
 	private WebElement damage_rec_supplier_second_page;
 
@@ -2150,19 +2079,6 @@ public class Inventorypage extends Base {
 		
 		@FindBy(xpath = "//textarea[@name='description']")
 		private WebElement Descriptions;
-	//	
-//		@FindBy(id = "react-select-4-input")
-//		private WebElement id_billboard;
-	//	
-//		@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[2]/div[2]/form/div/div[3]/div[2]/div/table/tbody/tr/td[4]/form/div/div/input")
-//		private WebElement qty;
-	//
-//		@FindBy(xpath = "(//input[@type='text'])[9]")
-//		private WebElement Dttype;
-	//	
-//		@FindBy(id = "Save")
-//		private WebElement supplierReturn_save;
-	//	
 		public void Enter_Mandatory_fieldsof_Stock_Adjustments()throws Exception{
 		 	Thread.sleep(4000);
 			wait.until(ExpectedConditions.visibilityOf(stockadjmnt_page)).isDisplayed();
@@ -2181,46 +2097,6 @@ public class Inventorypage extends Base {
 			wait.until(ExpectedConditions.visibilityOf(Descriptions)).isDisplayed();
 		 	Thread.sleep(3000);
             act.moveToElement(Descriptions).click().sendKeys(""+(descrptns)).perform();
-//
-////			wait.until(ExpectedConditions.visibilityOf(delivery_date)).isDisplayed();
-////		 	Thread.sleep(4000);
-////			act.moveToElement(id_billboard).click().sendKeys(""+Keys.ENTER).perform();
-//		 	Thread.sleep(4000);
-//			wait.until(ExpectedConditions.visibilityOf(delivery_date)).isDisplayed();
-//			String billboardid = prop.getProperty("billboardid");
-//			wait.until(ExpectedConditions.visibilityOf(id_billboard)).sendKeys(billboardid);
-//		 	Thread.sleep(5000);
-//			act.moveToElement(id_billboard).click().sendKeys(""+Keys.ENTER+Keys.ARROW_RIGHT).perform();
-//		
-//			 wait.until(ExpectedConditions.visibilityOf(Return_stock_code)).isDisplayed();
-//				Thread.sleep(2000);
-//				act.moveToElement(Return_stock_code).click().sendKeys(""+Keys.ENTER).perform();
-//				
-//				Thread.sleep(3000);
-//				wait.until(ExpectedConditions.visibilityOf(Return_stock_code)).isDisplayed();
-//				String QTY =prop.getProperty("QTY");
-//				Thread.sleep(7000);
-//		        act.moveToElement(qty).click().sendKeys(""+(QTY)).perform();
-//				
-//		        Thread.sleep(3000);
-//				wait.until(ExpectedConditions.visibilityOf(qty)).isDisplayed();
-//				String Dt =prop.getProperty("Dt");
-//				Thread.sleep(7000);
-//		        act.moveToElement(Dttype).click().sendKeys(""+(Dt)).perform();
-//				
-//		        
-//		        
-//		        Thread.sleep(4000);
-//		        wait.until(ExpectedConditions.visibilityOf(qty)).isDisplayed();
-////		        String defect_type = prop.getProperty("Defecttype");
-////				Thread.sleep(5000);
-////				wait.until(ExpectedConditions.visibilityOf(Defecttype)).sendKeys(defect_type);
-//				act.moveToElement(Defecttype).click().sendKeys(""+Keys.ENTER).perform();
-//		        
-//		        Thread.sleep(2000);
-////			act.moveToElement(Return_save).click().perform();
-////			
-////			act.moveToElement(add_Return).click().perform();
 		}
 		@FindBy(xpath = "//span[normalize-space()='Add Stock Adjustment']")
 		private WebElement add_Stock_Adjustments;

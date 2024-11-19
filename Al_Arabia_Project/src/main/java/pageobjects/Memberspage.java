@@ -657,12 +657,6 @@ public class Memberspage extends Base {
 	@FindBy(xpath = "//h6[normalize-space()='Update Company Profile']")
 	private WebElement profile_update_btn;
 	
-//	@FindBy(xpath = "//h4[@class=' fw-semibold text-center text-black']")
-//	private WebElement confirmpopup;
-//
-//	@FindBy(xpath = "//div[@data-testid='Update Company Profile']")
-//	private WebElement members_personalprofile_update_btn_Yes;
-
 	public void members_personalprofile_text_enter() throws Exception {
 		wait.until(ExpectedConditions.visibilityOf(members_profile_personal_name));
 		wait.until(ExpectedConditions.visibilityOf(members_profile_personal_name)).click();
@@ -714,7 +708,6 @@ public class Memberspage extends Base {
 	}
 
 	public String members_profile_success_display1() throws Exception {
-//		Thread.sleep(2000);
 		WebElement successMessageElement = wait
 				.until(ExpectedConditions.visibilityOf(members_profile_Success_display1));
 		return successMessageElement.getText().trim();
@@ -763,7 +756,6 @@ public class Memberspage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(members_companyprofile_responsible_area))
 				.sendKeys("Saudi Arabia" + Keys.ARROW_DOWN + Keys.ENTER);
 
-		//wait.until(ExpectedConditions.visibilityOf(members_personalprofile_update_btn_Yes)).click();
 		Thread.sleep(2000);
 	    act.moveToElement(profile_update_btn).click().perform();
 	}

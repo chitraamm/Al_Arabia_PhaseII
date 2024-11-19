@@ -69,14 +69,6 @@ public class Billboards extends Base {
 		billboardsPage.BBSearchedList();
 	}
 
-	@And("^Particular billboard gets created successfully with either \"([^\"]*)\" or \"([^\"]*)\"$")
-//    public void Particular_billboard_gets_created_successfully(String expectedMessage) throws Exception {
-//        String actualMessage = billboardsPage.billboard_created_Success_display();
-//        String normalizedExpectedMessage = normalizeWhitespace(expectedMessage);
-//        String normalizedActualMessage = normalizeWhitespace(actualMessage);
-//        System.out.println(">> User or Admin got the billboard created success message successfully"+actualMessage);
-//        assertEquals(normalizedExpectedMessage, normalizedActualMessage);
-//    }
 	public void Particular_billboard_gets_created_successfully_with_either(String expectedMessage1,
 			String expectedMessage2) throws Exception {
 		String actualMessage = billboardsPage.billboard_created_Success_display();

@@ -89,14 +89,9 @@ public class Profilepage extends Base {
 
 	@FindBy(xpath = "//input[@placeholder='Enter Location']")
 	private WebElement Location; 
-//	
-//	@FindBy(name = "whatsapp_number")
-//	private WebElement whtsap_number; 
+
 	@FindBy(id = "iqama_no")
 	private WebElement personalinfo_iqma, iqmaerror;
-
-//	
-	//@FindBy(xpath = "//div[@class='toastpop position-relative']")
 	@FindBy(xpath = "//div[contains(@class, 'toastpop') and contains(@class, 'position-relative')]")
 
 	private WebElement profile_success_display;
@@ -131,10 +126,7 @@ public class Profilepage extends Base {
 		personalinfo_iqma.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
 		String uniqueIQMANumber = generateUniqueIQMANumber(prop.getProperty("Iqma"));
 		wait.until(ExpectedConditions.visibilityOf(personalinfo_iqma)).sendKeys(uniqueIQMANumber);
-      //  Thread.sleep(2000);
-
-		//wait.until(ExpectedConditions.visibilityOf(members_personalprofile_update_btn_Yes)).click();
-	//	act.moveToElement(members_personalprofile_update_btn_Yes).click().perform();
+      
 	}
 	
 	public void personalinfo_Updatebutton_text_enter() throws Exception {

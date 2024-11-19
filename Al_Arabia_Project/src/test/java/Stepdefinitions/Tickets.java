@@ -337,14 +337,6 @@ public class Tickets extends Base {
 		ticketsPage.confirm_verify();
 }
 	@Then("^Ticket verified popup will be displayed successfully with either \"([^\"]*)\" or \"([^\"]*)\"$")
-//	public void Ticket_verified_popup_will_be_displayed_successfully_with_either(String expectedMessage) throws Exception {
-//		  String actualMessage = ticketsPage.ticket_create_Success_display();
-//	      String normalizedExpectedMessage = normalizeWhitespace(expectedMessage);
-//	      String normalizedActualMessage = normalizeWhitespace(actualMessage);
-//	      System.out.println(">> User or Admin verified Ticket successfully"+actualMessage);
-//	      assertEquals(normalizedExpectedMessage, normalizedActualMessage);
-//	}
-	
 	public void Ticket_verified_popup_will_be_displayed_successfully_with_either(String expectedMessage1,
 			String expectedMessage2) throws Exception {
 		String actualMessage = ticketsPage.ticket_create_Success_display();

@@ -170,8 +170,6 @@ public class Cleaningpage extends Base {
     String description = prop.getProperty("descriptiontexts");
     act.moveToElement(Description).click().sendKeys(""+(description)).perform();
     
-//	String description = prop.getProperty("groupname");
-//	wait.until(ExpectedConditions.visibilityOf(group_Name)).sendKeys(groupname);
 	}
 	@FindBy(id = "Create Group")
 	private WebElement create_group;

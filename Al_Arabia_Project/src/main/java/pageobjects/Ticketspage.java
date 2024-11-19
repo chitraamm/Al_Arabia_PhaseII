@@ -608,7 +608,6 @@ public class Ticketspage extends Base {
 		act.moveToElement(click_upload_voice).perform();
 		wait.until(ExpectedConditions.visibilityOf(click_upload_voice)).click();
 		wait.until(ExpectedConditions.visibilityOf(record_button)).click();
-	//	Thread.sleep(2000);
 
 		wait.until(ExpectedConditions.visibilityOf(stop_button)).click();
 		Thread.sleep(2000);

@@ -1679,15 +1679,9 @@ public void selects_delete_BOMUnit() throws Exception {
 	@FindBy(xpath = "(//input[@value='0'])[1]")	
 	private WebElement QTY;
 		
-//	@FindBy(xpath = "(//input[@type='text'])[7]")
-//	private WebElement country;
-	
 	@FindBy(id = "Save")
 	private WebElement button_save;
-//	
-//	@FindBy(xpath = "(//button[@id='Add BOM'])[1]")
-//	private WebElement click_addBOM_Button;
-//	
+
 	public void Enter_Mandatory_fields_BOM () throws Exception {
 		Thread.sleep(3000);
 		wait.until(ExpectedConditions.visibilityOf(NewBOM_page_padding)).isDisplayed();
@@ -1713,22 +1707,12 @@ public void selects_delete_BOMUnit() throws Exception {
 		String countryname = prop.getProperty("countryname");
 
 		wait.until(ExpectedConditions.visibilityOf(QTY)).sendKeys(number_of_qty+Keys.TAB+Keys.ARROW_DOWN+Keys.ENTER+Keys.TAB+countryname);
-		//Thread.sleep(3000);
-     //   act.moveToElement(button_save).click().sendKeys(""+Keys.TAB+Keys.ENTER).perform();
-        
-				act.moveToElement(button_save).click().perform();
-//        Thread.sleep(5000);
-//		wait.until(ExpectedConditions.visibilityOf(button_save)).isDisplayed();
-//        act.moveToElement(click_addBOM_Button).click().perform();
-
 	}
 	@FindBy(id = "Add BOM")
 	private WebElement click_addBOM_Button;
 	
 	public void Click_Add_BOM() throws Exception {
-		//Thread.sleep(6000);
-		//wait.until(ExpectedConditions.visibilityOf(button_save)).isDisplayed();
-       // act.moveToElement(click_addBOM_Button).click().perform();
+
 		wait.until(ExpectedConditions.visibilityOf(click_addBOM_Button)).click();      
 
 	}

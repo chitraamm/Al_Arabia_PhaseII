@@ -62,14 +62,6 @@ public class Profile extends Base {
 		profilepage.Yesbutton();
 	}
 
-//	@Then("^User Updated the profile details successfully with either \"([^\"]*)\"$")
-//	public void User_Updated_the_profile_details_successfully_with_either(String expectedMessage) {
-//		String actualMessage = profilepage.profile_success_display();
-//		String normalizedExpectedMessage = normalizeWhitespace(expectedMessage);
-//		String normalizedActualMessage = normalizeWhitespace(actualMessage);
-//		System.out.println(">> User or Admin got the members profile updation success message successfully");
-//		assertEquals(normalizedExpectedMessage, normalizedActualMessage);
-//	}
 	@When("User able to click on reset form personal profile")
 	public void user_able_to_click_on_reset_form_personal_profile() throws Exception{
 		profilepage.Resetform();

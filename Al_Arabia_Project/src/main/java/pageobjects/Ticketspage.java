@@ -424,7 +424,6 @@ public class Ticketspage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(Tickets_filter)).click();
 		Thread.sleep(3000);
 		act.moveToElement(Click_Cleaning_Ticket).click().perform();
-		//wait.until(ExpectedConditions.visibilityOf(Click_Cleaning_Ticket)).click();
 		Thread.sleep(3000);
 		act.moveToElement(Tickets_filter_apply_btn).click().perform();
 		System.out.println(">> User clicked Cleaning Ticket in filter");

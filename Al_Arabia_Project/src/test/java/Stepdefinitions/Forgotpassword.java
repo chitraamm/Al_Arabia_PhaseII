@@ -14,7 +14,7 @@ public class Forgotpassword extends Base {
 	private Forgotpasswordpage forgotPasswordPage;
 
 	public Forgotpassword(Testhooks testhooks) {
-		this.driver = testhooks.getDriver();
+		this.driver = testhooks.getDriver(); 
 		this.forgotPasswordPage = new Forgotpasswordpage(driver);
 	}
 

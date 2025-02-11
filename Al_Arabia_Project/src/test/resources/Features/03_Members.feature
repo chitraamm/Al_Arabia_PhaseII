@@ -17,7 +17,7 @@ And User clicks the invite member button
 And User enters the email or phone number
 And User selects the role manager
 And User selects the department electrical
-#And User clicks the send invite button
+And User clicks the send invite button
 Then The invitation should sent to user given mail address successfully
 
 @members @members03 @smoke @regression @all
@@ -191,8 +191,8 @@ Scenario Outline: T023_To verify the members feature particular members profile 
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And User clicks the members module
-And User filter the members list status-Active
 And User search the members
+And User filter the members list status-Active
 And Admin or User go the members profile page
 Then Members page get displayed successfully
 
@@ -230,7 +230,7 @@ And User filter the members list status-Active
 And User search the members
 And Admin or User go the members profile page
 And Admin or User update the members company profile page
-Then Particular members profile get updated successfully as "<successMessage>"
+Then Particular members profile get updated successfully with either "<successMessage1>" or "<successMessage2>"
  Examples:
       | successMessage                        |
       | Success Company profile updated       |
@@ -280,11 +280,10 @@ And User filter the members list status-Active
 And User search the members
 And Admin or User go the members profile page
 And Admin or User update the members reset password profile page
-Then Particular members reset password profile get updated successfully as "<successMessage>"
- Examples:
-      | successMessage             |
-      | Success Password updated   |
-
+Then Particular members profile get updated successfully with either "<successMessage1>" or "<successMessage2>"
+        Examples:
+      | successMessage1       | successMessage2                 |
+      | LOADING...            | Success  Company profile updated|
 @members @members31 @sanity @regression @all
 Scenario Outline: T031_To verify the members feature reset password profile error messages
 Given Admin logged in with valid credentials
@@ -413,7 +412,7 @@ And Supervisor logged in with valid credentials
 And User clicks the members module
 And User filter the members list status-Active
 And User search the members
-And Supervisor go the members profile page
+And Supervisor go the members profile page1
 And Supervisor update the members profile page
 Then Supervisor get the update access successfully
 

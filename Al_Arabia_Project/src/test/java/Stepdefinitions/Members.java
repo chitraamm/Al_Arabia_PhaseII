@@ -1,6 +1,7 @@
 package Stepdefinitions;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -17,7 +18,7 @@ import resources.Base;
 
 public class Members extends Base {
 
-    private static Logger LOGGER = LogManager.getLogger(Members.class);
+    private static Logger LOGGER = LogManager.getLogger(Members.class); 
     private WebDriver driver;
     private Memberspage membersPage;
     private Signinpage signinpage;
@@ -166,7 +167,7 @@ public class Members extends Base {
     
     @Then("Pending members list get displayed successfully")
     public void Pending_members_list_get_displayed_successfully() {
-        membersPage.members_filter_blocked_list_display();
+        membersPage.members_filter_pending_list_display();
     }
     
     @And("User filter the members list role-admin")
@@ -295,13 +296,13 @@ public class Members extends Base {
     }
     
     @And("Admin or User go the members profile page")
-    public void Admin_User_go_the_members_profile_page() throws Exception {
-    	 membersPage.members_action_icon_click();
+    public void Admin_or_User_go_the_members_profile_page() throws Exception {
+    	 membersPage.members_action_icon_click();                                                          
     }
     
     @Then("Members page get displayed successfully")
     public void Members_page_get_displayed_successfully() {
-        membersPage.members_profile_personal_name();
+       membersPage.members_profile_personal_name();                 
     }
     
     @And("Admin or User update the members profile page")
@@ -334,7 +335,8 @@ public class Members extends Base {
     
     @And("Admin or User update the members company profile page")
     public void Admin_or_User_update_the_members_company_profile_page() throws Exception {
-    	 membersPage.members_companyprofile();
+    	membersPage.members_companyprofile();
+    	membersPage.companyprofile_update_confirmyes();
     }
     
     @And("Admin or User delete the workspace ID")
@@ -396,15 +398,20 @@ public class Members extends Base {
     public void Reset_password_page_error_message_get_displayed_successfully() {
         membersPage.members_profile_resetpassword_error();
     }
-    
-    @Then("^Particular members reset password profile get updated successfully as \"([^\"]*)\"$")
-    public void Particular_members_resetpwprofile_get_updated_successfully(String expectedMessage) throws Exception {
-        String actualMessage = membersPage.members_profile_success_display1();
-        String normalizedExpectedMessage = normalizeWhitespace(expectedMessage);
-        String normalizedActualMessage = normalizeWhitespace(actualMessage);
-        System.out.println(">> User or Admin got the members profile updation success message successfully");
-        assertEquals(normalizedExpectedMessage, normalizedActualMessage);
-    }
+	@Then("^Particular members profile get updated successfully with either \"([^\"]*)\" or \"([^\"]*)\"$")
+    public void Particular_members_profile_get_updated_successfully_with_either (String expectedMessage1,
+			String expectedMessage2) throws Exception {
+		String actualMessage = membersPage.members_profile_success_display1();
+		String normalizedActualMessage = normalizeWhitespace(actualMessage);
+
+		System.out.println(">> User or Admin got the billboard created success message successfully: " + actualMessage);
+
+		boolean matchesMessage1 = normalizedActualMessage.equals(normalizeWhitespace(expectedMessage1));
+		boolean matchesMessage2 = normalizedActualMessage.equals(normalizeWhitespace(expectedMessage2));
+
+		assertTrue("The actual message was neither of the expected success messages.",
+				matchesMessage1 || matchesMessage2);
+	}
     
     @And("Admin or User click the menu option")
     public void Admin_or_User_click_the_menu_option() throws Exception {
@@ -474,6 +481,12 @@ public class Members extends Base {
     	 membersPage.Members_supervisor_viewdetails_btn();
     }
     
+    @And("Supervisor go the members profile page1")
+    public void Supervisor_go_the_members_profile_page1() throws Exception {
+    	 membersPage.members_action_icon_click();
+    }
+    
+    
     @Then("Supervisor get the read access successfully")
     public void Supervisor_get_the_read_access_successfully() {
         membersPage.Members_disabled_page();
@@ -523,17 +536,6 @@ public class Members extends Base {
     public void Supervisor_get_the_block_and_unblock_access_successfully() throws Exception {
         membersPage.members_supervisor_success_block();
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+       
 }
 

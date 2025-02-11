@@ -2,14 +2,14 @@
 browser = chrome
 
 <---- Web App URL ---->
-Al_Arabia_URL = http://20.74.152.254/
+Al_Arabia_URL = https://test-alarabia.coducer.xyz/
 
 <---- Admin Login Valid Credentials ---->
 Admin_email_address = help@coducer.com
 Admin_password = Password@123
 
 <---- Supervisor Login Valid Credentials ---->
-Supervisor_email_address = panneerselvam@coducer.com
+Supervisor_email_address = tomgeorge+7@coducer.com
 
 <---- Login Invalid Credentials ---->
 INV_email_address = help@coducer
@@ -20,20 +20,150 @@ INVpassword_withoutupper_character = password@123
 INVpassword_short_character = Pass
 
 <---- Forgot password Credentials ---->
-Forgot_email_address = panneerselvam@coducer.com
+Forgot_email_address = tomgeorge+7@coducer.com
 
 <---- Invite member random email ---->
-Invite_email = panneerselvam1@coducer.com
+Invite_email = tomgeorge+7@coducer.com
 Role_manager = Manager
 Dept_electrical = Electrical
 
 <---- Members page ---->
-members_search_text = panneer
+members_search_text = Askar
+Invite_Department = Electrical
 
-Alt_Phone_number = +919677775555
-Whatsapp_Phone_number = +919677775556
+Alt_Phone_number = +918086328118
+Whatsapp_Phone_number = +918086328119
 IQMA_number = 123456
 Licence_number = KA0134442E2
+location = bengaluru
 
 <---- Billboards page ---->
-BB_NO = BB_NO_01
+
+BB_NO = BB_NO_01865942
+bb_location = Riyadh
+bb_ticket_count = 2
+bb_Type = Kazi
+Scr_Resolution = 1.24	
+Screen_height = 5
+reason = test
+<-------Profile------>
+personalinfo = coducer
+Phone_number = +91 80863 28118
+App_Phone_number = 9341152909
+Iqma = 87654321
+
+<--------Tickets------>
+
+Description = Test
+EditDescription = Tested
+Ticketno = 2ABB0122JUL2024
+assignee =  coducer
+city = Riyadh
+Tckt_title1 = Elipse Screen
+Tckt_title = Power Cable
+Tckt_title1 = Module Change
+Tckt_title1 = Dusty Screen
+Tckt_title1 = Reinstall Screen
+Tckt_title1 = Router Damaged
+Departmnt1 = Cleaning
+Departmnt1 = Monitoring
+Departmnt1 = Spare Parts
+Departmnt1 = Installation
+Departmnt1 = Module Replacement
+Departmnt = Finance
+Departmnt1 = Electrical
+Departmnt1 = Marketingdw
+Assignee = tomgeorge
+Assignee1 = tom
+
+<---------Inventory--------->
+
+suppliername = FABULUX
+invoiceid = 6545
+purchasenumber = 57
+consignmentnumber = 30
+
+projectname = testproject
+QTY = 5
+Invoiceid = 6545
+editedprojectname = Alarabaia
+Materialid = MR586
+requestbyuser = tomgeorge
+cityname = chennai
+Issued_Materialid = MR582
+Billboardid = RTH52
+Usedinboard = ABB03
+RequestedBy = tomgeorge
+Defecttype = Test
+deprtmnt = Cleaning
+billboardid = BB_NO_01865942
+Dt = service
+IDnumber = 234
+D_remarks = Returned stock ID_
+<---------Cleaning--------->
+
+groupname = cleanings3
+billboardsname = AJB01
+assignee = tomgeorge
+descriptiontexts = cleaning created
+Cleaningno = G2522AUG2024
+Editgroup = editedG40
+createdby = khaja
+quantityofstockadjstmnt = 4
+descrptns = Automation Test
+
+<--------Masters----------->
+
+departmentname = Admin
+newdepartmentname =  service
+suppliername = Rahul
+supplierid = 1301
+Contactperson = Nishanth
+emailfield = tomgeorge@coducer.com
+cityfield = sharjah
+countryname = saudi arabia
+Suppliernames = prajwal
+edited_contctpersn = l selvan
+
+<-----------Stock--------------->
+
+Stocknames = PLIER
+Stockcode = 2345
+Materialname = closer
+SupplierName = nishu
+Availablequantity = 325
+QuantityUsed = 10
+Materialname = lcd
+supplier_id = 1301
+minimQty = 20
+maximQty = 1200
+Descriptionstocks = testing
+
+<-------------TicketTitle---------------->
+
+TicketTitlename = Screw loose
+TicketTitleSearch = SCREW LOOSE	
+newTicketTitlename =  ISSUE 
+<--------------Screen Resolution-------------------------->
+ScreenResolutionSearch = 10x12
+Screen_Resolutionname = 10x10
+<--------------Screenpixel-------------------------------->
+ScreenPixelname = D5
+ScreenPixel_Search = ads
+newScreenPixelname = 3
+<-----------------------BillboardType--------------------->
+BillBoardTypename = ZVX
+Drycleaning = 5
+Wetcleaning = 2
+BillBoardtypename = TV
+newBillBoardTypename = RDX
+<-----------------------BOMUnit----------------------------->
+BOMUnitname = Connector
+newBOMUnitname = CASE
+<-----------------------BOM--------------------------------->
+BOMname = RFS
+Boardsize = 1
+countryname = india
+BOMnames = DSA
+edited_BOM = RFS
+<-------------------------------------------------------->

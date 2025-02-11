@@ -20,7 +20,7 @@ public class Signinpage extends Base {
 
     private Logger LOGGER = LogManager.getLogger(Signinpage.class);
     private WebDriver driver;
-    private WebDriverWait wait;
+    private WebDriverWait wait; 
     private Properties prop;
 
     public Signinpage(WebDriver driver) throws Exception {
@@ -40,10 +40,10 @@ public class Signinpage extends Base {
     }
 
     // Page Elements
-    @FindBy(name = "email")
+    @FindBy(id = "email")
     private WebElement emailField;
 
-    @FindBy(name = "password")
+    @FindBy(id = "password")
     private WebElement passwordField;
 
     @FindBy(id = "signin")
@@ -52,7 +52,7 @@ public class Signinpage extends Base {
     @FindBy(xpath = "//small[normalize-space()='Invalid email address or phone number']")
     private WebElement userPasswordError;
 
-    @FindBy(xpath = "//div[@class='avatar pointer']")
+    @FindBy(xpath = "//h6[normalize-space()='Dashboard']")
     private WebElement dashboard;
 
     @FindBy(xpath = "//small[contains(text(),'Password is too short- should be 8 characters')]")
@@ -67,7 +67,7 @@ public class Signinpage extends Base {
     @FindBy(xpath = "//small[normalize-space()='Must Contain One Uppercase, One Lowercase']")
     private WebElement passwordNoUppercaseError;
 
-    @FindBy(xpath = "//div[@class=' position-relative']//div[@class='eyeicon']//*[name()='svg']")
+    @FindBy(xpath = "//span[@class='eyeicon']//*[name()='svg']")
     private WebElement passwordFieldEyeIcon;
 
     @FindBy(xpath = "//small[normalize-space()='E-mail Address or phone number is required']")
@@ -122,7 +122,7 @@ public class Signinpage extends Base {
     }
 
     public void clickSignInButton() {
-        wait.until(ExpectedConditions.visibilityOf(signinButton)).click();
+        wait.until(ExpectedConditions.elementToBeClickable(signinButton)).click();
         LOGGER.info("User clicks on signin button");
     }
 

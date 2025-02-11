@@ -14,7 +14,7 @@ import resources.Base;
 
 public class Signin extends Base {
 
-    private Logger LOGGER = LogManager.getLogger(Signin.class);
+    private Logger LOGGER = LogManager.getLogger(Signin.class); 
     private WebDriver driver;
     private Signinpage signinpage;
 

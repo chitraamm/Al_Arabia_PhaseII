@@ -58,6 +58,7 @@ Then User should get password is too short error message
 Scenario Outline: Login without email address and password
 When Click email field
 And Click password field
+And Clicks on Sign in button
 Then User should get required error message 
 
 

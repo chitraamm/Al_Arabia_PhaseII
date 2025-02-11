@@ -1,0 +1,31 @@
+[INFO ] 2024-11-19 12:59:50.665 [main] Testhooks - Execution Started
+[INFO ] 2024-11-19 12:59:51.491 [main] Testhooks - Browser got launched
+[INFO ] 2024-11-19 12:59:57.895 [main] Testhooks - Navigated to url
+[INFO ] 2024-11-19 12:59:59.092 [main] Signinpage - User enters valid email address
+[INFO ] 2024-11-19 12:59:59.500 [main] Signinpage - User enters valid password
+[INFO ] 2024-11-19 12:59:59.852 [main] Signinpage - User clicked password_field_eyeicon
+[INFO ] 2024-11-19 13:00:00.219 [main] Signinpage - User clicks on signin button
+[INFO ] 2024-11-19 13:00:03.394 [main] Signinpage - Al-Arabia user got signed in successfully
+[INFO ] 2024-11-19 13:00:03.710 [main] Signinpage - Al-Arabia user got signed in successfully
+[INFO ] 2024-11-19 13:00:03.942 [main] Testhooks - Execution Started
+[INFO ] 2024-11-19 13:00:04.563 [main] Testhooks - Browser got launched
+[INFO ] 2024-11-19 13:00:06.239 [main] Testhooks - Navigated to url
+[INFO ] 2024-11-19 13:00:08.241 [main] Signinpage - User clicked password_field_eyeicon
+[INFO ] 2024-11-19 13:00:08.549 [main] Signinpage - User got an invalid username and password error message
+[INFO ] 2024-11-19 13:00:08.916 [main] Testhooks - Execution Started
+[INFO ] 2024-11-19 13:00:09.471 [main] Testhooks - Browser got launched
+[INFO ] 2024-11-19 13:00:10.930 [main] Testhooks - Navigated to url
+[INFO ] 2024-11-19 13:00:12.128 [main] Signinpage - User enters valid email address
+[INFO ] 2024-11-19 13:00:12.906 [main] Signinpage - User clicked password_field_eyeicon
+[INFO ] 2024-11-19 13:00:33.713 [main] Testhooks - Failed scenario screenshot got capturedLogin with valid email address and invalid password
+[INFO ] 2024-11-19 13:00:33.770 [main] Testhooks - Execution Started
+[INFO ] 2024-11-19 13:00:34.305 [main] Testhooks - Browser got launched
+[INFO ] 2024-11-19 13:00:35.778 [main] Testhooks - Navigated to url
+[INFO ] 2024-11-19 13:00:37.377 [main] Signinpage - User enters valid password
+[INFO ] 2024-11-19 13:00:37.709 [main] Signinpage - User clicked password_field_eyeicon
+[INFO ] 2024-11-19 13:00:38.000 [main] Signinpage - User got an invalid username and password error message
+[INFO ] 2024-11-19 13:00:38.332 [main] Testhooks - Execution Started
+[INFO ] 2024-11-19 13:00:38.915 [main] Testhooks - Browser got launched
+[INFO ] 2024-11-19 13:00:40.454 [main] Testhooks - Navigated to url
+[INFO ] 2024-11-19 13:00:41.627 [main] Signinpage - User enters valid email address
+[INFO ] 2024-11-19 13:00:42.415 [main] Signinpage - User clicked password_field_eyeicon

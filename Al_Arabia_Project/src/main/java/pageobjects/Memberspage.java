@@ -24,7 +24,7 @@ public class Memberspage extends Base {
 	private WebDriverWait wait;
 	private Properties prop;
 	private Actions act;
-	private Logger LOGGER = LogManager.getLogger(Memberspage.class);
+	private Logger LOGGER = LogManager.getLogger(Memberspage.class); 
 	private Signinpage signinpage;
 
 	public Memberspage(WebDriver driver) throws Exception {
@@ -43,7 +43,7 @@ public class Memberspage extends Base {
 	private boolean condition = true;
 
 	private void initializeWait() {
-		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 	}
 
 	private String generateUniqueEmail(String baseEmail) {
@@ -63,12 +63,13 @@ public class Memberspage extends Base {
 	@FindBy(xpath = "//span[normalize-space()='Members']")
 	private WebElement membersClick;
 
-	public void membersClick() {
+	public void membersClick() throws Exception{
+		Thread.sleep(5000);
 		wait.until(ExpectedConditions.visibilityOf(membersClick)).click();
 		wait.until(ExpectedConditions.visibilityOf(membersMenu)).isDisplayed();
 		LOGGER.info(">> Admin/User got navigated to members page");
 	}
-
+ 
 	@FindBy(xpath = "//h6[normalize-space()='Dashboard'][position()=1]")
 	private WebElement dashboardText;
 
@@ -86,12 +87,9 @@ public class Memberspage extends Base {
 		LOGGER.info(">> The members dashboard list page got displayed");
 	}
 
-	@FindBy(xpath = "//button[@class=' btn_invite_member  btn btn-primary'][normalize-space()='Invite Member']")
-	private WebElement inviteMemberBtn;
-
-	@FindBy(xpath = "//button[@class=' btn_invite_member  btn btn-primary']")
-	private WebElement inviteMemberBtn1;
-
+	@FindBy(xpath = "(//h6[contains(@class,'m-0 fw-normal')][normalize-space()='Invite Member'])[1]")
+	private WebElement inviteMemberBtn, inviteMemberBtn1;
+	
 	public void inviteMemberBtn() {
 		wait.until(ExpectedConditions.visibilityOf(inviteMemberBtn)).click();
 		LOGGER.info(">> User clicked the invite member button");
@@ -103,7 +101,7 @@ public class Memberspage extends Base {
 	@FindBy(xpath = "//tbody/tr[1]/td[1]")
 	private WebElement membersMenu;
 
-	@FindBy(name = "email")
+	@FindBy(id = "email")
 	private WebElement inviteEmailPhoneNumberField;
 
 	public void inviteEmailPhoneNumberField() {
@@ -124,19 +122,18 @@ public class Memberspage extends Base {
 
 	@FindBy(id = "react-select-6-listbox")
 	private WebElement inviteSelectRoleSelect;
+	
+	@FindBy(id = "department")
+	private WebElement inviteSelectDept;
 
 	public void inviteSelectDept() {
+		String dept = generateUniqueEmail(prop.getProperty("Invite_Department"));
 		wait.until(ExpectedConditions.visibilityOf(inviteSelectDept)).click();
-		wait.until(ExpectedConditions.visibilityOf(inviteSelectDeptSelect)).click();
+		wait.until(ExpectedConditions.visibilityOf(inviteSelectDept)).sendKeys(dept + Keys.ENTER);
 		LOGGER.info(">> User selected the role:" + inviteSelectDept.getText());
 	}
 
-	@FindBy(xpath = "//body[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/form[1]/div[3]/div[1]/div[1]")
-	private WebElement inviteSelectDept;
-
-	@FindBy(id = "react-select-8-listbox")
-	private WebElement inviteSelectDeptSelect;
-
+	
 	@FindBy(xpath = "//form[contains(@class,'floating was-validated')]//button[contains(@type,'submit')]")
 	private WebElement inviteSendInvite;
 
@@ -166,7 +163,7 @@ public class Memberspage extends Base {
 	}
 
 	@FindBy(xpath = "//h6[contains(.,'Recently Updated')][.='Recently Updated']")
-	private WebElement members_sort_recentluupdated;
+	private WebElement members_sort_recentlyupdated;
 
 	@FindBy(xpath = "//h6[contains(.,'Name - A to Z')][.='Name - A to Z']")
 	private WebElement members_sort_A_Z;
@@ -177,13 +174,12 @@ public class Memberspage extends Base {
 	@FindBy(xpath = "//h6[contains(.,'Recently Added')][.='Recently Added']")
 	private WebElement members_sort_Recently_Added;
 
-	@FindBy(xpath = "//div[@class='d-flex sortbox']")
+	@FindBy(xpath = "(//div[@class='d-flex sortbox '])[1]")
 	private WebElement members_sort;
 
-	public void members_sort() {
-
+	public void members_sort() {	
 		wait.until(ExpectedConditions.visibilityOf(members_sort)).click();
-		wait.until(ExpectedConditions.visibilityOf(members_sort_recentluupdated)).click();
+		wait.until(ExpectedConditions.visibilityOf(members_sort_recentlyupdated)).click();
 		System.out.println(">> User clicked recently updated in sort");
 	}
 
@@ -223,7 +219,7 @@ public class Memberspage extends Base {
 		System.out.println(">> User got sorted the members list");
 	}
 
-	@FindBy(xpath = "//h6[contains(.,'Active')][.='Active']")
+	@FindBy(xpath = "(//span[contains(text(),'Active')])[1]")
 	private WebElement members_filter_sts_active;
 
 	public void members_filter_sts_active() {
@@ -240,7 +236,7 @@ public class Memberspage extends Base {
 		System.out.println(">> User clicked active status in filter");
 	}
 
-	@FindBy(xpath = "//h6[contains(.,'Blocked')][.='Blocked']")
+	@FindBy(xpath = "(//span[contains(text(),'Blocked')])[1]")
 	private WebElement members_filter_sts_blocked;
 
 	public void members_filter_sts_blocked() {
@@ -251,7 +247,7 @@ public class Memberspage extends Base {
 		System.out.println(">> User clicked blocked status in filter");
 	}
 
-	@FindBy(xpath = "//h6[contains(.,'Expired')][.='Expired']")
+	@FindBy(xpath = "(//span[contains(text(),'Expired')])[1]")
 	private WebElement members_filter_sts_expired;
 
 	public void members_filter_sts_expired() {
@@ -262,7 +258,7 @@ public class Memberspage extends Base {
 		System.out.println(">> User clicked expired status in filter");
 	}
 
-	@FindBy(xpath = "//h6[contains(.,'Pending')]")
+	@FindBy(xpath = "(//span[contains(text(),'Pending')])[1]")
 	private WebElement members_filter_sts_pending;
 
 	public void members_filter_sts_pending() {
@@ -273,10 +269,10 @@ public class Memberspage extends Base {
 		System.out.println(">> User clicked pending status in filter");
 	}
 
-	@FindBy(xpath = "//div[@class='d-flex filterbox']")
+	@FindBy(xpath = "(//h6[contains(@class,'mb-0 by fw-normal')][normalize-space()='Filter By'])[1]")
 	private WebElement members_filter;
 
-	@FindBy(xpath = "//button[contains(.,'Apply')]")
+	@FindBy(xpath = "(//h6[contains(@class,'m-0 fw-normal')][normalize-space()='Apply'])[1]")
 	private WebElement members_filter_apply_btn;
 
 	@FindBy(xpath = "//div[contains(text(),'No Member Found')]")
@@ -321,8 +317,28 @@ public class Memberspage extends Base {
 			System.out.println(">> User got no members found message");
 		}
 	}
+	
+	@FindBy(xpath = "(//span[contains(text(),'PENDING')])[1]")
+	private WebElement members_filter_pending_list_display;
 
-	@FindBy(xpath = "//h6[contains(.,'Admin')]")
+	public void members_filter_pending_list_display() {
+
+		try {
+			if (condition) {
+				wait.until(ExpectedConditions.visibilityOf(members_filter_pending_list_display));
+				AssertJUnit.assertTrue(members_filter_pending_list_display.isDisplayed());
+				System.out.println(">> User got filtered pending members list");
+			} else {
+				wait.until(ExpectedConditions.visibilityOf(members_no_members_found));
+				System.out.println(">> User got no members found message");
+			}
+		} catch (Exception e) {
+			wait.until(ExpectedConditions.visibilityOf(members_no_members_found));
+			System.out.println(">> User got no members found message");
+		}
+	}
+
+	@FindBy(xpath = "(//span[contains(text(),'Admin')])[1]")
 	private WebElement members_filter_role_admin;
 
 	public void members_filter_role_admin() {
@@ -353,7 +369,7 @@ public class Memberspage extends Base {
 		}
 	}
 
-	@FindBy(xpath = "//h6[contains(.,'Manager')]")
+	@FindBy(xpath = "(//span[contains(text(),'Manager')])[1]")
 	private WebElement members_filter_role_manager;
 
 	public void members_filter_role_manager() {
@@ -384,7 +400,7 @@ public class Memberspage extends Base {
 		}
 	}
 
-	@FindBy(xpath = "//h6[contains(.,'Supervisor')]")
+	@FindBy(xpath = "(//span[contains(text(),'Supervisor')])[1]")
 	private WebElement members_filter_role_Supervisor;
 
 	public void members_filter_role_Supervisor() {
@@ -422,7 +438,7 @@ public class Memberspage extends Base {
 		}
 	}
 
-	@FindBy(xpath = "//h6[contains(.,'Technician')]")
+	@FindBy(xpath = "(//span[contains(text(),'Technician')])[1]")
 	private WebElement members_filter_role_technician;
 
 	public void members_filter_role_technician() {
@@ -514,7 +530,7 @@ public class Memberspage extends Base {
 		System.out.println(">> User entered the responsible area in filter");
 	}
 
-	@FindBy(xpath = "//h6[normalize-space()='Riyadh Saudi Arabia']")
+	@FindBy(xpath = "(//td[contains(@class,'')])[5]")
 	private WebElement members_filter_responsible_area_list_display;
 
 	public void members_filter_responsible_area_list_display() {
@@ -602,12 +618,13 @@ public class Memberspage extends Base {
 	private WebElement members_action_icon_edit_click;
 
 	public void members_action_icon_click() throws Exception {
-
+        Thread.sleep(3000); 
+        wait.until(ExpectedConditions.visibilityOf(allMembersCount)).isDisplayed();
 		wait.until(ExpectedConditions.visibilityOf(membersMenu_click)).click();
 		wait.until(ExpectedConditions.visibilityOf(members_action_icon_edit_click)).click();
 	}
 
-	@FindBy(name = "name")
+	@FindBy(id = "name")
 	private WebElement members_profile_personal_name;
 
 	public void members_profile_personal_name() {
@@ -619,31 +636,29 @@ public class Memberspage extends Base {
 	@FindBy(xpath = "//input[@value='+91 96777 75555']")
 	private WebElement members_personalprofile_altNO_text_enter;
 
-	@FindBy(xpath = "//input[contains(@error,'alternate number required')]")
+	@FindBy(name = "alternate_number")
 	private WebElement members_personalprofile_altNO_text_enter1;
 
 	@FindBy(xpath = "//input[@value='+91 96777 75556']")
 	private WebElement members_personalprofile_whatappNo_text_enter;
 
-	@FindBy(xpath = "//input[contains(@error,'whatsapp number required')]")
+	@FindBy(name = "whatsapp_number")
 	private WebElement members_personalprofile_whatappNo_text_enter1;
 
 	@FindBy(xpath = "//input[@class='select-wrapper pac-target-input']")
 	private WebElement members_personalprofile_location_text_enter;
 
-	@FindBy(name = "iqama_no")
+	@FindBy(id = "iqama_no")
 	private WebElement members_personalprofile_IQMA_No_text_enter;
 
-	@FindBy(name = "biography")
+	@FindBy(id = "biography")
 	private WebElement members_personalprofile_Bio_text_enter;
 
-	@FindBy(xpath = "//button[@type='submit']")
-	private WebElement members_personalprofile_update_btn;
-
-	@FindBy(xpath = "//h6[normalize-space()='Yes, update.']")
-	private WebElement members_personalprofile_update_btn_Yes;
-
+	@FindBy(xpath = "//h6[normalize-space()='Update Company Profile']")
+	private WebElement profile_update_btn;
+	
 	public void members_personalprofile_text_enter() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(members_profile_personal_name));
 		wait.until(ExpectedConditions.visibilityOf(members_profile_personal_name)).click();
 		members_profile_personal_name.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
 		wait.until(ExpectedConditions.visibilityOf(members_profile_personal_name)).sendKeys("Panneer");
@@ -667,10 +682,24 @@ public class Memberspage extends Base {
 		members_personalprofile_location_text_enter.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
 		wait.until(ExpectedConditions.visibilityOf(members_personalprofile_location_text_enter))
 				.sendKeys("Saudi Arabia" + Keys.ARROW_DOWN + Keys.ENTER);
-		wait.until(ExpectedConditions.visibilityOf(members_personalprofile_update_btn_Yes)).click();
+		Thread.sleep(2000);
+	    act.moveToElement(profile_update_btn).click().perform();
 	}
 
-	@FindBy(xpath = "//div[@class='toastpop position-relative']")
+	@FindBy(xpath = "//h4[@class=' fw-semibold text-center text-black']")
+	private WebElement confirmpopup;
+
+	@FindBy(xpath = "//*[@id=\"root\"]/div[2]/div[1]/div[2]/div/div/div[2]/h6[2]")
+	private WebElement members_personalprofile_update_btn_Yes;
+	
+   public void companyprofile_update_confirmyes() throws Exception {
+		Thread.sleep(2000);
+		wait.until(ExpectedConditions.visibilityOf(confirmpopup)).isDisplayed();
+        act.moveToElement(members_personalprofile_update_btn_Yes).click().perform();
+	   
+   }
+	
+	@FindBy(xpath = "//div[contains(@class, 'toastpop') and contains(@class, 'position-relative')]")
 	private WebElement members_profile_Success_display, members_profile_Success_display1;
 
 	public String members_profile_success_display() {
@@ -679,7 +708,6 @@ public class Memberspage extends Base {
 	}
 
 	public String members_profile_success_display1() throws Exception {
-		Thread.sleep(3000);
 		WebElement successMessageElement = wait
 				.until(ExpectedConditions.visibilityOf(members_profile_Success_display1));
 		return successMessageElement.getText().trim();
@@ -692,7 +720,7 @@ public class Memberspage extends Base {
 		System.out.println(">> User or Admin erased the member name");
 	}
 
-	@FindBy(xpath = "//div[@class='invalid-feedback']")
+	@FindBy(xpath = "//small[@class='form-text text-danger form_error']")
 	private WebElement members_profilepage_error;
 
 	public void members_profilepage_error() {
@@ -704,7 +732,7 @@ public class Memberspage extends Base {
 	@FindBy(xpath = "//span[normalize-space()='Company Profile']")
 	private WebElement members_companyprofile;
 
-	@FindBy(name = "work_space_id")
+	@FindBy(id = "work_space_id")
 	private WebElement members_companyprofile_workspaceID;
 
 	@FindBy(name = "date_of_joining")
@@ -728,7 +756,8 @@ public class Memberspage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(members_companyprofile_responsible_area))
 				.sendKeys("Saudi Arabia" + Keys.ARROW_DOWN + Keys.ENTER);
 
-		wait.until(ExpectedConditions.visibilityOf(members_personalprofile_update_btn_Yes)).click();
+		Thread.sleep(2000);
+	    act.moveToElement(profile_update_btn).click().perform();
 	}
 
 	public void members_profile_personal_workspace_ID_delete() {
@@ -754,13 +783,13 @@ public class Memberspage extends Base {
 	@FindBy(id = "react-select-6-listbox")
 	private WebElement members_vehicleinfo_vehicletype_select;
 
-	@FindBy(name = "number")
+	@FindBy(xpath = "//input[@id='number']")
 	private WebElement members_vehicleinfo_licence;
 
 	@FindBy(name = "model")
 	private WebElement members_vehicleinfo_model;
 
-	public void members_vehicleinfo_profile() {
+	public void members_vehicleinfo_profile() throws Exception {
 		wait.until(ExpectedConditions.visibilityOf(members_vehicleinfoprofile)).click();
 		wait.until(ExpectedConditions.visibilityOf(members_vehicleinfo_vehicletype)).click();
 		wait.until(ExpectedConditions.visibilityOf(members_vehicleinfo_vehicletype_select)).click();
@@ -773,6 +802,7 @@ public class Memberspage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(members_vehicleinfo_model)).sendKeys("2024" + Keys.ENTER);
 
 		wait.until(ExpectedConditions.visibilityOf(members_personalprofile_update_btn_Yes)).click();
+		
 	}
 
 	public void members_profile_vehicleinfo_licenceNo_delete() {
@@ -792,10 +822,10 @@ public class Memberspage extends Base {
 	@FindBy(xpath = "//span[normalize-space()='Reset Password']")
 	private WebElement members_resetpasswordprofile;
 
-	@FindBy(name = "password")
+	@FindBy(id = "password")
 	private WebElement members_reset_newpw;
 
-	@FindBy(name = "password_confirmation")
+	@FindBy(id = "password_confirmation")
 	private WebElement members_reset_confirmpw;
 
 	@FindBy(xpath = "//h6[normalize-space()='Yes, update it.']")
@@ -922,7 +952,7 @@ public class Memberspage extends Base {
 		System.out.println(">> User or Admin got active list successfully");
 	}
 
-	@FindBy(xpath = "//div[@class='avatar pointer']")
+	@FindBy(xpath = "//div[contains(@class,'pointer sb-avatar__text')]")
 	private WebElement members_avatar_icon;
 
 	public void members_avatar_icon() throws Exception {
@@ -938,17 +968,17 @@ public class Memberspage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(members_avatar_icon_roles)).click();
 	}
 
-	@FindBy(xpath = "//body[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[1]/li[1]/input[1]")
+	@FindBy(xpath = "(//input[contains(@value,'[object Object]')])[11]")
 	private WebElement members_roles_user_supervisor_read;
 
 	public void members_roles_user_supervisor_read() throws Exception {
 		wait.until(ExpectedConditions.visibilityOf(members_roles_user_supervisor_read)).isDisplayed();
 	}
 
-	@FindBy(xpath = "//a[normalize-space()='Logout']")
+	@FindBy(xpath = "(//a[normalize-space()='Logout'])[1]")
 	private WebElement Logout;
 
-	@FindBy(xpath = "//h6[contains(text(),'Yes,')]")
+	@FindBy(xpath = "(//h6[contains(text(),'Yes,')])[1]")
 	private WebElement Logout_yes;
 
 	public void Logout() throws Exception {
@@ -962,14 +992,13 @@ public class Memberspage extends Base {
 
 	public void Members_supervisor_viewdetails_btn() throws Exception {
 		wait.until(ExpectedConditions.visibilityOf(Members_supervisor_viewdetails_btn)).click();
-		wait.until(ExpectedConditions.visibilityOf(members_action_icon_edit_click)).click();
 	}
 
 	public void Members_disabled_page() {
 		members_profile_personal_name();
 	}
 
-	@FindBy(xpath = "//body[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[2]/li[1]/input[1]")
+	@FindBy(xpath = "(//input[contains(@value,'[object Object]')])[12]")
 	private WebElement members_roles_user_supervisor_write;
 
 	public void members_roles_user_supervisor_write() throws Exception {
@@ -980,6 +1009,7 @@ public class Memberspage extends Base {
 	}
 
 	public void members_supervisor_inviteBtn() throws Exception {
+		Thread.sleep(4000);
 		wait.until(ExpectedConditions.visibilityOf(inviteMemberBtn1)).isDisplayed();
 		System.out.println(">> Invite button get displayed successfully");
 	}
@@ -997,7 +1027,7 @@ public class Memberspage extends Base {
 		System.out.println(">> Supervisor get the write access successfully");
 	}
 	
-	@FindBy(xpath = "//body[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[3]/li[1]/input[1]")
+	@FindBy(xpath = "(//input[contains(@value,'[object Object]')])[13]")
 	private WebElement members_roles_user_supervisor_update;
 
 	public void members_roles_user_supervisor_update() throws Exception {
@@ -1031,7 +1061,7 @@ public class Memberspage extends Base {
 		System.out.println(">> Supervisor get the update access successfully");
 	}
 	
-	@FindBy(xpath = "//body[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/table[1]/tbody[1]/tr[1]/td[3]/ul[4]/li[1]/input[1]")
+	@FindBy(xpath = "(//input[contains(@value,'[object Object]')])[14]")
 	private WebElement members_roles_user_supervisor_blockunblock;
 
 	public void members_roles_user_supervisor_blockunblock() throws Exception {
@@ -1059,15 +1089,5 @@ public class Memberspage extends Base {
 		Logout();
 		System.out.println(">> Supervisor got the block unblock access successfully");
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 
 }

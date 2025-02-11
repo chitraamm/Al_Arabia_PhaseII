@@ -17,8 +17,6 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.AssertJUnit;
 
-import io.cucumber.java.en.And;
-import io.cucumber.java.en.Then;
 import resources.Base;
 
 public class Cleaningpage extends Base {

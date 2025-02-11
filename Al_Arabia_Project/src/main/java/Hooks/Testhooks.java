@@ -1,7 +1,5 @@
 package Hooks;
 
-import java.awt.Robot;
-import java.awt.event.KeyEvent;
 import java.time.Duration;
 
 import org.apache.logging.log4j.LogManager;
@@ -11,16 +9,15 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import io.cucumber.java.After;
 import io.cucumber.java.AfterStep;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import pageobjects.Billboardspage;
 import pageobjects.Forgotpasswordpage;
 import pageobjects.Inventorypage;
-import pageobjects.Signinpage;
 import pageobjects.Memberspage;
 import pageobjects.Profilepage;
+import pageobjects.Signinpage;
 import resources.Base;
 public class Testhooks extends Base {
 	public WebDriver driver;

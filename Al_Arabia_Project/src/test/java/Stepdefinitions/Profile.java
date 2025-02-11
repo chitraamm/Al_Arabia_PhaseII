@@ -1,7 +1,6 @@
 package Stepdefinitions;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -9,7 +8,6 @@ import org.openqa.selenium.WebDriver;
 
 import Hooks.Testhooks;
 import io.cucumber.java.en.And;
-import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pageobjects.Profilepage;
@@ -23,26 +21,12 @@ public class Profile extends Base {
 	private Signinpage signinpage;
 	private Profilepage profilepage;
 
-<<<<<<< HEAD
-    public Profile(Testhooks testhooks) throws Exception {
-        this.driver = testhooks.getDriver();
-        this.signinpage = new Signinpage(driver);
-        this.profilepage = new Profilepage(driver);
-        LOGGER = LogManager.getLogger(Profile.class.getName());
-    }
-    
-    @When("User able to click on profile")
-    public void user_able_to_click_on_profile() {
-      profilepage.Profile();
-    }
-=======
 	public Profile(Testhooks testhooks) throws Exception {
 		this.driver = testhooks.getDriver();
 		this.signinpage = new Signinpage(driver);
 		this.profilepage = new Profilepage(driver);
 		LOGGER = LogManager.getLogger(Profile.class.getName());
 	}
->>>>>>> refs/heads/dev
 
 	@When("User able to click on profile")
 	public void user_able_to_click_on_profile() {

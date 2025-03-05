@@ -20,7 +20,7 @@ public class Profile extends Base {
 	private WebDriver driver;
 	private Signinpage signinpage;
 	private Profilepage profilepage;
-
+    
 	public Profile(Testhooks testhooks) throws Exception {
 		this.driver = testhooks.getDriver();
 		this.signinpage = new Signinpage(driver);

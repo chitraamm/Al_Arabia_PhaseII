@@ -28,7 +28,6 @@ public class Billboardspage extends Base {
 	private Actions act;
 	private Logger LOGGER = LogManager.getLogger(Billboardspage.class);
 
-
 	public Billboardspage(WebDriver driver) throws Exception { 
 		this.driver = driver;
 		prop = new Properties();

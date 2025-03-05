@@ -8,55 +8,58 @@ import java.util.Properties;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.devtools.DevTools;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import utils.NetworkInterceptor;
 
 public class Base {
-	public WebDriver driver;
+    public WebDriver driver;
+    public Properties prop;
+    public DevTools devTools;
+    protected NetworkInterceptor networkInterceptor;
 
-	public Properties prop;
+    public WebDriver initializeDriver() throws IOException {
+        prop = new Properties();
+        String propPath = System.getProperty("user.dir") + "/src/main/java/resources/dataproperties";
+        FileInputStream fis = new FileInputStream(propPath);
+        prop.load(fis);
 
-	public WebDriver initializeDriver() throws IOException {
-		prop = new Properties();
- 
-		String propPath = System.getProperty("user.dir")
-				+ "/src/main/java/resources/dataproperties";
+        String browserName = prop.getProperty("browser");
 
-		FileInputStream fis = new FileInputStream(propPath);
+        if (browserName.equalsIgnoreCase("chrome")) {
+            WebDriverManager.chromedriver().setup();
+            ChromeOptions options = new ChromeOptions();
+            options.addArguments("--remote-allow-origins=*");
+            driver = new ChromeDriver(options);
 
-		prop.load(fis);
-        System.setProperty("webdriver.chrome.driver", "path/to/chromedriver");
-		String browserName = prop.getProperty("browser");
+//            devTools = ((ChromeDriver) driver).getDevTools();
+//            devTools.createSession();
+//            networkInterceptor = new NetworkInterceptor(devTools);
+        } 
+        else if (browserName.equalsIgnoreCase("firefox")) {
+            WebDriverManager.firefoxdriver().setup();
+            FirefoxOptions options = new FirefoxOptions();
+            options.addArguments("--remote-allow-origins=*");
+            driver = new FirefoxDriver(options);
+        } 
+        else if (browserName.equalsIgnoreCase("edge")) {
+            WebDriverManager.edgedriver().setup();
+            EdgeOptions options = new EdgeOptions();
+            options.addArguments("--remote-allow-origins=*");
+            driver = new EdgeDriver(options);
+        } 
+        else {
+            throw new IllegalArgumentException("Browser name not recognized: " + browserName);
+        }
 
-		if (browserName.equalsIgnoreCase("chrome")) {
-			System.setProperty("webdriver.chrome.driver",
-					System.getProperty("user.dir") + "/Drivers/chromedriver");
-			ChromeOptions options = new ChromeOptions();
-			options.addArguments("--remote-allow-origins=*");
-
-			driver = new ChromeDriver(options);
-		} else if (browserName.equalsIgnoreCase("firefox")) {
-			System.setProperty("webdriver.gecko.driver",
-					System.getProperty("user.dir") + "/Drivers/geckodriver");
-
-			FirefoxOptions firefoxOptions = new FirefoxOptions();
-			firefoxOptions.addArguments("--remote-allow-origins=*");
-			WebDriverManager.firefoxdriver().setup();
-			driver = new FirefoxDriver(firefoxOptions);
-		} else if (browserName.equalsIgnoreCase("edge")) {
-			System.setProperty("webdriver.edge.driver",
-					System.getProperty("user.dir") + "/Drivers/msedgedriver");
-			EdgeOptions edgeOptions = new EdgeOptions();
-			edgeOptions.addArguments("--remote-allow-origins=*");
-			driver = new EdgeDriver(edgeOptions);
-		}
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		driver.manage().deleteAllCookies();
-		return driver;
-	}
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        driver.manage().deleteAllCookies();
+        return driver;
+    }
 }

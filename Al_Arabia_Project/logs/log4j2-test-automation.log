@@ -1,0 +1,10 @@
+[2025-03-05 09:30:15.917] [INFO ] [main] Testhooks - Execution Started
+[2025-03-05 09:30:16.943] [INFO ] [main] Testhooks - Browser launched successfully
+[2025-03-05 09:30:18.654] [INFO ] [main] Testhooks - Navigated to URL
+[2025-03-05 09:30:18.757] [INFO ] [main] Testhooks - Page is zoomed out
+[2025-03-05 09:30:19.888] [INFO ] [main] Signinpage - User enters valid email address
+[2025-03-05 09:30:20.139] [INFO ] [main] Signinpage - User enters valid password
+[2025-03-05 09:30:20.368] [INFO ] [main] Signinpage - User clicked password_field_eyeicon
+[2025-03-05 09:30:20.622] [INFO ] [main] Signinpage - User clicks on signin button
+[2025-03-05 09:30:24.571] [INFO ] [main] Signinpage - Al-Arabia user got signed in successfully
+[2025-03-05 09:30:24.726] [INFO ] [main] Signinpage - Al-Arabia user got signed in successfully

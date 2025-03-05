@@ -28,7 +28,12 @@ public class Billboardspage extends Base {
 	private Actions act;
 	private Logger LOGGER = LogManager.getLogger(Billboardspage.class);
 
+<<<<<<< HEAD
 	public Billboardspage(WebDriver driver) throws Exception {
+=======
+
+	public Billboardspage(WebDriver driver) throws Exception { 
+>>>>>>> branch 'master' of git@github.com:chitraamm/Al_Arabia_PhaseII.git
 		this.driver = driver;
 		prop = new Properties();
 		act = new Actions(driver);
@@ -39,8 +44,14 @@ public class Billboardspage extends Base {
 		initializeWait();
 		LOGGER = LogManager.getLogger(Billboardspage.class.getName());
 	}
+<<<<<<< HEAD
 
 private boolean condition = true;
+=======
+	
+	private boolean condition = true;
+
+>>>>>>> branch 'master' of git@github.com:chitraamm/Al_Arabia_PhaseII.git
 	private void initializeWait() {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	}

@@ -29,7 +29,6 @@ public class Inventorypage extends Base {
 	private Properties prop;
 	private Actions act;
 	private Logger LOGGER = LogManager.getLogger(Inventorypage.class);
-	//private Signinpage signinpage;
 
 
 	public Inventorypage(WebDriver driver) throws Exception { 
@@ -1152,21 +1151,7 @@ public class Inventorypage extends Base {
 	    wait.until(ExpectedConditions.visibilityOf(defecttype)).isDisplayed();
 	    Thread.sleep(2000);
 	    act.moveToElement(reasonsfor_return).click().sendKeys(""+Keys.ENTER).perform();
-			
-			
-//		
-//        act.moveToElement(save_stock).click().perform();
-//		
-//		wait.until(ExpectedConditions.visibilityOf(stock_code)).isDisplayed();
-//		wait.until(ExpectedConditions.visibilityOf(Return_save)).click();
-//        
-//        Thread.sleep(2000);
-//		wait.until(ExpectedConditions.visibilityOf(Returnby)).isDisplayed();
-//        String Cityname = prop.getProperty("cityname");
-//        Thread.sleep(3000);
-//
-//        wait.until(ExpectedConditions.visibilityOf(city)).sendKeys(Cityname+Keys.DOWN);
-//        
+			      
 	
 	}
 	@FindBy(id = "Add Request")

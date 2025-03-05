@@ -28,12 +28,8 @@ public class Billboardspage extends Base {
 	private Actions act;
 	private Logger LOGGER = LogManager.getLogger(Billboardspage.class);
 
-<<<<<<< HEAD
-	public Billboardspage(WebDriver driver) throws Exception {
-=======
 
 	public Billboardspage(WebDriver driver) throws Exception { 
->>>>>>> branch 'master' of git@github.com:chitraamm/Al_Arabia_PhaseII.git
 		this.driver = driver;
 		prop = new Properties();
 		act = new Actions(driver);
@@ -44,18 +40,10 @@ public class Billboardspage extends Base {
 		initializeWait();
 		LOGGER = LogManager.getLogger(Billboardspage.class.getName());
 	}
-<<<<<<< HEAD
-
-private boolean condition = true;
-=======
-	
 	private boolean condition = true;
-
->>>>>>> branch 'master' of git@github.com:chitraamm/Al_Arabia_PhaseII.git
 	private void initializeWait() {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	}
-	
 	private static String generateUniqueboardNumber(String baseboardNumber) {
 		Random rand = new Random();
 		return baseboardNumber + rand.nextInt(1000);
@@ -174,7 +162,7 @@ private boolean condition = true;
 	}
 	@FindBy(xpath = "//div[@class='d-flex justify-content-between py-5']")
 	private WebElement create_BB_container;
-	
+
 	@FindBy(id = "Create BillBoard")
 	private WebElement Newbillboard_create_BB_btn;
 
@@ -309,7 +297,7 @@ private boolean condition = true;
 
 	@FindBy(xpath = "//div[contains(text(),'No BillBoard Found')]")
 	private WebElement billboard_no_BB_found;
-	
+
 	@FindBy(xpath = "(//span[@id='REQUEST'])[1]")
 	private WebElement Requeststatus;
 
@@ -322,7 +310,7 @@ private boolean condition = true;
 
 	@FindBy(id = "react-select-3-input")
 	private WebElement selectlocationdropdown;
-	
+
 
 	public void select_bb_location() {
 		wait.until(ExpectedConditions.visibilityOf(Billboard_filter)).click();
@@ -333,7 +321,7 @@ private boolean condition = true;
 		act.moveToElement(Billboard_filter_apply_btn).click().perform();
 		System.out.println(">> User selected the bb location in filter" + bb_location);
 	}
-	
+
 	public void select_bb_location32() {
 		String bb_location = prop.getProperty("bb_location");
 		wait.until(ExpectedConditions.visibilityOf(selectlocationdropdown)).click();
@@ -661,7 +649,7 @@ private boolean condition = true;
     private WebElement screenheight;
 
     public void BB_edit_screen_height() {
-    	
+
 		String Screen_height = prop.getProperty("Screen_height");
 		wait.until(ExpectedConditions.visibilityOf(Newbillboard_boardno)).isDisplayed();
 		act.moveToElement(screenheight).click().sendKeys(""+Keys.DELETE+Screen_height).perform();
@@ -671,7 +659,6 @@ private boolean condition = true;
  	@FindBy(xpath = "//h6[normalize-space()='Update BillBoard']")
  	private WebElement BB_update_button;
 
- 	
  	public void BB_update_clicked() throws Exception {
 
  		act.moveToElement(BB_update_button).click().perform();
@@ -688,7 +675,7 @@ private boolean condition = true;
 		@FindBy(xpath = "(//span[@class='edit_link_routes false'])[1]")
 		private WebElement BB_update_BOM_click;
 	public void BB_editpage_BOM() throws Exception {
-		
+
 		wait.until(ExpectedConditions.visibilityOf(Newbillboard_boardno)).isDisplayed();
 		act.moveToElement(BB_update_BOM_click).click().perform();
 	}
@@ -704,15 +691,14 @@ private boolean condition = true;
 			@FindBy(xpath = "(//a[normalize-space()='Download PDF'])[1]")
 			private WebElement BB_BOM_Download;
 		public void BB_BOMDetails_Download_PDF() throws Exception {
-			
+
 			wait.until(ExpectedConditions.visibilityOf(BB_BOMTab_ALLstocks_displayed)).isDisplayed();
 			act.moveToElement(BB_BOM_Download).click().perform();
 		}
-		
 		@FindBy(xpath = "//span[@class='mx-3 pointer']//*[name()='svg']")
 		private WebElement BB_QR_click;
 	public void BB_editpage_BOMTab_QRcode() throws Exception {
-		
+
 		wait.until(ExpectedConditions.visibilityOf(Newbillboard_boardno)).isDisplayed();
 		act.moveToElement(BB_QR_click).click().perform();
 	}
@@ -729,7 +715,7 @@ private boolean condition = true;
 	@FindBy(xpath = "//span[normalize-space()='Mark it as non-operational']")
 	private WebElement BB_Mark_it_as_non_opernl_buttn_click;
 public void BB_Mark_it_as_nonoperational() throws Exception {
-	
+
 	wait.until(ExpectedConditions.visibilityOf(Newbillboard_boardno)).isDisplayed();
 	act.moveToElement(BB_Mark_it_as_non_opernl_buttn_click).click().perform();
 }
@@ -746,7 +732,7 @@ private WebElement Reason_enter_for_Mark_Non_operntl;
 @FindBy(xpath = "//h4[normalize-space()='Reason']")
 private WebElement BB_reason_text;
 public void BB_non_operatnl_reason_added() {
-	
+
 	String reason = prop.getProperty("reason");
 	wait.until(ExpectedConditions.visibilityOf(BB_reason_text));
 
@@ -888,14 +874,14 @@ public void Mandatory_fields_newticket() throws Exception{
 //	wait.until(ExpectedConditions.visibilityOf(BB_no_select));
 
 	//act.moveToElement(BB_no_select).click().sendKeys("" + Keys.ENTER).perform();
-	
+
 	String Departmnt = prop.getProperty("Departmnt");
 	wait.until(ExpectedConditions.visibilityOf(Department_select)).sendKeys(Departmnt);
 	Thread.sleep(1000);
 	act.moveToElement(Department_select).click().sendKeys(""+Keys.ENTER+Keys.ARROW_RIGHT).perform();
-	
+
 	act.moveToElement(Priority_select).click().sendKeys("" + Keys.ENTER).perform();
-		
+
 	String Tckt_title = prop.getProperty("Tckt_title");
 	wait.until(ExpectedConditions.visibilityOf(Ticket_title_select)).sendKeys(Tckt_title);
 	Thread.sleep(2000);
@@ -906,7 +892,7 @@ public void Mandatory_fields_newticket() throws Exception{
 	wait.until(ExpectedConditions.visibilityOf(Assignee_select)).sendKeys(Assignee);
 	Thread.sleep(5000);
 	act.moveToElement(Assignee_select).click().sendKeys(""+Keys.ENTER+Keys.ARROW_RIGHT).perform();
-	
+
 	act.moveToElement(Start_date).click().sendKeys("" + Keys.ENTER).perform();
 	wait.until(ExpectedConditions.visibilityOf(Start_date));
 

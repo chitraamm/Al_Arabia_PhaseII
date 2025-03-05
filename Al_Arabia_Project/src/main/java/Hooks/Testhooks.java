@@ -46,15 +46,15 @@ public class Testhooks extends Base {
         driver = initializeDriver();
         LOGGER.info("Browser launched successfully");
 
-        if (driver instanceof ChromeDriver) {
-            devTools = ((ChromeDriver) driver).getDevTools();
-            devTools.createSession();
-            
-            networkInterceptor = new NetworkInterceptor(devTools);
-            networkInterceptor.startIntercepting();
-        } else {
-            throw new IllegalStateException("WebDriver is not an instance of ChromeDriver");
-        }
+//        if (driver instanceof ChromeDriver) {
+//            devTools = ((ChromeDriver) driver).getDevTools();
+//            devTools.createSession();
+//            
+//            networkInterceptor = new NetworkInterceptor(devTools);
+//            networkInterceptor.startIntercepting();
+//        } else {
+//            throw new IllegalStateException("WebDriver is not an instance of ChromeDriver");
+//        }
 
         signinpage = new Signinpage(driver);
         memberspage = new Memberspage(driver);
@@ -82,12 +82,14 @@ public class Testhooks extends Base {
 		System.out.println("++ Browser got launched and maximized ++");
 		System.out.println("++ Application URL got opened in the browser ++");
 		Thread.sleep(1000);
-		String bearerToken = networkInterceptor.getBearerToken();
-        if (bearerToken != null) {
-            LOGGER.info("Captured Bearer Token: " + bearerToken);
-        } else {
-            LOGGER.warn("Bearer Token not found!");
-        }
+		
+		
+//		String bearerToken = networkInterceptor.getBearerToken();
+//        if (bearerToken != null) {
+//            LOGGER.info("Captured Bearer Token: " + bearerToken);
+//        } else {
+//            LOGGER.warn("Bearer Token not found!");
+//        }
     }
 //	@After
 //	public void tearDown(Scenario scenario) throws Exception {

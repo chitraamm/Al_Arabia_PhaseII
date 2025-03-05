@@ -37,9 +37,9 @@ public class Base {
             options.addArguments("--remote-allow-origins=*");
             driver = new ChromeDriver(options);
 
-            devTools = ((ChromeDriver) driver).getDevTools();
-            devTools.createSession();
-            networkInterceptor = new NetworkInterceptor(devTools);
+//            devTools = ((ChromeDriver) driver).getDevTools();
+//            devTools.createSession();
+//            networkInterceptor = new NetworkInterceptor(devTools);
         } 
         else if (browserName.equalsIgnoreCase("firefox")) {
             WebDriverManager.firefoxdriver().setup();

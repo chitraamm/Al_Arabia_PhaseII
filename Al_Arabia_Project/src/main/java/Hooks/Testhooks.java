@@ -68,14 +68,14 @@ public class Testhooks extends Base {
         LOGGER.info("Navigated to URL");
 		System.out.println("Login page opened");
 
-		Robot robot = new Robot();
-		System.out.println("About to zoom out");
-		for (int i = 0; i < 3; i++) {
-			robot.keyPress(KeyEvent.VK_CONTROL);
-			robot.keyPress(KeyEvent.VK_SUBTRACT);
-			robot.keyRelease(KeyEvent.VK_SUBTRACT);
-			robot.keyRelease(KeyEvent.VK_CONTROL);
-		}
+//		Robot robot = new Robot();
+//		System.out.println("About to zoom out");
+//		for (int i = 0; i < 3; i++) {
+//			robot.keyPress(KeyEvent.VK_CONTROL);
+//			robot.keyPress(KeyEvent.VK_SUBTRACT);
+//			robot.keyRelease(KeyEvent.VK_SUBTRACT);
+//			robot.keyRelease(KeyEvent.VK_CONTROL);
+//		}
 		LOGGER.info("Page is zoomed out");
 		System.out.println(
 				"** Execution started for scenario -" + scenario.getName());

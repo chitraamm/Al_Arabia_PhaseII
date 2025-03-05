@@ -27,14 +27,8 @@ public class Billboardspage extends Base {
 	private Properties prop;
 	private Actions act;
 	private Logger LOGGER = LogManager.getLogger(Billboardspage.class);
-<<<<<<< HEAD
 
 	public Billboardspage(WebDriver driver) throws Exception {
-=======
-	private Signinpage signinpage;
-
-	public Billboardspage(WebDriver driver) throws Exception { 
->>>>>>> refs/heads/dev
 		this.driver = driver;
 		prop = new Properties();
 		act = new Actions(driver);
@@ -46,7 +40,7 @@ public class Billboardspage extends Base {
 		LOGGER = LogManager.getLogger(Billboardspage.class.getName());
 	}
 
-
+private boolean condition = true;
 	private void initializeWait() {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	}

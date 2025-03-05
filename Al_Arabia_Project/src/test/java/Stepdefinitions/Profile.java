@@ -23,7 +23,6 @@ public class Profile extends Base {
 	private Signinpage signinpage;
 	private Profilepage profilepage;
 
-<<<<<<< HEAD
     public Profile(Testhooks testhooks) throws Exception {
         this.driver = testhooks.getDriver();
         this.signinpage = new Signinpage(driver);
@@ -35,19 +34,6 @@ public class Profile extends Base {
     public void user_able_to_click_on_profile() {
       profilepage.Profile();
     }
-=======
-	public Profile(Testhooks testhooks) throws Exception {
-		this.driver = testhooks.getDriver();
-		this.signinpage = new Signinpage(driver);
-		this.profilepage = new Profilepage(driver);
-		LOGGER = LogManager.getLogger(Profile.class.getName());
-	}
->>>>>>> refs/heads/dev
-
-	@When("User able to click on profile")
-	public void user_able_to_click_on_profile() {
-		profilepage.Profile();
-	}
 
 	@When("User able to click on personal profile")
 	public void user_able_to_click_on_personal_profile() {

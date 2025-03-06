@@ -152,3 +152,27 @@
 [INFO ] 2025-03-06 16:50:03.522 [main] Signinpage - User clicks on signin button
 [INFO ] 2025-03-06 16:50:08.461 [main] Signinpage - Al-Arabia user got signed in successfully
 [INFO ] 2025-03-06 16:50:08.519 [main] Signinpage - Al-Arabia user got signed in successfully
+[INFO ] 2025-03-06 17:22:59.922 [main] Testhooks - Execution Started
+[INFO ] 2025-03-06 17:23:01.006 [main] Testhooks - Browser launched successfully
+[INFO ] 2025-03-06 17:23:03.892 [main] Testhooks - Navigated to URL
+[INFO ] 2025-03-06 17:23:04.006 [main] Testhooks - Page is zoomed out
+[INFO ] 2025-03-06 17:23:05.136 [main] Signinpage - User enters valid email address
+[INFO ] 2025-03-06 17:23:05.221 [main] Signinpage - User enters valid password
+[INFO ] 2025-03-06 17:23:05.275 [main] Signinpage - User clicked password_field_eyeicon
+[INFO ] 2025-03-06 17:23:05.339 [main] Signinpage - User clicks on signin button
+[INFO ] 2025-03-06 17:23:08.739 [main] Signinpage - Al-Arabia user got signed in successfully
+[INFO ] 2025-03-06 17:23:08.770 [main] Signinpage - Al-Arabia user got signed in successfully
+[INFO ] 2025-03-06 17:28:57.475 [main] Testhooks - Execution Started
+[INFO ] 2025-03-06 17:28:58.496 [main] Testhooks - Browser launched successfully
+[INFO ] 2025-03-06 17:29:40.745 [main] Testhooks - Navigated to URL
+[INFO ] 2025-03-06 17:29:40.844 [main] Testhooks - Page is zoomed out
+[INFO ] 2025-03-06 17:30:12.785 [main] Testhooks - Execution Started
+[INFO ] 2025-03-06 17:30:13.820 [main] Testhooks - Browser launched successfully
+[INFO ] 2025-03-06 17:30:26.395 [main] Testhooks - Navigated to URL
+[INFO ] 2025-03-06 17:30:26.504 [main] Testhooks - Page is zoomed out
+[INFO ] 2025-03-06 17:30:27.637 [main] Signinpage - User enters valid email address
+[INFO ] 2025-03-06 17:30:27.726 [main] Signinpage - User enters valid password
+[INFO ] 2025-03-06 17:30:27.778 [main] Signinpage - User clicked password_field_eyeicon
+[INFO ] 2025-03-06 17:30:27.840 [main] Signinpage - User clicks on signin button
+[INFO ] 2025-03-06 17:30:38.757 [main] Signinpage - Al-Arabia user got signed in successfully
+[INFO ] 2025-03-06 17:30:38.787 [main] Signinpage - Al-Arabia user got signed in successfully

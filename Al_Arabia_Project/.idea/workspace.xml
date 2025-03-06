@@ -5,43 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b89fb8ee-47f7-487e-b40b-ba05d9562cbf" name="Changes" comment="Al_Arabia project moved to intellij, and updated the all classes file">
-      <change afterPath="$PROJECT_DIR$/.idea/sbt.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log4j2-sample-2025-03-05.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/.classpath" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.core.resources.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/.settings/org.eclipse.core.resources.prefs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Al_Arabia.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Al_Arabia.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Drivers/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Drivers/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log4j2/log4j2-test-automation.log" beforeDir="false" afterPath="$PROJECT_DIR$/log4j2/log4j2-test-automation.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Hooks/Testhooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Hooks/Testhooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Runner/TestNG_Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Runner/TestNG_Runner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Runner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Runner/TestRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/Billboardspage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/Billboardspage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/Cleaningpage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/Cleaningpage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/Forgotpasswordpage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/Forgotpasswordpage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/Inventorypage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/Inventorypage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/Masterpage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/Masterpage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/Memberspage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/Memberspage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/Profilepage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/Profilepage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/Signinpage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/Signinpage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/Ticketspage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/Ticketspage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/NetworkInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/NetworkInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Stepdefinitions/Billboards.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/step_definitions/Billboards.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Stepdefinitions/Cleaning.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/step_definitions/Cleaning.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Stepdefinitions/ConfirmAccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/step_definitions/ConfirmAccountTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Stepdefinitions/Forgotpassword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/step_definitions/Forgotpassword.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Stepdefinitions/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/step_definitions/Inventory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Stepdefinitions/Master.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/step_definitions/Master.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Stepdefinitions/Members.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/step_definitions/Members.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Stepdefinitions/Profile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/step_definitions/Profile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Stepdefinitions/Signin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/step_definitions/Signin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Stepdefinitions/Tickets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/step_definitions/Tickets.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Features/01_Signin.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/01_Signin.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Base.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dataproperties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/HtmlReport/Index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/HtmlReport/Index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/PdfReport/ExtentPdf.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/PdfReport/ExtentPdf.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/SparkReport/Index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/SparkReport/Index.html" afterDir="false" />
@@ -80,6 +47,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Application.TestNG_Runner.executor": "Run",
     "Application.TestRunner.executor": "Run",
@@ -102,7 +70,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "intelliJ",
     "kotlin-language-version-configured": "true",
     "last_directory_selection": "/home/coducer/Al_Arabia_PhaseII/Al_Arabia_Project/src/test/java",
     "last_opened_file_path": "/home/coducer/Al_Arabia_PhaseII/Al_Arabia_Project/src/main/java",

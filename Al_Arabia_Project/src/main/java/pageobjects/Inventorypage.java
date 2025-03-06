@@ -24,10 +24,10 @@ import org.testng.AssertJUnit;
 import resources.Base;
 
 public class Inventorypage extends Base {
-	private WebDriver driver;
+	private final WebDriver driver;
 	private WebDriverWait wait;
-	private Properties prop;
-	private Actions act;
+	private final Properties prop;
+	private final Actions act;
 	private Logger LOGGER = LogManager.getLogger(Inventorypage.class);
 	//private Signinpage signinpage;
 
@@ -45,9 +45,7 @@ public class Inventorypage extends Base {
 		LOGGER = LogManager.getLogger(Inventorypage.class.getName());
 	}
 
-	private boolean condition = true;
-
-	private void initializeWait() {
+    private void initializeWait() {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	}
 
@@ -170,7 +168,7 @@ public class Inventorypage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(stock_code));
 		String QTY =prop.getProperty("QTY");
 		Thread.sleep(2000);
-        act.moveToElement(quantity).click().sendKeys(""+(QTY)).perform();
+        act.moveToElement(quantity).click().sendKeys(QTY).perform();
         
         act.moveToElement(save_stock).click().perform();
 	}
@@ -1141,7 +1139,7 @@ public class Inventorypage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(Return_stock_code));
 		String QTY =prop.getProperty("QTY");
 		Thread.sleep(2000);
-        act.moveToElement(quantity).click().sendKeys(""+(QTY)).perform();
+        act.moveToElement(quantity).click().sendKeys(QTY).perform();
 		
         Thread.sleep(1000);
         wait.until(ExpectedConditions.visibilityOf(quantitycount)).isDisplayed();
@@ -1477,7 +1475,7 @@ public class Inventorypage extends Base {
 			wait.until(ExpectedConditions.visibilityOf(Return_stock_code)).isDisplayed();
 			String QTY =prop.getProperty("QTY");
 			Thread.sleep(7000);
-	        act.moveToElement(qty).click().sendKeys(""+(QTY)).perform();
+	        act.moveToElement(qty).click().sendKeys(QTY).perform();
 			
 	        Thread.sleep(4000);
 	        wait.until(ExpectedConditions.visibilityOf(qty)).isDisplayed();
@@ -1784,13 +1782,13 @@ public class Inventorypage extends Base {
 			wait.until(ExpectedConditions.visibilityOf(Return_stock_code)).isDisplayed();
 			String QTY =prop.getProperty("QTY");
 			Thread.sleep(7000);
-	        act.moveToElement(qty).click().sendKeys(""+(QTY)).perform();
+	        act.moveToElement(qty).click().sendKeys(QTY).perform();
 			
 	        Thread.sleep(3000);
 			wait.until(ExpectedConditions.visibilityOf(qty)).isDisplayed();
 			String Dt =prop.getProperty("Dt");
 			Thread.sleep(7000);
-	        act.moveToElement(Dttype).click().sendKeys(""+(Dt)).perform();        
+	        act.moveToElement(Dttype).click().sendKeys(Dt).perform();
 	        Thread.sleep(4000);
 	        wait.until(ExpectedConditions.visibilityOf(qty)).isDisplayed();
 			act.moveToElement(Defecttype).click().sendKeys(""+Keys.ENTER).perform();
@@ -2089,14 +2087,14 @@ public class Inventorypage extends Base {
 			String quantityofstockadjstmnt = prop.getProperty("quantityofstockadjstmnt");
 			wait.until(ExpectedConditions.visibilityOf(quantitystockadjstmnt)).isDisplayed();
 		 	Thread.sleep(3000);
-            act.moveToElement(quantitystockadjstmnt).click().sendKeys(""+(quantityofstockadjstmnt)).perform();
+            act.moveToElement(quantitystockadjstmnt).click().sendKeys(quantityofstockadjstmnt).perform();
             
             Thread.sleep(1000);
 			wait.until(ExpectedConditions.visibilityOf(quantitystockadjstmnt)).isDisplayed();
 			String descrptns = prop.getProperty("descrptns");
 			wait.until(ExpectedConditions.visibilityOf(Descriptions)).isDisplayed();
 		 	Thread.sleep(3000);
-            act.moveToElement(Descriptions).click().sendKeys(""+(descrptns)).perform();
+            act.moveToElement(Descriptions).click().sendKeys(descrptns).perform();
 		}
 		@FindBy(xpath = "//span[normalize-space()='Add Stock Adjustment']")
 		private WebElement add_Stock_Adjustments;
@@ -2197,14 +2195,11 @@ public class Inventorypage extends Base {
 
 		public void Stockadjustment_filtered_result_display() {
 			try {
-				if (condition) {
-					wait.until(ExpectedConditions.visibilityOf(stock_adjustmentSearchlist));
-					AssertJUnit.assertTrue(stock_adjustmentSearchlist.isDisplayed());
-					System.out.println(">> User got the filtered Tickets list");
-				} else {
-					wait.until(ExpectedConditions.visibilityOf(No_Stock_Adjustment_Found));
-				}
-			} catch (Exception e) {
+                boolean condition = true;
+                wait.until(ExpectedConditions.visibilityOf(stock_adjustmentSearchlist));
+                AssertJUnit.assertTrue(stock_adjustmentSearchlist.isDisplayed());
+                System.out.println(">> User got the filtered Tickets list");
+            } catch (Exception e) {
 				wait.until(ExpectedConditions.visibilityOf(No_Stock_Adjustment_Found));
 			}
 		}
@@ -2232,7 +2227,7 @@ public class Inventorypage extends Base {
 			String createdby = prop.getProperty("createdby");
 			wait.until(ExpectedConditions.visibilityOf(credit_by_filter)).isDisplayed();
 			Thread.sleep(5000);
-			act.moveToElement(credit_by_filter).click().sendKeys(""+createdby);
+			act.moveToElement(credit_by_filter).click().sendKeys(createdby);
 			Thread.sleep(2000);
 			act.moveToElement(credit_by_filter).sendKeys(Keys.ENTER).perform();
 			LOGGER.info(">> User selected the createdby:" + credit_by_filter.getText());

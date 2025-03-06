@@ -1,33 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
+    <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b89fb8ee-47f7-487e-b40b-ba05d9562cbf" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+    <list default="true" id="b89fb8ee-47f7-487e-b40b-ba05d9562cbf" name="Changes" comment="Al_Arabia project moved to intellij, and updated the all classes file">
+      <change afterPath="$PROJECT_DIR$/.idea/sbt.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log4j2-sample-2025-03-05.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.core.resources.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/.settings/org.eclipse.core.resources.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Al_Arabia.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Al_Arabia.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log4j2/log4j2-test-automation.log" beforeDir="false" afterPath="$PROJECT_DIR$/log4j2/log4j2-test-automation.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Hooks/Testhooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Hooks/Testhooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Runner/TestNG_Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Runner/TestNG_Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Runner/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Runner/TestRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/Billboardspage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/Billboardspage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/.cucumber/cucumber.glue.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/.cucumber/cucumber.stepDefinitions.tmp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Hooks/Testhooks.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/maven/Al_Arabia/Al_Arabia/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/maven/Al_Arabia/Al_Arabia/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Runner/TestNG_Runner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Runner/TestRunner.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageobjects/Memberspage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pageobjects/Signinpage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/resources/Base.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Features/01_Signin.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Features/02_Forgotpassword.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Features/03_Members.feature" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/extent-config.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/extent-config.xsd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/extent.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/log4j2.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/Cleaningpage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/Cleaningpage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/Forgotpasswordpage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/Forgotpasswordpage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/Inventorypage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/Inventorypage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/Masterpage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/Masterpage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/Memberspage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/Memberspage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/Profilepage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/Profilepage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/Signinpage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/Signinpage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pageobjects/Ticketspage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pageobjects/Ticketspage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/NetworkInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/NetworkInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Stepdefinitions/Billboards.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/step_definitions/Billboards.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Stepdefinitions/Cleaning.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/step_definitions/Cleaning.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Stepdefinitions/ConfirmAccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/step_definitions/ConfirmAccountTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Stepdefinitions/Forgotpassword.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/step_definitions/Forgotpassword.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Stepdefinitions/Inventory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/step_definitions/Inventory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Stepdefinitions/Master.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/step_definitions/Master.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Stepdefinitions/Members.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/step_definitions/Members.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Stepdefinitions/Profile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/step_definitions/Profile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Stepdefinitions/Signin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/step_definitions/Signin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Stepdefinitions/Tickets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/step_definitions/Tickets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Features/01_Signin.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/01_Signin.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Base.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/dataproperties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/HtmlReport/Index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/HtmlReport/Index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/PdfReport/ExtentPdf.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/PdfReport/ExtentPdf.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/SparkReport/Index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/SparkReport/Index.html" afterDir="false" />
@@ -47,8 +61,11 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="MavenRunner">
+    <option name="delegateBuildToMaven" value="true" />
+  </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
@@ -66,20 +83,47 @@
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Application.TestNG_Runner.executor": "Run",
     "Application.TestRunner.executor": "Run",
+    "Application.test.java.Runner.TestNG_Runner.executor": "Run",
+    "Application.test.java.Runner.TestRunner.executor": "Run",
     "Cucumber Java.Scenario: Login with valid credentials.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.TestRunner.executor": "Run",
+    "JUnit.TestRunner.main.executor": "Run",
+    "Maven.Al_Arabia [install,--non-recursive].executor": "Run",
+    "Maven.Al_Arabia [install].executor": "Run",
+    "Maven.Scenario: Login with valid credentials.executor": "Run",
+    "Maven.TestNG_Runner.executor": "Run",
+    "Maven.TestRunner.executor": "Run",
+    "Maven.test.java.Runner.TestRunner.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "dart.analysis.tool.window.visible": "false",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/coducer/Al_Arabia_PhaseII/Al_Arabia_Project",
-    "project.structure.last.edited": "Problems",
+    "last_directory_selection": "/home/coducer/Al_Arabia_PhaseII/Al_Arabia_Project/src/test/java",
+    "last_opened_file_path": "/home/coducer/Al_Arabia_PhaseII/Al_Arabia_Project/src/main/java",
+    "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.18527316",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.importing"
+    "settings.build.tools.auto.reload": "ALL",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.TestRunner">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/test/java" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Runner" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.TestRunner">
     <configuration name="TestNG_Runner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Runner.TestNG_Runner" />
       <module name="Al_Arabia" />
@@ -93,14 +137,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="JavaSE-17" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="Runner.TestRunner" />
+    <configuration name="test.java.Runner.TestRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.java.Runner.TestRunner" />
       <module name="Al_Arabia" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Runner.*" />
+          <option name="PATTERN" value="test.java.Runner.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -123,6 +165,37 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Al_Arabia" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Runner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Runner" />
+      <option name="MAIN_CLASS_NAME" value="Runner.TestRunner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestRunner.main" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Al_Arabia" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.java.Runner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test.java.Runner" />
+      <option name="MAIN_CLASS_NAME" value="test.java.Runner.TestRunner" />
+      <option name="METHOD_NAME" value="main" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -188,11 +261,20 @@
       <option name="USE_PATTERN" value="false" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Application.TestNG_Runner" />
+      <item itemvalue="Application.test.java.Runner.TestRunner" />
+      <item itemvalue="Cucumber Java.Scenario: Login with valid credentials" />
+      <item itemvalue="JUnit.TestRunner" />
+      <item itemvalue="JUnit.TestRunner.main" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TestRunner" />
+        <item itemvalue="JUnit.TestRunner" />
         <item itemvalue="Application.TestNG_Runner" />
         <item itemvalue="Cucumber Java.Scenario: Login with valid credentials" />
+        <item itemvalue="JUnit.TestRunner.main" />
+        <item itemvalue="Application.test.java.Runner.TestRunner" />
       </list>
     </recent_temporary>
   </component>
@@ -206,5 +288,20 @@
       <updated>1741159370593</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Al_Arabia project moved to intellij, and updated the all classes file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Al_Arabia project moved to intellij, and updated the all classes file" />
   </component>
 </project>

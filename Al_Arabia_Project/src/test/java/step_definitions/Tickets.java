@@ -1,4 +1,4 @@
-package Stepdefinitions;
+package test.java.step_definitions;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -10,18 +10,16 @@ import org.openqa.selenium.WebDriver;
 import Hooks.Testhooks;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
-//import pageobjects.Signinpage;
 import pageobjects.Ticketspage;
 import resources.Base;
 
 public class Tickets extends Base {
 	
 	private static Logger LOGGER = LogManager.getLogger(Tickets.class);
-	private WebDriver driver;
-	private Ticketspage ticketsPage;
+    private final Ticketspage ticketsPage;
 
 	public Tickets(Testhooks testhooks) throws Exception {
-		this.driver = testhooks.getDriver(); 
+        WebDriver driver = testhooks.getDriver();
 		this.ticketsPage = new Ticketspage(driver);
 		//new Signinpage(driver);
 		LOGGER = LogManager.getLogger(Tickets.class.getName());

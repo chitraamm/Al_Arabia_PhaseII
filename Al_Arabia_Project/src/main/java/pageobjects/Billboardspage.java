@@ -22,14 +22,14 @@ import org.testng.AssertJUnit;
 import resources.Base;
 
 public class Billboardspage extends Base {
-	private WebDriver driver;
+	private final WebDriver driver;
 	private WebDriverWait wait;
-	private Properties prop;
-	private Actions act;
+	private final Properties prop;
+	private final Actions act;
 	private Logger LOGGER = LogManager.getLogger(Billboardspage.class);
 
 
-	public Billboardspage(WebDriver driver) throws Exception { 
+	public Billboardspage(WebDriver driver) throws Exception {
 		this.driver = driver;
 		prop = new Properties();
 		act = new Actions(driver);
@@ -40,7 +40,7 @@ public class Billboardspage extends Base {
 		initializeWait();
 		LOGGER = LogManager.getLogger(Billboardspage.class.getName());
 	}
-	private boolean condition = true;
+	private final boolean condition = true;
 	private void initializeWait() {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	}
@@ -652,7 +652,7 @@ public class Billboardspage extends Base {
 
 		String Screen_height = prop.getProperty("Screen_height");
 		wait.until(ExpectedConditions.visibilityOf(Newbillboard_boardno)).isDisplayed();
-		act.moveToElement(screenheight).click().sendKeys(""+Keys.DELETE+Screen_height).perform();
+		act.moveToElement(screenheight).click().sendKeys(Keys.DELETE+Screen_height).perform();
         LOGGER.info("User enters screenheight");
 }
 
@@ -736,7 +736,7 @@ public void BB_non_operatnl_reason_added() {
 	String reason = prop.getProperty("reason");
 	wait.until(ExpectedConditions.visibilityOf(BB_reason_text));
 
-	act.moveToElement(Reason_enter_for_Mark_Non_operntl).sendKeys(""+reason).perform();
+	act.moveToElement(Reason_enter_for_Mark_Non_operntl).sendKeys(reason).perform();
     LOGGER.info("User enters reason");
 
 }

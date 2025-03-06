@@ -1,4 +1,4 @@
-package Stepdefinitions;
+package test.java.step_definitions;
 
 import static org.junit.Assert.assertEquals;
 //import static org.junit.Assert.assertEquals;
@@ -18,11 +18,10 @@ import resources.Base;
 public class Billboards extends Base {
 
 	private static Logger LOGGER = LogManager.getLogger(Billboards.class);
-	private WebDriver driver;
-	private Billboardspage billboardsPage;
+    private final Billboardspage billboardsPage;
 
 	public Billboards(Testhooks testhooks) throws Exception {
-		this.driver = testhooks.getDriver(); 
+        WebDriver driver = testhooks.getDriver();
 		this.billboardsPage = new Billboardspage(driver);
 		new Signinpage(driver);
 		LOGGER = LogManager.getLogger(Billboards.class.getName());

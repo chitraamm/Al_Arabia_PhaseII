@@ -1,4 +1,4 @@
-package Stepdefinitions;
+package test.java.step_definitions;
 
 import org.openqa.selenium.WebDriver;
 
@@ -10,11 +10,10 @@ import pageobjects.Forgotpasswordpage;
 import resources.Base;
 
 public class Forgotpassword extends Base {
-	private WebDriver driver;
-	private Forgotpasswordpage forgotPasswordPage;
+    private final Forgotpasswordpage forgotPasswordPage;
 
 	public Forgotpassword(Testhooks testhooks) {
-		this.driver = testhooks.getDriver(); 
+        WebDriver driver = testhooks.getDriver();
 		this.forgotPasswordPage = new Forgotpasswordpage(driver);
 	}
 

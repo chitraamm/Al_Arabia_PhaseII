@@ -20,10 +20,10 @@ import org.testng.AssertJUnit;
 import resources.Base;
 
 public class Cleaningpage extends Base {
-	private WebDriver driver;
+	private final WebDriver driver;
 	private WebDriverWait wait;
-	private Properties prop;
-	private Actions act;
+	private final Properties prop;
+	private final Actions act;
 	private Logger LOGGER = LogManager.getLogger(Cleaningpage.class);
 	//private Signinpage signinpage;
 
@@ -41,9 +41,7 @@ public class Cleaningpage extends Base {
 		LOGGER = LogManager.getLogger(Cleaningpage.class.getName());
 	}
 
-	private boolean condition = true;
-
-	private void initializeWait() {
+    private void initializeWait() {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	}
 
@@ -166,7 +164,7 @@ public class Cleaningpage extends Base {
 	Thread.sleep(2000);
 
     String description = prop.getProperty("descriptiontexts");
-    act.moveToElement(Description).click().sendKeys(""+(description)).perform();
+    act.moveToElement(Description).click().sendKeys(description).perform();
     
 	}
 	@FindBy(id = "Create Group")
@@ -286,14 +284,11 @@ public class Cleaningpage extends Base {
 
 	public void Cleaning_filtered_result_display() {
 		try {
-			if (condition) {
-				wait.until(ExpectedConditions.visibilityOf(Cleaninglist));
-				AssertJUnit.assertTrue(Cleaninglist.isDisplayed());
-				System.out.println(">> User got the filtered Cleaning list");
-			} else {
-				wait.until(ExpectedConditions.visibilityOf(No_Cleanings_found));
-			}
-		} catch (Exception e) {
+            boolean condition = true;
+            wait.until(ExpectedConditions.visibilityOf(Cleaninglist));
+            AssertJUnit.assertTrue(Cleaninglist.isDisplayed());
+            System.out.println(">> User got the filtered Cleaning list");
+        } catch (Exception e) {
 			wait.until(ExpectedConditions.visibilityOf(No_Cleanings_found));
 		}
 	}

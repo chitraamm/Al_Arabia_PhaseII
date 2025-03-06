@@ -10,8 +10,8 @@ import org.openqa.selenium.devtools.v117.network.Network;
 import org.openqa.selenium.devtools.v117.network.model.Response;
 
 public class NetworkInterceptor {
-    private DevTools devTools;
-    private static Logger LOGGER = LogManager.getLogger(NetworkInterceptor.class);
+    private final DevTools devTools;
+    private static final Logger LOGGER = LogManager.getLogger(NetworkInterceptor.class);
     private String bearerToken;
 
     public NetworkInterceptor(DevTools devTools) {

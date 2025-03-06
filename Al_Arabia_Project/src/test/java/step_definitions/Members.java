@@ -1,4 +1,4 @@
-package Stepdefinitions;
+package test.java.step_definitions;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -18,13 +18,12 @@ import resources.Base;
 
 public class Members extends Base {
 
-    private static Logger LOGGER = LogManager.getLogger(Members.class); 
-    private WebDriver driver;
-    private Memberspage membersPage;
-    private Signinpage signinpage;
+    private static Logger LOGGER = LogManager.getLogger(Members.class);
+    private final Memberspage membersPage;
+    private final Signinpage signinpage;
 
     public Members(Testhooks testhooks) throws Exception {
-        this.driver = testhooks.getDriver();
+        WebDriver driver = testhooks.getDriver();
         this.membersPage = new Memberspage(driver);
         this.signinpage = new Signinpage(driver);
         LOGGER = LogManager.getLogger(Members.class.getName());

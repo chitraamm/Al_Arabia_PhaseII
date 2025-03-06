@@ -3,6 +3,8 @@ package Hooks;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
 import java.time.Duration;
+
+import lombok.Getter;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.OutputType;
@@ -25,6 +27,7 @@ import resources.Base;
 import utils.NetworkInterceptor;
 
 public class Testhooks extends Base {
+    @Getter
     public WebDriver driver;
     public WebDriverWait wait;
     public Signinpage signinpage;
@@ -34,7 +37,7 @@ public class Testhooks extends Base {
     public Inventorypage inventorypage;
     public Profilepage profilepage;
     
-    private static Logger LOGGER = LogManager.getLogger(Testhooks.class);
+    private static final Logger LOGGER = LogManager.getLogger(Testhooks.class);
 
     public void initializeWait() {
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(20));
@@ -116,11 +119,7 @@ public class Testhooks extends Base {
 //        }
 //	}
 
-	 public WebDriver getDriver() {
-	        return driver;
-	    }
-
-	    public DevTools getDevToolsInstance() {
+    public DevTools getDevToolsInstance() {
 	        return devTools;
 	    }
 

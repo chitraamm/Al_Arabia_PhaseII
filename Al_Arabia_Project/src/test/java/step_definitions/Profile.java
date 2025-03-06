@@ -1,4 +1,4 @@
-package Stepdefinitions;
+package test.java.step_definitions;
 
 import static org.junit.Assert.assertEquals;
 
@@ -16,16 +16,13 @@ import resources.Base;
 
 public class Profile extends Base {
 
-	private Logger LOGGER = LogManager.getLogger(Profile.class); 
-	private WebDriver driver;
-	private Signinpage signinpage;
-	private Profilepage profilepage;
+    private final Profilepage profilepage;
 
 	public Profile(Testhooks testhooks) throws Exception {
-		this.driver = testhooks.getDriver();
-		this.signinpage = new Signinpage(driver);
+        WebDriver driver = testhooks.getDriver();
+        Signinpage signinpage = new Signinpage(driver);
 		this.profilepage = new Profilepage(driver);
-		LOGGER = LogManager.getLogger(Profile.class.getName());
+        Logger LOGGER = LogManager.getLogger(Profile.class.getName());
 	}
 
 	@When("User able to click on profile")

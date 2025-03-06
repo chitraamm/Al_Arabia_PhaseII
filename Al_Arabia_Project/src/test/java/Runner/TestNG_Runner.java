@@ -1,14 +1,13 @@
 package Runner;
-	
+
+import io.cucumber.testng.AbstractTestNGCucumberTests;
+import io.cucumber.testng.CucumberOptions;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 
-import io.cucumber.testng.AbstractTestNGCucumberTests;
-import io.cucumber.testng.CucumberOptions;
-
-@CucumberOptions(features = "src/test/resources/Features", glue = {"Hooks","Stepdefinitions"},
-tags = "@signin or @forgotpassword or @members or @billboards or @profile", plugin = {"pretty",
+@CucumberOptions(features = "src/test/resources/Features", glue = {"Hooks","test.java.step_definitions"},
+tags = "@signin01", plugin = {"pretty",
 		"html:target/CucumberReports/CucumberReport.html",
 		"json:target/CucumberReports/CucumberReport.json",
 		"junit:target/CucumberReports/CucumberReport.xml",

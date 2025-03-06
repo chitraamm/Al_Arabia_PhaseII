@@ -15,9 +15,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import resources.Base;
 
 public class Forgotpasswordpage extends Base {
-	private WebDriver driver;
+	private final WebDriver driver;
 	private WebDriverWait wait;
-	private Properties prop;
+	private final Properties prop;
 
 	public Forgotpasswordpage(WebDriver driver) {
 		this.driver = driver;
@@ -30,7 +30,8 @@ public class Forgotpasswordpage extends Base {
 			FileInputStream fis = new FileInputStream(propPath);
 			prop.load(fis);
 		} catch (Exception e) {
-			e.printStackTrace();
+//			e.printStackTrace();
+			e.getStackTrace();
 		}
 
 		PageFactory.initElements(driver, this);

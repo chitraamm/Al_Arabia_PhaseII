@@ -18,10 +18,10 @@ import resources.Base;
 
 public class Signinpage extends Base {
 
-    private Logger LOGGER = LogManager.getLogger(Signinpage.class);
-    private WebDriver driver;
-    private WebDriverWait wait; 
-    private Properties prop;
+    private final Logger LOGGER = LogManager.getLogger(Signinpage.class);
+    private final WebDriver driver;
+    private WebDriverWait wait;
+    private final Properties prop;
 
     public Signinpage(WebDriver driver) throws Exception {
         this.driver = driver;
@@ -36,7 +36,7 @@ public class Signinpage extends Base {
     }
 
     private void initializeWait() {
-        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait = new WebDriverWait(driver, Duration.ofSeconds(30));
     }
 
     // Page Elements
@@ -83,7 +83,7 @@ public class Signinpage extends Base {
         wait.until(ExpectedConditions.visibilityOf(emailField)).sendKeys(prop.getProperty("Supervisor_email_address"));
         LOGGER.info("Supervisor enters valid email address");
     }
-    
+
     public void enterInvalidEmail() {
         wait.until(ExpectedConditions.visibilityOf(emailField)).sendKeys(prop.getProperty("INV_email_address"));
     }

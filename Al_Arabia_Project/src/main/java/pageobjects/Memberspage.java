@@ -20,12 +20,12 @@ import org.testng.AssertJUnit;
 import resources.Base;
 
 public class Memberspage extends Base {
-	private WebDriver driver;
+	private final WebDriver driver;
 	private WebDriverWait wait;
-	private Properties prop;
-	private Actions act;
+	private final Properties prop;
+	private final Actions act;
 	private Logger LOGGER = LogManager.getLogger(Memberspage.class); 
-	private Signinpage signinpage;
+	private final Signinpage signinpage;
 
 	public Memberspage(WebDriver driver) throws Exception {
 		this.driver = driver;
@@ -40,7 +40,7 @@ public class Memberspage extends Base {
 		LOGGER = LogManager.getLogger(Memberspage.class.getName());
 	}
 
-	private boolean condition = true;
+	private final boolean condition = true;
 
 	private void initializeWait() {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(20));

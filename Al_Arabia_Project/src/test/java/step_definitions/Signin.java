@@ -1,4 +1,4 @@
-package Stepdefinitions;
+package test.java.step_definitions;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -14,18 +14,17 @@ import resources.Base;
 
 public class Signin extends Base {
 
-    private Logger LOGGER = LogManager.getLogger(Signin.class); 
-    private WebDriver driver;
-    private Signinpage signinpage;
+    private Logger LOGGER = LogManager.getLogger(Signin.class);
+    private final Signinpage signinpage;
 
     public Signin(Testhooks testhooks) throws Exception {
-        this.driver = testhooks.getDriver();
+        WebDriver driver = testhooks.getDriver();
         this.signinpage = new Signinpage(driver);
         LOGGER = LogManager.getLogger(Signin.class.getName());
     }
 
     @Given("User navigates to Login page")
-    public void user_navigates_to_login_page() throws Exception {
+    public void user_navigates_to_login_page() {
         LOGGER.info("User navigates to the login page");
     }
 

@@ -1,4 +1,4 @@
-package Stepdefinitions;
+package test.java.step_definitions;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -11,19 +11,16 @@ import Hooks.Testhooks;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import pageobjects.Cleaningpage;
-import pageobjects.Signinpage;
 import resources.Base;
 
 public class Cleaning extends Base {
 
 	private static Logger LOGGER = LogManager.getLogger(Cleaning.class);
-	private WebDriver driver;
-	private Cleaningpage cleaningpage;
+    private final Cleaningpage cleaningpage;
 	public Cleaning(Testhooks testhooks) throws Exception {
-		this.driver = testhooks.getDriver(); 
+        WebDriver driver = testhooks.getDriver();
 		this.cleaningpage = new Cleaningpage(driver);
-		new Signinpage(driver);
-		LOGGER = LogManager.getLogger(Master.class.getName());
+		LOGGER = LogManager.getLogger(Cleaning.class.getName());
 	}
 	@And("Admin or user clicks the Cleaning module")
 	public void Admin_or_user_clicks_the_Cleaning_module() throws Exception {

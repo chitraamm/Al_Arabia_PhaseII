@@ -22,10 +22,10 @@ import resources.Base;
 
 public class Masterpage extends Base {
 	private static final String Automationtest = null;
-	private WebDriver driver;
+	private final WebDriver driver;
 	private WebDriverWait wait;
-	private Properties prop;
-	private Actions act;
+	private final Properties prop;
+	private final Actions act;
 	private Logger LOGGER = LogManager.getLogger(Cleaningpage.class); 
 	//private Signinpage signinpage;
 
@@ -43,7 +43,7 @@ public class Masterpage extends Base {
 		LOGGER = LogManager.getLogger(Masterpage.class.getName());
 	}
 
-	private boolean condition = true;
+	private final boolean condition = true;
 
 	private void initializeWait() {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -823,7 +823,7 @@ public void TicketTitle_search_enter_text() throws Exception {
 	wait.until(ExpectedConditions.visibilityOf(TicketTitle_search)).click();
 	String TicketTitleSearch = prop.getProperty("TicketTitleSearch");
 	Thread.sleep(2000);
-	wait.until(ExpectedConditions.visibilityOf(TicketTitle_search)).sendKeys(""+TicketTitleSearch + Keys.SHIFT);
+	wait.until(ExpectedConditions.visibilityOf(TicketTitle_search)).sendKeys(TicketTitleSearch + Keys.SHIFT);
 	wait.until(ExpectedConditions.visibilityOf(TicketTitle_search)).sendKeys(""+Keys.ENTER);
 	System.out.println(">> User enter the TicketTitle id in search field: " + TicketTitle_search);
 }

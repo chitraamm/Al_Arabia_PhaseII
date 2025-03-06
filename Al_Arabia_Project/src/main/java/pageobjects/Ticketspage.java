@@ -23,13 +23,13 @@ import io.cucumber.core.backend.Options;
 import resources.Base;
 
 public class Ticketspage extends Base {
-	private WebDriver driver;
+	private final WebDriver driver;
 	private WebDriverWait wait;
-	private Properties prop; 
-	private Actions act;
+	private final Properties prop;
+	private final Actions act;
 	private Logger LOGGER = LogManager.getLogger(Ticketspage.class);
-	private Signinpage signinpage;
-	public Ticketspage(WebDriver driver) throws Exception {
+
+    public Ticketspage(WebDriver driver) throws Exception {
 		this.driver = driver;
 		prop = new Properties();
 		act = new Actions(driver);
@@ -38,13 +38,11 @@ public class Ticketspage extends Base {
 		FileInputStream fis = new FileInputStream(propPath);
 		prop.load(fis);
 		initializeWait();
-		this.signinpage = new Signinpage(driver);
+        Signinpage signinpage = new Signinpage(driver);
 		LOGGER = LogManager.getLogger(Ticketspage.class.getName());
 	}
 
-	private boolean condition = true;
-
-	private void initializeWait() {
+    private void initializeWait() {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 	}
 
@@ -281,14 +279,11 @@ public class Ticketspage extends Base {
 
 	public void Tickets_filtered_result_display() {
 		try {
-			if (condition) {
-				wait.until(ExpectedConditions.visibilityOf(Ticketlist));
-				AssertJUnit.assertTrue(Ticketlist.isDisplayed());
-				System.out.println(">> User got the filtered Tickets list");
-			} else {
-				wait.until(ExpectedConditions.visibilityOf(No_Tickets_found));
-			}
-		} catch (Exception e) {
+            boolean condition = true;
+            wait.until(ExpectedConditions.visibilityOf(Ticketlist));
+            AssertJUnit.assertTrue(Ticketlist.isDisplayed());
+            System.out.println(">> User got the filtered Tickets list");
+        } catch (Exception e) {
 			wait.until(ExpectedConditions.visibilityOf(No_Tickets_found));
 		}
 	}

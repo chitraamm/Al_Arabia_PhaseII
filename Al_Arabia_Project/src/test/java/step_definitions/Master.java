@@ -1,6 +1,5 @@
-package Stepdefinitions;
+package test.java.step_definitions;
 
-import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 import org.apache.logging.log4j.LogManager;
@@ -10,21 +9,16 @@ import org.openqa.selenium.WebDriver;
 import Hooks.Testhooks;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
-import pageobjects.Cleaningpage;
 import pageobjects.Masterpage;
-import pageobjects.Signinpage;
 import resources.Base;
 
 public class Master extends Base {
 
-	private static Logger LOGGER = LogManager.getLogger(Cleaning.class);
-	private WebDriver driver;
-	private Masterpage masterpage;
-	public Master(Testhooks testhooks) throws Exception { 
-		this.driver = testhooks.getDriver();
+    private final Masterpage masterpage;
+	public Master(Testhooks testhooks) throws Exception {
+        WebDriver driver = testhooks.getDriver();
 		this.masterpage = new Masterpage(driver);
-		new Signinpage(driver);
-		LOGGER = LogManager.getLogger(Cleaning.class.getName());
+        Logger LOGGER = LogManager.getLogger(Master.class.getName());
 	}
 	@And("Admin or user clicks the Master")
 	public void Admin_or_user_clicks_the_Master() throws Exception {

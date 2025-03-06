@@ -19,14 +19,12 @@ import org.testng.AssertJUnit;
 import resources.Base;
 
 public class Profilepage extends Base {
-	private WebDriver driver;
+	private final WebDriver driver;
 	private WebDriverWait wait;
-	private Properties prop;
-	private Actions act; 
-	private Logger LOGGER = LogManager.getLogger(Profilepage.class);
-	private Signinpage signinpage;
+	private final Properties prop;
+	private final Actions act;
 
-	public Profilepage(WebDriver driver) throws Exception {
+    public Profilepage(WebDriver driver) throws Exception {
 		this.driver = driver;
 		prop = new Properties();
 		act = new Actions(driver);
@@ -35,11 +33,11 @@ public class Profilepage extends Base {
 		FileInputStream fis = new FileInputStream(propPath);
 		prop.load(fis);
 		initializeWait();
-		this.signinpage = new Signinpage(driver);
-		LOGGER = LogManager.getLogger(Profilepage.class.getName());
+        Signinpage signinpage = new Signinpage(driver);
+        Logger LOGGER = LogManager.getLogger(Profilepage.class.getName());
 	}
 
-	private boolean condition = true;
+	private final boolean condition = true;
 
 	private void initializeWait() {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(10));

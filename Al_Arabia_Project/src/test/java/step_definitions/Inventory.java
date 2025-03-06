@@ -1,4 +1,4 @@
-package Stepdefinitions;
+package test.java.step_definitions;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -18,10 +18,9 @@ public class Inventory extends Base {
 	//private static Logger LOGGER = LogManager.getLogger(Inventory.class);
 
 	private static Logger LOGGER = LogManager.getLogger(Inventory.class);
-	private WebDriver driver;
-	private Inventorypage inventorypage;
-	public Inventory(Testhooks testhooks) throws Exception { 
-		this.driver = testhooks.getDriver();
+    private final Inventorypage inventorypage;
+	public Inventory(Testhooks testhooks) throws Exception {
+        WebDriver driver = testhooks.getDriver();
 		this.inventorypage = new Inventorypage(driver);
 		new Signinpage(driver);
 		LOGGER = LogManager.getLogger(Inventory.class.getName());

@@ -1,0 +1,343 @@
+[INFO ] 2026-06-23 10:51:54.079 [main] Testhooks - Execution Started
+[INFO ] 2026-06-23 10:51:54.750 [main] Testhooks - Browser launched successfully
+[INFO ] 2026-06-23 12:44:43.766 [main] Testhooks - Execution Started
+[INFO ] 2026-06-23 12:44:44.604 [main] Testhooks - Browser launched successfully
+[INFO ] 2026-06-23 12:46:22.645 [main] Testhooks - Execution Started
+[INFO ] 2026-06-23 12:46:23.346 [main] Testhooks - Browser launched successfully
+[INFO ] 2026-06-23 12:46:24.251 [main] Testhooks - Navigated to URL
+[INFO ] 2026-06-23 12:46:24.526 [main] Signinpage - User enters valid email address
+[INFO ] 2026-06-23 12:46:24.707 [main] Signinpage - User enters valid password
+[INFO ] 2026-06-23 12:46:24.840 [main] Signinpage - User clicks on signin button
+[INFO ] 2026-06-23 12:46:30.393 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2026-06-23 12:46:31.984 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2026-06-23 12:46:35.835 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2026-06-23 12:46:35.988 [main] Memberspage - >> User clicked the invite member button
+[INFO ] 2026-06-23 12:46:36.702 [main] Memberspage - >> User clicked the invite member button
+[INFO ] 2026-06-23 12:46:41.352 [main] Memberspage - >> User selected the role:
+[INFO ] 2026-06-23 12:46:45.183 [main] Members - >> User got the invitation mail successfully >>
+[INFO ] 2026-06-23 12:52:46.329 [main] Testhooks - Execution Started
+[INFO ] 2026-06-23 12:52:47.108 [main] Testhooks - Browser launched successfully
+[INFO ] 2026-06-23 12:52:47.990 [main] Testhooks - Navigated to URL
+[INFO ] 2026-06-23 12:52:48.334 [main] Signinpage - User enters valid email address
+[INFO ] 2026-06-23 12:52:48.499 [main] Signinpage - User enters valid password
+[INFO ] 2026-06-23 12:52:48.628 [main] Signinpage - User clicks on signin button
+[INFO ] 2026-06-23 16:43:52.584 [main] Testhooks - Execution Started
+[INFO ] 2026-06-23 16:43:53.409 [main] Testhooks - Browser launched successfully
+[INFO ] 2026-06-23 16:43:54.222 [main] Testhooks - Navigated to URL
+[INFO ] 2026-06-23 16:43:54.486 [main] Signinpage - User enters valid email address
+[INFO ] 2026-06-23 16:43:54.639 [main] Signinpage - User enters valid password
+[INFO ] 2026-06-23 16:43:54.765 [main] Signinpage - User clicks on signin button
+[INFO ] 2026-06-23 16:45:48.233 [main] Testhooks - Execution Started
+[INFO ] 2026-06-23 16:45:49.119 [main] Testhooks - Browser launched successfully
+[INFO ] 2026-06-23 16:45:49.946 [main] Testhooks - Navigated to URL
+[INFO ] 2026-06-23 16:45:50.204 [main] Signinpage - User enters valid email address
+[INFO ] 2026-06-23 16:45:50.335 [main] Signinpage - User enters valid password
+[INFO ] 2026-06-23 16:45:50.467 [main] Signinpage - User clicks on signin button
+[INFO ] 2026-06-23 16:45:55.900 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2026-06-23 16:45:57.417 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2026-06-23 16:46:00.786 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2026-06-23 16:46:01.020 [main] Memberspage - >> User clicked the invite member button
+[INFO ] 2026-06-23 16:46:01.481 [main] Memberspage - >> User clicked the invite member button
+[INFO ] 2026-06-23 16:47:21.497 [main] Testhooks - Execution Started
+[INFO ] 2026-06-23 16:47:22.266 [main] Testhooks - Browser launched successfully
+[INFO ] 2026-06-23 16:47:23.140 [main] Testhooks - Navigated to URL
+[INFO ] 2026-06-23 16:47:23.372 [main] Signinpage - User enters valid email address
+[INFO ] 2026-06-23 16:47:23.545 [main] Signinpage - User enters valid password
+[INFO ] 2026-06-23 16:47:23.679 [main] Signinpage - User clicks on signin button
+[INFO ] 2026-06-23 17:56:31.554 [main] Testhooks - Execution Started
+[INFO ] 2026-06-23 17:56:32.407 [main] Testhooks - Browser launched successfully
+[INFO ] 2026-06-23 17:56:41.668 [main] Testhooks - Navigated to URL
+[INFO ] 2026-06-23 18:48:11.424 [main] Testhooks - Execution Started
+[INFO ] 2026-06-23 18:48:12.121 [main] Testhooks - Browser launched successfully
+[INFO ] 2026-06-23 18:48:13.061 [main] Testhooks - Navigated to URL
+[INFO ] 2026-06-23 18:48:13.289 [main] Signinpage - User enters valid email address
+[INFO ] 2026-06-23 18:48:13.475 [main] Signinpage - User enters valid password
+[INFO ] 2026-06-23 18:48:13.612 [main] Signinpage - User clicks on signin button
+[INFO ] 2026-06-23 18:48:19.090 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2026-06-23 18:48:20.316 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2026-06-23 18:48:22.056 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2026-06-23 18:48:22.264 [main] Memberspage - >> User clicked the invite member button
+[INFO ] 2026-06-23 18:48:22.781 [main] Memberspage - >> User clicked the invite member button
+[INFO ] 2026-06-23 18:52:06.536 [main] Testhooks - Execution Started
+[INFO ] 2026-06-23 18:52:07.331 [main] Testhooks - Browser launched successfully
+[INFO ] 2026-06-23 18:52:08.474 [main] Testhooks - Navigated to URL
+[INFO ] 2026-06-23 18:52:09.015 [main] Signinpage - User enters valid email address
+[INFO ] 2026-06-23 18:52:09.180 [main] Signinpage - User enters valid password
+[INFO ] 2026-06-23 18:52:09.278 [main] Signinpage - User clicks on signin button
+[INFO ] 2026-06-23 18:52:14.755 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2026-06-23 18:52:16.017 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2026-06-23 18:52:17.555 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2026-06-23 18:52:17.637 [main] Memberspage - >> The members dashboard list page got displayed
+[INFO ] 2026-06-23 18:52:17.637 [main] Members - >> Admin/user got the members dashboard page >>
+[INFO ] 2026-06-23 18:52:29.104 [main] Testhooks - Execution Started
+[INFO ] 2026-06-23 18:52:29.907 [main] Testhooks - Browser launched successfully
+[INFO ] 2026-06-23 18:52:31.320 [main] Testhooks - Navigated to URL
+[INFO ] 2026-06-23 18:52:31.587 [main] Signinpage - User enters valid email address
+[INFO ] 2026-06-23 18:52:31.754 [main] Signinpage - User enters valid password
+[INFO ] 2026-06-23 18:52:31.852 [main] Signinpage - User clicks on signin button
+[INFO ] 2026-06-23 18:52:37.355 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2026-06-23 18:52:38.806 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2026-06-23 18:52:40.314 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2026-06-23 18:55:19.765 [main] Testhooks - Execution Started
+[INFO ] 2026-06-23 18:55:20.487 [main] Testhooks - Browser launched successfully
+[INFO ] 2026-06-23 18:55:21.362 [main] Testhooks - Navigated to URL
+[INFO ] 2026-06-23 18:55:21.652 [main] Signinpage - User enters valid email address
+[INFO ] 2026-06-23 18:55:21.792 [main] Signinpage - User enters valid password
+[INFO ] 2026-06-23 18:55:21.916 [main] Signinpage - User clicks on signin button
+[INFO ] 2026-06-23 18:55:27.399 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2026-06-23 18:55:28.940 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2026-06-23 18:55:33.288 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2026-06-23 19:01:14.673 [main] Testhooks - Execution Started
+[INFO ] 2026-06-23 19:01:15.399 [main] Testhooks - Browser launched successfully
+[INFO ] 2026-06-23 19:01:16.260 [main] Testhooks - Navigated to URL
+[INFO ] 2026-06-23 19:01:16.517 [main] Signinpage - User enters valid email address
+[INFO ] 2026-06-23 19:01:16.663 [main] Signinpage - User enters valid password
+[INFO ] 2026-06-23 19:01:16.796 [main] Signinpage - User clicks on signin button
+[INFO ] 2026-06-23 19:01:22.286 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2026-06-23 19:01:23.505 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2026-06-23 19:01:25.216 [main] Memberspage - >> Admin/User got navigated to members page
+[ERROR] 2026-06-23 19:01:56.278 [main] Memberspage - ❌ Exception occurred while checking Products page: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: (//h6[normalize-space()='tomgeorge'])[1]' (tried for 20 second(s) with 500 milliseconds interval)
+[INFO ] 2026-06-23 19:03:40.744 [main] Testhooks - Execution Started
+[INFO ] 2026-06-23 19:03:41.542 [main] Testhooks - Browser launched successfully
+[INFO ] 2026-06-23 19:03:42.415 [main] Testhooks - Navigated to URL
+[INFO ] 2026-06-23 19:03:42.667 [main] Signinpage - User enters valid email address
+[INFO ] 2026-06-23 19:03:42.847 [main] Signinpage - User enters valid password
+[INFO ] 2026-06-23 19:03:42.979 [main] Signinpage - User clicks on signin button
+[INFO ] 2026-06-23 19:03:48.424 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2026-06-23 19:03:49.655 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2026-06-23 19:03:53.330 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2026-06-23 19:03:53.908 [main] Memberspage - ✅ Products page is displayed
+[INFO ] 2026-06-23 19:04:51.697 [main] Testhooks - Execution Started
+[INFO ] 2026-06-23 19:04:52.499 [main] Testhooks - Browser launched successfully
+[INFO ] 2026-06-23 19:04:53.520 [main] Testhooks - Navigated to URL
+[INFO ] 2026-06-23 19:04:53.752 [main] Signinpage - User enters valid email address
+[INFO ] 2026-06-23 19:04:53.917 [main] Signinpage - User enters valid password
+[INFO ] 2026-06-23 19:04:54.058 [main] Signinpage - User clicks on signin button
+[INFO ] 2026-06-23 19:04:59.558 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2026-06-23 19:05:00.827 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2026-06-23 19:05:03.923 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2026-06-23 19:10:21.037 [main] Testhooks - Execution Started
+[INFO ] 2026-06-23 19:10:21.851 [main] Testhooks - Browser launched successfully
+[INFO ] 2026-06-23 19:10:22.842 [main] Testhooks - Navigated to URL
+[INFO ] 2026-06-23 19:10:23.065 [main] Signinpage - User enters valid email address
+[INFO ] 2026-06-23 19:10:23.236 [main] Signinpage - User enters valid password
+[INFO ] 2026-06-23 19:10:23.360 [main] Signinpage - User clicks on signin button
+[INFO ] 2026-06-23 19:10:28.843 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2026-06-23 19:10:30.107 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2026-06-23 19:10:31.543 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2026-06-23 19:10:40.304 [main] Testhooks - Execution Started
+[INFO ] 2026-06-23 19:10:41.023 [main] Testhooks - Browser launched successfully
+[INFO ] 2026-06-23 19:10:42.215 [main] Testhooks - Navigated to URL
+[INFO ] 2026-06-23 19:10:42.473 [main] Signinpage - User enters valid email address
+[INFO ] 2026-06-23 19:10:42.629 [main] Signinpage - User enters valid password
+[INFO ] 2026-06-23 19:10:42.729 [main] Signinpage - User clicks on signin button
+[INFO ] 2026-06-23 19:10:48.239 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2026-06-23 19:10:49.486 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2026-06-23 19:10:52.760 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2026-06-23 19:11:03.149 [main] Testhooks - Execution Started
+[INFO ] 2026-06-23 19:11:03.911 [main] Testhooks - Browser launched successfully
+[INFO ] 2026-06-23 19:11:04.925 [main] Testhooks - Navigated to URL
+[INFO ] 2026-06-23 19:11:05.170 [main] Signinpage - User enters valid email address
+[INFO ] 2026-06-23 19:11:05.342 [main] Signinpage - User enters valid password
+[INFO ] 2026-06-23 19:11:05.445 [main] Signinpage - User clicks on signin button
+[INFO ] 2026-06-23 19:11:10.899 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2026-06-23 19:11:14.415 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2026-06-23 19:11:15.814 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2026-06-23 19:11:25.851 [main] Testhooks - Execution Started
+[INFO ] 2026-06-23 19:11:26.590 [main] Testhooks - Browser launched successfully
+[INFO ] 2026-06-23 19:11:27.608 [main] Testhooks - Navigated to URL
+[INFO ] 2026-06-23 19:11:27.875 [main] Signinpage - User enters valid email address
+[INFO ] 2026-06-23 19:11:28.076 [main] Signinpage - User enters valid password
+[INFO ] 2026-06-23 19:11:28.174 [main] Signinpage - User clicks on signin button
+[INFO ] 2026-06-23 19:11:33.608 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2026-06-23 19:11:37.686 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2026-06-23 19:11:38.907 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2026-06-23 19:14:02.390 [main] Testhooks - Execution Started
+[INFO ] 2026-06-23 19:14:03.071 [main] Testhooks - Browser launched successfully
+[INFO ] 2026-06-23 19:14:05.409 [main] Testhooks - Navigated to URL
+[INFO ] 2026-06-23 19:14:05.735 [main] Signinpage - User enters valid email address
+[INFO ] 2026-06-23 19:14:05.879 [main] Signinpage - User enters valid password
+[INFO ] 2026-06-23 19:14:06.001 [main] Signinpage - User clicks on signin button
+[INFO ] 2026-06-23 19:14:11.579 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2026-06-23 19:14:13.205 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2026-06-23 19:14:16.141 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2026-06-23 19:15:46.894 [main] Testhooks - Execution Started
+[INFO ] 2026-06-23 19:15:47.566 [main] Testhooks - Browser launched successfully
+[INFO ] 2026-06-23 19:15:48.482 [main] Testhooks - Navigated to URL
+[INFO ] 2026-06-23 19:15:48.794 [main] Signinpage - User enters valid email address
+[INFO ] 2026-06-23 19:15:48.993 [main] Signinpage - User enters valid password
+[INFO ] 2026-06-23 19:15:49.109 [main] Signinpage - User clicks on signin button
+[INFO ] 2026-06-23 19:15:54.552 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2026-06-23 19:15:56.132 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2026-06-23 19:15:59.110 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2026-06-23 19:18:11.544 [main] Testhooks - Execution Started
+[INFO ] 2026-06-23 19:18:12.303 [main] Testhooks - Browser launched successfully
+[INFO ] 2026-06-23 19:18:13.312 [main] Testhooks - Navigated to URL
+[INFO ] 2026-06-23 19:18:13.553 [main] Signinpage - User enters valid email address
+[INFO ] 2026-06-23 19:18:13.696 [main] Signinpage - User enters valid password
+[INFO ] 2026-06-23 19:18:13.826 [main] Signinpage - User clicks on signin button
+[INFO ] 2026-06-23 19:18:19.233 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2026-06-23 19:18:20.440 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2026-06-23 19:18:22.171 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2026-06-23 19:18:49.136 [main] Testhooks - Execution Started
+[INFO ] 2026-06-23 19:18:49.819 [main] Testhooks - Browser launched successfully
+[INFO ] 2026-06-23 19:18:50.646 [main] Testhooks - Navigated to URL
+[INFO ] 2026-06-23 19:18:50.864 [main] Signinpage - User enters valid email address
+[INFO ] 2026-06-23 19:18:51.015 [main] Signinpage - User enters valid password
+[INFO ] 2026-06-23 19:18:51.173 [main] Signinpage - User clicks on signin button
+[INFO ] 2026-06-23 19:18:56.563 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2026-06-23 19:18:57.978 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2026-06-23 19:19:01.475 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2026-06-23 19:19:14.183 [main] Testhooks - Execution Started
+[INFO ] 2026-06-23 19:19:14.908 [main] Testhooks - Browser launched successfully
+[INFO ] 2026-06-23 19:19:15.859 [main] Testhooks - Navigated to URL
+[INFO ] 2026-06-23 19:19:16.112 [main] Signinpage - User enters valid email address
+[INFO ] 2026-06-23 19:19:16.253 [main] Signinpage - User enters valid password
+[INFO ] 2026-06-23 19:19:16.344 [main] Signinpage - User clicks on signin button
+[INFO ] 2026-06-23 19:19:21.763 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2026-06-23 19:19:23.462 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2026-06-23 19:19:26.561 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2026-06-23 19:19:47.847 [main] Testhooks - Execution Started
+[INFO ] 2026-06-23 19:19:48.546 [main] Testhooks - Browser launched successfully
+[INFO ] 2026-06-23 19:19:49.377 [main] Testhooks - Navigated to URL
+[INFO ] 2026-06-23 19:19:49.604 [main] Signinpage - User enters valid email address
+[INFO ] 2026-06-23 19:19:49.775 [main] Signinpage - User enters valid password
+[INFO ] 2026-06-23 19:19:49.893 [main] Signinpage - User clicks on signin button
+[INFO ] 2026-06-23 19:19:55.364 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2026-06-23 19:19:56.611 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2026-06-23 19:19:59.948 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2026-06-23 19:20:40.811 [main] Testhooks - Execution Started
+[INFO ] 2026-06-23 19:20:41.513 [main] Testhooks - Browser launched successfully
+[INFO ] 2026-06-23 19:20:42.431 [main] Testhooks - Navigated to URL
+[INFO ] 2026-06-23 19:20:42.648 [main] Signinpage - User enters valid email address
+[INFO ] 2026-06-23 19:20:42.805 [main] Signinpage - User enters valid password
+[INFO ] 2026-06-23 19:20:42.955 [main] Signinpage - User clicks on signin button
+[INFO ] 2026-06-23 19:20:48.382 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2026-06-23 19:20:51.848 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2026-06-23 19:20:53.087 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2026-06-23 19:21:06.398 [main] Testhooks - Execution Started
+[INFO ] 2026-06-23 19:21:07.130 [main] Testhooks - Browser launched successfully
+[INFO ] 2026-06-23 19:21:07.980 [main] Testhooks - Navigated to URL
+[INFO ] 2026-06-23 19:21:08.227 [main] Signinpage - User enters valid email address
+[INFO ] 2026-06-23 19:21:08.389 [main] Signinpage - User enters valid password
+[INFO ] 2026-06-23 19:21:08.530 [main] Signinpage - User clicks on signin button
+[INFO ] 2026-06-23 19:21:13.912 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2026-06-23 19:21:15.206 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2026-06-23 19:21:18.669 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2026-06-23 19:22:17.748 [main] Testhooks - Execution Started
+[INFO ] 2026-06-23 19:22:18.463 [main] Testhooks - Browser launched successfully
+[INFO ] 2026-06-23 19:22:19.667 [main] Testhooks - Navigated to URL
+[INFO ] 2026-06-23 19:22:19.931 [main] Signinpage - User enters valid email address
+[INFO ] 2026-06-23 19:22:20.070 [main] Signinpage - User enters valid password
+[INFO ] 2026-06-23 19:22:20.175 [main] Signinpage - User clicks on signin button
+[INFO ] 2026-06-23 19:22:25.607 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2026-06-23 19:22:26.829 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2026-06-23 19:22:30.037 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2026-06-23 19:23:45.678 [main] Testhooks - Execution Started
+[INFO ] 2026-06-23 19:23:46.501 [main] Testhooks - Browser launched successfully
+[INFO ] 2026-06-23 19:23:47.442 [main] Testhooks - Navigated to URL
+[INFO ] 2026-06-23 19:23:47.729 [main] Signinpage - User enters valid email address
+[INFO ] 2026-06-23 19:23:47.879 [main] Signinpage - User enters valid password
+[INFO ] 2026-06-23 19:23:47.980 [main] Signinpage - User clicks on signin button
+[INFO ] 2026-06-23 19:23:53.513 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2026-06-23 19:23:54.760 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2026-06-23 19:23:56.325 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2026-06-23 19:25:14.417 [main] Testhooks - Execution Started
+[INFO ] 2026-06-23 19:25:15.180 [main] Testhooks - Browser launched successfully
+[INFO ] 2026-06-23 19:25:16.041 [main] Testhooks - Navigated to URL
+[INFO ] 2026-06-23 19:25:16.273 [main] Signinpage - User enters valid email address
+[INFO ] 2026-06-23 19:25:16.410 [main] Signinpage - User enters valid password
+[INFO ] 2026-06-23 19:25:16.550 [main] Signinpage - User clicks on signin button
+[INFO ] 2026-06-23 19:25:22.002 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2026-06-23 19:25:23.231 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2026-06-23 19:25:26.716 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2026-06-23 19:29:11.268 [main] Testhooks - Execution Started
+[INFO ] 2026-06-23 19:29:11.904 [main] Testhooks - Browser launched successfully
+[INFO ] 2026-06-23 19:29:12.777 [main] Testhooks - Navigated to URL
+[INFO ] 2026-06-23 19:29:13.092 [main] Signinpage - User enters valid email address
+[INFO ] 2026-06-23 19:29:13.235 [main] Signinpage - User enters valid password
+[INFO ] 2026-06-23 19:29:13.372 [main] Signinpage - User clicks on signin button
+[INFO ] 2026-06-23 19:29:18.848 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2026-06-23 19:29:20.117 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2026-06-23 19:29:23.576 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2026-06-23 19:29:46.576 [main] Testhooks - Execution Started
+[INFO ] 2026-06-23 19:29:47.237 [main] Testhooks - Browser launched successfully
+[INFO ] 2026-06-23 19:29:48.102 [main] Testhooks - Navigated to URL
+[INFO ] 2026-06-23 19:29:48.317 [main] Signinpage - User enters valid email address
+[INFO ] 2026-06-23 19:29:48.471 [main] Signinpage - User enters valid password
+[INFO ] 2026-06-23 19:29:48.552 [main] Signinpage - User clicks on signin button
+[INFO ] 2026-06-23 19:29:53.929 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2026-06-23 19:29:57.118 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2026-06-23 19:29:58.571 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2026-06-23 19:30:16.109 [main] Testhooks - Execution Started
+[INFO ] 2026-06-23 19:30:16.791 [main] Testhooks - Browser launched successfully
+[INFO ] 2026-06-23 19:30:17.736 [main] Testhooks - Navigated to URL
+[INFO ] 2026-06-23 19:30:17.997 [main] Signinpage - User enters valid email address
+[INFO ] 2026-06-23 19:30:18.169 [main] Signinpage - User enters valid password
+[INFO ] 2026-06-23 19:30:18.303 [main] Signinpage - User clicks on signin button
+[INFO ] 2026-06-23 19:30:23.810 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2026-06-23 19:30:25.075 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2026-06-23 19:30:26.720 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2026-06-23 19:31:15.759 [main] Testhooks - Execution Started
+[INFO ] 2026-06-23 19:31:16.569 [main] Testhooks - Browser launched successfully
+[INFO ] 2026-06-23 19:31:18.427 [main] Testhooks - Navigated to URL
+[INFO ] 2026-06-23 19:31:18.690 [main] Signinpage - User enters valid email address
+[INFO ] 2026-06-23 19:31:18.833 [main] Signinpage - User enters valid password
+[INFO ] 2026-06-23 19:31:18.998 [main] Signinpage - User clicks on signin button
+[INFO ] 2026-06-23 19:31:24.415 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2026-06-23 19:31:27.717 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2026-06-23 19:31:29.097 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2026-06-23 19:31:48.082 [main] Testhooks - Execution Started
+[INFO ] 2026-06-23 19:31:48.859 [main] Testhooks - Browser launched successfully
+[INFO ] 2026-06-23 19:31:49.680 [main] Testhooks - Navigated to URL
+[INFO ] 2026-06-23 19:31:49.932 [main] Signinpage - User enters valid email address
+[INFO ] 2026-06-23 19:31:50.100 [main] Signinpage - User enters valid password
+[INFO ] 2026-06-23 19:31:50.231 [main] Signinpage - User clicks on signin button
+[INFO ] 2026-06-23 19:31:55.712 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2026-06-23 19:31:57.266 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2026-06-23 19:31:59.933 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2026-06-23 19:32:26.930 [main] Testhooks - Execution Started
+[INFO ] 2026-06-23 19:32:27.705 [main] Testhooks - Browser launched successfully
+[INFO ] 2026-06-23 19:32:28.595 [main] Testhooks - Navigated to URL
+[INFO ] 2026-06-23 19:32:28.850 [main] Signinpage - User enters valid email address
+[INFO ] 2026-06-23 19:32:29.021 [main] Signinpage - User enters valid password
+[INFO ] 2026-06-23 19:32:29.135 [main] Signinpage - User clicks on signin button
+[INFO ] 2026-06-23 19:32:34.532 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2026-06-23 19:32:36.023 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2026-06-23 19:32:39.684 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2026-06-23 19:33:34.397 [main] Testhooks - Execution Started
+[INFO ] 2026-06-23 19:33:35.159 [main] Testhooks - Browser launched successfully
+[INFO ] 2026-06-23 19:33:36.143 [main] Testhooks - Navigated to URL
+[INFO ] 2026-06-23 19:33:36.408 [main] Signinpage - User enters valid email address
+[INFO ] 2026-06-23 19:33:36.559 [main] Signinpage - User enters valid password
+[INFO ] 2026-06-23 19:33:36.697 [main] Signinpage - User clicks on signin button
+[INFO ] 2026-06-23 19:33:42.085 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2026-06-23 19:33:43.324 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2026-06-23 19:33:44.737 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2026-06-23 19:36:41.506 [main] Testhooks - Execution Started
+[INFO ] 2026-06-23 19:36:42.250 [main] Testhooks - Browser launched successfully
+[INFO ] 2026-06-23 19:36:43.160 [main] Testhooks - Navigated to URL
+[INFO ] 2026-06-23 19:36:43.424 [main] Signinpage - User enters valid email address
+[INFO ] 2026-06-23 19:36:43.581 [main] Signinpage - User enters valid password
+[INFO ] 2026-06-23 19:36:43.717 [main] Signinpage - User clicks on signin button
+[INFO ] 2026-06-23 19:36:49.295 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2026-06-23 19:36:50.510 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2026-06-23 19:36:51.953 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2026-06-23 19:42:29.933 [main] Testhooks - Execution Started
+[INFO ] 2026-06-23 19:42:30.830 [main] Testhooks - Browser launched successfully
+[INFO ] 2026-06-23 19:42:31.895 [main] Testhooks - Navigated to URL
+[INFO ] 2026-06-23 19:42:32.125 [main] Signinpage - User enters valid email address
+[INFO ] 2026-06-23 19:42:32.291 [main] Signinpage - User enters valid password
+[INFO ] 2026-06-23 19:42:32.422 [main] Signinpage - User clicks on signin button
+[INFO ] 2026-06-23 19:42:37.912 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2026-06-23 19:42:39.261 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2026-06-23 19:42:42.278 [main] Memberspage - >> Admin/User got navigated to members page
+[INFO ] 2026-06-23 19:43:17.200 [main] Testhooks - Execution Started
+[INFO ] 2026-06-23 19:43:17.937 [main] Testhooks - Browser launched successfully
+[INFO ] 2026-06-23 19:43:18.923 [main] Testhooks - Navigated to URL
+[INFO ] 2026-06-23 19:43:19.194 [main] Signinpage - User enters valid email address
+[INFO ] 2026-06-23 19:43:19.348 [main] Signinpage - User enters valid password
+[INFO ] 2026-06-23 19:43:19.468 [main] Signinpage - User clicks on signin button
+[INFO ] 2026-06-23 19:43:24.785 [main] Members - >> Admin/User got logged in >>
+[INFO ] 2026-06-23 19:43:26.053 [main] Memberspage - >> Admin/User got navigated to dashboard page
+[INFO ] 2026-06-23 19:43:29.371 [main] Memberspage - >> Admin/User got navigated to members page

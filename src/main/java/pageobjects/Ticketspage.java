@@ -172,7 +172,7 @@ public class Ticketspage extends Base {
 		return successMessageElement.getText().trim();
 	}
 	@FindBy(id = "doc_searchQueryInput")
-	private WebElement TicketSearch;
+	private WebElement TicketSearch; 
 	
 	public void Ticket_search_enter_text() {
 		wait.until(ExpectedConditions.visibilityOf(TicketSearch)).click();

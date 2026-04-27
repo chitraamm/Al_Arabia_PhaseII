@@ -156,7 +156,7 @@ public class Signinpage extends Base {
     public void checkPasswordNoUppercaseErrorDisplayed() {
         wait.until(ExpectedConditions.visibilityOf(passwordNoUppercaseError)).isDisplayed();
         LOGGER.info("User got a must contain one uppercase character error message");
-    }//
+    }
 
     public void clickPasswordFieldEyeIcon() {
         wait.until(ExpectedConditions.visibilityOf(passwordFieldEyeIcon)).click();

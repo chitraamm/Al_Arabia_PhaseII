@@ -56,14 +56,24 @@ public class Signin extends Base {
 
     @Then("User should login successfully")
     public void user_should_login_successfully() {
-        signinpage.checkDashboardDisplayed();
+        signinpage.Projectselection_Displayed();
+    }
+    
+    @And("User selects Project type")
+    public void User_selects_Project_type() {
+        signinpage.Select_Project();
+    }
+    
+    @And("Press Continue Button")
+    public void Press_Continue_Button() {
+        signinpage.Press_Continue();
     }
 
     @Then("Al-Arabia dashboard should display successfully")
     public void al_arabia_dashboard_should_display_successfully() {
         signinpage.checkDashboardDisplayed();
     }
-
+    
     @When("^User enters invalid email address$")
     public void user_enters_invalid_email_address() {
         signinpage.enterInvalidEmail();

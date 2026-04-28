@@ -93,7 +93,11 @@ public class Inventorypage extends Base {
 	public void New_purchase_button() {
 		wait.until(ExpectedConditions.visibilityOf(click_New_Purchase)).click();
 	}
-	@FindBy(id = "react-select-3-input")
+	
+	@FindBy(xpath = "(//h5[normalize-space()='New Purchase'])[1]")
+	private WebElement display_new_inventorypage;
+	
+	@FindBy(xpath = "(//div[@class='select__input-container css-19bb58m'])[1]")
 	private WebElement supplier_name;
 	
 	@FindBy(xpath = "//input[@name='invoice_no']")
@@ -136,7 +140,7 @@ public class Inventorypage extends Base {
 	private WebElement save_stock;
 	
 	public void Mandatory_fields_enter_new_purchase() throws Exception {
-		
+		wait.until(ExpectedConditions.visibilityOf(display_new_inventorypage)).isDisplayed();
 		String suppliername = prop.getProperty("suppliername");
 		wait.until(ExpectedConditions.visibilityOf(supplier_name)).sendKeys(suppliername);
 		Thread.sleep(2000);

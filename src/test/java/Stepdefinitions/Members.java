@@ -35,6 +35,8 @@ public class Members extends Base {
     	signinpage.enterValidEmail();
     	 signinpage.enterValidPassword();
          signinpage.clickSignInButton();
+         signinpage.Select_Project();
+         signinpage.Press_Continue();
         LOGGER.info(">> Admin/User got logged in >>");
     }
 

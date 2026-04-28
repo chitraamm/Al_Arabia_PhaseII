@@ -54,6 +54,15 @@ public class Signinpage extends Base {
 
     @FindBy(xpath = "//h6[normalize-space()='Dashboard']")
     private WebElement dashboard;
+    
+    @FindBy(xpath = "(//h4[normalize-space()='Choose a project to continue'])[1]")
+    private WebElement Projectselection_popup_display;
+    
+    @FindBy(xpath = "(//div[@class='d-flex align-items-center gap-1 fs-15 text-primary'])[1]")
+    private WebElement select_Project;
+    
+    @FindBy(id = "Continue")
+    private WebElement press_continue;
 
     @FindBy(xpath = "//small[contains(text(),'Password is too short- should be 8 characters')]")
     private WebElement passwordTooShortError;
@@ -61,11 +70,8 @@ public class Signinpage extends Base {
     @FindBy(xpath = "//small[normalize-space()='Must Contain One Number']")
     private WebElement passwordNoNumberError;
 
-    @FindBy(xpath = "//small[normalize-space()='Must Contain One Special Case Character']")
+    @FindBy(xpath = "//small[normalize-space()='Must contain 8-20 characters, one uppercase, one lowercase, one number, and one special character']")
     private WebElement passwordNoSpecialCharError;
-
-    @FindBy(xpath = "//small[normalize-space()='Must Contain One Uppercase, One Lowercase']")
-    private WebElement passwordNoUppercaseError;
 
     @FindBy(xpath = "//span[@class='eyeicon']//*[name()='svg']")
     private WebElement passwordFieldEyeIcon;
@@ -73,7 +79,7 @@ public class Signinpage extends Base {
     @FindBy(xpath = "//small[normalize-space()='E-mail Address or phone number is required']")
     private WebElement emailPhoneNoRequiredError;
 
-    // Page Methods d  s
+    // Page Methods
     public void enterValidEmail() {
         wait.until(ExpectedConditions.visibilityOf(emailField)).sendKeys(prop.getProperty("Admin_email_address"));
         LOGGER.info("User enters valid email address");
@@ -131,6 +137,22 @@ public class Signinpage extends Base {
         AssertJUnit.assertTrue(userPasswordError.isDisplayed());
         LOGGER.info("User got an invalid username and password error message");
     }
+    
+    public void Projectselection_Displayed() {
+        wait.until(ExpectedConditions.visibilityOf(Projectselection_popup_display));
+        AssertJUnit.assertTrue(Projectselection_popup_display.isDisplayed());
+        LOGGER.info("Al-Arabia Project selection popup displayed successfully");
+    }
+    
+    public void Select_Project () {
+        wait.until(ExpectedConditions.visibilityOf(Projectselection_popup_display));
+        wait.until(ExpectedConditions.visibilityOf(select_Project)).click();
+    }
+    
+    public void Press_Continue () {
+        wait.until(ExpectedConditions.visibilityOf(Projectselection_popup_display));
+        wait.until(ExpectedConditions.visibilityOf(press_continue)).click();
+    }
 
     public void checkDashboardDisplayed() {
         wait.until(ExpectedConditions.visibilityOf(dashboard));
@@ -154,7 +176,7 @@ public class Signinpage extends Base {
     }
 
     public void checkPasswordNoUppercaseErrorDisplayed() {
-        wait.until(ExpectedConditions.visibilityOf(passwordNoUppercaseError)).isDisplayed();
+        wait.until(ExpectedConditions.visibilityOf(passwordNoSpecialCharError)).isDisplayed();
         LOGGER.info("User got a must contain one uppercase character error message");
     }
 

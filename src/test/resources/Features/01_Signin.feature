@@ -9,6 +9,8 @@ When User enters valid email address
 And Enter valid password
 And Click password field eye icon 
 And Clicks on Sign in button
+And User selects Project type 
+And Press Continue Button 
 Then User should login successfully
 Then Al-Arabia dashboard should display successfully
 

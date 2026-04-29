@@ -128,7 +128,7 @@ And Admin or user clicks the Inventory module
 And User click on Delete option in kebab menu and confirm Yes
 Then Purchase deleted popup will be displayed successfully as "<successMessage>"
  Examples:
-      | successMessage 			         	 |
+      | successMessage 			       |
       | Success Material info deleted  |   
       
 @Inventory @Inventory16 @smoke @regression @all

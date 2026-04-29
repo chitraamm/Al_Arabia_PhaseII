@@ -120,7 +120,12 @@ public class Members extends Base {
     
     @And("User sort the members list Name Z to A")
     public void User_sort_the_members_list_Name_Z_to_A () {
-        membersPage.members_sort_A_Z();
+        membersPage.members_sort_Z_A();
+    }
+    
+    @Then("Z to A Members list get displayed successfully")
+    public void Z_to_A_members_list_get_displayed_successfully() {
+        membersPage.members_sort_ZtoA_display();
     }
     
     @And("User sort the members list Recently Added")
@@ -128,9 +133,19 @@ public class Members extends Base {
         membersPage.members_sort_Recently_Added();
     }
     
+    @Then("Recently added Members list get displayed successfully")
+    public void Recently_added_members_list_get_displayed_successfully() {
+        membersPage.Recentlyadded_members_display();
+    }
+    
     @And("User filter the members list status-Active")
     public void User_filter_the_members_list_status_Active () {
         membersPage.members_filter_sts_active();
+    }
+    
+    @And("User click apply button")
+    public void User_click_apply_button () throws Exception {
+        membersPage.Click_apply_button();
     }
     
     @And("User filter the members list status-Active1")
@@ -160,7 +175,7 @@ public class Members extends Base {
     
     @Then("Expired members list get displayed successfully")
     public void Expired_members_list_get_displayed_successfully() {
-        membersPage.members_filter_blocked_list_display();
+        membersPage.members_filter_Expired_list_display();
     }
     
     @And("User filter the members list status-pending")

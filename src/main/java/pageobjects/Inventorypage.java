@@ -100,7 +100,7 @@ public class Inventorypage extends Base {
 	@FindBy(xpath = "(//div[@class='select__input-container css-19bb58m'])[1]")
 	private WebElement supplier_name;
 	
-	@FindBy(xpath = "//input[@name='invoice_no']")
+	@FindBy(id = "invoice_no")
 	private WebElement invoice_id;
 	
 	@FindBy(xpath = "//input[@name='invoice_date']")
@@ -109,65 +109,63 @@ public class Inventorypage extends Base {
 	@FindBy(xpath = "//span[normalize-space()='19']")
 	private WebElement clicked_invoice_date;
 	
-	@FindBy(xpath = "//input[@name='po_no']")
+	@FindBy(id = "po_no")
 	private WebElement purchase_number;
 	
 	@FindBy(xpath = "//input[@name='po_date']")
 	private WebElement purchase_date;
 	
-	@FindBy(xpath = "//span[normalize-space()='27']")
+	@FindBy(id = "formikDateField_po_date")
 	private WebElement clicked_purchased_date;
 	
-	@FindBy(xpath = "//input[@name='consignment_batch_no']")
+	@FindBy(id = "consignment_batch_no")
 	private WebElement Consignment_batch_no;
 	
-	@FindBy(xpath = "//input[@name='date_recevied']")
+	@FindBy(id = "formikDateField_date_recevied")
 	private WebElement Date_recevied;
 	
-	@FindBy(xpath = "//span[normalize-space()='28']")
+	@FindBy(xpath = "(//span[normalize-space()='22'])[1]")
 	private WebElement clicked_received_date;
 	
 	@FindBy(xpath = "//input[@name='project_name']")
 	private WebElement project_name;
 	
-	@FindBy(id = "react-select-4-input")
+	@FindBy(xpath = "(//*[name()='svg'][@class='css-tj5bde-Svg'])[3]")
 	private WebElement stock_code;
 	
-	@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[2]/div[2]/form/div[3]/div[2]/div/table/tbody/tr/td[4]/form/div/div/input")
+	@FindBy(id = "stocks.0.quantity")
 	private WebElement quantity;
 	
 	@FindBy(id = "Save")
 	private WebElement save_stock;
 	
 	public void Mandatory_fields_enter_new_purchase() throws Exception {
-		Thread.sleep(2000);
 		wait.until(ExpectedConditions.visibilityOf(display_new_inventorypage)).isDisplayed();
-		String suppliername = prop.getProperty("suppliername");
-		wait.until(ExpectedConditions.visibilityOf(supplier_name)).sendKeys(suppliername);
-		Thread.sleep(2000);
-		act.moveToElement(supplier_name).click().sendKeys(""+Keys.ENTER+Keys.ARROW_RIGHT).perform();
+		act.moveToElement(supplier_name).click().sendKeys(""+Keys.ENTER).perform();Thread.sleep(2000);
 		
-		
-		String invoiceid = prop.getProperty("invoiceid");
-		wait.until(ExpectedConditions.visibilityOf(invoice_id)).sendKeys(invoiceid);
-		
+		wait.until(ExpectedConditions.visibilityOf(supplier_name)).isDisplayed();
+		wait.until(ExpectedConditions.visibilityOf(invoice_id)).sendKeys(prop.getProperty("invoiceid"));
+
+		wait.until(ExpectedConditions.visibilityOf(invoice_id)).isDisplayed();
 		act.moveToElement(invoice_date).click().perform();
 		act.moveToElement(clicked_invoice_date).click().perform();
-		
-		String purchasenumber = prop.getProperty("purchasenumber");
-		wait.until(ExpectedConditions.visibilityOf(purchase_number)).sendKeys(purchasenumber);
 
+		wait.until(ExpectedConditions.visibilityOf(invoice_date)).isDisplayed();
+		wait.until(ExpectedConditions.visibilityOf(purchase_number)).sendKeys(prop.getProperty("purchasenumber"));
+
+		wait.until(ExpectedConditions.visibilityOf(purchase_number)).isDisplayed();
 		act.moveToElement(purchase_date).click().perform();
 		act.moveToElement(clicked_purchased_date).click().perform();
 		
-		String consignmentnumber = prop.getProperty("consignmentnumber");
-		wait.until(ExpectedConditions.visibilityOf(Consignment_batch_no)).sendKeys(consignmentnumber);
-		
+		wait.until(ExpectedConditions.visibilityOf(clicked_purchased_date)).isDisplayed();
+
+		act.moveToElement(Consignment_batch_no).click().perform();
+		wait.until(ExpectedConditions.visibilityOf(Consignment_batch_no)).sendKeys(prop.getProperty("consignmentnumber"));
+		Thread.sleep(2000);
+
+		wait.until(ExpectedConditions.visibilityOf(Consignment_batch_no)).isDisplayed();
 		act.moveToElement(Date_recevied).click().perform();
-		act.moveToElement(clicked_received_date).click().perform();
-		
-		String projectname = prop.getProperty("projectname");
-		wait.until(ExpectedConditions.visibilityOf(project_name)).sendKeys(projectname);
+//		act.moveToElement(clicked_received_date).click().perform();
 		
 		wait.until(ExpectedConditions.visibilityOf(stock_code));
 		act.moveToElement(stock_code).click().sendKeys(""+Keys.ENTER).perform();

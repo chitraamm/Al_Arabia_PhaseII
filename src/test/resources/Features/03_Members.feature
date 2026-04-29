@@ -9,7 +9,7 @@ And User clicks the members module
 Then Al-Arabia members dashboard should display successfully
 
 @members @members02 @regression @sanity @all
-Scenario Outline: T002_Invite the member with valid inputs
+Scenario Outline: T002_Invite the member with valid inputs and Project selection 
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And User clicks the members module
@@ -17,6 +17,7 @@ And User clicks the invite member button
 And User enters the email or phone number
 And User selects the role manager
 And User selects the department electrical
+And User selects Projects
 And User clicks the send invite button
 Then The invitation should sent to user given mail address successfully
 
@@ -49,8 +50,8 @@ Scenario Outline: T006_To verify the members feature sort Name - Z to A
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And User clicks the members module
-And User sort the members list Name Z to A 
-Then Members list get displayed successfully
+And User sort the members list Name Z to A  
+Then Z to A Members list get displayed successfully
 
 @members @members07 @smoke @regression @all
 Scenario Outline: T007_To verify the members feature sort Recently Added
@@ -58,7 +59,7 @@ Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And User clicks the members module
 And User sort the members list Recently Added
-Then Members list get displayed successfully
+Then Recently added Members list get displayed successfully
 
 @members @members08 @smoke @regression @all
 Scenario Outline: T008_To verify the members feature filter active status members
@@ -66,6 +67,7 @@ Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And User clicks the members module
 And User filter the members list status-Active
+And User click apply button
 Then Active members list get displayed successfully
 
 @members @members09 @smoke @regression @all
@@ -74,6 +76,7 @@ Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And User clicks the members module
 And User filter the members list status-Blocked
+And User click apply button
 Then Blocked members list get displayed successfully
 
 @members @members10 @smoke @regression @all
@@ -82,6 +85,7 @@ Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And User clicks the members module
 And User filter the members list status-expired
+And User click apply button
 Then Expired members list get displayed successfully
 
 @members @members11 @smoke @regression @all
@@ -90,6 +94,7 @@ Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And User clicks the members module
 And User filter the members list status-pending
+And User click apply button
 Then Pending members list get displayed successfully
 
 @members @members12 @smoke @regression @all
@@ -98,6 +103,7 @@ Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And User clicks the members module
 And User filter the members list role-admin
+And User click apply button
 Then Admin members list get displayed successfully
 
 @members @members13 @smoke @regression @all
@@ -106,6 +112,7 @@ Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And User clicks the members module
 And User filter the members list role-manager
+And User click apply button
 Then Manager members list get displayed successfully
 
 @members @members14 @smoke @regression @all
@@ -114,6 +121,7 @@ Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And User clicks the members module
 And User filter the members list role-supervisor
+And User click apply button
 Then Supervisor members list get displayed successfully
 
 @members @members15 @smoke @regression @all

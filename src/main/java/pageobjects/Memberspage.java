@@ -64,7 +64,7 @@ public class Memberspage extends Base {
 	private WebElement membersClick;
 
 	public void membersClick() throws Exception{
-		Thread.sleep(5000);
+//		Thread.sleep(5000);
 		wait.until(ExpectedConditions.visibilityOf(membersClick)).click();
 		wait.until(ExpectedConditions.visibilityOf(membersMenu)).isDisplayed();
 		LOGGER.info(">> Admin/User got navigated to members page");
@@ -78,7 +78,7 @@ public class Memberspage extends Base {
 		LOGGER.info(">> Admin/User got navigated to dashboard page");
 	}
 
-	@FindBy(xpath = "//h5[@class=' mb-0 '][position()=1]")
+	@FindBy(xpath = "(//h5[contains(@class,'mb-0')])[1]")
 	private WebElement allMembersCount;
 
 	public void allMembersCount() {
@@ -98,7 +98,7 @@ public class Memberspage extends Base {
 	@FindBy(xpath = "//tbody/tr[1]/td[6]/div[1]/div[1]/button[1]//*[name()='svg']")
 	private WebElement membersMenu_click;
 
-	@FindBy(xpath = "//tbody/tr[1]/td[1]")
+	@FindBy(xpath = "(//h5[@class='mb-0'])[1]")
 	private WebElement membersMenu;
 
 	@FindBy(id = "email")
@@ -149,11 +149,12 @@ public class Memberspage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(membersMenu)).isDisplayed();
 		wait.until(ExpectedConditions.visibilityOf(membersSearch)).click();
 		String searchTerm = prop.getProperty("members_search_text");
-		wait.until(ExpectedConditions.visibilityOf(membersSearch)).sendKeys(searchTerm + Keys.ENTER);
+		wait.until(ExpectedConditions.visibilityOf(membersSearch)).sendKeys(""+"Tom" + Keys.ENTER);
+//		wait.until(ExpectedConditions.visibilityOf(membersSearch)).sendKeys(prop.getProperty(searchTerm+Keys.ENTER));
 		System.out.println(">> User enter the member name in search field: " + searchTerm);
 	}
 
-	@FindBy(xpath = "//h6[contains(text(),'panneer')]")
+	@FindBy(xpath = "(//h6[normalize-space()='tomgeorge@coducer.com'])[1]")
 	private WebElement membersSearchedList;
 
 	public void membersSearchedList() {
@@ -171,7 +172,7 @@ public class Memberspage extends Base {
 	@FindBy(xpath = "//h6[contains(.,'Name - Z to A')][.='Name - Z to A']")
 	private WebElement members_sort_Z_A;
 
-	@FindBy(xpath = "//h6[contains(.,'Recently Added')][.='Recently Added']")
+	@FindBy(xpath = "(//h6[@class='m-0 by fw-normal'][normalize-space()='Recently Added'])[1]")
 	private WebElement members_sort_Recently_Added;
 
 	@FindBy(xpath = "(//div[@class='d-flex sortbox '])[1]")
@@ -209,8 +210,17 @@ public class Memberspage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(members_sort_Recently_Added)).click();
 		System.out.println(">> User clicked Z-A in sort");
 	}
+	
+	@FindBy(xpath = "(//h6[@class='m-0 by fw-normal'][normalize-space()='Recently Added'])[1]")
+	private WebElement members_sort_recentlyadded_display;
 
-	@FindBy(xpath = "//td[@class='py-5']")
+	public void Recentlyadded_members_display() {
+		wait.until(ExpectedConditions.visibilityOf(members_sort_recentlyadded_display)).isDisplayed();
+		AssertJUnit.assertTrue(members_sort_recentlyadded_display.isDisplayed());
+		System.out.println(">> User got sorted the recentlyadded members list");
+	}
+
+	@FindBy(xpath = "(//h6[@class='m-0 by fw-normal'][normalize-space()='Name - A to Z'])[1]")
 	private WebElement members_sort_AtoZ_display;
 
 	public void members_sort_AtoZ_display() {
@@ -218,21 +228,41 @@ public class Memberspage extends Base {
 		AssertJUnit.assertTrue(members_sort_AtoZ_display.isDisplayed());
 		System.out.println(">> User got sorted the members list");
 	}
+	
+	@FindBy(xpath = "(//h6[@class='m-0 by fw-normal'][normalize-space()='Name - Z to A'])[1]")
+	private WebElement members_sort_ZtoA_display;
 
-	@FindBy(xpath = "(//span[contains(text(),'Active')])[1]")
+	public void members_sort_ZtoA_display() {
+		wait.until(ExpectedConditions.visibilityOf(members_sort_ZtoA_display)).isDisplayed();
+		AssertJUnit.assertTrue(members_sort_ZtoA_display.isDisplayed());
+		System.out.println(">> User got sorted the members list Z-A");
+	}
+
+	@FindBy(id = "ACTIVE")
 	private WebElement members_filter_sts_active;
 
 	public void members_filter_sts_active() {
 
 		wait.until(ExpectedConditions.visibilityOf(members_filter)).click();
 		wait.until(ExpectedConditions.visibilityOf(members_filter_sts_active)).click();
-		wait.until(ExpectedConditions.visibilityOf(members_filter_apply_btn)).click();
+		
+//		act.moveToElement(click_apply).click();
 		System.out.println(">> User clicked active status in filter");
+	}
+	
+	@FindBy(id = "Apply")
+	private WebElement click_apply;
+
+	public void Click_apply_button() throws Exception {
+//     	wait.until(ExpectedConditions.visibilityOf()).isDisplayed();
+//		act.scrollToElement(click_apply).click();
+		Thread.sleep(2000);
+		act.moveToElement(click_apply).click().perform();
 	}
 
 	public void members_filter_sts_active1() {
 		wait.until(ExpectedConditions.visibilityOf(members_filter_sts_active)).click();
-		wait.until(ExpectedConditions.visibilityOf(members_filter_apply_btn)).click();
+//		wait.until(ExpectedConditions.visibilityOf(members_filter_apply_btn)).click();
 		System.out.println(">> User clicked active status in filter");
 	}
 
@@ -243,7 +273,7 @@ public class Memberspage extends Base {
 
 		wait.until(ExpectedConditions.visibilityOf(members_filter)).click();
 		wait.until(ExpectedConditions.visibilityOf(members_filter_sts_blocked)).click();
-		wait.until(ExpectedConditions.visibilityOf(members_filter_apply_btn)).click();
+//		wait.until(ExpectedConditions.visibilityOf(members_filter_apply_btn)).click();
 		System.out.println(">> User clicked blocked status in filter");
 	}
 
@@ -254,7 +284,7 @@ public class Memberspage extends Base {
 
 		wait.until(ExpectedConditions.visibilityOf(members_filter)).click();
 		wait.until(ExpectedConditions.visibilityOf(members_filter_sts_expired)).click();
-		wait.until(ExpectedConditions.visibilityOf(members_filter_apply_btn)).click();
+//		wait.until(ExpectedConditions.visibilityOf(members_filter_apply_btn)).click();
 		System.out.println(">> User clicked expired status in filter");
 	}
 
@@ -265,20 +295,17 @@ public class Memberspage extends Base {
 
 		wait.until(ExpectedConditions.visibilityOf(members_filter)).click();
 		wait.until(ExpectedConditions.visibilityOf(members_filter_sts_pending)).click();
-		wait.until(ExpectedConditions.visibilityOf(members_filter_apply_btn)).click();
+//		wait.until(ExpectedConditions.visibilityOf(members_filter_apply_btn)).click();
 		System.out.println(">> User clicked pending status in filter");
 	}
 
 	@FindBy(xpath = "(//h6[contains(@class,'mb-0 by fw-normal')][normalize-space()='Filter By'])[1]")
 	private WebElement members_filter;
 
-	@FindBy(xpath = "(//h6[contains(@class,'m-0 fw-normal')][normalize-space()='Apply'])[1]")
-	private WebElement members_filter_apply_btn;
-
 	@FindBy(xpath = "//div[contains(text(),'No Member Found')]")
 	private WebElement members_no_members_found;
-
-	@FindBy(xpath = "//span[@class='active-member']")
+	
+	@FindBy(id = "ACTIVE")
 	private WebElement members_filter_active_list_display;
 
 	public void members_filter_active_list_display() {
@@ -296,9 +323,9 @@ public class Memberspage extends Base {
 			wait.until(ExpectedConditions.visibilityOf(members_no_members_found)).isDisplayed();
 			System.out.println(">> User got no members found message");
 		}
-	}
+	}	
 
-	@FindBy(xpath = "//span[contains(@class,'in-active-membesr')]")
+	@FindBy(id = "BLOCKED")
 	private WebElement members_filter_blocked_list_display;
 
 	public void members_filter_blocked_list_display() {
@@ -317,8 +344,27 @@ public class Memberspage extends Base {
 			System.out.println(">> User got no members found message");
 		}
 	}
+	@FindBy(id = "EXPIRED")
+	private WebElement members_filter_expired_list_display;
+
+	public void members_filter_Expired_list_display() {
+
+		try {
+			if (condition) {
+				wait.until(ExpectedConditions.visibilityOf(members_filter_expired_list_display));
+				AssertJUnit.assertTrue(members_filter_expired_list_display.isDisplayed());
+				System.out.println(">> User got filtered expired members list");
+			} else {
+				wait.until(ExpectedConditions.visibilityOf(members_no_members_found));
+				System.out.println(">> User got no members found message");
+			}
+		} catch (Exception e) {
+			wait.until(ExpectedConditions.visibilityOf(members_no_members_found));
+			System.out.println(">> User got no members found message");
+		}
+	}
 	
-	@FindBy(xpath = "(//span[contains(text(),'PENDING')])[1]")
+	@FindBy(id = "PENDING")
 	private WebElement members_filter_pending_list_display;
 
 	public void members_filter_pending_list_display() {
@@ -345,11 +391,11 @@ public class Memberspage extends Base {
 
 		wait.until(ExpectedConditions.visibilityOf(members_filter)).click();
 		wait.until(ExpectedConditions.visibilityOf(members_filter_role_admin)).click();
-		wait.until(ExpectedConditions.visibilityOf(members_filter_apply_btn)).click();
+//		wait.until(ExpectedConditions.visibilityOf(members_filter_apply_btn)).click();
 		System.out.println(">> User clicked admin role in filter");
 	}
 
-	@FindBy(xpath = "//h6[normalize-space()='ADMIN']")
+	@FindBy(xpath = "(//h6[normalize-space()='ADMIN'])[1]")
 	private WebElement members_filter_admin_list_display;
 
 	public void members_filter_admin_list_display() {
@@ -376,11 +422,11 @@ public class Memberspage extends Base {
 
 		wait.until(ExpectedConditions.visibilityOf(members_filter)).click();
 		wait.until(ExpectedConditions.visibilityOf(members_filter_role_manager)).click();
-		wait.until(ExpectedConditions.visibilityOf(members_filter_apply_btn)).click();
+//		wait.until(ExpectedConditions.visibilityOf(members_filter_apply_btn)).click();
 		System.out.println(">> User clicked manager role in filter");
 	}
 
-	@FindBy(xpath = "//h6[normalize-space()='MANAGER']")
+	@FindBy(xpath = "(//h6[@class='pt-2'][normalize-space()='MANAGER'])[1]")
 	private WebElement members_filter_manager_list_display;
 
 	public void members_filter_manager_list_display() {
@@ -407,7 +453,7 @@ public class Memberspage extends Base {
 
 		wait.until(ExpectedConditions.visibilityOf(members_filter)).click();
 		wait.until(ExpectedConditions.visibilityOf(members_filter_role_Supervisor)).click();
-		wait.until(ExpectedConditions.visibilityOf(members_filter_apply_btn)).click();
+//		wait.until(ExpectedConditions.visibilityOf(members_filter_apply_btn)).click();
 		System.out.println(">> User clicked supervisor role in filter");
 	}
 
@@ -418,7 +464,7 @@ public class Memberspage extends Base {
 		System.out.println(">> User clicked supervisor role in filter");
 	}
 
-	@FindBy(xpath = "//h6[.='SUPERVISOR ']")
+	@FindBy(xpath = "(//h6[@class='pt-2'][normalize-space()='SUPERVISOR'])[1]")
 	private WebElement members_filter_Supervisor_list_display;
 
 	public void members_filter_Supervisor_list_display() {
@@ -445,7 +491,7 @@ public class Memberspage extends Base {
 
 		wait.until(ExpectedConditions.visibilityOf(members_filter)).click();
 		wait.until(ExpectedConditions.visibilityOf(members_filter_role_technician)).click();
-		wait.until(ExpectedConditions.visibilityOf(members_filter_apply_btn)).click();
+//		wait.until(ExpectedConditions.visibilityOf(members_filter_apply_btn)).click();
 		System.out.println(">> User clicked technician role in filter");
 	}
 
@@ -480,7 +526,7 @@ public class Memberspage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(members_filter)).click();
 		wait.until(ExpectedConditions.visibilityOf(members_filter_dept_click)).click();
 		wait.until(ExpectedConditions.visibilityOf(members_filter_dept_select)).click();
-		wait.until(ExpectedConditions.visibilityOf(members_filter_apply_btn)).click();
+//		wait.until(ExpectedConditions.visibilityOf(members_filter_apply_btn)).click();
 		System.out.println(">> User selected the dept in filter");
 	}
 
@@ -519,7 +565,7 @@ public class Memberspage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(members_filter_responsible_area)).click();
 		wait.until(ExpectedConditions.visibilityOf(members_filter_responsible_area))
 				.sendKeys("Saudi Arabia" + Keys.ENTER);
-		wait.until(ExpectedConditions.visibilityOf(members_filter_apply_btn)).click();
+//		wait.until(ExpectedConditions.visibilityOf(members_filter_apply_btn)).click();
 		System.out.println(">> User entered the responsible area in filter");
 	}
 

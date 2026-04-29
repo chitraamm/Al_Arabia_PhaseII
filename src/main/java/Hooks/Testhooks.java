@@ -12,6 +12,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.devtools.DevTools;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import io.cucumber.java.After;
 //import io.cucumber.java.AfterStep;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
@@ -68,20 +69,20 @@ public class Testhooks extends Base {
         LOGGER.info("Navigated to URL");
 		System.out.println("Login page opened");
 
-		Robot robot = new Robot();
-		System.out.println("About to zoom out");
-		for (int i = 0; i < 3; i++) {
-			robot.keyPress(KeyEvent.VK_CONTROL);
-			robot.keyPress(KeyEvent.VK_SUBTRACT);
-			robot.keyRelease(KeyEvent.VK_SUBTRACT);
-			robot.keyRelease(KeyEvent.VK_CONTROL);
+//		Robot robot = new Robot();
+//		System.out.println("About to zoom out");
+//		for (int i = 0; i < 3; i++) {
+//			robot.keyPress(KeyEvent.VK_CONTROL);
+//			robot.keyPress(KeyEvent.VK_SUBTRACT);
+//			robot.keyRelease(KeyEvent.VK_SUBTRACT);
+//			robot.keyRelease(KeyEvent.VK_CONTROL);
 		}
-		LOGGER.info("Page is zoomed out");
-		System.out.println(
-				"** Execution started for scenario -" + scenario.getName());
-		System.out.println("++ Browser got launched and maximized ++");
-		System.out.println("++ Application URL got opened in the browser ++");
-		Thread.sleep(1000);
+//		LOGGER.info("Page is zoomed out");
+//		System.out.println(
+//				"** Execution started for scenario -" + scenario.getName());
+//		System.out.println("++ Browser got launched and maximized ++");
+//		System.out.println("++ Application URL got opened in the browser ++");
+//		Thread.sleep(1000);
 		
 		
 //		String bearerToken = networkInterceptor.getBearerToken();
@@ -90,18 +91,18 @@ public class Testhooks extends Base {
 //        } else {
 //            LOGGER.warn("Bearer Token not found!");
 //        }
-    }
-//	@After
-//	public void tearDown(Scenario scenario) throws Exception {
-//
-//		if (driver != null) {
-//			driver.quit();
-//			LOGGER.info("Browser got closed");
-//			System.out.println("-- Browser got closed --");
-//			System.out.println(
-//					"** Execution ended for scenario -" + scenario.getName());
-//		}
-//	}
+    
+	@After
+	public void tearDown(Scenario scenario) throws Exception {
+
+		if (driver != null) {
+			driver.quit();
+			LOGGER.info("Browser got closed");
+			System.out.println("-- Browser got closed --");
+			System.out.println(
+					"** Execution ended for scenario -" + scenario.getName());
+		}
+	}
 
 //	@AfterStep
 //	public void addScreenshot(Scenario scenario) {

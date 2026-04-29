@@ -140,6 +140,7 @@ public class Inventorypage extends Base {
 	private WebElement save_stock;
 	
 	public void Mandatory_fields_enter_new_purchase() throws Exception {
+		Thread.sleep(2000);
 		wait.until(ExpectedConditions.visibilityOf(display_new_inventorypage)).isDisplayed();
 		String suppliername = prop.getProperty("suppliername");
 		wait.until(ExpectedConditions.visibilityOf(supplier_name)).sendKeys(suppliername);

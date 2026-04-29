@@ -59,6 +59,11 @@ public class Signin extends Base {
         signinpage.Projectselection_Displayed();
     }
     
+    @And("Verify the Authentication")
+    public void Verify_the_Authentication() {
+        signinpage.Skip_Authentication();
+    }
+    
     @And("User selects Project type")
     public void User_selects_Project_type() {
         signinpage.Select_Project();

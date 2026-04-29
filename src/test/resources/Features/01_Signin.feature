@@ -8,7 +8,8 @@ Scenario Outline: Login with valid credentials
 When User enters valid email address
 And Enter valid password
 And Click password field eye icon 
-And Clicks on Sign in button
+And Clicks on Sign in button 
+And Verify the Authentication
 And User selects Project type 
 And Press Continue Button 
 Then User should login successfully

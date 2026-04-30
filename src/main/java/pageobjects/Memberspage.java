@@ -61,7 +61,7 @@ public class Memberspage extends Base {
 	}
 
 	@FindBy(xpath = "//span[normalize-space()='Members']")
-	private WebElement membersClick;
+	WebElement membersClick;
 
 	public void membersClick() throws Exception{
 //		Thread.sleep(5000);
@@ -71,7 +71,7 @@ public class Memberspage extends Base {
 	}
  
 	@FindBy(xpath = "//h6[normalize-space()='Dashboard'][position()=1]")
-	private WebElement dashboardText;
+	WebElement dashboardText;
 
 	public void dashboardText() {
 		wait.until(ExpectedConditions.visibilityOf(dashboardText)).isDisplayed();
@@ -79,7 +79,7 @@ public class Memberspage extends Base {
 	}
 
 	@FindBy(xpath = "(//h5[contains(@class,'mb-0')])[1]")
-	private WebElement allMembersCount;
+	WebElement allMembersCount;
 
 	public void allMembersCount() {
 		wait.until(ExpectedConditions.visibilityOf(allMembersCount)).isDisplayed();
@@ -495,7 +495,7 @@ public class Memberspage extends Base {
 		System.out.println(">> User clicked technician role in filter");
 	}
 
-	@FindBy(xpath = "//h6[.='TECHNICIAN ']")
+	@FindBy(xpath = "(//h6[@class='pt-2'][normalize-space()='TECHNICIAN'])[1]")
 	private WebElement members_filter_technician_list_display;
 
 	public void members_filter_technician_list_display() {
@@ -515,19 +515,22 @@ public class Memberspage extends Base {
 		}
 	}
 
-	@FindBy(xpath = "//input[@autocapitalize='none']")
+	@FindBy(xpath = "(//div[@class='select__input-container css-19bb58m'])[1]")
 	private WebElement members_filter_dept_click;
 
 	@FindBy(id = "react-select-3-listbox")
 	private WebElement members_filter_dept_select;
 
-	public void members_filter_dept() {
+	public void members_filter_dept() throws Exception {
 
 		wait.until(ExpectedConditions.visibilityOf(members_filter)).click();
+        Thread.sleep(2000);
 		wait.until(ExpectedConditions.visibilityOf(members_filter_dept_click)).click();
-		wait.until(ExpectedConditions.visibilityOf(members_filter_dept_select)).click();
-//		wait.until(ExpectedConditions.visibilityOf(members_filter_apply_btn)).click();
-		System.out.println(">> User selected the dept in filter");
+        Thread.sleep(2000);
+        act.moveToElement(members_filter_dept_click).sendKeys(""+Keys.UP+Keys.UP+Keys.ENTER).perform(); 
+		Thread.sleep(2000);
+		act.moveToElement(click_apply).click().perform();
+		
 	}
 
 	public void members_filter_dept1() {

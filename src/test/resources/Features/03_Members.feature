@@ -130,6 +130,7 @@ Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And User clicks the members module
 And User filter the members list role-technician
+And User click apply button
 Then Technician members list get displayed successfully
 
 @members @members16 @smoke @regression @all

@@ -234,7 +234,7 @@ public class Members extends Base {
     }
     
     @And("User filter the members list dept-electrical")
-    public void User_filter_the_members_list_dept_electrical() {
+    public void User_filter_the_members_list_dept_electrical() throws Exception {
     	 membersPage.members_filter_dept();
     }
     

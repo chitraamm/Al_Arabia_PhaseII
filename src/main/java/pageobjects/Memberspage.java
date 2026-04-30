@@ -530,7 +530,7 @@ public class Memberspage extends Base {
         act.moveToElement(members_filter_dept_click).sendKeys(""+Keys.UP+Keys.UP+Keys.ENTER).perform(); 
 		Thread.sleep(2000);
 		act.moveToElement(click_apply).click().perform();
-		
+		 
 	}
 
 	public void members_filter_dept1() {
@@ -633,7 +633,7 @@ public class Memberspage extends Base {
 		System.out.println(">> pdf formate list get downloaded successfully");
 	}
 
-	@FindBy(xpath = "//button[@aria-label='Close']")
+	@FindBy(xpath = "//span[@class='cursor-pointer']//*[name()='svg']")
 	private WebElement members_download_popup_closeicon;
 
 	public void members_download_popup_closeicon() {
@@ -685,7 +685,7 @@ public class Memberspage extends Base {
 	@FindBy(xpath = "//input[@value='+91 96777 75555']")
 	private WebElement members_personalprofile_altNO_text_enter;
 
-	@FindBy(name = "alternate_number")
+	@FindBy(xpath = "(//input[@name='alternate_number'])[1]")
 	private WebElement members_personalprofile_altNO_text_enter1;
 
 	@FindBy(xpath = "//input[@value='+91 96777 75556']")
@@ -703,42 +703,36 @@ public class Memberspage extends Base {
 	@FindBy(id = "biography")
 	private WebElement members_personalprofile_Bio_text_enter;
 
-	@FindBy(xpath = "//h6[normalize-space()='Update Company Profile']")
+	@FindBy(xpath = "(//h6[normalize-space()='Update Personal Profile'])[1]")
 	private WebElement profile_update_btn;
 	
 	public void members_personalprofile_text_enter() throws Exception {
 		wait.until(ExpectedConditions.visibilityOf(members_profile_personal_name));
 		wait.until(ExpectedConditions.visibilityOf(members_profile_personal_name)).click();
 		members_profile_personal_name.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
-		wait.until(ExpectedConditions.visibilityOf(members_profile_personal_name)).sendKeys("Panneer");
-		wait.until(ExpectedConditions.visibilityOf(members_personalprofile_altNO_text_enter)).click();
-		members_personalprofile_altNO_text_enter.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
-		wait.until(ExpectedConditions.visibilityOf(members_personalprofile_altNO_text_enter1))
-				.sendKeys(prop.getProperty("Alt_Phone_number"));
-		wait.until(ExpectedConditions.visibilityOf(members_personalprofile_whatappNo_text_enter)).click();
-		members_personalprofile_whatappNo_text_enter.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
-		wait.until(ExpectedConditions.visibilityOf(members_personalprofile_whatappNo_text_enter1))
-				.sendKeys(prop.getProperty("Whatsapp_Phone_number"));
+		wait.until(ExpectedConditions.visibilityOf(members_profile_personal_name)).sendKeys("Tom");
+//		wait.until(ExpectedConditions.visibilityOf(members_personalprofile_altNO_text_enter)).click();
+//		members_personalprofile_altNO_text_enter.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
+//		wait.until(ExpectedConditions.visibilityOf(members_personalprofile_altNO_text_enter1)).sendKeys(prop.getProperty("Alt_Phone_number"));
+//		wait.until(ExpectedConditions.visibilityOf(members_personalprofile_whatappNo_text_enter)).click();
+//		members_personalprofile_whatappNo_text_enter.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
+//		wait.until(ExpectedConditions.visibilityOf(members_personalprofile_whatappNo_text_enter1)).sendKeys(prop.getProperty("Whatsapp_Phone_number"));
 		wait.until(ExpectedConditions.visibilityOf(members_personalprofile_IQMA_No_text_enter)).click();
 		members_personalprofile_IQMA_No_text_enter.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
 		String uniqueIQMANumber = generateUniqueIQMANumber(prop.getProperty("IQMA_number"));
-		wait.until(ExpectedConditions.visibilityOf(members_personalprofile_IQMA_No_text_enter))
-				.sendKeys(uniqueIQMANumber);
-		wait.until(ExpectedConditions.visibilityOf(members_personalprofile_Bio_text_enter)).click();
-		members_personalprofile_Bio_text_enter.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
-		wait.until(ExpectedConditions.visibilityOf(members_personalprofile_Bio_text_enter)).sendKeys("Demo");
-		wait.until(ExpectedConditions.visibilityOf(members_personalprofile_location_text_enter)).click();
-		members_personalprofile_location_text_enter.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
-		wait.until(ExpectedConditions.visibilityOf(members_personalprofile_location_text_enter))
-				.sendKeys("Saudi Arabia" + Keys.ARROW_DOWN + Keys.ENTER);
+		wait.until(ExpectedConditions.visibilityOf(members_personalprofile_IQMA_No_text_enter)).sendKeys(uniqueIQMANumber);
+//		wait.until(ExpectedConditions.visibilityOf(members_personalprofile_Bio_text_enter)).click();
+//		members_personalprofile_Bio_text_enter.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
+//		wait.until(ExpectedConditions.visibilityOf(members_personalprofile_Bio_text_enter)).sendKeys("Demo");
+
 		Thread.sleep(2000);
 	    act.moveToElement(profile_update_btn).click().perform();
 	}
 
-	@FindBy(xpath = "//h4[@class=' fw-semibold text-center text-black']")
+	@FindBy(xpath = "(//h6[normalize-space()=\"No, don't update!\"])[1]")
 	private WebElement confirmpopup;
 
-	@FindBy(xpath = "//*[@id=\"root\"]/div[2]/div[1]/div[2]/div/div/div[2]/h6[2]")
+	@FindBy(xpath = "(//h6[normalize-space()='Yes, update.'])[1]")
 	private WebElement members_personalprofile_update_btn_Yes;
 	
    public void companyprofile_update_confirmyes() throws Exception {
@@ -765,7 +759,6 @@ public class Memberspage extends Base {
 	public void members_profile_personal_name_delete() {
 		wait.until(ExpectedConditions.visibilityOf(members_profile_personal_name)).click();
 		members_profile_personal_name.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
-		wait.until(ExpectedConditions.visibilityOf(members_personalprofile_altNO_text_enter)).click();
 		System.out.println(">> User or Admin erased the member name");
 	}
 

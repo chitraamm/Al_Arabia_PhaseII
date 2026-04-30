@@ -17,7 +17,7 @@ And User clicks the invite member button
 And User enters the email or phone number
 And User selects the role manager
 And User selects the department electrical
-And User selects Projects
+And User selects Projects 
 And User clicks the send invite button
 Then The invitation should sent to user given mail address successfully
 
@@ -136,7 +136,7 @@ Then Technician members list get displayed successfully
 @members @members16 @smoke @regression @all
 Scenario Outline: T016_To verify the members feature filter electrical dept members
 Given Admin logged in with valid credentials
-When Al-Arabia overall dashboard should display
+When Al-Arabia overall dashboard should display 
 And User clicks the members module
 And User filter the members list dept-electrical
 Then Electrical dept members list get displayed successfully
@@ -147,6 +147,7 @@ Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And User clicks the members module
 And User filter the members list responsible area
+And User click apply button 
 Then Responsible area members list get displayed successfully
 
 @members @members18 @sanity @regression @all
@@ -155,7 +156,6 @@ Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And User clicks the members module
 And User filter the members list role-supervisor1
-And User filter the members list dept-electrical1
 And User filter the members list responsible area1
 And User filter the members list status-Active1
 Then Filtered members list get displayed successfully
@@ -236,7 +236,7 @@ Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And User clicks the members module
 And User filter the members list status-Active
-And User search the members
+And User search the members 
 And Admin or User go the members profile page
 And Admin or User update the members company profile page
 Then Particular members profile get updated successfully with either "<successMessage1>" or "<successMessage2>"

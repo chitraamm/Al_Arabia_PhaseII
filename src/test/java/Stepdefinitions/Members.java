@@ -326,6 +326,8 @@ public class Members extends Base {
     @And("Admin or User update the members profile page")
     public void Admin_or_User_update_the_members_profile_page() throws Exception {
     	 membersPage.members_personalprofile_text_enter();
+     	membersPage.companyprofile_update_confirmyes();
+
     }
     
     @Then("^Particular members profile get updated successfully as \"([^\"]*)\"$")

@@ -64,7 +64,6 @@ public class Memberspage extends Base {
 	WebElement membersClick;
 
 	public void membersClick() throws Exception{
-//		Thread.sleep(5000);
 		wait.until(ExpectedConditions.visibilityOf(membersClick)).click();
 		wait.until(ExpectedConditions.visibilityOf(membersMenu)).isDisplayed();
 		LOGGER.info(">> Admin/User got navigated to members page");
@@ -150,7 +149,6 @@ public class Memberspage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(membersSearch)).click();
 		String searchTerm = prop.getProperty("members_search_text");
 		wait.until(ExpectedConditions.visibilityOf(membersSearch)).sendKeys(""+"Tom" + Keys.ENTER);
-//		wait.until(ExpectedConditions.visibilityOf(membersSearch)).sendKeys(prop.getProperty(searchTerm+Keys.ENTER));
 		System.out.println(">> User enter the member name in search field: " + searchTerm);
 	}
 
@@ -175,10 +173,10 @@ public class Memberspage extends Base {
 	@FindBy(xpath = "(//h6[@class='m-0 by fw-normal'][normalize-space()='Recently Added'])[1]")
 	private WebElement members_sort_Recently_Added;
 
-	@FindBy(xpath = "(//div[@class='d-flex sortbox '])[1]")
+	@FindBy(xpath = "(//h6[@class='m-0 by fw-normal'][normalize-space()='Recently Added'])[1]")
 	private WebElement members_sort;
 
-	public void members_sort() {	
+	public void members_sort_recently_updated() {	
 		wait.until(ExpectedConditions.visibilityOf(members_sort)).click();
 		wait.until(ExpectedConditions.visibilityOf(members_sort_recentlyupdated)).click();
 		System.out.println(">> User clicked recently updated in sort");
@@ -566,8 +564,7 @@ public class Memberspage extends Base {
 
 		wait.until(ExpectedConditions.visibilityOf(members_filter)).click();
 		wait.until(ExpectedConditions.visibilityOf(members_filter_responsible_area)).click();
-		wait.until(ExpectedConditions.visibilityOf(members_filter_responsible_area))
-				.sendKeys("Saudi Arabia" + Keys.ENTER);
+		wait.until(ExpectedConditions.visibilityOf(members_filter_responsible_area)).sendKeys("Saudi Arabia" + Keys.ENTER);
 //		wait.until(ExpectedConditions.visibilityOf(members_filter_apply_btn)).click();
 		System.out.println(">> User entered the responsible area in filter");
 	}

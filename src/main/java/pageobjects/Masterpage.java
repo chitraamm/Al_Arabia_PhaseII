@@ -70,7 +70,7 @@ public class Masterpage extends Base {
 	@FindBy(xpath = "//h6[normalize-space()='Dashboard']")
 	private WebElement dashboardpage;
 	
-	@FindBy(xpath = "//*[@id=\"root\"]/div[2]/div[1]/div[2]/div/div[1]/div[2]/div/a[6]/span")
+	@FindBy(xpath = "(//span[normalize-space()='Master'])[1]")
 	private WebElement click_master_module;
 
 	public void Master_click() throws Exception {

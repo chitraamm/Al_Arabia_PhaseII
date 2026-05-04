@@ -166,4 +166,11 @@ Boardsize = 1
 countryname = india
 BOMnames = DSA
 edited_BOM = RFS
-<-------------------------------------------------------->
+<---------------------------Projects------------------------->
+projects_search_text = Default Project
+projectname = Test
+
+
+<-------------------------------------------------->
+
+

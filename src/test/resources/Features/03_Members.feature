@@ -26,7 +26,7 @@ Scenario Outline: T003_ the members feature search
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And User clicks the members module
-And User search the members
+And User search the members 
 Then Searched member details get displayed successfully
 
 @members @members04 @smoke @regression @all
@@ -34,39 +34,39 @@ Scenario Outline: T004_To verify the members feature sort recently updated
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And User clicks the members module
-And User sort the members list recently updated
-Then Recently updated members list get displayed successfully
+And User sort the list recently updated 
+Then Recently updated list get displayed successfully
 
 @members @members05 @smoke @regression @all
 Scenario Outline: T005_To verify the members feature sort Name - A to Z
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And User clicks the members module
-And User sort the members list Name A to Z
-Then Members list get displayed successfully
+And User sort the list Name A to Z
+Then Name A to Z list get displayed successfully
 
 @members @members06 @smoke @regression @all
 Scenario Outline: T006_To verify the members feature sort Name - Z to A
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And User clicks the members module
-And User sort the members list Name Z to A  
-Then Z to A Members list get displayed successfully
+And User sort the list Name Z to A  
+Then Z to A list get displayed successfully
 
 @members @members07 @smoke @regression @all
 Scenario Outline: T007_To verify the members feature sort Recently Added
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And User clicks the members module
-And User sort the members list Recently Added
-Then Recently added Members list get displayed successfully
+And User sort the list Recently Added 
+Then Recently added list get displayed successfully
 
 @members @members08 @smoke @regression @all
 Scenario Outline: T008_To verify the members feature filter active status members
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And User clicks the members module
-And User filter the members list status-Active
+And User filter the list status-Active
 And User click apply button
 Then Active members list get displayed successfully
 
@@ -236,7 +236,7 @@ Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And User clicks the members module
 And User filter the members list status-Active
-And User search the members 
+And User search the members  
 And Admin or User go the members profile page
 And Admin or User update the members company profile page
 Then Particular members profile get updated successfully with either "<successMessage1>" or "<successMessage2>"

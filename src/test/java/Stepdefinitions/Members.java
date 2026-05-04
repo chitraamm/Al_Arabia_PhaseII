@@ -98,43 +98,43 @@ public class Members extends Base {
         membersPage.membersSearchedList();
     }
     
-    @And("User sort the members list recently updated")
-    public void User_sort_the_members_list_recently_updated() {
-        membersPage.members_sort();
+    @And("User sort the list recently updated")
+    public void User_sort_the_list_recently_updated() {
+        membersPage.members_sort_recently_updated();
     }
     
-    @Then("Recently updated members list get displayed successfully")
-    public void Recently_updated_members_list_get_displayed_successfully() {
+    @Then("Recently updated list get displayed successfully")
+    public void Recently_updated_list_get_displayed_successfully() {
         membersPage.members_sort_list_displayed();
     }
     
-    @And("User sort the members list Name A to Z")
-    public void User_sort_the_members_list_Name_A_to_Z() {
+    @And("User sort the list Name A to Z")
+    public void User_sort_the_list_Name_A_to_Z() {
         membersPage.members_sort_A_Z();
     }
     
-    @Then("Members list get displayed successfully")
-    public void A_Z_members_list_get_displayed_successfully() {
+    @Then("Name A to Z list get displayed successfully")
+    public void Name_A_to_Z_members_list_get_displayed_successfully() {
         membersPage.members_sort_AtoZ_display();
     }
     
-    @And("User sort the members list Name Z to A")
-    public void User_sort_the_members_list_Name_Z_to_A () {
+    @And("User sort the list Name Z to A")
+    public void User_sort_the_list_Name_Z_to_A () {
         membersPage.members_sort_Z_A();
     }
     
-    @Then("Z to A Members list get displayed successfully")
-    public void Z_to_A_members_list_get_displayed_successfully() {
+    @Then("Z to A list get displayed successfully")
+    public void Z_to_A_list_get_displayed_successfully() {
         membersPage.members_sort_ZtoA_display();
     }
     
-    @And("User sort the members list Recently Added")
-    public void User_sort_the_members_list_Recently_Added () {
+    @And("User sort the list Recently Added")
+    public void User_sort_the_list_Recently_Added () {
         membersPage.members_sort_Recently_Added();
     }
     
-    @Then("Recently added Members list get displayed successfully")
-    public void Recently_added_members_list_get_displayed_successfully() {
+    @Then("Recently added list get displayed successfully")
+    public void Recently_added_list_get_displayed_successfully() {
         membersPage.Recentlyadded_members_display();
     }
     

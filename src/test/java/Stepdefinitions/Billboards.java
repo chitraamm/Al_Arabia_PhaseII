@@ -68,9 +68,9 @@ public class Billboards extends Base {
 	public void Searched_Billboard_details_get_displayed_successfully() {
 		billboardsPage.BBSearchedList();
 	}
-
-	public void Particular_billboard_gets_created_successfully_with_either(String expectedMessage1,
-			String expectedMessage2) throws Exception {
+  	@Then("^Particular billboard gets created successfully with either \"([^\"]*)\" or \"([^\"]*)\"$")
+	public void Particular_billboard_gets_created_successfully_with_either(String expectedMessage1,String expectedMessage2) throws Exception 
+	{
 		String actualMessage = billboardsPage.billboard_created_Success_display();
 		String normalizedActualMessage = normalizeWhitespace(actualMessage);
 

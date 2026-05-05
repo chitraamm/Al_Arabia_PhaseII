@@ -107,3 +107,49 @@ And User clicks next page button
 And User clicks previous page button 
 Then First page should be displayed successfully 
 
+@Projects @Projects12 @smoke @regression @all
+Scenario Outline: To verify Create New Project with valid inputs 
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Master
+And User clicks the Projects   
+And User clicks New Project Button 
+And User enters mandatory fields of Add Project popup
+And user Click Add Projects Button  
+Then New Project should be get created successfully with toast message "<successMessage>"
+ Examples:
+      | successMessage          |
+      | Success Project Added   | 
+      
+@Projects @Projects13 @smoke @regression @all
+Scenario Outline: To verify Create New Project without enter Project name 
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Master 
+And User clicks the Projects   
+And User clicks New Project Button 
+And User enters mandatory fields without enter project Name
+Then User should get an error message about Proejct Name
+
+@Projects @Projects14 @smoke @regression @all
+Scenario Outline: To verify Create New Project without enter location name 
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Master  
+And User clicks the Projects   
+And User clicks New Project Button 
+And User enters mandatory fields without enter location Name
+Then User should get an error message about location Name
+      
+@Projects @Projects15 @smoke @regression @all
+Scenario Outline: To verify Create New Project without select project type 
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the Master  
+And User clicks the Projects   
+And User clicks New Project Button 
+And User enters mandatory fields without select project type 
+Then User should get an error message about project type       
+      
+      
+      

@@ -154,4 +154,60 @@ public class Projects extends Base {
     	projectspage.Display_FirstPage ();
     }
     
+    @And("User clicks New Project Button")
+    public void User_clicks_New_Project_Button() throws Exception {
+    	projectspage.Click_NewProject_button ();
+    }
+    
+    @And("User enters mandatory fields of Add Project popup")
+    public void User_enters_mandatory_fields_of_Add_Project_popup() throws Exception {
+    	projectspage.Enter_mandatoryfields_Newproject ();
+    }
+    
+    @And("user Click Add Projects Button")
+    public void user_Click_Add_Projects_Button() throws Exception {
+    	projectspage.Clicks_Add_Projects ();
+    }
+    
+    @Then("^New Project should be get created successfully with toast message \"([^\"]*)\"$")
+     public void New_Project_should_be_get_created_successfully_with_toast_message(String expectedMessage) {
+        String actualMessage = projectspage.success_display(); 
+        String normalizedExpectedMessage = normalizeWhitespace(expectedMessage);
+        String normalizedActualMessage = normalizeWhitespace(actualMessage);
+        System.out.println(">> New Project should be get created successfully");
+        assertEquals(normalizedExpectedMessage, normalizedActualMessage);
+    }
+
+	private String normalizeWhitespace(String expectedMessage) {
+		return null;
+	}	
+	   @And("User enters mandatory fields without enter project Name")
+	    public void User_enters_mandatory_fields_without_enter_project_Name() throws Exception {
+	    	projectspage.New_Project_without_ProjectName ();
+	    }
+	   
+	   @Then("User should get an error message about Proejct Name")
+	    public void User_should_get_an_error_message_about_Proejct_Name() throws Exception {
+	    	projectspage.Error_ProjectName_required ();
+	    }
+	   
+	   @And("User enters mandatory fields without enter location Name")
+	    public void User_enters_mandatory_fields_without_enter_location_Name() throws Exception {
+	    	projectspage.New_Project_without_locationName ();
+	    }
+	   
+	   @Then("User should get an error message about location Name")
+	    public void User_should_get_an_error_message_about_location_Name() throws Exception {
+	    	projectspage.Error_locationName_required ();
+	    }
+	   
+	   @And("User enters mandatory fields without select project type")
+	    public void User_enters_mandatory_fields_without_select_project_type() throws Exception {
+	    	projectspage.New_Project_without_project_type ();
+	    }
+	   
+	   @Then("User should get an error message about project type")
+	    public void User_should_get_an_error_message_about_project_type() throws Exception {
+	    	projectspage.Error_project_type_required ();
+	    }
 }

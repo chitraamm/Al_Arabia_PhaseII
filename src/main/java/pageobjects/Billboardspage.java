@@ -101,13 +101,13 @@ public class Billboardspage extends Base {
 	@FindBy(xpath = "(//input[@placeholder='Enter Location'])[1]")
 	private WebElement Newbillboard_BB_location;
 
-	@FindBy(id = "react-select-12-input")
+	@FindBy(xpath = "(//*[name()='svg'][@class='css-tj5bde-Svg'])[2]")
 	private WebElement Newbillboard_BB_type;
 
 	@FindBy(xpath = "//div[@class='select__menu css-1nmdiq5_menu'][1]")
 	private WebElement Newbillboard_BB_type1;
 
-	@FindBy(id = "react-select-13-input")
+	@FindBy(xpath = "(//*[name()='svg'][@class='css-tj5bde-Svg'])[3]")
 	private WebElement Newbillboard_BOM_type;
 
 	@FindBy(xpath = "//body[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[2]/form[1]/div[1]/div[3]/div[1]/div[1]/div[1]/input[1]")
@@ -131,44 +131,72 @@ public class Billboardspage extends Base {
 	@FindBy(id = "screen_height")
 	private WebElement Newbillboard_screen_height;
 
-	@FindBy(xpath = "(//div)[95]")
+	@FindBy(xpath = "(//*[name()='svg'][contains(@class,'css-tj5bde-Svg')])[4]")
 	private WebElement Newbillboard_screen_resolution;
 
-	@FindBy(xpath = "(//div[contains(@class,'select__value-container select__value-container--has-value css-hlgwow')])[4]")
+	@FindBy(xpath = "(//*[name()='svg'][contains(@class,'css-tj5bde-Svg')])[5]")
 	private WebElement Newbillboard_screen_units;
 
-	@FindBy(xpath = "(//div)[114]")
+	@FindBy(xpath = "(//*[name()='svg'][contains(@class,'css-tj5bde-Svg')])[6]")
 	private WebElement Newbillboard_screen_pixel;
 
 	@FindBy(id = "screen_model")
 	private WebElement Newbillboard_screen_model;
+	
+	@FindBy(id = "formikDateField_contract_start_date")
+	private WebElement Contract_startdate;
+	
+	@FindBy(xpath = "(//input[@id='formikDateField_contract_end_date'])[1]")
+	private WebElement Contract_enddate;
+	
+	@FindBy(xpath = "(//button[@class='rmdp-arrow-container rmdp-right '])[1]")
+	private WebElement display_datepicker_end_date;
+	
+	@FindBy(xpath = "(//span[normalize-space()='30'])[1]")
+	private WebElement select_Contract_enddate;
 
-	public void NewBillboard_mandatory_fields_enter() {
+	public void NewBillboard_mandatory_fields_enter() throws Exception {
 		String uniqueboardno = generateUniqueboardNumber(prop.getProperty("BB_NO"));
 		wait.until(ExpectedConditions.visibilityOf(Newbillboard_boardno)).sendKeys(uniqueboardno);
-		wait.until(ExpectedConditions.visibilityOf(Newbillboard_BB_location))
-				.sendKeys("Riyadh Saudi Arabia" + Keys.ARROW_DOWN + Keys.ENTER);
+	    wait.until(ExpectedConditions.visibilityOf(Newbillboard_BB_location)).sendKeys(""+"riyadh"); Thread.sleep(2000);
+	    wait.until(ExpectedConditions.visibilityOf(Newbillboard_BB_location)).sendKeys(""+Keys.DOWN+Keys.ENTER);
 		act.moveToElement(Newbillboard_BB_type).click().sendKeys("" + Keys.ENTER).perform();
-		act.moveToElement(Newbillboard_BOM_type).click().sendKeys("" + Keys.ARROW_DOWN + Keys.ENTER).perform();
+		wait.until(ExpectedConditions.visibilityOf(Newbillboard_BOM_type)).click();Thread.sleep(2000);
+		act.moveToElement(Newbillboard_BOM_type).click().sendKeys("" + Keys.DOWN+Keys.ENTER).perform();
 
 		wait.until(ExpectedConditions.visibilityOf(Newbillboard_teamviewer_id)).sendKeys("123456789");
 		wait.until(ExpectedConditions.visibilityOf(Newbillboard_teamviewer_password)).sendKeys("Password@123");
 		wait.until(ExpectedConditions.visibilityOf(Newbillboard_screen_width)).sendKeys("80");
 		wait.until(ExpectedConditions.visibilityOf(Newbillboard_screen_height)).sendKeys("40");
-
+		
+		wait.until(ExpectedConditions.visibilityOf(Newbillboard_screen_height)).isDisplayed();
 		act.moveToElement(Newbillboard_screen_resolution).click().sendKeys("" + Keys.ARROW_DOWN + Keys.ENTER).perform();
+		wait.until(ExpectedConditions.visibilityOf(Newbillboard_screen_resolution)).isDisplayed();
 		act.moveToElement(Newbillboard_screen_units).click().sendKeys("" + Keys.ARROW_DOWN + Keys.ENTER).perform();
+		wait.until(ExpectedConditions.visibilityOf(Newbillboard_screen_units)).isDisplayed();
 		act.moveToElement(Newbillboard_screen_pixel).click().sendKeys("" + Keys.ARROW_DOWN + Keys.ENTER).perform();
+		wait.until(ExpectedConditions.visibilityOf(Newbillboard_screen_pixel)).isDisplayed();
+		act.moveToElement(Contract_startdate).click().perform();
+		wait.until(ExpectedConditions.visibilityOf(Contract_startdate)).isDisplayed();
+		act.moveToElement(Contract_enddate).click().perform();
+		wait.until(ExpectedConditions.visibilityOf(display_datepicker_end_date)).isDisplayed();
+		act.moveToElement(select_Contract_enddate).click().perform();
+
+	
 	}
+	
 	@FindBy(xpath = "//div[@class='d-flex justify-content-between py-5']")
 	private WebElement create_BB_container;
+	
+	@FindBy(xpath = "(//button[@id='Reset Form'])[1]")
+	private WebElement scrollto_add;
 
-	@FindBy(id = "Create BillBoard")
+	@FindBy(xpath = "(//div[@data-testid='Create Billboard'])[1]")
 	private WebElement Newbillboard_create_BB_btn;
 
 	public void Newbillboard_create_BB_btn() throws Exception {
 		Thread.sleep(2000);
-		wait.until(ExpectedConditions.visibilityOf(create_BB_container));
+		act.scrollToElement(scrollto_add).perform();
 		act.moveToElement(Newbillboard_create_BB_btn).click().perform();
 	}
 
@@ -341,15 +369,14 @@ public class Billboardspage extends Base {
 		System.out.println(">> User entered the Ticket count in filter");
 	}
 
-	@FindBy(id = "react-select-4-input")
+	@FindBy(xpath = "(//div[@class='select__indicator select__dropdown-indicator css-1xc3v61-indicatorContainer'])[2]")
 	private WebElement BB_Typedropdown;
 
-	public void select_bb_Type() {
+	public void select_bb_Type() throws Exception {
+		Thread.sleep(2000);
 		wait.until(ExpectedConditions.visibilityOf(Billboard_filter)).click();
 		String bb_Type = prop.getProperty("bb_Type");
-		wait.until(ExpectedConditions.visibilityOf(BB_Typedropdown)).click();
-		wait.until(ExpectedConditions.visibilityOf(BB_Typedropdown)).sendKeys(bb_Type + Keys.ENTER);
-		LOGGER.info(">> User selected the Billboard Type:" + BB_Typedropdown.getText());
+		act.moveToElement(BB_Typedropdown).click().sendKeys(""+Keys.ENTER).perform();
 		act.moveToElement(Billboard_filter_apply_btn).click().perform();
 		System.out.println(">> User selected the bb Type in filter" + bb_Type);
 	}

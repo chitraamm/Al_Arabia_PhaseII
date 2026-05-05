@@ -83,6 +83,19 @@ public class Projectspage extends Base {
 //		LOGGER.info(">> The members dashboard list page got displayed");
 //	}
 	
+	@FindBy(xpath = "//div[contains(@class, 'toastpop') and contains(@class, 'position-relative')]")
+	private WebElement Success_display,members_profile_Success_display1;
+
+	public String success_display() {
+		WebElement successMessageElement = wait.until(ExpectedConditions.visibilityOf(Success_display));
+		return successMessageElement.getText().trim();
+	}
+	
+	public String members_profile_success_display1() throws Exception {
+		WebElement successMessageElement = wait.until(ExpectedConditions.visibilityOf(members_profile_Success_display1));
+		return successMessageElement.getText().trim();
+	}
+	
 	@FindBy(id = "doc_searchQueryInput")
 	private WebElement projectSearch;
 
@@ -250,11 +263,8 @@ public class Projectspage extends Base {
 	    	
 	        System.out.println("An error occurred while handling the second page: " + e.getMessage());
 	    }
-	}////button[@title='Previous Page']
-	
-//	@FindBy(xpath = "//div[contains(@class,'login-children-animator')]//div[contains(@class,'d-flex justify-content-between align-items-center')]//div[contains(@class,'d-flex')]//div[1]")
-//	WebElement previousPageButton;
-	
+	}
+
 	public void Display_Next_page() throws Exception {
 	try {
     	if (previousPageButton.isDisplayed() && nextPageButton.isEnabled()) {
@@ -276,26 +286,6 @@ public class Projectspage extends Base {
 	
 	@FindBy(xpath = "(//button[@title='Previous Page'])[1]")
 	WebElement previousPageButton;
-
-//	public void Previous_pageicon_click() throws Exception {
-//		try {
-//			if (previousPageButton.isDisplayed() && previousPageButton.isEnabled()) {
-//				Thread.sleep(2000);
-//				previousPageButton.click();
-//				LOGGER.info("✅ Clicked the 'Previous' page button.");
-//			} else {
-//				Thread.sleep(2000);
-//				LOGGER.warn("⚠️ 'Previous' button is either not visible or not clickable.");
-//				AssertJUnit.assertTrue(true);
-//			}
-//		} catch (TimeoutException e) {
-//			LOGGER.warn("⚠️ 'Previous' button not found – possibly already on the first page.");
-//			AssertJUnit.assertTrue(true);
-//		} catch (Exception e) {
-//			LOGGER.error("❌ Exception while clicking previous page button: " + e.getMessage());
-//			AssertJUnit.fail("Error clicking 'Previous' button.");
-//		}
-//	}
 	
 	public void Previous_pageicon_click() {
 	    try {
@@ -331,6 +321,92 @@ public class Projectspage extends Base {
 			LOGGER.error("❌ Exception occurred while checking first page: " + e.getMessage());
 			AssertJUnit.fail("first page not found or not visible.");
 		}
+	}
+	
+	@FindBy(xpath = "(//button[@id=' New Project '])[1]")
+	WebElement clicks_newproject_button;
+	
+	public void Click_NewProject_button () {
+        wait.until(ExpectedConditions.visibilityOf(display_projects)).isDisplayed();	
+        wait.until(ExpectedConditions.visibilityOf(clicks_newproject_button)).click();	       
+	}
+	
+	@FindBy(xpath = "(//input[@placeholder='Enter Location'])[1]")
+	WebElement location ;
+	
+	@FindBy(xpath = "//*[@id=\"root\"]/div/div[1]/div[2]/div/div[2]/div/div/div[2]/div[3]/div/div/div/form/div[3]/div[1]/span[1]")
+	WebElement static_project ;
+	
+	@FindBy(xpath = "//*[@id=\"root\"]/div/div[1]/div[2]/div/div[2]/div/div/div[2]/div[3]/div/div/div/form/div[3]/div[1]/span[2]")
+	WebElement Digital_project ;
+	
+	@FindBy(xpath = "(//h4[normalize-space()='Add Project'])[1]")
+	WebElement display_newproject_popup;
+	
+	public void Enter_mandatoryfields_Newproject () throws Exception {
+        wait.until(ExpectedConditions.visibilityOf(display_newproject_popup)).isDisplayed();	
+        wait.until(ExpectedConditions.visibilityOf(project_name)).sendKeys(generateUniqueNumber(prop.getProperty("projectname")));
+        wait.until(ExpectedConditions.visibilityOf(location)).sendKeys(""+"riyadh");
+        Thread.sleep(2000);
+        wait.until(ExpectedConditions.visibilityOf(location)).sendKeys(""+Keys.DOWN+Keys.ENTER);
+        wait.until(ExpectedConditions.visibilityOf(static_project)).click();
+        wait.until(ExpectedConditions.visibilityOf(Digital_project)).click();
+	}
+	
+	@FindBy(id = "Add Projects")
+	WebElement clicks_Addprojects_button;
+	
+	public void Clicks_Add_Projects () {
+        wait.until(ExpectedConditions.visibilityOf(display_newproject_popup)).isDisplayed();	
+        wait.until(ExpectedConditions.visibilityOf(clicks_Addprojects_button)).click();	       
+	}
+	
+	public void New_Project_without_ProjectName () throws Exception {
+        wait.until(ExpectedConditions.visibilityOf(display_newproject_popup)).isDisplayed();	
+        wait.until(ExpectedConditions.visibilityOf(location)).sendKeys(""+"riyadh");
+        Thread.sleep(2000);
+        wait.until(ExpectedConditions.visibilityOf(location)).sendKeys(""+Keys.DOWN+Keys.ENTER);
+        wait.until(ExpectedConditions.visibilityOf(static_project)).click();
+        wait.until(ExpectedConditions.visibilityOf(Digital_project)).click();
+	}
+	
+	@FindBy(xpath = "//small[normalize-space()='Project Name is required']")
+	WebElement display_projectname_required_error;
+	
+	public void Error_ProjectName_required () {
+        wait.until(ExpectedConditions.visibilityOf(display_projectname_required_error)).isDisplayed();	
+		AssertJUnit.assertTrue(display_projectname_required_error.isDisplayed());
+		System.out.println(">> User got Error Project Name required");
+	}
+	
+	public void New_Project_without_locationName () throws Exception {
+        wait.until(ExpectedConditions.visibilityOf(display_newproject_popup)).isDisplayed();
+        wait.until(ExpectedConditions.visibilityOf(project_name)).sendKeys(generateUniqueNumber(prop.getProperty("projectname")));
+        wait.until(ExpectedConditions.visibilityOf(static_project)).click();
+        wait.until(ExpectedConditions.visibilityOf(Digital_project)).click();
+	}
+	
+	@FindBy(xpath = "//small[text()='Project Location is required']")
+	WebElement display_locationname_required_error;
+	
+	public void Error_locationName_required () {
+        wait.until(ExpectedConditions.visibilityOf(display_locationname_required_error)).isDisplayed();	
+		AssertJUnit.assertTrue(display_locationname_required_error.isDisplayed());
+		System.out.println(">> User got Error location Name required");
+	}
+	
+	public void New_Project_without_project_type () throws Exception {
+        wait.until(ExpectedConditions.visibilityOf(display_newproject_popup)).isDisplayed();
+        wait.until(ExpectedConditions.visibilityOf(project_name)).sendKeys(generateUniqueNumber(prop.getProperty("projectname")));
+	}
+	
+	@FindBy(xpath = "//div[text()='Billboard Type is required']")
+	WebElement display_project_type_required_error;
+	
+	public void Error_project_type_required () {
+        wait.until(ExpectedConditions.visibilityOf(display_project_type_required_error)).isDisplayed();	
+		AssertJUnit.assertTrue(display_project_type_required_error.isDisplayed());
+		System.out.println(">> User got Error project type is required");
 	}
 	
 }

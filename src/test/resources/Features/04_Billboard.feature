@@ -14,8 +14,8 @@ Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the billboards module
 And Admin or user clicks the new billboard button
-And Admin or user enters the all new billboard mandatory fields
-And Admin or user clicks the create billboard
+And Admin or user enters the all new billboard mandatory fields 
+And Admin or user clicks the create billboard 
 And Particular billboard gets created successfully with either "<successMessage1>" or "<successMessage2>"
 Then The billboard should created and displayed in billboard dashboard successfully
   Examples:

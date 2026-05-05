@@ -9,7 +9,7 @@ And Admin or user clicks the Master
 Then Al Arabia Department page should display successfully
 
 @Master @Master02 @regression @sanity @all
-Scenario Outline: T002_Create the Ticket with valid inputs
+Scenario Outline: T002_Create the Department with valid inputs
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master

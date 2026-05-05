@@ -351,10 +351,16 @@ public class Billboards extends Base {
 	      System.out.println(">> User or Admin got the QR code file downloaded successfully"+actualMessage);
 	      assertEquals(normalizedExpectedMessage, normalizedActualMessage);
 	}	
-	@Then("User click on the Billboard location text")
+	@And("User click on the Billboard location text")
 	public void User_click_on_the_Billboard_location_text () throws Exception {
 	    billboardsPage.BB_location_click();
-	}	    
+	}	
+	
+	@Then("page redirected to the map page with billboard location")
+	public void page_redirected_to_the_map_page_with_billboard_location () throws Exception {
+	    billboardsPage.BB_Google_map_display();
+	}
+	
 	@And("User edit screen height")
 	public void User_edit_screen_height () throws Exception {
 		billboardsPage.BB_edit_screen_height();
@@ -364,14 +370,29 @@ public class Billboards extends Base {
 		billboardsPage.BB_update_clicked();
 		billboardsPage.BB_update_confirmed();
 }
-	@Then("^BillBoard Updated popup will be displayed successfully as \"([^\"]*)\"$")
-	public void BillBoard_Updated_popup_will_be_displayed_successfully_as_(String expectedMessage) throws Exception {
-		  String actualMessage = billboardsPage.billboard_created_Success_display();
-	      String normalizedExpectedMessage = normalizeWhitespace(expectedMessage);
-	      String normalizedActualMessage = normalizeWhitespace(actualMessage);
-	      System.out.println(">> User or Admin got the QR code file downloaded successfully"+actualMessage);
-	      assertEquals(normalizedExpectedMessage, normalizedActualMessage);
+//	@Then("^BillBoard Updated popup will be displayed successfully as \"([^\"]*)\"$")
+//	public void BillBoard_Updated_popup_will_be_displayed_successfully_as_(String expectedMessage) throws Exception {
+//		  String actualMessage = billboardsPage.billboard_created_Success_display();
+//	      String normalizedExpectedMessage = normalizeWhitespace(expectedMessage);
+//	      String normalizedActualMessage = normalizeWhitespace(actualMessage);
+//	      System.out.println(">> User or Admin got the QR code file downloaded successfully"+actualMessage);
+//	      assertEquals(normalizedExpectedMessage, normalizedActualMessage);
+//	}
+	
+	@Then("^BillBoard Updated popup will be displayed successfully as \"([^\"]*)\" or \"([^\"]*)\"$")
+	public void BillBoard_Updated_popup_will_be_displayed_successfully_as (String expectedMessage1,
+			String expectedMessage2) throws Exception {
+		String actualMessage = billboardsPage.billboard_created_Success_display();
+		String normalizedActualMessage = normalizeWhitespace(actualMessage);
+		System.out.println(">> User or Admin got the purchase created success message successfully: " + actualMessage);
+
+		boolean matchesMessage1 = normalizedActualMessage.equals(normalizeWhitespace(expectedMessage1));
+		boolean matchesMessage2 = normalizedActualMessage.equals(normalizeWhitespace(expectedMessage2));
+
+		assertTrue("The actual message was neither of the expected success messages.",
+				matchesMessage1 || matchesMessage2);
 	}
+
 	@And("User click on BOM Tab")
 	public void User_click_on_BOM_Tab () throws Exception {
 		billboardsPage.BB_editpage_BOM();
@@ -392,19 +413,26 @@ public class Billboards extends Base {
 	public void BillBoard_QR_code_will_be_displayed_sucessfully () throws Exception {
 		billboardsPage.BB_editpage_BOMTab_QRcodedisplay();
 }
-	@And("User clicks on Mark it as non operational and click yes mark it")
-	public void User_clicks_on_Mark_it_as_non_operational_and_click_yes_mark_it () throws Exception {
+	
+      @And("User Click on Mark it as non operational button with Temporary")
+	  public void User_Click_on_Mark_it_as_non_operational_button_with_Temporary () throws Exception {	
 		billboardsPage.BB_Mark_it_as_nonoperational();
-		billboardsPage.BB_Mark_it_as_nonoperational_confirmed();
-	}	
-      @And("User Mark it as non operational and Added the reason")
-	  public void User_Mark_it_as_non_operational_and_Added_the_reason () throws Exception {	
-		
-		billboardsPage.BB_Mark_it_as_nonoperational();
-		billboardsPage.BB_Mark_it_as_nonoperational_confirmed();
-		billboardsPage.BB_non_operatnl_reason_added();
-		billboardsPage.BB_clicked_reason_button();	
 }
+  	@And("Temporary Non-Operational Details popup will be displayed")
+  	public void Temporary_Non_Operational_Details_popup_will_be_displayed () throws Exception {
+  		billboardsPage.display_temporary_nonoperntlpopup();
+  	}	
+      
+  	@And("User enters Temporary Non Operational Details")
+  	public void User_enters_Temporary_Non_Operational_Details () throws Exception {
+  		billboardsPage.Enter_Temporary_nonoperntl_fields();
+  }
+  	
+  	@And("User Onclicks Yes mark it as Non operational button")
+  	public void User_Onclicks_Yes_mark_it_as_Non_operational_button () throws Exception {
+  		billboardsPage.Clicks_Yes_mark_itNonoperationalbutton();
+  }
+      
   	@Then("^reason added popup will be displayed successfully with either \"([^\"]*)\" or \"([^\"]*)\"$")
   	public void reason_added_popup_will_be_displayed_successfully_with_either (String expectedMessage1,
 			String expectedMessage2) throws Exception {

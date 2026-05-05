@@ -51,6 +51,8 @@ personalinfo = coducer
 Phone_number = +91 80863 28118
 App_Phone_number = 9341152909
 Iqma = 87654321
+reasonofnonoperational = Testing nonoperational
+department = Electrical
 
 <--------Tickets------>
 

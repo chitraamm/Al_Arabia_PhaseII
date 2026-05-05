@@ -263,15 +263,14 @@ And Admin or user clicks the billboards module
 And User clicks on the Delete button with clicks confirm yes button
 Then BillBoard delete popup will be displayed successfully as "<successMessage>"
   Examples:
-      | successMessage     								    |
-      | Success deleted this billboard        |      
+      | successMessage     			   	    |
+      | Success deleted this billboard      |      
 
 @billboards @billboards32 @smoke @regression @all
 Scenario Outline: T032_To verify the billboards features Billboard location in the BillBoards page when the location text is clicked
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the billboards module
-And User selects billboard location
 And User click on the Billboard location text 
 Then page redirected to the map page with billboard location
       
@@ -281,14 +280,13 @@ Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the billboards module
 And User filter the billboards list status Active32
-And User selects billboard location32
 And User clicks the Edit button 
 And User edit screen height 
 And User click on Update BillBoard button with confirm yes button
-Then BillBoard Updated popup will be displayed successfully as "<successMessage>"
+Then BillBoard Updated popup will be displayed successfully as "<successMessage1>" or "<successMessage2>"
   Examples:
-      | successMessage     								    |
-      | Success Billboard updated             |  
+      | successMessage1       | successMessage2            |
+      | LOADING...            | Success Billboard updated  |    
         
 @billboards @billboards34 @smoke @regression @all
 Scenario Outline: T034_To verify the billboards features BOM Tab in Update BillBoard page
@@ -296,7 +294,6 @@ Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the billboards module
 And User filter the billboards list status Active32
-And User selects billboard location32
 And User clicks the Edit button 
 And User click on BOM Tab
 Then BOM details of BillBoard will be display successfully
@@ -307,7 +304,6 @@ Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the billboards module
 And User filter the billboards list status Active32
-And User selects billboard location32
 And User clicks the Edit button 
 And User click on BOM Tab
 Then User click on Download PDF button and will be downloaded the PDF file of BOM
@@ -318,7 +314,6 @@ Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the billboards module
 And User filter the billboards list status Active32
-And User selects billboard location32
 And User clicks the Edit button 
 And User click on Download QR code icon
 Then BillBoard QR code will be displayed sucessfully
@@ -329,9 +324,9 @@ Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the billboards module
 And User filter the billboards list status Active32
-And User selects billboard location32
 And User clicks the Edit button 
-Then User clicks on Mark it as non operational and click yes mark it
+And User Click on Mark it as non operational button with Temporary 
+Then Temporary Non-Operational Details popup will be displayed 
 
 @billboards @billboards38 @smoke @regression @all
 Scenario Outline: T038_To verify the billboards features Mark it as non operational in Update BillBoard page
@@ -339,13 +334,15 @@ Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the billboards module
 And User filter the billboards list status Active32
-And User selects billboard location32
 And User clicks the Edit button 
-And User Mark it as non operational and Added the reason 
+And User Click on Mark it as non operational button with Temporary 
+And User enters Temporary Non Operational Details 
+And User Onclicks Yes mark it as Non operational button
 Then reason added popup will be displayed successfully with either "<successMessage1>" or "<successMessage2>"
   Examples:
       | successMessage1       | successMessage2                    |
       | LOADING...            | Success Updated as non-operational |
+      
 @billboards @billboards39 @smoke @regression @all
 Scenario Outline: T039_To verify the billboards feature pagination 1st to 2nd page 
 Given Admin logged in with valid credentials

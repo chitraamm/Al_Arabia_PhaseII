@@ -414,6 +414,7 @@ public class Billboards extends Base {
 		billboardsPage.BB_editpage_BOMTab_QRcodedisplay();
 }
 	
+	
       @And("User Click on Mark it as non operational button with Temporary")
 	  public void User_Click_on_Mark_it_as_non_operational_button_with_Temporary () throws Exception {	
 		billboardsPage.BB_Mark_it_as_nonoperational();
@@ -433,13 +434,39 @@ public class Billboards extends Base {
   		billboardsPage.Clicks_Yes_mark_itNonoperationalbutton();
   }
       
-  	@Then("^reason added popup will be displayed successfully with either \"([^\"]*)\" or \"([^\"]*)\"$")
-  	public void reason_added_popup_will_be_displayed_successfully_with_either (String expectedMessage1,
-			String expectedMessage2) throws Exception {
+  	@Then("^Temporary Non Operational ticket created successfully \"([^\"]*)\" or \"([^\"]*)\"$")
+  	public void Temporary_Non_Operational_ticket_created_successfully (String expectedMessage1,String expectedMessage2) throws Exception {
 		String actualMessage = billboardsPage.billboard_created_Success_display();
 		String normalizedActualMessage = normalizeWhitespace(actualMessage);
 
-		System.out.println(">> User or Admin got the ticket cerified success message successfully: " + actualMessage);
+		System.out.println(">> User or Admin created Temporary Non operational Ticket successfully: " + actualMessage);
+
+		boolean matchesMessage1 = normalizedActualMessage.equals(normalizeWhitespace(expectedMessage1));
+		boolean matchesMessage2 = normalizedActualMessage.equals(normalizeWhitespace(expectedMessage2));
+
+		assertTrue("The actual message was neither of the expected success messages.",
+				matchesMessage1 || matchesMessage2);
+	}	
+  	
+    @And("User Click on Mark it as non operational button with Permanent")
+	  public void User_Click_on_Mark_it_as_non_operational_button_with_Permanent () throws Exception {	
+		billboardsPage.BB_Mark_it_as_nonoperational_Permanent();
+}
+	@And("Permanent Non-Operational Details popup will be displayed")
+	public void Permanent_Non_Operational_Details_popup_will_be_displayed () throws Exception {
+		billboardsPage.display_Permanent_nonoperntlpopup();
+	}	
+    
+	@And("User enters Permanent Non Operational Details")
+	public void User_enters_Permanent_Non_Operational_Details () throws Exception {
+		billboardsPage.Enter_Permanent_nonoperntl_fields();
+}   
+	@Then("^Permanent Non Operational ticket created successfully \"([^\"]*)\" or \"([^\"]*)\"$")
+	public void Permanent (String expectedMessage1,String expectedMessage2) throws Exception {
+		String actualMessage = billboardsPage.billboard_created_Success_display();
+		String normalizedActualMessage = normalizeWhitespace(actualMessage);
+
+		System.out.println(">> User or Admin created Permanent Non operational Ticket successfully: " + actualMessage);
 
 		boolean matchesMessage1 = normalizedActualMessage.equals(normalizeWhitespace(expectedMessage1));
 		boolean matchesMessage2 = normalizedActualMessage.equals(normalizeWhitespace(expectedMessage2));
@@ -447,6 +474,39 @@ public class Billboards extends Base {
 		assertTrue("The actual message was neither of the expected success messages.",
 				matchesMessage1 || matchesMessage2);
 	}
+  	
+  	
+  	
+  	
+	
+	
+    
+	@And("User enters Accidental Non Operational Details")
+	public void User_enters_Accidental_Non_Operational_Details () throws Exception {
+		billboardsPage.Enter_Accidental_nonoperntl_fields();
+}
+	
+	@Then("^Accidental Non Operational ticket created successfully \"([^\"]*)\" or \"([^\"]*)\"$")
+	public void Accidental_Non_Operational_ticket_created_successfully (String expectedMessage1,String expectedMessage2) throws Exception {
+		String actualMessage = billboardsPage.billboard_created_Success_display();
+		String normalizedActualMessage = normalizeWhitespace(actualMessage);
+
+		System.out.println(">> User or Admin created Accidental Non operational Ticket successfully: " + actualMessage);
+
+		boolean matchesMessage1 = normalizedActualMessage.equals(normalizeWhitespace(expectedMessage1));
+		boolean matchesMessage2 = normalizedActualMessage.equals(normalizeWhitespace(expectedMessage2));
+
+		assertTrue("The actual message was neither of the expected success messages.",
+				matchesMessage1 || matchesMessage2);
+	}	
+
+	
+	
+	
+	
+	
+  	
+  	
 	@And("User click on second page button of billboards")
 	public void User_click_on_second_page_button_of_billboards () throws Exception {
 		billboardsPage.Second_page();
@@ -543,9 +603,7 @@ public class Billboards extends Base {
 		assertTrue("The actual message was neither of the expected success messages.",
 				matchesMessage1 || matchesMessage2);
 	}
-//	private String normalizeWhitespace(String input) {
-//		return input.replaceAll("\\s+", " ").trim();
-//	}
+
 	@And("User clicks on the View Ticket Tab")
 	public void User_clicks_on_the_View_Ticket_Tab() throws Exception {
 		billboardsPage.View_ticketBB();
@@ -577,5 +635,14 @@ public class Billboards extends Base {
 	@Then("Alarm billboards list get displayed successfully")
 	public void Alarm_billboards_list_get_displayed_successfully() throws Exception {
 		billboardsPage.BB_filtered_result_display();
+	}
+	
+	@And("User clicks Incidents")
+	public void User_clicks_Incidents() throws Exception {
+		billboardsPage.Clicks_Incidents();
+	}
+	@Then("Display Incidents of the Billboard")
+	public void Display_Incidents_of_the_Billboard() throws Exception {
+		billboardsPage.Incidents_display();
 	}
 }

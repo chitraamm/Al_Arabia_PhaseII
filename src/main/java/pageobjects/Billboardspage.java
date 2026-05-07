@@ -596,7 +596,7 @@ public class Billboardspage extends Base {
 		LOGGER.info(">> The Download Popup get closed and listed BillBoards");
 	}
 
-	@FindBy(xpath = "(//img[@class='pointer'])[4]")
+	@FindBy(xpath = "//tbody/tr[1]/td[6]/div[2]/div[1]/img[1]")
 	private WebElement BB_Edit_Buttonclick;
 
 	public void BB_Edit_icon() throws Exception {
@@ -791,9 +791,6 @@ public class Billboardspage extends Base {
 	@FindBy(id = "reason")
 	private WebElement reason;
 	
-//	@FindBy(xpath = "(//li[normalize-space()='Temporary'])[1]")
-//	private WebElement Departmnt;
-	
     public void Enter_Temporary_nonoperntl_fields() throws Exception {
     	
 	wait.until(ExpectedConditions.visibilityOf(displayNonOperational_popup_temporary)).isDisplayed();
@@ -813,11 +810,9 @@ public class Billboardspage extends Base {
 	
 	wait.until(ExpectedConditions.visibilityOf(assignee)).isDisplayed();
 	act.moveToElement(Checklist).click().sendKeys(""+Keys.ENTER).perform();
-//	wait.until(ExpectedConditions.visibilityOf(Checklist)).click();Thread.sleep(2000);
-//	wait.until(ExpectedConditions.visibilityOf(Checklist)).sendKeys(""+Keys.ENTER);
+
 	wait.until(ExpectedConditions.visibilityOf(Checklist)).isDisplayed();
 	wait.until(ExpectedConditions.visibilityOf(reason)).sendKeys(prop.getProperty("reasonofnonoperational"));
-
 	
 }
     
@@ -833,17 +828,110 @@ public class Billboardspage extends Base {
 	wait.until(ExpectedConditions.visibilityOf(click_yesmarkas_nonoperntl)).click();
 
 }
+	
+	@FindBy(xpath = "(//li[normalize-space()='Permanent'])[1]")
+	private WebElement Clicks_Permanent;
+	
+	@FindBy(xpath = "(//h4[normalize-space()='Permanent Non-Operational Details'])[1]")
+	private WebElement displayNonOperational_popup_permanent;
+	
+   public void BB_Mark_it_as_nonoperational_Permanent() throws Exception {
+   	
+	wait.until(ExpectedConditions.visibilityOf(edit_display)).isDisplayed();
+	act.moveToElement(BB_Mark_it_as_non_opernl_buttn_click).click().perform();
+	wait.until(ExpectedConditions.visibilityOf(Clicks_Permanent)).click();
+}
 
-//@FindBy(xpath = "//h6[normalize-space()='Reason']")
-//private WebElement BB_reason_buttn_click;
-//
-//public void BB_clicked_reason_button() throws Exception {
-//
-//wait.until(ExpectedConditions.visibilityOf(Newbillboard_boardno)).isDisplayed();
-//act.moveToElement(BB_reason_buttn_click).click().perform();
-//}
+	public void display_Permanent_nonoperntlpopup() {
+		wait.until(ExpectedConditions.visibilityOf(displayNonOperational_popup_permanent)).isDisplayed();
+		AssertJUnit.assertTrue(displayNonOperational_popup_permanent.isDisplayed());
+		LOGGER.info(">> The Permanent Non operational billboard will be displayed");
+	}
+	
+   public void Enter_Permanent_nonoperntl_fields() throws Exception {
+   	
+	wait.until(ExpectedConditions.visibilityOf(displayNonOperational_popup_permanent)).isDisplayed();
+	act.moveToElement(Departmnt).click().perform();Thread.sleep(2000);
+	act.moveToElement(Departmnt).sendKeys(""+"Electrical").perform();Thread.sleep(2000);
+	act.moveToElement(Departmnt).sendKeys(""+Keys.ENTER).perform();
+	
+	wait.until(ExpectedConditions.visibilityOf(Departmnt)).isDisplayed();	
+	act.moveToElement(assignee).click().perform();Thread.sleep(2000);
+	act.moveToElement(assignee).sendKeys(""+"Tom").perform();Thread.sleep(2000);
+	act.moveToElement(assignee).sendKeys(""+Keys.ENTER).perform();Thread.sleep(2000);
+	
+	wait.until(ExpectedConditions.visibilityOf(assignee)).isDisplayed();
+	act.moveToElement(Checklist).click().sendKeys(""+Keys.ENTER).perform();
 
+	wait.until(ExpectedConditions.visibilityOf(Checklist)).isDisplayed();
+	wait.until(ExpectedConditions.visibilityOf(reason)).sendKeys(prop.getProperty("reasonofnonoperational"));
+	
+}
+   
+   
+   
+	
+	@FindBy(xpath = "(//div[contains(@class,'custom_select_input__input-container css-19bb58m')])[2]")
+	private WebElement vehicle_type;
+	
+	@FindBy(xpath = "(//div[contains(@class,'custom_select_input__input-container css-19bb58m')])[3]")
+	private WebElement Severity;
+	
+	@FindBy(xpath = "(//input[@id='plate_number'])[1]")
+	private WebElement plate_no;
+	
+	@FindBy(xpath = "(//input[@id='FormikTimeField_accident_time'])[1]")
+	private WebElement Accident_time;
+	
+	@FindBy(xpath = "(//input[@id='location'])[1]")
+	private WebElement Accident_location;
+	
+	
+   public void Enter_Accidental_nonoperntl_fields() throws Exception {
+   	
+	wait.until(ExpectedConditions.visibilityOf(displayNonOperational_popup_temporary)).isDisplayed();
+	act.moveToElement(Damageby).click().sendKeys(""+Keys.ENTER).perform();
+	
+	act.moveToElement(incident_date).click().perform();
+	wait.until(ExpectedConditions.visibilityOf(incident_date)).isDisplayed();
+	
+	wait.until(ExpectedConditions.visibilityOf(assignee)).isDisplayed();
+	act.moveToElement(vehicle_type).click().sendKeys(""+Keys.ENTER).perform();
+	
+	wait.until(ExpectedConditions.visibilityOf(vehicle_type)).isDisplayed();
+	wait.until(ExpectedConditions.visibilityOf(plate_no)).sendKeys(""+"GH 21");
+	
+	wait.until(ExpectedConditions.visibilityOf(plate_no)).isDisplayed();
+	act.moveToElement(Severity).click().sendKeys(""+Keys.ENTER).perform();
+	
+	wait.until(ExpectedConditions.visibilityOf(Severity)).isDisplayed();
+	wait.until(ExpectedConditions.visibilityOf(Accident_time)).sendKeys(""+"12:00 AM");
+	
+	wait.until(ExpectedConditions.visibilityOf(Severity)).isDisplayed();
+	wait.until(ExpectedConditions.visibilityOf(Accident_location)).sendKeys(""+"Riyadh");
+	
+	
+	act.moveToElement(Departmnt).click().perform();Thread.sleep(2000);
+	act.moveToElement(Departmnt).sendKeys(""+"Electrical").perform();Thread.sleep(2000);
+	act.moveToElement(Departmnt).sendKeys(""+Keys.ENTER).perform();
+	
+	wait.until(ExpectedConditions.visibilityOf(Departmnt)).isDisplayed();	
+	act.moveToElement(assignee).click().perform();Thread.sleep(2000);
+	act.moveToElement(assignee).sendKeys(""+"Tom").perform();Thread.sleep(2000);
+	act.moveToElement(assignee).sendKeys(""+Keys.ENTER).perform();Thread.sleep(2000);
+	
+	wait.until(ExpectedConditions.visibilityOf(assignee)).isDisplayed();
+	act.moveToElement(Checklist).click().sendKeys(""+Keys.ENTER).perform();
 
+	wait.until(ExpectedConditions.visibilityOf(Checklist)).isDisplayed();
+	wait.until(ExpectedConditions.visibilityOf(reason)).sendKeys(prop.getProperty("reasonofnonoperational"));
+	
+}
+ 
+   
+   
+   
+   
 
 @FindBy(xpath = "//div[normalize-space()='2']")
 private WebElement click_second_page;
@@ -863,19 +951,19 @@ public void next_page() throws Exception {
 	act.scrollToElement(click_next_page).build().perform();
 	wait.until(ExpectedConditions.visibilityOf(click_next_page)).click();
 }
-@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[2]/div[1]/div[4]/div[2]/div[1]")
+@FindBy(xpath = "//div[normalize-space()='‹']")
 private WebElement click_previous_page;
 public void Previous_page() throws Exception {
 	act.scrollToElement(click_previous_page).build().perform();
 	wait.until(ExpectedConditions.visibilityOf(click_previous_page)).click();
 }
-@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[2]/div[1]/div[4]/div[2]/div[5]")
+@FindBy(xpath = "//div[contains(@class,'round-effect') and normalize-space()='› ›']")
 private WebElement click_last_page;
 public void last_page() throws Exception {
 	act.scrollToElement(click_last_page).build().perform();
 	wait.until(ExpectedConditions.visibilityOf(click_last_page)).click();
 }
-@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[2]/div[1]/div[4]/div[2]/div[1]")
+@FindBy(xpath = "//div[normalize-space()='‹ ‹']")
 private WebElement click_first_page;
 public void First_page() throws Exception {
 	act.scrollToElement(click_first_page).build().perform();
@@ -942,16 +1030,16 @@ public void reject_non_operational_confirmed() throws Exception {
 	wait.until(ExpectedConditions.visibilityOf(reject_confirm_yes_button)).click();
 
 }
-@FindBy(id = "react-select-13-input")
+@FindBy(xpath = "(//*[name()='svg'][contains(@class,'css-tj5bde-Svg')])[2]")
 private WebElement Department_select;
 
-@FindBy(id = "react-select-14-input")
+@FindBy(xpath = "(//div[contains(@class,'select__input-container css-19bb58m')])[2]")
 private WebElement Priority_select;
 
-@FindBy(id = "react-select-15-input")
+@FindBy(xpath = "(//*[name()='svg'][contains(@class,'css-tj5bde-Svg')])[4]")
 private WebElement Ticket_title_select;
 
-@FindBy(id = "react-select-16-input")
+@FindBy(xpath = "(//*[name()='svg'][contains(@class,'css-tj5bde-Svg')])[5]")
 private WebElement Assignee_select;
 
 @FindBy(id = "formikDateField_start_date")
@@ -960,41 +1048,37 @@ private WebElement Start_date;
 @FindBy(id = "formikDateField_end_date")
 private WebElement End_date;
 
-@FindBy(xpath = "//textarea[@id='description']")
+@FindBy(xpath = "(//*[name()='svg'][contains(@class,'css-tj5bde-Svg')])[7]")
+private WebElement Checklist_Newticket;
+
+@FindBy(id = "description")
 private WebElement Description_enter;
 
 public void Mandatory_fields_newticket() throws Exception{
-//	wait.until(ExpectedConditions.visibilityOf(BB_no_select));
-
-	//act.moveToElement(BB_no_select).click().sendKeys("" + Keys.ENTER).perform();
-
-	String Departmnt = prop.getProperty("Departmnt");
-	wait.until(ExpectedConditions.visibilityOf(Department_select)).sendKeys(Departmnt);
+	 Thread.sleep(2000);
+     wait.until(ExpectedConditions.visibilityOf(BB_View_page_display)).isDisplayed();
 	Thread.sleep(1000);
-	act.moveToElement(Department_select).click().sendKeys(""+Keys.ENTER+Keys.ARROW_RIGHT).perform();
-
+ 	act.moveToElement(Department_select).click().perform();Thread.sleep(2000);
+ 	act.moveToElement(Department_select).sendKeys(""+"Electrical").perform();Thread.sleep(2000);
+ 	act.moveToElement(Department_select).sendKeys(""+Keys.ENTER).perform();
+    wait.until(ExpectedConditions.visibilityOf(Department_select)).isDisplayed();
 	act.moveToElement(Priority_select).click().sendKeys("" + Keys.ENTER).perform();
-
-	String Tckt_title = prop.getProperty("Tckt_title");
-	wait.until(ExpectedConditions.visibilityOf(Ticket_title_select)).sendKeys(Tckt_title);
-	Thread.sleep(2000);
-	act.moveToElement(Ticket_title_select).click().sendKeys(""+Keys.ENTER+Keys.ARROW_RIGHT).perform();
-
-	Thread.sleep(2000);
-	String Assignee = prop.getProperty("Assignee");
-	wait.until(ExpectedConditions.visibilityOf(Assignee_select)).sendKeys(Assignee);
-	Thread.sleep(5000);
-	act.moveToElement(Assignee_select).click().sendKeys(""+Keys.ENTER+Keys.ARROW_RIGHT).perform();
-
+    wait.until(ExpectedConditions.visibilityOf(Priority_select)).isDisplayed();
+	act.moveToElement(Ticket_title_select).click().sendKeys("" + Keys.ENTER).perform();Thread.sleep(2000);
+	wait.until(ExpectedConditions.visibilityOf(Ticket_title_select)).isDisplayed();	
+	act.moveToElement(Assignee_select).click().perform();Thread.sleep(2000);
+	act.moveToElement(Assignee_select).sendKeys(""+"Tom").perform();Thread.sleep(2000);
+	act.moveToElement(Assignee_select).sendKeys(""+Keys.ENTER).perform();Thread.sleep(2000);
+	wait.until(ExpectedConditions.visibilityOf(Assignee_select)).isDisplayed();	
 	act.moveToElement(Start_date).click().sendKeys("" + Keys.ENTER).perform();
 	wait.until(ExpectedConditions.visibilityOf(Start_date));
-
-	act.moveToElement(End_date).click().sendKeys("" + Keys.ENTER).perform();
-	Thread.sleep(5000);
-
-	String Description = prop.getProperty("Description");
-	wait.until(ExpectedConditions.visibilityOf(Description_enter)).sendKeys(Description);
+	act.moveToElement(End_date).click().perform();
+	wait.until(ExpectedConditions.visibilityOf(display_datepicker_end_date)).isDisplayed();
+	act.moveToElement(select_Contract_enddate).click().perform();Thread.sleep(2000);
+	act.moveToElement(Checklist_Newticket).click().sendKeys(""+Keys.ENTER).perform();Thread.sleep(2000);
+	wait.until(ExpectedConditions.visibilityOf(Description_enter)).sendKeys(prop.getProperty("Description"));
 }
+
 @FindBy(id = "Create Ticket")
 private WebElement Ticket_create_BB_btn;
 
@@ -1002,24 +1086,29 @@ public void NewTicket_create_btn() {
 	act.moveToElement(Ticket_create_BB_btn).click().perform();
 }
 @FindBy(xpath = "//div[contains(@class, 'toastpop') and contains(@class, 'position-relative')]")
-private WebElement Ticket_created_Success_display;
+WebElement Ticket_created_Success_display;
 
 public String ticket_create_Success_display() throws Exception {
 	WebElement successMessageElement = wait.until(ExpectedConditions.visibilityOf(Ticket_created_Success_display));
 	return successMessageElement.getText().trim();
 }
+
 @FindBy(xpath = "//span[normalize-space()='View Tickets']")
-private WebElement click_view_ticket;
+WebElement click_view_ticket;
+
+@FindBy(xpath = "(//h5[normalize-space()='BillBoard Number'])[1]")
+WebElement display_BillBoard_Number;
 
 public void View_ticketBB() throws Exception {
+	Thread.sleep(3000);
+    wait.until(ExpectedConditions.visibilityOf(display_BillBoard_Number)).isDisplayed();
 	act.moveToElement(click_view_ticket).click().perform();
-	//wait.until(ExpectedConditions.visibilityOf(click_view_ticket)).click();
 }
 @FindBy(xpath = "//label[normalize-space()='Created By']")
-private WebElement View_Tickets_display;
+WebElement View_Tickets_display;
 
-@FindBy(xpath = "//div[contains(text(),'No Tickets Found')]")
-private WebElement No_Tickets_found;
+@FindBy(xpath = "(//div[contains(text(),'No Tickets Found')])[1]")
+WebElement No_Tickets_found;
 
 public void View_ticketBB_display() {
 	try {
@@ -1034,17 +1123,18 @@ public void View_ticketBB_display() {
 		wait.until(ExpectedConditions.visibilityOf(No_Tickets_found));
 	}
 }
-@FindBy(xpath = "//span[normalize-space()='Activity Feed']")
+@FindBy(xpath = "(//span[normalize-space()='Activity Feed'])[1]")
 private WebElement activity_feed;
 
 public void Activity_FeedBB() throws Exception {
-	//wait.until(ExpectedConditions.visibilityOf(BB_View_page_display)).isDisplayed();
+	wait.until(ExpectedConditions.visibilityOf(display_BillBoard_Number)).isDisplayed();
 	act.moveToElement(activity_feed).click().perform();
 }
 @FindBy(xpath = "//span[normalize-space()='Activity Feed']")
 private WebElement activityfeed_display;
 
 public void Activity_FeedBB_display() throws Exception {
+	Thread.sleep(2000);
 	wait.until(ExpectedConditions.visibilityOf(activityfeed_display)).isDisplayed();
 	AssertJUnit.assertTrue(activityfeed_display.isDisplayed());
 }
@@ -1063,5 +1153,38 @@ public void Alarm_status() {
 	act.moveToElement(alarm_status).click().perform();
 	act.moveToElement(Billboard_filter_apply_btn).click().perform();
 	System.out.println(">> User clicked Alarm status in filter");
+  }
+
+@FindBy(xpath = "(//span[normalize-space()='Incidents'])[1]")
+WebElement clicks_incidents;
+
+@FindBy(xpath = "(//label[contains(@for,'board_no')])[1]")
+WebElement Editbillboard_display;
+
+public void Clicks_Incidents() throws Exception {
+	Thread.sleep(2000);
+	wait.until(ExpectedConditions.visibilityOf(Editbillboard_display)).isDisplayed();
+	act.moveToElement(clicks_incidents).click().perform();
 }
+
+@FindBy(xpath = "display_incidents_with_download")
+private WebElement display_incidents_with_download;
+
+@FindBy(xpath = "(//div[contains(text(),'No Incidents Found')])[1]")
+WebElement No_incidents_found;
+
+public void Incidents_display() throws Exception {
+	try {
+		if (condition) {
+			wait.until(ExpectedConditions.visibilityOf(display_incidents_with_download));
+			AssertJUnit.assertTrue(display_incidents_with_download.isDisplayed());
+			System.out.println(">> User got the View Incidents page");
+		} else {
+			wait.until(ExpectedConditions.visibilityOf(No_incidents_found));
+		}
+	} catch (Exception e) {
+		wait.until(ExpectedConditions.visibilityOf(No_incidents_found));
+	}
+}
+
 }

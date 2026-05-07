@@ -337,8 +337,8 @@ And User filter the billboards list status Active32
 And User clicks the Edit button 
 And User Click on Mark it as non operational button with Temporary 
 And User enters Temporary Non Operational Details 
-And User Onclicks Yes mark it as Non operational button
-Then reason added popup will be displayed successfully with either "<successMessage1>" or "<successMessage2>"
+And User Onclicks Yes mark it as Non operational button   
+Then Temporary Non Operational ticket created successfully "<successMessage1>" or "<successMessage2>"
   Examples:
       | successMessage1       | successMessage2                    |
       | LOADING...            | Success Updated as non-operational |
@@ -394,29 +394,35 @@ And User filter the billboards list status Pending
 Then Pending billboards list get displayed successfully  
     
 @billboards @billboards45 @smoke @regression @all
-Scenario Outline: T045_To verify the billboards features approve Mark it as non operational
+Scenario Outline: T038_To verify the billboards features Mark it as Permanent non operational in Update BillBoard page
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the billboards module
-And User filter the billboards list status Pending
-And User clicks the Edit button of pending BillBoards
-And User click on Approve button and confirmed
-Then Billboard marked as Approved popup will be display successfully as "<successMessage>"
+And User filter the billboards list status Active32
+And User clicks the Edit button 
+And User Click on Mark it as non operational button with Permanent 
+And User enters Permanent Non Operational Details 
+And User Onclicks Yes mark it as Non operational button   
+Then Permanent Non Operational ticket created successfully "<successMessage1>" or "<successMessage2>"
   Examples:
-      | successMessage                     |
-      | Success Approve as non-operational |  
+      | successMessage1       | successMessage2                    |
+      | LOADING...            | Success Updated as non-operational |
+      
 @billboards @billboards46 @smoke @regression @all
-Scenario Outline: T046_To verify the billboards features Reject Mark it as non operational
+Scenario Outline: T038_To verify the billboards features Mark it as Accidental non operational in Update BillBoard page
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the billboards module
-And User filter the billboards list status Pending
-And User clicks the Edit button of pending BillBoards
-And User click on Reject button and confirmed
-Then Billboard marked as Reject popup will be display successfully as "<successMessage>"
+And User filter the billboards list status Active32
+And User clicks the Edit button 
+And User Click on Mark it as non operational button with Temporary 
+And User enters Accidental Non Operational Details 
+And User Onclicks Yes mark it as Non operational button   
+Then Accidental Non Operational ticket created successfully "<successMessage1>" or "<successMessage2>"
   Examples:
-      | successMessage                    |
-      | Success Reject as non-operational | 
+      | successMessage1       | successMessage2                    |
+      | LOADING...            | Success Updated as non-operational |
+      
 @billboards @billboards47 @smoke @regression @all
 Scenario Outline: T047_To verify the billboards feature Create New Ticket from Add BillBoards page
 Given Admin logged in with valid credentials
@@ -463,6 +469,15 @@ When Al-Arabia overall dashboard should display
 And Admin or user clicks the billboards module
 And User filter the billboards Alarm
 Then Alarm billboards list get displayed successfully
+
+@billboards @billboards52 @smoke @regression @all
+Scenario Outline: T038_To verify the billboards feature with View Incidents of a Particular Billboard 
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And Admin or user clicks the billboards module
+And User clicks the Edit button 
+And User clicks Incidents  
+Then Display Incidents of the Billboard
        
 #@billboards @billboards46 @smoke @regression @all
 #Scenario Outline: T044_To verify the billboards feature filter Pending status billboards

@@ -13,6 +13,7 @@ import org.openqa.selenium.devtools.DevTools;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.cucumber.java.After;
+import io.cucumber.java.AfterStep;
 //import io.cucumber.java.AfterStep;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
@@ -92,7 +93,7 @@ public class Testhooks extends Base {
 //            LOGGER.warn("Bearer Token not found!");
 //        }
     
-//	@After
+	@After
 //	public void tearDown(Scenario scenario) throws Exception {
 //
 //		if (driver != null) {
@@ -104,18 +105,18 @@ public class Testhooks extends Base {
 //		}
 //	}
 
-//	@AfterStep
-//	public void addScreenshot(Scenario scenario) {
-//		final byte[] screenshot = ((TakesScreenshot) driver)
-//				.getScreenshotAs(OutputType.BYTES);
-//		if (scenario.isFailed()) {
-//			scenario.attach(screenshot, "image/png", scenario.getName());
-//			LOGGER.info("Failed scenario screenshot got captured" + scenario.getName());
-//		}else {
-//      scenario.attach(screenshot, "image/png", "Passed scenario: " + scenario.getName());
-//            LOGGER.info("Passed scenario screenshot captured: " + scenario.getName());
-//        }
-//	}
+	@AfterStep
+	public void addScreenshot(Scenario scenario) {
+		final byte[] screenshot = ((TakesScreenshot) driver)
+				.getScreenshotAs(OutputType.BYTES);
+		if (scenario.isFailed()) {
+			scenario.attach(screenshot, "image/png", scenario.getName());
+			LOGGER.info("Failed scenario screenshot got captured" + scenario.getName());
+		}else {
+      scenario.attach(screenshot, "image/png", "Passed scenario: " + scenario.getName());
+            LOGGER.info("Passed scenario screenshot captured: " + scenario.getName());
+        }
+	}
 
 	 public WebDriver getDriver() {
 	        return driver;

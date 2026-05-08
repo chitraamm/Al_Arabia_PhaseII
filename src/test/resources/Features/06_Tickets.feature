@@ -42,7 +42,7 @@ Scenario Outline: T005_To verify the Tickets feature sort Name - A to Z
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Tickets module
-And User sort the Tickets list Name A to Z
+And User sort the Tickets list Name A to Z 
 Then Tickets list get displayed successfully
 
 @Tickets @Tickets06 @smoke @regression @all
@@ -231,7 +231,7 @@ And Admin or user clicks the create Ticket
 And The User clicks on the Delete button with clicks confirm yes button
 Then Tickets delete popup will be displayed successfully with either "<successMessage>"
  Examples:
-      | successMessage   										 |
+      | successMessage   					 |
       | Success Ticket Deleted successfull   |  
       
 @Tickets @Tickets29 @smoke @regression @all
@@ -244,8 +244,8 @@ And User edit Description
 And User click on Update Tickets button with confirm yes button
 Then Ticket Updated popup will be displayed successfully as "<successMessage>"
   Examples:
-      | successMessage     								  |
-      | Success Tickets updated             |     
+      | successMessage     		 |
+      | Success Tickets updated  |     
       
 @Tickets @Tickets30 @smoke @regression @all
 Scenario Outline: T030_To verify the Tickets feature Display Activity Feed in Edit Ticket page

@@ -83,7 +83,7 @@ public class Ticketspage extends Base {
 		LOGGER.info(">> The Tickets page got displayed");
 	}
 
-	@FindBy(xpath = "(//h6[contains(@class,'m-0 fw-normal')][normalize-space()='New Ticket'])[1]")
+	@FindBy(xpath = "(//button[@type='button'])[3]")
 	private WebElement New_TicketClick, New_Ticket_display;
 
 	public void New_TicketClick() {
@@ -230,7 +230,7 @@ public class Ticketspage extends Base {
 		System.out.println(">> User clicked recently added in sort");
 	}
 
-	@FindBy(xpath = "(//h6[contains(text(),'Recently Updated')])[1]")
+	@FindBy(xpath = "(//h6[contains(text(),'Name - A to Z')])[1]")
 	private WebElement A_to_Z_ticket_Name_;
 
 	public void Ticket_A_to_Z() throws Exception {
@@ -266,7 +266,7 @@ public class Ticketspage extends Base {
 	@FindBy(xpath = "(//span[contains(text(),'Closed')])[1]")
 	private WebElement closed_status;
 
-	@FindBy(xpath = "(//button[@type='submit'])[2]")
+	@FindBy(id = "Apply")
 	private WebElement Tickets_filter_apply_btn;
 
 	public void Tickets_status_closed() {
@@ -367,64 +367,60 @@ public class Ticketspage extends Base {
 		System.out.println(">> User clicked Verifed status in filter");
 	}
 
-	@FindBy(id = "react-select-3-input")
+	@FindBy(xpath = "(//div[contains(@aria-hidden,'true')])[1]")
 	private WebElement billboard_number;
 
-	public void select_BB_Number() {
-		wait.until(ExpectedConditions.visibilityOf(Tickets_filter)).click();
+	public void select_BB_Number() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(Tickets_filter)).click();Thread.sleep(3000);
 		String BB_NO = prop.getProperty("bb_no");
-		wait.until(ExpectedConditions.visibilityOf(billboard_number)).click();
-		wait.until(ExpectedConditions.visibilityOf(billboard_number)).sendKeys(BB_NO + Keys.ENTER);
-		LOGGER.info(">> User selected the Billboard number:" + billboard_number.getText());
+		wait.until(ExpectedConditions.visibilityOf(billboard_number)).click();Thread.sleep(2000);
+		act.moveToElement(billboard_number).sendKeys(""+Keys.ENTER).perform();
+		wait.until(ExpectedConditions.visibilityOf(billboard_number)).isDisplayed();
 		act.moveToElement(Tickets_filter_apply_btn).click().perform();
 		System.out.println(">> User selected the billboard number in filter" + BB_NO);
 	}
 
-	@FindBy(id = "react-select-4-input")
+	@FindBy(xpath = "//div[contains(@class,'select__indicator') and contains(@class,'select__dropdown-indicator')]")
 	private WebElement assignee_select;
 
-	public void select_Assignee() {
-		wait.until(ExpectedConditions.visibilityOf(Tickets_filter)).click();
+	public void select_Assignee() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(Tickets_filter)).click();Thread.sleep(3000);
 		String assignee = prop.getProperty("assignee");
-		wait.until(ExpectedConditions.visibilityOf(assignee_select)).click();
-		wait.until(ExpectedConditions.visibilityOf(assignee_select)).sendKeys(assignee + Keys.ENTER);
-		LOGGER.info(">> User selected the assignee:" + assignee_select.getText());
+
+		wait.until(ExpectedConditions.visibilityOf(assignee_select)).click();Thread.sleep(2000);
+		act.moveToElement(assignee_select).sendKeys(""+Keys.ENTER).perform();
 		act.moveToElement(Tickets_filter_apply_btn).click().perform();
 		System.out.println(">> User selected the assignee in filter" + assignee);
 	}
 
-	@FindBy(id = "react-select-5-input")
+	@FindBy(xpath = "(//div[contains(@class,'select__indicator select__dropdown-indicator css-1xc3v61-indicatorContainer')])[4]")
 	private WebElement city_select;
 
-	public void select_City() {
-		wait.until(ExpectedConditions.visibilityOf(Tickets_filter)).click();
-		wait.until(ExpectedConditions.visibilityOf(city_select)).click();
-		wait.until(ExpectedConditions.visibilityOf(city_select)).sendKeys("" + Keys.ARROW_DOWN + Keys.ENTER);
-		LOGGER.info(">> User selected the city:" + city_select.getText());
+	public void select_City() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(Tickets_filter)).click();Thread.sleep(3000);
+		act.moveToElement(city_select).click();Thread.sleep(2000);
+		act.moveToElement(city_select).sendKeys(""+Keys.ENTER).perform();
 		act.moveToElement(Tickets_filter_apply_btn).click().perform();
 		System.out.println(">> User selected the city in filter");
 	}
 
-	@FindBy(id = "react-select-5-input")
+	@FindBy(xpath = "(//div[contains(@class,'select__input-container css-19bb58m')])[2]")
 	private WebElement department_select;
 
-	public void select_Department() {
-		wait.until(ExpectedConditions.visibilityOf(Tickets_filter)).click();
-		wait.until(ExpectedConditions.visibilityOf(department_select)).click();
-		wait.until(ExpectedConditions.visibilityOf(department_select)).sendKeys("" + Keys.ARROW_DOWN + Keys.ENTER);
-		LOGGER.info(">> User selected the department:" + department_select.getText());
+	public void select_Department() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(Tickets_filter)).click();Thread.sleep(3000);
+		wait.until(ExpectedConditions.visibilityOf(department_select)).click();Thread.sleep(2000);
+		act.moveToElement(department_select).sendKeys(""+Keys.ENTER).perform();
 		act.moveToElement(Tickets_filter_apply_btn).click().perform();
 		System.out.println(">> User selected the department in filter");
 	}
 
-	@FindBy(xpath = "//*[@id=\"filterDropDown\"]/div[2]/div[6]/div/div/label/div/div[2]")
+	@FindBy(xpath = "(//div[contains(@class,'ps-4 pe-1 fw-semibold off')][normalize-space()='Non-Cleaning'])[1]")
 	private WebElement Click_Cleaning_Ticket;
 
 	public void Cleaning_Ticket() throws Exception {
-		wait.until(ExpectedConditions.visibilityOf(Tickets_filter)).click();
-		Thread.sleep(3000);
-		act.moveToElement(Click_Cleaning_Ticket).click().perform();
-		Thread.sleep(3000);
+		wait.until(ExpectedConditions.visibilityOf(Tickets_filter)).click();Thread.sleep(3000);
+		act.moveToElement(Click_Cleaning_Ticket).click().perform();Thread.sleep(3000);
 		act.moveToElement(Tickets_filter_apply_btn).click().perform();
 		System.out.println(">> User clicked Cleaning Ticket in filter");
 	}
@@ -470,7 +466,7 @@ public class Ticketspage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(tickets_Download_pdf)).click();
 	}
 
-	@FindBy(xpath = "(//*[name()='svg'][@stroke='currentColor'])[7] ")
+	@FindBy(xpath = "(//*[name()='svg'][contains(@stroke,'currentColor')])[12]")
 	private WebElement ticket_Download_popupclose;
 
 	public void Ticket_Download_popup_close() throws Exception {

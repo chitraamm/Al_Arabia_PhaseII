@@ -67,6 +67,9 @@ public class Signinpage extends Base {
     @FindBy(xpath = "(//div[@class='d-flex align-items-center gap-1 fs-15 text-primary'])[1]")
     private WebElement select_Project;
     
+    @FindBy(xpath = "(//div[contains(@title,'Choose Default Project Riyadh (Static)')])[1]")
+    private WebElement select_Project_static;
+    
     @FindBy(id = "Continue")
     private WebElement press_continue;
 
@@ -158,6 +161,11 @@ public class Signinpage extends Base {
     public void Select_Project () {
         wait.until(ExpectedConditions.visibilityOf(Projectselection_popup_display));
         wait.until(ExpectedConditions.visibilityOf(select_Project)).click();
+    }
+    
+    public void Select_Project_static () {
+        wait.until(ExpectedConditions.visibilityOf(Projectselection_popup_display));
+        wait.until(ExpectedConditions.visibilityOf(select_Project_static)).click();
     }
     
     public void Press_Continue () {

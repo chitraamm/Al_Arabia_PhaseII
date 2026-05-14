@@ -40,6 +40,17 @@ public class Members extends Base {
          signinpage.Press_Continue();
         LOGGER.info(">> Admin/User got logged in >>");
     }
+    
+    @Given("Admin logged in with valid credentials and selects static Project")
+    public void Admin_logged_in_with_valid_credentials_and_selects_static_Project() throws Exception {
+    	signinpage.enterValidEmail();
+    	 signinpage.enterValidPassword();
+         signinpage.clickSignInButton();
+         signinpage.Skip_Authentication();
+         signinpage.Select_Project_static();
+         signinpage.Press_Continue();
+        LOGGER.info(">> Admin/User got logged in as static >>");
+    }
 
     @And("User clicks the members module")
     public void User_clicks_the_members_module() throws Exception {

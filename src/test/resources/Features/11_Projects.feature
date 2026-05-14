@@ -149,7 +149,12 @@ And Admin or user clicks the Master
 And User clicks the Projects   
 And User clicks New Project Button 
 And User enters mandatory fields without select project type 
-Then User should get an error message about project type       
+Then User should get an error message about project type 
+
+@Projects @Projects16 @smoke @regression @all
+Scenario Outline: To verify Create New Project without select project type 
+Given Admin logged in with valid credentials and selects static Project
+When Al-Arabia overall dashboard should display       
       
       
       

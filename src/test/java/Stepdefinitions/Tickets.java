@@ -23,7 +23,6 @@ public class Tickets extends Base {
 	public Tickets(Testhooks testhooks) throws Exception {
 		this.driver = testhooks.getDriver(); 
 		this.ticketsPage = new Ticketspage(driver);
-		//new Signinpage(driver);
 		LOGGER = LogManager.getLogger(Tickets.class.getName());
 	}
 	 

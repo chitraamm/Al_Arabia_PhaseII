@@ -48,9 +48,10 @@ public class Posterspage extends Base {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 	}
 
-//	private String generateUniqueEmail(String baseEmail) {
-//		return baseEmail.replace("@", +System.currentTimeMillis() + "@");
-//	}
+	private static String generateUniqueNumber(String baseLicenceNumber) {
+		Random rand = new Random();
+		return baseLicenceNumber + rand.nextInt(1000);
+	}
 	
 	@FindBy(xpath = "(//a[normalize-space()='Master'])[1]")
 	WebElement mastersclick;
@@ -102,7 +103,7 @@ public class Posterspage extends Base {
 	public void Poster_Search() {
 		wait.until(ExpectedConditions.visibilityOf(Posters_menu)).isDisplayed();
 		wait.until(ExpectedConditions.visibilityOf(posterSearch)).click();
-		String searchTerm = prop.getProperty("projects_search_text");
+		String searchTerm = prop.getProperty("Posters_search_text");
 		wait.until(ExpectedConditions.visibilityOf(posterSearch)).sendKeys(""+"Test" + Keys.ENTER);
 		System.out.println(">> User enter the poster name in search field: " + searchTerm);
 	}
@@ -115,7 +116,122 @@ public class Posterspage extends Base {
 		AssertJUnit.assertTrue(posterSearchedList.isDisplayed());
 		System.out.println(">> User got searched project list: " + posterSearchedList.getText());
 	}
+	
+	@FindBy(xpath = "(//h6[@class='m-0 by fw-normal'][normalize-space()='Recently Updated'])[1]")
+	private WebElement clicksortbutton;
 
+	public void Click_Sort() {
+		wait.until(ExpectedConditions.visibilityOf(posterSearchedList)).isDisplayed();
+		wait.until(ExpectedConditions.visibilityOf(clicksortbutton)).click();
+	}
+	
+	@FindBy(xpath = "(//h6[@class='m-0 by fw-normal'][normalize-space()='Recently Updated'])[1]")
+	WebElement Posters_sort_recentlyupdated;
+	
+	public void Sort_recently_Updated() {	
+		wait.until(ExpectedConditions.visibilityOf(Posters_sort_recentlyupdated)).click();
+		System.out.println(">> User clicked recently updated in sort");
+	}
+
+	public void display_Sort_recently_updatedd() {
+		wait.until(ExpectedConditions.visibilityOf(Posters_sort_recentlyupdated)).isDisplayed();
+		AssertJUnit.assertTrue(Posters_sort_recentlyupdated.isDisplayed());
+		System.out.println(">> User got sorted the recently updated list");
+	}
+	
+	@FindBy(xpath = "(//h6[contains(text(),'Recently Added')])[1]")
+	WebElement Posters_sort_recentlyadded;
+	
+	public void Sort_recently_added() {	
+		wait.until(ExpectedConditions.visibilityOf(Posters_sort_recentlyadded)).click();
+		System.out.println(">> User clicked recently updated in sort");
+	}
+	
+	public void display_Sort_recently_added() {
+		wait.until(ExpectedConditions.visibilityOf(Posters_sort_recentlyadded)).isDisplayed();
+		AssertJUnit.assertTrue(Posters_sort_recentlyadded.isDisplayed());
+		System.out.println(">> User got sorted the recently added list");
+	}
+	@FindBy(xpath = "(//h6[contains(text(),'Name - A to Z')])[1]")
+	WebElement Posters_sort_AtoZ;
+	
+	public void Sort_Name_A_to_Z() {	
+		wait.until(ExpectedConditions.visibilityOf(Posters_sort_AtoZ)).click();
+		System.out.println(">> User clicked Posters sort A to Z");
+	}
+	
+	public void display_Sort_Name_A_to_Z() {
+		wait.until(ExpectedConditions.visibilityOf(Posters_sort_AtoZ)).isDisplayed();
+		AssertJUnit.assertTrue(Posters_sort_AtoZ.isDisplayed());
+		System.out.println(">> User got sorted the Name A-Z list");
+	}
+	
+	@FindBy(xpath = "//h6[normalize-space()='Name - Z to A']")
+	WebElement Posters_sort_ZtoA;
+	
+	@FindBy(xpath = "(//h6[contains(@class,'fw-bold m-0')][normalize-space()='Sort By'])[1]")
+	WebElement Sortby_popup;
+	
+	public void Sort_Name_Z_to_A() throws Exception {	
+		wait.until(ExpectedConditions.visibilityOf(Sortby_popup)).isDisplayed();
+		wait.until(ExpectedConditions.visibilityOf(Posters_sort_ZtoA)).click();
+		System.out.println(">> User clicked Posters sort Z to A");
+	}
+	
+	@FindBy(xpath = "(//h6[@class='m-0 by fw-normal'][normalize-space()='Name - Z to A'])[1]")
+	WebElement displayPosters_sort_ZtoA;
+	
+	public void display_Sort_Name_Z_to_A() {
+		wait.until(ExpectedConditions.visibilityOf(displayPosters_sort_ZtoA)).isDisplayed();
+		AssertJUnit.assertTrue(displayPosters_sort_ZtoA.isDisplayed());
+		System.out.println(">> User got sorted the Name Z-A list");
+	}	
+	
+	@FindBy(xpath = "(//h6[contains(text(),'Decending - Date')])[1]")
+	WebElement Posters_sort_Decending_Date;
+	
+	public void Sort_Decending_Date() {	
+		wait.until(ExpectedConditions.visibilityOf(Posters_sort_Decending_Date)).click();
+		System.out.println(">> User clicked Posters Decending Date ");
+	}
+	
+	public void display_Sort_Decending_Date() {
+		wait.until(ExpectedConditions.visibilityOf(Posters_sort_Decending_Date)).isDisplayed();
+		AssertJUnit.assertTrue(Posters_sort_Decending_Date.isDisplayed());
+		System.out.println(">> User got sorted the Decending Date list");
+	}
+	
+	@FindBy(xpath = "(//*[name()='svg' and @viewBox='0 0 16 16'])[1]")
+	WebElement click_on_kebab;
+	
+	public void Onclicks_kebabu_menu () {
+		wait.until(ExpectedConditions.visibilityOf(Posters_menu)).isDisplayed();
+        wait.until(ExpectedConditions.visibilityOf(click_on_kebab)).click();	
+	}
+
+	@FindBy(xpath = "(//a[normalize-space()='Edit'])[1]")
+	WebElement click_edit;
+	
+	public void Onclicks_Edit () {
+        wait.until(ExpectedConditions.visibilityOf(click_edit)).click();	
+	}
+	
+	@FindBy(id = "poster_no")
+	WebElement poster_no;
+	
+	@FindBy(id = "Edit Poster")
+	WebElement click_updatebuttn;
+	
+	@FindBy(xpath = "(//h4[normalize-space()='Edit Poster'])[1]")
+	WebElement editposter_displayed;
+	
+	public void Update_Poster () {
+		wait.until(ExpectedConditions.visibilityOf(editposter_displayed)).isDisplayed();
+		poster_no.sendKeys(Keys.CONTROL, "a" ,Keys.DELETE);
+		String posterno = prop.getProperty("posterno");
+        wait.until(ExpectedConditions.visibilityOf(poster_no)).sendKeys(generateUniqueNumber(""+posterno));
+        wait.until(ExpectedConditions.visibilityOf(click_updatebuttn)).click();	
+	}
 	
 
 	

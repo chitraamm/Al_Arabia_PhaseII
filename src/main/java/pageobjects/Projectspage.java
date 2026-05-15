@@ -208,14 +208,12 @@ public class Projectspage extends Base {
 		System.out.println(">> Projects list get downloaded successfully");
 	}
 	
-	
 	@FindBy(xpath = "//tbody/tr[1]/td[5]/div[1]/div[1]/button[1]//*[name()='svg']")
 	WebElement click_on_kebab;
 	
 	public void Onclicks_kebabu_menu () {
 		wait.until(ExpectedConditions.visibilityOf(display_projects)).isDisplayed();
         wait.until(ExpectedConditions.visibilityOf(click_on_kebab)).click();	
-
 	}
 	
 	@FindBy(xpath = "(//a[normalize-space()='Edit'])[1]")

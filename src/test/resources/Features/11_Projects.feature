@@ -69,7 +69,7 @@ And User sort the list Decending Date of projects
 Then Decending Date projects list get displayed successfully 
 
 @Projects @Projects08 @smoke @regression @all
-Scenario Outline: To verify the projects feature sort Decending Date 
+Scenario Outline: To verify the projects feature Projects Download 
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master

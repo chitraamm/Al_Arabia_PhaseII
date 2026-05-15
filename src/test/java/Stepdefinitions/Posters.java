@@ -58,4 +58,76 @@ public class Posters extends Base {
 		LOGGER.info(">> Admin/user got the Searched Poster >>");
 	}
 	
+	@And("User click sort button in the Posters page")
+	public void User_click_sort_button_in_the_Posters_page() throws Exception {
+		postersPage.Click_Sort();
+	}
+	
+    @And("User sort the recently updated list")
+    public void User_sort_the_recently_updated_list() {
+    	postersPage.Sort_recently_Updated();
+    }
+    
+    @Then("Recently updated page get displayed successfully")
+    public void Recently_updated_page_get_displayed_successfully() {
+    	postersPage.display_Sort_recently_updatedd();
+    }
+    
+    @And("User sort the recently added list")
+    public void User_sort_the_recently_added_list() {
+    	postersPage.Sort_recently_added();
+    }
+    
+    @Then("Recently added page get displayed successfully")
+    public void Recently_added_get_displayed_successfully() {
+    	postersPage.display_Sort_recently_added();
+    }
+    
+    
+    @And("User sort the Name A to Z list")
+    public void User_sort_the_Name_A_to_Z_list() {
+    	postersPage.Sort_Name_A_to_Z ();
+    }
+    
+    @Then("Name A to Z page get displayed successfully")
+    public void Name_A_to_Z_page_get_displayed_successfully () {
+    	postersPage.display_Sort_Name_A_to_Z ();
+    }
+    
+    @And("User sort the Name Z to A list")
+    public void User_sort_the_Name_Z_to_A_list() throws Exception {
+    	postersPage.Sort_Name_Z_to_A ();
+    }
+    
+    @Then("Name Z to A page get displayed successfully")
+    public void Name_Z_to_A_page_get_displayed_successfully () {
+    	postersPage.display_Sort_Name_Z_to_A ();
+    }
+    
+    @And("User sort the Decending list Date of projects")
+    public void User_sort_the_Decending_list_Date_of_projects() {
+    	postersPage.Sort_Decending_Date ();
+    }
+    
+    @Then("Decending Date list get displayed successfully")
+    public void Decending_Date_list_get_displayed_successfully() {
+    	postersPage.display_Sort_Decending_Date ();
+    }
+    
+    @And("User click on kebab menu of any poster")
+    public void User_click_on_kebab_menu_of_any_poster() {
+    	postersPage.Onclicks_kebabu_menu ();
+    }
+	
+    @And("User clicks on edit")
+    public void User_clicks_on_edit() {
+    	postersPage.Onclicks_Edit ();
+    }
+    
+    @And("User Updates any field of the Poster")
+    public void User_Updates_any_field_of_the_Poster() {
+    	postersPage.Update_Poster ();
+    }
+	
+	
 }	

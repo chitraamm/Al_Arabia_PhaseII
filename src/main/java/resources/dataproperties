@@ -173,6 +173,8 @@ projects_search_text = Default Project
 projectname = Test
 
 
-<------------------------Posters-------------------------->
+<------------------------Posters&branches-------------------------->
 posterno = 12
+postername = Poster_
+branchname = branch_
 

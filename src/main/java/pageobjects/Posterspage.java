@@ -53,6 +53,14 @@ public class Posterspage extends Base {
 		return baseLicenceNumber + rand.nextInt(1000);
 	}
 	
+	@FindBy(xpath = "//div[contains(@class, 'toastpop') and contains(@class, 'position-relative')]")
+	private WebElement Success_display, members_profile_Success_display1;
+
+	public String Success_display() {
+		WebElement successMessageElement = wait.until(ExpectedConditions.visibilityOf(Success_display));
+		return successMessageElement.getText().trim();
+	}
+	
 	@FindBy(xpath = "(//a[normalize-space()='Master'])[1]")
 	WebElement mastersclick;
 	
@@ -88,7 +96,7 @@ public class Posterspage extends Base {
 		LOGGER.info(">> The Tickets page got displayed");
 	}
 	
-	@FindBy(xpath = "//th[normalize-space()='Poster number']")
+	@FindBy(xpath = "(//div[contains(@class,'d-flex sortbox foractivesort')])[1]")
 	WebElement Posters_menu;
 
 	public void Display_Posters() {
@@ -233,6 +241,83 @@ public class Posterspage extends Base {
         wait.until(ExpectedConditions.visibilityOf(click_updatebuttn)).click();	
 	}
 	
+	@FindBy(id = "New poster")
+	WebElement clickNew_Poster;
+	
+	public void Click_New_Poster () {
+		
+		wait.until(ExpectedConditions.visibilityOf(Posters_menu)).isDisplayed();
+		wait.until(ExpectedConditions.visibilityOf(clickNew_Poster)).click();
+		
+	}
+	
+	@FindBy(id = "title")
+	WebElement poster_name;
+	
+	@FindBy(xpath = "(//h4[normalize-space()='Add Poster'])[1]")
+	WebElement display_New_Poster;
+	
+	public void Enter_New_Poster_Fields () {
+		
+		wait.until(ExpectedConditions.visibilityOf(display_New_Poster)).isDisplayed();
+		String postername = prop.getProperty("postername");
+		wait.until(ExpectedConditions.visibilityOf(poster_name)).sendKeys(generateUniqueNumber(""+postername));
+		wait.until(ExpectedConditions.visibilityOf(clickNew_Poster)).isDisplayed();
+		String posterno = prop.getProperty("posterno");
+        wait.until(ExpectedConditions.visibilityOf(poster_no)).sendKeys(generateUniqueNumber(""+posterno));
+	}
+	
+	@FindBy(xpath = "(//input[@name='image_urls'])[1]")
 
+	private WebElement Click_upload_photos;
+
+	public void Upload_Posterimage() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(poster_no));
+		act.moveToElement(Click_upload_photos).perform();
+		String Alarabia_Poster = System.getProperty("user.dir") + "/Documents/Alarabia_Poster.jpg";
+		Click_upload_photos.sendKeys(Alarabia_Poster);
+	}
+	
+	@FindBy(id = "Add Poster")
+	WebElement click_AddPoster;
+	
+	public void Click_Add_Poster () {
+		
+		wait.until(ExpectedConditions.visibilityOf(Posters_menu)).isDisplayed();
+		wait.until(ExpectedConditions.visibilityOf(click_AddPoster)).click();
+
+	}
+
+	@FindBy(xpath = "(//a[normalize-space()='Inventory'])[1]")
+	WebElement inventoryclick;
+	
+	public void Inventory_click() {
+		wait.until(ExpectedConditions.elementToBeClickable(profiledisplay)).isDisplayed();
+		act.moveToElement(inventoryclick).click().perform();
+		LOGGER.info(">> Admin/User got navigated to inventory page");
+	}
+	
+	@FindBy(xpath = "(//a[normalize-space()='Poster Printing'])[1]")
+	WebElement Poster_Printingclick;
+	
+	@FindBy(xpath = "//a[@id='Material Rec. (From Supplier)']")
+	WebElement inventories_display;
+	
+	public void Poster_Printing_click() throws Exception {
+		Thread.sleep(2000);
+		wait.until(ExpectedConditions.visibilityOf(inventories_display)).isDisplayed();
+		act.scrollToElement(Poster_Printingclick).perform();
+		wait.until(ExpectedConditions.visibilityOf(Poster_Printingclick)).click();
+		LOGGER.info(">> Admin/User got navigated to Poster Printing page");
+	}
+
+	@FindBy(xpath = "(//th[normalize-space()='Requested Qty'])[1]")
+	private WebElement display_postersprinting;
+
+	public void Display_Posterprinting() {
+		wait.until(ExpectedConditions.visibilityOf(display_postersprinting)).isDisplayed();
+		AssertJUnit.assertTrue(display_postersprinting.isDisplayed());
+		LOGGER.info(">> The Tickets page got displayed");
+	}
 	
 }	

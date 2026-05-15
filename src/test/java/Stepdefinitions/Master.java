@@ -10,7 +10,6 @@ import org.openqa.selenium.WebDriver;
 import Hooks.Testhooks;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
-import pageobjects.Cleaningpage;
 import pageobjects.Masterpage;
 import pageobjects.Signinpage;
 import resources.Base;
@@ -26,6 +25,7 @@ public class Master extends Base {
 		new Signinpage(driver);
 		LOGGER = LogManager.getLogger(Cleaning.class.getName());
 	}
+	
 	@And("Admin or user clicks the Master")
 	public void Admin_or_user_clicks_the_Master() throws Exception {
 		masterpage.Master_click();

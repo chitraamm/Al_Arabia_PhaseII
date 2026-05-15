@@ -27,7 +27,6 @@ public class Masterpage extends Base {
 	private Properties prop;
 	private Actions act;
 	private Logger LOGGER = LogManager.getLogger(Cleaningpage.class); 
-	//private Signinpage signinpage;
 
 
 	public Masterpage(WebDriver driver) throws Exception {
@@ -39,7 +38,6 @@ public class Masterpage extends Base {
 		FileInputStream fis = new FileInputStream(propPath);
 		prop.load(fis);
 		initializeWait();
-		//this.signinpage = new Signinpage(driver);
 		LOGGER = LogManager.getLogger(Masterpage.class.getName());
 	}
 
@@ -64,7 +62,7 @@ public class Masterpage extends Base {
 	}
 	private static String generateUniqueboardName(String baseboardName) {
 	    Random rand = new Random();
-	    int uniqueNumber = rand.nextInt(10000);  // Generates a random number between 0 and 9999
+	    int uniqueNumber = rand.nextInt(10000);  
 	    return baseboardName + "_" + uniqueNumber;
 	}
 	@FindBy(xpath = "//h6[normalize-space()='Dashboard']")

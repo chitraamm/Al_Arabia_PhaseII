@@ -1,5 +1,7 @@
 package Stepdefinitions;
 
+import static org.junit.Assert.assertEquals;
+
 //import static org.junit.Assert.assertEquals;
 //import static org.junit.Assert.assertTrue;
 
@@ -22,7 +24,6 @@ public class Posters extends Base {
 	public Posters(Testhooks testhooks) throws Exception {
 		this.driver = testhooks.getDriver(); 
 		this.postersPage = new Posterspage(driver);
-		//new Signinpage(driver);
 		LOGGER = LogManager.getLogger(Posters.class.getName());
 	}
 	
@@ -47,13 +48,13 @@ public class Posters extends Base {
 		postersPage.Display_Posters();
 	}
 	
-	@And("User search a Poster")
-	public void User_search_a_Poster() throws Exception {
+	@And("User Type in search field")
+	public void User_Type_in_search_field() throws Exception {
 		postersPage.Poster_Search();
 	}
 
-	@Then("Searched Poster details get displayed successfully")
-	public void Searched_Poster_details_get_displayed_successfully() throws Exception {
+	@Then("Searched details get displayed successfully")
+	public void Searched_details_get_displayed_successfully() throws Exception {
 		postersPage.display_searchedposter();
 		LOGGER.info(">> Admin/user got the Searched Poster >>");
 	}
@@ -128,6 +129,69 @@ public class Posters extends Base {
     public void User_Updates_any_field_of_the_Poster() {
     	postersPage.Update_Poster ();
     }
+    
+    @And("User click on New Poster")
+    public void User_click_on_New_Poster() {
+    	postersPage.Click_New_Poster ();
+    }
+    
+    @And("User Enter Mandatory fields of New Poster")
+    public void User_Enter_Mandatory_fields_of_New_Poster () {
+    	postersPage.Enter_New_Poster_Fields ();
+    }
+    
+    @And("User Upload Poster Image")
+    public void User_Upload_Poster_Image() throws Exception {
+    	postersPage.Upload_Posterimage ();
+    }
+    
+    @And("User Click on Add Poster Button")
+    public void User_Click_on_Add_Poster_Button() {
+    	postersPage.Click_Add_Poster ();
+    }
+    
+    @Then("Poster should be get created Successfully")
+    public void Poster_should_be_get_created_Successfully() {
+    	postersPage.Click_New_Poster ();
+    }
+    
+    @Then("^Poster should be get created Successfully as \"([^\"]*)\"$")
+    public void Poster_should_be_get_created_Successfully_as(String expectedMessage) {
+        String actualMessage = postersPage.Success_display();
+        String normalizedExpectedMessage = normalizeWhitespace(expectedMessage);
+        String normalizedActualMessage = normalizeWhitespace(actualMessage);
+        System.out.println(">> User or Admin got the Poster added success message successfully");
+        assertEquals(normalizedExpectedMessage, normalizedActualMessage);
+    }
+
+    private String normalizeWhitespace(String input) {
+        return input.replaceAll("\\s+", " ").trim();
+    }
+    
+    @Then("^User Updates any field of the Poster \"([^\"]*)\"$")
+    public void User_Updates_any_field_of_the_Poster (String expectedMessage) {
+        String actualMessage = postersPage.Success_display();
+        String normalizedExpectedMessage = normalizeWhitespace(expectedMessage);
+        String normalizedActualMessage = normalizeWhitespace(actualMessage);
+        System.out.println(">> User or Admin got the branch added success message successfully");
+        assertEquals(normalizedExpectedMessage, normalizedActualMessage);
+    }
+	
+	@And("Admin or user clicks the inventory from the Profile")
+	public void Admin_or_user_clicks_the_inventory_from_the_Profile() throws Exception {
+		postersPage.Inventory_click();
+	}
+	
+	@And("User click on Poster Printing")
+	public void User_click_on_Poster_Printing() throws Exception {
+		postersPage.Poster_Printing_click();
+	}
+	
+	@Then("Poster Printing page should display")
+	public void Poster_Printing_page_should_display() throws Exception {
+		postersPage.Display_Posterprinting();
+		LOGGER.info(">> Admin/user got the Posters page >>");
+	}
 	
 	
 }	

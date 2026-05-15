@@ -193,5 +193,29 @@ public class Posters extends Base {
 		LOGGER.info(">> Admin/user got the Posters page >>");
 	}
 	
+	@And("User Clicks New Poster Printing button")
+	public void User_Clicks_New_Poster_Printing_button() throws Exception {
+		postersPage.New_Poster_Printing_click();
+	}
+	
+	@And("User Enter mandatory fields of New Poster Printing")
+	public void User_Enter_mandatory_fields_of_New_Poster_Printing() throws Exception {
+		postersPage.NewPoster_printing_Details();
+	}
+	
+	@And("User clicks Create button")
+	public void User_clicks_Create_button() throws Exception {
+		postersPage.Clicks_Create_Button();
+	}
+	
+    @Then("^New Poster should be get printed as per the Request \"([^\"]*)\"$")
+    public void New_Poster_should_be_get_printed_as_per_the_Request (String expectedMessage) {
+        String actualMessage = postersPage.Success_display();
+        String normalizedExpectedMessage = normalizeWhitespace(expectedMessage);
+        String normalizedActualMessage = normalizeWhitespace(actualMessage);
+        System.out.println(">> User or Admin printed New Poster successfully");
+        assertEquals(normalizedExpectedMessage, normalizedActualMessage);
+    }
+	
 	
 }	

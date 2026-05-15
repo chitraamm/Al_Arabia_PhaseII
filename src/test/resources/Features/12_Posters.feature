@@ -133,9 +133,13 @@ When Al-Arabia overall dashboard should display
 And User able to click on profile 
 And Admin or user clicks the inventory from the Profile
 And User click on Poster Printing 
-And User Clicks New Store transfer button 
-And User Enter mandatory fields of New Store transfer 
-Then Poster Printing page should display 
+And User Clicks New Poster Printing button  
+And User Enter mandatory fields of New Poster Printing  
+And User clicks Create button  
+Then New Poster should be get printed as per the Request "<successMessage>"
+ Examples:
+      | successMessage         |
+      | Success Poster created |  
 
 
 
@@ -163,7 +167,7 @@ Then Poster Printing page should display
  
  
 
-@Posters @Posters12 @smoke @regression @all
+@Posters @Posters1232 @smoke @regression @all
 Scenario Outline: To verify Poster Printing page when do Filter by Requested Status 
 Given Admin logged in with valid credentials and selects static Project
 When Al-Arabia overall dashboard should display

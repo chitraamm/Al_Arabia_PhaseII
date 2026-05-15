@@ -285,7 +285,6 @@ public class Posterspage extends Base {
 		
 		wait.until(ExpectedConditions.visibilityOf(Posters_menu)).isDisplayed();
 		wait.until(ExpectedConditions.visibilityOf(click_AddPoster)).click();
-
 	}
 
 	@FindBy(xpath = "(//a[normalize-space()='Inventory'])[1]")
@@ -320,4 +319,49 @@ public class Posterspage extends Base {
 		LOGGER.info(">> The Tickets page got displayed");
 	}
 	
+	@FindBy(id = "New poster printing")
+	WebElement click_New_Poster_Printing;
+	
+	public void New_Poster_Printing_click () {
+		
+		wait.until(ExpectedConditions.visibilityOf(display_postersprinting)).isDisplayed();
+		wait.until(ExpectedConditions.visibilityOf(click_New_Poster_Printing)).click();
+	}
+	
+	@FindBy(xpath = "(//h5[normalize-space()='New poster printing'])[1]")
+	WebElement display_Newpostersprinting_page;
+	
+	@FindBy(xpath = "(//div[@class='select__indicator select__dropdown-indicator css-1xc3v61-indicatorContainer'])[1]")
+	WebElement Select_poster;
+	
+	@FindBy(id = "requested_qty")
+	WebElement requested_Qty;
+	
+	@FindBy(xpath = "(//div[@class='select__control css-13cymwt-control'])[2]")
+	WebElement selectBranch;
+	
+	@FindBy(xpath = "(//input[@name='allocations.0.qty'])[1]")
+	WebElement posterprint_requested_Qty;
+	
+	public void NewPoster_printing_Details () throws Exception {
+		
+		wait.until(ExpectedConditions.visibilityOf(display_Newpostersprinting_page)).isDisplayed();
+		act.moveToElement(Select_poster).click().sendKeys(""+Keys.ENTER).perform();
+		wait.until(ExpectedConditions.visibilityOf(Select_poster)).isDisplayed();
+		requested_Qty.sendKeys(Keys.CONTROL,"a" , Keys.DELETE);
+		wait.until(ExpectedConditions.visibilityOf(requested_Qty)).sendKeys(""+"30");
+		wait.until(ExpectedConditions.visibilityOf(requested_Qty)).isDisplayed();
+		act.moveToElement(selectBranch).click().sendKeys(""+Keys.ENTER).perform();
+		Thread.sleep(2000);
+		posterprint_requested_Qty.sendKeys(Keys.CONTROL,"a" , Keys.DELETE);
+		wait.until(ExpectedConditions.visibilityOf(posterprint_requested_Qty)).sendKeys(""+"30");
+	}
+	
+	@FindBy(id = "Create")
+	WebElement click_New_create_Button;
+	
+	public void Clicks_Create_Button () {		
+//		wait.until(ExpectedConditions.visibilityOf(display_Newpostersprinting_page)).isDisplayed();
+		wait.until(ExpectedConditions.visibilityOf(click_New_create_Button)).click();
+	}
 }	

@@ -310,7 +310,7 @@ public class Posterspage extends Base {
 		LOGGER.info(">> Admin/User got navigated to Poster Printing page");
 	}
 
-	@FindBy(xpath = "(//th[normalize-space()='Requested Qty'])[1]")
+	@FindBy(xpath = "(//div[contains(@aria-label,'listmember.Sort')])[1]")
 	private WebElement display_postersprinting;
 
 	public void Display_Posterprinting() {
@@ -358,10 +358,274 @@ public class Posterspage extends Base {
 	}
 	
 	@FindBy(id = "Create")
-	WebElement click_New_create_Button;
+	WebElement clickcreate_Button;
+	
 	
 	public void Clicks_Create_Button () {		
-//		wait.until(ExpectedConditions.visibilityOf(display_Newpostersprinting_page)).isDisplayed();
-		wait.until(ExpectedConditions.visibilityOf(click_New_create_Button)).click();
+		wait.until(ExpectedConditions.visibilityOf(clickcreate_Button)).click();
 	}
+	
+	@FindBy(id = "Take job")
+	WebElement clicktakejob_Button;
+	
+	@FindBy(id = "Create")
+	WebElement takejob_Button_display;
+	
+	public void Clicks_Take_Job_Button () throws Exception {		
+		Thread.sleep(2000);
+		wait.until(ExpectedConditions.visibilityOf(clicktakejob_Button)).isDisplayed();
+		wait.until(ExpectedConditions.visibilityOf(clicktakejob_Button)).click();
+	}
+	
+	@FindBy(id = "Complete printing")
+	WebElement click_completeprinting_Button;
+	
+	@FindBy(id = "Complete printing")
+	WebElement display_completeprinting_Button;
+	
+	public void Clicks_complete_Printing_Button () throws Exception {	
+		Thread.sleep(2000);
+		wait.until(ExpectedConditions.visibilityOf(display_completeprinting_Button)).isDisplayed();
+		wait.until(ExpectedConditions.visibilityOf(click_completeprinting_Button)).click();
+	}
+	
+	@FindBy(xpath = "(//input[@value='0'])[1]")
+	WebElement printedqty;
+	
+	@FindBy(xpath = "(//div[@class='modal-title h4'])[1]")
+	WebElement display_Completeprinting_popup;
+	
+	@FindBy(id = "Save")
+	WebElement click_save;
+	
+	public void Add_Printed_qty () throws Exception {	
+		Thread.sleep(2000);
+		wait.until(ExpectedConditions.visibilityOf(display_Completeprinting_popup)).isDisplayed();
+		printedqty.sendKeys(Keys.CONTROL,"a" , Keys.DELETE);
+		wait.until(ExpectedConditions.visibilityOf(printedqty)).sendKeys(""+"30");	
+		wait.until(ExpectedConditions.visibilityOf(printedqty)).isDisplayed();
+		wait.until(ExpectedConditions.visibilityOf(click_save)).click();
+
+	}
+	
+	@FindBy(xpath = "//button[@id='dropdown-basicActions']//*[name()='svg']")
+	WebElement click_kebabmenu;
+	
+	public void Clicks_kebabumenu () throws Exception {	
+		Thread.sleep(2000);
+		wait.until(ExpectedConditions.visibilityOf(click_kebabmenu)).click();
+	}
+	
+	@FindBy(xpath = "(//a[normalize-space()='Initiate transfer'])[1]")
+	WebElement clickinitialize;
+	
+	public void Clicks_initialize_transfer_Button () {		
+		wait.until(ExpectedConditions.visibilityOf(clickinitialize)).click();
+	}
+	
+	@FindBy(xpath = "(//div[contains(@role,'button')])[2]")
+	WebElement click_filters;
+	
+	public void Clicks_Filters () {		
+		wait.until(ExpectedConditions.visibilityOf(display_postersprinting)).isDisplayed();
+		wait.until(ExpectedConditions.visibilityOf(click_filters)).click();
+	}
+	
+	@FindBy(id = "REQUESTED")
+	WebElement clickrequested;
+	
+	@FindBy(xpath = "(//h6[contains(@class,'fw-bold m-0')][normalize-space()='Filters'])[1]")
+	WebElement display_filterspopup;
+	
+	public void Clicks_Requested () {	
+		wait.until(ExpectedConditions.visibilityOf(display_filterspopup)).isDisplayed();
+		wait.until(ExpectedConditions.visibilityOf(clickrequested)).click();
+	}
+	
+	@FindBy(id = "Apply")
+	WebElement click_apply;
+	
+	public void Clicks_Apply_Button () {		
+		wait.until(ExpectedConditions.visibilityOf(click_apply)).click();
+	}
+	
+	@FindBy(xpath = "(//span[contains(text(),'Requested')])[1]")
+	WebElement display_requestedposters;
+	
+	public void Display_Requested_Posters () {		
+			try {
+				if (condition) {
+					wait.until(ExpectedConditions.visibilityOf(display_requestedposters)).isDisplayed();
+					AssertJUnit.assertTrue(display_requestedposters.isDisplayed());
+					System.out.println(">> User got filtered posters list");
+				} else {
+					wait.until(ExpectedConditions.visibilityOf(no_Data_found)).isDisplayed();
+					System.out.println(">> User got no posters found message");
+				}
+			} catch (Exception e) {
+				wait.until(ExpectedConditions.visibilityOf(no_Data_found)).isDisplayed();
+				System.out.println(">> User got no posters found message");
+			}
+		}
+	
+	@FindBy(id = "IN_PROGRESS")
+	WebElement clickInprogress;
+	
+	
+	public void Clicks_Inprogress () {	
+		wait.until(ExpectedConditions.visibilityOf(display_filterspopup)).isDisplayed();
+		wait.until(ExpectedConditions.visibilityOf(clickInprogress)).click();
+	}
+	
+	@FindBy(xpath = "(//span[contains(text(),'Requested')])[1]")
+	WebElement Display_InprogressPosters;
+	
+	public void Display_Inprogress_Posters () {		
+			try {
+				if (condition) {
+					wait.until(ExpectedConditions.visibilityOf(Display_InprogressPosters)).isDisplayed();
+					AssertJUnit.assertTrue(Display_InprogressPosters.isDisplayed());
+					System.out.println(">> User got filtered posters list");
+				} else {
+					wait.until(ExpectedConditions.visibilityOf(no_Data_found)).isDisplayed();
+					System.out.println(">> User got no posters found message");
+				}
+			} catch (Exception e) {
+				wait.until(ExpectedConditions.visibilityOf(no_Data_found)).isDisplayed();
+				System.out.println(">> User got no posters found message");
+			}
+		}
+	
+	@FindBy(id = "COMPLETED")
+	WebElement clickCompleted;
+	
+	
+	public void Clicks_Completed () {	
+		wait.until(ExpectedConditions.visibilityOf(display_filterspopup)).isDisplayed();
+		wait.until(ExpectedConditions.visibilityOf(clickCompleted)).click();
+	}
+	
+	@FindBy(xpath = "(//span[contains(text(),'Requested')])[1]")
+	WebElement display_Completedposters;
+	
+	public void Display_Completed_Posters () {		
+			try {
+				if (condition) {
+					wait.until(ExpectedConditions.visibilityOf(display_Completedposters)).isDisplayed();
+					AssertJUnit.assertTrue(display_Completedposters.isDisplayed());
+					System.out.println(">> User got filtered posters list");
+				} else {
+					wait.until(ExpectedConditions.visibilityOf(no_Data_found)).isDisplayed();
+					System.out.println(">> User got no posters found message");
+				}
+			} catch (Exception e) {
+				wait.until(ExpectedConditions.visibilityOf(no_Data_found)).isDisplayed();
+				System.out.println(">> User got no posters found message");
+			}
+		}
+	
+	@FindBy(id = "CANCELLED")
+	WebElement clickCancelled;
+	
+	
+	public void Clicks_Cancelled () {	
+		wait.until(ExpectedConditions.visibilityOf(display_filterspopup)).isDisplayed();
+		wait.until(ExpectedConditions.visibilityOf(clickCancelled)).click();
+	}
+	
+	@FindBy(xpath = "(//span[contains(text(),'Requested')])[1]")
+	WebElement display_Cancelledposters;
+	
+	public void Display_Cancelled_Posters () {		
+			try {
+				if (condition) {
+					wait.until(ExpectedConditions.visibilityOf(display_Cancelledposters)).isDisplayed();
+					AssertJUnit.assertTrue(display_Cancelledposters.isDisplayed());
+					System.out.println(">> User got filtered posters list");
+				} else {
+					wait.until(ExpectedConditions.visibilityOf(no_Data_found)).isDisplayed();
+					System.out.println(">> User got no posters found message");
+				}
+			} catch (Exception e) {
+				wait.until(ExpectedConditions.visibilityOf(no_Data_found)).isDisplayed();
+				System.out.println(">> User got no posters found message");
+			}
+		}
+	
+	@FindBy(xpath = "(//a[normalize-space()='Poster Transfer'])[1]")
+	WebElement clickPostertransfer;
+	
+
+	public void Poster_transfer_click() throws Exception {
+		Thread.sleep(2000);
+		wait.until(ExpectedConditions.visibilityOf(inventories_display)).isDisplayed();
+		act.scrollToElement(clickPostertransfer).perform();
+		wait.until(ExpectedConditions.visibilityOf(clickPostertransfer)).click();
+		LOGGER.info(">> Admin/User got navigated to Posters page");
+	}
+	
+	@FindBy(xpath = "(//th[normalize-space()='Poster'])[1]")
+	private WebElement displaypostertransfer;
+
+	public void display_Postertransfer() {
+		wait.until(ExpectedConditions.visibilityOf(displaypostertransfer)).isDisplayed();
+		AssertJUnit.assertTrue(displaypostertransfer.isDisplayed());
+		LOGGER.info(">> The Postertransfer page got displayed");
+	}
+	
+	@FindBy(xpath = "(//a[normalize-space()='View Details'])[1]")
+	WebElement clickViewdetails;
+	
+	public void Clicks_Viewdetails () {	
+		wait.until(ExpectedConditions.visibilityOf(clickViewdetails)).click();
+	}
+	
+	@FindBy(xpath = "(//h6[normalize-space()='Workflow & audit'])[1]")
+	private WebElement displaypostertransfer_details;
+
+	public void display_Postertransfer_Details() {
+		wait.until(ExpectedConditions.visibilityOf(displaypostertransfer_details)).isDisplayed();
+		AssertJUnit.assertTrue(displaypostertransfer_details.isDisplayed());
+		LOGGER.info(">> The postertransfer details page got displayed");
+	}
+		
+	public void Clicks_apply () {		
+		act.moveToElement(click_apply).click().perform();
+	}
+
+	public void Clicks_Completed_postertransfer () {		
+		act.moveToElement(clickCompleted).click().perform();
+	}
+	
+	@FindBy(id = "ACCEPTED")
+	WebElement clickaccepted;
+	
+	public void Clicks_Accepted () {	
+		wait.until(ExpectedConditions.visibilityOf(clickaccepted)).click();
+	}
+	
+	@FindBy(xpath = "(//span[@id='ACCEPTED'])[1]")
+	private WebElement displayaccepted;
+	
+	@FindBy(xpath = "(//div[@class='text-center text-muted py-4'])[1]")
+	private WebElement no_Data_found;
+
+	public void Display_Accepted_Posters() {
+
+		try {
+			if (condition) {
+				wait.until(ExpectedConditions.visibilityOf(displayaccepted)).isDisplayed();
+				AssertJUnit.assertTrue(displayaccepted.isDisplayed());
+				System.out.println(">> User got filtered posters list");
+			} else {
+				wait.until(ExpectedConditions.visibilityOf(no_Data_found)).isDisplayed();
+				System.out.println(">> User got no posters found message");
+			}
+		} catch (Exception e) {
+			wait.until(ExpectedConditions.visibilityOf(no_Data_found)).isDisplayed();
+			System.out.println(">> User got no posters found message");
+		}
+	}
+	
+	
 }	

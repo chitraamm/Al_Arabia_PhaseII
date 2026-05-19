@@ -216,6 +216,134 @@ public class Posters extends Base {
         System.out.println(">> User or Admin printed New Poster successfully");
         assertEquals(normalizedExpectedMessage, normalizedActualMessage);
     }
+    
+	@And("User clicks Take Job")
+	public void User_clicks_Take_Job() throws Exception {
+		postersPage.Clicks_Take_Job_Button();
+	}
 	
+	@And("User clicks complete Printing")
+	public void User_clicks_complete_Printing() throws Exception {
+		postersPage.Clicks_complete_Printing_Button();
+	}
 	
+	@Then("Printing should be get completed successfully")
+	public void Printing_should_be_get_completed_successfully()  {
+	}
+	
+	@And("User Enters Printed qty and save")
+	public void User_Enters_Printed_qty_and_save() throws Exception {
+		postersPage.Add_Printed_qty();
+	}
+	
+	@And("User click kebab menu of Branch")
+	public void User_click_kebab_menu_of_Branch() throws Exception {
+		postersPage.Clicks_kebabumenu();
+	}
+	
+	@And("User initialize transfer")
+	public void User_initialize_transfer() throws Exception {
+		postersPage.Clicks_initialize_transfer_Button();
+	}
+	
+    @Then("^Transfer should be initiated with Success toast message \"([^\"]*)\"$")
+    public void Transfer_should_be_initiated_with_Success_toast_message (String expectedMessage) {
+        String actualMessage = postersPage.Success_display();
+        String normalizedExpectedMessage = normalizeWhitespace(expectedMessage);
+        String normalizedActualMessage = normalizeWhitespace(actualMessage);
+        System.out.println(">> User or Admin Initiated Poster transfer successfully");
+        assertEquals(normalizedExpectedMessage, normalizedActualMessage);
+    }
+    
+	@And("User clicks on Filters Button")
+	public void User_clicks_on_Filters_Button() throws Exception {
+		postersPage.Clicks_Filters();
+	}
+	
+	@And("User Selected status Requested")
+	public void User_Selected_status_Requested() throws Exception {
+		postersPage.Clicks_Requested();
+	}
+	
+	@And("User clicks Apply button")
+	public void User_clicks_Apply_button() throws Exception {
+		postersPage.Clicks_Apply_Button();
+	}		
+	
+	@Then("Page get listed with Requested Posters")
+	public void Page_get_listed_with_Requested_Posters() throws Exception {
+		postersPage.Display_Requested_Posters();
+	}
+	
+	@And("User Selected status Inprogress")
+	public void User_Selected_status_Inprogress() throws Exception {
+		postersPage.Clicks_Inprogress();
+	}
+	
+	@Then("Poster Printing page get listed with Inprogress Posters")
+	public void Poster_Printing_page_get_listed_with_Inprogress_Posters() throws Exception {
+		postersPage.Display_Inprogress_Posters();
+	}
+	
+	@And("User Selected status Completed")
+	public void User_Selected_status_Completed() throws Exception {
+		postersPage.Clicks_Completed();
+	}
+	
+	@Then("Page get listed with Completed Posters")
+	public void Page_get_listed_with_Completed_Posters() throws Exception {
+		postersPage.Display_Completed_Posters();
+	}
+	
+	@And("User Selected status Cancelled")
+	public void User_Selected_status_Cancelled() throws Exception {
+		postersPage.Clicks_Cancelled();
+	}
+	
+	@Then("Poster Printing page get listed with Cancelled Posters")
+	public void Poster_Printing_page_get_listed_with_Cancelled_Posters() throws Exception {
+		postersPage.Display_Cancelled_Posters();
+	}
+	
+	@And("User click on Poster transfer")
+	public void User_click_on_Poster_transfer() throws Exception {
+		postersPage.Poster_transfer_click();
+	}
+	
+	@Then("Poster transfer page displayed successfully")
+	public void Poster_transfer_page_displayed_successfully() throws Exception {
+		postersPage.display_Postertransfer();
+		LOGGER.info(">> Admin/user got the Poster transfer page >>");
+	}
+	
+	@And("User click on View Details")
+	public void User_click_on_View_Details() throws Exception {
+		postersPage.Clicks_Viewdetails();
+	}
+	
+	@Then("Poster transfer Details page displayed successfully")
+	public void Poster_transfer_Details_page_displayed_successfully() throws Exception {
+		postersPage.display_Postertransfer_Details();
+		LOGGER.info(">> Admin/user got the Poster transfer details page >>");
+	}
+	
+	@And("User clicks Apply button of the filter")
+	public void User_clicks_Apply_button_of_the_filter() throws Exception {
+		postersPage.Clicks_apply();
+	}
+	
+	@And("User Selected status Completed of the filter")
+	public void User_Selected_status_Completed_of_the_filter() throws Exception {
+		postersPage.Clicks_Completed_postertransfer();
+	}
+	
+	@And("User Selected status Accepted of the filter")
+	public void User_Selected_status_Accepted_of_the_filter() throws Exception {
+		postersPage.Clicks_Accepted();
+	}
+	
+	@Then("Page get listed with Accepted Posters")
+	public void Page_get_listed_with_Accepted_Posters() throws Exception {
+		postersPage.Display_Accepted_Posters();
+	}
 }	

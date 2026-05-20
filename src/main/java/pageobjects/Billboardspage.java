@@ -8,6 +8,7 @@ import java.util.Random;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -335,15 +336,16 @@ public class Billboardspage extends Base {
 		System.out.println(">> User clicked Request status in filter");
 	}
 
-	@FindBy(id = "react-select-3-input")
+	@FindBy(xpath = "(//*[name()='svg'][contains(@class,'css-tj5bde-Svg')])[1]")
 	private WebElement selectlocationdropdown;
 
 
-	public void select_bb_location() {
+	public void select_bb_location() throws Exception {
 		wait.until(ExpectedConditions.visibilityOf(Billboard_filter)).click();
 		String bb_location = prop.getProperty("bb_location");
-		wait.until(ExpectedConditions.visibilityOf(selectlocationdropdown)).click();
-		wait.until(ExpectedConditions.visibilityOf(selectlocationdropdown)).sendKeys(bb_location + Keys.ENTER);
+		wait.until(ExpectedConditions.visibilityOf(selectlocationdropdown)).click();Thread.sleep(2000);
+		act.moveToElement(selectlocationdropdown).sendKeys(""+Keys.DOWN+Keys.ENTER).perform();
+		wait.until(ExpectedConditions.visibilityOf(selectlocationdropdown)).isDisplayed();
 		LOGGER.info(">> User selected the location:" + selectlocationdropdown.getText());
 		act.moveToElement(Billboard_filter_apply_btn).click().perform();
 		System.out.println(">> User selected the bb location in filter" + bb_location);
@@ -393,7 +395,7 @@ public class Billboardspage extends Base {
 	public void BB_filter_onlinestatus() {
 
 		wait.until(ExpectedConditions.visibilityOf(Billboard_filter)).click();
-		wait.until(ExpectedConditions.visibilityOf(teamvieweronline)).click();
+		act.moveToElement(teamvieweronline).click().perform();
 		act.moveToElement(novostaronline).click().perform();
 		act.moveToElement(ivmsonline).click().perform();
 		act.moveToElement(Billboard_filter_apply_btn).click().perform();
@@ -412,7 +414,8 @@ public class Billboardspage extends Base {
 	public void BB_filter_offlinestatus() throws InterruptedException {
 
 		wait.until(ExpectedConditions.visibilityOf(Billboard_filter)).click();
-		wait.until(ExpectedConditions.visibilityOf(teamvieweroffline)).click();
+//		wait.until(ExpectedConditions.visibilityOf(teamvieweroffline)).click();
+		act.moveToElement(teamvieweroffline).click().perform();
 		act.moveToElement(novostaroffline).click().perform();
 		act.moveToElement(ivmsoffline).click().perform();
 		act.moveToElement(Billboard_filter_apply_btn).click().perform();
@@ -456,7 +459,8 @@ public class Billboardspage extends Base {
 	public void BB_filter_online_installed() throws InterruptedException {
 
 		wait.until(ExpectedConditions.visibilityOf(Billboard_filter)).click();
-		wait.until(ExpectedConditions.visibilityOf(teamvieweronline)).click();
+//		wait.until(ExpectedConditions.visibilityOf(teamvieweronline)).click();
+		act.moveToElement(teamvieweronline).click().perform();
 		act.moveToElement(novostaronline).click().perform();
 		act.moveToElement(ivmsonline).click().perform();
 		act.moveToElement(IVMS_installed).click().perform();
@@ -485,7 +489,7 @@ public class Billboardspage extends Base {
 	public void BB_filter_offline_installed() throws InterruptedException {
 
 		wait.until(ExpectedConditions.visibilityOf(Billboard_filter)).click();
-		wait.until(ExpectedConditions.visibilityOf(teamvieweroffline)).click();
+		act.moveToElement(teamvieweroffline).click().perform();
 		act.moveToElement(novostaroffline).click().perform();
 		act.moveToElement(ivmsoffline).click().perform();
 		act.moveToElement(IVMS_installed).click().perform();
@@ -500,7 +504,7 @@ public class Billboardspage extends Base {
 	public void BB_filter_online_Not_installed() throws InterruptedException {
 
 		wait.until(ExpectedConditions.visibilityOf(Billboard_filter)).click();
-		wait.until(ExpectedConditions.visibilityOf(teamvieweronline)).click();
+		act.moveToElement(teamvieweronline).click().perform();
 		act.moveToElement(novostaronline).click().perform();
 		act.moveToElement(ivmsonline).click().perform();
 		act.moveToElement(IVMS_Not_installed).click().perform();
@@ -514,7 +518,7 @@ public class Billboardspage extends Base {
 	public void BB_filter_offline_Not_installed() throws InterruptedException {
 
 		wait.until(ExpectedConditions.visibilityOf(Billboard_filter)).click();
-		wait.until(ExpectedConditions.visibilityOf(teamvieweroffline)).click();
+		act.moveToElement(teamvieweroffline).click().perform();
 		act.moveToElement(novostaroffline).click().perform();
 		act.moveToElement(ivmsoffline).click().perform();
 		act.moveToElement(IVMS_Not_installed).click().perform();
@@ -555,27 +559,17 @@ public class Billboardspage extends Base {
 		LOGGER.info(">> The Download Popup got displayed");
 	}
 
-	@FindBy(xpath = "(//div[normalize-space()='As Excel'])[1]")
+	@FindBy(xpath = "//div[normalize-space()='As Excel']")
 	private WebElement BB_Download_excel;
 
 	public void BB_Download_excel() throws Exception {
 		wait.until(ExpectedConditions.visibilityOf(BB_Download_popup_display)).isDisplayed();
 		act.moveToElement(BB_Download_excel).click().perform();
 	}
-	@FindBy(xpath = "//div[normalize-space()='As PDF']")
-	private WebElement BB_Download_As_PDF;
 
 	public void BB_Download_PDF() throws Exception {
 		wait.until(ExpectedConditions.visibilityOf(BB_Download_popup_display)).isDisplayed();
-		act.moveToElement(BB_Download_As_PDF).click().perform();
-	}
-
-	@FindBy(xpath = "(//div[normalize-space()='As QR Code'])[1]")
-	private WebElement BB_Download_As_QR_Code_file;
-
-	public void BB_Download_QR_Code_file() throws Exception {
-		wait.until(ExpectedConditions.visibilityOf(BB_Download_popup_display)).isDisplayed();
-		act.moveToElement(BB_Download_As_QR_Code_file).click().perform();
+		driver.findElement(By.xpath("//div[normalize-space()='As PDF']")).click();
 	}
 
 	@FindBy(xpath = "//span[contains(@class,'cursor-pointer')]//*[name()='svg']")
@@ -679,9 +673,9 @@ public class Billboardspage extends Base {
     @FindBy(xpath = "(//span[@class='edit_link_routes active'])[1]")
     private WebElement edit_display;
 
-    public void BB_edit_screen_height() {
+    public void BB_edit_screen_height() throws Exception {
+    	Thread.sleep(2000);
 		String IDnumber = generateUniqueboardNumber(prop.getProperty("IDnumber"));
-
 		wait.until(ExpectedConditions.visibilityOf(edit_display)).isDisplayed();
 		act.moveToElement(Newbillboard_screen_height).click();
 		Newbillboard_screen_height.sendKeys(Keys.CONTROL, "a" ,Keys.DELETE);
@@ -733,7 +727,7 @@ public class Billboardspage extends Base {
 			wait.until(ExpectedConditions.visibilityOf(BB_BOMTab_ALLstocks_displayed)).isDisplayed();
 			act.moveToElement(BB_BOM_Download).click().perform();
 		}
-		@FindBy(xpath = "(//*[name()='svg'][contains(@stroke,'currentColor')])[8]")
+		@FindBy(xpath = "//span[@title='Download Qr']//*[name()='svg']")
 		private WebElement BB_QR_click;
 		
 	    public void BB_editpage_BOMTab_QRcode() throws Exception {

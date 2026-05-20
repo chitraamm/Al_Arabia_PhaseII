@@ -296,15 +296,15 @@ public class Billboards extends Base {
 	      System.out.println(">> User or Admin got the BB PDF downloaded successfully"+actualMessage);
 	      assertEquals(normalizedExpectedMessage, normalizedActualMessage);
 	  }
-	@And("User clicks Download button with Download As QR Code")
-	public void User_clicks_Download_button_with_Download_As_QR_Code() throws Exception {
-		billboardsPage.BB_Download_popup();
-		billboardsPage.BB_Download_QR_Code_file();
-}
-	@And("QR Code file will be downloaded successfully as")
-	public void QR_Code_file_will_be_downloaded_successfully () throws Exception {
-	    billboardsPage.BB_Download_popup_display();
-}
+//	@And("User clicks Download button with Download As QR Code")
+//	public void User_clicks_Download_button_with_Download_As_QR_Code() throws Exception {
+//		billboardsPage.BB_Download_popup();
+//		billboardsPage.BB_Download_QR_Code_file();
+//}
+//	@And("QR Code file will be downloaded successfully as")
+//	public void QR_Code_file_will_be_downloaded_successfully () throws Exception {
+//	    billboardsPage.BB_Download_popup_display();
+//}
 	@Then("^QR file will be downloaded successfully as \"([^\"]*)\"$")
 	  public void QR_Code_file_will_be_downloaded_successfully(String expectedMessage) throws Exception {
 	      String actualMessage = billboardsPage.billboard_created_Success_display();

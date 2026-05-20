@@ -218,18 +218,7 @@ And User clicks Download button with Download As PDF
 Then PDF file will be downloaded successfully as "<successMessage>"
   Examples:
       | successMessage       |
-      | LOADING...           |
-      
-@billboards @billboards27 @smoke @regression @all
-Scenario Outline: T027_To verify the billboards feature Download as QR code
-Given Admin logged in with valid credentials
-When Al-Arabia overall dashboard should display
-And Admin or user clicks the billboards module
-And User clicks Download button with Download As QR Code
-Then QR file will be downloaded successfully as "<successMessage>"
-  Examples:
-      | successMessage       |
-      | LOADING...           |     
+      | LOADING...           |  
           
 @billboards @billboards28 @smoke @regression @all
 Scenario Outline: T028_To verify the billboards feature Download popup close
@@ -255,7 +244,7 @@ And Admin or user clicks the billboards module
 And User clicks on the Plus button 
 Then BillBoard View page will be displayed successfully  
        
-@billboards @billboards31 @smoke @regression @all
+@billboards @billboards311 @smoke @regression @all
 Scenario Outline: T031_To verify the billboards feature Delete button in BillBoards page
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display

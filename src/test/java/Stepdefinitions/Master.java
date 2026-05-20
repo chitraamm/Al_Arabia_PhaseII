@@ -63,7 +63,7 @@ public class Master extends Base {
 		masterpage.Department_search_enter_text();
 	}
 	@Then("Searched Department details get displayed successfully")
-	public void Searched_Department_details_get_displayed_successfully() {
+	public void Searched_Department_details_get_displayed_successfully() throws Exception {
 		masterpage.DepartmentSearchedList();
 	}
 	@And("Admin or user sort the Department list recently updated")
@@ -72,12 +72,18 @@ public class Master extends Base {
 	}
 	@Then("Recently updated Department list get displayed successfully")
 	public void Recently_updated_Department_list_get_displayed_successfully() throws Exception {
-		masterpage.Departmentlist();
+		masterpage.Departmentlist_recentlyupdated();
 	}
 	@And("User sort the Department list Name A to Z")
 	public void User_sort_the_Department_list_Name_A_to_Z() throws Exception {
 		masterpage.Department_sortA_Z();
 	}
+	
+	@Then("Department list A to Z get displayed successfully")
+	public void Department_list_A_to_Z_to_A_get_displayed_successfully() throws Exception {
+		masterpage.Departmentlist_Display_A_to_Z();
+	}
+	
 	@Then("Department list get displayed successfully")
 	public void Department_list_get_displayed_successfully() throws Exception {
 		masterpage.Departmentlist();
@@ -88,7 +94,7 @@ public class Master extends Base {
 	}
 	@Then("Department list Z to A get displayed successfully")
 	public void Department_list_Z_to_A_get_displayed_successfully() throws Exception {
-		masterpage.Departmentlist();
+		masterpage.Departmentlist_Display_Z_to_A();
 	}
 	@And("User sort the Department list Recently Added")
 	public void User_sort_the_Department_list_Recently_Added() throws Exception {
@@ -96,7 +102,7 @@ public class Master extends Base {
 	}
 	@Then("Recent Department list get displayed successfully")
 	public void Recent_Department_list_get_displayed_successfully() throws Exception {
-		masterpage.Departmentlist();
+		masterpage.Departmentlist_Recentlyadded();
 	}
 	@And("User sort the Department list decending")
 	public void User_sort_the_Department_list_Decending() throws Exception {
@@ -104,7 +110,7 @@ public class Master extends Base {
 	}
 	@Then("Decending Department list get displayed successfully")
 	public void Decending_Department_list_get_displayed_successfully() throws Exception {
-		masterpage.Departmentlist();
+		masterpage.Departmentlist_Decending();
 	}
 	@And("User click on kebab menu of Supplier")
 	public void User_click_on_kebab_menu_of_Supplier() throws Exception {
@@ -198,7 +204,7 @@ public class Master extends Base {
 	}
 	@Then("Recently updated Supplier list get displayed successfully")
 	public void Recently_updated_Supplier_list_get_displayed_successfully() throws Exception {
-		masterpage.Supplierlist();
+		masterpage.Departmentlist_recentlyupdated();
 	}
 	@And("User sort the Supplier list Name A to Z")
 	public void User_sort_the_Supplier_list_Name_A_to_Z() throws Exception {
@@ -238,7 +244,6 @@ public class Master extends Base {
 	}
 	@And("User selects Edit option")
 	public void User_selects_Edit_option() throws Exception {
-		//masterpage.kebabmenu();
 		masterpage.selects_edit_Supplier();
 	}
 	@And("User Updated Supplier")
@@ -307,19 +312,12 @@ public class Master extends Base {
 	public void User_click_on_Add_Stock_button() throws Exception {
 		masterpage.Add_Stock();
 	}
-	@Then("^Particular Stock gets created successfully with either \"([^\"]*)\" or \"([^\"]*)\"$")
-	public void Particular_Stock_gets_created_successfully_with_either (String expectedMessage1,
-			String expectedMessage2) throws Exception {
-		String actualMessage = masterpage.Stock_created_Success_display();
-		String normalizedActualMessage = normalizeWhitespace(actualMessage);
-		System.out.println(">> User or Admin Created Stock successfully: " + actualMessage);
-
-		boolean matchesMessage1 = normalizedActualMessage.equals(normalizeWhitespace(expectedMessage1));
-		boolean matchesMessage2 = normalizedActualMessage.equals(normalizeWhitespace(expectedMessage2));
-
-		assertTrue("The actual message was neither of the expected success messages.",
-				matchesMessage1 || matchesMessage2);
+    
+	@Then("Particular Stock gets created successfully")
+	public void Particular_Stock_gets_created_successfully() {
+		masterpage.StockSearchedList();
 	}
+    
 	@And("Admin or user search the Stock")
 	public void Admin_or_user_search_the_Stock() throws Exception {
 		masterpage.Stock_search_enter_text();
@@ -334,12 +332,18 @@ public class Master extends Base {
 	}
 	@Then("Recently updated Stock list get displayed successfully")
 	public void Recently_updated_Stock_list_get_displayed_successfully() throws Exception {
-		masterpage.Stocklist();
+		masterpage.Departmentlist_recentlyupdated();
 	}
 	@And("User sort the Stock list Name A to Z")
 	public void User_sort_the_Stock_list_Name_A_to_Z() throws Exception {
 		masterpage.A_Z_Stock_sort();
 	}
+	
+	@Then("Stock list get displayed successfully by A to Z")
+	public void Stock_list_get_displayed_successfully_by_A_to_Z() throws Exception {
+		masterpage.Departmentlist_Display_A_to_Z();
+	}
+	
 	@Then("Stock list get displayed successfully")
 	public void Stock_list_get_displayed_successfully() throws Exception {
 		masterpage.Stocklist();

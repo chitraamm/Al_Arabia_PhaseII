@@ -21,7 +21,7 @@ And User Type in search field
 Then Searched details get displayed successfully  
 
 @Posters @Posters03 @smoke @regression @all
-Scenario Outline: To verify Search a Poster 
+Scenario Outline: To verify Sort Recently updated 
 Given Admin logged in with valid credentials and selects static Project
 When Al-Arabia overall dashboard should display
 And User able to click on profile

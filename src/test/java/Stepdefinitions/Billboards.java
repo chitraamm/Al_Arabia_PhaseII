@@ -499,14 +499,7 @@ public class Billboards extends Base {
 		assertTrue("The actual message was neither of the expected success messages.",
 				matchesMessage1 || matchesMessage2);
 	}	
-
-	
-	
-	
-	
-	
-  	
-  	
+ 	
 	@And("User click on second page button of billboards")
 	public void User_click_on_second_page_button_of_billboards () throws Exception {
 		billboardsPage.Second_page();
@@ -641,8 +634,84 @@ public class Billboards extends Base {
 	public void User_clicks_Incidents() throws Exception {
 		billboardsPage.Clicks_Incidents();
 	}
+	
 	@Then("Display Incidents of the Billboard")
 	public void Display_Incidents_of_the_Billboard() throws Exception {
 		billboardsPage.Incidents_display();
 	}
+	
+	@And("User click on Documents")
+	public void User_click_on_Documents() throws Exception {
+		billboardsPage.Clicks_Documents();
+	}
+	
+	@Then("Documents page should be display successfully")
+	public void Documents_page_should_be_display_successfully() throws Exception {
+		billboardsPage.Documents_display();
+	}
+	
+	@And("User Click Upload Document Option and Upload it from the local drive")
+	public void User_Click_Upload_Document_Option_and_Upload_it_from_the_local_drive() throws Exception {
+		billboardsPage.Upload_Documents();
+	}
+	
+	@Then("^Document should be get Uploaded successfully \"([^\"]*)\" or \"([^\"]*)\"$")
+	public void Document_should_be_get_Uploaded_successfully (String expectedMessage1,String expectedMessage2) throws Exception {
+		String actualMessage = billboardsPage.billboard_created_Success_display();
+		String normalizedActualMessage = normalizeWhitespace(actualMessage);
+
+		System.out.println(">> User or Admin Uploaded Doc successfully: " + actualMessage);
+
+		boolean matchesMessage1 = normalizedActualMessage.equals(normalizeWhitespace(expectedMessage1));
+		boolean matchesMessage2 = normalizedActualMessage.equals(normalizeWhitespace(expectedMessage2));
+
+		assertTrue("The actual message was neither of the expected success messages.",
+				matchesMessage1 || matchesMessage2);
+	}
+	
+	@And("User clicks close icon")
+	public void User_clicks_close_icon() throws Exception {
+		billboardsPage.Clicks_close_icon();
+	}
+	
+	@Then("^Document should be get deleted successfully \"([^\"]*)\" or \"([^\"]*)\"$")
+	public void Document_should_be_get_deleted_successfully (String expectedMessage1,String expectedMessage2) throws Exception {
+		String actualMessage = billboardsPage.billboard_created_Success_display();
+		String normalizedActualMessage = normalizeWhitespace(actualMessage);
+
+		System.out.println(">> User or Admin Deleted the Uploaded Document: " + actualMessage);
+
+		boolean matchesMessage1 = normalizedActualMessage.equals(normalizeWhitespace(expectedMessage1));
+		boolean matchesMessage2 = normalizedActualMessage.equals(normalizeWhitespace(expectedMessage2));
+
+		assertTrue("The actual message was neither of the expected success messages.",
+				matchesMessage1 || matchesMessage2);
+	}
+	
+	@And("User clicks Download icon")
+	public void User_clicks_Download_icon() throws Exception {
+		billboardsPage.Clicks_Downloaded_icon();
+	}
+	
+	@Then("Document should be get Downloaded successfully")
+	public void Document_should_be_get_Downloaded_successfully () throws Exception {
+
+	}
+	
+	@And("User click on Stock movements")
+	public void User_click_on_Stock_movements() throws Exception {
+		billboardsPage.Clicks_Stock_movements();
+	}
+	
+	@Then("Stock movements page should be display successfully")
+	public void Stock_movements_page_should_be_display_successfully () throws Exception {
+		billboardsPage.Display_Stock_movements();
+	}
+
+    
+	
+	
+	
+	
+	
 }

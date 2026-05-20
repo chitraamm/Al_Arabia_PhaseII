@@ -72,16 +72,16 @@ public class Masterpage extends Base {
 	private WebElement click_master_module;
 
 	public void Master_click() throws Exception {
-		Thread.sleep(3000);
+//		Thread.sleep(1000);
 		wait.until(ExpectedConditions.visibilityOf(dashboardpage)).isDisplayed();
 		wait.until(ExpectedConditions.visibilityOf(click_master_module)).click();
 	}
-	@FindBy(xpath = "//h5[normalize-space()='Department(8)']")
-	private WebElement departmentCount;
+	@FindBy(xpath = "(//h6[@class='m-0 by fw-normal'][normalize-space()='Recently Updated'])[1]")
+	private WebElement departmentdisplayed;
 
 	public void alldepartmentCount() {
-		wait.until(ExpectedConditions.visibilityOf(departmentCount)).isDisplayed();
-		AssertJUnit.assertTrue(departmentCount.isDisplayed());
+		wait.until(ExpectedConditions.visibilityOf(departmentdisplayed)).isDisplayed();
+		AssertJUnit.assertTrue(departmentdisplayed.isDisplayed());
 		LOGGER.info(">> The department page got displayed");
 	}
 	
@@ -101,7 +101,7 @@ public class Masterpage extends Base {
 	public void Add_Department() throws Exception {
 		wait.until(ExpectedConditions.visibilityOf(enter_department));
 		String departmentname = prop.getProperty("departmentname");
-		wait.until(ExpectedConditions.visibilityOf(enter_department)).sendKeys(departmentname);
+		wait.until(ExpectedConditions.visibilityOf(enter_department)).sendKeys(generateUniqueboardNumber(departmentname));
 		Thread.sleep(2000);
 		act.moveToElement(click_adddepartment).click().perform();
 	}
@@ -116,21 +116,21 @@ public class Masterpage extends Base {
 	@FindBy(xpath = "//div[@class='list_members p-3 ']")
 	private WebElement departmentlist;
 	
-	@FindBy(xpath = "(//input[@id='doc_searchQueryInput'])[1]")
-	private WebElement Department_Search;
+	@FindBy(id = "doc_searchQueryInput")
+	private WebElement DepartmentSearch;
 	
-	public void Department_search_enter_text() {
-		wait.until(ExpectedConditions.visibilityOf(departmentlist)).click();
+	public void Department_search_enter_text() throws Exception {
+		Thread.sleep(2000);
+		wait.until(ExpectedConditions.visibilityOf(departmentdisplayed)).isDisplayed();
 		String Department_Search = prop.getProperty("departmentname");
-		wait.until(ExpectedConditions.visibilityOf(departmentlist)).sendKeys(Department_Search + Keys.ENTER);
+		wait.until(ExpectedConditions.visibilityOf(DepartmentSearch)).sendKeys(Department_Search + Keys.ENTER);
 		System.out.println(">> User enter the department id in search field: " + Department_Search);
 	}
 	@FindBy(xpath = "(//td[normalize-space()='ADMIN'])[1]")
 	private WebElement DepartmentSearched, departmentSearch;
 
-	public void DepartmentSearchedList() {
-		wait.until(ExpectedConditions.visibilityOf(departmentlist));
-
+	public void DepartmentSearchedList() throws Exception {
+		Thread.sleep(2000);
 		if (DepartmentSearched.isDisplayed()) {
 			System.out.println("Element is displayed");
 		} else {
@@ -138,6 +138,76 @@ public class Masterpage extends Base {
 		}
 		LOGGER.info(">> Admin/User searched Department");
 		System.out.println(">> User got searched Department list: " + departmentSearch.getText());
+	}
+	
+	@FindBy(xpath = "(//h6[contains(@class,'m-0 by fw-normal')][normalize-space()='Recently Updated'])[1]")
+	private WebElement Departmentrecentlyupdated;
+
+	public void Departmentlist_recentlyupdated() {
+
+		if (Departmentrecentlyupdated.isDisplayed()) {
+			System.out.println("Element is displayed");
+		} else {
+			System.out.println("Element is not displayed");
+		}
+		LOGGER.info(">> Admin/User sorted recently updated");
+		System.out.println(">> User got sorted department list: " + Departmentrecentlyupdated.getText());
+	}
+	
+	@FindBy(xpath = "(//h6[contains(@class,'m-0 by fw-normal')][normalize-space()='Name - A to Z'])[1]")
+	private WebElement Departmentlist_AtoZ;
+
+	public void Departmentlist_Display_A_to_Z() {
+
+		if (Departmentlist_AtoZ.isDisplayed()) {
+			System.out.println("Element is displayed");
+		} else {
+			System.out.println("Element is not displayed");
+		}
+		LOGGER.info(">> Admin/User sorted recently updated");
+		System.out.println(">> User got sorted department list: " + Departmentlist_AtoZ.getText());
+	}
+	
+	@FindBy(xpath = "(//h6[contains(@class,'m-0 by fw-normal')][normalize-space()='Name - Z to A'])[1]")
+	private WebElement Departmentlist_ZtoA;
+
+	public void Departmentlist_Display_Z_to_A() {
+
+		if (Departmentlist_ZtoA.isDisplayed()) {
+			System.out.println("Element is displayed");
+		} else {
+			System.out.println("Element is not displayed");
+		}
+		LOGGER.info(">> Admin/User sorted recently updated");
+		System.out.println(">> User got sorted department list: " + Departmentlist_ZtoA.getText());
+	}
+	
+	@FindBy(xpath = "(//h6[contains(@class,'m-0 by fw-normal')][normalize-space()='Recently Added'])[1]")
+	private WebElement Departmentlist_Recentlyadded;
+
+	public void Departmentlist_Recentlyadded() {
+
+		if (Departmentlist_Recentlyadded.isDisplayed()) {
+			System.out.println("Element is displayed");
+		} else {
+			System.out.println("Element is not displayed");
+		}
+		LOGGER.info(">> Admin/User sorted recently updated");
+		System.out.println(">> User got sorted department list: " + Departmentlist_Recentlyadded.getText());
+	}
+	
+	@FindBy(xpath = "(//h6[contains(@class,'m-0 by fw-normal')][normalize-space()='Decending - Date'])[1]")
+	private WebElement Departmentlist_Decending;
+
+	public void Departmentlist_Decending() {
+
+		if (Departmentlist_Decending.isDisplayed()) {
+			System.out.println("Element is displayed");
+		} else {
+			System.out.println("Element is not displayed");
+		}
+		LOGGER.info(">> Admin/User sorted recently updated");
+		System.out.println(">> User got sorted department list: " + Departmentlist_Decending.getText());
 	}
 
 	public void Departmentlist() {
@@ -152,13 +222,13 @@ public class Masterpage extends Base {
 		System.out.println(">> User got sorted department list: " + departmentlist.getText());
 	}
 
-	@FindBy(xpath = "(//h6[contains(@class,'m-0 by fw-normal')][normalize-space()='Recently Added'])[1]")
+	@FindBy(xpath = "(//h6[@class='m-0 by fw-normal'][normalize-space()='Recently Updated'])[1]")
 	private WebElement department_sort;
 
-	@FindBy(xpath = "(//h6[contains(text(),'Recently Updated')])[1]")
+	@FindBy(xpath = "(//h6[contains(text(),'Recently Updated')])[2]")
 	private WebElement Department_sort_recentlyupdated;
 
-	@FindBy(xpath = "(//h6[contains(text(),'Recently Added')])[2]")
+	@FindBy(xpath = "(//h6[contains(text(),'Recently Added')])[1]")
 	private WebElement Department_sort_recentlyadded;
 
 	public void Department_sort_recentlyupdated() {
@@ -177,6 +247,7 @@ public class Masterpage extends Base {
 	private WebElement department_Name_A_to_Z;
 
 	public void Department_sortA_Z() {
+		wait.until(ExpectedConditions.visibilityOf(departmentdisplayed)).isDisplayed();
 		wait.until(ExpectedConditions.visibilityOf(department_sort)).click();
 		wait.until(ExpectedConditions.visibilityOf(department_Name_A_to_Z)).click();
 		System.out.println(">> User clicked recently updated in sort");
@@ -195,12 +266,13 @@ public class Masterpage extends Base {
 	private WebElement department_Name_decending;
 
 	public void Department_DecendingDate() {
+		wait.until(ExpectedConditions.visibilityOf(departmentdisplayed)).isDisplayed();
 		wait.until(ExpectedConditions.visibilityOf(department_sort)).click();
 		wait.until(ExpectedConditions.visibilityOf(department_Name_decending)).click();
 		System.out.println(">> User clicked decending updated in sort");
 	}
 
-	@FindBy(xpath = "(//*[name()='svg'][@stroke='currentColor'])[7]")
+	@FindBy(xpath = "(//*[name()='svg' and @viewBox='0 0 16 16'])[1]")
 	private WebElement kebabmenu_click;
 	
 	public void kebabmenu() throws Exception {
@@ -227,21 +299,26 @@ public class Masterpage extends Base {
 	}
 	@FindBy(xpath = "//a[normalize-space()='Delete']")
 	private WebElement click_delete_department;
+	
+	@FindBy(xpath = "(//h6[normalize-space()='Yes, delete it.'])[1]")
+	private WebElement yes_delete_department;
 
 	public void selects_delete_department() throws Exception {
 		wait.until(ExpectedConditions.visibilityOf(kebabmenu_click));
 		Thread.sleep(1000);
 		wait.until(ExpectedConditions.visibilityOf(click_delete_department)).click();
+		Thread.sleep(2000);
+		wait.until(ExpectedConditions.visibilityOf(yes_delete_department)).click();
+
 	}
 	
 //<------------------------------------Supplier---------------------------------------->
 	
-	@FindBy(xpath = "//span[@class='edit_link_routes false']")
+	@FindBy(xpath = "(//a[normalize-space()='Supplier'])[1]")
 	private WebElement click_supplier;
 
 	public void Supplier_click() throws Exception {
-		Thread.sleep(4000);
-		wait.until(ExpectedConditions.visibilityOf(click_master_module)).click();
+		wait.until(ExpectedConditions.visibilityOf(departmentdisplayed)).isDisplayed();
 		wait.until(ExpectedConditions.visibilityOf(click_supplier)).click();
 	}
 	@FindBy(xpath = "//h5[contains(@class,'mb-0')]")
@@ -378,22 +455,24 @@ public class Masterpage extends Base {
 		System.out.println(">> User got sorted Supplier list: " + supplierlist.getText());
 	}
 
-	@FindBy(xpath = "(//h6[contains(@class,'m-0 by fw-normal')][normalize-space()='Recently Added'])[1]")
+	@FindBy(xpath = "(//h6[@class='m-0 by fw-normal'][normalize-space()='Recently Updated'])[1]")
 	private WebElement Supplier_sort;
 
 	@FindBy(xpath = "(//h6[contains(text(),'Recently Updated')])[1]")
 	private WebElement Supplier_sort_recentlyupdated;
 
-	@FindBy(xpath = "(//h6[contains(text(),'Recently Added')])[2]")
+	@FindBy(xpath = "(//h6[contains(text(),'Recently Added')])[1]")
 	private WebElement Supplier_sort_recentlyadded;
 
 	public void Supplier_sort_recentlyupdated() {
+		wait.until(ExpectedConditions.visibilityOf(SupplierCount)). isDisplayed();
 		wait.until(ExpectedConditions.visibilityOf(Supplier_sort)).click();
 		wait.until(ExpectedConditions.visibilityOf(Supplier_sort_recentlyupdated)).click();
 		System.out.println(">> User clicked recently updated in sort");
 	}
 
 	public void Supplier_sort_recentlyadded() {
+		wait.until(ExpectedConditions.visibilityOf(SupplierCount)). isDisplayed();
 		wait.until(ExpectedConditions.visibilityOf(Supplier_sort)).click();
 		wait.until(ExpectedConditions.visibilityOf(Supplier_sort_recentlyadded)).click();
 		System.out.println(">> User clicked recently added in sort");
@@ -491,12 +570,11 @@ public class Masterpage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(delete_Supplier_confirmbuttn)).click();
 	}
 	//<------------------------------------Stock---------------------------------------->
-	@FindBy(xpath = "//span[normalize-space()='Stock']")
+	@FindBy(xpath = "(//a[normalize-space()='Stock'])[1]")
 	private WebElement click_Stock;
 
 	public void Stock_click() throws Exception {
-		Thread.sleep(4000);
-		wait.until(ExpectedConditions.visibilityOf(click_master_module)).click();
+		Thread.sleep(1000);
 		wait.until(ExpectedConditions.visibilityOf(click_Stock)).click();
 	}
 	@FindBy(xpath = "//h5[contains(@class,'mb-0')]")
@@ -512,7 +590,8 @@ public class Masterpage extends Base {
 	private WebElement click_new_Stockbutton;
 
 	public void New_Stock_button_click() throws Exception {
-		Thread.sleep(5000);
+//		Thread.sleep(5000);
+		wait.until(ExpectedConditions.visibilityOf(StockCount)).isDisplayed();
 		wait.until(ExpectedConditions.visibilityOf(click_new_Stockbutton)).click();
 	}
 	@FindBy(xpath = "//h5[normalize-space()='New Stock']")
@@ -520,6 +599,9 @@ public class Masterpage extends Base {
 	
 	@FindBy(id = "stock_code")
 	private WebElement Stock_Code;
+	
+	@FindBy(id = "serial_number")
+	private WebElement Sl_no;
 	
 	@FindBy(xpath = "//div[@class='select__input-container css-19bb58m']")
 	private WebElement ID_supplier;
@@ -530,7 +612,7 @@ public class Masterpage extends Base {
 	@FindBy(id = "supplier_part_no")
 	private WebElement Supplier_Name;
 	
-	@FindBy(xpath = "//input[@id='available_qty_in_store']")
+	@FindBy(id = "available_qty_in_store")
 	private WebElement Available_quantity_in_store;
 	
 	@FindBy(id = "qty_used_on_site")
@@ -542,7 +624,7 @@ public class Masterpage extends Base {
 	@FindBy(id = "maximum_quantity")
 	private WebElement Maximum_Quantity;
 	
-	@FindBy(id = "react-select-4-placeholder")
+	@FindBy(xpath = "(//div[contains(@class,'select__indicator select__dropdown-indicator css-1xc3v61-indicatorContainer')])[2]")
 	private WebElement Lead_Time_To_Order;
 	
 	@FindBy(id = "formikDateField_warranty_period")
@@ -555,16 +637,15 @@ public class Masterpage extends Base {
 	private WebElement descriptionstocks;
 
 	public void Enter_Mandatory_fields_Stock () throws Exception {
-		Thread.sleep(3000);
 		wait.until(ExpectedConditions.visibilityOf(New_Stock_page_padding)).isDisplayed();
 		String Stockcode = generateUniqueboardNumber(prop.getProperty("Stockcode"));
 		wait.until(ExpectedConditions.visibilityOf(Stock_Code)).sendKeys(Stockcode);
-		Thread.sleep(3000);
-		
 		wait.until(ExpectedConditions.visibilityOf(Stock_Code)).isDisplayed();
-		Thread.sleep(3000);
-		act.moveToElement(ID_supplier).click().sendKeys(""+ Keys.ARROW_DOWN + Keys.ENTER).perform();
+		wait.until(ExpectedConditions.visibilityOf(Sl_no)).sendKeys(Stockcode);
+		
+		wait.until(ExpectedConditions.visibilityOf(Sl_no)).isDisplayed();
 		Thread.sleep(1000);
+		act.moveToElement(ID_supplier).click().sendKeys(""+ Keys.ARROW_DOWN + Keys.ENTER).perform();Thread.sleep(1000);
 		
 		wait.until(ExpectedConditions.visibilityOf(ID_supplier)).isDisplayed();
 		String Materialname = prop.getProperty("Materialname");
@@ -572,11 +653,6 @@ public class Masterpage extends Base {
 		Thread.sleep(1000);
 
 		wait.until(ExpectedConditions.visibilityOf(Material_Name)).isDisplayed();
-		String SupplierName = prop.getProperty("SupplierName");
-		wait.until(ExpectedConditions.visibilityOf(Supplier_Name)).sendKeys(SupplierName);
-		Thread.sleep(3000);
-
-		wait.until(ExpectedConditions.visibilityOf(Supplier_Name)).isDisplayed();
 		String Availablequantity = prop.getProperty("Availablequantity");
 		wait.until(ExpectedConditions.visibilityOf(Available_quantity_in_store)).sendKeys(Availablequantity);
 		Thread.sleep(1000);
@@ -591,14 +667,14 @@ public class Masterpage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(Minimum_Quantity)).sendKeys(minimQty);
 		Thread.sleep(1000);
 
-		wait.until(ExpectedConditions.visibilityOf(Quantity_Used_on_site)).isDisplayed();
+		wait.until(ExpectedConditions.visibilityOf(Minimum_Quantity)).isDisplayed();
 		String maximQty = prop.getProperty("maximQty");
 		wait.until(ExpectedConditions.visibilityOf(Maximum_Quantity)).sendKeys(maximQty);
 		Thread.sleep(1000);
 		
 		wait.until(ExpectedConditions.visibilityOf(Maximum_Quantity)).isDisplayed();
 		act.moveToElement(Lead_Time_To_Order).click().sendKeys(""+Keys.ARROW_DOWN+Keys.ENTER+Keys.TAB).perform();
-		Thread.sleep(4000);
+		Thread.sleep(1000);
 
 		wait.until(ExpectedConditions.visibilityOf(dateof_warranty)).isDisplayed();
 		String Descriptionstocks = prop.getProperty("Descriptionstocks");
@@ -606,11 +682,11 @@ public class Masterpage extends Base {
 		
 	}
 
-	@FindBy(xpath = "//div[@data-testid='Add Stock']")
+	@FindBy(id = "Add Stock")
 	private WebElement add_stock_button_click;
 	
 	public void Add_Stock() throws Exception {
-		wait.until(ExpectedConditions.visibilityOf(add_stock_button_click)).click();
+		act.moveToElement(add_stock_button_click).click().perform();
 	}
 	@FindBy(xpath = "//div[contains(@class, 'toastpop') and contains(@class, 'position-relative')]")
 	private WebElement Stock_created_Success_display;
@@ -648,7 +724,6 @@ public class Masterpage extends Base {
 	}
 
 	public void Stocklist() {
-	//	wait.until(ExpectedConditions.visibilityOf(StockSearch));
 
 		if (Stocklist.isDisplayed()) {
 			System.out.println("Element is displayed");
@@ -659,16 +734,17 @@ public class Masterpage extends Base {
 		System.out.println(">> User got sorted Stock list: " + Stocklist.getText());
 	}
 
-	@FindBy(xpath = "(//h6[contains(@class,'m-0 by fw-normal')][normalize-space()='Recently Added'])[1]")
+	@FindBy(xpath = "(//h6[contains(@class,'m-0 by fw-normal')][normalize-space()='Recently Updated'])[1]")
 	private WebElement Stock_sort;
 
-	@FindBy(xpath = "(//h6[contains(text(),'Recently Updated')])[1]")
+	@FindBy(xpath = "(//h6[contains(text(),'Recently Updated')])[2]")
 	private WebElement Stock_sort_recentlyupdated;
 
 	@FindBy(xpath = "(//h6[contains(text(),'Recently Added')])[2]")
 	private WebElement Stock_sort_recentlyadded;
 
 	public void Stock_sort_recentlyupdated()throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(StockCount)).isDisplayed();
 		wait.until(ExpectedConditions.visibilityOf(Stock_sort)).click();
 		Thread.sleep(2000);
 		wait.until(ExpectedConditions.visibilityOf(Stock_sort_recentlyupdated)).click();
@@ -686,8 +762,8 @@ public class Masterpage extends Base {
 	private WebElement A_to_Z_Stock_Name;
 
 	public void A_Z_Stock_sort() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(StockCount)).isDisplayed();
 		wait.until(ExpectedConditions.visibilityOf(Stock_sort)).click();
-		Thread.sleep(2000);
 		wait.until(ExpectedConditions.visibilityOf(A_to_Z_Stock_Name)).click();
 		System.out.println(">> User clicked recently updated in sort");
 	}

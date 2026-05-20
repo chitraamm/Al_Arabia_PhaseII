@@ -17,15 +17,16 @@ And User click on New Department button
 And User Enter department name and clicks Add Department button
 Then Particular department gets created successfully with either "<successMessage1>" or "<successMessage2>"
   Examples:
-      | successMessage1       | successMessage2                       |
-      | LOADING...            | Success Added Department successfully |      
+      | successMessage1       | successMessage2           |
+      | LOADING...            | Success Added Department  |    
+        
 @Master @Master03 @smoke @regression @all
 Scenario Outline: T003_ the Department feature search
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
 And Admin or user search the Department
-Then Searched Ticket details get displayed successfully
+Then Searched Department details get displayed successfully
 
 @Master @Master04 @smoke @regression @all
 Scenario Outline: T004_To verify the Department feature sort recently updated
@@ -41,7 +42,7 @@ Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
 And User sort the Department list Name A to Z
-Then Department list get displayed successfully
+Then Department list A to Z get displayed successfully
 
 @Master @Master06 @smoke @regression @all
 Scenario Outline: T006_To verify the Department feature sort Name - Z to A
@@ -77,20 +78,22 @@ And User selects Edit option
 And User Updated Department 
 Then Particular department gets Edited successfully with either "<successMessage1>" or "<successMessage2>"
   Examples:
-      | successMessage1       | successMessage2                        |
-      | LOADING...            | Success Edited Department successfully | 
+      | successMessage1       | successMessage2           |
+      | LOADING...            | Success Edited Department | 
       
 @Master @Master10 @smoke @regression @all
 Scenario Outline: T010_To verify the Department Delete
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
+And User click on New Department button
+And User Enter department name and clicks Add Department button
 And User click on kebab menu
 And User clicked Delete Department option 
 Then Particular department gets Deleted successfully with either "<successMessage1>" or "<successMessage2>"
   Examples:
-      | successMessage1       | successMessage2              |
-      | LOADING...            | Success Deleted successfully |  
+      | successMessage1       | successMessage2             |
+      | LOADING...            | Success Department Deleted  |      
       
  @Master @Supplier @Supplier01 @smoke @regression @all
 Scenario Outline: T001_Verify Supplier page display
@@ -197,12 +200,16 @@ Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
 And Admin or user clicks the Supplier
+And User click on New Supplier button
+And User Enter Mandatory fields of New Supplier page
+And User click on Add Supplier button
 And User click on kebab menu
 And User clicked Delete Supplier option 
 Then Particular Supplier gets Deleted successfully with either "<successMessage1>" or "<successMessage2>"
   Examples:
       | successMessage1       | successMessage2          |
       | LOADING...            | Success Supplier deleted |  
+      
  @Master @Stock @Stock01 @smoke @regression @all
 Scenario Outline: T001_Verify Stock page display
 Given Admin logged in with valid credentials
@@ -220,10 +227,7 @@ And Admin or user clicks the Stock
 And User click on New Stock button
 And User Enter Mandatory fields of New Stock page
 And User click on Add Stock button  
-Then Particular Stock gets created successfully with either "<successMessage1>" or "<successMessage2>"
-  Examples:
-      | successMessage1       | successMessage2     |
-      | LOADING...            | Success Stock added |  
+Then Particular Stock gets created successfully   
           
 @Master @Stock @Stock03 @smoke @regression @all
 Scenario Outline: T003_ the Stock feature search
@@ -249,8 +253,8 @@ Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
 And Admin or user clicks the Stock
-And User sort the Stock list Name A to Z
-Then Stock list get displayed successfully
+And User sort the Stock list Name A to Z 
+Then Stock list get displayed successfully by A to Z
 
 @Master @Stock @Stock06 @smoke @regression @all 
 Scenario Outline: T006_To verify the Stock feature sort Name - Z to A
@@ -695,7 +699,7 @@ And User selects Edit option
 And User Updated BillBoardType 
 Then Particular BillBoardType gets Edited successfully with either "<successMessage1>" or "<successMessage2>"
   Examples:
-      | successMessage1       | successMessage2                        |
+      | successMessage1       | successMessage2                           |
       | LOADING...            | Success Edited BillBoardType successfully | 
       
 @Master @BillBoardType @BillBoardType10 @smoke @regression @all

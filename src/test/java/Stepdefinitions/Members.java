@@ -58,12 +58,12 @@ public class Members extends Base {
     }
 
     @And("User clicks the invite member button")
-    public void User_clicks_the_invite_member_button() throws Exception {
+    public void User_clicks_the_invite_member_button()  {
         membersPage.inviteMemberBtn();
     }
 
     @And("User enters the email or phone number")
-    public void User_enters_the_email_or_phone_number() throws Exception {
+    public void User_enters_the_email_or_phone_number()  {
         membersPage.inviteEmailPhoneNumberField();
     }
 
@@ -73,28 +73,28 @@ public class Members extends Base {
     }
 
     @And("User selects the department electrical")
-    public void User_selects_the_department_electrical() throws Exception {
+    public void User_selects_the_department_electrical()  {
         membersPage.inviteSelectDept();
     }
 
     @And("User clicks the send invite button")
-    public void User_clicks_the_send_invite_button() throws Exception {
+    public void User_clicks_the_send_invite_button() {
         membersPage.inviteSendInvite();
     }
 
     @Then("The invitation should sent to user given mail address successfully")
-    public void The_invitation_should_sent_to_user_given_mail_address_successfully() throws Exception {
+    public void The_invitation_should_sent_to_user_given_mail_address_successfully() {
         System.out.println(">> User got the invitation mail successfully >>");
         LOGGER.info(">> User got the invitation mail successfully >>");
     }
 
     @When("Al-Arabia overall dashboard should display")
-    public void Al_Arabia_overall_dashboard_should_display() throws Exception {
+    public void Al_Arabia_overall_dashboard_should_display() {
         membersPage.dashboardText();
     }
 
     @Then("Al-Arabia members dashboard should display successfully")
-    public void Al_Arabia_members_dashboard_should_display_successfully() throws Exception {
+    public void Al_Arabia_members_dashboard_should_display_successfully() {
         membersPage.allMembersCount();
         LOGGER.info(">> Admin/user got the members dashboard page >>");
     }

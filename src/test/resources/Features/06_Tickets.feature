@@ -169,7 +169,7 @@ Then Selected Department list get displayed successfully
 Scenario Outline: T021_To verify the Tickets feature filter Cleaning
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
-And Admin or user clicks the Tickets module
+And Admin or user clicks the Tickets module 
 And User Clicks Cleaning Tickets
 Then Cleaning Tickets list get displayed successfully 
 

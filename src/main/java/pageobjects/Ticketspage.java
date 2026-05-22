@@ -28,7 +28,7 @@ public class Ticketspage extends Base {
 	private Properties prop; 
 	private Actions act;
 	private Logger LOGGER = LogManager.getLogger(Ticketspage.class);
-//	private Signinpage signinpage;
+	private Signinpage signinpage;
 	public Ticketspage(WebDriver driver) throws Exception {
 		this.driver = driver;
 		prop = new Properties();
@@ -38,7 +38,7 @@ public class Ticketspage extends Base {
 		FileInputStream fis = new FileInputStream(propPath);
 		prop.load(fis);
 		initializeWait();
-//		this.signinpage = new Signinpage(driver);
+		this.signinpage = new Signinpage(driver);
 		LOGGER = LogManager.getLogger(Ticketspage.class.getName());
 	}
 

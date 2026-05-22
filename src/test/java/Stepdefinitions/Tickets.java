@@ -10,7 +10,7 @@ import org.openqa.selenium.WebDriver;
 import Hooks.Testhooks;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
-//import pageobjects.Signinpage;
+import pageobjects.Signinpage;
 import pageobjects.Ticketspage;
 import resources.Base;
 
@@ -27,18 +27,18 @@ public class Tickets extends Base {
 	}
 	 
 	@And("Admin or user clicks the Tickets module")
-	public void Admin_or_user_clicks_the_Tickets_module() throws Exception {
+	public void Admin_or_user_clicks_the_Tickets_module()  {
 		ticketsPage.Tickets_click();
 	}
 
 	@Then("Al-Arabia Tickets page should display successfully")
-	public void Al_Arabia_Tickets_page_should_display_successfully() throws Exception {
+	public void Al_Arabia_Tickets_page_should_display_successfully()  {
 		ticketsPage.allticketsCount();
 		LOGGER.info(">> Admin/user got the Tickets page >>");
 	}
 	
 	@And("Admin or user clicks the new Ticket button")
-	public void Admin_or_user_clicks_the_new_Ticket_button() throws Exception {
+	public void Admin_or_user_clicks_the_new_Ticket_button()  {
 		ticketsPage.New_TicketClick();
 	}
 
@@ -47,7 +47,7 @@ public class Tickets extends Base {
 		ticketsPage.NewTicket_mandatory_fields_enter();
 	}
 	@And("Admin or user clicks the create Ticket")
-	public void Admin_or_user_clicks_the_create_Ticket() throws Exception {
+	public void Admin_or_user_clicks_the_create_Ticket()  {
 		ticketsPage.NewTicket_create_btn();
 	}
 
@@ -69,7 +69,7 @@ public class Tickets extends Base {
 		return input.replaceAll("\\s+", " ").trim();
 	}
 	@And("Admin or user search the Tickets")
-	public void Admin_or_user_search_the_Tickets() throws Exception {
+	public void Admin_or_user_search_the_Tickets()  {
 		ticketsPage.Ticket_search_enter_text();
 	}
 
@@ -83,7 +83,7 @@ public class Tickets extends Base {
 	}
 
 	@Then("Recently updated Tickets list get displayed successfully")
-	public void Recently_updated_Tickets_list_get_displayed_successfully() throws Exception {
+	public void Recently_updated_Tickets_list_get_displayed_successfully() {
 		ticketsPage.Ticketlist();
 	}
 
@@ -93,7 +93,7 @@ public class Tickets extends Base {
 	}
 
 	@Then("Tickets list get displayed successfully")
-	public void Tickets_list_get_displayed_successfully() throws Exception {
+	public void Tickets_list_get_displayed_successfully()  {
 		ticketsPage.Ticketlist();
 	}
 
@@ -103,7 +103,7 @@ public class Tickets extends Base {
 	}
 
 	@Then("Tickets list Z to A get displayed successfully")
-	public void Tickets_list_Z_to_A_get_displayed_successfully() throws Exception {
+	public void Tickets_list_Z_to_A_get_displayed_successfully() {
 		ticketsPage.Ticketlist();
 	}
 
@@ -113,7 +113,7 @@ public class Tickets extends Base {
 	}
 
 	@Then("Recent Tickets list get displayed successfully")
-	public void Recent_Tickets_list_get_displayed_successfully() throws Exception {
+	public void Recent_Tickets_list_get_displayed_successfully() {
 		ticketsPage.Ticketlist();
 	}
 	@And("User sort the Tickets list decending")
@@ -122,7 +122,7 @@ public class Tickets extends Base {
 	}
 
 	@Then("Decending Tickets list get displayed successfully")
-	public void Decending_Tickets_list_get_displayed_successfully() throws Exception {
+	public void Decending_Tickets_list_get_displayed_successfully()  {
 		ticketsPage.Ticketlist();
 	}
 	@And("User filter the Tickets list status Closed")
@@ -130,48 +130,48 @@ public class Tickets extends Base {
 		ticketsPage.Tickets_status_closed();
 	}
 	@Then("Closed Tickets list get displayed successfully")
-	public void Closed_Tickets_list_get_displayed_successfully() throws Exception {
+	public void Closed_Tickets_list_get_displayed_successfully()  {
 		ticketsPage.Tickets_filtered_result_display();
 	}
 	@And("User filter the Tickets list status Created")
-	public void User_filter_the_Tickets_list_status_Created() throws Exception {
+	public void User_filter_the_Tickets_list_status_Created() {
 		ticketsPage.Tickets_status_created();
 	}
 	@Then("Created Tickets list get displayed successfully")
-	public void Created_Tickets_list_get_displayed_successfully() throws Exception {
+	public void Created_Tickets_list_get_displayed_successfully() {
 		ticketsPage.Tickets_filtered_result_display();
 	}
 	@And("User filter the Tickets list status Reassigned")
-	public void User_filter_the_Tickets_list_status_Reassigned() throws Exception {
+	public void User_filter_the_Tickets_list_status_Reassigned() {
 		ticketsPage.Tickets_status_Reassigned();
 	}
 	@Then("Reassigned Tickets list get displayed successfully")
-	public void Reassigned_Tickets_list_get_displayed_successfully() throws Exception {
+	public void Reassigned_Tickets_list_get_displayed_successfully() {
 		ticketsPage.Tickets_filtered_result_display();
 	}
 	@And("User filter the Tickets list status Submitted")
-	public void User_filter_the_Tickets_list_status_Submitted() throws Exception {
+	public void User_filter_the_Tickets_list_status_Submitted()  {
 		ticketsPage.Tickets_status_Submitted();
 	}
 	@Then("Submitted Tickets list get displayed successfully")
-	public void Submitted_Tickets_list_get_displayed_successfully() throws Exception {
+	public void Submitted_Tickets_list_get_displayed_successfully()  {
 		ticketsPage.Tickets_filtered_result_display();
 	}
 	
 	@And("User filter the Tickets list status Viewed")
-	public void User_filter_the_Tickets_list_status_Viewed() throws Exception {
+	public void User_filter_the_Tickets_list_status_Viewed() {
 		ticketsPage.Tickets_status_Viewed();
 	}
 	@Then("Viewed Tickets list get displayed successfully")
-	public void Viewed_Tickets_list_get_displayed_successfully() throws Exception {
+	public void Viewed_Tickets_list_get_displayed_successfully()  {
 		ticketsPage.Tickets_filtered_result_display();
 	}
 	@And("User filter the Tickets list status Verified")
-	public void User_filter_the_Tickets_list_status_Verified() throws Exception {
+	public void User_filter_the_Tickets_list_status_Verified() {
 		ticketsPage.Tickets_status_Verified();
 	}
 	@Then("Verified Tickets list get displayed successfully")
-	public void Verified_Tickets_list_get_displayed_successfully() throws Exception {
+	public void Verified_Tickets_list_get_displayed_successfully() {
 		ticketsPage.Tickets_filtered_result_display();
 	}
 	@And("User filter the Tickets list status Overdue")
@@ -219,40 +219,40 @@ public class Tickets extends Base {
 		ticketsPage.Cleaning_Ticket();
 	}
 	@Then("Cleaning Tickets list get displayed successfully")
-	public void Cleaning_Tickets_list_get_displayed_successfully() throws Exception {
+	public void Cleaning_Tickets_list_get_displayed_successfully()  {
 		ticketsPage.Tickets_filtered_result_display();
 	}
 	@And("User Clicks Non Cleaning Tickets")
-	public void User_Clicks_Non_Cleaning_Tickets() throws Exception {
+	public void User_Clicks_Non_Cleaning_Tickets()  {
 		ticketsPage.Non_Cleaning_Ticket();
 	}
 	@Then("Non Cleaning Tickets list get displayed successfully")
-	public void Non_Cleaning_Tickets_list_get_displayed_successfully() throws Exception {
+	public void Non_Cleaning_Tickets_list_get_displayed_successfully()  {
 		ticketsPage.Tickets_filtered_result_display();
 	}
 	@Then("multiple status Tickets list get displayed successfully")
-	public void multiple_status_Tickets_list_get_displayed_successfully() throws Exception {
+	public void multiple_status_Tickets_list_get_displayed_successfully()  {
 		ticketsPage.Tickets_filtered_result_display();
 	}
 	@And("User selected all statuses and submitted")
-	public void User_selected_all_statuses_and_submitted() throws Exception {
+	public void User_selected_all_statuses_and_submitted() {
 		ticketsPage.Multiple_Ticket_statuses();
 	}
 	@And("User clicks the Download button")
-	public void User_clicks_the_Download_button() throws Exception {
+	public void User_clicks_the_Download_button() {
 		ticketsPage.Download_button_Ticketspage();
 	}
 	@Then("Purchase Download pop up will be displayed successfully")
-	public void Purchase_Download_pop_up_will_be_displayed_successfully() throws Exception {
+	public void Purchase_Download_pop_up_will_be_displayed_successfully()  {
 		ticketsPage.Tickets_Download_popup_display();
 	}
 	@And("User clicks the Download button with Download As Excel")
-	public void User_clicks_the_Download_button_with_Download_As_Excel() throws Exception {
+	public void User_clicks_the_Download_button_with_Download_As_Excel()  {
 		ticketsPage.Download_button_Ticketspage();
 		ticketsPage.Tickets_Download_Excel();
 	}
 	@And("User clicks the Download button with Download As PDF for purchases")
-	public void User_clicks_the_Download_button_with_Download_As_PDF_for_purchases() throws Exception {
+	public void User_clicks_the_Download_button_with_Download_As_PDF_for_purchases()  {
 		ticketsPage.Download_button_Ticketspage();
 		ticketsPage.Tickets_Download_PDF();
 	}
@@ -428,28 +428,28 @@ public class Tickets extends Base {
 		ticketsPage.next_page();
 }
 	@Then("Next page Tickets get displayed successfully")
-	public void Next_page_Tickets_get_displayed_successfully() throws Exception {
+	public void Next_page_Tickets_get_displayed_successfully()  {
 }
 	@And("Go to Previous page of Tickets page")
 	public void Go_to_Previous_page_of_Tickets_page() throws Exception {
 		ticketsPage.Previous_page();
 }
 	@Then("Previous page Tickets get displayed successfully")
-	public void Previous_page_Tickets_get_displayed_successfully() throws Exception {
+	public void Previous_page_Tickets_get_displayed_successfully()  {
 }
 	@And("Go to Last page of Tickets page")
 	public void Go_to_Last_page_of_Tickets_page() throws Exception {
 		ticketsPage.last_page();
 }
 	@Then("Last page Tickets get displayed successfully")
-	public void Last_page_Tickets_get_displayed_successfully() throws Exception {
+	public void Last_page_Tickets_get_displayed_successfully()  {
 }
 	@And("User click on first page button of Tickets")
 	public void User_click_on_first_page_button_of_Tickets() throws Exception {
 		ticketsPage.First_page();
 }
 	@Then("First page Tickets get displayed successfully")
-	public void First_page_Tickets_get_displayed_successfully() throws Exception {
+	public void First_page_Tickets_get_displayed_successfully()  {
 }
 	@And("User click on Reset button with confirm yes button")
 	public void User_click_on_Reset_button_with_confirm_yes_button() throws Exception {
@@ -457,7 +457,7 @@ public class Tickets extends Base {
 		ticketsPage.Reset_Ticket_confirmed();
 }
 	@Then("The ticket reset form changes are being done")
-	public void The_ticket_reset_form_changes_are_being_done() throws Exception {
+	public void The_ticket_reset_form_changes_are_being_done()  {
 }
 	@And("The User clicks the Edit icon")
 	public void The_User_clicks_the_Edit_icon() throws Exception {
@@ -482,15 +482,15 @@ public class Tickets extends Base {
 
 }
 	@And("User filter the Tickets list status Pending")
-	public void User_filter_the_Tickets_list_status_Pending() throws Exception {
+	public void User_filter_the_Tickets_list_status_Pending()  {
 		ticketsPage.Tickets_status_Pending();
 	}
 	@Then("Pending Tickets list get displayed successfully")
-	public void Pending_Tickets_list_get_displayed_successfully() throws Exception {
+	public void Pending_Tickets_list_get_displayed_successfully() {
 		ticketsPage.Tickets_filtered_result_display();
 	}
 	@Then("Reassigned Tick mark should be displayed in Progress bar")
-	public void Reassigned_Tick_mark_should_be_displayed_in_Progress_bar() throws Exception {
+	public void Reassigned_Tick_mark_should_be_displayed_in_Progress_bar()  {
 		ticketsPage.Reassingned_Tickmark();
 	}
 }

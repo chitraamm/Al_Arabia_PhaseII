@@ -66,14 +66,14 @@ Scenario Outline: T008_To verify the Tickets feature sort decending
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Tickets module
-And User sort the Tickets list decending
+And User sort the Tickets list decending  
 Then Decending Tickets list get displayed successfully
 
 @Tickets @Tickets09 @smoke @regression @all
 Scenario Outline: T009_To verify the Tickets feature filter Closed status Tickets
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
-And Admin or user clicks the Tickets module
+And Admin or user clicks the Tickets module 
 And User filter the Tickets list status Closed
 Then Closed Tickets list get displayed successfully
       
@@ -82,7 +82,7 @@ Scenario Outline: T0010_To verify the Tickets feature filter Created status Tick
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Tickets module
-And User filter the Tickets list status Created
+And User filter the Tickets list status Created 
 Then Created Tickets list get displayed successfully  
 
 @Tickets @Tickets11 @smoke @regression @all

@@ -94,29 +94,29 @@ public class Testhooks extends Base {
 //        }
     
 	@After
-//	public void tearDown(Scenario scenario) throws Exception {
-//
-//		if (driver != null) {
-//			driver.quit();
-//			LOGGER.info("Browser got closed");
-//			System.out.println("-- Browser got closed --");
-//			System.out.println(
-//					"** Execution ended for scenario -" + scenario.getName());
-//		}
-//	}
+	public void tearDown(Scenario scenario) throws Exception {
 
-	@AfterStep
-	public void addScreenshot(Scenario scenario) {
-		final byte[] screenshot = ((TakesScreenshot) driver)
-				.getScreenshotAs(OutputType.BYTES);
-		if (scenario.isFailed()) {
-			scenario.attach(screenshot, "image/png", scenario.getName());
-			LOGGER.info("Failed scenario screenshot got captured" + scenario.getName());
-		}else {
-      scenario.attach(screenshot, "image/png", "Passed scenario: " + scenario.getName());
-            LOGGER.info("Passed scenario screenshot captured: " + scenario.getName());
-        }
+		if (driver != null) {
+			driver.quit();
+			LOGGER.info("Browser got closed");
+			System.out.println("-- Browser got closed --");
+			System.out.println(
+					"** Execution ended for scenario -" + scenario.getName());
+		}
 	}
+
+//	@AfterStep
+//	public void addScreenshot(Scenario scenario) {
+//		final byte[] screenshot = ((TakesScreenshot) driver)
+//				.getScreenshotAs(OutputType.BYTES);
+//		if (scenario.isFailed()) {
+//			scenario.attach(screenshot, "image/png", scenario.getName());
+//			LOGGER.info("Failed scenario screenshot got captured" + scenario.getName());
+//		}else {
+//      scenario.attach(screenshot, "image/png", "Passed scenario: " + scenario.getName());
+//            LOGGER.info("Passed scenario screenshot captured: " + scenario.getName());
+//        }
+//	}
 
 	 public WebDriver getDriver() {
 	        return driver;

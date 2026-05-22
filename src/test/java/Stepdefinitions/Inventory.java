@@ -117,19 +117,19 @@ public class Inventory extends Base {
 	}
 
 	@Then("Decending Purchases list get displayed successfully")
-	public void Decending_Purchases_list_get_displayed_successfully() throws Exception {
+	public void Decending_Purchases_list_get_displayed_successfully()  {
 		inventorypage.Purchaseslist();
 	}
 	@And("User clicks the Download button in inventory page")
-	public void User_clicks_the_Download_button_in_inventory_page() throws Exception {
+	public void User_clicks_the_Download_button_in_inventory_page() {
 		inventorypage.Download_button_inventorypage();
 	}
 	@Then("Download pop up will be displayed successfully")
-	public void Download_pop_up_will_be_displayed_successfully() throws Exception {
+	public void Download_pop_up_will_be_displayed_successfully()  {
 		inventorypage.Purchases_Download_popup_display();
 	}
 	@And("User clicks the Download button with Download As Excel of Purchase list")
-	public void User_clicks_the_Download_button_with_Download_As_Excel_of_Purchase_list() throws Exception {
+	public void User_clicks_the_Download_button_with_Download_As_Excel_of_Purchase_list() {
 		inventorypage.Download_button_inventorypage();
 		inventorypage.Purchases_Download_Excel();
 	}
@@ -144,7 +144,7 @@ public class Inventory extends Base {
 		inventorypage.Purchases_Download_popup_close();
 	}
 	@Then("The Download pop up get closed successfully and display the Inventory list")
-	public void The_Download_pop_up_get_closed_successfully_and_display_the_Inventory_list() throws Exception {
+	public void The_Download_pop_up_get_closed_successfully_and_display_the_Inventory_list()  {
 		inventorypage.Download_popupclosd_displayed_Purchases();
 	}
 	@And("User click on edit icon in all purchase page")
@@ -177,7 +177,7 @@ public class Inventory extends Base {
 		inventorypage.Viewclick_option();
 	}
 	@Then("Particular parchase get displayed successfully")
-	public void Particular_parchase_get_displayed_successfully() throws Exception {
+	public void Particular_parchase_get_displayed_successfully()   {
 		inventorypage.Download_popupclosd_displayed_Purchases();
 	}
 	@And("User click on Delete option in kebab menu and confirm Yes")

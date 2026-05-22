@@ -627,10 +627,10 @@ When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
 And User clicks BillBoardType
 And User click on New BillBoardType button
-And User Enter BillBoardType name and clicks Add BillBoardType button
+And User Enter BillBoardType name and clicks Add BillBoardType button   
 Then Particular BillBoardType gets created successfully with either "<successMessage1>" or "<successMessage2>"
   Examples:
-      | successMessage1       | successMessage2                       |
+      | successMessage1       | successMessage2                          |
       | LOADING...            | Success Added BillBoardType successfully |      
 @Master @BillBoardType @BillBoardType03 @smoke @regression @all
 Scenario Outline: T003_ the BillBoardType feature search

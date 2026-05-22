@@ -110,7 +110,7 @@ And User able to click on profile
 And Admin or user clicks the Master from the Profile
 And User clicks the Posters 
 And User click on kebab menu of any poster
-And User clicks on edit 
+And User clicks on edit  
 And User Updates any field of the Poster 
 Then User Updates any field of the Poster "<successMessage>"
  Examples:

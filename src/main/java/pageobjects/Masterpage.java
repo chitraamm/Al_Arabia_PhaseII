@@ -740,7 +740,7 @@ public class Masterpage extends Base {
 	@FindBy(xpath = "(//h6[contains(text(),'Recently Updated')])[2]")
 	private WebElement Stock_sort_recentlyupdated;
 
-	@FindBy(xpath = "(//h6[contains(text(),'Recently Added')])[2]")
+	@FindBy(xpath = "(//h6[contains(text(),'Recently Added')])[1]")
 	private WebElement Stock_sort_recentlyadded;
 
 	public void Stock_sort_recentlyupdated()throws Exception {
@@ -772,8 +772,8 @@ public class Masterpage extends Base {
 	private WebElement stock_sortingName_Z_to_A;
 
 	public void Stock_recent_sortZ_A() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(StockCount)).isDisplayed();
 		wait.until(ExpectedConditions.visibilityOf(Stock_sort)).click();
-		Thread.sleep(2000);
 		wait.until(ExpectedConditions.visibilityOf(stock_sortingName_Z_to_A)).click();
 		System.out.println(">> User clicked Z-A updated in sort");
 	}
@@ -788,7 +788,7 @@ public class Masterpage extends Base {
 		System.out.println(">> User clicked decending updated in sort");
 	}
 
-	@FindBy(xpath = "(//*[name()='svg'][@stroke='currentColor'])[7]")
+	@FindBy(xpath = "(//*[name()='svg' and @viewBox='0 0 16 16'])[1]")
 	private WebElement Stock_kebabmenu_click;
 	
 	public void kebabmenu_stock() throws Exception {
@@ -811,10 +811,11 @@ public class Masterpage extends Base {
 
 	public void Updated_Stock() throws Exception {
 		wait.until(ExpectedConditions.visibilityOf(stock_editpage_pading));
-		String edited_contctpersn = prop.getProperty("edited_contctpersn");
-		wait.until(ExpectedConditions.visibilityOf(contact_person)).sendKeys(edited_contctpersn);
+		Sl_no.sendKeys(Keys.CONTROL, "a",Keys.DELETE);
+		String Stockcode = generateUniqueboardNumber(prop.getProperty("Stockcode"));
+		wait.until(ExpectedConditions.visibilityOf(Sl_no)).sendKeys(Stockcode);
 		Thread.sleep(2000);
-		wait.until(ExpectedConditions.visibilityOf(stock_click_updatebuttn)).click();
+		act.moveToElement(stock_click_updatebuttn).click().perform();
 	}
 	@FindBy(xpath = "(//a[normalize-space()='Delete'])[1]")
 	private WebElement click_delete_Stock;
@@ -844,18 +845,19 @@ public class Masterpage extends Base {
 
 //<-----------------------------------------TicketTitle---------------------------------------------->
 
-@FindBy(xpath = "//span[normalize-space()='Ticket Title']")
+@FindBy(xpath = "(//a[normalize-space()='Ticket Title'])[1]")
 private WebElement click_TicketTile;
 
 public void TicketTitle_click() throws Exception {
+	wait.until(ExpectedConditions.visibilityOf(departmentdisplayed)).isDisplayed();
 	wait.until(ExpectedConditions.visibilityOf(click_TicketTile)).click();
 }
-@FindBy(xpath = "//h5[normalize-space()='Ticket Title(89)']")
-private WebElement TicketTitleCount;
+@FindBy(xpath = "(//h6[@class='m-0 by fw-normal'][normalize-space()='Recently Updated'])[1]")
+private WebElement TicketTitledisplay;
 
 public void allTicketTitleCount() {
-	wait.until(ExpectedConditions.visibilityOf(TicketTitleCount)).isDisplayed();
-	AssertJUnit.assertTrue(TicketTitleCount.isDisplayed());
+	wait.until(ExpectedConditions.visibilityOf(TicketTitledisplay)).isDisplayed();
+	AssertJUnit.assertTrue(TicketTitledisplay.isDisplayed());
 	LOGGER.info(">> The TicketTitle page got displayed");
 }
 
@@ -863,7 +865,7 @@ public void allTicketTitleCount() {
 private WebElement click_new_TTbutton;
 
 public void New_TicketTitle_button_click() throws Exception {
-	Thread.sleep(5000);
+	wait.until(ExpectedConditions.visibilityOf(TicketTitledisplay)).isDisplayed();
 	wait.until(ExpectedConditions.visibilityOf(click_new_TTbutton)).click();
 }
 @FindBy(id = "title")
@@ -875,7 +877,7 @@ private WebElement click_addTicketTitle;
 public void Add_TicketTitle() throws Exception {
 	wait.until(ExpectedConditions.visibilityOf(enter_TicketTitle));
 	String TicketTitlename = prop.getProperty("TicketTitlename");
-	wait.until(ExpectedConditions.visibilityOf(enter_TicketTitle)).sendKeys(TicketTitlename);
+	wait.until(ExpectedConditions.visibilityOf(enter_TicketTitle)).sendKeys(generateUniqueboardNumber(TicketTitlename));
 	Thread.sleep(2000);
 	act.moveToElement(click_addTicketTitle).click().perform();
 }
@@ -928,22 +930,24 @@ public void TicketTitlelist() {
 	System.out.println(">> User got sorted TicketTitle list: " + TicketTitlelist.getText());
 }
 
-@FindBy(xpath = "(//h6[contains(@class,'m-0 by fw-normal')][normalize-space()='Recently Added'])[1]")
+@FindBy(xpath = "(//h6[contains(@class,'m-0 by fw-normal')][normalize-space()='Recently Updated'])[1]")
 private WebElement TicketTitle_sort;
 
 @FindBy(xpath = "(//h6[contains(text(),'Recently Updated')])[1]")
 private WebElement TicketTitle_sort_recentlyupdated;
 
-@FindBy(xpath = "(//h6[contains(text(),'Recently Added')])[2]")
+@FindBy(xpath = "(//h6[contains(text(),'Recently Added')])[1]")
 private WebElement TicketTitle_sort_recentlyadded;
 
 public void TicketTitle_sort_recentlyupdated() {
+	wait.until(ExpectedConditions.visibilityOf(TicketTitledisplay)).isDisplayed();
 	wait.until(ExpectedConditions.visibilityOf(TicketTitle_sort)).click();
 	wait.until(ExpectedConditions.visibilityOf(TicketTitle_sort_recentlyupdated)).click();
 	System.out.println(">> User clicked recently updated in sort");
 }
 
 public void TicketTitle_sort_recentlyadded() {
+	wait.until(ExpectedConditions.visibilityOf(TicketTitledisplay)).isDisplayed();
 	wait.until(ExpectedConditions.visibilityOf(TicketTitle_sort)).click();
 	wait.until(ExpectedConditions.visibilityOf(TicketTitle_sort_recentlyadded)).click();
 	System.out.println(">> User clicked recently added in sort");
@@ -967,13 +971,15 @@ public void TicketTitle_sortZ_A() {
 	System.out.println(">> User clicked Z-A updated in sort");
 }
 
-@FindBy(xpath = "(//h6[contains(text(),'Decending - Date')])[1]")
+@FindBy(xpath = "//h6[normalize-space()='Decending - Date']")
 private WebElement TicketTitle_Name_decending;
 
-public void TicketTitle_DecendingDate() {
+public void TicketTitle_DecendingDate() throws Exception {
+	wait.until(ExpectedConditions.visibilityOf(TicketTitledisplay)).isDisplayed();
 	wait.until(ExpectedConditions.visibilityOf(TicketTitle_sort)).click();
+	Thread.sleep(2000);
 	wait.until(ExpectedConditions.visibilityOf(TicketTitle_Name_decending)).click();
-	System.out.println(">> User clicked decending updated in sort");
+	System.out.println(">> User clicked decending in sort");
 }
 
 @FindBy(xpath = "(//*[name()='svg'][@stroke='currentColor'])[7]")
@@ -995,9 +1001,10 @@ public void selects_edit_TicketTitle() throws Exception {
 private WebElement click_Edit_TicketTitlebuttn;
 
 public void Updated_TicketTitle() throws Exception {
+	enter_TicketTitle.sendKeys(Keys.CONTROL, "a" ,Keys.DELETE);
 	wait.until(ExpectedConditions.visibilityOf(enter_TicketTitle));
 	String edited_TicketTitlename = prop.getProperty("newTicketTitlename");
-	wait.until(ExpectedConditions.visibilityOf(enter_TicketTitle)).sendKeys(edited_TicketTitlename);
+	wait.until(ExpectedConditions.visibilityOf(enter_TicketTitle)).sendKeys(generateUniqueboardNumber(edited_TicketTitlename));
 	Thread.sleep(2000);
 	wait.until(ExpectedConditions.visibilityOf(click_Edit_TicketTitlebuttn)).click();
 }

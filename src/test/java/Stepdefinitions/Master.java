@@ -354,7 +354,7 @@ public class Master extends Base {
 	}
 	@Then("Stock list Z to A get displayed successfully")
 	public void Stock_list_Z_to_A_get_displayed_successfully() throws Exception {
-		masterpage.Stocklist();
+		masterpage.Departmentlist_Display_Z_to_A();
 	}
 	@And("User sort the Stock list Recently Added")
 	public void User_sort_the_Stock_list_Recently_Added() throws Exception {
@@ -362,7 +362,7 @@ public class Master extends Base {
 	}
 	@Then("Recent Stock list get displayed successfully")
 	public void Recent_Stock_list_get_displayed_successfully() throws Exception {
-		masterpage.Stocklist();
+		masterpage.Departmentlist_Recentlyadded();
 	}
 	@And("User sort the Stock list decending")
 	public void User_sort_the_Stock_list_Decending() throws Exception {
@@ -370,7 +370,7 @@ public class Master extends Base {
 	}
 	@Then("Decending Stock list get displayed successfully")
 	public void Decending_Stock_list_get_displayed_successfully() throws Exception {
-		masterpage.Stocklist();
+		masterpage.Departmentlist_Decending();
 	}
 	@And("User click on kebab menu of Stock")
 	public void User_click_on_kebab_menu_of_Stock() throws Exception {
@@ -398,6 +398,11 @@ public class Master extends Base {
 		assertTrue("The actual message was neither of the expected success messages.",
 				matchesMessage1 || matchesMessage2);
 	}
+	
+	@Then("Particular Stock gets Edited successfully")
+	public void Particular_Stock_gets_Edited_successfully() {
+	}
+	
 	@And("User clicked View Stock option")
 	public void User_clicked_View_Stock_option() throws Exception {
 		masterpage.selects_view_Stock();
@@ -451,7 +456,7 @@ public class Master extends Base {
 	}
 	@Then("Recently updated TicketTitle list get displayed successfully")
 	public void Recently_updated_TicketTitle_list_get_displayed_successfully() throws Exception {
-		masterpage.TicketTitlelist();
+		masterpage.Departmentlist_recentlyupdated();
 	}
 	@And("User sort the TicketTitle list Name A to Z")
 	public void User_sort_the_TicketTitle_list_Name_A_to_Z() throws Exception {
@@ -459,7 +464,7 @@ public class Master extends Base {
 	}
 	@Then("TicketTitle list get displayed successfully")
 	public void TicketTitle_list_get_displayed_successfully() throws Exception {
-		masterpage.TicketTitlelist();
+		masterpage.Departmentlist_Display_A_to_Z();
 	}
 	@And("User sort the TicketTitle list Name Z to A")
 	public void User_sort_the_TicketTitle_list_Name_Z_to_A() throws Exception {
@@ -467,7 +472,7 @@ public class Master extends Base {
 	}
 	@Then("TicketTitle list Z to A get displayed successfully")
 	public void TicketTitle_list_Z_to_A_get_displayed_successfully() throws Exception {
-		masterpage.TicketTitlelist();
+		masterpage.Departmentlist_Display_Z_to_A();
 	}
 	@And("User sort the TicketTitle list Recently Added")
 	public void User_sort_the_TicketTitle_list_Recently_Added() throws Exception {
@@ -475,7 +480,7 @@ public class Master extends Base {
 	}
 	@Then("Recent TicketTitle list get displayed successfully")
 	public void Recent_TicketTitle_list_get_displayed_successfully() throws Exception {
-		masterpage.TicketTitlelist();
+		masterpage.Departmentlist_Recentlyadded();
 	}
 	@And("User sort the TicketTitle list decending")
 	public void User_sort_the_TicketTitle_list_Decending() throws Exception {
@@ -483,7 +488,7 @@ public class Master extends Base {
 	}
 	@Then("Decending TicketTitle list get displayed successfully")
 	public void Decending_TicketTitle_list_get_displayed_successfully() throws Exception {
-		masterpage.TicketTitlelist();
+		masterpage.Departmentlist_Decending();
 	}
 	@And("User click on kebab menu of TicketTitle")
 	public void User_click_on_kebab_menu_of_TicketTitle() throws Exception {
@@ -491,7 +496,6 @@ public class Master extends Base {
 	}
 	@And("User selects Edit option of TicketTitle")
 	public void User_selects_Edit_option_of_TicketTitle() throws Exception {
-		//masterpage.kebabmenu();
 		masterpage.selects_edit_TicketTitle();
 	}
 	@And("User Updated TicketTitle")

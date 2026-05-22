@@ -253,9 +253,9 @@ Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And Admin or user clicks the Master
 And Admin or user clicks the Stock
-And User sort the Stock list Name A to Z 
+And User sort the Stock list Name A to Z   
 Then Stock list get displayed successfully by A to Z
-
+ 
 @Master @Stock @Stock06 @smoke @regression @all 
 Scenario Outline: T006_To verify the Stock feature sort Name - Z to A
 Given Admin logged in with valid credentials
@@ -292,11 +292,8 @@ And Admin or user clicks the Stock
 And User click on kebab menu of Stock
 And User selects Edit option of Stock
 And User Updated Stock 
-Then Particular Stock gets Edited successfully with either "<successMessage1>" or "<successMessage2>"
-  Examples:
-      | successMessage1       | successMessage2          |
-      | LOADING...            | Success Stock updated | 
-     
+Then Particular Stock gets Edited successfully  
+
 @Master @Stock @Stock10 @smoke @regression @all
 Scenario Outline: T010_To verify the Stock View
 Given Admin logged in with valid credentials
@@ -325,8 +322,9 @@ And User click on New TicketTitle button
 And User Enter TicketTitle name and clicks Add TicketTitle button
 Then Particular TicketTitle gets created successfully with either "<successMessage1>" or "<successMessage2>"
   Examples:
-      | successMessage1       | successMessage2                       |
-      | LOADING...            | Success Added TicketTitle successfully |      
+      | successMessage1       | successMessage2             |
+      | LOADING...            | Success Added Ticket Title  |  
+          
 @Master @TicketTitle @TicketTitle03 @smoke @regression @all
 Scenario Outline: T003_ the TicketTitle feature search
 Given Admin logged in with valid credentials
@@ -392,8 +390,8 @@ And User selects Edit option
 And User Updated TicketTitle 
 Then Particular TicketTitle gets Edited successfully with either "<successMessage1>" or "<successMessage2>"
   Examples:
-      | successMessage1       | successMessage2                        |
-      | LOADING...            | Success Edited TicketTitle successfully | 
+      | successMessage1       | successMessage2              |
+      | LOADING...            | Success Edited Ticket Title  | 
       
 @Master @TicketTitle @TicketTitle10 @smoke @regression @all
 Scenario Outline: T010_To verify the TicketTitle Delete

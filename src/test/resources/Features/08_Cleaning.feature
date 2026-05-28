@@ -72,7 +72,6 @@ Then Decending Purchases list get displayed successfully
 @Cleaning @Cleaning09 @smoke @regression @all
 Scenario Outline: T009_To verify the Cleaning feature filter shedule Type Automatic cleaning 
 Given Admin logged in with valid credentials
-When Al-Arabia overall dashboard should display
 And Admin or user clicks the Cleaning module
 And User filter the Cleaning list status Automatic
 Then Automatic Cleaning list get displayed successfully

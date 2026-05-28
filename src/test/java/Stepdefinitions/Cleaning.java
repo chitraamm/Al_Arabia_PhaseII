@@ -125,7 +125,7 @@ public class Cleaning extends Base {
 }
 	@Then("Automatic Cleaning list get displayed successfully")
 	public void Automatic_Cleaning_list_get_displayed_successfully() throws Exception {
-		cleaningpage.Cleaning_filtered_result_display();
+		cleaningpage.Cleaning_filtered_As_Automatic();
 	}
 	@And("User filter the Cleaning list status Manual")
 	public void User_filter_the_Cleaning_list_status_Manual() throws Exception {

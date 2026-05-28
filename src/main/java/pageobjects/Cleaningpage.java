@@ -61,7 +61,7 @@ public class Cleaningpage extends Base {
 		return baseboardNumber + rand.nextInt(1000);
 	}
 	
-	@FindBy(xpath = "//span[normalize-space()='Cleaning']")
+	@FindBy(xpath = "(//span[normalize-space()='Cleaning'])[1]")
 	private WebElement cleaningClick;
 
 	@FindBy(xpath = "//span[normalize-space()='Cleaning']")
@@ -73,7 +73,7 @@ public class Cleaningpage extends Base {
 		LOGGER.info(">> Admin/User got navigated to cleaning page");
 	}
 
-	@FindBy(xpath = "//h5[contains(@class,'mb-0')]")
+	@FindBy(xpath = "(//h6[contains(@class,'m-0 by fw-normal')][normalize-space()='Recently Added'])[1]")
 	private WebElement cleaningCount;
 
 	public void AllcleaningCount() {
@@ -206,6 +206,21 @@ public class Cleaningpage extends Base {
 		LOGGER.info(">> Admin/User clicked new ticket btn");
 		System.out.println(">> User got searched BB list: " + cleaningSearchedList.getText());
 	}
+	
+	@FindBy(xpath = "//tbody/tr[1]/td[4]")
+	private WebElement automatic;
+	
+	public void Cleaning_filtered_As_Automatic() throws Exception {
+//		wait.until(ExpectedConditions.visibilityOf(automatic));
+         Thread.sleep(2000);
+		if (automatic.isDisplayed()) {
+			System.out.println("Element is displayed");
+		} else {
+			System.out.println("Element is not displayed");
+		}
+		LOGGER.info(">> Admin/User filtered as AUTOMATIC");
+		System.out.println(">> User got filtered Automatic list: " + automatic.getText());
+	}
 
 	public void Cleaninglist() {
 		wait.until(ExpectedConditions.visibilityOf(cleaningSearchedList));
@@ -276,6 +291,7 @@ public class Cleaningpage extends Base {
 	private WebElement cleaning_filter_apply_btn;
 
 	public void Automatic_list() {
+		wait.until(ExpectedConditions.visibilityOf(cleaningCount)).isDisplayed();
 		wait.until(ExpectedConditions.visibilityOf(cleaning_filter)).click();
 		wait.until(ExpectedConditions.visibilityOf(automatic_status)).click();
 		act.moveToElement(cleaning_filter_apply_btn).click().perform();

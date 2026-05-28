@@ -104,7 +104,7 @@ IDnumber = 234
 D_remarks = Returned stock ID_
 <---------Cleaning--------->
 
-groupname = cleanings3
+groupname = cleanings
 billboardsname = AJB01
 assignee = tomgeorge
 descriptiontexts = cleaning created

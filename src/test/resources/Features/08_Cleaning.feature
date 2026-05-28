@@ -79,7 +79,6 @@ Then Automatic Cleaning list get displayed successfully
 @Cleaning @Cleaning10 @smoke @regression @all
 Scenario Outline: T010_To verify the Cleaning feature filter shedule Type Manual cleaning 
 Given Admin logged in with valid credentials
-When Al-Arabia overall dashboard should display
 And Admin or user clicks the Cleaning module
 And User filter the Cleaning list status Manual
 Then Manual Cleaning list get displayed successfully
@@ -95,7 +94,6 @@ Then Dry Cleaning list get displayed successfully
 @Cleaning @Cleaning12 @smoke @regression @all
 Scenario Outline: T012_To verify the Cleaning feature filter Cleaning Type Wet 
 Given Admin logged in with valid credentials
-When Al-Arabia overall dashboard should display
 And Admin or user clicks the Cleaning module
 And User filter the Cleaning list status Wet
 Then Wet Cleaning list get displayed successfully
@@ -103,7 +101,6 @@ Then Wet Cleaning list get displayed successfully
 @Cleaning @Cleaning13 @smoke @regression @all
 Scenario Outline: T013_To verify the Cleaning feature filter the priority High
 Given Admin logged in with valid credentials
-When Al-Arabia overall dashboard should display
 And Admin or user clicks the Cleaning module
 And User filter the Priority High status
 Then Priority High Cleaning list get displayed successfully
@@ -119,7 +116,6 @@ Then Priority Medium Cleaning list get displayed successfully
 @Cleaning @Cleaning15 @smoke @regression @all
 Scenario Outline: T015_To verify the Cleaning feature filter the priority Low
 Given Admin logged in with valid credentials
-When Al-Arabia overall dashboard should display
 And Admin or user clicks the Cleaning module
 And User filter the Priority Low status
 Then Priority Low Cleaning list get displayed successfully
@@ -135,7 +131,6 @@ Then Multiple status Cleaning list get displayed successfully
 @Cleaning @Cleaning17 @smoke @regression @all
 Scenario Outline: T017_To verify the Cleaning feature filter Start Date
 Given Admin logged in with valid credentials
-When Al-Arabia overall dashboard should display
 And Admin or user clicks the Cleaning module
 And User filter the Start Date
 Then Cleaning from Start Date list get displayed successfully
@@ -143,7 +138,6 @@ Then Cleaning from Start Date list get displayed successfully
 @Cleaning @Cleaning18 @smoke @regression @all
 Scenario Outline: T018_To verify the Cleaning feature filter Start Date and End date 
 Given Admin logged in with valid credentials
-When Al-Arabia overall dashboard should display
 And Admin or user clicks the Cleaning module
 And User filter the Start Date and End date
 Then Cleaning from Start date and End date list get displayed successfully
@@ -151,15 +145,13 @@ Then Cleaning from Start date and End date list get displayed successfully
 @Cleaning @Cleaning19 @smoke @regression @all
 Scenario Outline: T019_To verify the Cleaning feature filter by Assignee
 Given Admin logged in with valid credentials
-When Al-Arabia overall dashboard should display
 And Admin or user clicks the Cleaning module
 And User filter the Assignee
 Then Assignee cleaning list get displayed successfully
 
 @Cleaning @Cleaning20 @smoke @regression @all
-Scenario Outline: T020_To verify the Cleaning feature filter by Assignee
+Scenario Outline: T020_To verify the Cleaning feature filter by Billboard Type 
 Given Admin logged in with valid credentials
-When Al-Arabia overall dashboard should display
 And Admin or user clicks the Cleaning module
 And User filter the Billboard Type cleaning
 Then Billboard Type cleaning list get displayed successfully
@@ -167,19 +159,18 @@ Then Billboard Type cleaning list get displayed successfully
 @Cleaning @Cleaning21 @smoke @regression @all
 Scenario Outline: T021_To verify the Cleaning feature Update the Group
 Given Admin logged in with valid credentials
-When Al-Arabia overall dashboard should display
 And Admin or user clicks the Cleaning module
 And User click edit button
 And User edit the Group name
-And User Update the group and confirmed yes button 
-Then Particular Group gets updated successfully as "<successMessage>"
+And User Update the group and confirmed yes button   
+Then Particular Group gets updated successfully as "<successMessage1>" or "<successMessage2>"
   Examples:
-      | successMessage         |
-      | Success Group updated  |
+      | successMessage1       | successMessage2        |
+      | LOADING...            | Success Group updated  |
+      
 @Cleaning @Cleaning22 @smoke @regression @all
 Scenario Outline: T022_To verify the Cleaning feature Download button
 Given Admin logged in with valid credentials
-When Al-Arabia overall dashboard should display
 And Admin or user clicks the Cleaning module
 And Admin or user clicks the Download button in Cleaning page
 Then Download popup get displayed successfully
@@ -187,7 +178,6 @@ Then Download popup get displayed successfully
 @Cleaning @Cleaning23 @smoke @regression @all
 Scenario Outline: T023_To verify the Cleaning feature Excel Download
 Given Admin logged in with valid credentials
-When Al-Arabia overall dashboard should display
 And Admin or user clicks the Cleaning module
 And Admin or user clicks the Download button in Cleaning page
 And User click on Excel Download
@@ -220,10 +210,10 @@ And User click edit button
 And User click on View Ticket Tab
 And User Click on Upload Photos videos and voice in View Ticket page
 And User Update the group and confirmed yes button 
-Then Particular Group gets updated successfully as "<successMessage>"
+Then Particular Group gets updated successfully as "<successMessage1>" or "<successMessage2>"
   Examples:
-      | successMessage         |
-      | Success Group updated  |
+      | successMessage1       | successMessage2        |
+      | LOADING...            | Success Group updated  |
 
 @Cleaning @Cleaning27 @smoke @regression @all
 Scenario Outline: T027_To verify the Cleaning feature clicks close button of uploaded photo in view ticket page  

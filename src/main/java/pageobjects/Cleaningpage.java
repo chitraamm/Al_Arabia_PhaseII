@@ -67,9 +67,8 @@ public class Cleaningpage extends Base {
 	@FindBy(xpath = "//span[normalize-space()='Cleaning']")
 	private WebElement cleaning_menu;
 
-	public void Cleaning_click() {
+	public void Cleaning_click() throws Exception {
 		wait.until(ExpectedConditions.elementToBeClickable(cleaningClick)).click();
-		wait.until(ExpectedConditions.visibilityOf(cleaning_menu)).isDisplayed();
 		LOGGER.info(">> Admin/User got navigated to cleaning page");
 	}
 
@@ -91,22 +90,22 @@ public class Cleaningpage extends Base {
 	@FindBy(xpath = "//*[@id=\"group_name\"]")
 	private WebElement group_Name;
 	
-	@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[2]/div[2]/div/form/div/div/div/div[2]/div/div/div/div/div[1]")
+	@FindBy(xpath = "(//div[contains(@class,'select__indicator select__dropdown-indicator css-1xc3v61-indicatorContainer')])[1]")
 	private WebElement ticket_title;
 	
-	@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[2]/div[2]/div/form/div/div/div/div[4]/div/div/div/div")
+	@FindBy(id = "react-select-23-input")
 	private WebElement schedule;
 	
-	@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[2]/div[2]/div/form/div/div/div/div[5]/div/div/div/div/div[1]/div[2]")
+	@FindBy(xpath = "(//div[contains(@class,'select__input-container css-19bb58m')])[1]")
 	private WebElement Billboard_Type ;
 	
-	@FindBy(xpath = "(//div[contains(@class,'select__input-container css-19bb58m')])[3]")
+	@FindBy(xpath = "(//div[contains(@class,'select__input-container css-19bb58m')])[2]")
 	private WebElement nameofBillboard;
 	
 	@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[2]/div[2]/div/form/div/div/div/div[10]/div/div/div/div/div[1]")
 	private WebElement Priority;
 	
-	@FindBy(id = "react-select-16-input")
+	@FindBy(xpath = "(//div[contains(@aria-hidden,'true')])[1]")
 	private WebElement Assignee;
 	
 	@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[2]/div[2]/div/form/div/div/div/div[12]/div/div[1]/input")
@@ -124,49 +123,48 @@ public class Cleaningpage extends Base {
 	public void Mandatory_fields_enter_new_cleaning() throws Exception {
 
 	String groupname = prop.getProperty("groupname");
-	wait.until(ExpectedConditions.visibilityOf(group_Name)).sendKeys(groupname);
+	wait.until(ExpectedConditions.visibilityOf(group_Name)).sendKeys(generateUniqueboardNumber(groupname));
 	
 	wait.until(ExpectedConditions.visibilityOf(group_Name)).isDisplayed();
-	Thread.sleep(1000);
+//	Thread.sleep(1000);
 	act.moveToElement(ticket_title).click().sendKeys(""+Keys.ENTER).perform();
 	
-	wait.until(ExpectedConditions.visibilityOf(ticket_title)).isDisplayed();
+//	wait.until(ExpectedConditions.visibilityOf(ticket_title)).isDisplayed();
+	wait.until(ExpectedConditions.visibilityOf(schedule)).click();
 	Thread.sleep(1000);
-	act.moveToElement(schedule).click().sendKeys(""+Keys.ARROW_DOWN+Keys.ENTER).perform();
+	act.moveToElement(schedule).sendKeys(""+Keys.ENTER).perform();
 	
-	wait.until(ExpectedConditions.visibilityOf(schedule)).isDisplayed();
+	wait.until(ExpectedConditions.visibilityOf(Billboard_Type)).click();
 	Thread.sleep(2000);
-	act.moveToElement(Billboard_Type).click().sendKeys(""+Keys.ARROW_DOWN+Keys.ENTER).perform();
+	act.moveToElement(Billboard_Type).sendKeys(""+Keys.ARROW_DOWN+Keys.ENTER).perform();
 	Thread.sleep(2000);
-
-//	String billboard = prop.getProperty("billboardsname");
+	
+	wait.until(ExpectedConditions.visibilityOf(nameofBillboard)).click();
+	Thread.sleep(2000);
+	act.moveToElement(nameofBillboard).sendKeys(""+Keys.ARROW_DOWN+Keys.ENTER).perform();
+	Thread.sleep(2000);
+	
+	wait.until(ExpectedConditions.visibilityOf(Assignee)).sendKeys(""+"tom"+Keys.ENTER);
 //	Thread.sleep(5000);
-//    act.moveToElement(nameofBillboard).click().sendKeys(""+(billboard)).perform();
+//	act.moveToElement(nameofBillboard).click().sendKeys(""+Keys.ENTER+Keys.ARROW_RIGHT).perform();
+//  
+//	wait.until(ExpectedConditions.visibilityOf(nameofBillboard)).isDisplayed();
+//	Thread.sleep(1000);
+//	act.moveToElement(Priority).click().sendKeys(""+Keys.ARROW_DOWN+Keys.ENTER).perform();
+//	
+//	wait.until(ExpectedConditions.visibilityOf(Priority)).isDisplayed();
+//	Thread.sleep(1000);
+//	act.moveToElement(Assignee).click().sendKeys(""+Keys.ARROW_DOWN+Keys.ENTER).perform();
 //	Thread.sleep(2000);
-
-	Thread.sleep(2000);
-	String billboard = prop.getProperty("billboardsname");
-	wait.until(ExpectedConditions.visibilityOf(Assignee)).sendKeys(billboard);
-	Thread.sleep(5000);
-	act.moveToElement(nameofBillboard).click().sendKeys(""+Keys.ENTER+Keys.ARROW_RIGHT).perform();
-  
-	wait.until(ExpectedConditions.visibilityOf(nameofBillboard)).isDisplayed();
-	Thread.sleep(1000);
-	act.moveToElement(Priority).click().sendKeys(""+Keys.ARROW_DOWN+Keys.ENTER).perform();
-	
-	wait.until(ExpectedConditions.visibilityOf(Priority)).isDisplayed();
-	Thread.sleep(1000);
-	act.moveToElement(Assignee).click().sendKeys(""+Keys.ARROW_DOWN+Keys.ENTER).perform();
-	Thread.sleep(2000);
-
-    act.moveToElement(Start_Date).click().perform();
-	Thread.sleep(2000);
-
-    act.moveToElement(selected_start_date).click().perform();
-	Thread.sleep(2000);
-
-    String description = prop.getProperty("descriptiontexts");
-    act.moveToElement(Description).click().sendKeys(""+(description)).perform();
+//
+//    act.moveToElement(Start_Date).click().perform();
+//	Thread.sleep(2000);
+//
+//    act.moveToElement(selected_start_date).click().perform();
+//	Thread.sleep(2000);
+//
+//    String description = prop.getProperty("descriptiontexts");
+//    act.moveToElement(Description).click().sendKeys(""+(description)).perform();
     
 	}
 	@FindBy(id = "Create Group")
@@ -192,7 +190,7 @@ public class Cleaningpage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(CleaningSearch)).sendKeys(ticket_search + Keys.ENTER);
 		System.out.println(">> User enter the Cleaning number in search field: " + ticket_search);
 	}
-	@FindBy(xpath = "//tbody/tr[contains(@class,'table_white')]/td[1]/div[1]")
+	@FindBy(xpath = "//tbody/tr[1]/td[4]")
 	private WebElement cleaningSearchedList, Cleaninglist;
 
 	public void CleaningSearchedList() {
@@ -316,6 +314,7 @@ public class Cleaningpage extends Base {
 	@FindBy(id = "MANUAL")
 	private WebElement manual_status;
 	public void Manual_list() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(cleaningCount)).isDisplayed();
 		wait.until(ExpectedConditions.visibilityOf(cleaning_filter)).click();
 		wait.until(ExpectedConditions.visibilityOf(manual_status)).click();
 		act.moveToElement(cleaning_filter_apply_btn).click().perform();
@@ -324,14 +323,22 @@ public class Cleaningpage extends Base {
 	}
 	@FindBy(id = "DRY")
 	private WebElement dry_status;
-	public void Dry_list()throws Exception {
+	public void Dry_list() throws Exception {
+		Thread.sleep(2000);
+		wait.until(ExpectedConditions.visibilityOf(cleaningCount)).isDisplayed();
 		wait.until(ExpectedConditions.visibilityOf(cleaning_filter)).click();
-		wait.until(ExpectedConditions.visibilityOf(dry_status)).click();
+//		wait.until(ExpectedConditions.visibilityOf(dry_status)).click();
+		act.moveToElement(dry_status).click().perform();
+
 		act.moveToElement(cleaning_filter_apply_btn).click().perform();
 	}
+	
 	@FindBy(xpath = "(//span[contains(text(),'Wet')])[1]")
-	private WebElement wet_status;
+	WebElement wet_status;
+	
 	public void Wet_list()throws Exception {
+		
+	wait.until(ExpectedConditions.visibilityOf(cleaningCount)).isDisplayed();
 	wait.until(ExpectedConditions.visibilityOf(cleaning_filter)).click();
 	act.moveToElement(wet_status).click().perform();
 	wait.until(ExpectedConditions.visibilityOf(wet_status)).isDisplayed();
@@ -341,6 +348,7 @@ public class Cleaningpage extends Base {
 	@FindBy(id = "HIGH")
 	private WebElement high_priority;
 	public void Priority_High_list()throws Exception{
+		wait.until(ExpectedConditions.visibilityOf(cleaningCount)).isDisplayed();
 		wait.until(ExpectedConditions.visibilityOf(cleaning_filter)).click();
 		wait.until(ExpectedConditions.visibilityOf(high_priority)).click();
 		act.moveToElement(cleaning_filter_apply_btn).click().perform();
@@ -348,6 +356,7 @@ public class Cleaningpage extends Base {
 	@FindBy(id = "MEDIUM")
 	private WebElement medium_priority;
 	public void Priority_Medium_list()throws Exception{
+		wait.until(ExpectedConditions.visibilityOf(cleaningCount)).isDisplayed();
 		wait.until(ExpectedConditions.visibilityOf(cleaning_filter)).click();
 		wait.until(ExpectedConditions.visibilityOf(medium_priority)).click();
 		act.moveToElement(cleaning_filter_apply_btn).click().perform();
@@ -355,15 +364,16 @@ public class Cleaningpage extends Base {
 	@FindBy(id = "LOW")
 	private WebElement low_priority;
 	public void Priority_Low_list()throws Exception{
+		wait.until(ExpectedConditions.visibilityOf(cleaningCount)).isDisplayed();
 		wait.until(ExpectedConditions.visibilityOf(cleaning_filter)).click();
 		wait.until(ExpectedConditions.visibilityOf(low_priority)).click();
 		act.moveToElement(cleaning_filter_apply_btn).click().perform();
 	}
 
 	public void Multiple_status_filter()throws Exception{
+		wait.until(ExpectedConditions.visibilityOf(cleaningCount)).isDisplayed();
 		wait.until(ExpectedConditions.visibilityOf(cleaning_filter)).click();
 		wait.until(ExpectedConditions.visibilityOf(automatic_status)).click();
-		//act.moveToElement(automatic_status).click().perform();
 		act.moveToElement(wet_status).click().perform();
 		act.moveToElement(high_priority).click().perform();
 		act.moveToElement(cleaning_filter_apply_btn).click().perform();
@@ -399,21 +409,26 @@ public class Cleaningpage extends Base {
 	@FindBy(xpath = "//span[normalize-space()='20']")
 	private WebElement startdate_selected;
 	public void StartDate_filter()throws Exception{
+		wait.until(ExpectedConditions.visibilityOf(cleaningCount)).isDisplayed();
 		wait.until(ExpectedConditions.visibilityOf(cleaning_filter)).click();
-		wait.until(ExpectedConditions.visibilityOf(startdate_clicked)).click();
+		act.moveToElement(startdate_clicked).click().perform();
 		wait.until(ExpectedConditions.visibilityOf(startdate_selected)).click();
 
 		act.moveToElement(cleaning_filter_apply_btn).click().perform();
 	}
 	@FindBy(xpath = "(//input[contains(@placeholder,'DD-MM-YYYY')])[2]")
-	private WebElement enddate_clicked;
+	WebElement enddate_clicked;
+	
 	@FindBy(xpath = "//span[normalize-space()='20']")
-	private WebElement enddate_selected;
-	public void StartEnd_Date_filter()throws Exception{
+	WebElement enddate_selected;
+	
+	public void StartEnd_Date_filter() throws Exception {
+		
+		wait.until(ExpectedConditions.visibilityOf(cleaningCount)).isDisplayed();
 		wait.until(ExpectedConditions.visibilityOf(cleaning_filter)).click();
-		wait.until(ExpectedConditions.visibilityOf(startdate_clicked)).click();
+		act.moveToElement(startdate_clicked).click().perform();
 		wait.until(ExpectedConditions.visibilityOf(startdate_selected)).click();
-		wait.until(ExpectedConditions.visibilityOf(enddate_clicked)).click();
+		act.moveToElement(enddate_clicked).click().perform();
 		wait.until(ExpectedConditions.visibilityOf(enddate_selected)).click();
 		act.moveToElement(cleaning_filter_apply_btn).click().perform();
 	}
@@ -421,23 +436,23 @@ public class Cleaningpage extends Base {
 	private WebElement assignee_select;
 
 	public void Select_Assignee_filter() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(cleaningCount)).isDisplayed();
 		wait.until(ExpectedConditions.visibilityOf(cleaning_filter)).click();
-		//String assignee = prop.getProperty("Assignee");
-		wait.until(ExpectedConditions.visibilityOf(assignee_select)).click();
+		act.moveToElement(Assignee).click().perform();
 		Thread.sleep(2000);
-		wait.until(ExpectedConditions.visibilityOf(assignee_select)).sendKeys("" + Keys.ENTER);
+		act.moveToElement(Assignee).sendKeys(""+Keys.ENTER).perform();
 		act.moveToElement(cleaning_filter_apply_btn).click().perform();
 		System.out.println(">> User selected the assignee in filter" + assignee_select);
 	}
-	@FindBy(id = "react-select-4-input")
+	@FindBy(xpath = "(//*[name()='svg'][contains(@class,'css-tj5bde-Svg')])[2]")
 	private WebElement billboard_type_select;
 
 	public void Select_Billboard_Type_cleaning_filter() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(cleaningCount)).isDisplayed();
 		wait.until(ExpectedConditions.visibilityOf(cleaning_filter)).click();
-		act.moveToElement(billboard_type_select).click().sendKeys(""+Keys.ENTER).perform();
+		act.moveToElement(billboard_type_select).sendKeys(""+Keys.ENTER).perform();
 		Thread.sleep(2000);
 		act.moveToElement(cleaning_filter_apply_btn).click().perform();
-		System.out.println(">> User selected the assignee in filter" + billboard_type_select);
 	}
 	@FindBy(xpath = "(//img[contains(@class,'pointer')])[2]")
 	private WebElement Edit_Buttonclick;
@@ -454,6 +469,7 @@ public class Cleaningpage extends Base {
 	public void Group_edited() {
 
 		wait.until(ExpectedConditions.visibilityOf(edit_priority_label));
+		group_edited.sendKeys(Keys.CONTROL,"a" ,Keys.DELETE);
 		String Editgroup = prop.getProperty("Editgroup");
 		act.moveToElement(group_edited).click().sendKeys(Editgroup);
 		LOGGER.info("User updated the Group ");

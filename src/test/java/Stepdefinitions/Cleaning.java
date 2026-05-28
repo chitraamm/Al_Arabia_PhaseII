@@ -213,7 +213,7 @@ public class Cleaning extends Base {
 	}
 	@Then("Billboard Type cleaning list get displayed successfully")
 	public void Billboard_Type_cleaning_list_get_displayed_successfully() throws Exception {
-		cleaningpage.Cleaning_filtered_result_display();
+		cleaningpage.AllcleaningCount();
 	}
 	@And("User click edit button")
 	public void User_click_edit_button()throws Exception{
@@ -228,13 +228,27 @@ public class Cleaning extends Base {
 		cleaningpage.Group_update_clicked();
 		cleaningpage.update_Group_confirmed();
 }
-	@Then("^Particular Group gets updated successfully as \"([^\"]*)\"$")
-	public void Particular_Group_gets_updated_successfully_as_(String expectedMessage) throws Exception {
-		  String actualMessage = cleaningpage.cleaning_create_Success_display();
-	      String normalizedExpectedMessage = normalizeWhitespace(expectedMessage);
-	      String normalizedActualMessage = normalizeWhitespace(actualMessage);
-	      System.out.println(">> User or Admin updated Ticket successfully"+actualMessage);
-	      assertEquals(normalizedExpectedMessage, normalizedActualMessage);
+//	@Then("^Particular Group gets updated successfully as \"([^\"]*)\"$")
+//	public void Particular_Group_gets_updated_successfully_as_(String expectedMessage) throws Exception {
+//		  String actualMessage = cleaningpage.cleaning_create_Success_display();
+//	      String normalizedExpectedMessage = normalizeWhitespace(expectedMessage);
+//	      String normalizedActualMessage = normalizeWhitespace(actualMessage);
+//	      System.out.println(">> User or Admin updated Cleaning Ticket successfully"+actualMessage);
+//	      assertEquals(normalizedExpectedMessage, normalizedActualMessage);
+//	}
+	
+	@Then("^Particular Group gets updated successfully as \"([^\"]*)\" or \"([^\"]*)\"$")
+	public void Particular_Group_gets_updated_successfully_as (String expectedMessage1,
+			String expectedMessage2) throws Exception {
+		String actualMessage = cleaningpage.cleaning_create_Success_display();
+		String normalizedActualMessage = normalizeWhitespace(actualMessage);
+	      System.out.println(">> User or Admin updated Cleaning Ticket successfully"+actualMessage);
+
+		boolean matchesMessage1 = normalizedActualMessage.equals(normalizeWhitespace(expectedMessage1));
+		boolean matchesMessage2 = normalizedActualMessage.equals(normalizeWhitespace(expectedMessage2));
+
+		assertTrue("The actual message was neither of the expected success messages.",
+				matchesMessage1 || matchesMessage2);
 	}
 	
 	

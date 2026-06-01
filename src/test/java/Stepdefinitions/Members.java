@@ -73,8 +73,18 @@ public class Members extends Base {
     }
 
     @And("User selects the department electrical")
-    public void User_selects_the_department_electrical()  {
+    public void User_selects_the_department_electrical() throws Throwable  {
         membersPage.inviteSelectDept();
+    }
+    
+    @And("User selects Projects")
+    public void User_selects_Projects() throws Throwable  {
+        membersPage.Selectprojects();
+    }
+    
+    @And("User selects billboard type as static")
+    public void User_selects_billboard_type_as_static() throws Throwable  {
+        membersPage.Selectprojects_as_static();
     }
 
     @And("User clicks the send invite button")

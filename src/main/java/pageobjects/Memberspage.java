@@ -110,28 +110,44 @@ public class Memberspage extends Base {
 		LOGGER.info(">> User clicked the invite member button");
 	}
 
-	@FindBy(xpath = "//body[1]/div[1]/div[1]/div[2]/div[1]/div[2]/div[2]/div[1]/div[1]/div[1]/form[1]/div[2]/div[1]/div[1]")
+	@FindBy(xpath = "(//*[name()='svg'][@class='css-tj5bde-Svg'])[1]")
 	private WebElement inviteSelectRole;
 
-	public void inviteSelectRole() {
+	public void inviteSelectRole() throws Exception {
 		wait.until(ExpectedConditions.visibilityOf(inviteSelectRole)).click();
-		wait.until(ExpectedConditions.visibilityOf(inviteSelectRoleSelect)).click();
-		LOGGER.info(">> User selected the role:" + inviteSelectRole.getText());
+		Thread.sleep(2000);
+		act.moveToElement(inviteSelectRole).sendKeys(""+Keys.ENTER).perform();
 	}
 
 	@FindBy(id = "react-select-6-listbox")
 	private WebElement inviteSelectRoleSelect;
 	
-	@FindBy(id = "department")
+	@FindBy(xpath = "(//div[@class='select__input-container css-19bb58m'])[1]")
 	private WebElement inviteSelectDept;
 
-	public void inviteSelectDept() {
-		String dept = generateUniqueEmail(prop.getProperty("Invite_Department"));
+	public void inviteSelectDept() throws Exception {
 		wait.until(ExpectedConditions.visibilityOf(inviteSelectDept)).click();
-		wait.until(ExpectedConditions.visibilityOf(inviteSelectDept)).sendKeys(dept + Keys.ENTER);
+		Thread.sleep(2000);
+		act.moveToElement(inviteSelectDept).sendKeys(""+Keys.ENTER).perform();
 		LOGGER.info(">> User selected the role:" + inviteSelectDept.getText());
 	}
 
+	@FindBy(xpath = "(//div[@class='select__input-container css-19bb58m'])[2]")
+	private WebElement selectprjt;
+
+	public void Selectprojects() throws Exception {
+		wait.until(ExpectedConditions.visibilityOf(selectprjt)).click();
+		Thread.sleep(2000);
+		act.moveToElement(selectprjt).sendKeys(""+Keys.ENTER).perform();
+	}
+	
+	@FindBy(xpath = "(//span[@title='select billboard type'][normalize-space()='Static'])[1]")
+	private WebElement billboardtype_static;
+
+	public void Selectprojects_as_static() throws Exception {
+		Thread.sleep(2000);
+		wait.until(ExpectedConditions.visibilityOf(billboardtype_static)).click();
+	}
 	
 	@FindBy(xpath = "//form[contains(@class,'floating was-validated')]//button[contains(@type,'submit')]")
 	private WebElement inviteSendInvite;

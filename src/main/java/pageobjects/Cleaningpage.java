@@ -93,19 +93,19 @@ public class Cleaningpage extends Base {
 	@FindBy(xpath = "(//div[contains(@class,'select__indicator select__dropdown-indicator css-1xc3v61-indicatorContainer')])[1]")
 	private WebElement ticket_title;
 	
-	@FindBy(id = "react-select-23-input")
+	@FindBy(xpath = "(//*[name()='svg'][@class='css-tj5bde-Svg'])[2]")
 	private WebElement schedule;
 	
 	@FindBy(xpath = "(//div[contains(@class,'select__input-container css-19bb58m')])[1]")
 	private WebElement Billboard_Type ;
 	
-	@FindBy(xpath = "(//div[contains(@class,'select__input-container css-19bb58m')])[2]")
+	@FindBy(xpath = "(//*[name()='svg'][contains(@class,'css-tj5bde-Svg')])[6]")
 	private WebElement nameofBillboard;
 	
-	@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[2]/div[2]/div/form/div/div/div/div[10]/div/div/div/div/div[1]")
+	@FindBy(xpath = "(//div[contains(@class,'select__value-container select__value-container--has-value css-hlgwow')])[6]")
 	private WebElement Priority;
 	
-	@FindBy(xpath = "(//div[contains(@aria-hidden,'true')])[1]")
+	@FindBy(xpath = "(//div[contains(@class,'select__input-container css-19bb58m')])[3]")
 	private WebElement Assignee;
 	
 	@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[2]/div[2]/div/form/div/div/div/div[12]/div/div[1]/input")
@@ -113,9 +113,6 @@ public class Cleaningpage extends Base {
 	
 	@FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div[2]/div[2]/div/form/div/div/div/div[12]/div/div[1]/div[2]/div/div/div/div/div[2]/div[1]/div/div[6]/div[3]/span")
 	private WebElement selected_start_date;
-	
-//	@FindBy(xpath = "//input[@name='invoice_date']")
-//	private WebElement End_Date;
 	
 	@FindBy(xpath = "//*[@id=\"description\"]")
 	private WebElement Description;
@@ -126,47 +123,53 @@ public class Cleaningpage extends Base {
 	wait.until(ExpectedConditions.visibilityOf(group_Name)).sendKeys(generateUniqueboardNumber(groupname));
 	
 	wait.until(ExpectedConditions.visibilityOf(group_Name)).isDisplayed();
-//	Thread.sleep(1000);
-	act.moveToElement(ticket_title).click().sendKeys(""+Keys.ENTER).perform();
+	act.moveToElement(ticket_title).click().sendKeys(""+Keys.ENTER).perform();	
+
 	
-//	wait.until(ExpectedConditions.visibilityOf(ticket_title)).isDisplayed();
+	wait.until(ExpectedConditions.visibilityOf(ticket_title)).isDisplayed();
 	wait.until(ExpectedConditions.visibilityOf(schedule)).click();
 	Thread.sleep(1000);
 	act.moveToElement(schedule).sendKeys(""+Keys.ENTER).perform();
-	
+	Thread.sleep(1000);
+
 	wait.until(ExpectedConditions.visibilityOf(Billboard_Type)).click();
-	Thread.sleep(2000);
+	Thread.sleep(1000);
 	act.moveToElement(Billboard_Type).sendKeys(""+Keys.ARROW_DOWN+Keys.ENTER).perform();
-	Thread.sleep(2000);
+	Thread.sleep(1000);
 	
 	wait.until(ExpectedConditions.visibilityOf(nameofBillboard)).click();
-	Thread.sleep(2000);
+	Thread.sleep(1000);
 	act.moveToElement(nameofBillboard).sendKeys(""+Keys.ARROW_DOWN+Keys.ENTER).perform();
-	Thread.sleep(2000);
+	Thread.sleep(1000);
 	
-	wait.until(ExpectedConditions.visibilityOf(Assignee)).sendKeys(""+"tom"+Keys.ENTER);
-//	Thread.sleep(5000);
-//	act.moveToElement(nameofBillboard).click().sendKeys(""+Keys.ENTER+Keys.ARROW_RIGHT).perform();
-//  
-//	wait.until(ExpectedConditions.visibilityOf(nameofBillboard)).isDisplayed();
-//	Thread.sleep(1000);
-//	act.moveToElement(Priority).click().sendKeys(""+Keys.ARROW_DOWN+Keys.ENTER).perform();
-//	
-//	wait.until(ExpectedConditions.visibilityOf(Priority)).isDisplayed();
-//	Thread.sleep(1000);
-//	act.moveToElement(Assignee).click().sendKeys(""+Keys.ARROW_DOWN+Keys.ENTER).perform();
-//	Thread.sleep(2000);
-//
-//    act.moveToElement(Start_Date).click().perform();
-//	Thread.sleep(2000);
-//
-//    act.moveToElement(selected_start_date).click().perform();
-//	Thread.sleep(2000);
-//
-//    String description = prop.getProperty("descriptiontexts");
-//    act.moveToElement(Description).click().sendKeys(""+(description)).perform();
+	wait.until(ExpectedConditions.visibilityOf(Priority)).click();
+	Thread.sleep(1000);
+	act.moveToElement(Priority).sendKeys(""+Keys.ARROW_DOWN+Keys.ENTER).perform();
+	Thread.sleep(2000);
+
+	wait.until(ExpectedConditions.visibilityOf(Assignee)).click();
+	Thread.sleep(1000);
+	String tom =prop.getProperty("tom");
+	act.moveToElement(Assignee).sendKeys(""+tom).perform();
+	Thread.sleep(1000);
+	act.moveToElement(Assignee).sendKeys(""+Keys.ENTER).perform();
+//	wait.until(ExpectedConditions.visibilityOf(Assignee)).sendKeys(""+Keys.ENTER);
+//	wait.until(ExpectedConditions.visibilityOf(Assignee)).sendKeys(""+"tom"+Keys.ENTER);
+	wait.until(ExpectedConditions.visibilityOf(Assignee)).isDisplayed();
+
+	Thread.sleep(2000);
+
+    act.moveToElement(Start_Date).click().perform();
+	Thread.sleep(2000);
+
+    act.moveToElement(selected_start_date).click().perform();
+	Thread.sleep(2000);
+
+    String description = prop.getProperty("descriptiontexts");
+    act.moveToElement(Description).click().sendKeys(""+(description)).perform();
     
 	}
+	
 	@FindBy(id = "Create Group")
 	private WebElement create_group;
 
@@ -174,6 +177,7 @@ public class Cleaningpage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(cleaningCount)).isDisplayed();
 		act.moveToElement(create_group).click().perform();
 	}
+	
 	@FindBy(xpath = "//div[contains(@class, 'toastpop') and contains(@class, 'position-relative')]")
 	private WebElement Cleaning_created_Success_display;
 
@@ -181,6 +185,7 @@ public class Cleaningpage extends Base {
 		WebElement successMessageElement = wait.until(ExpectedConditions.visibilityOf(Cleaning_created_Success_display));
 		return successMessageElement.getText().trim();
 	}
+	
 	@FindBy(id = "doc_searchQueryInput")
 	private WebElement CleaningSearch;
 	

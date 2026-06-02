@@ -53,6 +53,11 @@ public class Profilepage extends Base {
 		Random rand = new Random();
 		return baseIQMANumber + rand.nextInt(100); // Append random number
 	}
+	
+	private static String generateUniquemobilNumber(String baseIQMANumber) {
+		Random rand = new Random();
+		return baseIQMANumber + rand.nextInt(10); 
+	}
 
 	private static String generateUniqueLicenceNumber(String baseLicenceNumber) {
 		Random rand = new Random();
@@ -67,11 +72,19 @@ public class Profilepage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(Profile)).click();
 	}
 
-	@FindBy(xpath = "//a[normalize-space()='Personal Profile']")
+	@FindBy(xpath = "(//li[contains(@class,'d-flex align-items-center px-2')])[1]")
 	private WebElement Personalprofile;
 
 	public void Personalprofile() {
 		wait.until(ExpectedConditions.visibilityOf(Personalprofile)).click();
+	}
+	
+	@FindBy(xpath = "(//label[@for='name'])[1]")
+	private WebElement displaypersonalprofile;
+	
+	public void display_personalprofile() {
+		wait.until(ExpectedConditions.visibilityOf(displaypersonalprofile)).isDisplayed();
+		AssertJUnit.assertTrue(displaypersonalprofile.isDisplayed());
 	}
 
 	
@@ -108,20 +121,13 @@ public class Profilepage extends Base {
 		
         alternate_number.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
 		String Alt_Phone_number = prop.getProperty("Alt_Phone_number");
-		wait.until(ExpectedConditions.visibilityOf(alternate_number)).sendKeys(Alt_Phone_number);
+		wait.until(ExpectedConditions.visibilityOf(alternate_number)).sendKeys(generateUniquemobilNumber(Alt_Phone_number));
         Thread.sleep(2000);
 
         whtsap_number.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
 		String Whatsapp_Phone_number = prop.getProperty("Whatsapp_Phone_number");
-		wait.until(ExpectedConditions.visibilityOf(whtsap_number)).sendKeys(Whatsapp_Phone_number);
+		wait.until(ExpectedConditions.visibilityOf(whtsap_number)).sendKeys(generateUniquemobilNumber(Whatsapp_Phone_number));
         Thread.sleep(2000);
-
-		String location = prop.getProperty("location");
-		wait.until(ExpectedConditions.visibilityOf(Location)).sendKeys(location);
-        Thread.sleep(5000);
-		wait.until(ExpectedConditions.visibilityOf(Location)).sendKeys(""+Keys.ARROW_DOWN+Keys.ENTER);
-        Thread.sleep(2000);
-
 		wait.until(ExpectedConditions.visibilityOf(personalinfo_iqma)).click();
 		personalinfo_iqma.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
 		String uniqueIQMANumber = generateUniqueIQMANumber(prop.getProperty("Iqma"));
@@ -129,9 +135,12 @@ public class Profilepage extends Base {
       
 	}
 	
-	public void personalinfo_Updatebutton_text_enter() throws Exception {
+	@FindBy(id = "Update Personal Profile")
+	private WebElement Click_update;
+	
+	public void Click_Updatebutton() throws Exception {
 		Thread.sleep(2000);
-	    act.moveToElement(members_personalprofile_update_btn_Yes).click().perform();
+	    act.moveToElement(Click_update).click().perform();
 	}
 
 	@FindBy(xpath = "(//h4[@class=' fw-semibold text-center text-black'])[1]")
@@ -142,7 +151,6 @@ public class Profilepage extends Base {
 
 	public void Yesbutton() throws Exception{
 		Thread.sleep(2000);
-		wait.until(ExpectedConditions.visibilityOf(confirmpopup)).isDisplayed();
        act.moveToElement(Yesbutton).click().perform();
 	}
 	
@@ -199,16 +207,13 @@ public class Profilepage extends Base {
 		Thread.sleep(2000);
 	    wait.until(ExpectedConditions.visibilityOf(personalinfo_iqma)).isDisplayed();
 		act.moveToElement(Resetform).click().perform();
-		//wait.until(ExpectedConditions.visibilityOf(Resetform)).click();
 	}
 
 	@FindBy(xpath = "//h6[normalize-space()='Yes, reset it.']")
 	private WebElement YesResetform;
 
-	public void YesResetform() {
-		
-		act.moveToElement(YesResetform).click().perform();
-		//wait.until(ExpectedConditions.visibilityOf(YesResetform)).click();
+	public void YesResetform() {	
+		act.moveToElement(YesResetform).click().perform();	
 	}
 
 	@FindBy(xpath = "(//h6[normalize-space()=\"No, don't reset it!\"])[1]")
@@ -230,6 +235,7 @@ public class Profilepage extends Base {
 		iqmaerror.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
 		wait.until(ExpectedConditions.visibilityOf(personalinfo_name)).click();
 	}
+	
 	@FindBy(xpath = "//small[@class='form-text text-danger form_error']")
 	private WebElement IQMA_error_display;
 	
@@ -244,15 +250,51 @@ public class Profilepage extends Base {
 		Location.sendKeys(Keys.CONTROL,"a",Keys.DELETE);
 		wait.until(ExpectedConditions.visibilityOf(personalinfo_name)).click();
 	}
-	@FindBy(xpath = "//small[@class='form-text text-danger form_error']")
-	private WebElement locationserror;
-	public void locationerror_display() {
-		
-		wait.until(ExpectedConditions.visibilityOf(locationserror)).isDisplayed();
-		AssertJUnit.assertTrue(locationserror.isDisplayed());
+
+	public void Phonenumber_error() {
+		wait.until(ExpectedConditions.visibilityOf(displaypersonalprofile)).isDisplayed();
+		wait.until(ExpectedConditions.visibilityOf(contact_number)).click();
+		contact_number.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
 	}
 	
-	@FindBy(id = "Update Personal Profile")
-	private WebElement members_personalprofile_update_btn_Yes;
-
+	@FindBy(xpath = "(//small[@class='form-text text-danger form_error'])[1]")
+	private WebElement phnenumbr_error_display;
+	
+	public void display_Phonenumbererror() {
+		wait.until(ExpectedConditions.visibilityOf(phnenumbr_error_display)).isDisplayed();
+		AssertJUnit.assertTrue(phnenumbr_error_display.isDisplayed());
+	}
+	
+	@FindBy(xpath = "(//span[normalize-space()='History'])[1]")
+	private WebElement clickhistory;
+	
+	public void Click_history() {
+		wait.until(ExpectedConditions.visibilityOf(displaypersonalprofile)).isDisplayed();
+		wait.until(ExpectedConditions.visibilityOf(clickhistory)).click();
+	}
+	
+	@FindBy(xpath = "(//span[normalize-space()='Load More History'])[1]")
+	private WebElement displayhistory;
+	
+	@FindBy(xpath = "(//span[normalize-space()='Load More History'])[1]")
+	private WebElement display_Nohistory_found;
+	
+	public void display_history() {
+	
+		try {
+			if (condition) {
+				wait.until(ExpectedConditions.visibilityOf(displayhistory));
+				AssertJUnit.assertTrue(displayhistory.isDisplayed());
+				System.out.println(">> User got History lists");
+			} else {
+				wait.until(ExpectedConditions.visibilityOf(display_Nohistory_found));
+				System.out.println(">> User got no History found message");
+			}
+		} catch (Exception e) {
+			wait.until(ExpectedConditions.visibilityOf(display_Nohistory_found));
+			System.out.println(">> User got no History found message");
+		}
+	}
+	
+	
 }

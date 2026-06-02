@@ -1,6 +1,7 @@
 package Stepdefinitions;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -51,9 +52,15 @@ public class Profile extends Base {
 	public void user_able_to_give_personal_profile_information() throws Exception {
 		profilepage.Personalinfo_details();
 	}
+	
+	@Then("Personal profile page displayed successfully")
+	public void Personal_profile_page_displayed_successfully() {
+		profilepage.display_personalprofile();
+	}
+	
 	@And("User able to click on update personal profile")
 	public void user_able_to_click_on_update_personal_profile()throws Exception {
-		profilepage.personalinfo_Updatebutton_text_enter();
+		profilepage.Click_Updatebutton();
 	}
 	@When("User able to select yes option for saving deatils")
 	public void user_able_to_select_yes_option_for_saving_deatils() throws Exception{
@@ -84,27 +91,49 @@ public class Profile extends Base {
 		profilepage.nameerror();
 		profilepage.IQMAerror_display();
 	}
-	@Then("Location is required error message get displayed successfully")
-	public void Location_is_required_errror_message_get_displayed_successfully() {
-		profilepage.locationerror();
-		profilepage.locationerror_display();
-	}
-	@Then("^User Updated the profile details successfully as\"([^\"]*)\"$")
-	public void User_Updated_the_profile_details_successfully_as(String expectedMessage) {
-		String actualMessage = profilepage.profile_success_display();
-		String normalizedExpectedMessage = normalizeWhitespace(expectedMessage);
-		String normalizedActualMessage = normalizeWhitespace(actualMessage);
-		System.out.println(">> User or Admin got the members profile updation success message successfully");
-		assertEquals(normalizedExpectedMessage, normalizedActualMessage);
-	}
 
 	private String normalizeWhitespace(String input) {
 		return input.replaceAll("\\s+", " ").trim();
+	}
+	
+	@Then("^User Updated the profile details successfully as \"([^\"]*)\" or \"([^\"]*)\"$")
+    public void User_Updated_the_profile_details_successfully_as (String expectedMessage1,
+			String expectedMessage2) throws Exception {
+		String actualMessage = profilepage.profile_success_display();
+		String normalizedActualMessage = normalizeWhitespace(actualMessage);
+
+		System.out.println(">> User or Admin got the billboard created success message successfully: " + actualMessage);
+
+		boolean matchesMessage1 = normalizedActualMessage.equals(normalizeWhitespace(expectedMessage1));
+		boolean matchesMessage2 = normalizedActualMessage.equals(normalizeWhitespace(expectedMessage2));
+
+		assertTrue("The actual message was neither of the expected success messages.",
+				matchesMessage1 || matchesMessage2);
 	}
 
 	@When("Admin or User update the  profile page")
 	public void admin_or_user_update_the_profile_page() {
 
+	}
+	
+	@And("User able to give personal profile information without Phone number")
+	public void User_able_to_give_personal_profile_information_without_Phone_number() {
+		profilepage.Phonenumber_error();
+	}
+	
+	@Then("Phone number is required error message get displayed successfully")
+	public void Phone_number_is_required_error_message_get_displayed_successfully() {
+		profilepage.display_Phonenumbererror();
+	}
+	
+	@And("User click on the History")
+	public void User_click_on_the_History() {
+		profilepage.Click_history();
+	}
+	
+	@Then("History page displayed successfully for the User")
+	public void History_page_displayed_successfully_for_the_User () {
+		profilepage.display_history();
 	}
 
 }

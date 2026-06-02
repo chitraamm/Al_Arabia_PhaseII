@@ -846,8 +846,9 @@ public class Memberspage extends Base {
 
 	public void members_vehicleinfo_profile() throws Exception {
 		wait.until(ExpectedConditions.visibilityOf(members_vehicleinfoprofile)).click();
-		wait.until(ExpectedConditions.visibilityOf(members_vehicleinfo_vehicletype)).click();
-		wait.until(ExpectedConditions.visibilityOf(members_vehicleinfo_vehicletype_select)).click();
+//		wait.until(ExpectedConditions.visibilityOf(members_vehicleinfo_vehicletype)).click().
+		act.moveToElement(members_vehicleinfo_vehicletype).click().sendKeys(""+Keys.ENTER).perform();
+
 		wait.until(ExpectedConditions.visibilityOf(members_vehicleinfo_licence)).click();
 		members_vehicleinfo_licence.sendKeys(Keys.CONTROL, "a", Keys.DELETE);
 		String uniqueLicenceNumber = generateUniqueLicenceNumber(prop.getProperty("Licence_number"));
@@ -890,7 +891,6 @@ public class Memberspage extends Base {
 		wait.until(ExpectedConditions.visibilityOf(members_resetpasswordprofile)).click();
 		wait.until(ExpectedConditions.visibilityOf(members_reset_newpw)).sendKeys("Password@123");
 		wait.until(ExpectedConditions.visibilityOf(members_reset_confirmpw)).sendKeys("Password@123" + Keys.ENTER);
-
 		wait.until(ExpectedConditions.visibilityOf(members_resetpass_profile_update_btn_Yes)).click();
 	}
 

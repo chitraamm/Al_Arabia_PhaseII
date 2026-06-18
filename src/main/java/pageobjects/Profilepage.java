@@ -296,5 +296,20 @@ public class Profilepage extends Base {
 		}
 	}
 	
+	@FindBy(xpath = "(//span[normalize-space()='Projects'])[1]")
+	private WebElement clickprojects;
+	
+	public void Click_projects() {
+		wait.until(ExpectedConditions.visibilityOf(displaypersonalprofile)).isDisplayed();
+		wait.until(ExpectedConditions.visibilityOf(clickprojects)).click();
+	}
+	
+	@FindBy(xpath = "(//th[@class='py-3'])[1]")
+	private WebElement display_projectsuser;
+	
+	public void display_Projects_user() {
+		wait.until(ExpectedConditions.visibilityOf(display_projectsuser)).isDisplayed();
+		AssertJUnit.assertTrue(display_projectsuser.isDisplayed());
+	}
 	
 }

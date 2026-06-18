@@ -135,5 +135,15 @@ public class Profile extends Base {
 	public void History_page_displayed_successfully_for_the_User () {
 		profilepage.display_history();
 	}
+	
+	@And("User click on the Projects")
+	public void User_click_on_the_Projects() {
+		profilepage.Click_projects();
+	}
+	
+	@Then("Projects page displayed for the User")
+	public void Projects_page_displayed_for_the_User () {
+		profilepage.display_Projects_user();
+	}
 
 }

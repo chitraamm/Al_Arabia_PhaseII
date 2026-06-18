@@ -2,7 +2,7 @@
 browser = chrome
 
 <---- Web App URL ---->
-Al_Arabia_URL = http://localhost:3000/login
+Al_Arabia_URL = http://localhost:4173/login
 
 <---- Admin Login Valid Credentials ---->
 Admin_email_address = help@coducer.com

@@ -108,5 +108,15 @@ When Al-Arabia overall dashboard should display
 And User able to click on profile
 And User able to click on personal profile 
 And User click on the History  
-Then History page displayed successfully for the User   
+Then History page displayed successfully for the User 
+
+@profile @profile12 @validcredentials @regression @sanity @all
+Scenario Outline: To verify the Projects page of the User 
+Given Admin logged in with valid credentials
+When Al-Arabia overall dashboard should display
+And User able to click on profile
+And User able to click on personal profile  
+And User click on the Projects 
+And Projects page displayed for the User
+
 

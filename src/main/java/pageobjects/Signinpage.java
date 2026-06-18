@@ -61,7 +61,7 @@ public class Signinpage extends Base {
     @FindBy(xpath = "(//h1[normalize-space()='Two-Step Authorization'])[1]")
     private WebElement display_Authentication;
     
-    @FindBy(xpath = "(//button[normalize-space()='Skip'])[1]")
+    @FindBy(id = "two-factor-skip")
     private WebElement clic_skip_Authentication;
     
     @FindBy(xpath = "(//div[@class='d-flex align-items-center gap-1 fs-15 text-primary'])[1]")

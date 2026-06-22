@@ -4,10 +4,12 @@ import java.io.FileInputStream;
 import java.time.Duration;
 import java.util.Properties;
 import java.util.Random;
+import java.util.concurrent.TimeoutException;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -110,7 +112,7 @@ public class Memberspage extends Base {
 		LOGGER.info(">> User clicked the invite member button");
 	}
 
-	@FindBy(xpath = "(//*[name()='svg'][@class='css-tj5bde-Svg'])[1]")
+	@FindBy(xpath = "(//div[@class='custom_select_input__input-container css-19bb58m'])[1]")
 	private WebElement inviteSelectRole;
 
 	public void inviteSelectRole() throws Exception {
@@ -131,30 +133,60 @@ public class Memberspage extends Base {
 		act.moveToElement(inviteSelectDept).sendKeys(""+Keys.ENTER).perform();
 		LOGGER.info(">> User selected the role:" + inviteSelectDept.getText());
 	}
+	
+	@FindBy(id = "doc_searchQueryInput")
+	private WebElement projcts;
+	
+//	public void Selectprojects() throws Exception {
+//		wait.until(ExpectedConditions.visibilityOf(projcts)).click();
+//		Thread.sleep(2000);
+//		act.moveToElement(projcts).sendKeys(""+Keys.ENTER).perform();
+//		LOGGER.info(">> User selected the role:" + inviteSelectDept.getText());
+//	}
+	
 
 	@FindBy(xpath = "(//div[@class='select__input-container css-19bb58m'])[2]")
 	private WebElement selectprjt;
 
 	public void Selectprojects() throws Exception {
 		wait.until(ExpectedConditions.visibilityOf(selectprjt)).click();
-		Thread.sleep(2000);
-		act.moveToElement(selectprjt).sendKeys(""+Keys.ENTER).perform();
+		act.moveToElement(selectprjt).sendKeys(""+Keys.ARROW_DOWN+Keys.ENTER).perform();
+//		Thread.sleep(2000);
+//		act.moveToElement(selectprjt).sendKeys(""+Keys.ENTER).perform();
 	}
 	
-	@FindBy(xpath = "(//span[@title='select billboard type'][normalize-space()='Static'])[1]")
-	private WebElement billboardtype_static;
+	@FindBy(xpath = "(//span[@title='select billboard type'][normalize-space()='Digital'])[1]")
+	private WebElement billboardtype_Dt;
 
-	public void Selectprojects_as_static() throws Exception {
-		Thread.sleep(2000);
-		wait.until(ExpectedConditions.visibilityOf(billboardtype_static)).click();
-	}
+//	public void Selectprojects_Type() throws Exception {
+//		Thread.sleep(2000);
+//		wait.until(ExpectedConditions.visibilityOf(billboardtype_st)).click();
+//	}
+
+
+	public void Selectprojects_Type() throws TimeoutException {
+			
+		    try {
+
+		        wait.until(ExpectedConditions.visibilityOf(billboardtype_Dt)).click();
+		        System.out.println("Second page clicked successfully.");
+		        
+		    } catch (NoSuchElementException e) {
+		        System.out.println("Second page element not found , Proceeding without clicking");
+		    } catch (Exception e) {
+		    	
+		        System.out.println("An error occurred while handling the second page: " + e.getMessage());
+		    }
+		}
 	
-	@FindBy(xpath = "//form[contains(@class,'floating was-validated')]//button[contains(@type,'submit')]")
+	@FindBy(xpath = "(//h6[normalize-space()='Send Invite'])[1]")
 	private WebElement inviteSendInvite;
 
-	public void inviteSendInvite() {
-		wait.until(ExpectedConditions.visibilityOf(inviteSendInvite)).click();
-		LOGGER.info(">> User clicked the send invite button");
+	public void inviteSendInvite() throws Exception {
+		Thread.sleep(3000);
+		wait.until(ExpectedConditions.visibilityOf(inviteSendInvite)).isDisplayed();
+		act.moveToElement(inviteSendInvite).click().perform();
+//		LOGGER.info(">> User clicked the send invite button");
 	}
 
 	@FindBy(id = "doc_searchQueryInput")

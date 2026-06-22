@@ -17,8 +17,8 @@ And User clicks the invite member button
 And User enters the email or phone number
 And User selects the role manager
 And User selects the department electrical
-And User selects Projects   
-And User selects billboard type as static 
+And User selects Projects    
+And User selects billboard type
 And User clicks the send invite button
 Then The invitation should sent to user given mail address successfully
 

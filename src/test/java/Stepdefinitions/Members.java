@@ -82,13 +82,13 @@ public class Members extends Base {
         membersPage.Selectprojects();
     }
     
-    @And("User selects billboard type as static")
-    public void User_selects_billboard_type_as_static() throws Throwable  {
-        membersPage.Selectprojects_as_static();
+    @And("User selects billboard type")
+    public void User_selects_billboard_type() throws Throwable  {
+        membersPage.Selectprojects_Type();
     }
 
     @And("User clicks the send invite button")
-    public void User_clicks_the_send_invite_button() {
+    public void User_clicks_the_send_invite_button() throws Exception {
         membersPage.inviteSendInvite();
     }
 

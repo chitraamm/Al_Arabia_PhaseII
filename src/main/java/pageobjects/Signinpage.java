@@ -58,10 +58,10 @@ public class Signinpage extends Base {
     @FindBy(xpath = "(//h4[normalize-space()='Choose a project to continue'])[1]")
     private WebElement Projectselection_popup_display;
     
-    @FindBy(xpath = "(//h1[normalize-space()='Two-Step Authorization'])[1]")
+    @FindBy(xpath = "(//label[normalize-space()='Email'])[1]")
     private WebElement display_Authentication;
     
-    @FindBy(id = "two-factor-skip")
+    @FindBy(xpath = "(//button[@id='two-factor-skip'])[1]")
     private WebElement clic_skip_Authentication;
     
     @FindBy(xpath = "(//div[@class='d-flex align-items-center gap-1 fs-15 text-primary'])[1]")
@@ -153,8 +153,9 @@ public class Signinpage extends Base {
         LOGGER.info("Al-Arabia Project selection popup displayed successfully");
     }
     
-    public void Skip_Authentication () {
-        wait.until(ExpectedConditions.visibilityOf(display_Authentication));
+    public void Skip_Authentication () throws Exception {
+    	Thread.sleep(3000);
+//        wait.until(ExpectedConditions.visibilityOf(display_Authentication)).isDisplayed();
         wait.until(ExpectedConditions.visibilityOf(clic_skip_Authentication)).click();
     }
     

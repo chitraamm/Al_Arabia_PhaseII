@@ -60,7 +60,7 @@ public class Signin extends Base {
     }
     
     @And("Verify the Authentication")
-    public void Verify_the_Authentication() {
+    public void Verify_the_Authentication() throws Exception {
         signinpage.Skip_Authentication();
     }
     

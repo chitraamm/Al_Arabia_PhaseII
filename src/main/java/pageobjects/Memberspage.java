@@ -358,6 +358,7 @@ public class Memberspage extends Base {
 
 		try {
 			if (condition) {
+				Thread.sleep(2000);			
 				wait.until(ExpectedConditions.visibilityOf(members_filter_active_list_display)).isDisplayed();
 				AssertJUnit.assertTrue(members_filter_active_list_display.isDisplayed());
 				System.out.println(">> User got filtered active members list");
@@ -378,6 +379,7 @@ public class Memberspage extends Base {
 
 		try {
 			if (condition) {
+				Thread.sleep(2000);			
 				wait.until(ExpectedConditions.visibilityOf(members_filter_blocked_list_display));
 				AssertJUnit.assertTrue(members_filter_blocked_list_display.isDisplayed());
 				System.out.println(">> User got filtered blocked/inactive members list");
@@ -397,6 +399,7 @@ public class Memberspage extends Base {
 
 		try {
 			if (condition) {
+				Thread.sleep(2000);			
 				wait.until(ExpectedConditions.visibilityOf(members_filter_expired_list_display));
 				AssertJUnit.assertTrue(members_filter_expired_list_display.isDisplayed());
 				System.out.println(">> User got filtered expired members list");
@@ -417,10 +420,12 @@ public class Memberspage extends Base {
 
 		try {
 			if (condition) {
+				Thread.sleep(2000);			
 				wait.until(ExpectedConditions.visibilityOf(members_filter_pending_list_display));
 				AssertJUnit.assertTrue(members_filter_pending_list_display.isDisplayed());
 				System.out.println(">> User got filtered pending members list");
 			} else {
+				Thread.sleep(2000);			
 				wait.until(ExpectedConditions.visibilityOf(members_no_members_found));
 				System.out.println(">> User got no members found message");
 			}
@@ -448,6 +453,7 @@ public class Memberspage extends Base {
 
 		try {
 			if (condition) {
+				Thread.sleep(2000);			
 				wait.until(ExpectedConditions.visibilityOf(members_filter_admin_list_display));
 				AssertJUnit.assertTrue(members_filter_admin_list_display.isDisplayed());
 				System.out.println(">> User got filtered admin members list");
@@ -479,6 +485,7 @@ public class Memberspage extends Base {
 
 		try {
 			if (condition) {
+				Thread.sleep(2000);			
 				wait.until(ExpectedConditions.visibilityOf(members_filter_manager_list_display));
 				AssertJUnit.assertTrue(members_filter_manager_list_display.isDisplayed());
 				System.out.println(">> User got filtered manager members list");
@@ -517,6 +524,7 @@ public class Memberspage extends Base {
 
 		try {
 			if (condition) {
+				Thread.sleep(2000);			
 				wait.until(ExpectedConditions.visibilityOf(members_filter_Supervisor_list_display));
 				AssertJUnit.assertTrue(members_filter_Supervisor_list_display.isDisplayed());
 				System.out.println(">> User got filtered supervisor members list");
@@ -548,6 +556,7 @@ public class Memberspage extends Base {
 
 		try {
 			if (condition) {
+				Thread.sleep(2000);			
 				wait.until(ExpectedConditions.visibilityOf(members_filter_technician_list_display));
 				AssertJUnit.assertTrue(members_filter_technician_list_display.isDisplayed());
 				System.out.println(">> User got filtered technician members list");
@@ -592,6 +601,7 @@ public class Memberspage extends Base {
 
 		try {
 			if (condition) {
+				Thread.sleep(2000);			
 				wait.until(ExpectedConditions.visibilityOf(members_filter_electrical_list_display));
 				AssertJUnit.assertTrue(members_filter_electrical_list_display.isDisplayed());
 				System.out.println(">> User got filtered technician members list");
@@ -605,16 +615,23 @@ public class Memberspage extends Base {
 		}
 	}
 
-	@FindBy(xpath = "//input[@itemtype='establishment']")
+	@FindBy(xpath = "(//input[@placeholder='Enter Location'])[1]")
 	private WebElement members_filter_responsible_area;
+	
+	@FindBy(xpath = "(//h6[contains(text(),'Status')])[1]")
+	private WebElement arealabel;
 
-	public void members_filter_responsible_area() {
+	public void members_filter_responsible_area() throws Exception {
 
 		wait.until(ExpectedConditions.visibilityOf(members_filter)).click();
 		wait.until(ExpectedConditions.visibilityOf(members_filter_responsible_area)).click();
-		wait.until(ExpectedConditions.visibilityOf(members_filter_responsible_area)).sendKeys("Saudi Arabia" + Keys.ENTER);
-//		wait.until(ExpectedConditions.visibilityOf(members_filter_apply_btn)).click();
-		System.out.println(">> User entered the responsible area in filter");
+		wait.until(ExpectedConditions.visibilityOf(members_filter_responsible_area)).sendKeys(""+"SaudiArabia");
+		Thread.sleep(2000);
+		act.moveToElement(members_filter_responsible_area).sendKeys(""+Keys.ARROW_DOWN).click().perform();
+//		 wait.until(ExpectedConditions.elementToBeClickable( By.xpath("//li[contains(.,'" + "SaudiArabia" + "')]"))).click();	
+		Thread.sleep(3000);
+		act.moveToElement(arealabel).click().perform();
+	
 	}
 
 	public void members_filter_responsible_area1() {
@@ -624,13 +641,14 @@ public class Memberspage extends Base {
 		System.out.println(">> User entered the responsible area in filter");
 	}
 
-	@FindBy(xpath = "(//td[contains(@class,'')])[5]")
+	@FindBy(xpath = "//td[normalize-space(text())='Saudi Arabia']")
 	private WebElement members_filter_responsible_area_list_display;
 
 	public void members_filter_responsible_area_list_display() {
 
 		try {
 			if (condition) {
+				Thread.sleep(2000);			
 				wait.until(ExpectedConditions.visibilityOf(members_filter_responsible_area_list_display));
 				AssertJUnit.assertTrue(members_filter_responsible_area_list_display.isDisplayed());
 				System.out.println(">> User got filtered responsible area members list");

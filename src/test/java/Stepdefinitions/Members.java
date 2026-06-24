@@ -159,7 +159,7 @@ public class Members extends Base {
         membersPage.Recentlyadded_members_display();
     }
     
-    @And("User filter the members list status-Active")
+    @And("User filter the members list status Active")
     public void User_filter_the_members_list_status_Active () {
         membersPage.members_filter_sts_active();
     }
@@ -270,7 +270,7 @@ public class Members extends Base {
     }
     
     @And("User filter the members list responsible area")
-    public void User_filter_the_members_list_responsible_area() {
+    public void User_filter_the_members_list_responsible_area() throws Exception {
     	 membersPage.members_filter_responsible_area();
     }
     

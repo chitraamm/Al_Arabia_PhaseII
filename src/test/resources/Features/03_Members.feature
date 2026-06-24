@@ -67,7 +67,7 @@ Scenario Outline: T008_To verify the members feature filter active status member
 Given Admin logged in with valid credentials
 When Al-Arabia overall dashboard should display
 And User clicks the members module
-And User filter the list status-Active
+And User filter the members list status Active
 And User click apply button
 Then Active members list get displayed successfully
 

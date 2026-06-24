@@ -509,7 +509,7 @@ public class Memberspage extends Base {
 			System.out.println(">> User got no members found message");
 		}
 	}
-
+ 
 	@FindBy(xpath = "//input[@itemtype='establishment']")
 	private WebElement members_filter_responsible_area;
 
@@ -529,6 +529,8 @@ public class Memberspage extends Base {
 				.sendKeys("Saudi Arabia" + Keys.ENTER);
 		System.out.println(">> User entered the responsible area in filter");
 	}
+	
+	
 
 	@FindBy(xpath = "(//td[contains(@class,'')])[5]")
 	private WebElement members_filter_responsible_area_list_display;

@@ -5,12 +5,15 @@
 		<item key="SmartImportRootWizardPage.STORE_CLOSE_IMPORTED" value="false"/>
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
+		<item key="SmartImportRootWizardPage.STORE_SKIP_DOT_FOLDERS" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="/home/coducer/BMSV2_Automation"/>
+			<item value="/home/coducer/BMSV2_Automation/Al_Arabia_Project"/>
 			<item value="/home/coducer/Al_Arabia_PhaseII"/>
 		</list>
 		<section name="SmartImportWizard.dialogBounds">
-			<item key="DIALOG_X_ORIGIN" value="215"/>
-			<item key="DIALOG_Y_ORIGIN" value="0"/>
+			<item key="DIALOG_X_ORIGIN" value="20"/>
+			<item key="DIALOG_Y_ORIGIN" value="20"/>
 			<item key="DIALOG_WIDTH" value="899"/>
 			<item key="DIALOG_HEIGHT" value="649"/>
 			<item key="DIALOG_FONT_NAME" value="1|Ubuntu|11.0|0|GTK|1|"/>

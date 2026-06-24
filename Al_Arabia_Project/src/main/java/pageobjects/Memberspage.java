@@ -40,6 +40,14 @@ public class Memberspage extends Base {
 		LOGGER = LogManager.getLogger(Memberspage.class.getName());
 	}
 
+	
+	
+	
+	
+	
+	
+	/////////////////////////////////////////////////
+	 	
 	private boolean condition = true;
 
 	private void initializeWait() {
